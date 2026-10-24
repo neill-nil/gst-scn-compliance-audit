@@ -1,0 +1,3 @@
+duckdb>=1.1
+pandas>=2.0
+# also needs poppler-utils (pdftotext, pdfinfo) on PATH
