@@ -22,7 +22,7 @@ from pathlib import Path
 import duckdb
 
 BUCKET = "https://indian-high-court-judgments.s3.ap-south-1.amazonaws.com"
-RULE_VERSION = "2026-10-25.2"
+RULE_VERSION = "2026-10-25.5"
 
 
 def rx(p):
@@ -62,10 +62,24 @@ FINAL = rx(r"(petition|appeal)s? (is|are|stands?|stand) (hereby )?(allowed|dismi
            r"|impugned (order|notice|SCN|demand)[^.]{0,80}(set aside|quashed)|(remanded|remitted) (back )?to")
 CONSENT_EQUITY = rx(r"by consent|consent of (the )?(learned counsel|parties)|(does|do) not (have any )?(serious )?object"
                     r"|contentions (of the parties )?(are )?(kept|left) open|without (going into|expressing any (view|opinion) on|entering into) the merits"
-                    r"|one more (chance|opportunity)|ends of justice|deposit\w*[^.]{0,40}\b(10|25)\s*(%|per\s?cent)")
-HOLDING = rx(r"(we are|this court is|i am) (of the )?(considered |prima facie )?(view|opinion)|\bwe (hold|find)\b|it is (thus )?(held|clear) that"
+                    r"|one (more|final|last) (chance|opportunity)|final opportunity|ends of justice|deposit\w*[^.]{0,40}\b(10|25)\s*(%|per\s?cent)"
+                    r"|covered by (an|the) (earlier )?(order|judgment|decision) of this court"
+                    r"|(will|would|shall) have to be (re[\s-]*)?examined by the (assessing|adjudicating|proper)")
+HOLDING = rx(r"(we are|this court is|i am) (of the )?(considered )?(view|opinion)|\bwe (hold|find)\b|it is (thus )?(held|clear) that"
              r"|in (clear |gross )?violation of|contrary to (the )?(mandate|provisions?) of|violat\w+ (of )?(the )?principles of natural justice"
              r"|(cannot|can not) be sustained|is (not )?sustainable|is not time[\s-]*barred|is time[\s-]*barred|within (the )?(stipulated|prescribed) (time|period)")
+
+
+ORDER_HEADING = re.compile(r"\b(COMMON ORDER|O R D E R|J U D G M E N T|ORDER|JUDGMENT)\b")
+NOT_COURT_VOICE = rx(r"counsel|submi(t|ssion)|contend|argu|urged|pray|plea\b|petitioner (states|pleads|avers)|grounds? (of|raised)")
+
+
+def court_voice_holdings(t: str) -> int:
+    """Count holding phrases only in the court's own sentences: after the order heading, not reporting counsel."""
+    m = ORDER_HEADING.search(t, 300)
+    body = t[m.end():] if m else t
+    sentences = re.split(r"(?<=[.;:])\s+", body)
+    return sum(len(HOLDING.findall(s)) for s in sentences if not NOT_COURT_VOICE.search(s))
 
 
 def latest_order_per_case(cands: Path, court: str):
@@ -112,6 +126,9 @@ def screen(r, work: Path):
         return row
     t = re.sub(r"\s+", " ", text)
     body = t[500:5500]
+    # An excluded topic only counts when it is the main subject, not a passing mention
+    # (most writ judgments mention the s.107 appeal remedy in passing).
+    demand_hits = len(DEMAND_73_74.findall(t))
     row.update({
         "chars_per_page": round(len(t) / max(meta["pages"], 1)),
         "text_hash": hashlib.sha1(re.sub(r"\W+", "", body).lower().encode()).hexdigest(),
@@ -120,12 +137,12 @@ def screen(r, work: Path):
         "demand_73_74": bool(DEMAND_73_74.search(t)),
         "s74A": bool(S74A.search(t)),
         "pre_gst_only": bool(PRE_GST.search(t)) and not GST_STATUTE.search(t),
-        "excluded": [k for k, p in EXCLUDE.items() if len(p.findall(t)) >= 2]
+        "excluded": [k for k, p in EXCLUDE.items() if (n := len(p.findall(t))) >= 2 and n >= demand_hits]
                     + (["factless_short_order"] if meta["pages"] <= 3 and FACTLESS.search(t) else []),
         "defects": [k for k, p in DEFECTS.items() if p.search(t)],
         "final": bool(FINAL.search(t)),
         "consent_equity": bool(CONSENT_EQUITY.search(t)),
-        "holdings": len(HOLDING.findall(t)),
+        "holdings": court_voice_holdings(t),
     })
     in_scope = row["scn"] and row["demand_73_74"] and not row["excluded"] and not row["pre_gst_only"]
     row["in_scope"] = in_scope
@@ -135,7 +152,7 @@ def screen(r, work: Path):
         row["bucket"] = "not_final"
     elif not row["defects"]:
         row["bucket"] = "no_procedural_defect_argued"
-    elif row["holdings"] >= 2 and meta["pages"] >= 4 and not row["consent_equity"]:
+    elif row["holdings"] >= 1 and meta["pages"] >= 4 and not row["consent_equity"]:
         row["bucket"] = "reasoned"
     else:
         row["bucket"] = "remand_or_short"

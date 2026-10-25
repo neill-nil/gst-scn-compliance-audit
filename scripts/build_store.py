@@ -13,6 +13,7 @@ import hashlib
 import json
 import shutil
 import sys
+import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -47,7 +48,14 @@ def fetch_pdf(r, raw_dir: Path):
     if dest.exists() and hashlib.sha256(dest.read_bytes()).hexdigest() == r["sha256"]:
         return "kept"
     dest.parent.mkdir(parents=True, exist_ok=True)
-    data = urllib.request.urlopen(f"{BUCKET}/{r['s3_key']}").read()
+    for attempt in range(4):
+        try:
+            data = urllib.request.urlopen(f"{BUCKET}/{r['s3_key']}", timeout=60).read()
+            break
+        except OSError as e:
+            if attempt == 3:
+                return f"FAILED {r['cnr']}: {e}"
+            time.sleep(2 ** attempt)
     if hashlib.sha256(data).hexdigest() != r["sha256"]:
         return f"HASH MISMATCH {r['cnr']}"
     dest.write_bytes(data)
@@ -77,11 +85,11 @@ def main():
     pdf_rows = [r for r in keep if r["bucket"] in PDF_BUCKETS]
     with ThreadPoolExecutor(16) as ex:
         results = list(ex.map(lambda r: fetch_pdf(r, data_dir / "raw"), pdf_rows))
-    problems = [x for x in results if x.startswith("HASH")]
+    problems = [x for x in results if x.startswith(("HASH", "FAILED"))]
 
     print(f"manifest rows: {len(rows)}")
     print(f"text stored (in-scope, non-duplicate): {len(keep)}")
-    print(f"PDFs frozen (reasoned): {len(pdf_rows)}; hash problems: {len(problems)}")
+    print(f"PDFs frozen (reasoned): {len(pdf_rows) - len(problems)} of {len(pdf_rows)}; problems: {len(problems)}")
     for p in problems:
         print("  ", p)
 
