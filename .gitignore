@@ -8,6 +8,7 @@ data/raw/
 data/text/
 data/interim/
 data/tmp/
+corpus/source_files/
 *.parquet
 *.txt.gz
 
