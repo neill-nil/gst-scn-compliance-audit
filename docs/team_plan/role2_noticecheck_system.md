@@ -35,7 +35,7 @@
    - `trace.py`: write every step in the trace format (`contracts.md` section 5).
    - `cli.py`: `python -m src.noticecheck.cli --inputs <jsonl> --config configs/nc_full.yaml --run-id <id>`.
 3. **Mock tools** in `src/noticecheck/mock_tools.py`, matching the signatures in `contracts.md` exactly, so switching to role 3's real tools is a one-line change.
-4. Read your 5 pilot cases (rows 6–10 of `data/splits/schema_pilot.csv`).
+4. Read your pilot cases (listed in `pilot_reading.md`).
 
 ### Mon 27 Oct
 5. **Schema meeting.** Bring a list of the facts each defect check needs (for example, the hearing check needs: was a hearing date given, was it "NA", was it before the reply was due, was the hearing adjourned, was it attended).

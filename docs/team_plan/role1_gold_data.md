@@ -35,7 +35,7 @@
    - Ask: is this a s.73/74 demand proceeding; does the court itself rule on any procedural defect; for each, the defect type (enum in `contracts.md`), the finding, and the court's sentence as a verbatim quote.
    - Check each quote appears exactly (after whitespace normalisation) in the text; set `quote_verified`.
    - Model: Qwen3-8B on Kaggle (free, no limits).
-3. Read your 5 pilot cases (rows 1–5 of `data/splits/schema_pilot.csv`) and note facts, defects and findings for the meeting.
+3. Read your pilot cases (listed in `pilot_reading.md`) and note facts, defects and findings for the meeting.
 
 ### Mon 27 Oct
 4. **Check the triage** on the 19 pilot cases plus the 22 cases in `data/splits/hand_labels_reasoned.csv`: precision and recall of "reasoned", and agreement on defect types. If precision is below ~0.8, adjust the prompt once and re-run.

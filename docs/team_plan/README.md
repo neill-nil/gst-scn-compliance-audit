@@ -59,14 +59,14 @@ The "reasoned" tag comes from keyword rules and is about 75% accurate (checked b
 
 | Date | Everyone | Milestone |
 |---|---|---|
-| **Sun 26 Oct** | Pull repo, run `python scripts/fetch_data.py --reasoned-only`, read your 5 pilot cases, start your role's "can start now" steps | — |
+| **Sun 26 Oct** | Pull repo, run `python scripts/fetch_data.py --reasoned-only`, read your pilot cases ([`pilot_reading.md`](pilot_reading.md)), start your role's "can start now" steps | — |
 | **Mon 27 Oct** | 1-hour schema meeting (led by role 4) | **Schema v0 frozen by evening** (hard deadline) |
 | **Tue 28 Oct** | Role work | Parser pre-fills ~100 cases; system runs end-to-end on pilot cases; eval harness runs |
 | **Wed 29 – Thu 30 Oct** | **Each person reviews pre-filled cases ~2 h/day** | 60–80 gold cases (30 reviewed by two people); all systems run on gold |
 | **Fri 31 Oct** | Write-up | **Mid submission**: results, ablations started, error analysis |
 | 1–15 Nov | Role work | Scale to 150 gold, LoRA extractor, full ablations, held-out court, judge validation, paper |
 
-Pilot reading split (from `data/splits/schema_pilot.csv`, sorted order): rows 1–5 role 1, rows 6–10 role 2, rows 11–15 role 3, rows 16–19 role 4. For each case, write down: what facts are stated (dates, sections, notice details, hearing, service), which defects were argued, and what the court decided on each. Bring this to the meeting.
+**Pilot reading:** the case list per person, reading tips, a glossary, a worked example and the note template are in [`pilot_reading.md`](pilot_reading.md). Bring your notes to the meeting.
 
 ---
 

@@ -31,7 +31,7 @@
 2. **Structure the text** into units, one JSON line each:
    `{"ref": "CGST Act s.75(4)", "act": "CGST Act", "chapter": "XV", "section": "75", "subsection": "4", "clause": null, "kind": "subsection|proviso|explanation|rule|form_field|circular_para", "heading": "General provisions relating to determination of tax", "text": "...", "parent_ref": "CGST Act s.75"}`
    Keep provisos and Explanations as their own units, linked to their parent. Spot-check 20 units against the PDF by hand.
-3. Read your 5 pilot cases (rows 11–15 of `data/splits/schema_pilot.csv`) and list every provision the courts cite.
+3. Read your pilot cases (listed in `pilot_reading.md`) and list every provision the courts cite.
 
 ### Mon 27 Oct
 4. **`statute_lookup(ref)`**: exact match on `ref`, plus tolerant parsing ("s 75(4)", "Section 75 (4)", "sec.75(4) of CGST Act").

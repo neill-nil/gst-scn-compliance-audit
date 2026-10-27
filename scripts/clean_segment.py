@@ -28,7 +28,7 @@ BOILERPLATE = [re.compile(p, re.I) for p in [
     # Karnataka
     r"^NC:\s*\d{4}:KHC", r"^HC-KAR$", r"^-\s*\d+\s*-$",
 ]]
-PARA_START = re.compile(r"^\s*(\d{1,3})\s*\.\s+\S")
+PARA_START = re.compile(r"^\s*[“\"]?\s*(\d{1,3})\s*\.\s+\S")
 
 
 def pdf_text_pages(pdf: Path) -> list[str]:
@@ -68,13 +68,26 @@ def segment(lines: list[tuple[int, str]]):
     """
     paras = [{"n": 0, "role_hint": "cause_title", "page": 1, "lines": []}]
     expected = 1
+    # Paragraphs of a quoted judgment must not be taken as ours. Two signals: the quoted paragraph's
+    # line opens with a quotation mark, or we are inside an open quotation. Real text often leaves a
+    # quotation unclosed, so an open quote stops counting after 25 lines.
+    in_quote, lines_in_quote = False, 0
     for page_no, s in lines:
         m = PARA_START.match(s)
         n = int(m.group(1)) if m else None
-        if n is not None and (n == expected or (expected == 1 and n == 2)):
+        quoted_line = s.lstrip().startswith(("“", '"'))
+        inside = in_quote and lines_in_quote <= 25
+        if not quoted_line and not inside and n is not None and (n == expected or (expected == 1 and n == 2)):
             paras.append({"n": n, "page": page_no, "lines": []})
             expected = n + 1
+            in_quote, lines_in_quote = False, 0
         paras[-1]["lines"].append(s)
+        for ch in s:
+            if ch == "“":
+                in_quote = True
+            elif ch == "”" or (ch == '"' and in_quote):
+                in_quote = False
+        lines_in_quote = lines_in_quote + 1 if in_quote else 0
     for p in paras:
         p["text"] = re.sub(r"\s+", " ", " ".join(p.pop("lines"))).strip()
     return paras

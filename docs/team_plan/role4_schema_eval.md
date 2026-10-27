@@ -22,7 +22,7 @@ At least one baseline; a small evaluation set with known ground truth; at least 
 ## Steps
 
 ### Sun 26 Oct
-1. **Read your 4 pilot cases** (rows 16–19 of `data/splits/schema_pilot.csv`) and the draft in `contracts.md`. List what the draft can't represent (for example: two notices in one case; a hearing offered but the date left blank; the order uploaded on a later date than it bears).
+1. **Read your pilot cases** (listed in `pilot_reading.md`) and the draft in `contracts.md`. List what the draft can't represent (for example: two notices in one case; a hearing offered but the date left blank; the order uploaded on a later date than it bears).
 2. **Draft schema v0 changes** and a one-page agenda for the meeting: the open questions, each with a proposed answer.
 3. **Harness skeleton `eval/score.py`:** `python -m eval.score --gold data/gold/records.jsonl --run runs/<run_id> --split test`.
    - **Defect metrics (RQ1):** per case, compare predicted findings to gold `defects_argued` (ignore gold `not_decided`). Predicted `defect` + gold `defect_found` = true positive; predicted `defect` + gold `defect_rejected` = **false alarm**; predicted `no_defect`/`cant_tell` + gold `defect_found` = miss. Report precision, recall, F1, false-alarm rate, per defect type and overall; a **strict** version that also requires the provision to match. Split into "rule-detectable" vs "reasoning-dependent" defect types (decide the split in the meeting).
