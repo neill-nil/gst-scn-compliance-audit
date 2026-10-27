@@ -1,8 +1,7 @@
 Role 4 — pilot reading notes
 Source: data/splits/schema_pilot.csv, sorted by cnr, rows 16-19.
 Read against the draft schema in docs/team_plan/contracts.md (v0, pre-freeze).
-PDFs fetched directly from the AWS bucket (sha256 checked against data/manifests/screened.csv)
-since data/raw/ is not checked into git.
+PDFs fetched directly from the AWS bucket (sha256 checked against data/manifests/screened.csv).
 
 ====================================================================
 CASE 16 — KAHC010289442026
