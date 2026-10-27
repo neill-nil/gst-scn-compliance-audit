@@ -1,0 +1,2 @@
+{"step": 1, "stage": "precondition_check", "defect": "hearing_75_4", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(4)"}, "ok": true, "output_summary": "found", "model": "qwen3-8b", "tokens_in": 100, "tokens_out": 20, "seconds": 1.0}
+{"step": 2, "stage": "precondition_check", "defect": "demand_beyond_scn", "tool": "record_lookup", "args": {"cnr": "CNRA"}, "ok": false, "output_summary": "missing field arg", "model": "qwen3-8b", "tokens_in": 80, "tokens_out": 10, "seconds": 0.5}

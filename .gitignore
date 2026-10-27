@@ -20,3 +20,6 @@ venv/
 
 # Secrets
 .env
+
+# Schema Related
+R4_schema_agenda.md

@@ -1,0 +1,2 @@
+{"step": 1, "stage": "precondition_check", "defect": "reply_not_considered", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(4)"}, "ok": true, "output_summary": "found", "model": "qwen3-8b", "tokens_in": 100, "tokens_out": 20, "seconds": 1.0}
+{"step": 2, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": "caselaw_search", "args": {"query": "extension notification validity"}, "ok": true, "output_summary": "5 hits", "model": "qwen3-8b", "tokens_in": 150, "tokens_out": 30, "seconds": 1.5}

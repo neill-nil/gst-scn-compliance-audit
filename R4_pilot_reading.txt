@@ -1,0 +1,240 @@
+Role 4 — pilot reading notes
+Source: data/splits/schema_pilot.csv, sorted by cnr, rows 16-19.
+Read against the draft schema in docs/team_plan/contracts.md (v0, pre-freeze).
+PDFs fetched directly from the AWS bucket (sha256 checked against data/manifests/screened.csv)
+since data/raw/ is not checked into git.
+
+====================================================================
+CASE 16 — KAHC010289442026
+Karnataka High Court, Bengaluru. WP No. 13471/2026 (T-RES).
+M/S Shivneel Gas Sales vs Assistant Commissioner of Commercial Taxes (Audit) & Ors.
+Decided (oral order): 30-09-2026. Single judge (B M Shyam Prasad, J.).
+rules flag in CSV: "limitation"
+
+FACTS STATED
+- Provision: Section 73, KGST/CGST Act, 2017. Tax period: July 2017-March 2018 (FY 2017-18).
+- SCN (Form GST DRC-01, "Summary of the Show Cause Notice") dated 30-09-2023,
+  file no. T.No.294/2023-24, SCN no. ACCT/ENF/CKM/ADT/2023-24.
+- Adjudication order dated 01-12-2023 under s.73(9); Summary of the Order
+  (DRC-07, ref ZD291223004521V) dated 02-12-2023.
+- No hearing date, service mode, or signature fact is stated or discussed anywhere
+  in the order — those are simply not in issue in this case.
+- Petitioner had filed GST returns for Aug 2017-Apr 2019 late (between Apr-Aug 2019).
+
+DEFECTS ARGUED
+- None of the contracts.md defect types. The sole ground actually argued and
+  decided is substantive, not procedural: that the retrospective insertion of
+  s.16(5) CGST Act (w.e.f. 01-07-2017, allowing ITC on returns filed up to
+  30-11-2021 for FY2017-18 to FY2020-21) entitles the petitioner to ITC that
+  the 01-12-2023 order denied for late-filed returns.
+- The prayer clause also sought declarations that s.16(4) CGST Act is
+  unconstitutional and that the s.168A extension notifications
+  (No.9/2023-CT dated 31-03-2023 and the parallel KGST notification
+  06/2023 dated 06-04-2023) are ultra vires — but the court never reaches
+  these; it disposes of the petition on the narrower s.16(5) point alone.
+
+COURT'S DECISION
+- Petition allowed. The 01-12-2023 adjudication order is quashed and the
+  matter is restored to the officer to pass a fresh/formal order applying
+  s.16(5)'s retrospective ITC entitlement, after giving the petitioner an
+  opportunity. Officer to communicate the fresh order by 30-10-2026;
+  petitioner to be informed by 30-11-2026.
+- No finding, rejection, or "not decided" on any schema defect type —
+  there is nothing to score for RQ1 here.
+
+SCHEMA/PIPELINE NOTE
+- The rule-based "limitation" flag on this case looks like a false positive:
+  the judgment never discusses limitation at all (not SCN timing, not the
+  s.168A extension notifications' validity in substance — those are prayed
+  for but not adjudicated). Worth checking against b0_rules.py once written;
+  this case is a useful "no relevant defect in scope" / clean negative
+  example for the eval harness, and a caution that keyword rules can
+  mis-flag a case whose real issue is unrelated (here, s.16(5) ITC).
+
+====================================================================
+CASE 17 — UPHC010748612025
+Allahabad High Court (Chief Justice's Court, Division Bench). WRIT TAX No. 526/2025.
+Rajesh Kumar Singh vs Commissioner of Commercial Tax, UP Lucknow & Anr.
+Order date: 19-02-2025. Bench: Arun Bhansali, CJ and Kshitij Shailendra, J.
+rules flag in CSV: "hearing_75_4;non_speaking"
+
+FACTS STATED
+- Tax period: April 2018-March 2019 (GTA/transport business, ITC dispute).
+- Two separate earlier-stage proceedings mentioned: (1) a Section 61 scrutiny
+  notice (discrepancies after return scrutiny), reply due 22-02-2023, "personal
+  hearing in this regard was denied in the notice" — this is pre-SCN scrutiny,
+  not the s.73 notice itself.
+- SCN issued under Section 73(1) on 23-12-2023: reply due date AND personal
+  hearing date were both fixed for the same day, 20-01-2024.
+- Petitioner filed reply on 18-01-2024 (10 points; RCM-based defence — tax on
+  the transactions is payable by the recipient under reverse charge).
+- Adjudication order dated 30-04-2024 under Section 73(9): accepted 7 of the
+  10 points without giving reasons; on the other 3, recorded only a cursory
+  Hindi finding that no RCM-tax-deposit evidence/account verification was
+  produced — did not engage with the RCM submission specifically.
+- Petitioner then filed a Section 161 rectification application (same RCM
+  ground); rejected by order dated 09-10-2024.
+
+DEFECTS ARGUED
+- hearing_75_4: no real opportunity of personal hearing — identical dates
+  for reply and hearing made the hearing an "empty formality," violating
+  natural justice (also framed as a s.75(4) violation).
+- non_speaking_order: the 30-04-2024 order is "absolutely non speaking,"
+  ignores the specific RCM evidence/documents filed with the reply.
+- (also challenged the s.161 rectification rejection of 09-10-2024, but only
+  as a consequence of the main order's invalidity — not an independent
+  schema defect type.)
+
+COURT'S DECISION
+- hearing_75_4: defect_found. Court states it has "repeatedly frowned on"
+  the practice of fixing an identical reply-due date and hearing date,
+  calling it an empty formality that results in violation of natural justice.
+- non_speaking_order: defect_found. Court quotes the vernacular finding
+  verbatim and holds a "cursory disposal" of a "very specific" plea cannot
+  be sustained.
+- Both the 30-04-2024 adjudication order and the 09-10-2024 rectification
+  order under s.161 are quashed (the latter "loses its significance" once
+  the former falls). Petition allowed; matter remanded to the Deputy
+  Commissioner, State Tax, Mirzapur to decide afresh after a proper hearing.
+
+SCHEMA/PIPELINE NOTE
+- Two notices appear in the facts (s.61 scrutiny notice, then the s.73 SCN).
+  Only the s.73 SCN/order is the in-scope "notice" object; the s.61 scrutiny
+  stage is background only — worth a guideline example of what to exclude
+  from `notice`/`events`.
+
+====================================================================
+CASE 18 — UPHC020953002025
+Allahabad High Court, Lucknow Bench. WRIT TAX No. 1479/2025.
+M/S Agarwal and Company (Prop. Anubhav Agarwal) vs State of U.P. & Ors.
+Decided: 04-12-2025. Jaspreet Singh, J.
+rules flag in CSV: "hearing_75_4;beyond_scn_75_7"
+
+FACTS STATED
+- Order under Section 73 dated 29-04-2024; a first appeal against it was
+  dismissed as time-barred by order dated 01-04-2025.
+- Respondent's counsel admits "no date was fixed for personal hearing" in
+  the proceeding.
+- The impugned order records the petitioner appearing/replying on three
+  dates — 23-09-2022, 07-10-2022, 27-10-2022 — in response to earlier
+  notices; after the 27-10-2022 reply, the adjudicating authority decided
+  the matter on merits without issuing any further notice or offering an
+  oral personal hearing.
+- Court relies heavily on and reproduces paras 5-11 of a Division Bench
+  judgment, Mahaveer Trading Company vs Deputy Commissioner (W.T. No.303/2024,
+  2024:AHC:38820-DB), including a UP Commercial Tax Dept. Office Memo
+  No.1406 dated 12-11-2024 listing systemic defects: hearing date marked
+  "N.A.", hearing date fixed before the reply-due date, hearing date same
+  as reply-due date, and order date not matching the hearing date.
+
+DEFECTS ARGUED
+- hearing_75_4: no opportunity of personal hearing before the adverse order.
+- Petitioner's counsel also asserted the order is "violative of Section
+  75(7)" (i.e., a demand_beyond_scn-type point) but the judgment does not
+  develop or separately reason through this ground anywhere in the text.
+- The 01-04-2025 appellate dismissal (limitation) is quashed too, but only
+  as a consequence of the main order falling — it is not itself argued as
+  a `limitation` defect of the SCN/order.
+
+COURT'S DECISION
+- hearing_75_4: defect_found, by applying Mahaveer Trading Company's ratio
+  to this case's own facts (no further notice/hearing was offered before
+  the merits order) — a clean example of the "relying on another judgment"
+  rule in role4_schema_eval.md: it counts as a finding here because the
+  court applies the precedent's reasoning to this case's specific facts,
+  not merely quoting it.
+- s.75(7)/demand-beyond-scn point: not decided — mentioned by counsel but
+  never engaged with independently in the court's reasoning.
+- Both the 29-04-2024 order and the 01-04-2025 appellate order are quashed;
+  petition allowed; remanded to the assessing authority for a fresh order
+  after giving a hearing.
+
+SCHEMA/PIPELINE NOTE
+- Good guideline example for "court relying on another judgment ('covered
+  by') → a finding only if the court applies it to this case's facts" —
+  here it clearly does apply it, so defect_found is correct, not a quote-only
+  case.
+- The s.75(7) ground that is argued but never actually reasoned through is a
+  good "not_decided" guideline example (distinct from a consent/remand
+  not_decided — here it is simply left unaddressed).
+
+====================================================================
+CASE 19 — WBCHCJ0026132026
+Calcutta High Court, Circuit Bench at Jalpaiguri. WPA 991 of 2026.
+M/s Garg Enterprises vs Additional Commissioner, CGST & CX, Siliguri Commissionerate & Anr.
+Decided: 02-09-2026. Raja Basu Chowdhury, J.
+rules flag in CSV: "hearing_75_4;signature;summary_only_142;non_speaking"
+
+FACTS STATED
+- Order under Section 74, CGST/WBGST Act, for tax period January 2020 to
+  November 2023 (one SCN spanning multiple financial years).
+- Pre-SCN in Form DRC-1A — petitioner alleges it carries no/invalid
+  signature of the proper officer.
+- Summary of SCN (Form DRC-01) uploaded on the portal, dated 14-08-2025;
+  detailed SCN reasons given in a composite document covering all periods
+  together (investigation into alleged smuggling of cement from Bhutan and
+  concealment of GST liability on its sale).
+- Impugned order dated 27-03-2026.
+- Procedural history: petitioner earlier filed WPA 11/2026 against the same
+  SCN, then withdrew it with liberty (order of a co-ordinate bench,
+  17-03-2026) to file a belated reply and be heard; the proper officer was
+  given liberty to decide on merits — no liberty was reserved to come back
+  to the High Court on the same cause of action.
+- Petitioner did file a reply and was heard (represented by advocate), but
+  the hearing was conducted by a different officer than the one with whom
+  the written response was filed — though both are found to be "proper
+  officer" of the same office.
+
+DEFECTS ARGUED (petition lists five grounds, para 3(a)-(e))
+(a) signature — pre-SCN (DRC-1A) not signed / invalid signature.
+(b) reply_not_considered — detailed SCN (DRC-01) issued without considering
+    the response already filed to the pre-SCN.
+(c) summary_only / vagueness — SCN vague and non-specific, no taxable event
+    or essential s.74 ingredients disclosed (closest schema fit:
+    section_74_ingredients / other_procedural; doesn't map cleanly to one type).
+(d) consolidated_scn — SCN clubs different tax periods/financial years
+    together, said to be impermissible.
+(e) jurisdiction/hearing irregularity — reply was filed with one authority
+    (Addl. Commissioner, Siliguri) but the hearing was conducted, and order
+    passed, by a different authority.
+- An implicit non_speaking_order argument also runs through: that the order
+  was passed with a "pre-determined notion" and ignored the objections raised.
+
+COURT'S DECISION (goes through each ground)
+- (a) signature: not decided on merits — court finds the detailed SCN is on
+  file and (on this record, without the underlying file being produced)
+  declines to adjudicate the disputed factual question of whether the
+  pre-SCN's signature is invalid; calls it a disputed factual issue for the
+  statutory forum, not the writ court.
+- (b) reply not considered on pre-SCN: not separately addressed — folded
+  into the general "disputed facts" finding above.
+- (c) vagueness / (d) consolidated_scn: defect_rejected on the merits — the
+  court finds the DRC-01 summary (dated 14-08-2025) clearly identifies the
+  demand and the specific taxable period, with no clubbing in the summary
+  itself; the composite detailed reasoning across periods is justified
+  because a single connected investigation (cement smuggling) covers all
+  of them.
+- non_speaking_order: defect_rejected — court holds "prima facie sufficient
+  reason" was given and the order "cannot be said to be non-speaking,"
+  though again flags this as touching disputed facts.
+- (e) different-authority/jurisdiction point: defect_rejected — same
+  "proper officer" confirmed to have received the reply and heard/decided
+  the matter; petitioner was heard and represented by counsel.
+- Overall disposition: writ petition DISMISSED — not on any of the above
+  findings alone, but because an effective statutory appellate remedy
+  exists (with a mandatory pre-deposit) and the petitioner expressly
+  refused to make that pre-deposit; the remaining disputed factual issues
+  (signature, etc.) are left to that forum. Liberty reserved to appeal.
+
+SCHEMA/PIPELINE NOTE
+- Useful example of mixed findings within one case: some grounds rejected
+  on the merits (vagueness/consolidated_scn, non_speaking, different-
+  authority), one left genuinely undecided as a disputed fact (signature),
+  and the petition as a whole dismissed on an alternate-remedy/laches basis
+  rather than on the merits of any defect — a good guideline case for
+  distinguishing per-ground defect_rejected/not_decided from the case-level
+  `outcome.disposition` (here: dismissed, not remanded).
+- `consolidated_scn` here spans financial years AND a multi-year "tax
+  period" (Jan 2020-Nov 2023) rather than cleanly separated FYs — worth
+  checking the `proceeding.financial_years` field can represent a
+  continuous cross-FY span, not just a list of whole FYs.
