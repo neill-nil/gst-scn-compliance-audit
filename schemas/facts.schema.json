@@ -1,0 +1,470 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "NoticeCheck facts (schema 0.1)",
+ "description": "Facts of the GST demand proceeding as stated in the judgment. Never guess: if the judgment does not state a value, set value, quote and para to null.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "provision",
+  "financial_years",
+  "notices",
+  "order_date",
+  "events"
+ ],
+ "properties": {
+  "provision": {
+   "type": "object",
+   "description": "Section of the CGST/SGST Act under which the demand proceeding was started",
+   "additionalProperties": false,
+   "required": [
+    "value",
+    "quote",
+    "para"
+   ],
+   "properties": {
+    "value": {
+     "anyOf": [
+      {
+       "enum": [
+        "73",
+        "74"
+       ]
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "quote": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "exact words from the judgment that state this value; null if value is null"
+    },
+    "para": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "description": "the judgment's paragraph number containing the quote"
+    }
+   }
+  },
+  "financial_years": {
+   "type": "object",
+   "description": "Financial years covered, e.g. [\"2018-19\"]; more than one means a consolidated notice",
+   "additionalProperties": false,
+   "required": [
+    "value",
+    "quote",
+    "para"
+   ],
+   "properties": {
+    "value": {
+     "anyOf": [
+      {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "pattern": "^\\d{4}-\\d{2}$"
+       }
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "quote": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "exact words from the judgment that state this value; null if value is null"
+    },
+    "para": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "description": "the judgment's paragraph number containing the quote"
+    }
+   }
+  },
+  "notices": {
+   "type": "array",
+   "description": "Each show cause notice (Form DRC-01) in this proceeding, usually one. Empty if the judgment gives no notice details.",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "date",
+     "reply_due",
+     "hearing_date_given",
+     "hearing_date",
+     "service_mode",
+     "signed",
+     "summary_only"
+    ],
+    "properties": {
+     "date": {
+      "type": "object",
+      "description": "Date the show cause notice was issued",
+      "additionalProperties": false,
+      "required": [
+       "value",
+       "quote",
+       "para"
+      ],
+      "properties": {
+       "value": {
+        "anyOf": [
+         {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+         },
+         {
+          "type": "null"
+         }
+        ]
+       },
+       "quote": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "exact words from the judgment that state this value; null if value is null"
+       },
+       "para": {
+        "type": [
+         "integer",
+         "null"
+        ],
+        "description": "the judgment's paragraph number containing the quote"
+       }
+      }
+     },
+     "reply_due": {
+      "type": "object",
+      "description": "Last date for the reply stated in the notice",
+      "additionalProperties": false,
+      "required": [
+       "value",
+       "quote",
+       "para"
+      ],
+      "properties": {
+       "value": {
+        "anyOf": [
+         {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+         },
+         {
+          "type": "null"
+         }
+        ]
+       },
+       "quote": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "exact words from the judgment that state this value; null if value is null"
+       },
+       "para": {
+        "type": [
+         "integer",
+         "null"
+        ],
+        "description": "the judgment's paragraph number containing the quote"
+       }
+      }
+     },
+     "hearing_date_given": {
+      "type": "object",
+      "description": "false if the notice gave no hearing date, or wrote NA, or no hearing date was fixed; true if a date was given",
+      "additionalProperties": false,
+      "required": [
+       "value",
+       "quote",
+       "para"
+      ],
+      "properties": {
+       "value": {
+        "anyOf": [
+         {
+          "type": "boolean"
+         },
+         {
+          "type": "null"
+         }
+        ]
+       },
+       "quote": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "exact words from the judgment that state this value; null if value is null"
+       },
+       "para": {
+        "type": [
+         "integer",
+         "null"
+        ],
+        "description": "the judgment's paragraph number containing the quote"
+       }
+      }
+     },
+     "hearing_date": {
+      "type": "object",
+      "description": "Personal hearing date fixed in the notice",
+      "additionalProperties": false,
+      "required": [
+       "value",
+       "quote",
+       "para"
+      ],
+      "properties": {
+       "value": {
+        "anyOf": [
+         {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+         },
+         {
+          "type": "null"
+         }
+        ]
+       },
+       "quote": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "exact words from the judgment that state this value; null if value is null"
+       },
+       "para": {
+        "type": [
+         "integer",
+         "null"
+        ],
+        "description": "the judgment's paragraph number containing the quote"
+       }
+      }
+     },
+     "service_mode": {
+      "type": "object",
+      "description": "How the notice reached the taxpayer",
+      "additionalProperties": false,
+      "required": [
+       "value",
+       "quote",
+       "para"
+      ],
+      "properties": {
+       "value": {
+        "anyOf": [
+         {
+          "enum": [
+           "portal_additional_notices_tab",
+           "portal_notices_tab",
+           "portal_unspecified",
+           "email",
+           "registered_post",
+           "hand_delivery",
+           "not_served"
+          ]
+         },
+         {
+          "type": "null"
+         }
+        ]
+       },
+       "quote": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "exact words from the judgment that state this value; null if value is null"
+       },
+       "para": {
+        "type": [
+         "integer",
+         "null"
+        ],
+        "description": "the judgment's paragraph number containing the quote"
+       }
+      }
+     },
+     "signed": {
+      "type": "object",
+      "description": "Whether the notice was signed or authenticated",
+      "additionalProperties": false,
+      "required": [
+       "value",
+       "quote",
+       "para"
+      ],
+      "properties": {
+       "value": {
+        "anyOf": [
+         {
+          "type": "boolean"
+         },
+         {
+          "type": "null"
+         }
+        ]
+       },
+       "quote": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "exact words from the judgment that state this value; null if value is null"
+       },
+       "para": {
+        "type": [
+         "integer",
+         "null"
+        ],
+        "description": "the judgment's paragraph number containing the quote"
+       }
+      }
+     },
+     "summary_only": {
+      "type": "object",
+      "description": "true if only the DRC-01 summary was issued without a detailed notice",
+      "additionalProperties": false,
+      "required": [
+       "value",
+       "quote",
+       "para"
+      ],
+      "properties": {
+       "value": {
+        "anyOf": [
+         {
+          "type": "boolean"
+         },
+         {
+          "type": "null"
+         }
+        ]
+       },
+       "quote": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "exact words from the judgment that state this value; null if value is null"
+       },
+       "para": {
+        "type": [
+         "integer",
+         "null"
+        ],
+        "description": "the judgment's paragraph number containing the quote"
+       }
+      }
+     }
+    }
+   }
+  },
+  "order_date": {
+   "type": "object",
+   "description": "Date of the demand order (DRC-07) under s.73(9)/74(9) being challenged",
+   "additionalProperties": false,
+   "required": [
+    "value",
+    "quote",
+    "para"
+   ],
+   "properties": {
+    "value": {
+     "anyOf": [
+      {
+       "type": "string",
+       "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "quote": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "exact words from the judgment that state this value; null if value is null"
+    },
+    "para": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "description": "the judgment's paragraph number containing the quote"
+    }
+   }
+  },
+  "events": {
+   "type": "array",
+   "description": "Other steps in the proceeding, in date order",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "date",
+     "type",
+     "quote",
+     "para"
+    ],
+    "properties": {
+     "date": {
+      "anyOf": [
+       {
+        "type": "string",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "type": {
+      "enum": [
+       "scrutiny_notice",
+       "pre_scn_intimation",
+       "scn_issued",
+       "reply_filed",
+       "extension_requested",
+       "extension_granted",
+       "hearing_scheduled",
+       "hearing_adjourned",
+       "hearing_attended",
+       "hearing_missed",
+       "order_passed",
+       "rectification_rejected",
+       "appeal_dismissed",
+       "recovery_or_attachment",
+       "earlier_writ",
+       "other"
+      ]
+     },
+     "quote": {
+      "type": "string"
+     },
+     "para": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

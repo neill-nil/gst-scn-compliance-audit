@@ -8,6 +8,9 @@ All records are JSON, one per line (JSONL). Dates are `YYYY-MM-DD`. Unknown valu
 
 ## 1. Case record (the gold record, and what extractors produce)
 
+> **Proposed replacement:** a slimmer schema 0.1 (facts + findings, one quote per value) is in [`schema_proposal_v0_1.md`](schema_proposal_v0_1.md), with JSON schemas in `schemas/`. Decide in the schema meeting; if accepted, this section is replaced by it.
+
+
 Produced by: role 1 parser (pre-fill) → corrected by human review → `data/gold/records.jsonl`.
 Also produced by: the NoticeCheck extractor (role 2) and the LoRA extractor (after mid), for comparison (RQ2).
 
