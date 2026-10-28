@@ -1,0 +1,106 @@
+{
+ "cnr": "UPHC020953002025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "order dated 29.04.2024 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": "no date was fixed for personal hearing",
+     "para": 4
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order_date": {
+   "value": "2024-04-29",
+   "quote": "order dated 29.04.2024 passed under Section 73",
+   "para": 2
+  },
+  "events": [
+   {
+    "date": "2024-04-29",
+    "type": "order_passed",
+    "quote": "order dated 29.04.2024 passed under Section 73",
+    "para": 2
+   },
+   {
+    "date": "2025-04-01",
+    "type": "appeal_dismissed",
+    "quote": "the order dated 01.04.2025 whereby the appeal was dismissed as being beyond limitation",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "the impugned orders cannot be sustained and the orders dated 29.04.2024 & 01.04.2025 are accordingly quashed",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "demand_beyond_scn",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "the order is also violative of Section 75(7) of the Act of 2017",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "Matter is remanded to the assessing authority to pass fresh order after giving an opportunity of hearing to the petitioner",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "draft_for_review",
+  "drafted_by": "claude",
+  "reviewed_by": [],
+  "notes": "The appellate order (appeal dismissed as time-barred) was quashed too. Court's own paras 6-8 are merged into para 5 by the splitter."
+ }
+}

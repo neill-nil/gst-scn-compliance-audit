@@ -1,0 +1,102 @@
+{
+ "cnr": "UPHC020953002025",
+ "schema_version": "0.1-draft",
+ "court": "Allahabad",
+ "case_no": "Writ Tax No. 1479 of 2025",
+ "decision_date": "2025-12-04",
+ "proceeding": {
+  "provision": "73",
+  "tax_period_from": null,
+  "tax_period_to": null,
+  "financial_years": [],
+  "authority": null,
+  "jurisdiction": "state",
+  "evidence": [
+   {
+    "field": "provision",
+    "quote": "order dated 29.04.2024 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+    "para": 2
+   }
+  ]
+ },
+ "notice": {
+  "form": null,
+  "date": null,
+  "reply_due": null,
+  "signed": null,
+  "service_mode": null,
+  "summary_only": null,
+  "hearing": {
+   "date": null,
+   "time": null,
+   "venue": null,
+   "stated_as_na": null
+  },
+  "demand_amount": null,
+  "evidence": [
+   {
+    "field": "notice.hearing",
+    "quote": "no date was fixed for personal hearing",
+    "para": 4
+   }
+  ]
+ },
+ "events": [
+  {
+   "date": "2024-04-29",
+   "type": "order_passed",
+   "details": "s.73 order",
+   "quote": "order dated 29.04.2024 passed under Section 73",
+   "para": 2
+  },
+  {
+   "date": "2025-04-01",
+   "type": "other",
+   "details": "appeal dismissed as filed beyond limitation",
+   "quote": "the order dated 01.04.2025 whereby the appeal was dismissed as being beyond limitation",
+   "para": 2
+  }
+ ],
+ "order": {
+  "form": null,
+  "date": "2024-04-29",
+  "demand_amount": null,
+  "evidence": [
+   {
+    "field": "order.date",
+    "quote": "order dated 29.04.2024 passed under Section 73",
+    "para": 2
+   }
+  ]
+ },
+ "defects_argued": [
+  {
+   "type": "hearing_75_4",
+   "finding": "defect_found",
+   "contested": false,
+   "provision": "s.75(4)",
+   "quote": "the impugned orders cannot be sustained and the orders dated 29.04.2024 & 01.04.2025 are accordingly quashed",
+   "para": 6
+  },
+  {
+   "type": "demand_beyond_scn",
+   "finding": "not_decided",
+   "contested": false,
+   "provision": "s.75(7)",
+   "quote": "the order is also violative of Section 75(7) of the Act of 2017",
+   "para": 3
+  }
+ ],
+ "outcome": {
+  "disposition": "allowed",
+  "remanded": true,
+  "quote": "Matter is remanded to the assessing authority to pass fresh order after giving an opportunity of hearing to the petitioner",
+  "para": 8
+ },
+ "annotation": {
+  "annotator": "claude-draft",
+  "reviewed_by": [],
+  "status": "draft_for_review",
+  "notes": "Almost no notice facts are stated: no notice date, tax period or amount. The State's own counsel admits no hearing date was fixed (para 4). The finding (para 6) applies a precedent (Mahaveer Trading, quoted in para 5) to this case. The s.75(7) argument (para 3) is never ruled on, so not_decided; the quote is the argument, not a finding. Schema gap: the appellate order (appeal dismissed as time-barred) was quashed too; no field for it. Paras 6-8 are the court's own but the splitter merges them into para 5 (they start mid-line after the quoted precedent)."
+ }
+}

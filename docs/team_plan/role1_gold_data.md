@@ -24,7 +24,7 @@
 ## Steps
 
 ### Sun 26 Oct
-1. **Shared model client `src/common/llm.py`** (push tonight; others depend on it).
+1. **Shared model client `src/common/llm.py`** — **DONE (27 Oct).** Setup: copy `.env.example` to `.env`, add a Gemini key, run `python -m src.common.llm models gemini`, pick a Flash model, set `GEMINI_MODEL`, then `python -m src.common.llm ping gemini`.
    - One function: `complete(model: str, messages: list, json_schema: dict | None = None, temperature: float = 0, seed: int = 0) -> dict` returning `{"text", "json", "tokens_in", "tokens_out", "seconds", "model"}`.
    - Backends: (a) any OpenAI-compatible server (vLLM or Ollama serving Qwen3-8B or Gemma 3 on Kaggle or locally), set by `LLM_BASE_URL`; (b) the chosen frontier API, key in `.env`.
    - Retries with backoff on rate limits; a disk cache keyed by a hash of (model, messages, schema, seed) so re-runs cost nothing; append every call to `runs/llm_calls.jsonl` for cost reporting.

@@ -1,0 +1,113 @@
+{
+ "cnr": "HCBM040404632025",
+ "schema_version": "0.1-draft",
+ "court": "Bombay",
+ "case_no": "Writ Petition No. 8397 of 2025",
+ "decision_date": "2026-01-17",
+ "proceeding": {
+  "provision": "74",
+  "tax_period_from": "2018-04",
+  "tax_period_to": "2024-03",
+  "financial_years": [
+   "2018-19",
+   "2019-20",
+   "2020-21",
+   "2021-22",
+   "2022-23",
+   "2023-24"
+  ],
+  "authority": "Joint Commissioner, CGST & Central Excise, Nagpur-II (order); respondents 3 and 4 (notices)",
+  "jurisdiction": "central",
+  "evidence": [
+   {
+    "field": "provision",
+    "quote": "under Section 74 of The Central Goods and Services Tax Act, 2017",
+    "para": 2
+   },
+   {
+    "field": "financial_years",
+    "quote": "The notice dated 29/6/2025 pertains to financial years 2018-19 to 2023-24",
+    "para": 2
+   }
+  ]
+ },
+ "notice": {
+  "form": null,
+  "date": "2025-06-29",
+  "reply_due": null,
+  "signed": null,
+  "service_mode": null,
+  "summary_only": null,
+  "hearing": {
+   "date": null,
+   "time": null,
+   "venue": null,
+   "stated_as_na": null
+  },
+  "demand_amount": null,
+  "evidence": [
+   {
+    "field": "notice.date",
+    "quote": "show cause notice dated 29/6/2025 issued by respondent no.4",
+    "para": 2
+   }
+  ]
+ },
+ "events": [
+  {
+   "date": "2025-06-29",
+   "type": "scn_issued",
+   "details": "first s.74 notice, FY 2018-19 to 2023-24, by respondent 4",
+   "quote": "show cause notice dated 29/6/2025 issued by respondent no.4",
+   "para": 2
+  },
+  {
+   "date": "2025-09-18",
+   "type": "scn_issued",
+   "details": "second s.74 notice, FY 2019-20 to 2023-24, by respondent 3",
+   "quote": "notice dated 18/9/2025 pertains to financial years 2019- 20 to 2023-24",
+   "para": 2
+  },
+  {
+   "date": "2025-09-26",
+   "type": "order_passed",
+   "details": "order by respondent 1",
+   "quote": "Challenge is to order dated 26/9/2025 passed by respondent no.1",
+   "para": 2
+  }
+ ],
+ "order": {
+  "form": null,
+  "date": "2025-09-26",
+  "demand_amount": null,
+  "evidence": [
+   {
+    "field": "order.date",
+    "quote": "Challenge is to order dated 26/9/2025 passed by respondent no.1",
+    "para": 2
+   }
+  ]
+ },
+ "defects_argued": [
+  {
+   "type": "consolidated_scn",
+   "finding": "defect_found",
+   "contested": true,
+   "provision": "CGST Act s.74, s.74(10), s.2(106)",
+   "quote": "The argument of Counsel for respondent no.1, therefore, cannot be accepted.",
+   "para": 11
+  }
+ ],
+ "outcome": {
+  "disposition": "partly_allowed",
+  "remanded": false,
+  "quote": "The respondents, however, are at liberty to re- issue notice strictly in terms of the provisions of Section 74 of the CGST Act",
+  "para": 14
+ },
+ "annotation": {
+  "annotator": "claude-draft",
+  "reviewed_by": [],
+  "status": "draft_for_review",
+  "notes": "Contested: the court notes the Delhi HC (Mathur Polymers) allows consolidated notices and the Supreme Court dismissed the SLP in limine; Bombay follows its own Milroc / Rite Water line (paras 6-11). Schema gaps: TWO show cause notices from two different officers; the schema has one notice object (first one recorded, second in events). Outcome is 'partly allowed' with notices and order quashed and liberty to re-issue, not a remand. Odd fact not argued: the order (26/9/2025) came 8 days after the second notice (18/9/2025). Bombay numbers paragraphs '2]', first paragraph is just 'Heard.'"
+ }
+}

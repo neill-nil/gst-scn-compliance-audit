@@ -1,0 +1,2 @@
+-r scripts/requirements.txt
+jsonschema>=4.0

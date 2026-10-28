@@ -1,0 +1,171 @@
+{
+ "cnr": "WBCHCJ0026132026",
+ "schema_version": "0.1-draft",
+ "court": "Calcutta",
+ "case_no": "WPA 991 of 2026",
+ "decision_date": "2026-09-02",
+ "proceeding": {
+  "provision": "74",
+  "tax_period_from": "2020-01",
+  "tax_period_to": "2023-11",
+  "financial_years": [
+   "2019-20",
+   "2020-21",
+   "2021-22",
+   "2022-23",
+   "2023-24"
+  ],
+  "authority": "Additional Commissioner, CGST & Central Excise, Siliguri Commissionerate",
+  "jurisdiction": "central",
+  "evidence": [
+   {
+    "field": "provision",
+    "quote": "Challenging the order passed under Section 74 of the CGST/WBGST Act, 2017",
+    "para": 2
+   },
+   {
+    "field": "tax_period",
+    "quote": "for the tax period from January 2020 to November 2023",
+    "para": 2
+   }
+  ]
+ },
+ "notice": {
+  "form": "DRC-01",
+  "date": "2025-08-14",
+  "reply_due": null,
+  "signed": null,
+  "service_mode": "portal_unspecified",
+  "summary_only": false,
+  "hearing": {
+   "date": null,
+   "time": null,
+   "venue": null,
+   "stated_as_na": null
+  },
+  "demand_amount": null,
+  "evidence": [
+   {
+    "field": "notice.date+form+service",
+    "quote": "summary of the show cause notices uploaded on the portal in Form DRC01 are all dated 14th August, 2025",
+    "para": 8
+   },
+   {
+    "field": "notice.summary_only",
+    "quote": "the documents disclosed by the petitioner would demonstrate that the detailed show cause is available on the file",
+    "para": 8
+   }
+  ]
+ },
+ "events": [
+  {
+   "date": null,
+   "type": "other",
+   "details": "pre-show-cause notice in Form DRC-01A; hearing record notes invalid signatures",
+   "quote": "the pre show-cause notice in Form DRC 1A had invalid signatures",
+   "para": 8
+  },
+  {
+   "date": "2025-08-14",
+   "type": "scn_uploaded",
+   "details": "DRC-01 summaries uploaded on portal",
+   "quote": "summary of the show cause notices uploaded on the portal in Form DRC01 are all dated 14th August, 2025",
+   "para": 8
+  },
+  {
+   "date": "2026-03-17",
+   "type": "other",
+   "details": "earlier writ (WPA 11 of 2026) withdrawn; High Court allowed a belated reply",
+   "quote": "By order dated 17th March, 2026, a Co-ordinate Bench of this Court, while permitting the petitioner to file its response to the show-cause though belatedly",
+   "para": 6
+  },
+  {
+   "date": null,
+   "type": "hearing_attended",
+   "details": "heard, represented by an advocate",
+   "quote": "The petitioner had not only submitted its response but was also heard and was represented by an advocate",
+   "para": 9
+  },
+  {
+   "date": "2026-03-27",
+   "type": "order_passed",
+   "details": "s.74 order",
+   "quote": "the order impugned has been passed on 27th March, 2026",
+   "para": 6
+  }
+ ],
+ "order": {
+  "form": null,
+  "date": "2026-03-27",
+  "demand_amount": null,
+  "evidence": [
+   {
+    "field": "order.date",
+    "quote": "the order impugned has been passed on 27th March, 2026",
+    "para": 6
+   }
+  ]
+ },
+ "defects_argued": [
+  {
+   "type": "signature",
+   "finding": "not_decided",
+   "contested": false,
+   "provision": "CGST Rules r.26(3) (verify)",
+   "quote": "there is no scope for this Court to make such a determination in absence of the records being produced",
+   "para": 8
+  },
+  {
+   "type": "consolidated_scn",
+   "finding": "defect_rejected",
+   "contested": false,
+   "provision": "s.74",
+   "quote": "There is no clubbing of periods in the summary of show-cause in From DRC 01",
+   "para": 8
+  },
+  {
+   "type": "other_procedural",
+   "finding": "defect_rejected",
+   "contested": false,
+   "provision": "proper officer / jurisdiction",
+   "quote": "it is an admitted position that the authority who heard the petitioner was a proper officer within the meaning of the said Act",
+   "para": 9
+  },
+  {
+   "type": "non_speaking_order",
+   "finding": "defect_rejected",
+   "contested": false,
+   "provision": "s.75(6)",
+   "quote": "the order cannot be said to be non- speaking",
+   "para": 9
+  },
+  {
+   "type": "reply_not_considered",
+   "finding": "not_decided",
+   "contested": false,
+   "provision": "natural justice",
+   "quote": "these are all disputed factual issues",
+   "para": 9
+  },
+  {
+   "type": "section_74_ingredients",
+   "finding": "not_decided",
+   "contested": false,
+   "provision": "s.74(1)",
+   "quote": "no specific taxable event or essential ingredients to invoke Section 74 of the said Act has been disclosed",
+   "para": 3
+  }
+ ],
+ "outcome": {
+  "disposition": "dismissed",
+  "remanded": false,
+  "quote": "Accordingly, the writ petition stands dismissed.",
+  "para": 12
+ },
+ "annotation": {
+  "annotator": "claude-draft",
+  "reviewed_by": [],
+  "status": "draft_for_review",
+  "notes": "Dismissed mainly because an appeal was available and the petitioner refused the mandatory pre-deposit (paras 10-12), yet the judge still comments on several defects. Hard calls for the meeting: (1) non-speaking rejected only 'prima facie' - is that defect_rejected or not_decided? (2) consolidated notice rejected here but found in the Bombay case (AR Traders): should 'contested' come from the judgment's own text or from our global list? (3) the signature argument targets the DRC-01A pre-notice and DRC-01 summary, not the order. The s.74 ingredients argument (para 3) gets no ruling; quote is the argument."
+ }
+}

@@ -1,0 +1,148 @@
+{
+ "cnr": "HCBM040404632025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "under Section 74 of The Central Goods and Services Tax Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24"
+   ],
+   "quote": "The notice dated 29/6/2025 pertains to financial years 2018-19 to 2023-24",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-06-29",
+     "quote": "show cause notice dated 29/6/2025 issued by respondent no.4",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   },
+   {
+    "date": {
+     "value": "2025-09-18",
+     "quote": "notice dated 18/9/2025 pertains to financial years 2019- 20 to 2023-24",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order_date": {
+   "value": "2025-09-26",
+   "quote": "Challenge is to order dated 26/9/2025 passed by respondent no.1",
+   "para": 2
+  },
+  "events": [
+   {
+    "date": "2025-06-29",
+    "type": "scn_issued",
+    "quote": "show cause notice dated 29/6/2025 issued by respondent no.4",
+    "para": 2
+   },
+   {
+    "date": "2025-09-18",
+    "type": "scn_issued",
+    "quote": "notice dated 18/9/2025 pertains to financial years 2019- 20 to 2023-24",
+    "para": 2
+   },
+   {
+    "date": "2025-09-26",
+    "type": "order_passed",
+    "quote": "Challenge is to order dated 26/9/2025 passed by respondent no.1",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "finding": "defect_found",
+    "contested": true,
+    "quote": "The argument of Counsel for respondent no.1, therefore, cannot be accepted.",
+    "quote_source": "court",
+    "para": 11
+   }
+  ],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": false,
+   "quote": "The respondents, however, are at liberty to re- issue notice strictly in terms of the provisions of Section 74 of the CGST Act",
+   "para": 14
+  }
+ },
+ "review": {
+  "status": "draft_for_review",
+  "drafted_by": "claude",
+  "reviewed_by": [],
+  "notes": "Contested: Delhi HC (Mathur Polymers) allows consolidated notices; Bombay follows Milroc / Rite Water (paras 6-11). Two notices from two officers."
+ }
+}

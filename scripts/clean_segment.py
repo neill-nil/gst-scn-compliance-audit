@@ -28,7 +28,7 @@ BOILERPLATE = [re.compile(p, re.I) for p in [
     # Karnataka
     r"^NC:\s*\d{4}:KHC", r"^HC-KAR$", r"^-\s*\d+\s*-$",
 ]]
-PARA_START = re.compile(r"^\s*[“\"]?\s*(\d{1,3})\s*\.\s+\S")
+PARA_START = re.compile(r"^\s*[“\"]?\s*(\d{1,3})\s*[.\]]\s+\S")  # "12." or Bombay-style "12]"
 
 
 def pdf_text_pages(pdf: Path) -> list[str]:
@@ -85,8 +85,10 @@ def segment(lines: list[tuple[int, str]]):
         for ch in s:
             if ch == "“":
                 in_quote = True
-            elif ch == "”" or (ch == '"' and in_quote):
+            elif ch == "”":
                 in_quote = False
+            elif ch == '"':  # straight quotes open and close the same way
+                in_quote = not in_quote
         lines_in_quote = lines_in_quote + 1 if in_quote else 0
     for p in paras:
         p["text"] = re.sub(r"\s+", " ", " ".join(p.pop("lines"))).strip()

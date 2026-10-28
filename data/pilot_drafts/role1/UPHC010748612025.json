@@ -1,0 +1,156 @@
+{
+ "cnr": "UPHC010748612025",
+ "schema_version": "0.1-draft",
+ "court": "Allahabad",
+ "case_no": "Writ Tax No. 526 of 2025",
+ "decision_date": "2025-02-19",
+ "proceeding": {
+  "provision": "73",
+  "tax_period_from": "2018-04",
+  "tax_period_to": "2019-03",
+  "financial_years": [
+   "2018-19"
+  ],
+  "authority": "Deputy Commissioner, State Tax, Mirzapur",
+  "jurisdiction": "state",
+  "evidence": [
+   {
+    "field": "provision",
+    "quote": "notice was issued under Section 73(1) of the Act on 23.12.2023",
+    "para": 3
+   },
+   {
+    "field": "tax_period",
+    "quote": "For the tax period April, 2018 to March, 2019",
+    "para": 2
+   },
+   {
+    "field": "authority",
+    "quote": "Deputy Commissioner, State Tax, Mirzapur",
+    "para": 18
+   }
+  ]
+ },
+ "notice": {
+  "form": null,
+  "date": "2023-12-23",
+  "reply_due": "2024-01-20",
+  "signed": null,
+  "service_mode": null,
+  "summary_only": null,
+  "hearing": {
+   "date": "2024-01-20",
+   "time": null,
+   "venue": null,
+   "stated_as_na": false
+  },
+  "demand_amount": null,
+  "evidence": [
+   {
+    "field": "notice.date",
+    "quote": "notice was issued under Section 73(1) of the Act on 23.12.2023",
+    "para": 3
+   },
+   {
+    "field": "notice.reply_due+hearing.date",
+    "quote": "the date indicated by which reply was to be submitted was 20.01.2024 and date of personal hearing was also fixed on the same date",
+    "para": 3
+   }
+  ]
+ },
+ "events": [
+  {
+   "date": null,
+   "type": "other",
+   "details": "s.61 scrutiny notice; reply due 22.02.2023; hearing denied in that notice",
+   "quote": "a notice under Section 61 of the Act intimating discrepancies in the return after scrutiny was issued",
+   "para": 2
+  },
+  {
+   "date": "2023-12-23",
+   "type": "scn_issued",
+   "details": "s.73(1) notice, ITC difference",
+   "quote": "notice was issued under Section 73(1) of the Act on 23.12.2023",
+   "para": 3
+  },
+  {
+   "date": "2024-01-18",
+   "type": "reply_filed",
+   "details": "reply on reverse charge mechanism with invoices",
+   "quote": "The petitioner filed his reply on 18.01.2024",
+   "para": 4
+  },
+  {
+   "date": "2024-04-30",
+   "type": "order_passed",
+   "details": "s.73(9) order, reply partly accepted",
+   "quote": "The respondent no. 2 passed order dated 30.04.2024 under Section 73(9) of the Act partly accepting the reply",
+   "para": 5
+  },
+  {
+   "date": "2024-10-09",
+   "type": "other",
+   "details": "s.161 rectification application rejected",
+   "quote": "the application was rejected by order dated 09.10.2024",
+   "para": 6
+  }
+ ],
+ "order": {
+  "form": null,
+  "date": "2024-04-30",
+  "demand_amount": null,
+  "evidence": [
+   {
+    "field": "order.date",
+    "quote": "The respondent no. 2 passed order dated 30.04.2024 under Section 73(9) of the Act",
+    "para": 5
+   }
+  ]
+ },
+ "defects_argued": [
+  {
+   "type": "hearing_75_4",
+   "finding": "defect_found",
+   "contested": false,
+   "provision": "CGST/UPGST Act s.75(4)",
+   "quote": "This Court has repeatedly frowned on the action of the respondents in fixing identical date of reply and date of hearing",
+   "para": 12
+  },
+  {
+   "type": "reply_not_considered",
+   "finding": "defect_found",
+   "contested": false,
+   "provision": "s.75(4)/(6), natural justice",
+   "quote": "the respondent no. 2 did not deal with the said aspect at all and a wholly cursory finding",
+   "para": 13
+  },
+  {
+   "type": "non_speaking_order",
+   "finding": "defect_found",
+   "contested": false,
+   "provision": "s.75(6)",
+   "quote": "Such a cursory disposal of the objection raised in reply to the show cause notice cannot be countenanced",
+   "para": 14
+  },
+  {
+   "type": "other_procedural",
+   "finding": "not_decided",
+   "contested": false,
+   "provision": "s.161 (rectification)",
+   "quote": "rejection of the said application under Section 161 of the Act loses its significance",
+   "para": 16
+  }
+ ],
+ "outcome": {
+  "disposition": "allowed",
+  "remanded": true,
+  "quote": "The matter is remanded back to the Deputy Commissioner, State Tax, Mirzapur for deciding the matter afresh after providing opportunity of hearing to the petitioner",
+  "para": 18
+ },
+ "annotation": {
+  "annotator": "claude-draft",
+  "reviewed_by": [],
+  "status": "draft_for_review",
+  "notes": "Schema gaps: no event type for the s.61 scrutiny notice; 'hearing on the same day reply is due' could be its own flag. Para 17 says the order was under 'Section 79(3)' but paras 1 and 5 say s.73(9): judgment typo, recorded as s.73(9). Para 13 quotes the officer's order in Hindi; text extraction garbles it, so it cannot be quoted."
+ }
+}

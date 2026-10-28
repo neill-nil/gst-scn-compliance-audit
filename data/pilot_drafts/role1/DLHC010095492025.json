@@ -1,0 +1,111 @@
+{
+ "cnr": "DLHC010095492025",
+ "schema_version": "0.1-draft",
+ "court": "Delhi",
+ "case_no": "W.P.(C) 2436/2025",
+ "decision_date": "2025-07-14",
+ "proceeding": {
+  "provision": "73",
+  "tax_period_from": null,
+  "tax_period_to": null,
+  "financial_years": [],
+  "authority": "Sales Tax Officer Class II/AVATO, Ward 71, Zone 6, Delhi",
+  "jurisdiction": "state",
+  "evidence": [
+   {
+    "field": "provision",
+    "quote": "Show Cause Notice (hereinafter, ‘SCN’) dated 22nd September, 2023 issued under Section 73 of the CGST Act",
+    "para": 2
+   },
+   {
+    "field": "authority",
+    "quote": "SALES TAX OFFICER CLASS II/AVATO, WARD 71, ZONE 6, DELHI",
+    "para": 0
+   }
+  ]
+ },
+ "notice": {
+  "form": null,
+  "date": "2023-09-22",
+  "reply_due": null,
+  "signed": null,
+  "service_mode": "portal_additional_notices_tab",
+  "summary_only": null,
+  "hearing": {
+   "date": null,
+   "time": null,
+   "venue": null,
+   "stated_as_na": null
+  },
+  "demand_amount": null,
+  "evidence": [
+   {
+    "field": "notice.date",
+    "quote": "Show Cause Notice (hereinafter, ‘SCN’) dated 22nd September, 2023",
+    "para": 2
+   },
+   {
+    "field": "notice.service_mode",
+    "quote": "the SCN was uploaded on the ‘Additional Notice’ tab",
+    "para": 4
+   }
+  ]
+ },
+ "events": [
+  {
+   "date": "2023-09-22",
+   "type": "scn_issued",
+   "details": "s.73 notice",
+   "quote": "Show Cause Notice (hereinafter, ‘SCN’) dated 22nd September, 2023",
+   "para": 2
+  },
+  {
+   "date": null,
+   "type": "hearing_missed",
+   "details": "no reply filed, hearing not availed, order ex parte",
+   "quote": "no reply was filed by the Petitioner and the personal hearing was also not availed of",
+   "para": 2
+  },
+  {
+   "date": "2023-12-23",
+   "type": "order_passed",
+   "details": "ex parte demand order",
+   "quote": "the impugned order dated 23rd December, 2023",
+   "para": 2
+  }
+ ],
+ "order": {
+  "form": null,
+  "date": "2023-12-23",
+  "demand_amount": 10457420,
+  "evidence": [
+   {
+    "field": "order.demand_amount",
+    "quote": "a total demand of Rs. 1,04,57,420/- has been raised",
+    "para": 2
+   }
+  ]
+ },
+ "defects_argued": [
+  {
+   "type": "service_169",
+   "finding": "defect_found",
+   "contested": false,
+   "provision": "s.169",
+   "quote": "much prior to the time when this issue was rectified by the Department, it is deemed appropriate to set aside the impugned order",
+   "para": 6
+  }
+ ],
+ "outcome": {
+  "disposition": "disposed",
+  "remanded": true,
+  "quote": "remand the matter back to the Adjudicating Authority for it to be heard on merits",
+  "para": 6
+ },
+ "annotation": {
+  "annotator": "claude-draft",
+  "reviewed_by": [],
+  "status": "draft_for_review",
+  "notes": "Service mode is the petitioner's allegation (para 4) which the court accepts by applying earlier rulings (para 5, quoted, and para 6). Para 5 quotes other judgments (Neelgiri Machinery, which quotes ACE Cardiopathy and others): ignore their facts. Para 3 quotes the court's own earlier order in this case asking when the petitioner learnt of the order. Disposition 'disposed' but in substance the taxpayer won (order set aside, remanded)."
+ }
+}

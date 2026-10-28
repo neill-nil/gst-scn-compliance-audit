@@ -1,0 +1,142 @@
+{
+ "cnr": "UPHC010748612025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "notice was issued under Section 73(1) of the Act on 23.12.2023",
+   "para": 3
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "For the tax period April, 2018 to March, 2019",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-23",
+     "quote": "notice was issued under Section 73(1) of the Act on 23.12.2023",
+     "para": 3
+    },
+    "reply_due": {
+     "value": "2024-01-20",
+     "quote": "the date indicated by which reply was to be submitted was 20.01.2024 and date of personal hearing was also fixed on the same date",
+     "para": 3
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "the date indicated by which reply was to be submitted was 20.01.2024 and date of personal hearing was also fixed on the same date",
+     "para": 3
+    },
+    "hearing_date": {
+     "value": "2024-01-20",
+     "quote": "the date indicated by which reply was to be submitted was 20.01.2024 and date of personal hearing was also fixed on the same date",
+     "para": 3
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order_date": {
+   "value": "2024-04-30",
+   "quote": "The respondent no. 2 passed order dated 30.04.2024 under Section 73(9) of the Act",
+   "para": 5
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "scrutiny_notice",
+    "quote": "a notice under Section 61 of the Act intimating discrepancies in the return after scrutiny was issued",
+    "para": 2
+   },
+   {
+    "date": "2023-12-23",
+    "type": "scn_issued",
+    "quote": "notice was issued under Section 73(1) of the Act on 23.12.2023",
+    "para": 3
+   },
+   {
+    "date": "2024-01-18",
+    "type": "reply_filed",
+    "quote": "The petitioner filed his reply on 18.01.2024",
+    "para": 4
+   },
+   {
+    "date": "2024-04-30",
+    "type": "order_passed",
+    "quote": "The respondent no. 2 passed order dated 30.04.2024 under Section 73(9) of the Act partly accepting the reply",
+    "para": 5
+   },
+   {
+    "date": "2024-10-09",
+    "type": "rectification_rejected",
+    "quote": "the application was rejected by order dated 09.10.2024",
+    "para": 6
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "This Court has repeatedly frowned on the action of the respondents in fixing identical date of reply and date of hearing",
+    "quote_source": "court",
+    "para": 12
+   },
+   {
+    "type": "reply_not_considered",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "the respondent no. 2 did not deal with the said aspect at all and a wholly cursory finding",
+    "quote_source": "court",
+    "para": 13
+   },
+   {
+    "type": "non_speaking_order",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Such a cursory disposal of the objection raised in reply to the show cause notice cannot be countenanced",
+    "quote_source": "court",
+    "para": 14
+   },
+   {
+    "type": "other_procedural",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "rejection of the said application under Section 161 of the Act loses its significance",
+    "quote_source": "court",
+    "para": 16
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "The matter is remanded back to the Deputy Commissioner, State Tax, Mirzapur for deciding the matter afresh after providing opportunity of hearing to the petitioner",
+   "para": 18
+  }
+ },
+ "review": {
+  "status": "draft_for_review",
+  "drafted_by": "claude",
+  "reviewed_by": [],
+  "notes": "Para 17 says 'Section 79(3)', paras 1 and 5 say s.73(9): judgment typo. other_procedural = s.161 rectification rejection."
+ }
+}

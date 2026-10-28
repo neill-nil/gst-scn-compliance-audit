@@ -20,3 +20,7 @@ venv/
 
 # Secrets
 .env
+
+# Model call cache and cost log (local to each machine)
+runs/cache/
+runs/llm_calls.jsonl
