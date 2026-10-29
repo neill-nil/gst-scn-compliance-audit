@@ -119,8 +119,15 @@ def _extract_json(text: str):
         raise ValueError("no JSON object found in model output")
     # Parse from whichever bracket comes first; falling back to a later "[" would return an inner list.
     obj, _ = json.JSONDecoder().raw_decode(text[min(starts):])
+    return obj
+
+
+def _drop_schema_echo(obj, schema: dict):
+    """Models sometimes copy the schema's own header keys ("$schema", "title", "description") into the answer."""
     if isinstance(obj, dict):
-        obj.pop("$schema", None)  # models sometimes echo the schema's own header key
+        for key in ("$schema", "title", "description"):
+            if key not in schema.get("properties", {}):
+                obj.pop(key, None)
     return obj
 
 
@@ -179,7 +186,7 @@ def complete(backend: str, messages: list, json_schema: dict | None = None, temp
         if json_schema is None:
             break
         try:
-            result = _extract_json(text)
+            result = _drop_schema_echo(_extract_json(text), json_schema)
             _validate(result, json_schema)
             error = None
             break
