@@ -1,0 +1,172 @@
+{
+ "cnr": "HCMD010332502026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "The impugned orders are passed under Section 74 of the TN GST Act, 2017.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2020-21"
+   ],
+   "quote": "Show cause notices were issued on the petitioner on 28.03.2025 alleging that there is turnover difference between GSTR-3B and the profit and loss account as submitted by the petitioner in Form 26AS to the income tax authorities.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-03-28",
+     "quote": "Show cause notices were issued on the petitioner on 28.03.2025 alleging that there is turnover difference between GSTR-3B and the profit and loss account as submitted by the petitioner in Form 26AS to the income tax authorities.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-12-03",
+    "quote": "Not accepting the reasons mentioned by the petitioner, the impugned order of assessment were passed on 03.02.2025.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-03-27",
+    "type": "other",
+    "quote": "The show cause notice further states that the taxpayer paid the pending tax due of CGST Rs.16,22,731/- and SGST of Rs.16,22,731/- vide DRC-03 dated 27.03.2025.",
+    "para": 2
+   },
+   {
+    "date": "2025-03-28",
+    "type": "scn_issued",
+    "quote": "Show cause notices were issued on the petitioner on 28.03.2025 alleging that there is turnover difference between GSTR-3B and the profit and loss account as submitted by the petitioner in Form 26AS to the income tax authorities.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "The petitioner submitted a detailed reply explaining the circumstances in which the tax was not paid at the earliest point of time.",
+    "para": 3
+   },
+   {
+    "date": "2025-12-03",
+    "type": "order_passed",
+    "quote": "Not accepting the reasons mentioned by the petitioner, the impugned order of assessment were passed on 03.02.2025.",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Show cause notices were issued on the petitioner on 28.03.2025 alleging that there is turnover difference between GSTR-3B and the profit and loss account as submitted by the petitioner in Form 26AS to the income tax authorities.",
+    "para": 2
+   },
+   {
+    "type": "scn_ground",
+    "quote": "The show cause notice further states that the taxpayer paid the pending tax due of CGST Rs.16,22,731/- and SGST of Rs.16,22,731/- vide DRC-03 dated 27.03.2025.",
+    "para": 2
+   },
+   {
+    "type": "scn_ground",
+    "quote": "Therefore, the notices were issued, for the belated payment as also for the payment of penalty under Section 74 of the TNGST Act.",
+    "para": 2
+   },
+   {
+    "type": "scn_ground",
+    "quote": "This apart, show cause notices were also issued with reference to non filing of GSTR-9 and GSTR-9C imposing penalties amount of Rs.10,000/- each for CGST and SCST.",
+    "para": 3
+   },
+   {
+    "type": "reply_point",
+    "quote": "The petitioner submitted a detailed reply explaining the circumstances in which the tax was not paid at the earliest point of time.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In such a factual scenario, I am of the view that since the show cause notice or the impugned order that did not expressly record the intention to evade tax as also willful misstatement or suppression of facts, the present proceedings as such cannot grand.",
+    "quote_source": "court",
+    "para": 10
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "These writ petitions are ordered on the following terms: (i)The impugned orders dated 03.12.2025 shall stand set aside.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12532,
+   "tokens_out": 2743,
+   "seconds": 12.19,
+   "cached": false
+  },
+  {
+   "tokens_in": 3744,
+   "tokens_out": 213,
+   "seconds": 2.28,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

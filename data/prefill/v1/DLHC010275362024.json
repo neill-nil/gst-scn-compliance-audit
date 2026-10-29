@@ -1,0 +1,141 @@
+{
+ "cnr": "DLHC010275362024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The order has been passed under Section 73 of the Central Goods and Services Tax Act, 2017",
+   "para": 1
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-29",
+     "quote": "Show Cause Notice dated 29.09.2023",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-28",
+    "quote": "order dated 28.12.2023",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-29",
+    "type": "scn_issued",
+    "quote": "Show Cause Notice dated 29.09.2023 proposing a demand of Rs.3,38,402.00/- against the petitioner has been disposed of",
+    "para": 1
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "Taxpayer neither filed reply/explanation within stipulated period",
+    "para": 4
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "nor appeared for Personal Hearing before Proper Officer on the given date and time.",
+    "para": 4
+   },
+   {
+    "date": "2023-12-28",
+    "type": "order_passed",
+    "quote": "Petitioner impugns order dated 28.12.2023",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Perusal of the Show Cause Notice dated 29.09.2023 shows that the Department has raised issues under separate headings i.e., under declaration of output tax; excess claim of Input Tax Credit ITC and scrutiny of ITC availed.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Petition is disposed of in the above terms.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4450,
+   "tokens_out": 853,
+   "seconds": 4.38,
+   "cached": false
+  },
+  {
+   "tokens_in": 2683,
+   "tokens_out": 50,
+   "seconds": 3.58,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.document_contents[0]:scn_ground"
+  ]
+ }
+}

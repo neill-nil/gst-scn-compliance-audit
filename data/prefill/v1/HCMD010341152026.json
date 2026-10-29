@@ -1,0 +1,133 @@
+{
+ "cnr": "HCMD010341152026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-09-12",
+     "quote": "According to the appellant, upon receipt of the notice in DRC-01 dated 12.09.2024, he submitted his reply and participated in the personal hearing conducted by the respondent.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-06-18",
+    "quote": "The writ petitioner/appellant had originally filed the writ petition challenging the assessment order dated 18.06.2025.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "It is pertinent to note that the appellant had actively participated in the assessment proceedings, and the order was duly uploaded on the GST portal in accordance with Section 169 of the GST Act.",
+    "para": 3
+   }
+  },
+  "events": [
+   {
+    "date": "2024-09-12",
+    "type": "scn_issued",
+    "quote": "According to the appellant, upon receipt of the notice in DRC-01 dated 12.09.2024, he submitted his reply and participated in the personal hearing conducted by the respondent.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "According to the appellant, upon receipt of the notice in DRC-01 dated 12.09.2024, he submitted his reply and participated in the personal hearing conducted by the respondent.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "hearing_attended",
+    "quote": "According to the appellant, upon receipt of the notice in DRC-01 dated 12.09.2024, he submitted his reply and participated in the personal hearing conducted by the respondent.",
+    "para": 2
+   },
+   {
+    "date": "2025-06-18",
+    "type": "order_passed",
+    "quote": "Thereafter, the impugned assessment order came to be passed on 18.06.2025.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "Accordingly, the writ appeal stands dismissed.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9460,
+   "tokens_out": 1815,
+   "seconds": 10.88,
+   "cached": false
+  },
+  {
+   "tokens_in": 5646,
+   "tokens_out": 718,
+   "seconds": 8.91,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

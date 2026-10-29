@@ -1,0 +1,85 @@
+{
+ "cnr": "HCMA010954162024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "Writ Petition is filed under Article 226 of the Constitution of India, to issue a Writ of Certiorari calling for the records of the 1st respondent passed in GSTIN/33AAQPM1720R1ZA/2017-2018 dated 28.12.2022",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2022-12-28",
+    "quote": "Writ Petition is filed under Article 226 of the Constitution of India, to issue a Writ of Certiorari calling for the records of the 1st respondent passed in GSTIN/33AAQPM1720R1ZA/2017-2018 dated 28.12.2022 and consequential Form GST DRC-07 bearing Reference No.ZD331222118943O dated 29.12.2022 quashing the same as void ab initio, without jurisdiction, arbitrary, and violative of Articles 14, 19(1)(g) and 21 of the Constitution of India.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-12-28",
+    "type": "order_passed",
+    "quote": "Writ Petition is filed under Article 226 of the Constitution of India, to issue a Writ of Certiorari calling for the records of the 1st respondent passed in GSTIN/33AAQPM1720R1ZA/2017-2018 dated 28.12.2022 and consequential Form GST DRC-07 bearing Reference No.ZD331222118943O dated 29.12.2022 quashing the same as void ab initio, without jurisdiction, arbitrary, and violative of Articles 14, 19(1)(g) and 21 of the Constitution of India.",
+    "para": 2
+   },
+   {
+    "date": "2024-02-07",
+    "type": "recovery_or_attachment",
+    "quote": "Since the petitioner had entrusted GST compliances to a local auditor, he states that he was unaware of proceedings until he received recovery notice dated 07.02.2024.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons set out above, the impugned order dated 28.12.2022 is set aside and the matter is remanded for reconsideration.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13171,
+   "tokens_out": 4916,
+   "seconds": 14.58,
+   "cached": false
+  },
+  {
+   "tokens_in": 5613,
+   "tokens_out": 244,
+   "seconds": 8.66,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

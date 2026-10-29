@@ -1,0 +1,159 @@
+{
+ "cnr": "HCMA010670242024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-29",
+     "quote": "This was followed by a show cause notice dated 29.09.2023.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-29",
+    "quote": "The impugned order dated 29.12.2023 was issued thereafter.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-20",
+    "type": "pre_scn_intimation",
+    "quote": "Therefore, an intimation was issued on 20.09.2023 in Form GST DRC-01.",
+    "para": 2
+   },
+   {
+    "date": "2023-09-29",
+    "type": "scn_issued",
+    "quote": "This was followed by a show cause notice dated 29.09.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-26",
+    "type": "reply_filed",
+    "quote": "The petitioner replied thereto on 26.12.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-29",
+    "type": "order_passed",
+    "quote": "The impugned order dated 29.12.2023 was issued thereafter.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "The reply filed by the taxpayer was verified.",
+    "para": 5
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The annexure said to be filed as supporting documents are not clear and readable.",
+    "para": 5
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Due to non compliance of section 16(2)(c) of TNGST Act, 2017 the reply filed by the taxpayer is not accepted and the demand proposed in the defect is confirmed.",
+    "para": 5
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In the process, the petitioner's replies were not taken into consideration.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "However, it shall be treated as a show cause notice and responded to.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14849,
+   "tokens_out": 5100,
+   "seconds": 14.94,
+   "cached": false
+  },
+  {
+   "tokens_in": 3512,
+   "tokens_out": 157,
+   "seconds": 3.17,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

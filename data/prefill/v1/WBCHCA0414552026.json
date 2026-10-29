@@ -1,0 +1,151 @@
+{
+ "cnr": "WBCHCA0414552026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "impugned order dated 24th July, 2024 passed by the respondent no.1 under Section 73(9) of the West Bengal Goods and Services Tax Act",
+   "para": 3
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "for the financial year 2020-2021.",
+   "para": 11
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-08-25",
+     "quote": "vide reference No.ZD1908230436065 dated 25.08.2023",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "the intimation has been mainly uploaded in the GST portal under the tab „Additional Notice and Orders‟ as a result of which the petitioner could not respond to the show cause notice",
+     "para": 7
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-07-24",
+    "quote": "impugned order dated 24th July, 2024",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-08-25",
+    "type": "scn_issued",
+    "quote": "a notice in form DRC01 has been issued to RTP vide reference No.ZD1908230436065 dated 25.08.2023 requiring the petitioner to show cause as to why he should not pay the amount specified in the notice along with interest and penalty.",
+    "para": 4
+   },
+   {
+    "date": "2024-07-24",
+    "type": "order_passed",
+    "quote": "impugned order dated 24th July, 2024 passed by the respondent no.1 under Section 73(9) of the West Bengal Goods and Services Tax Act",
+    "para": 3
+   },
+   {
+    "date": "2026-01-30",
+    "type": "recovery_or_attachment",
+    "quote": "marked a lien of Rs.7,98,155/- pertaining from the Bank account of the petitioner on 30th January, 2026",
+    "para": 9
+   },
+   {
+    "date": "2026-07-20",
+    "type": "recovery_or_attachment",
+    "quote": "recovered Rs.81,117/- by debiting the electronic credit ledger on July 20, 2026.",
+    "para": 9
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "requiring the petitioner to show cause as to why he should not pay the amount specified in the notice along with interest and penalty.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The petitioner states that the intimation has been mainly uploaded in the GST portal under the tab „Additional Notice and Orders‟ as a result of which the petitioner could not respond to the show cause notice issued by the respondent authority.",
+    "quote_source": "argument",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above observation and direction, the writ petition is disposed of.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9824,
+   "tokens_out": 1691,
+   "seconds": 11.73,
+   "cached": false
+  },
+  {
+   "tokens_in": 2642,
+   "tokens_out": 188,
+   "seconds": 3.04,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

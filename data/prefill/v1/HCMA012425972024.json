@@ -1,0 +1,89 @@
+{
+ "cnr": "HCMA012425972024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "Order No.GST/33AITPN8569J1ZC/2019-2020",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-08-02",
+    "quote": "quash the order dated 02.08.2024 passed therein.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-08-02",
+    "type": "order_passed",
+    "quote": "quash the order dated 02.08.2024 passed therein.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "summary_only",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is submitted that in the absence of a detailed show cause notice, the opportunity that is granted is illusory and not real.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The writ petition stands disposed of.",
+   "para": 4
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10948,
+   "tokens_out": 3016,
+   "seconds": 11.38,
+   "cached": false
+  },
+  {
+   "tokens_in": 2312,
+   "tokens_out": 117,
+   "seconds": 4.51,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,145 @@
+{
+ "cnr": "HCMA011825552024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "The respondent issued a show cause notice in Form DRC-01 dated 27.12.2023, for the year 2018-19, wherein, the respondent demanded reversal of ITC availed by the petitioner",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-27",
+     "quote": "The respondent issued a show cause notice in Form DRC-01 dated 27.12.2023, for the year 2018-19",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-29",
+    "quote": "Summary of the Order in Form GST DRC- 07 bearing Reference No.ZD3304242365800 dated 29.04.2024 passed by the Respondent",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-27",
+    "type": "scn_issued",
+    "quote": "The respondent issued a show cause notice in Form DRC-01 dated 27.12.2023",
+    "para": 3
+   },
+   {
+    "date": "2024-04-16",
+    "type": "reply_filed",
+    "quote": "the petitioner filed a reply on 16.04.2024 in Form GST DRC-06",
+    "para": 4
+   },
+   {
+    "date": "2024-04-29",
+    "type": "order_passed",
+    "quote": "Subsequently, vide the impugned order dated 29.04.2024, confirmed the said demand.",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "wherein, the respondent demanded reversal of ITC availed by the petitioner, on the ground that the petitioner had availed ITC from tax payer, who did not pay tax on outward supply made to the petitioner.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In terms of Section 75 (4) of the CGST Act, it is mandatory on the part of the respondent to provide an opportunity of hearing to the assessee before passing any adverse order, whereas, in the present case, no such opportunity was granted to the petitioner before confirming the demand made in the show cause notice, therefore, the impugned order is not only against the provisions contemplated under the Section 75 (4) of CGST Act but also suffers from violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, the Writ Petition is allowed on the aforesaid terms.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10615,
+   "tokens_out": 1817,
+   "seconds": 10.65,
+   "cached": false
+  },
+  {
+   "tokens_in": 6452,
+   "tokens_out": 521,
+   "seconds": 9.11,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

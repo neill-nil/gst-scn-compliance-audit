@@ -1,0 +1,121 @@
+{
+ "cnr": "HCMD011183842023",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-25",
+     "quote": "In W.P.(MD) No.25548 of 2023, the petitioner has challenged the impugned Show Cause Notice in Form GST DRC-01 dated 25.09.2023.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "other",
+    "quote": "the petitioner's premises was inspected by the State Tax Officer (ST) (Inspn.), respondent in W.P.(MD) No.25548 of 2023/second respondent in W.P. (MD) No.26389 of 2023 [hereinafter referred to as 'second respondent' for the sake of convenience and clarity] between 14.06.2023 and 16.06.2023.",
+    "para": 4
+   },
+   {
+    "date": "2023-09-25",
+    "type": "scn_issued",
+    "quote": "Based on the inspection and the statement obtained from the petitioner, the second respondent issued the impugned Show Cause Notice in Form GST DRC-01 dated 25.09.2023 to the petitioner.",
+    "para": 4
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In my view, there is no embargo under the Scheme of the respective GST Enactments on the inspecting officer to issue Show Cause Notice.",
+   "para": 12
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 17801,
+   "tokens_out": 4898,
+   "seconds": 14.94,
+   "cached": false
+  },
+  {
+   "tokens_in": 4988,
+   "tokens_out": 87,
+   "seconds": 2.86,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,159 @@
+{
+ "cnr": "HCMD010841262026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "This writ petition challenges the impugned orders dated 22.03.2024 and 23.03.2024 which are assessment orders passed under Section 74 of the TNGST Act, 2017.",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "Tax Period : APR 2020-MAR 2021, F.Y.2020-2021",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "The show cause notice and the impugned assessment order has been uploaded in the GST Portal without the knowledge of the petitioner.",
+     "para": 3
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-03-22",
+    "quote": "calling for the records pertaining to the impugned order passed by the first respondent vide his proceedings in GSTIN : 33BDRPA8702J1Z1/2020-21, dated 22.03.2024 and its consequential summary order passed by the second respondent bearing Reference No. ZD330324148922H, Tax Period : APR 2020-MAR 2021, F.Y.2020-2021, dated 22.03.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-03-22",
+    "type": "order_passed",
+    "quote": "calling for the records pertaining to the impugned order passed by the first respondent vide his proceedings in GSTIN : 33BDRPA8702J1Z1/2020-21, dated 22.03.2024 and its consequential summary order passed by the second respondent bearing Reference No. ZD330324148922H, Tax Period : APR 2020-MAR 2021, F.Y.2020-2021, dated 22.03.2024",
+    "para": 0
+   },
+   {
+    "date": "2024-05-22",
+    "type": "recovery_or_attachment",
+    "quote": "Now, the petitioner came to know that on 22.05.2024, the respondents have recovered 100% SGST and 7% of the CGST.",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Difference between GSTR-3B and GSTR 7",
+    "para": 3
+   },
+   {
+    "type": "reply_point",
+    "quote": "There exits no such difference between GSTR-7 and GSTR-3B as alleged by the respondents.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The show cause notice and the impugned assessment order has been uploaded in the GST Portal without the knowledge of the petitioner.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Thus, if the respondents have perused the same or have granted an effective opportunity of personal hearing to the petitioner, the petitioner can very well explain the same, but the respondents have utterly failed to do so, which amounts to gross violation of principles of natural justice.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In view thereof, this Writ Petition is allowed on the following terms: (i) The impugned orders dated 22.03.2024 and 23.03.2024 shall stand set aside, and the matter shall stand remanded back to the file of the first respondent;",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10391,
+   "tokens_out": 1980,
+   "seconds": 10.61,
+   "cached": false
+  },
+  {
+   "tokens_in": 2816,
+   "tokens_out": 337,
+   "seconds": 4.27,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.notices[0].service_mode:facts.notices[0].service_mode",
+   "facts.document_contents[0]:scn_ground",
+   "facts.document_contents[1]:reply_point",
+   "findings.defects_argued[0]:service_169",
+   "findings.defects_argued[1]:hearing_75_4"
+  ]
+ }
+}

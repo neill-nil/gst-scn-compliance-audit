@@ -1,0 +1,180 @@
+{
+ "cnr": "HCBM040404632025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "show cause notice dated 29/6/2025 issued by respondent no.4, and show cause notice dated 18/9/2025 issued by respondent no.3 under Section 74 of The Central Goods and Services Tax Act, 2017 (for short “CGST Act”).",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-06-29",
+     "quote": "show cause notice dated 29/6/2025 issued by respondent no.4",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   },
+   {
+    "date": {
+     "value": "2025-09-18",
+     "quote": "show cause notice dated 18/9/2025 issued by respondent no.3",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-09-26",
+    "quote": "Challenge is to order dated 26/9/2025 passed by respondent no.1",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-06-29",
+    "type": "scn_issued",
+    "quote": "show cause notice dated 29/6/2025 issued by respondent no.4",
+    "para": 2
+   },
+   {
+    "date": "2025-09-18",
+    "type": "scn_issued",
+    "quote": "show cause notice dated 18/9/2025 issued by respondent no.3",
+    "para": 2
+   },
+   {
+    "date": "2025-09-26",
+    "type": "order_passed",
+    "quote": "Challenge is to order dated 26/9/2025 passed by respondent no.1",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "fraud_allegation",
+    "quote": "saying that the petitioner has, during this period, suppressed taxable value, and thereby made short payments of Central Goods and Service Tax.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_found",
+    "contested": true,
+    "quote": "As could be seen, the Division Bench has, in categorical terms, held that there is no scope for consolidating various financial years/tax period while issuing show cause notice under Section 74 of the CGST Act.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": false,
+   "quote": "The order dated 26/9/2025 passed by respondent no.1, show cause notice dated 29/6/2025 issued by respondent no.4, and show cause notice dated 18/9/2025 issued by respondent no.3, are quashed and set aside.",
+   "para": 14
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13184,
+   "tokens_out": 2233,
+   "seconds": 10.43,
+   "cached": false
+  },
+  {
+   "tokens_in": 8804,
+   "tokens_out": 502,
+   "seconds": 8.62,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

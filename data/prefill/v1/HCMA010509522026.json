@@ -1,0 +1,139 @@
+{
+ "cnr": "HCMA010509522026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "under Section 74(9) of the CGST and TNGST Act, read with Section 122(2)(b) of the CGST/TNGST Act, for being non-payment of tax and order for recovery of the same with penalty of Rs.1,49,51,529/-, i.e., totally around Rs.29 crores is the demand made against the assessee under the order-in-original.",
+   "para": 6
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "taking into consideration the alleged valuation for evasion of tax during the assessment year financial year 2018-2019 in the months of September, October, July, and September and November 2018.",
+   "para": 5
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-07-15",
+     "quote": "Thereafter, it appears that a show cause notice was issued on 15.07.2024 to the address of the assessee by Registered Post Acknowledgement Due (RPAD) and also through e-mail to one Bhoopalan, who is no way connected with the assessee-Company.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "registered_post",
+     "quote": "Thereafter, it appears that a show cause notice was issued on 15.07.2024 to the address of the assessee by Registered Post Acknowledgement Due (RPAD) and also through e-mail to one Bhoopalan, who is no way connected with the assessee-Company.",
+     "para": 2
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-07-30",
+    "quote": "Following the show cause notice, order- in-original was passed on 30.07.2025 and thereafter, on being uploaded in the portal of the assessee, who has agitated the cause by filing application to rectify and recall the impugned order-in-original, dated 30.07.2015, which was negatived by the Department",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "Following the show cause notice, order- in-original was passed on 30.07.2025 and thereafter, on being uploaded in the portal of the assessee, who has agitated the cause by filing application to rectify and recall the impugned order-in-original, dated 30.07.2015, which was negatived by the Department",
+    "para": 2
+   }
+  },
+  "events": [
+   {
+    "date": "2024-07-15",
+    "type": "scn_issued",
+    "quote": "Thereafter, it appears that a show cause notice was issued on 15.07.2024 to the address of the assessee by Registered Post Acknowledgement Due (RPAD) and also through e-mail to one Bhoopalan, who is no way connected with the assessee-Company.",
+    "para": 2
+   },
+   {
+    "date": "2025-07-30",
+    "type": "order_passed",
+    "quote": "Following the show cause notice, order- in-original was passed on 30.07.2025 and thereafter, on being uploaded in the portal of the assessee, who has agitated the cause by filing application to rectify and recall the impugned order-in-original, dated 30.07.2015, which was negatived by the Department",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "rectification_rejected",
+    "quote": "Following the show cause notice, order- in-original was passed on 30.07.2025 and thereafter, on being uploaded in the portal of the assessee, who has agitated the cause by filing application to rectify and recall the impugned order-in-original, dated 30.07.2015, which was negatived by the Department",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "the vague allegation of the assessee that notice was not properly considered, cannot stand in the way of the Department expecting the conditional order to revisit its order-in-original.",
+    "quote_source": "argument",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "Accordingly, this Writ Appeal is dismissed.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 11582,
+   "tokens_out": 2579,
+   "seconds": 11.36,
+   "cached": false
+  },
+  {
+   "tokens_in": 3310,
+   "tokens_out": 130,
+   "seconds": 3.09,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

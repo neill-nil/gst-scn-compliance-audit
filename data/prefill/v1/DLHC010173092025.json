@@ -1,0 +1,137 @@
+{
+ "cnr": "DLHC010173092025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The Petitioner has approached this Court challenging the Order dated 21.12.2023 passed by the Respondent No.1 under Section 73 of the Central Goods and Services Tax Act, 2017",
+   "para": 1
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-29",
+     "quote": "pursuant to a Show Cause Notice dated 29.09.2023.",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "it appears that the Show Cause Notice was uploaded on the portal in the category of ‘Additional Notices’ which were not easily accessible, and accordingly skipped the attention of the Petitioner.",
+     "para": 2
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-21",
+    "quote": "challenging the Order dated 21.12.2023 passed by the Respondent No.1 under Section 73 of the Central Goods and Services Tax Act, 2017 (hereinafter referred to as “CGST Act”) and the Order dated 13.11.2024 passed by Respondent No.2 pursuant to a Show Cause Notice dated 29.09.2023.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-29",
+    "type": "scn_issued",
+    "quote": "pursuant to a Show Cause Notice dated 29.09.2023.",
+    "para": 1
+   },
+   {
+    "date": "2023-12-21",
+    "type": "order_passed",
+    "quote": "The Petitioner has approached this Court challenging the Order dated 21.12.2023 passed by the Respondent No.1 under Section 73 of the Central Goods and Services Tax Act, 2017 (hereinafter referred to as “CGST Act”) and the Order dated 13.11.2024 passed by Respondent No.2 pursuant to a Show Cause Notice dated 29.09.2023.",
+    "para": 1
+   },
+   {
+    "date": "2024-11-13",
+    "type": "order_passed",
+    "quote": "The Petitioner has approached this Court challenging the Order dated 21.12.2023 passed by the Respondent No.1 under Section 73 of the Central Goods and Services Tax Act, 2017 (hereinafter referred to as “CGST Act”) and the Order dated 13.11.2024 passed by Respondent No.2 pursuant to a Show Cause Notice dated 29.09.2023.",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "He submits that the Show Cause Notices are normally uploaded on the portal under the heading of ‘Notices’, however, in the instant case it appears that the Show Cause Notice was uploaded on the portal in the category of ‘Additional Notices’ which were not easily accessible, and accordingly skipped the attention of the Petitioner.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With these observations, the petition is disposed of, along with pending application(s), if any.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10587,
+   "tokens_out": 1662,
+   "seconds": 9.03,
+   "cached": false
+  },
+  {
+   "tokens_in": 3090,
+   "tokens_out": 231,
+   "seconds": 2.82,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

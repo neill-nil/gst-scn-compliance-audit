@@ -1,0 +1,159 @@
+{
+ "cnr": "DLHC010861492024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "pertaining to the Financial Year 2019-20",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-27",
+     "quote": "show cause notice dated 27th May, 2024",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-30",
+    "quote": "consequent order dated 30th August, 2024 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-27",
+    "type": "scn_issued",
+    "quote": "show cause notice dated 27th May, 2024 (hereinafter, ‘the SCN’) issued by the Department of Trade and Taxes, GNCTD",
+    "para": 2
+   },
+   {
+    "date": "2024-08-30",
+    "type": "order_passed",
+    "quote": "consequent order dated 30th August, 2024 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi (hereinafter, ‘the impugned order’)",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "Till date, the reply of the taxpayer has not been upload. Hence, this demand is created.",
+    "para": 11
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "In the present case, the submission of the Petitioner, on facts, is that the Petitioner was not afforded an opportunity to file a reply to SCN and the impugned order was passed without affording the Petitioner with an opportunity to be heard.",
+    "quote_source": "argument",
+    "para": 11
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "In the present case, the submission of the Petitioner, on facts, is that the Petitioner was not afforded an opportunity to file a reply to the SCN and the impugned order was passed without affording the Petitioner with an opportunity to be heard.",
+    "quote_source": "argument",
+    "para": 11
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The impugned order is nonspeaking, cryptic and vague in nature and has therefore been issued in complete violation of the principles of natural justice and is thereby liable to be set aside on the said ground.",
+    "quote_source": "argument",
+    "para": 11
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13916,
+   "tokens_out": 1766,
+   "seconds": 10.09,
+   "cached": false
+  },
+  {
+   "tokens_in": 9661,
+   "tokens_out": 676,
+   "seconds": 9.78,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[0]:extension_notification_validity"
+  ]
+ }
+}

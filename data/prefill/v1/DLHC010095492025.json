@@ -1,0 +1,143 @@
+{
+ "cnr": "DLHC010095492025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The same was passed pursuant to a Show Cause Notice (hereinafter, ‘SCN’) dated 22nd September, 2023 issued under Section 73 of the CGST Act (hereinafter ‘the Act’).",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-22",
+     "quote": "The same was passed pursuant to a Show Cause Notice (hereinafter, ‘SCN’) dated 22nd September, 2023 issued under Section 73 of the CGST Act (hereinafter ‘the Act’).",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "The Petitioner further states that the SCN was uploaded on the ‘Additional Notice’ tab and therefore, it did not come to the knowledge of the Petitioner.",
+     "para": 4
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-23",
+    "quote": "The present petition has been filed by the Petitioner challenging the impugned order dated 23rd December, 2023 (hereinafter ‘impugned order’) by which a total demand of Rs. 1,04,57,420/- has been raised against the Petitioner.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-22",
+    "type": "scn_issued",
+    "quote": "The same was passed pursuant to a Show Cause Notice (hereinafter, ‘SCN’) dated 22nd September, 2023 issued under Section 73 of the CGST Act (hereinafter ‘the Act’).",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "It is noticed that no reply was filed by the Petitioner and the personal hearing was also not availed of and the impugned order has been passed ex-parte.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "It is noticed that no reply was filed by the Petitioner and the personal hearing was also not availed of and the impugned order has been passed ex-parte.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-23",
+    "type": "order_passed",
+    "quote": "The present petition has been filed by the Petitioner challenging the impugned order dated 23rd December, 2023 (hereinafter ‘impugned order’) by which a total demand of Rs. 1,04,57,420/- has been raised against the Petitioner.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In view of the fact that SCN is dated 22nd September, 2023, much prior to the time when this issue was rectified by the Department, it is deemed appropriate to set aside the impugned order and remand the matter back to the Adjudicating Authority for it to be heard on merits.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view of the fact that SCN is dated 22nd September, 2023, much prior to the time when this issue was rectified by the Department, it is deemed appropriate to set aside the impugned order and remand the matter back to the Adjudicating Authority for it to be heard on merits.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 11380,
+   "tokens_out": 2023,
+   "seconds": 9.74,
+   "cached": true
+  },
+  {
+   "tokens_in": 3348,
+   "tokens_out": 259,
+   "seconds": 5.64,
+   "cached": true
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

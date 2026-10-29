@@ -1,0 +1,142 @@
+{
+ "cnr": "HCMA011311762024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "Alleging that the petitioner had wrongly availed the Input Tax Credit (ITC) for the financial year 2017-2018, the respondent passed an impugned order dated 20.12.2023, demanding the payment of differential amount along with interest and penalty in respect of the impugned assessment period.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-26",
+     "quote": "The learned counsel for the petitioner submitted that, a show cause notice in Form GST DRC-01 dated 26.09.2023 raised on the petitioner in the GST portal under the head “Other Notices” tab, as the petitioner was unaware of the same, he failed to respond the said show cause notice, which led to the passing of the present impugned order.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "The learned counsel for the petitioner submitted that, a show cause notice in Form GST DRC-01 dated 26.09.2023 raised on the petitioner in the GST portal under the head “Other Notices” tab, as the petitioner was unaware of the same, he failed to respond the said show cause notice, which led to the passing of the present impugned order.",
+     "para": 3
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-20",
+    "quote": "Alleging that the petitioner had wrongly availed the Input Tax Credit (ITC) for the financial year 2017-2018, the respondent passed an impugned order dated 20.12.2023, demanding the payment of differential amount along with interest and penalty in respect of the impugned assessment period.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "Further, he submitted that even an impugned order was uploaded in the GST portal and the physical version of such order was not served on the petitioner.",
+    "para": 3
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-26",
+    "type": "scn_issued",
+    "quote": "The learned counsel for the petitioner submitted that, a show cause notice in Form GST DRC-01 dated 26.09.2023 raised on the petitioner in the GST portal under the head “Other Notices” tab, as the petitioner was unaware of the same, he failed to respond the said show cause notice, which led to the passing of the present impugned order.",
+    "para": 3
+   },
+   {
+    "date": "2023-12-20",
+    "type": "order_passed",
+    "quote": "Alleging that the petitioner had wrongly availed the Input Tax Credit (ITC) for the financial year 2017-2018, the respondent passed an impugned order dated 20.12.2023, demanding the payment of differential amount along with interest and penalty in respect of the impugned assessment period.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "it is evident that the impugned show cause notice was uploaded on the GST Portal Tab.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "this Court is of the view that the impugned order came to be passed without affording any opportunity of personal hearing to the petitioner to establish its case, thereby violating the principles of natural justice",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The orders impugned herein are set aside and the matter is remanded to the respondent for fresh consideration.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10320,
+   "tokens_out": 2135,
+   "seconds": 14.16,
+   "cached": false
+  },
+  {
+   "tokens_in": 2790,
+   "tokens_out": 270,
+   "seconds": 2.86,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

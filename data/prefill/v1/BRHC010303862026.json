@@ -1,0 +1,174 @@
+{
+ "cnr": "BRHC010303862026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "under sub-section 9 of section 73 of the Central Goods and Services Tax Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "for the tax period April 2020-March 2021",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-10-25",
+     "quote": "Show Cause Notice (hereinafter referred to as “SCN” for short) dated 25/10/2024",
+     "para": 2
+    },
+    "reply_due": {
+     "value": "2024-11-25",
+     "quote": "The petitioner was advised to pay the amount of taxes ascertained along with amount of applicable interest or submit his explanation by 24.11.2024",
+     "para": 23
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": "no date for personal hearing was fixed as the specific column for personal hearing was marked \"NA\"",
+     "para": 7
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "uploaded only under the \"Additional Notices and Orders\" tab instead of the \"Notices and Orders\" tab.",
+     "para": 6
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": false,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-18",
+    "quote": "ex-parte summary of Order dated 18/02/2025 along with a summary order in form GST DRC-07 dated 18/02/2025",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "found uploaded on the \"Additional Notices and Orders\" tab of GST Portal.",
+    "para": 8
+   }
+  },
+  "events": [
+   {
+    "date": "2024-10-25",
+    "type": "scn_issued",
+    "quote": "a notice to show cause was issued on 25.10.2024 to the petitioner through GST portal.",
+    "para": 11
+   },
+   {
+    "date": "2024-11-13",
+    "type": "other",
+    "quote": "two reminders dated 13.11.2024 and 11.02.2025 were also served on the petitioner.",
+    "para": 12
+   },
+   {
+    "date": "2025-02-11",
+    "type": "other",
+    "quote": "two reminders dated 13.11.2024 and 11.02.2025 were also served on the petitioner.",
+    "para": 12
+   },
+   {
+    "date": "2025-02-18",
+    "type": "order_passed",
+    "quote": "The adjudication proceeding culminated into a demand vide order dated 18.02.2025.",
+    "para": 12
+   },
+   {
+    "date": "2025-11-26",
+    "type": "recovery_or_attachment",
+    "quote": "a copy of the notice under Section 79(1)(c) of the Central Goods and Services Act/Bihar Goods and Services Tax, (in short 'CGST/BGST') Act, 2017 in Form GST DRC-13 dated 26.11.2025",
+    "para": 3
+   },
+   {
+    "date": "2026-03-16",
+    "type": "recovery_or_attachment",
+    "quote": "Notice for recovery u/s 79(1)(c) of the CGST/BGST Act, 2017 in form GST DRC-13 dated 16/03/2026",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Ground:- Excess claim of ITC and suppression of turnover.",
+    "para": 22
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "The only bald statement of the petitioner is that he has been deprived of an opportunity of effective personal hearing and that there is no proper compliance with Section 169 of the BGST Act.",
+    "quote_source": "court",
+    "para": 28
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "The only bald statement of the petitioner is that he has been deprived of an opportunity of effective personal hearing and that there is no proper compliance with Section 169 of the BGST Act.",
+    "quote_source": "court",
+    "para": 28
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "The writ application is dismissed.",
+   "para": 35
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 32069,
+   "tokens_out": 5425,
+   "seconds": 18.73,
+   "cached": false
+  },
+  {
+   "tokens_in": 24659,
+   "tokens_out": 541,
+   "seconds": 8.78,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [
+   "facts.notices[0].summary_only: a value needs a quote, and no value means no quote"
+  ],
+  "quotes_not_found": []
+ }
+}

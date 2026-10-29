@@ -1,0 +1,133 @@
+{
+ "cnr": "HCMA010976642025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "quash the Impugned Order under section 73 of the Tamil Nadu Goods and Service Tax Act, 2017/Central Goods and Service Tax Act, 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "passed by the First Respondent for FY 2017-18",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-29",
+     "quote": "The show cause notice dated 29.09.2023 and a reminder were uploaded in the GST Portal tab",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "The show cause notice dated 29.09.2023 and a reminder were uploaded in the GST Portal tab",
+     "para": 2
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-23",
+    "quote": "including the Summary of the Order in Form GST DRC-07 both dated 23.12.2023",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "Even the impugned order dated 23.12.2023 was also uploaded in the GST Portal, which is violation of principle of natural justice.",
+    "para": 2
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-29",
+    "type": "scn_issued",
+    "quote": "The show cause notice dated 29.09.2023 and a reminder were uploaded in the GST Portal tab and the petitioner had no ocassion to open the GST Portal.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-23",
+    "type": "order_passed",
+    "quote": "Even the impugned order dated 23.12.2023 was also uploaded in the GST Portal, which is violation of principle of natural justice.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In such circumstances, this Court is of the view that the impugned assessment order came to be passed without affording any opportunity of personal hearing to the petitioner, confirming the proposals contained in the show cause notice.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, the writ petition is disposed of.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10928,
+   "tokens_out": 1697,
+   "seconds": 11.48,
+   "cached": false
+  },
+  {
+   "tokens_in": 3210,
+   "tokens_out": 180,
+   "seconds": 3.56,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,153 @@
+{
+ "cnr": "DLHC010208732025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The petition also challenges the consequent order dated 30th July, 2024 (hereinafter, ‘the impugned order’) passed under Section 73 of the Central Goods and Services Tax Act, 2017 (hereinafter, ‘CGST Act, 2017’)",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "pertaining to the tax period April, 2019 to March, 2020.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-23",
+     "quote": "challenging the show cause notice dated 23rd May, 2024 (hereinafter, ‘the SCN’) issued by the Department of Trade & Taxes upon the Petitioner concern pertaining to the tax period April, 2019 to March, 2020.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-07-30",
+    "quote": "The petition also challenges the consequent order dated 30th July, 2024 (hereinafter, ‘the impugned order’) passed under Section 73 of the Central Goods and Services Tax Act, 2017 (hereinafter, ‘CGST Act, 2017’)",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-23",
+    "type": "scn_issued",
+    "quote": "challenging the show cause notice dated 23rd May, 2024 (hereinafter, ‘the SCN’) issued by the Department of Trade & Taxes upon the Petitioner concern pertaining to the tax period April, 2019 to March, 2020.",
+    "para": 2
+   },
+   {
+    "date": "2024-07-30",
+    "type": "order_passed",
+    "quote": "The petition also challenges the consequent order dated 30th July, 2024 (hereinafter, ‘the impugned order’) passed under Section 73 of the Central Goods and Services Tax Act, 2017 (hereinafter, ‘CGST Act, 2017’)",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The challenge made by the Petitioner to the impugned notification in the present proceedings shall also be subject to the outcome of the decision of the Supreme Court.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "On facts, however, the submission of the Petitioner in the present petition is that the Petitioner was not afforded with an opportunity to file a reply to the SCN dated 23rd May, 2024 and the impugned order was passed without affording the Petitioner with an opportunity to be heard.",
+    "quote_source": "argument",
+    "para": 6
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Hence, the impugned order is a non-speaking order and is liable to be set aside on the said ground.",
+    "quote_source": "argument",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 6262,
+   "tokens_out": 896,
+   "seconds": 4.47,
+   "cached": false
+  },
+  {
+   "tokens_in": 9599,
+   "tokens_out": 824,
+   "seconds": 10.68,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[0]:extension_notification_validity"
+  ]
+ }
+}

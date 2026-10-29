@@ -1,0 +1,139 @@
+{
+ "cnr": "DLHC010831492025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "seeking the quashing of the impugned order dated 9th August, 2024 for the Financial Year 2019-20",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-23",
+     "quote": "The present petition also challenges the impugned Show Cause Notice dated 23rd May, 2024 issued by Sales Tax Officer Class II/Avato Ward 90, Zone-8, Delhi(hereinafter ‘impugned SCNs’).",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-09",
+    "quote": "seeking the quashing of the impugned order dated 9th August, 2024 for the Financial Year 2019-20",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-23",
+    "type": "scn_issued",
+    "quote": "The present petition also challenges the impugned Show Cause Notice dated 23rd May, 2024 issued by Sales Tax Officer Class II/Avato Ward 90, Zone-8, Delhi(hereinafter ‘impugned SCNs’).",
+    "para": 2
+   },
+   {
+    "date": "2024-07-01",
+    "type": "other",
+    "quote": "A reminder was also issued to the Petitioner on 1st July, 2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-08-09",
+    "type": "order_passed",
+    "quote": "seeking the quashing of the impugned order dated 9th August, 2024 for the Financial Year 2019-20",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The challenge in the present petitions is similar to a batch of petitions wherein inter alia, the impugned notifications were challenged.",
+    "quote_source": "argument",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14244,
+   "tokens_out": 1703,
+   "seconds": 10.82,
+   "cached": false
+  },
+  {
+   "tokens_in": 4860,
+   "tokens_out": 164,
+   "seconds": 3.48,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

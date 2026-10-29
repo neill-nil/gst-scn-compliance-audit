@@ -1,0 +1,154 @@
+{
+ "cnr": "DLHC010530692025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "challenging the order dated 27th August, 2024 passed in respect of F.Y. 2019-20 by the office of Sales Tax Officer Class II/ AVATO, Delhi.",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-20",
+     "quote": "The Show Cause Notice was issued to the Petitioner on 20th May, 2024.",
+     "para": 11
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-27",
+    "quote": "challenging the order dated 27th August, 2024 passed in respect of F.Y. 2019-20 by the office of Sales Tax Officer Class II/ AVATO, Delhi.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-20",
+    "type": "scn_issued",
+    "quote": "The Show Cause Notice was issued to the Petitioner on 20th May, 2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-06-13",
+    "type": "adjournment_requested",
+    "quote": "On 13th June, 2024, the Petitioner filed a reply seeking time till 30th June, 2024 to file certain documents.",
+    "para": 11
+   },
+   {
+    "date": "2024-06-25",
+    "type": "other",
+    "quote": "A reminder notice was also issued by the Department on 25th June, 2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-08-27",
+    "type": "order_passed",
+    "quote": "Thereafter, the impugned order was passed on 27th August, 2024.",
+    "para": 11
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The validity of the impugned notification was under consideration before this Court in a batch of petitions with the lead petition being W.P.(C) 16499/2023 titled ‘DJST Traders Pvt. Ltd. vs. Union of India and Ors.’.",
+    "quote_source": "argument",
+    "para": 5
+   },
+   {
+    "type": "adjournment_75_5",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "In the present case, Ms. Kavita Jha, ld. Sr. Counsel for the Petitioner submits that the opportunity to file a reply was not availed of by the Petitioner who had in fact sought an adjournment before the Adjudicating Authority.",
+    "quote_source": "argument",
+    "para": 11
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "Accordingly, the present writ petition is disposed of in above terms.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13036,
+   "tokens_out": 1791,
+   "seconds": 11.88,
+   "cached": false
+  },
+  {
+   "tokens_in": 8934,
+   "tokens_out": 642,
+   "seconds": 10.78,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

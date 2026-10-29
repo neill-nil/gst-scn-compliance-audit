@@ -1,0 +1,101 @@
+{
+ "cnr": "HCMD010734582026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The same is an order of assessment passed under Section 73 of the Tamil Nadu Goods and Services TaxAct, 2017.",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "and direct the respondent to redo the assessment proceedings for the year 2021-22 and thus render justice.",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2025-12-12",
+    "quote": "and in summary order Reference No ZD331225183153O dated 12.12.2025 and quash the same as illegal and devoid of merits",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "scn_issued",
+    "quote": "upon receipt of show cause notice, the petitioner submitted a reply.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "upon receipt of show cause notice, the petitioner submitted a reply.",
+    "para": 2
+   },
+   {
+    "date": "2025-12-12",
+    "type": "order_passed",
+    "quote": "This writ petition is filed challenging the impugned order dated 12.12.2025.",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Merely because pointed reply was not submitted with reference to one of the discrepancy and claiming that supporting documents are not filed, the claim of the petitioner is rejected while its case has been accepted in respect of the some of the discrepancies and the proceedings were dropped.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "The impugned order dated 12.12.2025 shall stand set aside, inasmuch as it relates to the discrepancies where the proposals made in the showcase notices were confirmed against the petitioner the matter stands remitted back to the file of the respondent.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13083,
+   "tokens_out": 4673,
+   "seconds": 14.46,
+   "cached": false
+  },
+  {
+   "tokens_in": 2629,
+   "tokens_out": 232,
+   "seconds": 4.82,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

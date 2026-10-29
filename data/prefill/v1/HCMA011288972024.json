@@ -1,0 +1,105 @@
+{
+ "cnr": "HCMA011288972024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2023-10-18",
+    "quote": "The present Writ Petition has been filed challenging impugned order dated 18.10.2023 passed by the 1st Respondent herein in FORM GST DRC - 07 with Ref. No.ZD3310231111304B.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "Both the show cause notice as well as the impugned order were not served on the petitioner and only uploaded in the GST online portal and the petitioner was not able to defend the case.",
+    "para": 2
+   }
+  },
+  "events": [
+   {
+    "date": "2023-10-18",
+    "type": "order_passed",
+    "quote": "The present Writ Petition has been filed challenging impugned order dated 18.10.2023 passed by the 1st Respondent herein in FORM GST DRC - 07 with Ref. No.ZD3310231111304B.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "summary_only",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The learned counsel for the petitioner submits that the only summary in form GST DRC-07 has been uploaded on the GST portal and the same is ex-facie contrary to Section 75(6) of the GST Act.",
+    "quote_source": "argument",
+    "para": 2
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In the present case, it appears that the notices have been uploaded in the GST portal and the same were not at all physically served to the petitioner, due to which, the petitioner was unaware about the said notice.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "However, in the present case, no reply was filed by the petitioner and no opportunity of personal hearing was provided to the petitioner.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order dated 18.10.2023 is set aside and remanded the matter back to the respondent on condition that the petitioner shall deposit 40% of the disputed tax demand of the impugned assessment year, within a period of four (4) weeks from the date of receipt of a copy of this order and thereafter, the petitioner is directed to file a reply within a period of two (2) weeks.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10025,
+   "tokens_out": 759,
+   "seconds": 9.77,
+   "cached": false
+  },
+  {
+   "tokens_in": 2977,
+   "tokens_out": 468,
+   "seconds": 6.84,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

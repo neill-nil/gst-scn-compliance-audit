@@ -1,0 +1,158 @@
+{
+ "cnr": "DLHC010233152025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-25",
+     "quote": "the impugned order arises out of the Show Cause Notice (hereinafter ‘SCN’) dated 25th September, 2023",
+     "para": 7
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "which was uploaded only on the ‘Additional Notices Tab’; therefore, the same did not come to the knowledge of the Petitioner.",
+     "para": 7
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-25",
+    "quote": "demand order dated 25th December, 2023 (hereinafter ‘impugned order’) passed by Respondent No.1 - Sales Tax Officer Class II/AVATO, Ward 63 Zone 6, Delhi confirming the demand to the tune of Rs. 6,61,046/- against the Petitioner.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-25",
+    "type": "scn_issued",
+    "quote": "the impugned order arises out of the Show Cause Notice (hereinafter ‘SCN’) dated 25th September, 2023 which was uploaded only on the ‘Additional Notices Tab’",
+    "para": 7
+   },
+   {
+    "date": "2023-12-25",
+    "type": "order_passed",
+    "quote": "The impugned order dated 25th December, 2023 was passed without providing the Petitioner a personal hearing and in the absence of a reply on behalf of the Petitioner.",
+    "para": 7
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Considering the above circumstances, this Court is of the opinion that the Petitioner deserves an opportunity to be heard on merits.",
+    "quote_source": "court",
+    "para": 9
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The impugned order dated 25th December, 2023 was passed without providing the Petitioner a personal hearing and in the absence of a reply on behalf of the Petitioner.",
+    "quote_source": "argument",
+    "para": 7
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The impugned order dated 25th December, 2023 was passed without providing the Petitioner a personal hearing and in the absence of a reply on behalf of the Petitioner.",
+    "quote_source": "argument",
+    "para": 7
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "Additionally, the petition seeks to declare Notification No. 9/2023-Central Tax dated 31st March, 2023 as well as Notification No.9/2023-State Tax dated 22nd June, 2023 (hereinafter ‘impugned notifications’) as being violative of Central/Delhi Goods and Services Tax Act, 2017 as well as Article 14 and 19(1)(g) of the Constitution of India.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view thereof, the impugned order is set aside and the matter is relegated back to the concerned Adjudicating Authority for the Petitioner to be heard on merits.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14879,
+   "tokens_out": 1557,
+   "seconds": 9.09,
+   "cached": false
+  },
+  {
+   "tokens_in": 11105,
+   "tokens_out": 1064,
+   "seconds": 9.0,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

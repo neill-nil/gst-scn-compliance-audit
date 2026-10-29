@@ -1,0 +1,168 @@
+{
+ "cnr": "HCMA011054132024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "for the assessment period 2017-18 and quash the same.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2022-11-22",
+     "quote": "show cause notice dated 22.11.2022",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "By asserting that the show cause notice and other communications were uploaded in the “View Additional Notices and Orders” tab on the GST portal and that physical service thereof was not effected on the petitioner, the present writ petition was filed.",
+     "para": 2
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-08-02",
+    "quote": "An order in original dated 02.08.2023 is challenged on the ground that the petitioner did not have a reasonable opportunity to contest the tax demand on merits.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-08-03",
+    "type": "pre_scn_intimation",
+    "quote": "He submits that principles of natural justice were complied with by issuing intimation dated 03.08.2022, show cause notice dated 22.11.2022 and by offering a personal hearing.",
+    "para": 3
+   },
+   {
+    "date": "2022-11-22",
+    "type": "scn_issued",
+    "quote": "He submits that principles of natural justice were complied with by issuing intimation dated 03.08.2022, show cause notice dated 22.11.2022 and by offering a personal hearing.",
+    "para": 3
+   },
+   {
+    "date": "2023-06-15",
+    "type": "hearing_missed",
+    "quote": "On perusal of the impugned order, it is clear that the tax proposal was confirmed because the tax payer failed to reply to the show cause notice and to appear at the personal hearing granted on 15.06.2023.",
+    "para": 4
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "On perusal of the impugned order, it is clear that the tax proposal was confirmed because the tax payer failed to reply to the show cause notice and to appear at the personal hearing granted on 15.06.2023.",
+    "para": 4
+   },
+   {
+    "date": "2023-08-02",
+    "type": "order_passed",
+    "quote": "An order in original dated 02.08.2023 is challenged on the ground that the petitioner did not have a reasonable opportunity to contest the tax demand on merits.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "recovery_or_attachment",
+    "quote": "He also points out that a sum of Rs.66,828/- was recovered from the petitioner's bank account pursuant to a bank attachment, and that such amount represents about 50% of the disputed tax demand.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Learned counsel for the petitioner submits that the confirmed tax proposal relates to alleged purchases made from a non-existent supplier.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "On perusal of the impugned order, it is clear that the tax proposal was confirmed because the tax payer failed to reply to the show cause notice and to appear at the personal hearing granted on 15.06.2023.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "By asserting that the show cause notice and other communications were uploaded in the “View Additional Notices and Orders” tab on the GST portal and that physical service thereof was not effected on the petitioner, the present writ petition was filed.",
+    "quote_source": "argument",
+    "para": 1
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons set out above, the impugned order dated 02.08.2023 is set aside and the matter is remanded for reconsideration.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10669,
+   "tokens_out": 2096,
+   "seconds": 11.87,
+   "cached": false
+  },
+  {
+   "tokens_in": 6293,
+   "tokens_out": 448,
+   "seconds": 8.01,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

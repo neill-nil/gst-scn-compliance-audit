@@ -1,0 +1,164 @@
+{
+ "cnr": "DLHC010765892025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "pertaining to the Financial Year 2019-20 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi (hereinafter, ‘the impugned order’).",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-23",
+     "quote": "The present petition also challenges the Show Cause Notice dated 23rd May, 2024 issued by the office of Sales Tax Officer Class II/ AVATO, Delhi.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-10",
+    "quote": "The impugned order has been passed on 10th August 2024 raising the following demand:",
+    "para": 10
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-23",
+    "type": "scn_issued",
+    "quote": "The present petition also challenges the Show Cause Notice dated 23rd May, 2024 issued by the office of Sales Tax Officer Class II/ AVATO, Delhi.",
+    "para": 3
+   },
+   {
+    "date": "2024-06-27",
+    "type": "other",
+    "quote": "Three reminders dated 27th June, 2024, 24th July, 2024 and 3rd August, 2024 were also issued to the Petitioner.",
+    "para": 9
+   },
+   {
+    "date": "2024-07-24",
+    "type": "other",
+    "quote": "Three reminders dated 27th June, 2024, 24th July, 2024 and 3rd August, 2024 were also issued to the Petitioner.",
+    "para": 9
+   },
+   {
+    "date": "2024-08-03",
+    "type": "other",
+    "quote": "Three reminders dated 27th June, 2024, 24th July, 2024 and 3rd August, 2024 were also issued to the Petitioner.",
+    "para": 9
+   },
+   {
+    "date": "2024-08-10",
+    "type": "order_passed",
+    "quote": "The impugned order has been passed on 10th August 2024 raising the following demand:",
+    "para": 10
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "And whereas, the taxpayer had neither deposited the proposed demand nor filed their objections/ reply in DRC-06 within the stipulated period of time, therefore, following the Principle of Natural Justice, the taxpayer was granted opportunities of personal hearing for submission of their reply/objections against the proposed demand before passing any adverse order.",
+    "para": 11
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "And whereas, neither the taxpayer filed objections/reply in DRC 06 nor appeared for personal hearing despite giving sufficient opportunities, therefore, the undersigned is left with no other option but to upheld the demand raised in SCN/DRC 01.",
+    "para": 11
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The issue in respect of the validity of the impugned notifications is left open.",
+    "quote_source": "court",
+    "para": 15
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15441,
+   "tokens_out": 2160,
+   "seconds": 12.66,
+   "cached": false
+  },
+  {
+   "tokens_in": 11102,
+   "tokens_out": 331,
+   "seconds": 7.19,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[0]:extension_notification_validity"
+  ]
+ }
+}

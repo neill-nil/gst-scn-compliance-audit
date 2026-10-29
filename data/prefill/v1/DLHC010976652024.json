@@ -1,0 +1,136 @@
+{
+ "cnr": "DLHC010976652024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-16",
+     "quote": "the present petition has been filed by the Petitioner under Article 226 and 227 of the Constitution of India, inter alia, challenging the Show Cause Notice dated 16th May, 2024 as also the consequent demand order dated 28th August, 2024 (hereinafter, ‘impugned order’) passed by Respondent No.2 - Sales Tax Officer Class II/AVATO, Ward 63, Zone 6, Delhi.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-28",
+    "quote": "the present petition has been filed by the Petitioner under Article 226 and 227 of the Constitution of India, inter alia, challenging the Show Cause Notice dated 16th May, 2024 as also the consequent demand order dated 28th August, 2024 (hereinafter, ‘impugned order’) passed by Respondent No.2 - Sales Tax Officer Class II/AVATO, Ward 63, Zone 6, Delhi.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-16",
+    "type": "scn_issued",
+    "quote": "the present petition has been filed by the Petitioner under Article 226 and 227 of the Constitution of India, inter alia, challenging the Show Cause Notice dated 16th May, 2024 as also the consequent demand order dated 28th August, 2024 (hereinafter, ‘impugned order’) passed by Respondent No.2 - Sales Tax Officer Class II/AVATO, Ward 63, Zone 6, Delhi.",
+    "para": 2
+   },
+   {
+    "date": "2024-08-28",
+    "type": "order_passed",
+    "quote": "the present petition has been filed by the Petitioner under Article 226 and 227 of the Constitution of India, inter alia, challenging the Show Cause Notice dated 16th May, 2024 as also the consequent demand order dated 28th August, 2024 (hereinafter, ‘impugned order’) passed by Respondent No.2 - Sales Tax Officer Class II/AVATO, Ward 63, Zone 6, Delhi.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The validity of the impugned notifications were under consideration before this Court in a batch of petitions with the lead petition being W.P.(C) 16499/2023 titled ‘DJST Traders Pvt. Ltd. vs. Union of India and Ors.”.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "Petition is disposed of in these terms.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13003,
+   "tokens_out": 1933,
+   "seconds": 9.52,
+   "cached": false
+  },
+  {
+   "tokens_in": 4182,
+   "tokens_out": 207,
+   "seconds": 3.85,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.notices[0].date:facts.notices[0].date",
+   "facts.order.date:facts.order.date",
+   "facts.events[0]:scn_issued",
+   "facts.events[1]:order_passed"
+  ]
+ }
+}

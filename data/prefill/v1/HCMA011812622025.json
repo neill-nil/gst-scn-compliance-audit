@@ -1,0 +1,182 @@
+{
+ "cnr": "HCMA011812622025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "Pursuant to which, the Impugned Order has been passed under Section 74 of the respective GST Enactments on 03.02.2025.",
+   "para": 6
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "In this Writ Petition, the Petitioner has challenged the Impugned Order dated 03.02.2025 for the Tax Period 2017-2018.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-06",
+     "quote": "a Show Cause Notice in Form GST DRC-01 dated 06.12.2023 was issued to the Petitioner.",
+     "para": 6
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-03",
+    "quote": "In this Writ Petition, the Petitioner has challenged the Impugned Order dated 03.02.2025 for the Tax Period 2017-2018.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-06-28",
+    "type": "scrutiny_notice",
+    "quote": "There are indications in the Impugned Order dated 03.02.2025 that the Petitioner’s returns were scrutinized under Section 61 and Form ASMT-10 was issued on 28.06.2023, pursuant to which the above mentioned Intimation and the Show Cause Notice were issued.",
+    "para": 23
+   },
+   {
+    "date": "2023-09-20",
+    "type": "pre_scn_intimation",
+    "quote": "The Petitioner was earlier issued with an Intimation in Form GST DRC-01A dated 20.09.2023 for the Tax Period 2017-2018",
+    "para": 3
+   },
+   {
+    "date": "2023-10-29",
+    "type": "reply_filed",
+    "quote": "to which, the Petitioner had replied on 29.10.2023 stating that the proposal in the said Intimation in Form GST DRC-01A dated 20.09.2023 was time barred in terms of limitation under Section 73 of the respective GST Enactments.",
+    "para": 3
+   },
+   {
+    "date": "2023-12-06",
+    "type": "scn_issued",
+    "quote": "a Show Cause Notice in Form GST DRC-01 dated 06.12.2023 was issued to the Petitioner.",
+    "para": 6
+   },
+   {
+    "date": "2024-01-04",
+    "type": "reply_filed",
+    "quote": "The Petitioner replied to the Show Cause Notice by a reply dated 04.01.2024.",
+    "para": 6
+   },
+   {
+    "date": "2025-02-03",
+    "type": "order_passed",
+    "quote": "Pursuant to which, the Impugned Order has been passed under Section 74 of the respective GST Enactments on 03.02.2025.",
+    "para": 6
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "Sir, I have already given detailed reply on 25.07.2023.",
+    "para": 13
+   },
+   {
+    "type": "reply_point",
+    "quote": "Hence, the proposed assessment is time barred and not called for as per the limitation period.",
+    "para": 13
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "By the Impugned Order, a sum of Rs.11,84,332/- has been confirmed as tax due from the Petitioner together with interest and penalty.",
+    "para": 7
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "In view of the above, it cannot be said that the proceedings were time barred either under Section 73 or under Section 74 of the respective GST Enactments.",
+    "quote_source": "court",
+    "para": 23
+   },
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Thus suppression of fact is at large.",
+    "quote_source": "court",
+    "para": 23
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "Therefore, this Writ Petition is liable to be dismissed and it is accordingly dismissed.",
+   "para": 25
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 18047,
+   "tokens_out": 5516,
+   "seconds": 14.54,
+   "cached": false
+  },
+  {
+   "tokens_in": 10610,
+   "tokens_out": 486,
+   "seconds": 8.56,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

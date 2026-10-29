@@ -1,0 +1,148 @@
+{
+ "cnr": "DLHC010368612025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "passed by the Sales Tax Officer Class II/Avato Ward 94, Zone-8, Delhi for the Financial Year 2019-20 .",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-24",
+     "quote": "Thereafter, a Show Cause Notice dated 24th May, 2024 (hereinafter, ‘SCN’) was issued to the Petitioner.",
+     "para": 7
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-21",
+    "quote": "seeking quashing of the impugned order dated 21st August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 94, Zone-8, Delhi for the Financial Year 2019-20 .",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-03-09",
+    "type": "other",
+    "quote": "On facts, however, the GST registration of the Petitioner was cancelled on account of closure of the business of the Petitioner vide application dated 9th March, 2024 bearing ARN AA070324018424K.",
+    "para": 7
+   },
+   {
+    "date": "2024-05-24",
+    "type": "scn_issued",
+    "quote": "Thereafter, a Show Cause Notice dated 24th May, 2024 (hereinafter, ‘SCN’) was issued to the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": "2024-07-04",
+    "type": "other",
+    "quote": "Moreover, a reminder was also issued to the Petitioner on 4th July, 2024, however, the same could also not be accessed by the Petitioner.",
+    "para": 7
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "However, it is made clear that the issue in respect of the validity of the impugned notifications is left open.",
+    "quote_source": "court",
+    "para": 12
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Ld. Counsel for the Petitioner further submits that the Petitioner could not access the GST Portal as the GST registration of the Petitioner was cancelled vide application dated 9th March, 2024.",
+    "quote_source": "argument",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14278,
+   "tokens_out": 1727,
+   "seconds": 9.88,
+   "cached": false
+  },
+  {
+   "tokens_in": 4871,
+   "tokens_out": 212,
+   "seconds": 5.09,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

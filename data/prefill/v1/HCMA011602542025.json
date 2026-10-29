@@ -1,0 +1,148 @@
+{
+ "cnr": "HCMA011602542025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "the show cause notice dated 25.11.2024 was issued in Form DRC-01 for the Financial Year 2020-2021",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-25",
+     "quote": "the show cause notice dated 25.11.2024 was issued in Form DRC-01",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-24",
+    "quote": "passed by the 1st respondent, relating to the Financial Years 2020-21.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-25",
+    "type": "scn_issued",
+    "quote": "the show cause notice dated 25.11.2024 was issued in Form DRC-01 for the Financial Year 2020-2021",
+    "para": 2
+   },
+   {
+    "date": "2025-01-29",
+    "type": "reply_filed",
+    "quote": "in response, the petitioner filed their reply on 29.01.2025.",
+    "para": 2
+   },
+   {
+    "date": "2025-02-24",
+    "type": "order_passed",
+    "quote": "has confirmed the proposal made in the show cause notice by passing the impugned assessment order dated 24.02.2025",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Considering the submissions made by the learned counsel for the petitioner as well as the learned Government Advocate appearing for the 1st respondent, it is evident that though the reply was filed by the petitioner, without taking into consideration of the reply filed by the petitioner and without providing an opportunity of personal hearing, the assessment order has been passed, which is totally against the provision under Section 75(4) of the Central Goods and Services Tax Act, 2017.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Considering the submissions made by the learned counsel for the petitioner as well as the learned Government Advocate appearing for the 1st respondent, it is evident that though the reply was filed by the petitioner, without taking into consideration of the reply filed by the petitioner and without providing an opportunity of personal hearing, the assessment order has been passed, which is totally against the provision under Section 75(4) of the Central Goods and Services Tax Act, 2017.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, this writ petition is disposed of.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10356,
+   "tokens_out": 1180,
+   "seconds": 9.72,
+   "cached": false
+  },
+  {
+   "tokens_in": 3048,
+   "tokens_out": 396,
+   "seconds": 4.82,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,151 @@
+{
+ "cnr": "DLHC010624582025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "challenging the Show Cause Notice dated 31st May, 2024 (hereinafter ‘SCN’) and the impugned order dated 8th August, 2024 (hereinafter ‘impugned order’) passed in respect of Financial Year 2019-20 by the office of Sales Tax Officer Class II/ AVATO, Delhi.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-31",
+     "quote": "On the facts of the present case, the SCN was issued to the Petitioner on 31st May, 2024.",
+     "para": 7
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-08",
+    "quote": "and the impugned order dated 8th August, 2024 (hereinafter ‘impugned order’) passed in respect of Financial Year 2019-20 by the office of Sales Tax Officer Class II/ AVATO, Delhi.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-04-11",
+    "type": "other",
+    "quote": "The submission on behalf of the Petitioner is that the Petitioner had also applied for cancellation of the GST registration way back on 11th April, 2022.",
+    "para": 7
+   },
+   {
+    "date": "2024-05-31",
+    "type": "scn_issued",
+    "quote": "On the facts of the present case, the SCN was issued to the Petitioner on 31st May, 2024.",
+    "para": 7
+   },
+   {
+    "date": "2024-06-27",
+    "type": "other",
+    "quote": "A reminder notice is also stated to have been issued to the Petitioner on 27th June, 2024.",
+    "para": 7
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "Ld. Counsel for the Petitioner submits that no reply to the SCN was filed by the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": "2024-08-08",
+    "type": "order_passed",
+    "quote": "The impugned order was thereafter, passed on 8th August, 2024.",
+    "para": 7
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "Additionally, the petition also challenges the vires of Notification No. 9/2023-Central Tax dated 31st March, 2023, Notification No. 56/2023- Central Tax dated 28th December, 2023, Notification 9/2023-State Tax dated 31st March, 2023and Notification 56/2023-State Tax dated 11th July, 2024 (hereinafter ‘impugned notifications’).",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14642,
+   "tokens_out": 1977,
+   "seconds": 7.84,
+   "cached": false
+  },
+  {
+   "tokens_in": 4994,
+   "tokens_out": 271,
+   "seconds": 6.17,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}
