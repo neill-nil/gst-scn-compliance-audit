@@ -32,7 +32,8 @@ PARA_START = re.compile(r"^\s*[“\"]?\s*(\d{1,3})\s*[.\]]\s+\S")  # "12." or Bo
 
 
 def pdf_text_pages(pdf: Path) -> list[str]:
-    out = subprocess.run(["pdftotext", "-layout", str(pdf), "-"], capture_output=True, text=True, check=True)
+    out = subprocess.run(["pdftotext", "-enc", "UTF-8", "-layout", str(pdf), "-"], capture_output=True,
+                         encoding="utf-8", errors="replace", check=True)
     return out.stdout.split("\f")
 
 
@@ -116,7 +117,7 @@ def main():
         "segmentation": "numbered" if len(paras) > 1 else "unnumbered_single_block",
         "paragraphs": paras,
     }
-    (out / f"{pdf.stem}.json").write_text(json.dumps(record, indent=1, ensure_ascii=False))
+    (out / f"{pdf.stem}.json").write_text(json.dumps(record, indent=1, ensure_ascii=False), encoding="utf-8")
     summary = {k: v for k, v in record.items() if k != "paragraphs"}
     print(json.dumps(summary, indent=1, ensure_ascii=False))
 

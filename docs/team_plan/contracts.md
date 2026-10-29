@@ -8,7 +8,7 @@ All records are JSON, one per line (JSONL). Dates are `YYYY-MM-DD`. Unknown valu
 
 ## 1. Case record (the gold record, and what extractors produce)
 
-> **Proposed replacement:** a slimmer schema 0.1 (facts + findings, one quote per value) is in [`schema_proposal_v0_1.md`](schema_proposal_v0_1.md), with JSON schemas in `schemas/`. Decide in the schema meeting; if accepted, this section is replaced by it.
+> **Replaced (frozen 29 Oct):** the case record is now schema 0.1 in [`schema_proposal_v0_1.md`](schema_proposal_v0_1.md), with JSON schemas in `schemas/` and the validator in `src/prefill/schema.py`. The draft below is kept only for history; where it differs, the schema 0.1 files win.
 
 
 Produced by: role 1 parser (pre-fill) → corrected by human review → `data/gold/records.jsonl`.
@@ -95,10 +95,10 @@ Also produced by: the NoticeCheck extractor (role 2) and the LoRA extractor (aft
 | `signature` | Notice or order not signed or authenticated | CGST Rules r.26(3) (verify) |
 | `summary_only` | Only the DRC-01 summary issued, no proper notice | s.73(1)/74(1), r.142(1) |
 | `limitation` | Notice or order issued after the time limit | s.73(2)/(10), s.74(2)/(10), extension notifications |
-| `extension_notification_validity` | Challenge to the s.168A time-extension notifications | s.168A; **always contested** |
+| `extension_notification_validity` | Challenge to the s.168A time-extension notifications | s.168A; the system treats it as contested (gold `contested` still comes from the judgment, see proposal rule 5) |
 | `consolidated_scn` | One notice covering several financial years | contested across High Courts |
 | `section_74_ingredients` | s.74 invoked without fraud/suppression | s.74(1) |
-| `other_procedural` | Any other procedural ground (write it in `notes`) | — |
+| `other_procedural` | Any other procedural ground (say what it is in `note`) | — |
 
 **Finding rules**
 - `defect_found`: the court says, in its own words, that this defect happened.
@@ -110,7 +110,7 @@ Also produced by: the NoticeCheck extractor (role 2) and the LoRA extractor (aft
 
 ## 2. Checker input (what systems see)
 
-Built by role 4's input builder from a gold record. **Court findings, outcome and court reasoning are always removed.**
+Built by role 4's input builder from a gold record. **Court findings, outcome and court reasoning are always removed.** Under schema 0.1, `facts.document_contents` stays in the input (it is what the documents said); the validator already rejects contents that repeat a finding's quote.
 
 ```json
 {"cnr": "...", "view": "full_record", "as_of_date": "2025-03-01", "record": { ...case record without defects_argued, outcome, annotation... }}
@@ -148,7 +148,7 @@ File: `runs/<run_id>/outputs.jsonl`, one line per case. Same format for NoticeCh
   "usage": {"calls": 9, "tokens_in": 15000, "tokens_out": 2100, "seconds": 41.2}
 }
 ```
-Scoring (role 4): a predicted `defect` matches gold `defect_found` when `type` matches (and provision matches for the strict score). `no_defect` vs gold `defect_found` is a miss. `defect` vs gold `defect_rejected` is a false alarm. Gold `not_decided` is not scored for RQ1.
+Scoring (role 4): a predicted `defect` matches gold `defect_found` when `type` matches (and provision matches for the strict score; the gold provision comes from a fixed table of defect type → provision, with `limitation` using `facts.provision`, so annotators don't label it). `no_defect` vs gold `defect_found` is a miss. `defect` vs gold `defect_rejected` is a false alarm. Gold `not_decided` is not scored for RQ1.
 
 ---
 

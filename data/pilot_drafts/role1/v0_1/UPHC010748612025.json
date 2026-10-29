@@ -53,10 +53,22 @@
     }
    }
   ],
-  "order_date": {
-   "value": "2024-04-30",
-   "quote": "The respondent no. 2 passed order dated 30.04.2024 under Section 73(9) of the Act",
-   "para": 5
+  "order": {
+   "date": {
+    "value": "2024-04-30",
+    "quote": "The respondent no. 2 passed order dated 30.04.2024 under Section 73(9) of the Act",
+    "para": 5
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
   },
   "events": [
    {
@@ -89,12 +101,35 @@
     "quote": "the application was rejected by order dated 09.10.2024",
     "para": 6
    }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "indicating the difference in the amount of Input Tax Credit (ITC) for the tax period April, 2018 to March, 2019",
+    "para": 3
+   },
+   {
+    "type": "reply_point",
+    "quote": "in the case of petitioner, the tax is charged on Reverse Charge Mechanism (RCM) wherein the tax is to be paid by the recipient of the service and filed the relevant tax invoices of the transactions",
+    "para": 4
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "partly accepting the reply furnished by the petitioner",
+    "para": 5
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "no evidence has been produced pertaining to deposit of tax through RCM and the accounts books have not been verified",
+    "para": 14
+   }
   ]
  },
  "findings": {
   "defects_argued": [
    {
     "type": "hearing_75_4",
+    "note": null,
     "finding": "defect_found",
     "contested": false,
     "quote": "This Court has repeatedly frowned on the action of the respondents in fixing identical date of reply and date of hearing",
@@ -103,6 +138,7 @@
    },
    {
     "type": "reply_not_considered",
+    "note": null,
     "finding": "defect_found",
     "contested": false,
     "quote": "the respondent no. 2 did not deal with the said aspect at all and a wholly cursory finding",
@@ -111,6 +147,7 @@
    },
    {
     "type": "non_speaking_order",
+    "note": null,
     "finding": "defect_found",
     "contested": false,
     "quote": "Such a cursory disposal of the objection raised in reply to the show cause notice cannot be countenanced",
@@ -119,6 +156,7 @@
    },
    {
     "type": "other_procedural",
+    "note": "Rejection of the s.161 rectification application",
     "finding": "not_decided",
     "contested": false,
     "quote": "rejection of the said application under Section 161 of the Act loses its significance",

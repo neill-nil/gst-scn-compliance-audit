@@ -1,5 +1,7 @@
 # NoticeCheck — team plan (mid submission 31 Oct, final 15 Nov)
 
+**Now (29 Oct): everyone runs their pre-fill share, see [prefill_run.md](prefill_run.md).**
+
 **How to use this folder:** read this page, then your own role file. When you work with an AI assistant, give it three files: your role file, [`contracts.md`](contracts.md) (the shared data formats) and [`../../data/README.md`](../../data/README.md).
 
 | Role | File | Owner |

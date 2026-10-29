@@ -20,12 +20,16 @@ clean_segment = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(clean_segment)
 
 
+QUOTE_MARKS = str.maketrans({c: "'" for c in "‘’‚‛„‟“”\"`´′″"} | {c: "-" for c in "–—‐‑−"})
+
+
 def norm(s: str) -> str:
-    return re.sub(r"\s+", " ", s).strip()
+    """Collapse whitespace and treat all quote-mark and dash glyphs alike (PDF text and models mix them)."""
+    return re.sub(r"\s+", " ", s.translate(QUOTE_MARKS)).strip()
 
 
 def court_code(cnr: str) -> str:
-    with open(ROOT / "data" / "manifests" / "screened.csv", newline="") as f:
+    with open(ROOT / "data" / "manifests" / "screened.csv", newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
             if row["cnr"] == cnr:
                 return row["court"]
@@ -72,7 +76,7 @@ def verify(record: dict) -> list[dict]:
 def main():
     bad = 0
     for path in sys.argv[1:]:
-        record = json.loads(Path(path).read_text())
+        record = json.loads(Path(path).read_text(encoding="utf-8"))
         res = verify(record)
         missing = [r for r in res if not r["found"]]
         bad += len(missing)

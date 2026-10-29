@@ -95,10 +95,22 @@
     }
    }
   ],
-  "order_date": {
-   "value": "2025-09-26",
-   "quote": "Challenge is to order dated 26/9/2025 passed by respondent no.1",
-   "para": 2
+  "order": {
+   "date": {
+    "value": "2025-09-26",
+    "quote": "Challenge is to order dated 26/9/2025 passed by respondent no.1",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
   },
   "events": [
    {
@@ -119,12 +131,20 @@
     "quote": "Challenge is to order dated 26/9/2025 passed by respondent no.1",
     "para": 2
    }
+  ],
+  "document_contents": [
+   {
+    "type": "fraud_allegation",
+    "quote": "saying that the petitioner has, during this period, suppressed taxable value, and thereby made short payments of Central Goods and Service Tax",
+    "para": 2
+   }
   ]
  },
  "findings": {
   "defects_argued": [
    {
     "type": "consolidated_scn",
+    "note": null,
     "finding": "defect_found",
     "contested": true,
     "quote": "The argument of Counsel for respondent no.1, therefore, cannot be accepted.",

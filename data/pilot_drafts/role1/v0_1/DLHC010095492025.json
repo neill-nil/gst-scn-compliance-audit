@@ -51,10 +51,22 @@
     }
    }
   ],
-  "order_date": {
-   "value": "2023-12-23",
-   "quote": "the impugned order dated 23rd December, 2023",
-   "para": 2
+  "order": {
+   "date": {
+    "value": "2023-12-23",
+    "quote": "the impugned order dated 23rd December, 2023",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
   },
   "events": [
    {
@@ -65,8 +77,14 @@
    },
    {
     "date": null,
+    "type": "reply_not_filed",
+    "quote": "no reply was filed by the Petitioner",
+    "para": 2
+   },
+   {
+    "date": null,
     "type": "hearing_missed",
-    "quote": "no reply was filed by the Petitioner and the personal hearing was also not availed of",
+    "quote": "the personal hearing was also not availed of",
     "para": 2
    },
    {
@@ -75,12 +93,14 @@
     "quote": "the impugned order dated 23rd December, 2023",
     "para": 2
    }
-  ]
+  ],
+  "document_contents": []
  },
  "findings": {
   "defects_argued": [
    {
     "type": "service_169",
+    "note": null,
     "finding": "defect_found",
     "contested": false,
     "quote": "much prior to the time when this issue was rectified by the Department, it is deemed appropriate to set aside the impugned order",

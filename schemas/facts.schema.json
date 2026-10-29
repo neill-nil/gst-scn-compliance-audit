@@ -8,8 +8,9 @@
   "provision",
   "financial_years",
   "notices",
-  "order_date",
-  "events"
+  "order",
+  "events",
+  "document_contents"
  ],
  "properties": {
   "provision": {
@@ -256,7 +257,7 @@
      },
      "service_mode": {
       "type": "object",
-      "description": "How the notice reached the taxpayer",
+      "description": "How the notice reached the taxpayer. portal_additional_notices_tab / portal_notices_tab: only if the judgment names that tab ('Additional Notices' or 'Notices and Orders'); portal_unspecified: uploaded on the GST portal, tab not named; not_served: the judgment says it was never served.",
       "additionalProperties": false,
       "required": [
        "value",
@@ -373,46 +374,138 @@
     }
    }
   },
-  "order_date": {
+  "order": {
    "type": "object",
-   "description": "Date of the demand order (DRC-07) under s.73(9)/74(9) being challenged",
+   "description": "The demand order under s.73(9)/74(9) being challenged (DRC-07 or the adjudication order it summarises). If both are mentioned with different dates, use the adjudication order and add the other as an order_passed event.",
    "additionalProperties": false,
    "required": [
-    "value",
-    "quote",
-    "para"
+    "date",
+    "signed",
+    "service_mode"
    ],
    "properties": {
-    "value": {
-     "anyOf": [
-      {
-       "type": "string",
-       "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    "date": {
+     "type": "object",
+     "description": "Date of the demand order",
+     "additionalProperties": false,
+     "required": [
+      "value",
+      "quote",
+      "para"
+     ],
+     "properties": {
+      "value": {
+       "anyOf": [
+        {
+         "type": "string",
+         "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        {
+         "type": "null"
+        }
+       ]
       },
-      {
-       "type": "null"
+      "quote": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "exact words from the judgment that state this value; null if value is null"
+      },
+      "para": {
+       "type": [
+        "integer",
+        "null"
+       ],
+       "description": "the judgment's paragraph number containing the quote"
       }
-     ]
+     }
     },
-    "quote": {
-     "type": [
-      "string",
-      "null"
+    "signed": {
+     "type": "object",
+     "description": "Whether the order was signed or authenticated",
+     "additionalProperties": false,
+     "required": [
+      "value",
+      "quote",
+      "para"
      ],
-     "description": "exact words from the judgment that state this value; null if value is null"
+     "properties": {
+      "value": {
+       "anyOf": [
+        {
+         "type": "boolean"
+        },
+        {
+         "type": "null"
+        }
+       ]
+      },
+      "quote": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "exact words from the judgment that state this value; null if value is null"
+      },
+      "para": {
+       "type": [
+        "integer",
+        "null"
+       ],
+       "description": "the judgment's paragraph number containing the quote"
+      }
+     }
     },
-    "para": {
-     "type": [
-      "integer",
-      "null"
+    "service_mode": {
+     "type": "object",
+     "description": "How the order reached the taxpayer. portal_additional_notices_tab / portal_notices_tab: only if the judgment names that tab ('Additional Notices' or 'Notices and Orders'); portal_unspecified: uploaded on the GST portal, tab not named; not_served: the judgment says it was never served.",
+     "additionalProperties": false,
+     "required": [
+      "value",
+      "quote",
+      "para"
      ],
-     "description": "the judgment's paragraph number containing the quote"
+     "properties": {
+      "value": {
+       "anyOf": [
+        {
+         "enum": [
+          "portal_additional_notices_tab",
+          "portal_notices_tab",
+          "portal_unspecified",
+          "email",
+          "registered_post",
+          "hand_delivery",
+          "not_served"
+         ]
+        },
+        {
+         "type": "null"
+        }
+       ]
+      },
+      "quote": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "exact words from the judgment that state this value; null if value is null"
+      },
+      "para": {
+       "type": [
+        "integer",
+        "null"
+       ],
+       "description": "the judgment's paragraph number containing the quote"
+      }
+     }
     }
    }
   },
   "events": {
    "type": "array",
-   "description": "Other steps in the proceeding, in date order",
+   "description": "Steps in the proceeding, in date order. date = the day that step happened (a request: the day it was made; hearing_adjourned: the hearing day that was put off, with the new date as a separate hearing_scheduled event). Use reply_not_filed or hearing_missed only when the judgment says so; a missing event means 'not stated', not 'did not happen'.",
    "items": {
     "type": "object",
     "additionalProperties": false,
@@ -440,10 +533,13 @@
        "pre_scn_intimation",
        "scn_issued",
        "reply_filed",
+       "reply_not_filed",
        "extension_requested",
        "extension_granted",
+       "hearing_requested",
        "hearing_scheduled",
        "hearing_adjourned",
+       "adjournment_requested",
        "hearing_attended",
        "hearing_missed",
        "order_passed",
@@ -453,6 +549,40 @@
        "earlier_writ",
        "other"
       ]
+     },
+     "quote": {
+      "type": "string"
+     },
+     "para": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     }
+    }
+   }
+  },
+  "document_contents": {
+   "type": "array",
+   "maxItems": 8,
+   "description": "What the notice, the reply and the order SAID, as the judgment reports it (only what bears on a defect). Describe the document, never the court's opinion of it: 'the order states no evidence of RCM payment was produced' is allowed; 'the order is cursory' is not. Empty if the judgment does not report the contents.",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "type",
+     "quote",
+     "para"
+    ],
+    "properties": {
+     "type": {
+      "enum": [
+       "scn_ground",
+       "fraud_allegation",
+       "reply_point",
+       "order_reasoning"
+      ],
+      "description": "scn_ground: what the notice alleges or demands. fraud_allegation: the notice's allegation of fraud, wilful misstatement or suppression (s.74). reply_point: an argument the taxpayer made in the reply. order_reasoning: what the order says when deciding."
      },
      "quote": {
       "type": "string"

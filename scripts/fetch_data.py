@@ -48,7 +48,8 @@ def fetch(row, data_dir: Path) -> str:
     with tempfile.NamedTemporaryFile(suffix=".pdf") as tmp:
         tmp.write(data)
         tmp.flush()
-        text = subprocess.run(["pdftotext", "-layout", tmp.name, "-"], capture_output=True, text=True).stdout
+        text = subprocess.run(["pdftotext", "-enc", "UTF-8", "-layout", tmp.name, "-"], capture_output=True,
+                              encoding="utf-8", errors="replace").stdout
     text_path.parent.mkdir(parents=True, exist_ok=True)
     text_path.write_bytes(gzip.compress(text.encode()))
     if keep_pdf:
@@ -63,7 +64,7 @@ def main():
     ap.add_argument("--data-dir", default="data")
     args = ap.parse_args()
     data_dir = Path(args.data_dir)
-    with open(data_dir / "manifests" / "screened.csv", newline="") as f:
+    with open(data_dir / "manifests" / "screened.csv", newline="", encoding="utf-8") as f:
         rows = [r for r in csv.DictReader(f)
                 if r["bucket"] in TEXT_BUCKETS and r["duplicate_of_earlier"] == "False"]
     if args.reasoned_only:

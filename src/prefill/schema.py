@@ -13,17 +13,19 @@ import jsonschema
 
 ROOT = Path(__file__).resolve().parents[2]
 SCHEMA_VERSION = "0.1"
-FACTS_SCHEMA = json.loads((ROOT / "schemas" / "facts.schema.json").read_text())
-FINDINGS_SCHEMA = json.loads((ROOT / "schemas" / "findings.schema.json").read_text())
+FACTS_SCHEMA = json.loads((ROOT / "schemas" / "facts.schema.json").read_text(encoding="utf-8"))
+FINDINGS_SCHEMA = json.loads((ROOT / "schemas" / "findings.schema.json").read_text(encoding="utf-8"))
 
 
 def _facts_with_values(facts: dict):
     """Yield (path, fact) for every {"value", "quote", "para"} object in the facts block."""
-    for name in ("provision", "financial_years", "order_date"):
+    for name in ("provision", "financial_years"):
         yield name, facts[name]
     for i, notice in enumerate(facts["notices"]):
         for name, fact in notice.items():
             yield f"notices[{i}].{name}", fact
+    for name, fact in facts["order"].items():
+        yield f"order.{name}", fact
 
 
 def rule_problems(record: dict) -> list[str]:
@@ -36,6 +38,12 @@ def rule_problems(record: dict) -> list[str]:
     for i, d in enumerate(record["findings"]["defects_argued"]):
         if d["finding"] != "not_decided" and d["quote_source"] != "court":
             problems.append(f"findings.defects_argued[{i}]: found/rejected must quote the court, not an argument")
+        if (d["type"] == "other_procedural") != bool(d["note"]):
+            problems.append(f"findings.defects_argued[{i}]: note is required for other_procedural and must be null otherwise")
+    findings_quotes = [d["quote"] for d in record["findings"]["defects_argued"]]
+    for i, c in enumerate(record["facts"]["document_contents"]):
+        if any(c["quote"] in q or q in c["quote"] for q in findings_quotes):
+            problems.append(f"facts.document_contents[{i}]: same words as a court finding (would leak the answer)")
     return problems
 
 
@@ -56,7 +64,7 @@ def validate_record(record: dict) -> list[str]:
 if __name__ == "__main__":
     bad = 0
     for p in sys.argv[1:]:
-        rec = json.loads(Path(p).read_text())
+        rec = json.loads(Path(p).read_text(encoding="utf-8"))
         probs = validate_record(rec)
         bad += bool(probs)
         print(f"{rec.get('cnr')}: {'OK' if not probs else f'{len(probs)} problem(s)'}")

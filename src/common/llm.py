@@ -56,7 +56,7 @@ def _load_dotenv():
     env = ROOT / ".env"
     if not env.exists():
         return
-    for line in env.read_text().splitlines():
+    for line in env.read_text(encoding="utf-8-sig").splitlines():
         line = line.strip()
         if line and not line.startswith("#") and "=" in line:
             k, v = line.split("=", 1)
@@ -114,16 +114,14 @@ def _extract_json(text: str):
     fenced = re.search(r"```(?:json)?\s*(.*?)```", text, flags=re.S)
     if fenced:
         text = fenced.group(1).strip()
-    for opener in ("{", "["):
-        start = text.find(opener)
-        if start == -1:
-            continue
-        try:
-            obj, _ = json.JSONDecoder().raw_decode(text[start:])
-            return obj
-        except json.JSONDecodeError:
-            continue
-    raise ValueError("no JSON object found in model output")
+    starts = [i for i in (text.find("{"), text.find("[")) if i != -1]
+    if not starts:
+        raise ValueError("no JSON object found in model output")
+    # Parse from whichever bracket comes first; falling back to a later "[" would return an inner list.
+    obj, _ = json.JSONDecoder().raw_decode(text[min(starts):])
+    if isinstance(obj, dict):
+        obj.pop("$schema", None)  # models sometimes echo the schema's own header key
+    return obj
 
 
 def _validate(obj, schema: dict):
@@ -136,7 +134,7 @@ def _validate(obj, schema: dict):
 
 def _log(record: dict):
     CALL_LOG.parent.mkdir(parents=True, exist_ok=True)
-    with _lock, open(CALL_LOG, "a") as f:
+    with _lock, open(CALL_LOG, "a", encoding="utf-8") as f:
         f.write(json.dumps(record) + "\n")
 
 
@@ -158,7 +156,7 @@ def complete(backend: str, messages: list, json_schema: dict | None = None, temp
                                     sort_keys=True).encode()).hexdigest()
     cache_file = CACHE_DIR / f"{key}.json"
     if use_cache and cache_file.exists():
-        out = json.loads(cache_file.read_text())
+        out = json.loads(cache_file.read_text(encoding="utf-8"))
         out["cached"] = True
         return out
 
@@ -198,7 +196,7 @@ def complete(backend: str, messages: list, json_schema: dict | None = None, temp
           "tokens_in": tokens_in, "tokens_out": tokens_out, "seconds": out["seconds"], "ok": not error})
     if not error:
         CACHE_DIR.mkdir(parents=True, exist_ok=True)
-        cache_file.write_text(json.dumps(out))
+        cache_file.write_text(json.dumps(out), encoding="utf-8")
     return out
 
 

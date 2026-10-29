@@ -57,10 +57,22 @@
     }
    }
   ],
-  "order_date": {
-   "value": "2026-03-27",
-   "quote": "the order impugned has been passed on 27th March, 2026",
-   "para": 6
+  "order": {
+   "date": {
+    "value": "2026-03-27",
+    "quote": "the order impugned has been passed on 27th March, 2026",
+    "para": 6
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
   },
   "events": [
    {
@@ -93,12 +105,20 @@
     "quote": "the order impugned has been passed on 27th March, 2026",
     "para": 6
    }
+  ],
+  "document_contents": [
+   {
+    "type": "fraud_allegation",
+    "quote": "serious allegations of smuggling of cement into India from Bhutan and concealment of GST liability on sale of smuggled cement is involved",
+    "para": 8
+   }
   ]
  },
  "findings": {
   "defects_argued": [
    {
     "type": "signature",
+    "note": null,
     "finding": "not_decided",
     "contested": false,
     "quote": "there is no scope for this Court to make such a determination in absence of the records being produced",
@@ -107,6 +127,7 @@
    },
    {
     "type": "consolidated_scn",
+    "note": null,
     "finding": "defect_rejected",
     "contested": false,
     "quote": "There is no clubbing of periods in the summary of show-cause in From DRC 01",
@@ -115,6 +136,7 @@
    },
    {
     "type": "other_procedural",
+    "note": "Heard by a different officer from the one who received the reply",
     "finding": "defect_rejected",
     "contested": false,
     "quote": "it is an admitted position that the authority who heard the petitioner was a proper officer within the meaning of the said Act",
@@ -123,7 +145,8 @@
    },
    {
     "type": "non_speaking_order",
-    "finding": "not_decided",
+    "note": null,
+    "finding": "defect_rejected",
     "contested": false,
     "quote": "though prima facie sufficient reason has been provided in the aforesaid order, the order cannot be said to be non- speaking, however, these are all disputed factual issues",
     "quote_source": "court",
@@ -131,6 +154,7 @@
    },
    {
     "type": "reply_not_considered",
+    "note": null,
     "finding": "not_decided",
     "contested": false,
     "quote": "these are all disputed factual issues",
@@ -139,6 +163,7 @@
    },
    {
     "type": "section_74_ingredients",
+    "note": null,
     "finding": "not_decided",
     "contested": false,
     "quote": "no specific taxable event or essential ingredients to invoke Section 74 of the said Act has been disclosed",
@@ -157,6 +182,6 @@
   "status": "draft_for_review",
   "drafted_by": "claude",
   "reviewed_by": [],
-  "notes": "Dismissed because an appeal was available and the petitioner refused the pre-deposit. non_speaking_order changed to not_decided under the proposed 'prima facie = not decided' rule. other_procedural = heard by a different officer."
+  "notes": "Dismissed because an appeal was available and the petitioner refused the pre-deposit. non_speaking_order = defect_rejected: the court states a clear conclusion ('cannot be said to be non-speaking') despite 'prima facie' (team decision 29 Oct). other_procedural = heard by a different officer."
  }
 }
