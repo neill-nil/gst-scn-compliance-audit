@@ -1,0 +1,162 @@
+{
+ "cnr": "HCMA010791492024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "Hence an Assessment order issued under Section 73 of CGST ACT 2017 with tax, interest and penalty as due for payment.",
+   "para": 4
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-04-27",
+     "quote": "Upon receipt of show cause notice dated 27.04.2023 alleging mismatch between the petitioner's GSTR 3B returns and the GSTR 1 statement as well as between the petitioner's GSTR 3B returns and the auto-populated GSTR 2A, the petitioner replied on 26.05.2023.",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-09-28",
+    "quote": "An order in original dated 28.09.2023 is assailed on the ground that the petitioner's reply to the show cause notice was not taken into consideration.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-04-27",
+    "type": "scn_issued",
+    "quote": "Upon receipt of show cause notice dated 27.04.2023 alleging mismatch between the petitioner's GSTR 3B returns and the GSTR 1 statement as well as between the petitioner's GSTR 3B returns and the auto-populated GSTR 2A, the petitioner replied on 26.05.2023.",
+    "para": 1
+   },
+   {
+    "date": "2023-05-26",
+    "type": "reply_filed",
+    "quote": "Upon receipt of show cause notice dated 27.04.2023 alleging mismatch between the petitioner's GSTR 3B returns and the GSTR 1 statement as well as between the petitioner's GSTR 3B returns and the auto-populated GSTR 2A, the petitioner replied on 26.05.2023.",
+    "para": 1
+   },
+   {
+    "date": "2023-09-28",
+    "type": "order_passed",
+    "quote": "The impugned order was issued in these facts and circumstances on 28.09.2023.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Upon receipt of show cause notice dated 27.04.2023 alleging mismatch between the petitioner's GSTR 3B returns and the GSTR 1 statement as well as between the petitioner's GSTR 3B returns and the auto-populated GSTR 2A, the petitioner replied on 26.05.2023.",
+    "para": 1
+   },
+   {
+    "type": "reply_point",
+    "quote": "As regards the discrepancy between the GSTR 3B return and GSTR 1 statement, learned counsel pointed out that such mismatch was on account of not taking into account the value of credit notes.",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "As regards the variation between the GSTR 2A and GSTR 3B, learned counsel pointed out that such difference was on account of one supplier, S.M.Network, not reflecting the invoices in returns filed by such supplier.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In spite of the petitioner's GSTR 1 statement and the annual return in GSTR 9 being available, no reasons are specified as to why the petitioner's explanation was rejected.",
+    "quote_source": "court",
+    "para": 4
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "The above operative portion is bereft of reasons.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons set out above, the impugned order dated 28.09.2023 is set aside and the matter is remanded for reconsideration.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14193,
+   "tokens_out": 5354,
+   "seconds": 14.12,
+   "cached": false
+  },
+  {
+   "tokens_in": 3184,
+   "tokens_out": 275,
+   "seconds": 2.92,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

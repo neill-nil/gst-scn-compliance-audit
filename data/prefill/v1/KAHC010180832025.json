@@ -1,0 +1,169 @@
+{
+ "cnr": "KAHC010180832025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "Thereafter, the respondents issued an intimation dated 05.04.2023 under Section 74(5) of the CGST Act to the petitioner for the tax period / financial years July 2017 to March 2022.",
+   "para": 5
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22"
+   ],
+   "quote": "Thereafter, the respondents issued an intimation dated 05.04.2023 under Section 74(5) of the CGST Act to the petitioner for the tax period / financial years July 2017 to March 2022.",
+   "para": 5
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-05-08",
+     "quote": "Subsequently, the respondents issued a common show cause notice dated 08.05.2023 to the petitioner and its 19 other units demanding reversal of ITC.",
+     "para": 5
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-01-24",
+    "quote": "By the impugned order dated 24.01.2025, the respondents confirmed the demands raised in the show cause notice against the petitioner, who is before this Court by way of the present petition.",
+    "para": 5
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-04-05",
+    "type": "pre_scn_intimation",
+    "quote": "Thereafter, the respondents issued an intimation dated 05.04.2023 under Section 74(5) of the CGST Act to the petitioner for the tax period / financial years July 2017 to March 2022.",
+    "para": 5
+   },
+   {
+    "date": "2023-04-19",
+    "type": "reply_filed",
+    "quote": "The petitioners submitted their replies dated 19/20.04.2023 and additional submissions dated 01.05.2023 along with relevant documents.",
+    "para": 5
+   },
+   {
+    "date": "2023-04-20",
+    "type": "reply_filed",
+    "quote": "The petitioners submitted their replies dated 19/20.04.2023 and additional submissions dated 01.05.2023 along with relevant documents.",
+    "para": 5
+   },
+   {
+    "date": "2023-05-01",
+    "type": "reply_filed",
+    "quote": "The petitioners submitted their replies dated 19/20.04.2023 and additional submissions dated 01.05.2023 along with relevant documents.",
+    "para": 5
+   },
+   {
+    "date": "2023-05-08",
+    "type": "scn_issued",
+    "quote": "Subsequently, the respondents issued a common show cause notice dated 08.05.2023 to the petitioner and its 19 other units demanding reversal of ITC.",
+    "para": 5
+   },
+   {
+    "date": "2023-07-10",
+    "type": "reply_filed",
+    "quote": "The petitioner submitted a reply dated 10.07.2023 and attended personal hearing on 30.12.2024 in the proceedings and filed written submissions.",
+    "para": 5
+   },
+   {
+    "date": "2024-12-30",
+    "type": "hearing_attended",
+    "quote": "The petitioner submitted a reply dated 10.07.2023 and attended personal hearing on 30.12.2024 in the proceedings and filed written submissions.",
+    "para": 5
+   },
+   {
+    "date": "2025-01-24",
+    "type": "order_passed",
+    "quote": "By the impugned order dated 24.01.2025, the respondents confirmed the demands raised in the show cause notice against the petitioner, who is before this Court by way of the present petition.",
+    "para": 5
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "According to the respondents, the units of the petitioner in other States including the Amritsar Unit were availing ITC on the invoices issued by the Head office i.e., the petitioner without receipt of underlying services and that common credit, if any, has to be necessary transferred through ISD mechanism and the same cannot be crossed / charged by a regular GST registration of the petitioner who ought to have distributed common ITC through ISD and that there was no underlying supply provided by the petitioner when they raised tax invoices under Section 31 of the CGST Act to distribute common ITC.",
+    "para": 10
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "Petition is hereby allowed.",
+   "para": 15
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 21005,
+   "tokens_out": 5742,
+   "seconds": 14.62,
+   "cached": false
+  },
+  {
+   "tokens_in": 13415,
+   "tokens_out": 201,
+   "seconds": 7.83,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "cnr": "HCMA010377742025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "calling for the records from the file of the respondent in Order in Reference No..ZD331223282781H passed under Section 73 of the TNGST Act 2017 for the period 2017-2018 dated 30.12.2023 and to quash the same as illegal and not in accordance with law",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "The challenge in this Writ Petition is to the order passed by the respondent under Section 73 of the TNGST Act 2017 for the period 2017- 2018 dated 30.12.2023 and to quash the same.",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2023-12-30",
+    "quote": "calling for the records from the file of the respondent in Order in Reference No..ZD331223282781H passed under Section 73 of the TNGST Act 2017 for the period 2017-2018 dated 30.12.2023 and to quash the same as illegal and not in accordance with law",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-30",
+    "type": "order_passed",
+    "quote": "calling for the records from the file of the respondent in Order in Reference No..ZD331223282781H passed under Section 73 of the TNGST Act 2017 for the period 2017-2018 dated 30.12.2023 and to quash the same as illegal and not in accordance with law",
+    "para": 0
+   },
+   {
+    "date": null,
+    "type": "recovery_or_attachment",
+    "quote": "Further, it is stated that in pursuance of the impugned order, the respondent has also initiated recovery proceedings against the petitioner, whereby, 100% of the disputed tax has already been recovered from the petitioner, hence, he prays for setting aside the impugned order and remanding the matter back to the Authority for fresh consideration.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "there is no dispute on the aspect that notices, which culminated in the impugned order were merely uploaded in the GST portal, which were unnoticed by the petitioner as the petitioner had no occasion to view the Portal then and there, hence, the petitioner could not file reply or appear for the personal hearing.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "However, the respondent passed the impugned order without even affording any opportunity of hearing to the petitioner, which is nothing but an ex parte order, as the same suffers from violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, the Writ Petition is allowed on the aforesaid terms.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13439,
+   "tokens_out": 4878,
+   "seconds": 14.71,
+   "cached": false
+  },
+  {
+   "tokens_in": 6056,
+   "tokens_out": 654,
+   "seconds": 9.12,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

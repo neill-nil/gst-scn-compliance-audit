@@ -1,0 +1,148 @@
+{
+ "cnr": "HCMA010576682024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "In respect of assessment year 2018-19, the petitioner had received supplies and claimed ITC in respect thereof.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-07-11",
+    "quote": "An assessment order dated 11.07.2023 is assailed both on grounds of breach of principles of natural justice...",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "scrutiny_notice",
+    "quote": "Pursuant to a notice in Form GST ASMT-10, the petitioner also received an intimation and show cause notice.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "pre_scn_intimation",
+    "quote": "Pursuant to a notice in Form GST ASMT-10, the petitioner also received an intimation and show cause notice.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "scn_issued",
+    "quote": "Pursuant to a notice in Form GST ASMT-10, the petitioner also received an intimation and show cause notice.",
+    "para": 2
+   },
+   {
+    "date": "2023-07-11",
+    "type": "order_passed",
+    "quote": "An assessment order dated 11.07.2023 is assailed both on grounds of breach of principles of natural justice...",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Learned counsel for the petitioner submits that the petitioner did not have an opportunity to contest the tax demand.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Therefore, the impugned assessment order is quashed subject to the condition that the petitioner remits 10% of the disputed tax demand as agreed to within a maximum period of two weeks from the date of receipt of a copy of this order.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13235,
+   "tokens_out": 4950,
+   "seconds": 13.78,
+   "cached": false
+  },
+  {
+   "tokens_in": 2705,
+   "tokens_out": 159,
+   "seconds": 3.2,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.order.date:facts.order.date",
+   "facts.events[3]:order_passed"
+  ]
+ }
+}

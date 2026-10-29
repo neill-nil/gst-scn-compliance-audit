@@ -1,0 +1,162 @@
+{
+ "cnr": "HCMA012077192024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "under Section 73 of the CGST/TNGST Act, 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "for the period 2019-20.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-21",
+     "quote": "A show cause notice was issued in form DRC01 dated 21.05.2024",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-31",
+    "quote": "the Impugned assessment order in Ref.No.ZD330824300657E dated 31.08.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-21",
+    "type": "scn_issued",
+    "quote": "A show cause notice was issued in form DRC01 dated 21.05.2024",
+    "para": 3
+   },
+   {
+    "date": "2024-06-19",
+    "type": "reply_filed",
+    "quote": "In response, the petitioner had submitted its detailed reply dated 19.06.2024, 21.06.2024 and 26.07.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-06-21",
+    "type": "reply_filed",
+    "quote": "In response, the petitioner had submitted its detailed reply dated 19.06.2024, 21.06.2024 and 26.07.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-07-26",
+    "type": "reply_filed",
+    "quote": "In response, the petitioner had submitted its detailed reply dated 19.06.2024, 21.06.2024 and 26.07.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-31",
+    "type": "order_passed",
+    "quote": "the impugned order has been passed by the respondent authority",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "(i) Under declaration of output tax (ii) Excess claim of Input Tax (iii)Under Declaration of Ineligible Input Tax Credit (iv) Claim of Input Tax on non business transaction and exempt supplies contrary to the restriction under Section 17 of GST Act,2017. (v) Input tax claimed from dealers with canceled registration certificate, defaulter in filing returns and non tax payers.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "the petitioner's claim that they are Ocean Freight Service providers was rejected and they were instead treated as intermediary and the consequential interest and penalty was increased from Rs.21,77,761/- to Rs.96,83,029/-.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "demand_beyond_scn",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It was thus submitted by the learned counsel for the petitioner that they never had an opportunity to respond to the case of the respondent that the petitioner would qualify as an intermediary which resulted in consequential increase in the tax liability inasmuch as it was set out only in the impugned order for the first time.",
+    "quote_source": "argument",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view thereof, the impugned order dated 31.08.2024 is set aside.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15293,
+   "tokens_out": 5342,
+   "seconds": 35.24,
+   "cached": false
+  },
+  {
+   "tokens_in": 3734,
+   "tokens_out": 211,
+   "seconds": 2.12,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

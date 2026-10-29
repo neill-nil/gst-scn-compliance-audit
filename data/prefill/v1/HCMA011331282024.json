@@ -1,0 +1,151 @@
+{
+ "cnr": "HCMA011331282024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "order dated 22.03.2024 in GSTIN:33AACCE8372L1ZD/2018-19",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-01-04",
+     "quote": "The Respondent issued a show cause notice dated 04.01.2024 in DRC-01",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "not_served",
+     "quote": "the original of the same was not served physically on them.",
+     "para": 4
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-03-22",
+    "quote": "the impugned assessment order dated in DRC-07, dated 22.03.2024 came to be passed",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-01-04",
+    "type": "scn_issued",
+    "quote": "The Respondent issued a show cause notice dated 04.01.2024 in DRC-01",
+    "para": 2
+   },
+   {
+    "date": "2024-03-22",
+    "type": "order_passed",
+    "quote": "thereafter, the impugned assessment order dated in DRC-07, dated 22.03.2024 came to be passed, demanding tax with penalty and interest on the ground that the Petitioner did not respond to the show cause notice.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On considering the materials available on record and the submissions of the learned counsel on either side, it is evident that the Petitioner was not aware of the issuance of the show cause notice, since it was not served physically on the Petitioner and hence, the Petitioner could not file a reply in time.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "When an Assessing Officer intends to pass an assessment order and raise a demand against an Assessee, it should be done only after affording an opportunity of filing a reply to the show cause notice, including a personal hearing to the Assessee and thereafter, considering the reply of the Assessee, as provided under law, but in this case, the Respondent Authority failed to do so.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In such circumstances, this Court is of the view that the impugned order came to be passed without affording opportunity of filing a reply to the show cause notice, including a personal hearing to the Petitioner to establish their case, thereby violating the principles of natural justice and hence, it is just and necessary to provide an opportunity to the Petitioner to establish their case on merits and in accordance with law.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For the reasons stated above, the impugned order is set aside and the matter is remanded back to the Respondent for consideration afresh.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13577,
+   "tokens_out": 4915,
+   "seconds": 14.07,
+   "cached": false
+  },
+  {
+   "tokens_in": 2876,
+   "tokens_out": 500,
+   "seconds": 4.6,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

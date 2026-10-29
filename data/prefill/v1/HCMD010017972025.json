@@ -1,0 +1,133 @@
+{
+ "cnr": "HCMD010017972025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "as mandated under Section 73 of the Act.",
+   "para": 3
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "GSTIN 33AAQPC6171N4ZA/2018-19 dated 27/4/2024",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-11-26",
+     "quote": "DRC-01 notice was issued on 26.11.2023, in which no personal hearing date was given.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": "DRC-01 notice was issued on 26.11.2023, in which no personal hearing date was given.",
+     "para": 2
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-27",
+    "quote": "The challenge in this writ petition is to an order of assessment dated 27.04.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-11-26",
+    "type": "scn_issued",
+    "quote": "DRC-01 notice was issued on 26.11.2023, in which no personal hearing date was given.",
+    "para": 2
+   },
+   {
+    "date": "2024-04-27",
+    "type": "order_passed",
+    "quote": "The challenge in this writ petition is to an order of assessment dated 27.04.2024",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "The order also do not indicate that an opportunity of personal hearing as mandated under Section 73 of the Act has been issued to the petitioner.",
+    "quote_source": "court",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "The Writ Petition stands allowed, accordingly.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9601,
+   "tokens_out": 1138,
+   "seconds": 9.36,
+   "cached": false
+  },
+  {
+   "tokens_in": 2681,
+   "tokens_out": 123,
+   "seconds": 4.41,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

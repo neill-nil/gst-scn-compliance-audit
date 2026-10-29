@@ -1,0 +1,151 @@
+{
+ "cnr": "DLHC010942942025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "challenging the impugned order dated 21st August, 2024 passed by Sales Tax Officer Class II/AVATO, Ward 86, Zone 9, Delhi for the tax period April 2019 to March 2020 (hereinafter ‘impugned order’) along with the impugned Show Cause Notice dated 17th May, 2024 passed by Sales Tax Officer Class II/AVATO, Ward 86, Zone 9, Delhi (hereinafter, ‘impugned SCN’)",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-17",
+     "quote": "along with the impugned Show Cause Notice dated 17th May, 2024 passed by Sales Tax Officer Class II/AVATO, Ward 86, Zone 9, Delhi (hereinafter, ‘impugned SCN’)",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-21",
+    "quote": "challenging the impugned order dated 21st August, 2024 passed by Sales Tax Officer Class II/AVATO, Ward 86, Zone 9, Delhi for the tax period April 2019 to March 2020 (hereinafter ‘impugned order’)",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-17",
+    "type": "scn_issued",
+    "quote": "On facts, the impugned SCN was issued to the Petitioner on 17th May, 2024.",
+    "para": 7
+   },
+   {
+    "date": "2024-07-16",
+    "type": "other",
+    "quote": "A reminder notice dated 16th July, 2024 was also issued to the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, no reply has been filed to the SCN and the reminder notice, nor any personal hearing has been attended by the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "However, no reply has been filed to the SCN and the reminder notice, nor any personal hearing has been attended by the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": "2024-08-21",
+    "type": "order_passed",
+    "quote": "Thereafter, the impugned order has been passed without the Petitioner having an opportunity to deal with the case on merits.",
+    "para": 7
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "Additionally, the present petition also challenges the vires of the following notifications",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The impugned order is accordingly set aside, subject to payment of Rs. 20,000/- as costs which goes to the Delhi High Court Legal Services Committee.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 16286,
+   "tokens_out": 3706,
+   "seconds": 10.19,
+   "cached": false
+  },
+  {
+   "tokens_in": 4982,
+   "tokens_out": 181,
+   "seconds": 3.5,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

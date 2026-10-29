@@ -1,0 +1,159 @@
+{
+ "cnr": "HCMA010739202024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "Z330224189017J/ 2021-22",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-11-10",
+     "quote": "Without providing such extension, the show cause notice was issued on 10.11.2023",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-02-29",
+    "quote": "The petitioner assails an assessment order dated 29.02.2024 primarily on the ground of breach of principles of natural justice.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-01-30",
+    "type": "other",
+    "quote": "a sworn statement of Mr.V.Muthukumaran, Accounts Executive of the petitioner, was recorded on 30.01.2023.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "In course of inspection, 15 discrepancies were pointed out and the petitioner submitted a reply in relation to each discrepancy.",
+    "para": 2
+   },
+   {
+    "date": "2023-09-20",
+    "type": "pre_scn_intimation",
+    "quote": "Thereafter, the 1 st respondent issued an intimation on 20.09.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-09-27",
+    "type": "extension_requested",
+    "quote": "The petitioner replied on 27.09.2023 and requested for an extension of time.",
+    "para": 2
+   },
+   {
+    "date": "2023-11-10",
+    "type": "scn_issued",
+    "quote": "Without providing such extension, the show cause notice was issued on 10.11.2023",
+    "para": 2
+   },
+   {
+    "date": "2024-02-29",
+    "type": "order_passed",
+    "quote": "and the impugned assessment order thereafter on 29.02.2024.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On perusal thereof, it is clear that the petitioner responded to each of the '15' discrepancies noticed during inspection.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons set out above, the impugned assessment order is quashed subject to the condition that the petitioner remits a sum of Rs.15,00,000/- as agreed to towards the disputed tax demand within a maximum period of two weeks from the date of receipt of a copy of this order.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14233,
+   "tokens_out": 5135,
+   "seconds": 14.31,
+   "cached": false
+  },
+  {
+   "tokens_in": 6682,
+   "tokens_out": 360,
+   "seconds": 8.49,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.financial_years:facts.financial_years"
+  ]
+ }
+}

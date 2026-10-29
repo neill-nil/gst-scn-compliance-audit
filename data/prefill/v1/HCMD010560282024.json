@@ -1,0 +1,147 @@
+{
+ "cnr": "HCMD010560282024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "the show cause notice dated 28.09.2023 in GST DRC 01 was issued under Section 74 of the TNGST Act, 2017",
+   "para": 4
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "passed under Section 74 of the TNGST Act, 2017 for the assessment year 2017-18.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-28",
+     "quote": "the show cause notice dated 28.09.2023 in GST DRC 01 was issued under Section 74 of the TNGST Act, 2017",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-29",
+    "quote": "impugned order of the respondent passed GSTIN:33AAECS3501R1Z8/2017-18 dated 29.12.2023",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-08-31",
+    "type": "other",
+    "quote": "the same was filed only on 31.08.2023 under the Amnesty scheme.",
+    "para": 7
+   },
+   {
+    "date": "2023-09-28",
+    "type": "scn_issued",
+    "quote": "The notice that has been issued on 28.09.2023, indicating that it is issued, after the Return filed by the petitioner on 31.08.2023.",
+    "para": 8
+   },
+   {
+    "date": "2023-12-29",
+    "type": "order_passed",
+    "quote": "passed the impugned order dated 29.12.2023 passed under Section 74 of the TNGST Act, 2017 for the assessment year 2017-18.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "the demand that has been confirmed in the impugned order arises on account of the discrepancies between the amount of the credit reflected in Form GST DRC 2A, which is auto populated Input Tax Credit and the Returns filed by the petitioner in Form GST DRC 3B.",
+    "para": 5
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "the show cause notice dated 28.09.2023 in GST DRC 01 was issued under Section 74 of the TNGST Act, 2017, without any ingredients for invoking the delay period under the aforesaid provisions and therefore, the impugned order, which has been passed, is nullity and without jurisdiction.",
+    "quote_source": "argument",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "This Writ Petition is disposed of, with above directions.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10499,
+   "tokens_out": 1973,
+   "seconds": 10.87,
+   "cached": false
+  },
+  {
+   "tokens_in": 2920,
+   "tokens_out": 169,
+   "seconds": 3.5,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.events[2]:order_passed"
+  ]
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "cnr": "HCMA011562972024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20",
+    "2020-21",
+    "2021-22"
+   ],
+   "quote": "during the relevant period namely viz., 2019-20 to 2021-22 the petitioner received work orders from BDO of Panchayat offices in Namakkal and Salem Districts for construction and erection of cow and goat sheds in the said Districts.",
+   "para": 3
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-03-11",
+    "quote": "call for the records relating to the impugned order dated 11.03.2024 bearing GST:33ACHPR0720K1ZL/ 2019-20 in Form GST DRC-07 issued by the 3 rd Respondent and quash the same as being arbitrary, pre meditated and mechanical",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-03-31",
+    "type": "other",
+    "quote": "Prayer in W.P.No.25225 of 2024: Writ petition is filed under Article 226 of the Constitution of India praying for issuance of a Writ of Certiorari, call for the records relating to the impugned order dated 11.03.2024 bearing GST:33ACHPR0720K1ZL/ 2020-21 in Form GST DRC-07 issued by the 3 rd Respondent (pursuant to preshow cause notices dated 31.03.2023), in so far as it relates to the levy of tax, interest and penalty for the alleged defect “Turnover difference between GSTR 3B and TDS credit received” and quash the same.",
+    "para": 0
+   },
+   {
+    "date": "2024-03-11",
+    "type": "order_passed",
+    "quote": "Prayer in W.P.No.25217 of 2024: Writ petition is filed under Article 226 of the Constitution of India praying for issuance of a Writ of Certiorari, call for the records relating to the impugned order dated 11.03.2024 bearing GST:33ACHPR0720K1ZL/ 2019-20 in Form GST DRC-07 issued by the 3 rd Respondent and quash the same as being arbitrary, pre meditated and mechanical",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "While filing reply, statement of the various invoices along with details of the taxes paid under the TNGST and CGST Act respectively was also submitted.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The impugned order is challenged on the premise that it is passed, over looking the reply and the supporting documents filed by the petitioner",
+    "quote_source": "argument",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view thereof, the impugned order is set-aside the petitioners are permitted to file additional representation, if any, along with work orders and proof of having paid the taxes in respect of subject work contract within a period of four (4) weeks from the date of receipt of copy of this order.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 11638,
+   "tokens_out": 1558,
+   "seconds": 20.97,
+   "cached": false
+  },
+  {
+   "tokens_in": 3562,
+   "tokens_out": 216,
+   "seconds": 1.81,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

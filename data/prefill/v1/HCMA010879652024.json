@@ -1,0 +1,95 @@
+{
+ "cnr": "HCMA010879652024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "bearing reference no.33 AKGPM6774M1ZL/2019-20 dated 09.10.2023",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2023-10-09",
+    "quote": "An order in original dated 09.10.2023 is challenged on the ground that the petitioner did not have a reasonable opportunity to contest the tax demand on merits.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "the impugned order being uploaded on the GST portal",
+    "para": 2
+   }
+  },
+  "events": [
+   {
+    "date": "2023-10-09",
+    "type": "order_passed",
+    "quote": "An order in original dated 09.10.2023 is challenged on the ground that the petitioner did not have a reasonable opportunity to contest the tax demand on merits.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "The tax proposal was confirmed because the petitioner did not reply to the show cause notice.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "By asserting that the petitioner was unaware of proceedings on account of the show cause notice and the impugned order being uploaded on the GST portal and the petitioner's tax consultant not informing the petitioner of the same, the present writ petition was filed.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "W.P.No.14274 of 2024 is disposed of on the above terms.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13353,
+   "tokens_out": 4629,
+   "seconds": 12.71,
+   "cached": false
+  },
+  {
+   "tokens_in": 2764,
+   "tokens_out": 161,
+   "seconds": 4.79,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

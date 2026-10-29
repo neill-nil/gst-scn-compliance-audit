@@ -1,0 +1,129 @@
+{
+ "cnr": "HCMA012200732025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "Assessment Year 2020 – 2021",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-25",
+     "quote": "Show Cause Notice in DRC 01 dated 25.11.2024",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-26",
+    "quote": "impugned order dated 26.02.2025",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-25",
+    "type": "scn_issued",
+    "quote": "Show Cause Notice in DRC 01 dated 25.11.2024",
+    "para": 3
+   },
+   {
+    "date": "2024-12-23",
+    "type": "reply_filed",
+    "quote": "to which the Petitioner has also replied on 23.12.2024 (wrongly mentioned as 21.01.2025) in the preamble to the impugned order.",
+    "para": 3
+   },
+   {
+    "date": "2025-02-26",
+    "type": "order_passed",
+    "quote": "impugned order dated 26.02.2025",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "This Writ Petition stands disposed of with the above observations.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9482,
+   "tokens_out": 1108,
+   "seconds": 9.54,
+   "cached": false
+  },
+  {
+   "tokens_in": 2629,
+   "tokens_out": 69,
+   "seconds": 4.99,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

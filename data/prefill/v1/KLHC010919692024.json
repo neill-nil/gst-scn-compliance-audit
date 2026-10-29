@@ -1,0 +1,77 @@
+{
+ "cnr": "KLHC010919692024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The present writ petition has been filed impugning the order in Ext.P1 passed by the 1st respondent issued under Section 73 of the CGST/SGST Act 2017 demanding the CGST and SGST along with interest and penalty for an amount of Rs.7,46,638/-.",
+   "para": 0
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2023-07-10",
+    "quote": "GST DRC-01 has been issued in pursuance of the order dated 10.07.2023 in Ext.P3, under Section 73(9) of the CGST/SGST Act 2017.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-07-10",
+    "type": "order_passed",
+    "quote": "GST DRC-01 has been issued in pursuance of the order dated 10.07.2023 in Ext.P3, under Section 73(9) of the CGST/SGST Act 2017.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "With the above observation, the present writ petition is dismissed.",
+   "para": 4
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9281,
+   "tokens_out": 783,
+   "seconds": 10.42,
+   "cached": false
+  },
+  {
+   "tokens_in": 5440,
+   "tokens_out": 197,
+   "seconds": 8.01,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

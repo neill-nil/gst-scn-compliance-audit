@@ -1,0 +1,133 @@
+{
+ "cnr": "HCMA011186102025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "On scrutinization of the annual returns filed by the petitioner in GSTR 09 for the Financial Year 2018-19 as well as the information furnished by the petitioner in GSTR 01, GSTR 2A, GSTR 3B, EWD, it was found that the petitioner did not declare their correct tax liability while filing the annual returns of GSTR 09.",
+   "para": 4
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-27",
+     "quote": "Hence, the respondent had issued a Show Cause Notice in Form DRC-01 dated 27.12.2023 bearing Ref.ID: ZD331223215050B calling upon the petitioner to submit their objections in DRC-06, within 30 days from the date of receipt of that notice.",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": "In this background, without hearing the petitioner, the respondent has passed the Order dated 29.04.2024 bearing No.GSTIN/33AAAPI4538D1Z9/2018-19, confirming the proposed demands in the Show Cause Notice.",
+     "para": 4
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "However, the said Show Cause Notice was only uploaded in the GST Portal Tab “View Additional Notices and Order” and the same was not served to the petitioner through physical mode.",
+     "para": 4
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-29",
+    "quote": "In this background, without hearing the petitioner, the respondent has passed the Order dated 29.04.2024 bearing No.GSTIN/33AAAPI4538D1Z9/2018-19, confirming the proposed demands in the Show Cause Notice.",
+    "para": 4
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "Since the petitioner was not aware of the Show Cause Notice, the petitioner could not file any reply to the Show Cause Notice.",
+    "para": 4
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "On scrutinization of the annual returns filed by the petitioner in GSTR 09 for the Financial Year 2018-19 as well as the information furnished by the petitioner in GSTR 01, GSTR 2A, GSTR 3B, EWD, it was found that the petitioner did not declare their correct tax liability while filing the annual returns of GSTR 09.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "From a perusal of the materials available on record, it is seen that the Show Cause Notice dated 27.12.2023 which culminated in the impugned order dated 29.04.2024 was merely uploaded in the GST Portal and the same was not served to the petitioner through any other physical mode.",
+    "quote_source": "court",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, this Writ Petition is disposed of.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12816,
+   "tokens_out": 1616,
+   "seconds": 11.09,
+   "cached": false
+  },
+  {
+   "tokens_in": 8703,
+   "tokens_out": 440,
+   "seconds": 8.61,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

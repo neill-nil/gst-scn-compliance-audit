@@ -1,0 +1,93 @@
+{
+ "cnr": "UPHC020961672025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2022-05-21",
+    "quote": "Present petition has been filed challenging the order dated 21.05.2022 passed under Section 75 of the U.P. Goods and Services Tax Act, 2017",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-05-21",
+    "type": "order_passed",
+    "quote": "Present petition has been filed challenging the order dated 21.05.2022 passed under Section 75 of the U.P. Goods and Services Tax Act, 2017 (for short, 'the GST Act') as well as the order dated 23.09.2025 whereby the appeal was dismissed as being beyond limitation.",
+    "para": 2
+   },
+   {
+    "date": "2025-09-23",
+    "type": "appeal_dismissed",
+    "quote": "Present petition has been filed challenging the order dated 21.05.2022 passed under Section 75 of the U.P. Goods and Services Tax Act, 2017 (for short, 'the GST Act') as well as the order dated 23.09.2025 whereby the appeal was dismissed as being beyond limitation.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Since the aforesaid dictum is applicable in the present facts and circumstances, accordingly, the impugned orders cannot be sustained and the orders dated 21.05.2022 & 23.09.2025 are accordingly quashed.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "With the aforesaid, the present petition is allowed.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12796,
+   "tokens_out": 3184,
+   "seconds": 11.48,
+   "cached": false
+  },
+  {
+   "tokens_in": 3237,
+   "tokens_out": 191,
+   "seconds": 4.2,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

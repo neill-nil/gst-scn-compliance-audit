@@ -1,0 +1,174 @@
+{
+ "cnr": "HCMA011064852024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "consequential DRC-07 Order under Section 73",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "GSTIN 33BPWPS8766P1ZE /2017-18 dated 07.12.2023",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-26",
+     "quote": "show cause notice dated 26.09.2023",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "The petitioner asserts that the show cause notice and other communications were uploaded in the “View Additional Notices and Orders” tab on the GST portal",
+     "para": 1
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-07",
+    "quote": "An order in original dated 07.12.2023 is challenged",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-05-15",
+    "type": "pre_scn_intimation",
+    "quote": "intimation dated 15.05.2023",
+    "para": 3
+   },
+   {
+    "date": "2023-09-26",
+    "type": "scn_issued",
+    "quote": "show cause notice dated 26.09.2023",
+    "para": 3
+   },
+   {
+    "date": "2023-11-24",
+    "type": "hearing_scheduled",
+    "quote": "personal hearing notice dated 24.11.2023",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "Such tax proposal was confirmed without hearing the petitioner on the ground that the petitioner failed to reply to the show cause notice.",
+    "para": 4
+   },
+   {
+    "date": "2023-12-07",
+    "type": "order_passed",
+    "quote": "An order in original dated 07.12.2023 is challenged",
+    "para": 1
+   },
+   {
+    "date": null,
+    "type": "recovery_or_attachment",
+    "quote": "a sum of Rs.30,693/- was recovered from the petitioner's account in the Kotak Mahindra Bank, after the order in original was issued.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "other",
+    "quote": "the petitioner carried the matter in appeal before the appellate authority by remitting an additional 10%.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "the confirmed tax proposal relates to a mismatch between the petitioner's GSTR 3B return and the auto-populated GSTR 2A.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Such tax proposal was confirmed without hearing the petitioner on the ground that the petitioner failed to reply to the show cause notice.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "By taking into account the assertion that such non participation was on account of being unaware of proceedings, reconsideration is necessary.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In the facts and circumstances outlined above, the impugned order dated 07.12.2023 is set aside and the matter is remanded for reconsideration.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13763,
+   "tokens_out": 5320,
+   "seconds": 15.16,
+   "cached": false
+  },
+  {
+   "tokens_in": 6295,
+   "tokens_out": 404,
+   "seconds": 7.87,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

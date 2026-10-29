@@ -1,0 +1,121 @@
+{
+ "cnr": "HCMA010933942024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-03-13",
+    "quote": "In all these writ petitions, orders in original dated 13.03.2024 relating to distinct assessment periods are challenged on the ground that the petitioner's reply was not considered.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "pre_scn_intimation",
+    "quote": "Pursuant to an inspection of the petitioner's place of business, intimation and show cause notices were issued in respect of about eight defects.",
+    "para": 1
+   },
+   {
+    "date": null,
+    "type": "scn_issued",
+    "quote": "Pursuant to an inspection of the petitioner's place of business, intimation and show cause notices were issued in respect of about eight defects.",
+    "para": 1
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "The petitioner submitted separate replies in respect of each defect.",
+    "para": 1
+   },
+   {
+    "date": "2024-03-13",
+    "type": "order_passed",
+    "quote": "In all these writ petitions, orders in original dated 13.03.2024 relating to distinct assessment periods are challenged on the ground that the petitioner's reply was not considered.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "The reply has been scrutinized and identified that reply is not in order due to neither filed any relevant document to the payment of difference of tax liability Rs.182673/- nor document of proof to substantiate no difference turnover between GSTR 3B and GSTR 1.",
+    "para": 4
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Therefore the proposal of levy tax Rs.182673/- is hereby confirmed",
+    "para": 4
+   },
+   {
+    "type": "reply_point",
+    "quote": "On examining the reply, for instance in respect of defect no.1 relating to the difference between the petitioner's GSTR 3B and GSTR 1 statement, it is noticeable that the petitioner has explained the discrepancy in considerable detail.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On account of the failure of the respondent to duly consider the petitioner's reply and record reasons for rejecting such reply, orders impugned herein cannot be sustained.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons set out above, the impugned orders in original are set aside and these matters are remanded for reconsideration.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 11111,
+   "tokens_out": 1259,
+   "seconds": 14.31,
+   "cached": false
+  },
+  {
+   "tokens_in": 3401,
+   "tokens_out": 141,
+   "seconds": 1.5,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,181 @@
+{
+ "cnr": "DLHC010220672025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The taxpayer has been issued notice u/s. 73 on 15.5.2024 to be replied by 15.6.2024, which was not replied.",
+   "para": 11
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "The present petition has been filed by the Petitioner– M/s Pashmeen Overseas challenging the Order-in-Original dated 3rd August, 2024 bearing Reference No. ZD0708240105598 passed by the Sales Tax Officer (hereinafter, ‘the impugned order’) pertaining to the tax period April, 2019 to March, 2020.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-15",
+     "quote": "The taxpayer has been issued notice u/s. 73 on 15.5.2024 to be replied by 15.6.2024, which was not replied.",
+     "para": 11
+    },
+    "reply_due": {
+     "value": "2024-06-15",
+     "quote": "The taxpayer has been issued notice u/s. 73 on 15.5.2024 to be replied by 15.6.2024, which was not replied.",
+     "para": 11
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "Accordingly as per the provisions of Section 75(4) an opportunity of personal hearing along with reminder to file the reply was afforded to the taxpayer for 22/07/2024.",
+     "para": 11
+    },
+    "hearing_date": {
+     "value": "2024-07-22",
+     "quote": "Accordingly as per the provisions of Section 75(4) an opportunity of personal hearing along with reminder to file the reply was afforded to the taxpayer for 22/07/2024.",
+     "para": 11
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-03",
+    "quote": "The present petition has been filed by the Petitioner– M/s Pashmeen Overseas challenging the Order-in-Original dated 3rd August, 2024 bearing Reference No. ZD0708240105598 passed by the Sales Tax Officer (hereinafter, ‘the impugned order’) pertaining to the tax period April, 2019 to March, 2020.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-15",
+    "type": "scn_issued",
+    "quote": "The taxpayer has been issued notice u/s. 73 on 15.5.2024 to be replied by 15.6.2024, which was not replied.",
+    "para": 11
+   },
+   {
+    "date": "2024-06-15",
+    "type": "reply_not_filed",
+    "quote": "The taxpayer has been issued notice u/s. 73 on 15.5.2024 to be replied by 15.6.2024, which was not replied.",
+    "para": 11
+   },
+   {
+    "date": "2024-07-22",
+    "type": "hearing_scheduled",
+    "quote": "Accordingly as per the provisions of Section 75(4) an opportunity of personal hearing along with reminder to file the reply was afforded to the taxpayer for 22/07/2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-07-22",
+    "type": "hearing_missed",
+    "quote": "Neither taxpayer nor his AR attended the personal hearing and also not filed any reply to the SCN issued.",
+    "para": 11
+   },
+   {
+    "date": "2024-08-03",
+    "type": "order_passed",
+    "quote": "Accordingly the case has been taken up ex-parte and the demand intimated to the taxpayer is hereby confirmed.",
+    "para": 11
+   },
+   {
+    "date": "2024-08-13",
+    "type": "rectification_rejected",
+    "quote": "Further, it is also submitted by the Petitioner that after obtaining the knowledge about the passing of the impugned order, an application for rectification of order dated 13th August, 2024 was filed by the Petitioner which was also rejected by the Sales Tax Officer vide order dated 17th December, 2024.",
+    "para": 8
+   },
+   {
+    "date": "2024-12-17",
+    "type": "rectification_rejected",
+    "quote": "Further, it is also submitted by the Petitioner that after obtaining the knowledge about the passing of the impugned order, an application for rectification of order dated 13th August, 2024 was filed by the Petitioner which was also rejected by the Sales Tax Officer vide order dated 17th December, 2024.",
+    "para": 8
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "As observed by this Court in the order dated 22nd April, 2025 as well, since the challenge to the above mentioned notifications is presently under consideration before the Supreme Court in S.L.P No 4240/2025 titled M/s HCC-SEW-MEIL-AAG JV v. Assistant Commissioner of State Tax & Ors., the challenge made by the Petitioner to the impugned notification in the present proceedings shall also be subject to the outcome of the decision of the Supreme Court.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "On facts, however, the submission of the Petitioner in the present petition is that the reply to the SCN dated 15th May, 2024 was not filed by the Petitioner since the same was handed over to the accountant but the accountant failed to furnish the reply.",
+    "quote_source": "argument",
+    "para": 6
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is also submitted that the opportunity to participate in personal hearing was also not afforded to the Petitioner.",
+    "quote_source": "argument",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13958,
+   "tokens_out": 2645,
+   "seconds": 9.65,
+   "cached": false
+  },
+  {
+   "tokens_in": 9646,
+   "tokens_out": 1053,
+   "seconds": 8.65,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

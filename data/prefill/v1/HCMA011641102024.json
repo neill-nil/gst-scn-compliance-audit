@@ -1,0 +1,142 @@
+{
+ "cnr": "HCMA011641102024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "order No.GSTIN33AABCT0845L2Zc/2017-18",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-11",
+     "quote": "a show cause notice was issued in FORM DRC-01 on 11.12.2023",
+     "para": 2
+    },
+    "reply_due": {
+     "value": "2024-01-10",
+     "quote": "wherein 30 days' time was provided for filing a reply, which was due on or before 10.01.2024.",
+     "para": 2
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-30",
+    "quote": "the impugned ex-parte order No.GSTIN33AABCT0845L2Zc/2017-18, dated 30.12.2023",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-11",
+    "type": "scn_issued",
+    "quote": "a show cause notice was issued in FORM DRC-01 on 11.12.2023",
+    "para": 2
+   },
+   {
+    "date": "2023-12-30",
+    "type": "order_passed",
+    "quote": "However, the impugned assessment order was passed on 30.12.2023, 10 days before the expiry of the time limit for submitting the reply",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, it is clear that the impugned order was passed without receiving the petitioner’s reply and without providing a personal hearing.",
+    "quote_source": "court",
+    "para": 4
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, it is clear that the impugned order was passed without receiving the petitioner’s reply and without providing a personal hearing.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned assessment order dated 30.12.2023 is hereby set aside.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13325,
+   "tokens_out": 4934,
+   "seconds": 14.76,
+   "cached": false
+  },
+  {
+   "tokens_in": 2750,
+   "tokens_out": 280,
+   "seconds": 3.58,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

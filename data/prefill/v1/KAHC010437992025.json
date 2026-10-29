@@ -1,0 +1,106 @@
+{
+ "cnr": "KAHC010437992025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "quashing the Adjudication Order dated 19-07-2024 passed by the Assistant Commissioner of Commercial Taxes, LGSTO-016, Bengaluru, the second respondent herein, in No. ACCT/LGSTO-16/DRC-07/2024- 25, under sections 73(10), 73(9), 50 and 122 of the KGST Act, 2017 and CGST Act, 2017 for the tax periods APRIL 2019 TO MARCH 2020, IN THE CASE OF THE PETITIONER - ANNEXURE – C.",
+   "para": 3
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "for the tax periods April 2019 to March 2020, in the case of the petitioner - ANNEXURE – C.",
+   "para": 3
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-07-19",
+    "quote": "quashing the Adjudication Order dated 19-07-2024 passed by the Assistant Commissioner of Commercial Taxes, LGSTO-016, Bengaluru, the second respondent herein, in No. ACCT/LGSTO-16/DRC-07/2024- 25, under sections 73(10), 73(9), 50 and 122 of the KGST Act, 2017 and CGST Act, 2017 for the tax periods APRIL 2019 TO MARCH 2020, IN THE CASE OF THE PETITIONER - ANNEXURE – C.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-07-19",
+    "type": "order_passed",
+    "quote": "quashing the Adjudication Order dated 19-07-2024 passed by the Assistant Commissioner of Commercial Taxes, LGSTO-016, Bengaluru, the second respondent herein, in No. ACCT/LGSTO-16/DRC-07/2024- 25, under sections 73(10), 73(9), 50 and 122 of the KGST Act, 2017 and CGST Act, 2017 for the tax periods APRIL 2019 TO MARCH 2020, IN THE CASE OF THE PETITIONER - ANNEXURE – C.",
+    "para": 3
+   },
+   {
+    "date": "2024-07-20",
+    "type": "order_passed",
+    "quote": "issue a writ of certiorari or a declaration in the nature of writ of certiorari quashing the summary of Order under section 73(9) in Form GST DRC-07 dated 20-07-2024 passed by the Assistant Commissioner of Commercial Taxes, LGSTO-016, Bengaluru, the second respondent herein, in No. ZD290724066834U under sections 73(10), 73(9), 50 & 122 of the KGST Act, 2017 and CGST Act, 2017 for the tax periods April 2019 to March 2020, in the case of the petitioner - ANNEXURE - C",
+    "para": 1
+   },
+   {
+    "date": "2025-02-21",
+    "type": "appeal_dismissed",
+    "quote": "issue a writ of certiorari or a declaration in the nature of writ of certiorari quashing the Order dated 21-02-2025 passed by the Joint Commissioner of Commercial Taxes, (Appeals)-4, Bengaluru, the third respondent herein, in No. AD2901250403286 and ZD2902250848811, under section 107 of the KGST Act, 2017 and CGST Act, 2017 for the tax periods April 2019 to March 2020, in the case of the petitioner - ANNEXURE - D",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "This not having been done has resulted in the respondents passing an order on the ground that the petitioner has claimed excess ITC when the petitioner apparently has not.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "The writ petition is allowed.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14949,
+   "tokens_out": 5345,
+   "seconds": 30.09,
+   "cached": false
+  },
+  {
+   "tokens_in": 7505,
+   "tokens_out": 447,
+   "seconds": 6.68,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.provision:facts.provision",
+   "facts.financial_years:facts.financial_years",
+   "facts.order.date:facts.order.date",
+   "facts.events[0]:order_passed"
+  ]
+ }
+}

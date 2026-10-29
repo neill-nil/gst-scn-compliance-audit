@@ -1,0 +1,108 @@
+{
+ "cnr": "HCMD010701192026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The Writ Petition is filed challenging the impugned order, dated 21.08.2024, which is an order of assessment passed under Section 73 of the TNGST Act, 2017.",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "The Writ Petition is filed under Article 226 of the Constitution of India, praying this Court to issue a Writ of Certiorarified Mandamus, to call for the impugned assessment order on the file of the respondent vide GSTIN : 33BGDPS8507A1ZO/2019-20 and in summary order Reference No: ZD330824178809R dated 21.08.2024 and quash the same as illegal and devoid of merits and direct the respondent redo the assessment proceedings for the year 2019-20.",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-08-21",
+    "quote": "The Writ Petition is filed challenging the impugned order, dated 21.08.2024, which is an order of assessment passed under Section 73 of the TNGST Act, 2017.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "In view thereof, only a general reply was filed by the petitioner, and item-wise specific replies along with documents could not be produced by the petitioner.",
+    "para": 2
+   },
+   {
+    "date": "2024-08-21",
+    "type": "order_passed",
+    "quote": "The Writ Petition is filed challenging the impugned order, dated 21.08.2024, which is an order of assessment passed under Section 73 of the TNGST Act, 2017.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "It can be seen that the petitioner has given a roundabout reply without specifically dealing with the discrepancies and producing the documents, merely stating that due to severe health issues, he is unable to actively manage the business operations.",
+    "para": 5
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "As a matter of fact, in the impugned order itself, the Assessing Authority admits that the petitioner was not well.",
+    "para": 5
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "petitioner was seriously ill and unable to submit specific replies",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The crux of the submissions made by the learned counsel for the petitioner is that the petitioner was seriously ill during the time when the show cause notice was issued and the personal hearing opportunities were extended.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "The writ petition is allowed on the following terms: (i) The impugned order dated 21.08.2024 shall stand set aside and the matter is remanded back to the file of the respondent.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4393,
+   "tokens_out": 739,
+   "seconds": 5.49,
+   "cached": false
+  },
+  {
+   "tokens_in": 5531,
+   "tokens_out": 371,
+   "seconds": 8.63,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.financial_years:facts.financial_years"
+  ]
+ }
+}

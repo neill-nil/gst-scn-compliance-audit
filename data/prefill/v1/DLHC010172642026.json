@@ -1,0 +1,125 @@
+{
+ "cnr": "DLHC010172642026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2023-24"
+   ],
+   "quote": "Also, another SCN dated 05th January, 2026 was issued by the respondents demanding Rs. 49,82,270/- for financial year 2023-24.",
+   "para": 3
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-08-17",
+    "type": "scn_issued",
+    "quote": "It is the case of the petitioner that a SCN dated 17th August, 2024 came to be issued, whereby the GST registration of the petitioner was suspended with effect from 17th August, 2024 on the ground that the availment of Input Tax Credit (‘ITC’) was in violation of Section 16 of the CGST Act, 2017 and the Rules framed thereunder.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-29",
+    "type": "reply_filed",
+    "quote": "The petitioner submitted a reply dated 29th August, 2024 to the said SCN.",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "earlier_writ",
+    "quote": "A Show Cause Notice (‘SCN’) in FORM GST REG-17 came to be issued to the petitioner, which led to the filing of W.P. (C) No. 17558/2025 before this Court.",
+    "para": 3
+   },
+   {
+    "date": "2025-12-01",
+    "type": "earlier_writ",
+    "quote": "The said petition was disposed of vide order dated 01st December, 2025.",
+    "para": 3
+   },
+   {
+    "date": "2025-09-29",
+    "type": "scn_issued",
+    "quote": "The petitioner was, thereafter, saddled with a SCN i.e., FORM GST DRC-01 on 29th September, 2025 demanding an amount of Rs.48,54,714/- on account of wrongful availment of ITC.",
+    "para": 3
+   },
+   {
+    "date": "2026-01-05",
+    "type": "scn_issued",
+    "quote": "Also, another SCN dated 05th January, 2026 was issued by the respondents demanding Rs. 49,82,270/- for financial year 2023-24.",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "It is the case of the petitioner that a SCN dated 17th August, 2024 came to be issued, whereby the GST registration of the petitioner was suspended with effect from 17th August, 2024 on the ground that the availment of Input Tax Credit (‘ITC’) was in violation of Section 16 of the CGST Act, 2017 and the Rules framed thereunder.",
+    "para": 3
+   },
+   {
+    "type": "scn_ground",
+    "quote": "The petitioner was, thereafter, saddled with a SCN i.e., FORM GST DRC-01 on 29th September, 2025 demanding an amount of Rs.48,54,714/- on account of wrongful availment of ITC.",
+    "para": 3
+   },
+   {
+    "type": "scn_ground",
+    "quote": "Also, another SCN dated 05th January, 2026 was issued by the respondents demanding Rs. 49,82,270/- for financial year 2023-24.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The petition, accordingly, stands disposed of in above terms.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10941,
+   "tokens_out": 2281,
+   "seconds": 10.42,
+   "cached": false
+  },
+  {
+   "tokens_in": 3064,
+   "tokens_out": 53,
+   "seconds": 3.16,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

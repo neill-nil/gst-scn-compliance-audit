@@ -1,0 +1,172 @@
+{
+ "cnr": "DLHC010370792025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "passed by the Sales Tax Officer Class II/Avato Ward 62, Zone-5, Delhi for the Financial Year 2019-20.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-16",
+     "quote": "Thereafter, a Show Cause Notice dated 16th May, 2024 (hereinafter, ‘SCN’) was issued to the Petitioner.",
+     "para": 7
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-19",
+    "quote": "seeking the quashing of the impugned order dated 19th August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 62, Zone-5, Delhi for the Financial Year 2019-20.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-03-08",
+    "type": "other",
+    "quote": "the GST registration of the Petitioner was suspended by the Respondent No. 1 vide issuance of FORM GST REG-17 w.e.f 8th March, 2024.",
+    "para": 7
+   },
+   {
+    "date": "2024-05-16",
+    "type": "scn_issued",
+    "quote": "Thereafter, a Show Cause Notice dated 16th May, 2024 (hereinafter, ‘SCN’) was issued to the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": "2024-07-27",
+    "type": "other",
+    "quote": "Moreover, a reminder was also issued to the Petitioner on 27th July, 2024, however, the same could also not be accessed by the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": "2024-08-19",
+    "type": "order_passed",
+    "quote": "seeking the quashing of the impugned order dated 19th August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 62, Zone-5, Delhi for the Financial Year 2019-20.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "nor any personal hearing has been attended by the Petitioner.",
+    "quote_source": "argument",
+    "para": 7
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "submission of the Petitioner is that no reply has been filed by the Petitioner to the SCN",
+    "quote_source": "argument",
+    "para": 7
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "the Petitioner could not access the GST Portal as the GST registration of the Petitioner was suspended w.e.f 8th March, 2024.",
+    "quote_source": "argument",
+    "para": 7
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "Additionally, the present petition also challenges the vires of the following notifications",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14660,
+   "tokens_out": 2126,
+   "seconds": 10.39,
+   "cached": false
+  },
+  {
+   "tokens_in": 10328,
+   "tokens_out": 743,
+   "seconds": 9.22,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

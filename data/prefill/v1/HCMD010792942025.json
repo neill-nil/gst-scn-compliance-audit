@@ -1,0 +1,135 @@
+{
+ "cnr": "HCMD010792942025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The impugned order was preceded by a show cause notice under Section 73 of the Tamil Nadu Goods and Services Tax Act/Central Government Goods and Services Tax Act, 2017 in DRC 01 dated 25.11.2024.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "The petitioner has approached this Court against the impugned order, dated 24.02.2025 for the assessment year 2020-2021 passed by the respondent.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-25",
+     "quote": "The impugned order was preceded by a show cause notice under Section 73 of the Tamil Nadu Goods and Services Tax Act/Central Government Goods and Services Tax Act, 2017 in DRC 01 dated 25.11.2024.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-24",
+    "quote": "The petitioner has approached this Court against the impugned order, dated 24.02.2025 for the assessment year 2020-2021 passed by the respondent.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-25",
+    "type": "scn_issued",
+    "quote": "The impugned order was preceded by a show cause notice under Section 73 of the Tamil Nadu Goods and Services Tax Act/Central Government Goods and Services Tax Act, 2017 in DRC 01 dated 25.11.2024.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "The petitioner did not respond to the same and thus, suffered the impugned assessment order.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "It is noticed that the petitioner has not appeared for personal hearing despite two reminders have been sent.",
+    "para": 2
+   },
+   {
+    "date": "2025-02-24",
+    "type": "order_passed",
+    "quote": "The petitioner has approached this Court against the impugned order, dated 24.02.2025 for the assessment year 2020-2021 passed by the respondent.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Therefore, the impugned order stands quashed and the case is remitted back to the respondent to pass fresh orders on merits and in accordance with law.",
+   "para": 4
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9370,
+   "tokens_out": 1987,
+   "seconds": 11.09,
+   "cached": false
+  },
+  {
+   "tokens_in": 2352,
+   "tokens_out": 71,
+   "seconds": 2.48,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

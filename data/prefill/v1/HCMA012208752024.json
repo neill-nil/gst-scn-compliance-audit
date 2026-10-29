@@ -1,0 +1,200 @@
+{
+ "cnr": "HCMA012208752024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "m GSTIN 33AASFP0460DlZG/2019-20",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-23",
+     "quote": "Pursuant thereto, a show cause notice in DRC 01 was issued to the petitioner on 23.05.2024.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "Further personal hearing was offered on 14.06.2024 and 03.07.2024.",
+     "para": 2
+    },
+    "hearing_date": {
+     "value": "2024-06-14",
+     "quote": "Further personal hearing was offered on 14.06.2024 and 03.07.2024.",
+     "para": 2
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-30",
+    "quote": "The present writ petition is filed challenging the impugned order dated 30.08.2024 on the premise that the same is not a speaking order and thus in violation of principles of natural justice.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-23",
+    "type": "scn_issued",
+    "quote": "Pursuant thereto, a show cause notice in DRC 01 was issued to the petitioner on 23.05.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-06-14",
+    "type": "hearing_scheduled",
+    "quote": "Further personal hearing was offered on 14.06.2024 and 03.07.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-07-03",
+    "type": "hearing_scheduled",
+    "quote": "Further personal hearing was offered on 14.06.2024 and 03.07.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-07-30",
+    "type": "reply_filed",
+    "quote": "In response to the same, the petitioner filed its reply along with supporting documents on the following dates: 30.07.2024, 21.08.2024, 24.08.2024 and 29.08.2024",
+    "para": 2
+   },
+   {
+    "date": "2024-08-21",
+    "type": "reply_filed",
+    "quote": "In response to the same, the petitioner filed its reply along with supporting documents on the following dates: 30.07.2024, 21.08.2024, 24.08.2024 and 29.08.2024",
+    "para": 2
+   },
+   {
+    "date": "2024-08-24",
+    "type": "reply_filed",
+    "quote": "In response to the same, the petitioner filed its reply along with supporting documents on the following dates: 30.07.2024, 21.08.2024, 24.08.2024 and 29.08.2024",
+    "para": 2
+   },
+   {
+    "date": "2024-08-29",
+    "type": "reply_filed",
+    "quote": "In response to the same, the petitioner filed its reply along with supporting documents on the following dates: 30.07.2024, 21.08.2024, 24.08.2024 and 29.08.2024",
+    "para": 2
+   },
+   {
+    "date": "2024-08-30",
+    "type": "order_passed",
+    "quote": "The present writ petition is filed challenging the impugned order dated 30.08.2024 on the premise that the same is not a speaking order and thus in violation of principles of natural justice.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "a) Under declaration of output tax b) Under declaration of Ineligible Input Tax Credit c) Input Tax credit not reversed in respect of non business transaction and exempted supplies. d) Input Tax Credit claimed in respect of supplies effected by cancelled dealers, return defaulters and tax non payer.",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "a) In respect of first issue, it was submitted that taxes have already been paid and they would be sharing the proof of having discharged the tax liability;",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "b) In respect of second issue, after placing reliance upon Section 17(5) of the GST Act, it was submitted that they were engaged in the business of trading of goods and electrical goods were purchased for its trading activity.",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "c) In respect of third issue, it was submitted that there was no common input tax credit and thus reversal is not warranted in terms of Section 17(1)(2) of the GST Act.",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "d) In respect of fourth issue, it was submitted that the taxes have already been paid along with the material value and reliance was placed on the following judgments",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The reply filed by the tax payer is not acceptable and hence the demand proposed in the notice is hereby conformed",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Applying the above judgment of the Hon'ble Supreme Court to the impugned proceedings, this Court is of the view that the impugned proceedings suffers from the vice of being a non-speaking order.",
+    "quote_source": "court",
+    "para": 10
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The impugned order is set aside.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15993,
+   "tokens_out": 5994,
+   "seconds": 16.0,
+   "cached": false
+  },
+  {
+   "tokens_in": 4084,
+   "tokens_out": 177,
+   "seconds": 1.7,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

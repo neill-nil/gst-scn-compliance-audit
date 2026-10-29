@@ -1,0 +1,163 @@
+{
+ "cnr": "ODHC010861922025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "while undertaking adjudication process under Section 73 of the GST Act pertaining Financial Year 2017-18",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "pertaining Financial Year 2017-18",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-04-28",
+     "quote": "Accordingly a show cause notice being issued on 28.04.2023",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-15",
+    "quote": "vide Order dated 15.12.2023",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2020-01-15",
+    "type": "other",
+    "quote": "The petitioner reversed an amount of Rs.1,77,136/- on 15.01.2020 through DRC-03",
+    "para": 2
+   },
+   {
+    "date": "2023-04-28",
+    "type": "scn_issued",
+    "quote": "Accordingly a show cause notice being issued on 28.04.2023",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "hearing_attended",
+    "quote": "the petitioner participating before the authority concerned explained that the objection raised in the audit is untenable and is liable to be dropped.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-15",
+    "type": "order_passed",
+    "quote": "vide Order dated 15.12.2023",
+    "para": 1
+   },
+   {
+    "date": "2025-09-29",
+    "type": "appeal_dismissed",
+    "quote": "came to be dismissed by Order dated 29.09.2025.",
+    "para": 2
+   },
+   {
+    "date": "2026-01-28",
+    "type": "other",
+    "quote": "a Rectified Order-in-Original has been passed on 28.01.2026 by the Superintendent of CGST & Central Excise",
+    "para": 6
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "The notice thus, is required to pay interest for late reversal of such credit under Section 50(1) of the CGST Act, 2017 read with Section 20(xxv) of the GST Act, 2017.",
+    "para": 6
+   },
+   {
+    "type": "reply_point",
+    "quote": "the petitioner participating before the authority concerned explained that the objection raised in the audit is untenable and is liable to be dropped.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "I charge and order for recovery of interest of Rs1,87,093/- (Rupees One Lakh Eighty-Seven Thousand Ninety-three Only) (IGST: Rs.1,87,093/-) for the F.Y. 2017-18, in terms of Section 73(9) read with Section 50 of the CGST/OGST Act, 2017 read with Section 20(xxv) of IGST Act, 2017.",
+    "para": 6
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Under the above premises, the Order-in-Appeal dated 29.09.2025 passed by the Additional Commissioner of GST (Appeal) in Appeal bearing No.391/BBSR- GST/APPEAL/2024 is set aside and the matter is remitted to the Appellate Authority for deciding the appeal on merit afresh without being swayed away by earlier order and pass appropriate order in accordance with law after hearing the petitioner.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 20569,
+   "tokens_out": 5408,
+   "seconds": 14.21,
+   "cached": false
+  },
+  {
+   "tokens_in": 6372,
+   "tokens_out": 152,
+   "seconds": 2.8,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

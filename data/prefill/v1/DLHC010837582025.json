@@ -1,0 +1,194 @@
+{
+ "cnr": "DLHC010837582025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "both pertaining to F.Y. 2019-2020.",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-28",
+     "quote": "The SCNs leading to the impugned orders were issued to the Petitioner on 28th May, 2024 and 29th May, 2024 (hereinafter, ‘the SCNs’), with an opportunity to file a reply thereto.",
+     "para": 8
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   },
+   {
+    "date": {
+     "value": "2024-05-29",
+     "quote": "The SCNs leading to the impugned orders were issued to the Petitioner on 28th May, 2024 and 29th May, 2024 (hereinafter, ‘the SCNs’), with an opportunity to file a reply thereto.",
+     "para": 8
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-02",
+    "quote": "seeking quashing of the impugned orders dated 6th August, 2024 and 02nd August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 2, Zone-2, Delhi (hereinafter, ‘the impugned orders’), both pertaining to F.Y. 2019-2020.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-28",
+    "type": "scn_issued",
+    "quote": "The SCNs leading to the impugned orders were issued to the Petitioner on 28th May, 2024 and 29th May, 2024 (hereinafter, ‘the SCNs’), with an opportunity to file a reply thereto.",
+    "para": 8
+   },
+   {
+    "date": "2024-05-29",
+    "type": "scn_issued",
+    "quote": "The SCNs leading to the impugned orders were issued to the Petitioner on 28th May, 2024 and 29th May, 2024 (hereinafter, ‘the SCNs’), with an opportunity to file a reply thereto.",
+    "para": 8
+   },
+   {
+    "date": "2024-07-11",
+    "type": "other",
+    "quote": "A reminder notice is also stated to have been issued to the Petitioner on 11th July, 2024.",
+    "para": 8
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, it is the admitted position that no reply to the SCNs were filed on behalf of the Petitioner.",
+    "para": 8
+   },
+   {
+    "date": "2024-08-02",
+    "type": "order_passed",
+    "quote": "seeking quashing of the impugned orders dated 6th August, 2024 and 02nd August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 2, Zone-2, Delhi (hereinafter, ‘the impugned orders’), both pertaining to F.Y. 2019-2020.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-06",
+    "type": "order_passed",
+    "quote": "seeking quashing of the impugned orders dated 6th August, 2024 and 02nd August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 2, Zone-2, Delhi (hereinafter, ‘the impugned orders’), both pertaining to F.Y. 2019-2020.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "However, it is made clear that the issue in respect of the validity of the impugned notifications is left open.",
+    "quote_source": "court",
+    "para": 14
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The said matter is remanded for fresh adjudication, subject to payment of cost of Rs.20,000/- to be paid to the Sales Tax Bar Association.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15093,
+   "tokens_out": 2855,
+   "seconds": 8.52,
+   "cached": false
+  },
+  {
+   "tokens_in": 10237,
+   "tokens_out": 499,
+   "seconds": 8.28,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

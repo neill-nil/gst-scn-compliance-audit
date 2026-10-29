@@ -1,0 +1,164 @@
+{
+ "cnr": "DLHC010132862025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-07-24",
+     "quote": "Demand- cum-Show Cause Notice bearing No.35/2024-25 dated 24th July, 2024 (hereinafter, ‘the SCN’)",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-02",
+    "quote": "Order-in- Original bearing No.68/CGST WEST/GST/SKG/ADC/2024-25 dated 02nd February, 2025 (hereinafter, ‘the impugned order’)",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-07-24",
+    "type": "scn_issued",
+    "quote": "Demand- cum-Show Cause Notice bearing No.35/2024-25 dated 24th July, 2024 (hereinafter, ‘the SCN’)",
+    "para": 2
+   },
+   {
+    "date": "2025-01-23",
+    "type": "reply_filed",
+    "quote": "A reply to the SCN was also filed by the Petitioner on 23rd January, 2025.",
+    "para": 6
+   },
+   {
+    "date": "2025-01-28",
+    "type": "other",
+    "quote": "a Corrigendum dated 28th January, 2025 by Respondent No. 3 which states as under:",
+    "para": 8
+   },
+   {
+    "date": "2025-01-29",
+    "type": "hearing_attended",
+    "quote": "after the personal hearing was conducted on 29th January, 2025 and the issue of jurisdiction was raised by the Petitioner.",
+    "para": 9
+   },
+   {
+    "date": "2025-02-02",
+    "type": "order_passed",
+    "quote": "Order-in- Original bearing No.68/CGST WEST/GST/SKG/ADC/2024-25 dated 02nd February, 2025 (hereinafter, ‘the impugned order’)",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "raised various allegations in respect of several fictitious and non-existing firms being run by the Petitioner and fraudulent availment of Input Tax Credit (hereinafter, ‘ITC’) under the name of such firms.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The case of the Petitioner is that the impugned order has been passed without affording a proper hearing.",
+    "quote_source": "argument",
+    "para": 6
+   },
+   {
+    "type": "other_procedural",
+    "note": "Jurisdiction of adjudicating authority",
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "On the basis of the Notification dated 11th March, 2022 and 25th November, 2024, it cannot be said that the Principal Commissioner Delhi, North did not have proper jurisdiction.",
+    "quote_source": "court",
+    "para": 14
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "Accordingly, the present writ petition is disposed of in above terms.",
+   "para": 18
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14489,
+   "tokens_out": 5190,
+   "seconds": 14.49,
+   "cached": false
+  },
+  {
+   "tokens_in": 3332,
+   "tokens_out": 284,
+   "seconds": 3.97,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

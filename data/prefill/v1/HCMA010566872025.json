@@ -1,0 +1,92 @@
+{
+ "cnr": "HCMA010566872025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2017-18",
+    "2019-20",
+    "2020-21"
+   ],
+   "quote": "GSTIN : 33AALPK3597K1Z8/2018-19",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "all the notices and orders, which culminated in the impugned orders were uploaded in the GST Portal, under the column, 'Additional Notices and Orders' and not in Notices and Orders Columns",
+    "para": 3
+   }
+  },
+  "events": [
+   {
+    "date": "2025-02-20",
+    "type": "recovery_or_attachment",
+    "quote": "only when the recovery notice came to be issued on 20.02.2025, the petitioner came to realize the series of proceedings initiated against him",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In the case on hand, it is seen that all the communications/notice, which culminated in the impugned orders were uploaded in the GST Portal, that too, not under the usual column, 'Notices and Orders', but under the different column, i.e. ''Additional Notices and Orders'' column, which not only the petitioner but also the petitioner's Accountant was aware.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, the Writ Petitions are allowed on the aforesaid terms.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12632,
+   "tokens_out": 863,
+   "seconds": 10.18,
+   "cached": false
+  },
+  {
+   "tokens_in": 8919,
+   "tokens_out": 472,
+   "seconds": 10.2,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

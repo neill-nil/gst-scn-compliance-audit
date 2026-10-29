@@ -1,0 +1,98 @@
+{
+ "cnr": "HCMD010008282025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "The Primordial contention of the learned counsel for the petitioner is that neither the provisions of Section 74 of the Tamil Nadu Goods and Services Tax Act, 2017 (hereinafter referred to as “the Act”) which envisages a determination by the Assessing Officer of the proposal made under the show cause notice has been invoked",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "The challenge in the writ petition is to the assessment order of the year 2021-22.",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-09-30",
+    "quote": "The challenge in the writ petition is to the assessment order in GSTIN 33AAGCC2404D2ZE/2021-22, dated 30.09.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-09-30",
+    "type": "order_passed",
+    "quote": "The challenge in the writ petition is to the assessment order in GSTIN 33AAGCC2404D2ZE/2021-22, dated 30.09.2024",
+    "para": 0
+   },
+   {
+    "date": "2024-12-05",
+    "type": "rectification_rejected",
+    "quote": "and the rejection order of rectification application in Reference No. GSTIN 33AAGCC2404D2ZE/2021-22, dated 05.12.2024 passed by the 1st respondent",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "A perusal of the order impugned herein would also show that the Assessing Officer had not made any determination of the tax payable by the petitioner as envisaged under Section 74 of the Act, nor has followed the guidelines issued in Circular dated 29.08.2024 of the Commissioner of State Tax.",
+    "quote_source": "court",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In fine, this Writ Petition is allowed, the impugned order is set aside and the matter is remitted back to the first respondent for fresh consideration.",
+   "para": 4
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13171,
+   "tokens_out": 4743,
+   "seconds": 15.04,
+   "cached": false
+  },
+  {
+   "tokens_in": 2673,
+   "tokens_out": 224,
+   "seconds": 3.96,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.order.date:facts.order.date",
+   "facts.events[0]:order_passed"
+  ]
+ }
+}

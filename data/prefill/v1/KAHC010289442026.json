@@ -1,0 +1,128 @@
+{
+ "cnr": "KAHC010289442026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The petitioner's grievance is with the Adjudication Order dated 01.12.2023 under Section 73 of the Central Goods and Services Tax Act, 2017/Karnataka Goods and Services Tax Act, 2017 [for short, ‘the Act’].",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "The impugned Order relates to the period between July 2017 to March 2018",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-30",
+     "quote": "Show Cause Notice 30.09.2023 73 A3",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-01",
+    "quote": "Order of Adjudication 01.12.2023 73[9] A1",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-30",
+    "type": "scn_issued",
+    "quote": "Show Cause Notice 30.09.2023 73 A3",
+    "para": 1
+   },
+   {
+    "date": "2023-12-01",
+    "type": "order_passed",
+    "quote": "Order of Adjudication 01.12.2023 73[9] A1",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "The petition is allowed quashing the impugned Adjudication Order dated 01.12.2023 [Annexure-A1] restoring the proceedings to the first respondent to pass a formal order in the light of this Court's observation on the petitioner being entitled to ITC in the light of the retrospective insertion of Section 16[5] of the Act.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15553,
+   "tokens_out": 4922,
+   "seconds": 13.56,
+   "cached": false
+  },
+  {
+   "tokens_in": 8036,
+   "tokens_out": 347,
+   "seconds": 9.04,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.notices[0].date:facts.notices[0].date",
+   "facts.order.date:facts.order.date",
+   "facts.events[0]:scn_issued",
+   "facts.events[1]:order_passed"
+  ]
+ }
+}

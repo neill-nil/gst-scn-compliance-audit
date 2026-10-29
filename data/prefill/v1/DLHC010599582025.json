@@ -1,0 +1,197 @@
+{
+ "cnr": "DLHC010599582025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "challenging the Show Cause Notices dated 24th September, 2023 and 28th September, 2023 and consequent orders dated 30th December, 2023. (hereinafter ‘impugned orders’) passed in respect of F.Y. 2017-18 by the office of Sales Tax Officer Class II/ AVATO, Delhi.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-24",
+     "quote": "challenging the Show Cause Notices dated 24th September, 2023 and 28th September, 2023 and consequent orders dated 30th December, 2023.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   },
+   {
+    "date": {
+     "value": "2023-09-28",
+     "quote": "challenging the Show Cause Notices dated 24th September, 2023 and 28th September, 2023 and consequent orders dated 30th December, 2023.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-30",
+    "quote": "challenging the Show Cause Notices dated 24th September, 2023 and 28th September, 2023 and consequent orders dated 30th December, 2023.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "On facts, it is submitted by ld. Counsel that the impugned orders were uploaded on the ‘additional notices tab’ of the GST Portal of the Petitioner and thus, it missed the attention of the Petitioner.",
+    "para": 11
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-24",
+    "type": "scn_issued",
+    "quote": "challenging the Show Cause Notices dated 24th September, 2023 and 28th September, 2023 and consequent orders dated 30th December, 2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-09-28",
+    "type": "scn_issued",
+    "quote": "challenging the Show Cause Notices dated 24th September, 2023 and 28th September, 2023 and consequent orders dated 30th December, 2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-11-01",
+    "type": "reply_filed",
+    "quote": "This position is disputed by Ms. Gupta, ld. Counsel who submits that the Petitioner had filed replies to the show cause notices on 1st November, 2023 and 9th December, 2023 and, therefore, the Petitioner cannot claim ignorance of the impugned orders.",
+    "para": 11
+   },
+   {
+    "date": "2023-12-09",
+    "type": "reply_filed",
+    "quote": "This position is disputed by Ms. Gupta, ld. Counsel who submits that the Petitioner had filed replies to the show cause notices on 1st November, 2023 and 9th December, 2023 and, therefore, the Petitioner cannot claim ignorance of the impugned orders.",
+    "para": 11
+   },
+   {
+    "date": "2023-12-30",
+    "type": "order_passed",
+    "quote": "challenging the Show Cause Notices dated 24th September, 2023 and 28th September, 2023 and consequent orders dated 30th December, 2023.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "A perusal of the above would show that various High Courts have taken a view and the matter is squarely now pending before the Supreme Court.",
+    "quote_source": "court",
+    "para": 8
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "On facts, it is submitted by ld. Counsel that the impugned orders were uploaded on the ‘additional notices tab’ of the GST Portal of the Petitioner and thus, it missed the attention of the Petitioner.",
+    "quote_source": "argument",
+    "para": 11
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "Accordingly, the present writ petition is disposed of in above terms.",
+   "para": 15
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14011,
+   "tokens_out": 3222,
+   "seconds": 10.94,
+   "cached": false
+  },
+  {
+   "tokens_in": 4314,
+   "tokens_out": 281,
+   "seconds": 2.85,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

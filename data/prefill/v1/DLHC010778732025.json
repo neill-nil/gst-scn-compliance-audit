@@ -1,0 +1,157 @@
+{
+ "cnr": "DLHC010778732025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "assailing the impugned Show Cause Notice dated 28th May, 2024 (hereinafter, impugned ‘SCN’) and the consequent impugned order dated 20th August, 2024 passed by the Sales Tax Officer Class II/AVATO, Ward 41, Zone-3, Delhi for the Financial Year 2019-20 (hereinafter, ‘impugned order’).",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-28",
+     "quote": "assailing the impugned Show Cause Notice dated 28th May, 2024 (hereinafter, impugned ‘SCN’) and the consequent impugned order dated 20th August, 2024 passed by the Sales Tax Officer Class II/AVATO, Ward 41, Zone-3, Delhi for the Financial Year 2019-20 (hereinafter, ‘impugned order’).",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "A reminder was also issued to the Petitioner on 5th August, 2024, wherein the date of personal hearing was fixed for 12th August, 2024.",
+     "para": 11
+    },
+    "hearing_date": {
+     "value": "2024-08-12",
+     "quote": "A reminder was also issued to the Petitioner on 5th August, 2024, wherein the date of personal hearing was fixed for 12th August, 2024.",
+     "para": 11
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-20",
+    "quote": "assailing the impugned Show Cause Notice dated 28th May, 2024 (hereinafter, impugned ‘SCN’) and the consequent impugned order dated 20th August, 2024 passed by the Sales Tax Officer Class II/AVATO, Ward 41, Zone-3, Delhi for the Financial Year 2019-20 (hereinafter, ‘impugned order’).",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-28",
+    "type": "scn_issued",
+    "quote": "On facts, however, the impugned SCN was issued to the Petitioner on 28th May, 2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-08-05",
+    "type": "other",
+    "quote": "A reminder was also issued to the Petitioner on 5th August, 2024, wherein the date of personal hearing was fixed for 12th August, 2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-08-12",
+    "type": "hearing_scheduled",
+    "quote": "A reminder was also issued to the Petitioner on 5th August, 2024, wherein the date of personal hearing was fixed for 12th August, 2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-08-12",
+    "type": "hearing_missed",
+    "quote": "However, no reply has been filed by the Petitioner to the impugned SCN, nor any personal hearing has been attended by the Petitioner.",
+    "para": 11
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, no reply has been filed by the Petitioner to the impugned SCN, nor any personal hearing has been attended by the Petitioner.",
+    "para": 11
+   },
+   {
+    "date": "2024-08-20",
+    "type": "order_passed",
+    "quote": "Thereafter, the impugned order has been passed on 20th August, 2024 confirming the following demands:",
+    "para": 11
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "However, it is made clear that the issue in respect of the validity of the impugned notifications is left open.",
+    "quote_source": "court",
+    "para": 16
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside subject to the Petitioner depositing a sum of Rs.25,000/- with the Sales Tax Bar Association, as costs for delay.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15407,
+   "tokens_out": 2398,
+   "seconds": 11.43,
+   "cached": false
+  },
+  {
+   "tokens_in": 5207,
+   "tokens_out": 192,
+   "seconds": 2.12,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

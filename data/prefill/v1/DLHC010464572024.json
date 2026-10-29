@@ -1,0 +1,139 @@
+{
+ "cnr": "DLHC010464572024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "reproduced from CERC under Section 73(1) of the CGST Act, 20 I 7 (as amended).",
+   "para": 15
+  },
+  "financial_years": {
+   "value": [
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23"
+   ],
+   "quote": "calculated involving the period from April, 2019 to March, 2023, the same is as tabulated below-",
+   "para": 13
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-29",
+     "quote": "assailing the validity of Show Cause Notices3 dated 29 May 2024 and 23 July 2024 respectively",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-30",
+    "quote": "We further observe that the Order-in-Original dated 30 August 2024 in W.P.(C) 10680/2024, was, in terms of our initial interim order made subject to the outcome of the present petition.",
+    "para": 38
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-29",
+    "type": "scn_issued",
+    "quote": "assailing the validity of Show Cause Notices3 dated 29 May 2024 and 23 July 2024 respectively",
+    "para": 1
+   },
+   {
+    "date": "2024-08-30",
+    "type": "order_passed",
+    "quote": "We further observe that the Order-in-Original dated 30 August 2024 in W.P.(C) 10680/2024, was, in terms of our initial interim order made subject to the outcome of the present petition.",
+    "para": 38
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Accordingly, the service provided by CERC, so far as it relates to Fees (Tariff Fee/ Licence Fee/ Annual Registration Fee, Miscellaneous Fee) received by them, appears to be classifiable under support services to electricity transmission & distribution services with SAC 998631 and IGST chargeable thereon @18% as per sl. no. 24(ii) of Notification No. 8/2017-lntegrated Tax (Rate) dated 28.06.2017 (as amended).",
+    "para": 12
+   },
+   {
+    "type": "reply_point",
+    "quote": "informed about the legal advice received by them, stating that the regulatory functions performed by CERC, such as tariff determination and licensing, are akin to quasi-judicial activities under the Electricity Act.",
+    "para": 6
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "Accordingly, and for all the aforesaid reasons, we allow the present writ petitions and quash the impugned SCNs dated 29 May 2024 [W.P.(C) 10680/2024] and 23 July 2024 [W.P.(C) 14723/2024].",
+   "para": 37
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 17558,
+   "tokens_out": 1030,
+   "seconds": 5.63,
+   "cached": false
+  },
+  {
+   "tokens_in": 15791,
+   "tokens_out": 141,
+   "seconds": 2.94,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.provision:facts.provision"
+  ]
+ }
+}
