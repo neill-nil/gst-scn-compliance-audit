@@ -1,0 +1,119 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "NoticeCheck findings (schema 0.1)",
+ "description": "Procedural defects the taxpayer argued (mistakes by the tax department) and what the High Court decided on each, plus the outcome.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "defects_argued",
+  "outcome"
+ ],
+ "properties": {
+  "defects_argued": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "type",
+     "note",
+     "finding",
+     "contested",
+     "quote",
+     "quote_source",
+     "para"
+    ],
+    "properties": {
+     "type": {
+      "enum": [
+       "hearing_75_4",
+       "adjournment_75_5",
+       "reply_not_considered",
+       "non_speaking_order",
+       "demand_beyond_scn",
+       "service_169",
+       "signature",
+       "summary_only",
+       "limitation",
+       "extension_notification_validity",
+       "consolidated_scn",
+       "section_74_ingredients",
+       "other_procedural"
+      ],
+      "description": "extension_notification_validity is a challenge to the s.168A extension notifications themselves; use limitation only when the argument is that the notice or order came after the time limit. Label both only if both arguments are made."
+     },
+     "note": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "maxLength": 120,
+      "description": "Only for other_procedural: what the ground is, in a few words. null for every other type."
+     },
+     "finding": {
+      "enum": [
+       "defect_found",
+       "defect_rejected",
+       "not_decided"
+      ],
+      "description": "defect_found: the court says in its own words the department made this mistake. defect_rejected: the court says it did not, or it is not a valid ground. not_decided: argued but no firm ruling (consent remand, 'one more opportunity', 'contentions kept open', 'prima facie' views, left to appeal, pending in the Supreme Court)."
+     },
+     "contested": {
+      "type": "boolean",
+      "description": "true only if this judgment itself notes conflicting High Court views or a pending Supreme Court case on the point"
+     },
+     "quote": {
+      "type": "string",
+      "description": "court's own words giving the finding; for not_decided with no court words, the argument"
+     },
+     "quote_source": {
+      "enum": [
+       "court",
+       "argument"
+      ]
+     },
+     "para": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     }
+    }
+   }
+  },
+  "outcome": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "disposition",
+    "remanded",
+    "quote",
+    "para"
+   ],
+   "properties": {
+    "disposition": {
+     "enum": [
+      "allowed",
+      "partly_allowed",
+      "dismissed",
+      "disposed",
+      "withdrawn"
+     ]
+    },
+    "remanded": {
+     "type": "boolean",
+     "description": "true if the matter is sent back to the officer to decide again"
+    },
+    "quote": {
+     "type": "string"
+    },
+    "para": {
+     "type": [
+      "integer",
+      "null"
+     ]
+    }
+   }
+  }
+ }
+}

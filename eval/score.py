@@ -22,35 +22,38 @@ DEFECT_TYPES = [
     "other_procedural",
 ]
 
-# Matches the B0 rule checklist in role4_schema_eval.md step 9 (hearing date missing/NA or before
+# Matches the B0 rule checklist in src/baselines/b0_rules.py (hearing date missing/NA or before
 # reply due -> hearing_75_4; signed==false -> signature; service_mode -> service_169; limitation_check
-# -> limitation). Confirm/extend the rest at the schema meeting.
+# -> limitation). Confirm/extend the rest in guidelines/annotation_guidelines.md.
 RULE_DETECTABLE_TYPES = {"hearing_75_4", "signature", "service_169", "limitation"}
 REASONING_DEPENDENT_TYPES = [t for t in DEFECT_TYPES if t not in RULE_DETECTABLE_TYPES]
 
-# Record fields a defect check needs, used by the "can't tell" metric. A bare top-level name
-# (e.g. "events") means: undecidable whenever that whole object is excluded by the view (notice_only
-# drops events/order); a dotted path also checks the specific field is non-null when the view does
-# include it. extension_notification_validity is left out: it's a pure legal question, scored as
-# `contested`, not fact-dependent.
+# Record fields a defect check needs, used by the "can't tell" metric. Paths are dotted into the
+# flattened gold record per contracts.md section 1/schemas/facts.schema.json: "notices.0.X" reaches
+# the first notice's X {value,quote,para} triple (get_path below auto-unwraps ".value"); a bare
+# top-level name (e.g. "events", "document_contents") means: undecidable whenever that whole array
+# is excluded by the view (notice_only drops order/events/document_contents). One primary field per
+# type -- PROPOSED DEFAULT, several of these defects really depend on document_contents too; refine
+# in guidelines/annotation_guidelines.md. extension_notification_validity is left out: it's a pure
+# legal question, scored as `contested`, not fact-dependent.
 REQUIRED_FACT_FIELDS = {
-    "hearing_75_4": ["notice.hearing.date"],
+    "hearing_75_4": ["notices.0.hearing_date_given"],
     "adjournment_75_5": ["events"],
     "reply_not_considered": ["order.date"],
     "non_speaking_order": ["order.date"],
-    "demand_beyond_scn": ["order.demand_amount"],
-    "service_169": ["notice.service_mode"],
-    "signature": ["notice.signed"],
-    "summary_only": ["notice.summary_only"],
+    "demand_beyond_scn": ["document_contents"],
+    "service_169": ["notices.0.service_mode"],
+    "signature": ["notices.0.signed"],
+    "summary_only": ["notices.0.summary_only"],
     "limitation": ["order.date"],
-    "consolidated_scn": ["proceeding.financial_years"],
+    "consolidated_scn": ["financial_years"],
     "section_74_ingredients": ["order.date"],
     "other_procedural": ["order.date"],
 }
 
 VIEW_TOP_LEVEL_FIELDS = {
-    "full_record": {"proceeding", "notice", "events", "order"},
-    "notice_only": {"proceeding", "notice"},
+    "full_record": {"provision", "financial_years", "notices", "order", "events", "document_contents"},
+    "notice_only": {"provision", "financial_years", "notices"},
 }
 
 # Rough first pass at which tool each defect check should call. Confirm with role 2/3.
@@ -118,14 +121,24 @@ def load_trace(run_dir: Path, cnr: str) -> list[dict]:
 
 
 def get_path(record: dict, path: str):
-    """Dotted-path lookup; returns None if any step is missing or explicitly null."""
+    """Dotted-path lookup into a gold/predicted record. Numeric segments (e.g. "notices.0.date")
+    index into a list. A leaf that is a {value, quote, para} triple (schemas/facts.schema.json)
+    is auto-unwrapped to its "value" unless the path ends at the triple's own "quote"/"para"/"value"
+    key. Returns None if any step is missing, out of range, or explicitly null."""
     node = record
     for key in path.split("."):
-        if not isinstance(node, dict) or key not in node:
+        if isinstance(node, list):
+            if not key.isdigit() or int(key) >= len(node):
+                return None
+            node = node[int(key)]
+        elif isinstance(node, dict) and key in node:
+            node = node[key]
+        else:
             return None
-        node = node[key]
         if node is None:
             return None
+    if isinstance(node, dict) and set(node.keys()) >= {"value", "quote", "para"}:
+        node = node["value"]
     return node
 
 
@@ -291,14 +304,19 @@ def score_contested(gold: dict[str, dict], outputs: dict[tuple[str, str], dict],
 # full records in the contracts.md section-1 format, e.g. the LoRA extractor after the mid)
 # ---------------------------------------------------------------------------
 
+# MVP: compares only the first notice (notices[0]); schemas/facts.schema.json allows more than one
+# ("usually one"). Multi-notice set/F1 comparison, like events below, is deferred -- flag for team.
 EXTRACTION_EXACT_FIELDS = [
-    "proceeding.provision", "proceeding.tax_period_from", "proceeding.tax_period_to",
-    "proceeding.authority", "proceeding.jurisdiction",
-    "notice.form", "notice.date", "notice.reply_due", "notice.signed", "notice.service_mode",
-    "notice.summary_only", "notice.hearing.date", "notice.hearing.time", "notice.demand_amount",
-    "order.form", "order.date", "order.demand_amount",
+    "provision", "financial_years",
+    "notices.0.date", "notices.0.reply_due", "notices.0.hearing_date_given", "notices.0.hearing_date",
+    "notices.0.service_mode", "notices.0.signed", "notices.0.summary_only",
+    "order.date", "order.signed", "order.service_mode",
 ]
-EXTRACTION_TEXT_FIELDS = ["proceeding.authority", "notice.hearing.venue"]
+# facts.schema.json v0.1 has no free-text fields besides quotes (not scored directly here); every
+# remaining fact is a date/enum/bool/array-of-enum, so exact match covers it. If quote-level text
+# similarity is needed later (e.g. an LLM judge comparing document_contents / provision text),
+# validate that judge against human labels per the brief, per role4_schema_eval.md step 17.
+EXTRACTION_TEXT_FIELDS = []
 
 
 def normalize_text(s) -> str | None:

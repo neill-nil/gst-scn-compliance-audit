@@ -1,8 +1,8 @@
 # Shared contracts (formats every module must follow)
 
-**Status: DRAFT v0.** Role 4 owns this file. The team edits it in the schema meeting on 27 Oct and then freezes it as `schema_version: "0.1"`. After freezing, changes need a pull request that everyone sees, because four people's code depends on it.
+**Status: FROZEN — `schema_version: "0.1"`, frozen 29 Oct.** Role 4 owns this file. The fact fields and finding fields below are generated from, and must stay identical to, [`schemas/facts.schema.json`](../../schemas/facts.schema.json) and [`schemas/findings.schema.json`](../../schemas/findings.schema.json) — those two files are the source of truth; this doc explains them in context. **Changes after this point need a pull request everyone sees**, because four people's code depends on this shape: edit the JSON Schema files first, then this doc, in the same PR.
 
-All records are JSON, one per line (JSONL). Dates are `YYYY-MM-DD`. Unknown values are `null`, never guessed. The `//` comments below are explanations only; real files contain plain JSON.
+All records are JSON, one per line (JSONL). Dates are `YYYY-MM-DD`. Every fact field is a `{value, quote, para}` triple: `value` is `null` when the judgment does not state it (never guessed), `quote` is the exact judgment text supporting a non-null value (`null` when `value` is `null`), `para` is the paragraph number. A program checks every `quote` appears verbatim in the judgment text — no verified quote, no gold. The `//` comments below are explanations only; real files contain plain JSON.
 
 ---
 
@@ -11,76 +11,83 @@ All records are JSON, one per line (JSONL). Dates are `YYYY-MM-DD`. Unknown valu
 Produced by: role 1 parser (pre-fill) → corrected by human review → `data/gold/records.jsonl`.
 Also produced by: the NoticeCheck extractor (role 2) and the LoRA extractor (after mid), for comparison (RQ2).
 
+A gold record is case metadata (below) + every field of `schemas/facts.schema.json` + every field of `schemas/findings.schema.json`, all flattened at the top level, + `annotation`. Role 1's parser emits the facts fields; a human reviewer adds `defects_argued`/`outcome`/`annotation` on top.
+
 ```json
 {
-  "cnr": "DLHC010209162025",
+  "cnr": "UPHC010748612025",
   "schema_version": "0.1",
-  "court": "Delhi",
-  "case_no": "W.P.(C) 4781/2025",
-  "decision_date": "2025-07-29",
+  "court": "Allahabad",
+  "case_no": "WRIT TAX No. 526 of 2025",
+  "decision_date": "2025-02-19",
 
-  "proceeding": {
-    "provision": "73",                      // "73" | "74" | "unclear"
-    "tax_period_from": "2020-04",            // YYYY-MM or null
-    "tax_period_to": "2021-03",
-    "financial_years": ["2020-21"],          // more than one => consolidated notice
-    "authority": "Sales Tax Officer Class II, AVATO",
-    "jurisdiction": "state",                 // "state" | "central" | "unclear"
-    "evidence": [{"field": "provision", "quote": "...", "para": 12}]
-  },
+  // --- facts.schema.json fields (role 1 parser output) ---
+  "provision": {"value": "73", "quote": "order dated 30.04.2024 (Annexure - 8) passed under Section 73(9) of the Act", "para": 1},
+  "financial_years": {"value": ["2018-19"], "quote": "For the tax period April, 2018 to March, 2019", "para": 2},
 
-  "notice": {
-    "form": "DRC-01",                        // "DRC-01" | "DRC-01A" | "other" | null
-    "date": "2024-11-30",
-    "reply_due": "2024-12-30",
-    "signed": null,                          // true | false | null (not stated)
-    "service_mode": "portal_unspecified",    // see enum below
-    "summary_only": null,                    // true if only the DRC-01 summary was issued, no detailed notice
-    "hearing": {"date": "2025-01-17", "time": "13:15", "venue": "Ward Office, 13th Floor", "stated_as_na": false},
-    "demand_amount": null,                   // rupees, number, or null
-    "evidence": [{"field": "notice.hearing.date", "quote": "Date of personal hearing 17-01-2025", "para": 7}]
-  },
-
-  "events": [
-    {"date": "2024-12-27", "type": "extension_requested", "details": "15 days sought", "quote": "...", "para": 8},
-    {"date": "2025-01-20", "type": "hearing_adjourned", "details": "to 2025-01-27", "quote": "...", "para": 9}
+  "notices": [
+    {
+      "date": {"value": "2023-12-23", "quote": "notice was issued under Section 73(1) of the Act on 23.12.2023", "para": 3},
+      "reply_due": {"value": "2024-01-20", "quote": "the date indicated by which reply was to be submitted was 20.01.2024", "para": 3},
+      "hearing_date_given": {"value": true, "quote": "date of personal hearing was also fixed on the same date", "para": 3},
+      "hearing_date": {"value": "2024-01-20", "quote": "date of personal hearing was also fixed on the same date", "para": 3},
+      "service_mode": {"value": null, "quote": null, "para": null},
+      "signed": {"value": null, "quote": null, "para": null},
+      "summary_only": {"value": null, "quote": null, "para": null}
+    }
   ],
 
   "order": {
-    "form": "DRC-07",                        // "DRC-07" | "other" | null
-    "date": "2025-02-28",
-    "demand_amount": 56352147,
-    "evidence": [{"field": "order.date", "quote": "...", "para": 12}]
+    "date": {"value": "2024-04-30", "quote": "The respondent no. 2 passed order dated 30.04.2024 under Section 73(9) of the Act", "para": 5},
+    "signed": {"value": null, "quote": null, "para": null},
+    "service_mode": {"value": null, "quote": null, "para": null}
   },
 
+  "events": [
+    {"date": "2023-12-23", "type": "scn_issued", "quote": "notice was issued under Section 73(1) of the Act on 23.12.2023", "para": 3},
+    {"date": "2024-01-18", "type": "reply_filed", "quote": "The petitioner filed his reply on 18.01.2024 to the show cause notice", "para": 4},
+    {"date": "2024-04-30", "type": "order_passed", "quote": "The respondent no. 2 passed order dated 30.04.2024 under Section 73(9) of the Act partly accepting the reply", "para": 5},
+    {"date": "2024-10-09", "type": "rectification_rejected", "quote": "the application was rejected by order dated 09.10.2024", "para": 6}
+  ],
+
+  "document_contents": [
+    {"type": "order_reasoning", "quote": "on 3 points only a cursory observation has been made that no evidence has been produced pertaining to deposit of tax through RCM and the accounts books have not been verified", "para": 14}
+  ],
+
+  // --- findings.schema.json fields (human review) ---
   "defects_argued": [
     {
-      "type": "limitation",                  // see defect enum below
-      "finding": "defect_rejected",          // "defect_found" | "defect_rejected" | "not_decided"
-      "contested": true,                     // courts disagree on this point
-      "provision": "CGST Act s.73(10)",
-      "quote": "...",                        // the court's own words giving the finding
-      "para": 36
+      "type": "hearing_75_4", "note": null, "finding": "defect_found", "contested": false,
+      "quote": "date of filing of reply and date of personal hearing are the same i.e. 20.01.2024. This Court has repeatedly frowned on the action of the respondents in fixing identical date of reply and date of hearing, as the same apparently is an empty formality",
+      "quote_source": "court", "para": 12
+    },
+    {
+      "type": "non_speaking_order", "note": null, "finding": "defect_found", "contested": false,
+      "quote": "Such a cursory disposal of the objection raised in reply to the show cause notice cannot be countenanced when plea raised is very specific.",
+      "quote_source": "court", "para": 14
     }
   ],
 
   "outcome": {
-    "disposition": "dismissed",              // "allowed" | "partly_allowed" | "dismissed" | "disposed" | "remanded"
-    "remanded": false,
-    "quote": "...", "para": 54
+    "disposition": {"value": "allowed", "quote": "Consequently, the petition is allowed.", "para": 17},
+    "remanded": {"value": true, "quote": "The matter is remanded back to the Deputy Commissioner, State Tax, Mirzapur for deciding the matter afresh after providing opportunity of hearing to the petitioner.", "para": 18}
   },
 
   "annotation": {"annotator": "r1", "reviewed_by": ["r1", "r4"], "status": "gold", "notes": ""}
 }
 ```
 
-### Enums (draft — finalise on 27 Oct)
+`provision`, `financial_years`, `order`, `notices[]`, `events[]`, `document_contents[]` validate against [`schemas/facts.schema.json`](../../schemas/facts.schema.json); `defects_argued`, `outcome` validate against [`schemas/findings.schema.json`](../../schemas/findings.schema.json). Note `outcome.disposition` and `outcome.remanded` are themselves `{value, quote, para}` triples (findings.schema.json), unlike the plain enum shown in the old draft — a remand is `disposition: "allowed"` + `remanded: true`, never `disposition: "remanded"`.
 
-**`events[].type`**: `scn_issued`, `scn_uploaded`, `reminder_issued`, `reply_filed`, `extension_requested`, `extension_granted`, `extension_refused`, `hearing_scheduled`, `hearing_adjourned`, `hearing_attended`, `hearing_missed`, `order_passed`, `order_uploaded`, `rectification_filed`, `appeal_filed`, `other`.
+### Enums (frozen — see the schema files for the normative list)
 
-**`notice.service_mode`**: `portal_additional_notices_tab`, `portal_notices_tab`, `portal_unspecified`, `email`, `registered_post`, `hand_delivery`, `not_served`, `unclear`.
+**`notices[].service_mode` / `order.service_mode`**: `portal_additional_notices_tab`, `portal_notices_tab`, `portal_unspecified`, `email`, `registered_post`, `hand_delivery`, `not_served`, or `null`.
 
-**`defects_argued[].type`** (each needs a one-paragraph definition with an example in the guidelines):
+**`events[].type`**: `scrutiny_notice`, `pre_scn_intimation`, `scn_issued`, `reply_filed`, `reply_not_filed`, `extension_requested`, `extension_granted`, `hearing_requested`, `hearing_scheduled`, `hearing_adjourned`, `adjournment_requested`, `hearing_attended`, `hearing_missed`, `order_passed`, `rectification_rejected`, `appeal_dismissed`, `recovery_or_attachment`, `earlier_writ`, `other`.
+
+**`document_contents[].type`**: `scn_ground` (what the notice alleges/demands), `fraud_allegation` (s.74 fraud/wilful-misstatement/suppression allegation), `reply_point` (an argument made in the reply), `order_reasoning` (what the order says when deciding). Describe the document, never the court's opinion of it.
+
+**`defects_argued[].type`** (each needs a one-paragraph definition with an example in the guidelines — see `guidelines/annotation_guidelines.md`):
 | type | Plain meaning | Main provision (role 3 to verify) |
 |---|---|---|
 | `hearing_75_4` | No personal hearing, or a sham one, before an adverse order | CGST s.75(4) |
@@ -95,28 +102,33 @@ Also produced by: the NoticeCheck extractor (role 2) and the LoRA extractor (aft
 | `extension_notification_validity` | Challenge to the s.168A time-extension notifications | s.168A; **always contested** |
 | `consolidated_scn` | One notice covering several financial years | contested across High Courts |
 | `section_74_ingredients` | s.74 invoked without fraud/suppression | s.74(1) |
-| `other_procedural` | Any other procedural ground (write it in `notes`) | — |
+| `other_procedural` | Any other procedural ground (write it in `note`) | — |
+
+`note` is `null` for every type except `other_procedural`, where it holds a few words naming the ground (max 120 chars).
 
 **Finding rules**
 - `defect_found`: the court says, in its own words, that this defect happened.
 - `defect_rejected`: the court says it did not happen or is not a valid ground.
-- `not_decided`: argued but the court did not rule (consent remand, "one more opportunity", "contentions kept open", relegated to appeal, left open pending the Supreme Court).
-- `contested: true` when the judgment itself notes conflicting High Court views or a pending Supreme Court case on the point.
+- `not_decided`: argued but the court did not rule (consent remand, "one more opportunity", "contentions kept open", a "prima facie" view only, relegated to appeal/alternative remedy, left open pending the Supreme Court).
+- `contested: true` when the judgment itself notes conflicting High Court views or a pending Supreme Court case on the point. `extension_notification_validity` is always `contested: true`.
+- `quote_source`: `"court"` when the quote is the court's own words; `"argument"` only for a `not_decided` entry where the court never engages and the quote is necessarily the petitioner's framing of the argument.
 
 ---
 
 ## 2. Checker input (what systems see)
 
-Built by role 4's input builder from a gold record. **Court findings, outcome and court reasoning are always removed.**
+Built by role 4's input builder (`src/baselines/inputs.py`) from a gold record. **`defects_argued`, `outcome`, `annotation`, and any court reasoning are always removed.**
 
 ```json
 {"cnr": "...", "view": "full_record", "as_of_date": "2025-03-01", "record": { ...case record without defects_argued, outcome, annotation... }}
 ```
-| view | Contents | Used for |
-|---|---|---|
-| `full_record` | proceeding, notice, events, order | main RQ1 evaluation |
-| `notice_only` | proceeding + notice only (no events, no order) | "can't tell yet" evaluation |
-| `raw_text` | facts paragraphs of the judgment (paragraph roles: notice/history only) | input ablation (no structured extraction) |
+| view | Top-level fields kept | `as_of_date` | Used for |
+|---|---|---|---|
+| `full_record` | `provision`, `financial_years`, `notices`, `order`, `events`, `document_contents` | day after `order.date.value` | main RQ1 evaluation |
+| `notice_only` | `provision`, `financial_years`, `notices` only (no `order`, `events`, `document_contents`) | day after `notices[0].date.value` | "can't tell yet" evaluation |
+| `raw_text` | facts paragraphs of the judgment (paragraph roles: notice/history only) | same as `full_record` | input ablation (no structured extraction) |
+
+`notice_only` drops `document_contents` entirely even though `scn_ground`/`fraud_allegation` entries are technically known as of the notice date — simplification for v0.1, revisit if the "can't tell" numbers look wrong because of it.
 
 ---
 

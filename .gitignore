@@ -1,6 +1,7 @@
 # Claude working context (personal)
 CLAUDE.local.md
 .context/
+.claude/
 
 # Data: raw PDFs, extracted text and intermediates are rebuilt from manifests (S3 key + sha256).
 # Tracked in git: data/manifests/*.csv, data/gold/, data/splits/
@@ -17,9 +18,14 @@ __pycache__/
 .venv/
 venv/
 .ipynb_checkpoints/
+src/__pycache__/
+src/baselines/__pycache__/
+eval/__pycache__/
 
 # Secrets
 .env
 
 # Schema Related
 R4_schema_agenda.md
+
+CLAUDE.md
