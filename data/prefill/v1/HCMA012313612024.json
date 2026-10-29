@@ -1,0 +1,160 @@
+{
+ "cnr": "HCMA012313612024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "During the relevant period of 2019-20, the petitioner has filed the returns and paid appropriate taxes.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-16",
+     "quote": "It is submitted by the learned counsel for the petitioner that a show cause notice in Form DRC 01 was issued on 16.05.2024, proposing that the petitioner is doing a Residential Real Estate Project (RREP) and have claimed Input Tax Credit on inward supplies which they are allegedly not entitled to.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-30",
+    "quote": "PRAYER: Writ Petition filed under Article 226 of the Constitution of India, praying to issue a Writ of Certiorari, to call for the records of the respondent leading to issuance of Impugned Order dated 30.08.2024 vide GSTIN:33BDBPS4396E1ZH/2019-20 and quash the same.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-16",
+    "type": "scn_issued",
+    "quote": "It is submitted by the learned counsel for the petitioner that a show cause notice in Form DRC 01 was issued on 16.05.2024, proposing that the petitioner is doing a Residential Real Estate Project (RREP) and have claimed Input Tax Credit on inward supplies which they are allegedly not entitled to.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-06",
+    "type": "reply_filed",
+    "quote": "The petitioner responded to the above proposal vide its reply dated 06.08.2024, wherein it was inter alia submitted that the petitioner is not engaged in promoting / developing of any Residential Real Estate Project instead the petitioner is engaged only in painting contract work.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-30",
+    "type": "order_passed",
+    "quote": "PRAYER: Writ Petition filed under Article 226 of the Constitution of India, praying to issue a Writ of Certiorari, to call for the records of the respondent leading to issuance of Impugned Order dated 30.08.2024 vide GSTIN:33BDBPS4396E1ZH/2019-20 and quash the same.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "proposing that the petitioner is doing a Residential Real Estate Project (RREP) and have claimed Input Tax Credit on inward supplies which they are allegedly not entitled to.",
+    "para": 3
+   },
+   {
+    "type": "reply_point",
+    "quote": "wherein it was inter alia submitted that the petitioner is not engaged in promoting / developing of any Residential Real Estate Project instead the petitioner is engaged only in painting contract work.",
+    "para": 3
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "However, while passing the impugned order the respondent found that the Profit and Loss Account during the assessment year 2019- 20 was Rs.5,21,20,532/-, while the outward supply value declared in the GSTR 3B was Rs.3,62,10,936/- and Form 26 AS was received for a sum of Rs.4,36,67,661/-.",
+    "para": 3
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The difference to the extent of Rs.1,59,09,596/- was treated as suppression, it was also found that the petitioner has not filed annual return in GSTR 9 and GSTR 9C, allegedly in violation of the requirement under Rule 80 of the CGST Rules inasmuch as the taxable value of supplies exceeds Rs.5 Crores.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "demand_beyond_scn",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is submitted by the learned counsel for the petitioner that the difference between the profit and loss account and the returns filed by the petitioner treated as suppression and also non filing of GSTR 9 and GSTR 9C, was never the subject matter of the show cause notice which was issued.",
+    "quote_source": "argument",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view thereof, the impugned order is set aside.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10373,
+   "tokens_out": 2242,
+   "seconds": 11.44,
+   "cached": false
+  },
+  {
+   "tokens_in": 5934,
+   "tokens_out": 414,
+   "seconds": 8.59,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

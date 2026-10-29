@@ -1,0 +1,139 @@
+{
+ "cnr": "HCMD010966732025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The Deputy State Tax Officer-I, Pudukkottai-II Assessment Circle, Office of the State Tax Officer, Commercial Taxes Department, Pudukkottai. ...Respondents Prayer: Writ Petition filed under Article 226 of the Constitution of India, praying this Court to issue a Writ of Certiorari, calling for records in assessment orders issued by the respondent in TNGST 33LVDPS3154A1ZQ/2020-21 dated 20.02.2025 for the assessment year 2020-21 and quash the same as illegal, arbitrary and in violation of the principles of natural justice, and against the order of this Court held in the case of Refex Industries Limited vs Asstt. Commr. of CGST and E.EX., Chennai reported in 2020 (34) G.S.T.L. 588 (Mad.). For Petitioner : Mr.N.Sudalai Muthu For Respondent : Mr.R.Suresh Kumar Additional Government Pleader ORDER This writ petition has been filed challenging the impugned assessment order dated 20.02.2025 for the assessment year 2020-2021.",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "This writ petition has been filed challenging the impugned assessment order dated 20.02.2025 for the assessment year 2020-2021.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-25",
+     "quote": "It is submitted that the impugned order was preceded by a show cause notice in DRC 01 dated 25.11.2024.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-20",
+    "quote": "It is submitted that the impugned order was preceded by a show cause notice in DRC 01 dated 25.11.2024.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-25",
+    "type": "scn_issued",
+    "quote": "It is submitted that the impugned order was preceded by a show cause notice in DRC 01 dated 25.11.2024.",
+    "para": 2
+   },
+   {
+    "date": "2025-02-12",
+    "type": "reply_filed",
+    "quote": "It is also submitted that after notice was issued, the petitioner paid the disputed tax on 12.02.2025 along with a reply.",
+    "para": 2
+   },
+   {
+    "date": "2025-02-20",
+    "type": "order_passed",
+    "quote": "This writ petition has been filed challenging the impugned assessment order dated 20.02.2025 for the assessment year 2020-2021.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "However, without considering the same, the respondent has imposed interest and penalty under Section 50(1) and 73(9) of the respective Goods and Services Tax Enactments, 2017.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The writ petition stands disposed of with the above direction and observations.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9852,
+   "tokens_out": 2207,
+   "seconds": 10.28,
+   "cached": false
+  },
+  {
+   "tokens_in": 2538,
+   "tokens_out": 187,
+   "seconds": 3.94,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

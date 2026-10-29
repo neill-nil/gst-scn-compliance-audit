@@ -1,0 +1,188 @@
+{
+ "cnr": "BRHC010533452024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2015-16",
+    "2016-17"
+   ],
+   "quote": "for the Financial Year 2015 – 16 and 2016 – 17.",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2021-04-28",
+     "quote": "demand-cum-show cause notice dated 28.04.2021",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-01-02",
+    "quote": "order dated 02.01.2024",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-04-13",
+    "type": "pre_scn_intimation",
+    "quote": "vide letter dated 13.04.2021, email dated 14.04.2021 and reminder dated 20.04.2021 by the Department",
+    "para": 24
+   },
+   {
+    "date": "2021-04-28",
+    "type": "scn_issued",
+    "quote": "demand-cum-show cause notice was issued on 28.04.2021",
+    "para": 24
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "The noticee did not submit any defence reply against the demand-cum-show cause notice",
+    "para": 24
+   },
+   {
+    "date": "2023-10-30",
+    "type": "hearing_attended",
+    "quote": "The noticee appeared on 30.10.2023 and submitted a letter requesting for four weeks’ time.",
+    "para": 17
+   },
+   {
+    "date": "2024-01-02",
+    "type": "order_passed",
+    "quote": "order in original which is impugned in the present writ application was issued on 02.01.2024.",
+    "para": 17
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "A show cause notice has been issued to the petitioner by the respondent no. 1 stating that he is providing taxable service and has suppressed the taxable turnover for the Financial Year 2015 – 16 and 2016 – 17.",
+    "para": 3
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The respondent no. 1 passed an ex parte order holding therein inter alia that the petitioner is engaged in providing taxable services under Section 65 of the Finance Act, 1994 (hereinafter referred to as ‘the Act of 1994’) with the subsequent amendments and does not fall under any of the entries of the Mega Exemption Notification No. 25/2012-Service Tax dated 20.06.2012 as amended.",
+    "para": 3
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The respondent no. 1 held vide order dated 02.01.2024 as contained in Annexure ‘P2’ (hereinafter referred to as the ‘impugned order’) that the petitioner has suppressed taxable turnover in contravention of the provisions of the Act of 1994 and imposed service tax of Rs.1,26,03,035/- and an equivalent penalty among other penalty and interest.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "The fact remains that the proceeding was initiated taking this case as one under evasion of tax, therefore, the period of limitation would be five years.",
+    "quote_source": "court",
+    "para": 30
+   },
+   {
+    "type": "other_procedural",
+    "note": "absence of pre-show cause consultation",
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "So far as the submission of learned Senior Counsel that a pre-show cause notice consultation is concerned, there is no difficulty in accepting the submission that a pre-show cause notice consultation would be mandatory in certain circumstances but a bare reading of the Circular referred to would show that the pre-consultation notice is not mandatory for the cases booked under fraud, collusion, wilful mis-statement, suppression of facts, evasion of tax etc.",
+    "quote_source": "court",
+    "para": 26
+   },
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is his submission that the Assessing Authority has passed the impugned order (Annexure ‘P2’) with respect to financial years 2015 – 16 and 2016 – 17.",
+    "quote_source": "argument",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "This writ application stands disposed of accordingly.",
+   "para": 42
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 30117,
+   "tokens_out": 5206,
+   "seconds": 15.82,
+   "cached": false
+  },
+  {
+   "tokens_in": 22947,
+   "tokens_out": 937,
+   "seconds": 8.97,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[1]:other_procedural"
+  ]
+ }
+}

@@ -1,0 +1,186 @@
+{
+ "cnr": "DLHC010561962025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "assailing the Show Cause Notice dated 5th August, 2024 (hereinafter, ‘SCN’) issued for the Financial Year 2017-18.",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-08-05",
+     "quote": "assailing the Show Cause Notice dated 5th August, 2024 (hereinafter, ‘SCN’) issued for the Financial Year 2017-18.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-01",
+    "quote": "The Petitioner further challenges the Order-in-Original dated 1st February, 2025 along with the Form DRC-07 dated 9th February, 2025 (hereinafter, ‘impugned order’).",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "it appears that the Form DRC-07 was uploaded on 9th February, 2025 on the GST Portal of the Petitioner.",
+    "para": 5
+   }
+  },
+  "events": [
+   {
+    "date": "2024-08-05",
+    "type": "scn_issued",
+    "quote": "assailing the Show Cause Notice dated 5th August, 2024 (hereinafter, ‘SCN’) issued for the Financial Year 2017-18.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-27",
+    "type": "reply_filed",
+    "quote": "Firstly, the reply dated 27th August, 2024, which has been filed by the Petitioner to the SCN, which led to the passing of the impugned order has not been considered by the Central Goods and Service Tax Department (hereinafter, ‘Department’)",
+    "para": 4
+   },
+   {
+    "date": "2024-11-21",
+    "type": "hearing_scheduled",
+    "quote": "Following the principle of natural justice, the noticees were granted personal hearings (PH) on 21.11.2024, 16.12.2024 & 26.12.2024.",
+    "para": 7
+   },
+   {
+    "date": "2024-12-16",
+    "type": "hearing_scheduled",
+    "quote": "Following the principle of natural justice, the noticees were granted personal hearings (PH) on 21.11.2024, 16.12.2024 & 26.12.2024.",
+    "para": 7
+   },
+   {
+    "date": "2024-12-26",
+    "type": "hearing_scheduled",
+    "quote": "Following the principle of natural justice, the noticees were granted personal hearings (PH) on 21.11.2024, 16.12.2024 & 26.12.2024.",
+    "para": 7
+   },
+   {
+    "date": "2025-02-01",
+    "type": "order_passed",
+    "quote": "The Petitioner further challenges the Order-in-Original dated 1st February, 2025 along with the Form DRC-07 dated 9th February, 2025 (hereinafter, ‘impugned order’).",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "A perusal of the SCN dated 5th August, 2024 reveals wrongful availment of ITC and its utilization by 106 noticees during FY 2017-18 on the basis of the goods-less invoices issued by non existent firms as under:",
+    "para": 12
+   },
+   {
+    "type": "fraud_allegation",
+    "quote": "Moreover, the allegation in the said SCN is that two individuals namely Mr. Rajesh Jindal and Mr. Adesh Jain had created, controlled and managed a large number of fake firms, which were opened in the names of different individuals and were not genuine businesses or business persons.",
+    "para": 13
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Firstly, the reply dated 27th August, 2024, which has been filed by the Petitioner to the SCN, which led to the passing of the impugned order has not been considered by the Central Goods and Service Tax Department",
+    "quote_source": "argument",
+    "para": 4
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Secondly, it is submitted that no opportunity of personal hearing has been afforded to the Petitioner by the Department.",
+    "quote_source": "argument",
+    "para": 4
+   },
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "In addition, the plea of limitation has also been raised by the Petitioner.",
+    "quote_source": "argument",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The present petition is disposed of in these terms.",
+   "para": 23
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15911,
+   "tokens_out": 3048,
+   "seconds": 11.58,
+   "cached": false
+  },
+  {
+   "tokens_in": 5301,
+   "tokens_out": 385,
+   "seconds": 3.22,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

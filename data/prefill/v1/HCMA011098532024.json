@@ -1,0 +1,174 @@
+{
+ "cnr": "HCMA011098532024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "PRAYER: Writ Petition filed under Article 226 of the Constitution of India, to issue a Writ of Certiorari calling for the records of the impugned order in Ref. No. ZD330424067201V dated 08.04.2024 under Section 73 of the CGST/TNGST Act, 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2022-23"
+   ],
+   "quote": "and uploaded along with the summary of the order in DRC07 for the Financial Year 2022-23 from the files of the respondent herein and quash the same.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-02-05",
+     "quote": "She submits that principles of natural justice were complied with by issuing intimation dated 18.07.2023, show cause notice dated 05.02.2024 and by also issuing personal hearing notices dated 07.03.2024 and 15.03.2024.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "It is further stated that the petitioner was unable to participate in proceedings because the show cause notice and other communications were merely uploaded on the common portal.",
+     "para": 1
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-08",
+    "quote": "An order in original dated 08.04.2024 is the subject of challenge in this writ petition.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "and uploaded along with the summary of the order in DRC07 for the Financial Year 2022-23 from the files of the respondent herein and quash the same.",
+    "para": 0
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "scrutiny_notice",
+    "quote": "When notice in Form ASMT 10 was issued to the petitioner upon scrutiny of returns, it is stated that the petitioner replied by pointing out that payments were made on Reverse Charge Mechanism (RCM) basis towards lorry freight charges and sea freight charges on the dates indicated in such reply.",
+    "para": 1
+   },
+   {
+    "date": "2023-07-18",
+    "type": "pre_scn_intimation",
+    "quote": "She submits that principles of natural justice were complied with by issuing intimation dated 18.07.2023, show cause notice dated 05.02.2024 and by also issuing personal hearing notices dated 07.03.2024 and 15.03.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-02-05",
+    "type": "scn_issued",
+    "quote": "She submits that principles of natural justice were complied with by issuing intimation dated 18.07.2023, show cause notice dated 05.02.2024 and by also issuing personal hearing notices dated 07.03.2024 and 15.03.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-03-07",
+    "type": "hearing_scheduled",
+    "quote": "She submits that principles of natural justice were complied with by issuing intimation dated 18.07.2023, show cause notice dated 05.02.2024 and by also issuing personal hearing notices dated 07.03.2024 and 15.03.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-03-15",
+    "type": "hearing_scheduled",
+    "quote": "She submits that principles of natural justice were complied with by issuing intimation dated 18.07.2023, show cause notice dated 05.02.2024 and by also issuing personal hearing notices dated 07.03.2024 and 15.03.2024.",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "She further submits that the tax proposal was confirmed because the tax payer failed to reply to the show cause notice.",
+    "para": 3
+   },
+   {
+    "date": "2024-04-08",
+    "type": "order_passed",
+    "quote": "An order in original dated 08.04.2024 is the subject of challenge in this writ petition.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "When notice in Form ASMT 10 was issued to the petitioner upon scrutiny of returns, it is stated that the petitioner replied by pointing out that payments were made on Reverse Charge Mechanism (RCM) basis towards lorry freight charges and sea freight charges on the dates indicated in such reply.",
+    "para": 1
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Such tax proposal was confirmed by relying on Section 16(4) of applicable GST enactments.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is further stated that the petitioner was unable to participate in proceedings because the show cause notice and other communications were merely uploaded on the common portal.",
+    "quote_source": "argument",
+    "para": 1
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons set out above, the impugned order dated 08.04.2024 is set aside on condition that the petitioner remits 10% of the disputed tax demand as agreed to within a period of two weeks from the date of receipt of a copy of this order.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4717,
+   "tokens_out": 1602,
+   "seconds": 7.9,
+   "cached": false
+  },
+  {
+   "tokens_in": 6338,
+   "tokens_out": 520,
+   "seconds": 6.75,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

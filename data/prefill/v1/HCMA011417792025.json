@@ -1,0 +1,156 @@
+{
+ "cnr": "HCMA011417792025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "Thereafter, the 1st respondent issued a Show Cause Notice in Form GST DRC-01 along with its Annexure dated 10.01.2024 under Section 73 of the TNGST Act, 2017, calling upon the petitioner to file its Reply by 10.02.2024 and attend the personal hearing on 24.01.2024.",
+   "para": 5
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "On scrutinization of the returns filed by the petitioner for the Financial Year 2019-2020, it was found by the Officials that there is a mismatch between GSTR-1 and GSTR-3B.",
+   "para": 5
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-01-10",
+     "quote": "Thereafter, the 1st respondent issued a Show Cause Notice in Form GST DRC-01 along with its Annexure dated 10.01.2024 under Section 73 of the TNGST Act, 2017, calling upon the petitioner to file its Reply by 10.02.2024 and attend the personal hearing on 24.01.2024.",
+     "para": 5
+    },
+    "reply_due": {
+     "value": "2024-02-10",
+     "quote": "Thereafter, the 1st respondent issued a Show Cause Notice in Form GST DRC-01 along with its Annexure dated 10.01.2024 under Section 73 of the TNGST Act, 2017, calling upon the petitioner to file its Reply by 10.02.2024 and attend the personal hearing on 24.01.2024.",
+     "para": 5
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "Thereafter, the 1st respondent issued a Show Cause Notice in Form GST DRC-01 along with its Annexure dated 10.01.2024 under Section 73 of the TNGST Act, 2017, calling upon the petitioner to file its Reply by 10.02.2024 and attend the personal hearing on 24.01.2024.",
+     "para": 5
+    },
+    "hearing_date": {
+     "value": "2024-01-24",
+     "quote": "Thereafter, the 1st respondent issued a Show Cause Notice in Form GST DRC-01 along with its Annexure dated 10.01.2024 under Section 73 of the TNGST Act, 2017, calling upon the petitioner to file its Reply by 10.02.2024 and attend the personal hearing on 24.01.2024.",
+     "para": 5
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "The learned counsel for the petitioner submitted that the Show Cause Notice, Reminder Notices and Assessment Order were merely uploaded in “View Additional Notices” column in GST Portal and the same were not served to the petitioner through physical mode and thus, the petitioner was not aware of the Notices and Assessment Order.",
+     "para": 6
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-21",
+    "quote": "Hence, the 1st respondent passed the Assessment Order dated 21.08.2024 along with Form GST DRC-07 dated 21.08.2024, confirming the demands proposed in the Show Cause Notice.",
+    "para": 5
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "The learned counsel for the petitioner submitted that the Show Cause Notice, Reminder Notices and Assessment Order were merely uploaded in “View Additional Notices” column in GST Portal and the same were not served to the petitioner through physical mode and thus, the petitioner was not aware of the Notices and Assessment Order.",
+    "para": 6
+   }
+  },
+  "events": [
+   {
+    "date": "2023-11-28",
+    "type": "scrutiny_notice",
+    "quote": "Hence, the 1st respondent issued a Notice in ASMT-10 dated 28.11.2023.",
+    "para": 5
+   },
+   {
+    "date": "2024-01-10",
+    "type": "scn_issued",
+    "quote": "Thereafter, the 1st respondent issued a Show Cause Notice in Form GST DRC-01 along with its Annexure dated 10.01.2024 under Section 73 of the TNGST Act, 2017, calling upon the petitioner to file its Reply by 10.02.2024 and attend the personal hearing on 24.01.2024.",
+    "para": 5
+   },
+   {
+    "date": "2024-08-21",
+    "type": "order_passed",
+    "quote": "Hence, the 1st respondent passed the Assessment Order dated 21.08.2024 along with Form GST DRC-07 dated 21.08.2024, confirming the demands proposed in the Show Cause Notice.",
+    "para": 5
+   },
+   {
+    "date": "2025-02-13",
+    "type": "appeal_dismissed",
+    "quote": "Aggrieved over the same, the petitioner had filed an Appeal dated 13.02.2025 under Section 107 of the TNGST Act, 2015 before the 2nd respondent, but, the same was rejected by the 2nd respondent vide Order in Form GST APL 02 dated 25.03.2025.",
+    "para": 5
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "On scrutinization of the returns filed by the petitioner for the Financial Year 2019-2020, it was found by the Officials that there is a mismatch between GSTR-1 and GSTR-3B.",
+    "para": 5
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Hence, the 1st respondent passed the Assessment Order dated 21.08.2024 along with Form GST DRC-07 dated 21.08.2024, confirming the demands proposed in the Show Cause Notice.",
+    "para": 5
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "From a perusal of the materials available on record, it is seen that Show Cause Notice, Reminder Notices and Assessment Order were merely uploaded in “View Additional Notices” column in GST Portal and the same were not served to the petitioner through physical mode.",
+    "quote_source": "court",
+    "para": 9
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, these Writ Petitions are disposed of.",
+   "para": 14
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14372,
+   "tokens_out": 3639,
+   "seconds": 13.62,
+   "cached": false
+  },
+  {
+   "tokens_in": 4440,
+   "tokens_out": 201,
+   "seconds": 1.47,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

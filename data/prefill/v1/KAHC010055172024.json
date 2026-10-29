@@ -1,0 +1,147 @@
+{
+ "cnr": "KAHC010055172024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "passed by the R2 U/S 74 OF THE KARNATAKA GOODS AND SERVICES TAX 2017 R/W SECTION 122(1)(vii) OF THE KARNATAKA GOODS AND SERVICES TAX/CENTRAL GOODS AND SERVICES TAX ACT 2017 ACT ANNEXURE-A.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-03-27",
+     "quote": "show cause notice dated 27.03.2023 issued by the 2nd respondent to the petitioner",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-06-30",
+    "quote": "quashing the order dated: 30.06.2023 bearing Reference No.ZD2906230295852 passed by the R2 U/S 74 OF THE KARNATAKA GOODS AND SERVICES TAX 2017",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-03-27",
+    "type": "scn_issued",
+    "quote": "show cause notice dated 27.03.2023 issued by the 2nd respondent to the petitioner",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "the petitioner having issued a reply to the said show cause notice, the 2nd respondent proceeded to pass the impugned order dated 30.06.2023",
+    "para": 3
+   },
+   {
+    "date": "2023-06-30",
+    "type": "order_passed",
+    "quote": "quashing the order dated: 30.06.2023 bearing Reference No.ZD2906230295852 passed by the R2 U/S 74 OF THE KARNATAKA GOODS AND SERVICES TAX 2017",
+    "para": 2
+   },
+   {
+    "date": "2023-10-07",
+    "type": "appeal_dismissed",
+    "quote": "quashing the order dated: 07.10.2023 passed by the Respondent No.1 in matter bearing GST.AP 97/2023-24; wherein, the Respondent No.1 acting under Section 107(11) of the KGST/CGST Act 2017 was pleased to dismiss the appeal",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "demand_beyond_scn",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "The amount of tax, interest and penalty demanded in the order shall not be in excess of the amount specified in the notice and no demand shall be confirmed on the grounds other than the grounds specified in the notice.",
+    "quote_source": "court",
+    "para": 12
+   }
+  ],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": true,
+   "quote": "Petition is hereby partly allowed.",
+   "para": 20
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 18535,
+   "tokens_out": 5162,
+   "seconds": 16.04,
+   "cached": false
+  },
+  {
+   "tokens_in": 11042,
+   "tokens_out": 375,
+   "seconds": 8.7,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.provision:facts.provision",
+   "facts.order.date:facts.order.date",
+   "facts.events[2]:order_passed"
+  ]
+ }
+}

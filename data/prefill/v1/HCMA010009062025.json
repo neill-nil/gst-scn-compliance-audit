@@ -1,0 +1,91 @@
+{
+ "cnr": "HCMA010009062025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, in this case, no such opportunity was provided and thus, it is clear that the impugned order came to be passed not only in contrary to the provisions of Section 75(4) of the GST Act but also in violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 42
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Therefore, for all these reasons, this Court is unable to persuade with the submissions made by the petitioner that the uploaded of the document in common portal is not a sufficient service.",
+    "quote_source": "court",
+    "para": 32
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, all these writ petitions are disposed of.",
+   "para": 48
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 62907,
+   "tokens_out": 4379,
+   "seconds": 13.39,
+   "cached": false
+  },
+  {
+   "tokens_in": 27541,
+   "tokens_out": 300,
+   "seconds": 5.51,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[0]:hearing_75_4"
+  ]
+ }
+}

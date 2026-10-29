@@ -1,0 +1,121 @@
+{
+ "cnr": "HCMA011372062026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-06-02",
+     "quote": "The record shows that the show cause notice was issued on 02.06.2025 while the tax payer was alive",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-12-06",
+    "quote": "Order dated 06.12.2025 is assailed primarily on the ground that the said order was issued against a dead person.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-06-02",
+    "type": "scn_issued",
+    "quote": "The record shows that the show cause notice was issued on 02.06.2025 while the tax payer was alive",
+    "para": 4
+   },
+   {
+    "date": "2025-12-06",
+    "type": "order_passed",
+    "quote": "whereas the impugned order has been issued on 06.12.2025, which is after the date of death recorded in the death certificate.",
+    "para": 4
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "Therefore, the impugned order cannot be sustained and is hereby set aside by leaving it open to the respondent to initiate action in accordance with law against the legal representatives of the deceased proprietor.",
+   "para": 4
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9119,
+   "tokens_out": 1299,
+   "seconds": 11.03,
+   "cached": false
+  },
+  {
+   "tokens_in": 2323,
+   "tokens_out": 72,
+   "seconds": 4.03,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

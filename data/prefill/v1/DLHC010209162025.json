@@ -1,0 +1,185 @@
+{
+ "cnr": "DLHC010209162025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "issued under section 73 of CGST Act, 2017 for FY 2020-21.",
+   "para": 38
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "pertaining to the tax period April 2020 to March 2021.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-30",
+     "quote": "Show Cause Notice dated 30th November, 2024",
+     "para": 2
+    },
+    "reply_due": {
+     "value": "2024-12-30",
+     "quote": "Date by which reply has to be submitted 30-12-2024",
+     "para": 7
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "Date of personal hearing 17-01-2025",
+     "para": 7
+    },
+    "hearing_date": {
+     "value": "2025-01-17",
+     "quote": "Date of personal hearing 17-01-2025",
+     "para": 7
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-28",
+    "quote": "demand order dated 28th February, 2025",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-30",
+    "type": "scn_issued",
+    "quote": "The impugned SCN issued by the Respondent-Department",
+    "para": 7
+   },
+   {
+    "date": "2024-12-27",
+    "type": "extension_requested",
+    "quote": "on 27th December, 2024, sent a reply to the Respondent- Department. In the said reply, the Petitioner sought an extension of 15 days",
+    "para": 8
+   },
+   {
+    "date": "2025-01-20",
+    "type": "extension_granted",
+    "quote": "on 20th January, 2025, the Respondent-Department uploaded an adjournment notice on the GST Portal of the Petitioner and extended the time for filing reply to the impugned SCN along with granting another opportunity for personal hearing on 27th January, 2025.",
+    "para": 9
+   },
+   {
+    "date": "2025-01-22",
+    "type": "reply_filed",
+    "quote": "On 22nd January, 2025, the Petitioner proceeded to file a detailed reply to the impugned SCN, along with all the supporting documents.",
+    "para": 10
+   },
+   {
+    "date": "2025-01-27",
+    "type": "hearing_missed",
+    "quote": "the Petitioner failed to avail the opportunity for personal hearing on 27th January, 2025",
+    "para": 11
+   },
+   {
+    "date": "2025-02-21",
+    "type": "reply_filed",
+    "quote": "This was followed by a supplementary reply dated 21st February, 2025",
+    "para": 10
+   },
+   {
+    "date": "2025-02-28",
+    "type": "order_passed",
+    "quote": "the impugned order dated 28th February, 2025, was issued",
+    "para": 12
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "a demand was raised upon the Petitioner on the ground that the Petitioner had erroneously availed excess Input Tax Credit",
+    "para": 6
+   },
+   {
+    "type": "reply_point",
+    "quote": "In the said reply, the Petitioner sought an extension of 15 days to allow them sufficient time to compile and submit the required documents to support their contentions against the demands raised in the impugned SCN.",
+    "para": 8
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Hence, upon a careful consideration of all the facts and circumstances of this case, read with all the relevant case laws, as relied upon by the parties, this Court is of the opinion that the issuance of the impugned SCN dated 30 th November, 2024, is well within the stipulated time period of 3 three months before the passing of the impugned order dated 28th February, 2025.",
+    "quote_source": "court",
+    "para": 36
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "A conjoint reading of all the relevant notices along with the replies filed by the Petitioner would show that adequate opportunity has been granted by the Respondent-Department for filing of reply and for personal hearing.",
+    "quote_source": "court",
+    "para": 48
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "The writ petition is accordingly dismissed in the above terms.",
+   "para": 54
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 32163,
+   "tokens_out": 5454,
+   "seconds": 15.78,
+   "cached": false
+  },
+  {
+   "tokens_in": 12169,
+   "tokens_out": 275,
+   "seconds": 4.03,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.notices[0].reply_due:facts.notices[0].reply_due"
+  ]
+ }
+}

@@ -1,0 +1,166 @@
+{
+ "cnr": "DLHC011062692025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "On facts, a Show Cause Notice was issued to the Petitioner on 12th December, 2023.",
+   "para": 11
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-12",
+     "quote": "On facts, a Show Cause Notice was issued to the Petitioner on 12th December, 2023.",
+     "para": 11
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": "A reminder notice dated 1st March, 2024 was also issued to the Petitioner and a personal hearing was fixed on 7th March, 2024.",
+     "para": 11
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "The case of the Petitioner is that the impugned SCN and impugned order have been uploaded on the ‘Additional Notices Tab’ and thereby the same were not brought to the knowledge of the Petitioner.",
+     "para": 11
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-02",
+    "quote": "Thereafter, the impugned order was passed on 2nd April, 2024, confirming the demand against the Petitioner.",
+    "para": 11
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "The case of the Petitioner is that the impugned SCN and impugned order have been uploaded on the ‘Additional Notices Tab’ and thereby the same were not brought to the knowledge of the Petitioner.",
+    "para": 11
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-12",
+    "type": "scn_issued",
+    "quote": "On facts, a Show Cause Notice was issued to the Petitioner on 12th December, 2023.",
+    "para": 11
+   },
+   {
+    "date": "2024-03-01",
+    "type": "other",
+    "quote": "A reminder notice dated 1st March, 2024 was also issued to the Petitioner and a personal hearing was fixed on 7th March, 2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-03-07",
+    "type": "hearing_scheduled",
+    "quote": "A reminder notice dated 1st March, 2024 was also issued to the Petitioner and a personal hearing was fixed on 7th March, 2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-03-07",
+    "type": "hearing_missed",
+    "quote": "However, no reply has been filed to the same nor any personal hearing has been attended by the Petitioner.",
+    "para": 11
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, no reply has been filed to the same nor any personal hearing has been attended by the Petitioner.",
+    "para": 11
+   },
+   {
+    "date": "2024-04-02",
+    "type": "order_passed",
+    "quote": "Thereafter, the impugned order was passed on 2nd April, 2024, confirming the demand against the Petitioner.",
+    "para": 11
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "There is no doubt that after 16th January, 2024, changes have been made to the GST portal and the ‘Additional Notices Tab’ has been made visible.",
+    "quote_source": "court",
+    "para": 10
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "A perusal of the above would show that various High Courts have taken a view and the matter is squarely now pending before the Supreme Court.",
+    "quote_source": "court",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The impugned order is accordingly set aside, subject to payment of Rs. 20,000/- as costs by the Petitioner.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 7031,
+   "tokens_out": 1109,
+   "seconds": 6.03,
+   "cached": false
+  },
+  {
+   "tokens_in": 10964,
+   "tokens_out": 573,
+   "seconds": 8.57,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

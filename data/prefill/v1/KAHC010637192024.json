@@ -1,0 +1,157 @@
+{
+ "cnr": "KAHC010637192024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "DRC-01 for both payments i.e. 31-07-21 and 03-08-21 attached are herewith, wherein the Petitioner was strictly forced to make payment under 74(5).",
+   "para": 6
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2022-11-30",
+     "quote": "A show-cause notice came to be issued on 30.11.2022 to the respondent.",
+     "para": 5
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-07-29",
+    "type": "other",
+    "quote": "Bengaluru DGGI visit Rasik Kunj, Ground Floor, Mathuradas Road, Kandivali Mumbai 400067, which is the registered place of business of Petitioner.",
+    "para": 6
+   },
+   {
+    "date": "2021-07-31",
+    "type": "recovery_or_attachment",
+    "quote": "As soon as possible, despite Page 63 going through 2 days of mental and physical trauma, under the constant calls from the officer under their directions 1 crore paid through RTGS at the Bank.",
+    "para": 6
+   },
+   {
+    "date": "2021-08-03",
+    "type": "hearing_attended",
+    "quote": "Petitioner attends the C Page summons and was kept on 67 waiting till late afternoon.",
+    "para": 6
+   },
+   {
+    "date": "2021-08-03",
+    "type": "recovery_or_attachment",
+    "quote": "Subsequently after confirming the payment, the Petitioner's seized phones were returns and it was informed to him to make payment of 1.5 crores by e-challan since they would now be able to access the OTP on phone, whilst they were before the Inv Authorities in Bengaluru",
+    "para": 6
+   },
+   {
+    "date": "2021-08-10",
+    "type": "other",
+    "quote": "Petitioner was mentally drained H Page and physically exhausted due 149 to the 2- day detention in his office and subsequent rush to the Bengaluru.",
+    "para": 6
+   },
+   {
+    "date": "2021-09-16",
+    "type": "earlier_writ",
+    "quote": "Petitioner filed Writ Petition before the Hon'ble Karnataka HC.",
+    "para": 6
+   },
+   {
+    "date": "2021-09-03",
+    "type": "earlier_writ",
+    "quote": "Hon'ble HC, grants protection to the Petitioner from coercive recovery and Petitioner agrees to cooperate with Investigation.",
+    "para": 6
+   },
+   {
+    "date": "2022-12-01",
+    "type": "scn_issued",
+    "quote": "SCN issued by the DGGI Copy to transferred to Nodal Officer.",
+    "para": 6
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "In the facts of the case we are of the view that, writ appeal is devoid of merits and the same is liable to be dismissed.",
+   "para": 32
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 31003,
+   "tokens_out": 5303,
+   "seconds": 16.46,
+   "cached": false
+  },
+  {
+   "tokens_in": 23441,
+   "tokens_out": 236,
+   "seconds": 7.44,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

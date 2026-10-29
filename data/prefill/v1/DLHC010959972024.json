@@ -1,0 +1,174 @@
+{
+ "cnr": "DLHC010959972024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "Whereas, a notice GST DRC-0L was issued to the taxpayer for the Financial Year 2Ol9-20 along with the details of proposed tax, interest and Penalty with the direction to pay the due tax along with interest and Penalty along with opportunity of personal hearing.",
+   "para": 6
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-15",
+     "quote": "The present petition, inter alia, challenges the impugned order dated 31st August, 2024 passed by the Sales Tax Officer, Class-II, Ward 202,203 and 205, Zone-11, Delhi which arises out of Show Cause Notice dated 15th May, 2024.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-31",
+    "quote": "The present petition, inter alia, challenges the impugned order dated 31st August, 2024 passed by the Sales Tax Officer, Class-II, Ward 202,203 and 205, Zone-11, Delhi which arises out of Show Cause Notice dated 15th May, 2024.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-15",
+    "type": "scn_issued",
+    "quote": "Vide the Show Cause Notice dated 15th May, 2024, the Petitioner was given an opportunity to show cause as to why they had not declared the correct tax liability in the annual returns of GSTR-09.",
+    "para": 4
+   },
+   {
+    "date": "2024-06-14",
+    "type": "reply_filed",
+    "quote": "In response to the said Show Cause Notice, replies were given by the Petitioner on 14th June, 2024 explaining in detail the position of the Petitioner.",
+    "para": 5
+   },
+   {
+    "date": "2024-08-13",
+    "type": "reply_filed",
+    "quote": "The Petitioner replied to the reminder notices on 13th August, 2024 submitting various documents along with its reply.",
+    "para": 5
+   },
+   {
+    "date": "2024-08-31",
+    "type": "order_passed",
+    "quote": "subsequent to which the impugned order dated 31st August 2024 was passed.",
+    "para": 5
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "According to the Show Cause Notice there is a difference in the turnover of the company and there is an under-declaration of the output tax and accordingly the Petitioner has been directed to pay the tax liability of Rs. 46,49,420/-.",
+    "para": 4
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "And whereas, the taxpayer submitted its reply in DRC-06, but the same is found not comprehensive, conceivable, perspicuous and pursuant to notice of personal hearing the AR appeared on behalf of the firm to provide explanation/clarification with regard to the reply submitted against DRC-01.",
+    "para": 6
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In view of the lack of reasoning, non-consideration of the reply and non-application of mind in passing the impugned order dated 31st August, 2024, it is held that the impugned order is not tenable and deserves to be set aside.",
+    "quote_source": "court",
+    "para": 10
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Upon pursuing the impugned order, the Court is of the considered opinion that the impugned order has been passed in a completely cryptic and templated manner.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The challenge to the validity of the Notification No. 9/2023-CT dated 31st March, 2024 and Notification No. 09/2023-ST dated 22nd June, 2023 and also, Notification No. 56/2023-CT dated 28th December, 2023 and Notification No. 56/2023-ST dated 11th July, 2024 issued by the Resp. Nos. 1 and 2 under Section 168A of the CGST Act is kept open to be raised afresh, if the need so arises.",
+    "quote_source": "court",
+    "para": 9
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The matter is remanded for fresh consideration of the Show Cause notice and the replies given by the Petitioner.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 17339,
+   "tokens_out": 5341,
+   "seconds": 15.61,
+   "cached": false
+  },
+  {
+   "tokens_in": 4757,
+   "tokens_out": 522,
+   "seconds": 3.37,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

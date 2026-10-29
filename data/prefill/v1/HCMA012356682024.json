@@ -1,0 +1,161 @@
+{
+ "cnr": "HCMA012356682024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "During the relevant period of 2017-18, the petitioner filed its returns and paid the appropriate taxes.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-26",
+     "quote": "followed by notice in DRC-01 on 26.09.2023.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-11-16",
+    "quote": "The present writ petition is filed challenging the impugned order passed by the respondent dated 16.11.2023 on the premise that the petitioner had not submitted its reply when, in fact, the petitioner had submitted its reply on 26.10.2023 in response to the notice in DRC-01 dated 26.09.2023.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-13",
+    "type": "pre_scn_intimation",
+    "quote": "Pursuant thereto, a notice in DRC-01A was issued on 13.09.2023, followed by notice in DRC-01 on 26.09.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-09-26",
+    "type": "scn_issued",
+    "quote": "Pursuant thereto, a notice in DRC-01A was issued on 13.09.2023, followed by notice in DRC-01 on 26.09.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-10-26",
+    "type": "reply_filed",
+    "quote": "In response to the Show Cause Notice, the petitioner had filed its reply on 26.10.2023 wherein it was submitted that the sales reported in GSTR-3B are in fact correct and the discrepancies are only in view of the fact that the closing stock has not been considered.",
+    "para": 2
+   },
+   {
+    "date": "2023-11-16",
+    "type": "order_passed",
+    "quote": "The present writ petition is filed challenging the impugned order passed by the respondent dated 16.11.2023 on the premise that the petitioner had not submitted its reply when, in fact, the petitioner had submitted its reply on 26.10.2023 in response to the notice in DRC-01 dated 26.09.2023.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "However, on scrutiny of the petitioner's return, it was noticed that the sales declared were less than the purchases, which was proposed to be treated as sales suppression.",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "In response to the Show Cause Notice, the petitioner had filed its reply on 26.10.2023 wherein it was submitted that the sales reported in GSTR-3B are in fact correct and the discrepancies are only in view of the fact that the closing stock has not been considered.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "However, the impugned order proceeds on the premise that the petitioner had not filed any objection nor attended the personal hearing which, according to the petitioner, suffers from non-application of mind.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The present writ petition is filed challenging the impugned order passed by the respondent dated 16.11.2023 on the premise that the petitioner had not submitted its reply when, in fact, the petitioner had submitted its reply on 26.10.2023 in response to the notice in DRC-01 dated 26.09.2023.",
+    "quote_source": "argument",
+    "para": 1
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view thereof, the impugned order dated 26.04.2024 is set aside.",
+   "para": 4
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13139,
+   "tokens_out": 5425,
+   "seconds": 17.38,
+   "cached": false
+  },
+  {
+   "tokens_in": 2657,
+   "tokens_out": 236,
+   "seconds": 2.32,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

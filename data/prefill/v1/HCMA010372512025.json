@@ -1,0 +1,160 @@
+{
+ "cnr": "HCMA010372512025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "under Section 73 of the TNGST Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "relating to F.Y.2018-19",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "merely uploaded in the GST Portal under the ''View Additional Notices Tab''",
+     "para": 3
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-26",
+    "quote": "The challenge in Writ Petition No.6718 of 2025 is to the order passed by the respondent dated 26.04.2024",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "therefore, the petitioner could not file reply nor appear for the personal hearing, however, without hearing the petitioner, the impugned orders came to be passed.",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "therefore, the petitioner could not file reply nor appear for the personal hearing, however, without hearing the petitioner, the impugned orders came to be passed.",
+    "para": 3
+   },
+   {
+    "date": "2024-04-26",
+    "type": "order_passed",
+    "quote": "The challenge in Writ Petition No.6718 of 2025 is to the order passed by the respondent dated 26.04.2024",
+    "para": 2
+   },
+   {
+    "date": "2024-04-27",
+    "type": "order_passed",
+    "quote": "and so far as W.P.No.7111 of 2025 is concerned, the same is filed seeking to quash the order dated 27.04.2024 under Section 73 of the TNGST Act, 2017 in Form GST DRC 07 along with Rectification Order dated 27.12.2024, relating to F.Y.2018-19 and to quash the same.",
+    "para": 2
+   },
+   {
+    "date": "2024-12-27",
+    "type": "rectification_rejected",
+    "quote": "along with Rectification Order dated 27.12.2024, in Ref.No.ZD3312242428351 on the file of the respondent relating to F.Y.2018-19 and to quash the same.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "there is no dispute on the aspect that notices, which culminated in the impugned orders were merely uploaded in the GST portal, which were unnoticed by the petitioner as the petitioner had no occasion to view the Portal then and there, hence, the petitioner could not file reply or appear for the personal hearing.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "However, the respondent passed the impugned orders without even affording any opportunity of hearing to the petitioner, which are nothing but ex parte orders, as the same suffer from violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, the Writ Petitions are allowed on the aforesaid terms.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 11579,
+   "tokens_out": 2131,
+   "seconds": 11.94,
+   "cached": false
+  },
+  {
+   "tokens_in": 7304,
+   "tokens_out": 602,
+   "seconds": 7.08,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "cnr": "HCMA011812272024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-05-01",
+    "quote": "dated 01.05.2024 in GST DRC-07",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-01",
+    "type": "order_passed",
+    "quote": "the impugned ex parte order issued in Ref No.ZD330524000087W dated 01.05.2024 in GST DRC-07",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On perusal of records, it is crystal clear that the impugned order came to be passed against the petitioner, behind their back, as the respondent-Department has not taken any steps to serve any notices/communications, which culminated in the impugned order directly through physical mode of service and made it available only in the GST Portal under the ''View of additional notices and orders' column, which, the petitioner was not aware and ultimately, the impugned order came to be passed against the petitioner without even affording any opportunity of hearing to the petitioner, which is in total violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On perusal of records, it is crystal clear that the impugned order came to be passed against the petitioner, behind their back, as the respondent-Department has not taken any steps to serve any notices/communications, which culminated in the impugned order directly through physical mode of service and made it available only in the GST Portal under the ''View of additional notices and orders' column, which, the petitioner was not aware and ultimately, the impugned order came to be passed against the petitioner without even affording any opportunity of hearing to the petitioner, which is in total violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, the Writ Petition is allowed on the aforesaid terms.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13765,
+   "tokens_out": 4501,
+   "seconds": 13.58,
+   "cached": false
+  },
+  {
+   "tokens_in": 6608,
+   "tokens_out": 961,
+   "seconds": 10.36,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

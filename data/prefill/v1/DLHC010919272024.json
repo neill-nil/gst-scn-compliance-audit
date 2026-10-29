@@ -1,0 +1,196 @@
+{
+ "cnr": "DLHC010919272024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The present petition has been filed by the Petitioner– POWER2SME Pvt. Ltd. challenging the Order-in-Original dated 16th August, 2024 (hereinafter, ‘the impugned order’) passed under Section 73 of the Central Goods and Services Tax Act, 2017 (hereinafter, ‘CGST Act, 2017’).",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "On facts, however, the submission of the Petitioner in the present petition is that a show cause notice dated 31st May, 2024 (hereinafter, ‘the SCN’) was issued upon the Petitioner pertaining to the tax period April 2019- March 2020.",
+   "para": 6
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-31",
+     "quote": "On facts, however, the submission of the Petitioner in the present petition is that a show cause notice dated 31st May, 2024 (hereinafter, ‘the SCN’) was issued upon the Petitioner pertaining to the tax period April 2019- March 2020.",
+     "para": 6
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-16",
+    "quote": "The present petition has been filed by the Petitioner– POWER2SME Pvt. Ltd. challenging the Order-in-Original dated 16th August, 2024 (hereinafter, ‘the impugned order’) passed under Section 73 of the Central Goods and Services Tax Act, 2017 (hereinafter, ‘CGST Act, 2017’).",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-31",
+    "type": "scn_issued",
+    "quote": "On facts, however, the submission of the Petitioner in the present petition is that a show cause notice dated 31st May, 2024 (hereinafter, ‘the SCN’) was issued upon the Petitioner pertaining to the tax period April 2019- March 2020.",
+    "para": 6
+   },
+   {
+    "date": "2024-07-01",
+    "type": "reply_filed",
+    "quote": "A reply to the SCN was filed by the Petitioner on 1st July, 2024.",
+    "para": 6
+   },
+   {
+    "date": null,
+    "type": "hearing_scheduled",
+    "quote": "Thereafter, a notice for personal hearing was issued, however, the same could not be attended by the Petitioner.",
+    "para": 6
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "Thereafter, a notice for personal hearing was issued, however, the same could not be attended by the Petitioner.",
+    "para": 6
+   },
+   {
+    "date": null,
+    "type": "adjournment_requested",
+    "quote": "The Petitioner, however, requested for an adjournment and sought another date for personal hearing.",
+    "para": 6
+   },
+   {
+    "date": "2024-08-16",
+    "type": "order_passed",
+    "quote": "The present petition has been filed by the Petitioner– POWER2SME Pvt. Ltd. challenging the Order-in-Original dated 16th August, 2024 (hereinafter, ‘the impugned order’) passed under Section 73 of the Central Goods and Services Tax Act, 2017 (hereinafter, ‘CGST Act, 2017’).",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "From the perusal of the reply it is made out that he is in possession of tax invoices, e-way bills, and payment proof only and stating that the suppliers had filed their GST 3B.",
+    "para": 9
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "However, as regards the actual receipt of good/services the noticee failed to produce any supporting documents.",
+    "para": 9
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Further, regarding fulfilling of essential ingredient as mentioned in section 16 (2) (c) of the Act, 2017 the noticee failed to prove that the tax collected by his supplier from him was actually paid to the government.",
+    "para": 9
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Since, the taxpayer failed to produce any supporting documents to prove the admissible purchase and receipt of goods/services from the above stated cancel taxpayers.",
+    "para": 9
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In view of the above position, this Court is of the opinion that the impugned order has been passed without affording the Petitioner with sufficient opportunity to be heard.",
+    "quote_source": "court",
+    "para": 10
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "As observed by this Court in the order dated 22nd April, 2025 as well, since the challenge to the above mentioned notifications is presently under consideration before the Supreme Court in S.L.P No 4240/2025 titled M/s HCC-SEW-MEIL-AAG JV v. Assistant Commissioner of State Tax & Ors., the challenge made by the Petitioner to the impugned notification in the present proceedings shall also be subject to the outcome of the decision of the Supreme Court.",
+    "quote_source": "argument",
+    "para": 5
+   },
+   {
+    "type": "demand_beyond_scn",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is further submitted by the Petitioner that the impugned order has been passed on the grounds that are beyond those raised in the SCN.",
+    "quote_source": "argument",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The present writ petition is disposed of in above terms.",
+   "para": 14
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 16823,
+   "tokens_out": 5675,
+   "seconds": 16.77,
+   "cached": false
+  },
+  {
+   "tokens_in": 9561,
+   "tokens_out": 836,
+   "seconds": 7.54,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

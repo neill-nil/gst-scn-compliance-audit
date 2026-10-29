@@ -1,0 +1,165 @@
+{
+ "cnr": "DLHC010279262025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "assailing the Show Cause Notice dated 16th May, 2024 (hereinafter, ‘the SCN’) for the tax period April 2019 to March 2020",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-16",
+     "quote": "assailing the Show Cause Notice dated 16th May, 2024",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-30",
+    "quote": "as also the consequent order dated 30th August, 2024 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi (hereinafter, ‘the impugned order’)",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-16",
+    "type": "scn_issued",
+    "quote": "assailing the Show Cause Notice dated 16th May, 2024 (hereinafter, ‘the SCN’) for the tax period April 2019 to March 2020",
+    "para": 3
+   },
+   {
+    "date": "2024-06-15",
+    "type": "reply_filed",
+    "quote": "a reply dated 15th June, 2024 along with supporting documents was filed by the Petitioner pursuant to the SCN dated 16th May, 2024.",
+    "para": 11
+   },
+   {
+    "date": null,
+    "type": "hearing_attended",
+    "quote": "its Authorized Representative had appeared before the Adjudicating Authority.",
+    "para": 11
+   },
+   {
+    "date": "2024-08-30",
+    "type": "order_passed",
+    "quote": "as also the consequent order dated 30th August, 2024 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "In the SCN, a demand of Rs.6,25,534/- was raised upon the Petitioner.",
+    "para": 11
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "THE REPLY FURNISHED BY THE TAXPAYER IS NOT SATISFACTORY BECAUSE HE DID NOT SUBMIT ANY SUPPORTING DOCUMENTS LIKE E-WAY BILL, INVOICES, BANK STATEMENTS, PURCHASE REGISTER ETC.",
+    "para": 11
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "In the opinion of this Court, the impugned order has been passed after duly considering the reply of the Petitioner.",
+    "quote_source": "court",
+    "para": 10
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The petition also challenges the vires of Notification Nos. 9/2023- Central Tax dated 31st March 2023, 56/2023- Central Tax dated 28th December, 2023 as also the Notification No. 56/2023-State Tax dated 11th July, 2024 (hereinafter ‘impugned notifications’).",
+    "quote_source": "argument",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "Petition is disposed of in these terms.",
+   "para": 17
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 17085,
+   "tokens_out": 5181,
+   "seconds": 11.06,
+   "cached": false
+  },
+  {
+   "tokens_in": 9727,
+   "tokens_out": 644,
+   "seconds": 9.17,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

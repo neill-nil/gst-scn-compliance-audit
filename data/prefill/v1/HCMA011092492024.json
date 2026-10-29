@@ -1,0 +1,155 @@
+{
+ "cnr": "HCMA011092492024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "under section 73 dated 31.12.2023",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "for tax period 2017-18",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-04-27",
+     "quote": "show cause notice dated 27.04.2023",
+     "para": 0
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-31",
+    "quote": "An order in original dated 31.12.2023 is challenged",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-04-27",
+    "type": "scn_issued",
+    "quote": "Upon receipt of show cause notice dated 27.04.2023",
+    "para": 0
+   },
+   {
+    "date": "2023-05-03",
+    "type": "reply_filed",
+    "quote": "the petitioner replied on 03.05.2023 by stating that an inadvertent error was committed while filing the GSTR 3B return.",
+    "para": 0
+   },
+   {
+    "date": "2023-12-31",
+    "type": "order_passed",
+    "quote": "The impugned order was issued thereafter on 31.12.2023.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "the petitioner replied on 03.05.2023 by stating that an inadvertent error was committed while filing the GSTR 3B return.",
+    "para": 0
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "However, it is recorded that the tax payer had not reversed the ITC relating to purchases falling under the RCM.",
+    "para": 4
+   },
+   {
+    "type": "reply_point",
+    "quote": "The petitioner's reply is terse and does not contain sufficient details about the nature of the inadvertent error.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "denied reasonable opportunity",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "An order in original dated 31.12.2023 is challenged on the ground that the petitioner did not have a reasonable opportunity to contest the tax demand on merits.",
+    "quote_source": "argument",
+    "para": 1
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Therefore, the impugned order dated 31.12.2023 is set aside on condition that the petitioner remits 10% of the disputed tax demand as agreed to within a period of two weeks from the date of receipt of a copy of this order.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13371,
+   "tokens_out": 5087,
+   "seconds": 14.78,
+   "cached": false
+  },
+  {
+   "tokens_in": 2773,
+   "tokens_out": 187,
+   "seconds": 3.96,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

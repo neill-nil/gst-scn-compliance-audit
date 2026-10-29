@@ -1,0 +1,160 @@
+{
+ "cnr": "HCMA010818012025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "The challenge in this Writ Petition is to the order dated 24.08.2024 passed by the respondent for the AY 2019-20 and also attachment order dated 24.08.2024 and to quash the same.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-22",
+     "quote": "The learned counsel for the petitioner would submit that the respondent has issued a show cause notice dated 22.05.2024 followed by three reminder notices dated 24.06.2024, 10.08.2024 and 17.08.2024 to the petitioner.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "Since the same were uploaded in the GST portal, without serving physical copy of the same to the petitioner and therefore was not aware of those notices and file reply to those notices.",
+     "para": 3
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-24",
+    "quote": "The challenge in this Writ Petition is to the order dated 24.08.2024 passed by the respondent for the AY 2019-20 and also attachment order dated 24.08.2024 and to quash the same.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-22",
+    "type": "scn_issued",
+    "quote": "The learned counsel for the petitioner would submit that the respondent has issued a show cause notice dated 22.05.2024 followed by three reminder notices dated 24.06.2024, 10.08.2024 and 17.08.2024 to the petitioner.",
+    "para": 3
+   },
+   {
+    "date": "2024-06-24",
+    "type": "other",
+    "quote": "The learned counsel for the petitioner would submit that the respondent has issued a show cause notice dated 22.05.2024 followed by three reminder notices dated 24.06.2024, 10.08.2024 and 17.08.2024 to the petitioner.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-10",
+    "type": "other",
+    "quote": "The learned counsel for the petitioner would submit that the respondent has issued a show cause notice dated 22.05.2024 followed by three reminder notices dated 24.06.2024, 10.08.2024 and 17.08.2024 to the petitioner.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-17",
+    "type": "other",
+    "quote": "The learned counsel for the petitioner would submit that the respondent has issued a show cause notice dated 22.05.2024 followed by three reminder notices dated 24.06.2024, 10.08.2024 and 17.08.2024 to the petitioner.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-24",
+    "type": "order_passed",
+    "quote": "The challenge in this Writ Petition is to the order dated 24.08.2024 passed by the respondent for the AY 2019-20 and also attachment order dated 24.08.2024 and to quash the same.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Since the same were uploaded in the GST portal, without serving physical copy of the same to the petitioner and therefore was not aware of those notices and file reply to those notices.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Therefore, the learned counsel would submit that the impugned order suffers from violation of principles of natural justice and is liable to be aside, as the petitioner has not been heard before passing the impugned order.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, this Court passes the following order:- (i) The order impugned herein are set aside.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13791,
+   "tokens_out": 5452,
+   "seconds": 17.18,
+   "cached": false
+  },
+  {
+   "tokens_in": 6431,
+   "tokens_out": 661,
+   "seconds": 6.86,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

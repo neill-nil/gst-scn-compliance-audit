@@ -1,0 +1,174 @@
+{
+ "cnr": "HCMA010998472024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "passed under Section 73 of the CGST/TNGST Act, 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "for financial year 2021-22",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2022-12-20",
+     "quote": "show cause notice dated 20.12.2022",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-05-11",
+    "quote": "An assessment order dated 11.05.2023",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-10-10",
+    "type": "scrutiny_notice",
+    "quote": "by issuing notice in Form ASMT 10 dated 10.10.2022",
+    "para": 4
+   },
+   {
+    "date": "2022-11-14",
+    "type": "pre_scn_intimation",
+    "quote": "intimation dated 14.11.2022",
+    "para": 4
+   },
+   {
+    "date": "2022-12-20",
+    "type": "scn_issued",
+    "quote": "show cause notice dated 20.12.2022",
+    "para": 4
+   },
+   {
+    "date": "2023-04-25",
+    "type": "other",
+    "quote": "Upon receipt of reminder 2 dated 25.04.2023",
+    "para": 2
+   },
+   {
+    "date": "2023-05-03",
+    "type": "reply_filed",
+    "quote": "it is stated that the petitioner replied on 03.05.2023 pointing out that the supplier recorded the supply belatedly in his returns.",
+    "para": 2
+   },
+   {
+    "date": "2023-05-09",
+    "type": "other",
+    "quote": "Such dispatch appears to have been made on 09.05.2023.",
+    "para": 5
+   },
+   {
+    "date": "2023-05-11",
+    "type": "order_passed",
+    "quote": "An assessment order dated 11.05.2023 in respect of assessment period dated 2021-2022 is assailed in this writ petition",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "pointing out that the supplier recorded the supply belatedly in his returns.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The impugned assessment order indicates that the tax proposal pertains to a mismatch between the petitioner's claim for ITC and the availability of ITC as per the corresponding uploaded GSTR 2B.",
+    "para": 5
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Learned counsel for the petitioner submits that this reply was disregarded while confirming the tax proposal.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The writ petition is disposed of on the above terms without any order as to costs.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10448,
+   "tokens_out": 2057,
+   "seconds": 9.96,
+   "cached": false
+  },
+  {
+   "tokens_in": 5934,
+   "tokens_out": 342,
+   "seconds": 8.93,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

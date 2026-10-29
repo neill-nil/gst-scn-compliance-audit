@@ -1,0 +1,148 @@
+{
+ "cnr": "HCMA011927592025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "The challenge in W.P.No.32867 of 2025 is to the order dated 19.02.2025 passed by the first respondent for the AY 2020-21 and to quash the same and remand back the matter to the respondent.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-26",
+     "quote": "As far as W.P.No.32867 of 2025 is concerned, the learned counsel for the petitioner would submit that the respondent has issued a show cause notice in Form GST DRC - 01 on 26.11.2024, unfortunately, he failed to note those notices/reminders.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "Considering the above submissions made by the learned counsel on either side and upon perusal of the materials, it is evident that the impugned show cause notice was uploaded on the GST Portal Tab.",
+     "para": 5
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-19",
+    "quote": "Prayer in W.P.No.32867 of 2025 : Writ Petition filed under Article 226 of the Constitution of India praying for the issuance of a Writ of Certiorarified Mandamus, calling for the records on the files of the 1st respondent herein in GSTIN/33DVVPK6533D1ZD/2020-21 in FORM GST DRC-07 in Order Reference No.ZD330225186545B dated 19.02.2025 and quash the same.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-26",
+    "type": "scn_issued",
+    "quote": "As far as W.P.No.32867 of 2025 is concerned, the learned counsel for the petitioner would submit that the respondent has issued a show cause notice in Form GST DRC - 01 on 26.11.2024, unfortunately, he failed to note those notices/reminders.",
+    "para": 3
+   },
+   {
+    "date": "2025-02-19",
+    "type": "order_passed",
+    "quote": "Prayer in W.P.No.32867 of 2025 : Writ Petition filed under Article 226 of the Constitution of India praying for the issuance of a Writ of Certiorarified Mandamus, calling for the records on the files of the 1st respondent herein in GSTIN/33DVVPK6533D1ZD/2020-21 in FORM GST DRC-07 in Order Reference No.ZD330225186545B dated 19.02.2025 and quash the same.",
+    "para": 0
+   },
+   {
+    "date": "2025-07-17",
+    "type": "appeal_dismissed",
+    "quote": "Challenge in W.P.No.32869 of 2025 is to the order dated 17.07.2025 passed by the 2nd respondent, rejecting the appeal filed by the petitioner on the ground that there is a delay.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, this Court finds that there is a lack of opportunities being provided to serve the notices/orders etc., effectively to the petitioner.",
+    "quote_source": "court",
+    "para": 7
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In such circumstances, this Court is of the view that the impugned assessment order came to be passed without affording any opportunity of personal hearing to the petitioner, confirming the proposals contained in the show cause notice.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "i) The impugned order passed by first the respondent dated 19.02.2025 is set aside and, the delay in filing the appeal is condoned.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 11577,
+   "tokens_out": 2405,
+   "seconds": 10.85,
+   "cached": false
+  },
+  {
+   "tokens_in": 7136,
+   "tokens_out": 578,
+   "seconds": 8.39,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

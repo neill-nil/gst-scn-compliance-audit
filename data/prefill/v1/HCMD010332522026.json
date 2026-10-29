@@ -1,0 +1,170 @@
+{
+ "cnr": "HCMD010332522026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "passed by the respondent under Section 74 of TNGST Act, 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "for the assessment year 2019-2020",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-03-27",
+     "quote": "show cause notice was issued on 27.03.2025 under section 74(1) of the TNGST Act",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-12-03",
+    "quote": "passed the impugned order dated 03.12.2025",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-16",
+    "type": "other",
+    "quote": "Through Form DRC-03 on 16.09.2023, the petitioner had paid a sum of Rs.28,46,104/- being the tax due under CGST and SGST respectively, along with an interest amount of Rs.7,49,466/-.",
+    "para": 2
+   },
+   {
+    "date": "2025-02-17",
+    "type": "other",
+    "quote": "Between 17.02.2025 and 19.02.2025 show cause notice was issued on 27.03.2025 under section 74(1) of the TNGST Act",
+    "para": 2
+   },
+   {
+    "date": "2025-03-27",
+    "type": "scn_issued",
+    "quote": "Between 17.02.2025 and 19.02.2025 show cause notice was issued on 27.03.2025 under section 74(1) of the TNGST Act, pointing out to the aforementioned difference in GSTR-3B, GSTR-1 and form 26AS and directing the petitioner to show cause as to why appropriate penalty and interest be levied.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "hearing_attended",
+    "quote": "The petitioner appeared before the authority and submitted his reply.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "The petitioner appeared before the authority and submitted his reply.",
+    "para": 2
+   },
+   {
+    "date": "2025-12-03",
+    "type": "order_passed",
+    "quote": "This writ petition is filed challenging the impugned order dated 03.12.2025 passed for the assessment year 2019-2020.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "pointing out to the aforementioned difference in GSTR-3B, GSTR-1 and form 26AS and directing the petitioner to show cause as to why appropriate penalty and interest be levied.",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "It is his contention that the case can never come under Section 74 of the Act, as there is no willful suppression or an intention to evade the tax that is alleged.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, in this case, I am unable to hold that it can be a case under Section 74 of the Act.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "In view thereof this writ petition is allowed on the following terms: The impugned order dated03.12.2025 shall stand set aside.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 11565,
+   "tokens_out": 2489,
+   "seconds": 11.47,
+   "cached": false
+  },
+  {
+   "tokens_in": 6891,
+   "tokens_out": 298,
+   "seconds": 8.01,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.order.date:facts.order.date"
+  ]
+ }
+}

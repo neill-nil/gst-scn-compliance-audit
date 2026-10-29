@@ -1,0 +1,162 @@
+{
+ "cnr": "HCMA011053052024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "and uploaded along with the summary of order in DRC 07 under Section 73(3) of the CGST / TNGST Act, 2017 from the files of the first respondent herein, quash the same.",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "Ref.No. ZD330424002927K dated 01.04.2024 for Financial Year 2020- 21 and uploaded along with the summary of order in DRC 07",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-29",
+     "quote": "Thereafter, show cause notice dated 29.12.2023 was issued.",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-01",
+    "quote": "An order in original dated 01.04.2024 is challenged primarily on the ground that the petitioner's replies were not taken into consideration.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-02-27",
+    "type": "pre_scn_intimation",
+    "quote": "Upon receipt of intimation dated 27.02.2023 indicating tax liability of Rs.4,41,804/-, the petitioner replied on 09.03.2023 and claimed exemption under Notification No.12/2017 – Central (Rate), as amended by Notification No.21/2017 – Central (Rate).",
+    "para": 1
+   },
+   {
+    "date": "2023-03-09",
+    "type": "reply_filed",
+    "quote": "Upon receipt of intimation dated 27.02.2023 indicating tax liability of Rs.4,41,804/-, the petitioner replied on 09.03.2023 and claimed exemption under Notification No.12/2017 – Central (Rate), as amended by Notification No.21/2017 – Central (Rate).",
+    "para": 1
+   },
+   {
+    "date": "2023-12-29",
+    "type": "scn_issued",
+    "quote": "Thereafter, show cause notice dated 29.12.2023 was issued.",
+    "para": 1
+   },
+   {
+    "date": "2024-01-29",
+    "type": "reply_filed",
+    "quote": "By reply dated 29.01.2024, the petitioner reiterated that the notification referred to earlier exempted hostel services from GST.",
+    "para": 1
+   },
+   {
+    "date": "2024-04-01",
+    "type": "order_passed",
+    "quote": "An order in original dated 01.04.2024 is challenged primarily on the ground that the petitioner's replies were not taken into consideration.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Upon receipt of intimation dated 27.02.2023 indicating tax liability of Rs.4,41,804/-, the petitioner replied on 09.03.2023 and claimed exemption under Notification No.12/2017 – Central (Rate), as amended by Notification No.21/2017 – Central (Rate).",
+    "para": 1
+   },
+   {
+    "type": "reply_point",
+    "quote": "By reply dated 29.01.2024, the petitioner reiterated that the notification referred to earlier exempted hostel services from GST.",
+    "para": 1
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On perusal of the impugned order, it is clear that the replies were referred to, but no findings were recorded in respect thereof.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Therefore, impugned order dated 01.04.2024 is set aside and the matter is remanded for re-consideration.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4468,
+   "tokens_out": 1016,
+   "seconds": 8.38,
+   "cached": false
+  },
+  {
+   "tokens_in": 2701,
+   "tokens_out": 145,
+   "seconds": 1.31,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

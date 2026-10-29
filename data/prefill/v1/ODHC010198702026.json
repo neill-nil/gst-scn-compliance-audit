@@ -1,0 +1,93 @@
+{
+ "cnr": "ODHC010198702026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "The order dated 11th March, 2026 passed in a proceeding under Section 74 of the Odisha Goods and Services Tax Act, 2017 and Central Goods and Services Tax Act, 2017",
+   "para": 1
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2026-03-11",
+    "quote": "The order dated 11th March, 2026 passed in a proceeding under Section 74 of the Odisha Goods and Services Tax Act, 2017 and Central Goods and Services Tax Act, 2017 as uploaded in DRC- 07 imposing the liability towards the tax, penalty and interest is assailed in the instant writ petition",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "as uploaded in DRC- 07",
+    "para": 1
+   }
+  },
+  "events": [
+   {
+    "date": "2026-03-11",
+    "type": "order_passed",
+    "quote": "The order dated 11th March, 2026 passed in a proceeding under Section 74 of the Odisha Goods and Services Tax Act, 2017 and Central Goods and Services Tax Act, 2017 as uploaded in DRC- 07 imposing the liability towards the tax, penalty and interest is assailed in the instant writ petition",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "the major portion of the facts reflected in the said order is borrowed and/or replicated from the show-cause notice.",
+    "para": 6
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Solely on the ground that the order is a non-speaking order, the same is hereby set aside.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With these observations, the instant writ petition is disposed of.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4681,
+   "tokens_out": 523,
+   "seconds": 4.74,
+   "cached": false
+  },
+  {
+   "tokens_in": 2914,
+   "tokens_out": 161,
+   "seconds": 4.56,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,138 @@
+{
+ "cnr": "HCMA010739002024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20",
+    "2020-21"
+   ],
+   "quote": "W.P.Nos.11458, 11464 & 11468 of 2024",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-02-29",
+    "quote": "dated 29.02.2024, issued by the 2nd Respondent and quash the same.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-01-30",
+    "type": "other",
+    "quote": "a sworn statement of Mr.V.Muthukumaran, Accounts Executive of the petitioner, was recorded on 30.01.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-02-15",
+    "type": "reply_filed",
+    "quote": "By inviting my attention to the reply dated 15.02.2023, learned counsel pointed out that each discrepancy was addressed therein.",
+    "para": 3
+   },
+   {
+    "date": "2023-09-20",
+    "type": "pre_scn_intimation",
+    "quote": "Thereafter, the 1st respondent issued an intimation on 20.09.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-09-27",
+    "type": "reply_filed",
+    "quote": "The petitioner replied on 27.09.2023 and requested for an extension of time.",
+    "para": 2
+   },
+   {
+    "date": "2023-09-27",
+    "type": "extension_requested",
+    "quote": "The petitioner replied on 27.09.2023 and requested for an extension of time.",
+    "para": 2
+   },
+   {
+    "date": "2023-11-10",
+    "type": "scn_issued",
+    "quote": "Without providing such extension, the show cause notice was issued on 10.11.2023 and the impugned assessment order thereafter on 29.02.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-02-29",
+    "type": "order_passed",
+    "quote": "Without providing such extension, the show cause notice was issued on 10.11.2023 and the impugned assessment order thereafter on 29.02.2024.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "With specific reference to discrepancy '11', which pertains to Input Tax Credit (ITC) reversal for non payment for 180 days, learned counsel pointed out that the ageing report in respect of sundry creditors was provided by the petitioner.",
+    "para": 3
+   },
+   {
+    "type": "reply_point",
+    "quote": "Apart from the ITC reversal due to non payment for 180 days, he also pointed out that the turnover pertaining to Andhra Pradesh was also taken into consideration from the financial statement although the petitioner had requested that such turnover be excluded in the reply dated 15.02.2023.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "By thereafter referring to the intimation, show cause notice and the impugned assessment order, learned counsel points out that the reply of the petitioner at the inspection stage was completely disregarded.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons set out above, the impugned assessment order is quashed subject to the condition that the petitioner remits a sum of Rs.20,00,000/- in W.P.No.11468 of 2024 and Rs.25,00,000/- each in W.P.Nos.11458 and 11464 of 2024 as agreed to towards the disputed tax demand within a maximum period of two weeks from the date of receipt of a copy of this order.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12236,
+   "tokens_out": 2099,
+   "seconds": 11.48,
+   "cached": false
+  },
+  {
+   "tokens_in": 3757,
+   "tokens_out": 285,
+   "seconds": 3.43,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

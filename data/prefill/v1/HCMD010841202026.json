@@ -1,0 +1,119 @@
+{
+ "cnr": "HCMD010841202026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "This writ petition challenges the impugned orders dated 22.03.2024 which are assessment orders passed under Section 74 of the TNGST Act, 2017.",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "Tax Period : APR 2018-MAR 2019, F.Y.2018-2019, dated 22.03.2024",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-03-22",
+    "quote": "This writ petition challenges the impugned orders dated 22.03.2024 which are assessment orders passed under Section 74 of the TNGST Act, 2017.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-03-22",
+    "type": "order_passed",
+    "quote": "This writ petition challenges the impugned orders dated 22.03.2024 which are assessment orders passed under Section 74 of the TNGST Act, 2017.",
+    "para": 0
+   },
+   {
+    "date": "2024-06-24",
+    "type": "recovery_or_attachment",
+    "quote": "Now, the petitioner came to know that on 24.06.2024, the respondents have recovered 100% SGST and 54% CGST.",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Difference between GSTR-3B and GSTR 7",
+    "para": 3
+   },
+   {
+    "type": "reply_point",
+    "quote": "There exits no such difference between GSTR-7 and GSTR-3B as alleged by the respondents.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The show cause notice and the impugned assessment order has been uploaded in the GST Portal without the knowledge of the petitioner.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "the respondents have utterly failed to do so, which amounts to gross violation of principles of natural justice.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "The impugned orders dated 22.03.2024 shall stand set aside, and the matter shall stand remanded back to the file of the first respondent;",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9779,
+   "tokens_out": 1061,
+   "seconds": 8.51,
+   "cached": false
+  },
+  {
+   "tokens_in": 2786,
+   "tokens_out": 215,
+   "seconds": 4.77,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.document_contents[0]:scn_ground",
+   "facts.document_contents[1]:reply_point",
+   "findings.defects_argued[0]:service_169"
+  ]
+ }
+}

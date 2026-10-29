@@ -1,0 +1,204 @@
+{
+ "cnr": "DLHC010173062025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2007-08",
+    "2008-09",
+    "2009-10",
+    "2010-11",
+    "2011-12",
+    "2012-13",
+    "2013-14",
+    "2014-15",
+    "2015-16",
+    "2016-17",
+    "2017-18"
+   ],
+   "quote": "confirming the demands of Service Tax, interest and penalty emanating from five Show Cause Notices dated 17.04.2013, 07.05.2014, 20.04.2015, 10.05.2016 and 19.03.2018 issued to the Petitioner for the periods 2007-08 to 2011-12, 2012-13, 2013-14, 2014-15, and 2015-16 to June 2017.",
+   "para": 1
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-06-27",
+    "quote": "and the Order-In-Original dated 27.06.2024 passed by the Additional Commissioner, CGST, Delhi (East), confirming the demands of Service Tax, interest and penalty emanating from five Show Cause Notices dated 17.04.2013, 07.05.2014, 20.04.2015, 10.05.2016 and 19.03.2018 issued to the Petitioner for the periods 2007-08 to 2011-12, 2012-13, 2013-14, 2014-15, and 2015-16 to June 2017.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2013-03-20",
+    "type": "reply_filed",
+    "quote": "On 20.03.2013, the Petitioner filed a Reply to the said SCN.",
+    "para": 7
+   },
+   {
+    "date": "2013-04-17",
+    "type": "scn_issued",
+    "quote": "the Respondent issued an SCN dated 17.04.2013 for the period of 2007-08 to 2011-12, proposing to impose a demand of INR 85,16,334/- along with penalties on the ground that the Petitioner was not paying service tax on the value of study material supplied by it, by considering it as standard textbooks in terms of Circular No. 59/8/2003 dated 20.06.2003.",
+    "para": 6
+   },
+   {
+    "date": "2013-05-20",
+    "type": "reply_filed",
+    "quote": " Reply dated 20.05.2013.",
+    "para": 9
+   },
+   {
+    "date": "2014-05-07",
+    "type": "scn_issued",
+    "quote": "confirming the demands of Service Tax, interest and penalty emanating from five Show Cause Notices dated 17.04.2013, 07.05.2014, 20.04.2015, 10.05.2016 and 19.03.2018 issued to the Petitioner for the periods 2007-08 to 2011-12, 2012-13, 2013-14, 2014-15, and 2015-16 to June 2017.",
+    "para": 1
+   },
+   {
+    "date": "2014-06-12",
+    "type": "reply_filed",
+    "quote": " Reply 12.06.2014.",
+    "para": 9
+   },
+   {
+    "date": "2015-04-20",
+    "type": "scn_issued",
+    "quote": "confirming the demands of Service Tax, interest and penalty emanating from five Show Cause Notices dated 17.04.2013, 07.05.2014, 20.04.2015, 10.05.2016 and 19.03.2018 issued to the Petitioner for the periods 2007-08 to 2011-12, 2012-13, 2013-14, 2014-15, and 2015-16 to June 2017.",
+    "para": 1
+   },
+   {
+    "date": "2015-05-15",
+    "type": "reply_filed",
+    "quote": " Reply 15.05.2015.",
+    "para": 9
+   },
+   {
+    "date": "2016-05-10",
+    "type": "scn_issued",
+    "quote": "confirming the demands of Service Tax, interest and penalty emanating from five Show Cause Notices dated 17.04.2013, 07.05.2014, 20.04.2015, 10.05.2016 and 19.03.2018 issued to the Petitioner for the periods 2007-08 to 2011-12, 2012-13, 2013-14, 2014-15, and 2015-16 to June 2017.",
+    "para": 1
+   },
+   {
+    "date": "2016-12-27",
+    "type": "hearing_attended",
+    "quote": "In respect of the first four SCNs dated 17.04.2013, 07.05.2014, 20.04.2015 and 10.05.2016, a personal hearing was held on 27.12.2016.",
+    "para": 2
+   },
+   {
+    "date": "2016-12-30",
+    "type": "reply_filed",
+    "quote": " Common Written Submission dated 30.12.2016 pursuant to hearing dated 27.12.2016.",
+    "para": 9
+   },
+   {
+    "date": "2018-03-19",
+    "type": "scn_issued",
+    "quote": "confirming the demands of Service Tax, interest and penalty emanating from five Show Cause Notices dated 17.04.2013, 07.05.2014, 20.04.2015, 10.05.2016 and 19.03.2018 issued to the Petitioner for the periods 2007-08 to 2011-12, 2012-13, 2013-14, 2014-15, and 2015-16 to June 2017.",
+    "para": 1
+   },
+   {
+    "date": "2018-04-04",
+    "type": "reply_filed",
+    "quote": " Reply dated 04.04.2018.",
+    "para": 9
+   },
+   {
+    "date": "2024-03-15",
+    "type": "hearing_attended",
+    "quote": " 15.03.2024",
+    "para": 9
+   },
+   {
+    "date": "2024-03-26",
+    "type": "reply_filed",
+    "quote": " Common Additional Submissions dated 26.03.2024.",
+    "para": 9
+   },
+   {
+    "date": "2024-06-27",
+    "type": "order_passed",
+    "quote": "Vide a common OIO dated 27.06.2024, the Additional Commissioner, CGST, Delhi (East), summarily dismissed the contentions of the Petitioner on the issue of delayed adjudication and confirmed the demands proposed in the SCNs.",
+    "para": 10
+   },
+   {
+    "date": "2025-01-31",
+    "type": "appeal_dismissed",
+    "quote": "On 31.01.2025, vide a common Order, the Additional Commissioner, CGST, Delhi (East) confirmed all demands imposed against the Petitioner.",
+    "para": 11
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "proposing to impose a demand of INR 85,16,334/- along with penalties on the ground that the Petitioner was not paying service tax on the value of study material supplied by it, by considering it as standard textbooks in terms of Circular No. 59/8/2003 dated 20.06.2003.",
+    "para": 6
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "inordinate and unexplained delay in adjudication",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "The inaction and the state of inertia which prevailed thus leads us to the inevitable conclusion that the respondents clearly failed to discharge their obligation within a reasonable time.",
+    "quote_source": "court",
+    "para": 16
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "Resultantly, the present petition is allowed and the impugned OIA dated 31.01.2025, OIO dated 27.06.2024 and SCNs dated 17.04.2013, 07.05.2014, 20.04.2015, 10.05.2016 and 19.03.2018, are quashed and set aside.",
+   "para": 24
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9775,
+   "tokens_out": 2509,
+   "seconds": 6.44,
+   "cached": false
+  },
+  {
+   "tokens_in": 8008,
+   "tokens_out": 278,
+   "seconds": 2.33,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.financial_years:facts.financial_years",
+   "facts.order.date:facts.order.date",
+   "facts.events[1]:scn_issued",
+   "facts.events[3]:scn_issued",
+   "facts.events[5]:scn_issued",
+   "facts.events[7]:scn_issued",
+   "facts.events[10]:scn_issued",
+   "facts.document_contents[0]:scn_ground"
+  ]
+ }
+}

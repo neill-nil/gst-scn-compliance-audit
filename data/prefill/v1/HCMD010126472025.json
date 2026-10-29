@@ -1,0 +1,124 @@
+{
+ "cnr": "HCMD010126472025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "Input Tax Credit (ITC) for the financial year 2018-19 to the extent of Rs.1,94,77,496/- under Central Goods and Services Tax (CGST) and State Goods and Services Tax (SGST) instead of claiming it under the head Integrated Goods and Services Tax (IGST).",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-12-09",
+    "quote": "assessment order bearing reference number GSTIN: 33DIBPK9402G1ZJ/2018-2019, dated 09.12.2024 passed by the respondent herein",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-12-02",
+    "type": "scrutiny_notice",
+    "quote": "While so, the respondent has issued Form GST ASMT - 10 on 02.12.2021 and the petitioner has also filed reply to the same.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "and the petitioner has also filed reply to the same.",
+    "para": 2
+   },
+   {
+    "date": "2022-03-18",
+    "type": "other",
+    "quote": "Upon consideration of the petitioner's reply, the respondent dropped the proceedings and issued ASMT - 12 on 18.03.2022.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "Reply was also filed by the petitioner, however, without considering the same, the respondent has mechanically passed the impugned order.",
+    "para": 2
+   },
+   {
+    "date": "2024-12-09",
+    "type": "order_passed",
+    "quote": "assessment order bearing reference number GSTIN: 33DIBPK9402G1ZJ/2018-2019, dated 09.12.2024 passed by the respondent herein",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "The learned counsel appearing for the petitioner would submit that, in the present case, the petitioner has wrongly claimed Input Tax Credit (ITC) for the financial year 2018-19 to the extent of Rs.1,94,77,496/- under Central Goods and Services Tax (CGST) and State Goods and Services Tax (SGST) instead of claiming it under the head Integrated Goods and Services Tax (IGST).",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "The learned Additional Government Advocate appearing for the respondent would submit that the petitioner's reply was to the effect that only due to the clerical error, ITC was claimed under CGST and SGST instead of IGST and that there is no revenue loss to the Government.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Reply was also filed by the petitioner, however, without considering the same, the respondent has mechanically passed the impugned order.",
+    "quote_source": "court",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "Accordingly, the impugned assessment order of the respondent in GSTIN:33DIBPK9402G1ZJ/2018-2019, dated 09.12.2024 is quashed and this Writ Petition stands allowed.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15509,
+   "tokens_out": 5107,
+   "seconds": 14.58,
+   "cached": false
+  },
+  {
+   "tokens_in": 8049,
+   "tokens_out": 440,
+   "seconds": 9.26,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

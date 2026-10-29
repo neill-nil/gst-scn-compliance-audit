@@ -1,0 +1,123 @@
+{
+ "cnr": "HCMD011075442026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2022-23"
+   ],
+   "quote": "the proposal contained in the Show Cause Notice in Form GST DRC-01 dated 04.09.2025 has been confirmed for the tax period 2022- 2023.",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-09-04",
+     "quote": "Show Cause Notice in Form GST DRC-01 dated 04.09.2025",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2026-02-26",
+    "quote": "challenging the impugned order dated 26.02.2026",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-09-04",
+    "type": "scn_issued",
+    "quote": "the proposal contained in the Show Cause Notice in Form GST DRC-01 dated 04.09.2025 has been confirmed for the tax period 2022- 2023.",
+    "para": 1
+   },
+   {
+    "date": "2026-02-26",
+    "type": "order_passed",
+    "quote": "challenging the impugned order dated 26.02.2026, whereby the proposal contained in the Show Cause Notice in Form GST DRC-01 dated 04.09.2025 has been confirmed for the tax period 2022- 2023.",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The Writ Petition stands disposed of with the above observations.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9738,
+   "tokens_out": 1559,
+   "seconds": 10.71,
+   "cached": false
+  },
+  {
+   "tokens_in": 5527,
+   "tokens_out": 195,
+   "seconds": 8.66,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}
