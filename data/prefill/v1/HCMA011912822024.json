@@ -1,0 +1,160 @@
+{
+ "cnr": "HCMA011912822024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "During the relevant period viz., 2018-19, the petitioner filed its return and paid the appropriate taxes.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-11-23",
+     "quote": "followed by a notice in DRC-01 on 23.11.2023 and a personal hearing was offered on 22.12.2023.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "followed by a notice in DRC-01 on 23.11.2023 and a personal hearing was offered on 22.12.2023.",
+     "para": 3
+    },
+    "hearing_date": {
+     "value": "2023-12-22",
+     "quote": "followed by a notice in DRC-01 on 23.11.2023 and a personal hearing was offered on 22.12.2023.",
+     "para": 3
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-25",
+    "quote": "The writ petition is filed challenging the impugned orders dated 25.12.2023 on the premise that the same has been made without taking into account the reply and supporting documents filed by the petitioner and also a non-speaking order inasmuch as it does not assign any reason for rejecting the reply.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-10-06",
+    "type": "pre_scn_intimation",
+    "quote": "It is submitted by the learned counsel for the petitioner that an intimation in DRC-01A was issued on 06.10.2023, followed by a notice in DRC-01 on 23.11.2023 and a personal hearing was offered on 22.12.2023.",
+    "para": 3
+   },
+   {
+    "date": "2023-10-19",
+    "type": "reply_filed",
+    "quote": "The petitioner submitted its objection on 19.10.2023 along with supportive and relevant documentary evidence.",
+    "para": 3
+   },
+   {
+    "date": "2023-11-23",
+    "type": "scn_issued",
+    "quote": "followed by a notice in DRC-01 on 23.11.2023 and a personal hearing was offered on 22.12.2023.",
+    "para": 3
+   },
+   {
+    "date": "2023-12-22",
+    "type": "hearing_scheduled",
+    "quote": "followed by a notice in DRC-01 on 23.11.2023 and a personal hearing was offered on 22.12.2023.",
+    "para": 3
+   },
+   {
+    "date": "2023-12-25",
+    "type": "order_passed",
+    "quote": "However, the impugned order came to be passed on the basis that the petitioner had neither filed any reply / objection nor attended the personal hearing.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The writ petition is filed challenging the impugned orders dated 25.12.2023 on the premise that the same has been made without taking into account the reply and supporting documents filed by the petitioner",
+    "quote_source": "argument",
+    "para": 1
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "and also a non-speaking order inasmuch as it does not assign any reason for rejecting the reply.",
+    "quote_source": "argument",
+    "para": 1
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view thereof, the impugned order dated 25.12.2023 is set aside.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13325,
+   "tokens_out": 5301,
+   "seconds": 15.05,
+   "cached": false
+  },
+  {
+   "tokens_in": 2750,
+   "tokens_out": 284,
+   "seconds": 7.31,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

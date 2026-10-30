@@ -1,0 +1,95 @@
+{
+ "cnr": "WBCHCA0120872025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "in respect of the financial year 2018- 2019.",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-01-21",
+    "quote": "challenging the order dated 21st January, 2024 issued by the respondent no.1",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-01-21",
+    "type": "order_passed",
+    "quote": "challenging the order dated 21st January, 2024 issued by the respondent no.1",
+    "para": 1
+   },
+   {
+    "date": "2024-01-29",
+    "type": "recovery_or_attachment",
+    "quote": "along with the summary of the order thereof issued in DRC-07 dated 29th January, 2024",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "direct recovery under 75(12) without SCN",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In my view, once, the self-assessed tax as per Section 37 is included in the return furnished under Section 39 of the said Act, Section 75(12) of the said Act can no longer be invoked as is clear from the above explanation.",
+    "quote_source": "court",
+    "para": 10
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above observations and directions, the writ petition stands disposed of.",
+   "para": 14
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12397,
+   "tokens_out": 881,
+   "seconds": 12.24,
+   "cached": false
+  },
+  {
+   "tokens_in": 4142,
+   "tokens_out": 215,
+   "seconds": 2.22,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

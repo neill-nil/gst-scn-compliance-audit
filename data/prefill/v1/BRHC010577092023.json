@@ -1,0 +1,84 @@
+{
+ "cnr": "BRHC010577092023",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The petitioner has been served with a notice under Section 73 of the CGST Act, 2017 on the grounds inter alia that he had not paid the tax due.",
+   "para": 108
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19",
+    "2019-20"
+   ],
+   "quote": "dismissing the appeal of the petitioner for the period 2017-18 : 2018-19 and 2019-20 respectively.",
+   "para": 106
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "signature",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Learned counsel has also enclosed a copy of the judgment passed by learned Co-ordinate Bench of this Court in the case of Rakesh Ranjan (supra) as Annexure ‘E’ to the counter affidavit.",
+    "quote_source": "court",
+    "para": 116
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "This writ application has no merit. It is dismissed accordingly.",
+   "para": 151
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 49052,
+   "tokens_out": 330,
+   "seconds": 2.52,
+   "cached": false
+  },
+  {
+   "tokens_in": 94982,
+   "tokens_out": 468,
+   "seconds": 9.13,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

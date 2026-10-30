@@ -1,0 +1,133 @@
+{
+ "cnr": "HCMA010349792022",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "Impugned Assessment Order dated 07.12.2021 passed by the Respondent for the Assessment Year 2017-2018.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2021-11-03",
+     "quote": "Notice dated 03.11.2021 in Form GST DRC 01.",
+     "para": 7
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2021-12-07",
+    "quote": "Impugned Assessment Order dated 07.12.2021 passed by the Respondent for the Assessment Year 2017-2018.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-11-03",
+    "type": "scn_issued",
+    "quote": "Notice dated 03.11.2021 in Form GST DRC 01.",
+    "para": 7
+   },
+   {
+    "date": "2021-12-07",
+    "type": "order_passed",
+    "quote": "Impugned Assessment Order dated 07.12.2021 passed by the Respondent for the Assessment Year 2017-2018.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "adjournment_75_5",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The case of the Petitioner is that the Impugned Order has been passed in gross violation of principles of natural justice as the Petitioner requested for time has not been granted.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view of the above the Impugned Order dated 07.12.2021 stands quashed and shall be treated as addendum to the Notice dated 03.11.2021 in Form GST DRC 01.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9241,
+   "tokens_out": 1062,
+   "seconds": 9.82,
+   "cached": false
+  },
+  {
+   "tokens_in": 2520,
+   "tokens_out": 220,
+   "seconds": 4.79,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

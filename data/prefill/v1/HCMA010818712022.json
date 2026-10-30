@@ -1,0 +1,88 @@
+{
+ "cnr": "HCMA010818712022",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2022-03-23",
+    "quote": "passed in DIN – 20220359TL000000B8AA dated 23.03.2022 and quash the same.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-03-23",
+    "type": "order_passed",
+    "quote": "passed in DIN – 20220359TL000000B8AA dated 23.03.2022 and quash the same.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "The Show Cause Notice was issued to the petitioner on the ground that the petitioner has not paid IGST of Rs.13,13,243/- as recipient of services (RCM) i.e, on reverse charge mechanism for service of transportation of goods by vessel from the place outside India up to the customs station of clearance in India, relating service or import of goods in terms of Section 5(3) of IGST Act, 2017 read with Notification No.10/2017-Integrated Tax (Rate).",
+    "para": 0
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Therefore, in view of the above, I uphold that the tax of Rs.13,13,243/- is liable to be confirmed.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "This Writ Petition stands allowed by way of remand.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 6238,
+   "tokens_out": 538,
+   "seconds": 4.73,
+   "cached": false
+  },
+  {
+   "tokens_in": 4471,
+   "tokens_out": 49,
+   "seconds": 4.43,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

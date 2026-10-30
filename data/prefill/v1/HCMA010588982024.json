@@ -1,0 +1,161 @@
+{
+ "cnr": "HCMA010588982024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "passed under Section 73 of the CGST Act, 2017 and TNGST Act, 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "assessment period 2019-20",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2022-12-26",
+     "quote": "The petitioner received a show cause notice dated 26.12.2022",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-06-09",
+    "quote": "An order dated 09.06.2023 is assailed",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-12-26",
+    "type": "scn_issued",
+    "quote": "The petitioner received a show cause notice dated 26.12.2022",
+    "para": 2
+   },
+   {
+    "date": "2023-03-17",
+    "type": "reply_filed",
+    "quote": "in response thereto, by letter dated 17.03.2023, the petitioner asserted that no RCM credit was claimed for the month of January 2020.",
+    "para": 2
+   },
+   {
+    "date": "2023-06-09",
+    "type": "order_passed",
+    "quote": "the impugned order of the respondent in GSTN: 33AGWPD2341K1ZC / 2019-2020 dated 09.06.2023 and the summary of the order dated 09.06.2023 in Form GST DRC-07",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "by letter dated 17.03.2023, the petitioner asserted that no RCM credit was claimed for the month of January 2020.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "In the impugned order, the petitioner's claim was rejected on the ground that the petitioner purchased goods and did not avail of services.",
+    "para": 5
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "In spite of submitting a reply to the above effect, he states that the tax demand was confirmed.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "In spite of submitting a reply to the above effect, he states that the tax demand was confirmed.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Therefore, the impugned order dated 09.06.2023 is quashed subject to the condition that the petitioner remits 10% of the disputed tax demand within two weeks from the date of receipt of a copy of this order.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10280,
+   "tokens_out": 1529,
+   "seconds": 10.46,
+   "cached": false
+  },
+  {
+   "tokens_in": 2918,
+   "tokens_out": 290,
+   "seconds": 4.31,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.events[2]:order_passed"
+  ]
+ }
+}

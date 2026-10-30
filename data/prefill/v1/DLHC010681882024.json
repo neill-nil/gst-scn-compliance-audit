@@ -1,0 +1,150 @@
+{
+ "cnr": "DLHC010681882024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "Invocation of Section 74 of the CGST Act, 2017: The taxpayer had filed refund application Vide ARN No. AA0703180058923X dated 15.04.2019 on the ground of \"Exports of Goods/Services without payment of IGST” which was rejected by the then Asst. Commissioner, CGST Division Nehru Place, New Delhi.",
+   "para": 6
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19"
+   ],
+   "quote": "impugned Demand-cum-Show Cause Notice No. 13/2023-24 dated August 03, 2024, issued by the Ld. Assistant Commissioner, CGST, Karol Bagh Division, New Delhi, i.e. Respondent No. 2, for the period October 2017 to March 2018;",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-08-03",
+     "quote": "However, by way of the impugned Show Cause Notice2 dated 03 August 2024, and which takes note of the earlier proceedings that SCN had culminated in the Order-in-Appeal dated 09 March 2021 as well as the claim for refund flowing therefrom coming to be affirmed by this Court, the respondents have once again initiated proceedings for the same tax period of October 2017 to March 2018.",
+     "para": 5
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "earlier_writ",
+    "quote": "The applicant filed a writ petition before the Hon’ble High Court of Delhi praying to issue direction to department to grant refund amount alongwith the applicable interest.",
+    "para": 6
+   },
+   {
+    "date": "2024-08-03",
+    "type": "scn_issued",
+    "quote": "However, by way of the impugned Show Cause Notice2 dated 03 August 2024, and which takes note of the earlier proceedings that SCN had culminated in the Order-in-Appeal dated 09 March 2021 as well as the claim for refund flowing therefrom coming to be affirmed by this Court, the respondents have once again initiated proceedings for the same tax period of October 2017 to March 2018.",
+    "para": 5
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "As is evident from the discussion above in para 4, the supply provided by applicant is not export of services, and therefore, the refund is not eligible since place of supply is India.",
+    "para": 6
+   },
+   {
+    "type": "fraud_allegation",
+    "quote": "In the instant case, it appears that the taxpayer has misstated facts and suppressed facts from the department to claim refund of accumulated ITC by treating the supplies made as export.",
+    "para": 6
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "We are thus of the firm view that absent the same, the jurisdiction assumed by the respondent under Section 74 is clearly erroneous and untenable.",
+    "quote_source": "court",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "The writ petition is, consequently, allowed.",
+   "para": 14
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 23407,
+   "tokens_out": 5255,
+   "seconds": 16.87,
+   "cached": false
+  },
+  {
+   "tokens_in": 7791,
+   "tokens_out": 166,
+   "seconds": 1.59,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.financial_years:facts.financial_years",
+   "facts.notices[0].date:facts.notices[0].date",
+   "facts.events[0]:earlier_writ",
+   "facts.events[1]:scn_issued"
+  ]
+ }
+}

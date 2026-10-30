@@ -1,0 +1,172 @@
+{
+ "cnr": "DLHC010742252025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "The impugned order has been passed pursuant to the Show Cause Notice dated 29th May, 2024 (hereinafter “the SCN”) raising a demand of Rs. 45,05,674/- against the Petitioner.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-29",
+     "quote": "The impugned order has been passed pursuant to the Show Cause Notice dated 29th May, 2024 (hereinafter “the SCN”) raising a demand of Rs. 45,05,674/- against the Petitioner.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "Further, the Petitioner also did not avail the opportunity of personal hearing provided on 1st July, 2024.",
+     "para": 8
+    },
+    "hearing_date": {
+     "value": "2024-07-01",
+     "quote": "Further, the Petitioner also did not avail the opportunity of personal hearing provided on 1st July, 2024.",
+     "para": 8
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "the submission of the Petitioner is that the SCN dated 29th May, 2024 was uploaded on the ‘Additional Notices Tab’ on the GST portal.",
+     "para": 8
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-03",
+    "quote": "The Petitioner has filed the present petition, inter alia, challenging the impugned order dated 3rd August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 10, Zone-4, Delhi in respect of Financial Year 2019-2020.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-29",
+    "type": "scn_issued",
+    "quote": "The impugned order has been passed pursuant to the Show Cause Notice dated 29th May, 2024 (hereinafter “the SCN”) raising a demand of Rs. 45,05,674/- against the Petitioner.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "Hence, the Petitioner was not aware of the same and no reply was filed to the SCN.",
+    "para": 8
+   },
+   {
+    "date": "2024-07-01",
+    "type": "hearing_scheduled",
+    "quote": "Further, the Petitioner also did not avail the opportunity of personal hearing provided on 1st July, 2024.",
+    "para": 8
+   },
+   {
+    "date": "2024-07-01",
+    "type": "hearing_missed",
+    "quote": "Further, the Petitioner also did not avail the opportunity of personal hearing provided on 1st July, 2024.",
+    "para": 8
+   },
+   {
+    "date": "2024-07-22",
+    "type": "hearing_scheduled",
+    "quote": "Thereafter, reminder notices are also stated to have been issued to the Petitioner on 8th July, 2024 and 23rd July, 2024, whereby a further date for personal hearing was fixed on 22nd July, 2024.",
+    "para": 8
+   },
+   {
+    "date": "2024-07-22",
+    "type": "hearing_missed",
+    "quote": "However, despite the reminder notices and another opportunity of personal hearing the Petitioner had not filed a reply or appeared for personal hearing.",
+    "para": 8
+   },
+   {
+    "date": "2024-08-03",
+    "type": "order_passed",
+    "quote": "The Petitioner has filed the present petition, inter alia, challenging the impugned order dated 3rd August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 10, Zone-4, Delhi in respect of Financial Year 2019-2020.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "The ground raised by the Petitioner for not being aware of the SCN i.e., the SCN having been uploaded on the ‘Additional Notices Tab’, is not tenable in view of the fact that after 16th January 2024, changes have been made to the GST portal and the ‘Additional Notices Tab’ has been made visible.",
+    "quote_source": "court",
+    "para": 9
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "As observed by this Court in the order dated 22nd April, 2025 as well, since the challenge to the above mentioned notifications is presently under consideration before the Supreme Court in M/s HCC-SEW-MEIL-AAG JV (supra) the challenge made by the Petitioner to the impugned notifications in the present proceedings shall also be subject to the outcome of the decision of the Supreme Court.",
+    "quote_source": "argument",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside and the matter is remanded to the Adjudicating Authority.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15281,
+   "tokens_out": 2709,
+   "seconds": 12.05,
+   "cached": false
+  },
+  {
+   "tokens_in": 5127,
+   "tokens_out": 399,
+   "seconds": 2.84,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

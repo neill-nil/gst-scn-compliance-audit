@@ -1,0 +1,163 @@
+{
+ "cnr": "GAHC010160832025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "Notably, all the SCN summaries were issued under Section 73.",
+   "para": 9
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "The petitioner was issued a Summary of Show Cause dated 28.09.2023 in GST DRC-01 for the tax period from July 2017- March 2018 along with an attachment as regards the determination of tax.",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-28",
+     "quote": "The petitioner was issued a Summary of Show Cause dated 28.09.2023 in GST DRC-01 for the tax period from July 2017- March 2018 along with an attachment as regards the determination of tax.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": "By referring to the Summary of the Show Cause Notice issued in GST DRC-01, he has submitted that there is no mention whatsoever about the date of hearing and the Column had been left blank.",
+     "para": 6
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "It is the case of the petitioner that as there was no proper Show Cause Notice attached to the Summary of the Show Cause Notice dated 28.09.2023 in the portal, the petitioner did not submit any reply.",
+     "para": 3
+    },
+    "signed": {
+     "value": false,
+     "quote": "It is contended that the attachment as well as the Summary of the Order uploaded in GST DRC-01 and GST DRC-07 were not authenticated by any signature of the Proper Officer.",
+     "para": 3
+    },
+    "summary_only": {
+     "value": true,
+     "quote": "The learned counsel, however, fairly submitted that there is no separate Show Cause Notice apart from the determination of tax enclosed to the Summary of the Show Cause Notice.",
+     "para": 7
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-28",
+    "quote": "Subsequent thereto, an order was passed on 28.12.2023 in GST DRC- 07 and the reason assigned is that the assessee failed to make payment within 30 days of issue of notice.",
+    "para": 3
+   },
+   "signed": {
+    "value": false,
+    "quote": "It is contended that the attachment as well as the Summary of the Order uploaded in GST DRC-01 and GST DRC-07 were not authenticated by any signature of the Proper Officer.",
+    "para": 3
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "Subsequent thereto, an order was passed on 28.12.2023 in GST DRC- 07 and the reason assigned is that the assessee failed to make payment within 30 days of issue of notice.",
+    "para": 3
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-28",
+    "type": "scn_issued",
+    "quote": "The petitioner was issued a Summary of Show Cause dated 28.09.2023 in GST DRC-01 for the tax period from July 2017- March 2018 along with an attachment as regards the determination of tax.",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "It is the case of the petitioner that as there was no proper Show Cause Notice attached to the Summary of the Show Cause Notice dated 28.09.2023 in the portal, the petitioner did not submit any reply.",
+    "para": 3
+   },
+   {
+    "date": "2023-12-28",
+    "type": "order_passed",
+    "quote": "Subsequent thereto, an order was passed on 28.12.2023 in GST DRC- 07 and the reason assigned is that the assessee failed to make payment within 30 days of issue of notice.",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "Subsequent thereto, an order was passed on 28.12.2023 in GST DRC- 07 and the reason assigned is that the assessee failed to make payment within 30 days of issue of notice.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "summary_only",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Thus, the impugned orders, having been passed without a proper SCN, are in violation of Section 73 and Rule 142(1)(a).",
+    "quote_source": "court",
+    "para": 14
+   },
+   {
+    "type": "signature",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, unless these documents are duly authenticated by the Proper Officer, they fail to meet the statutory requirements and are rendered invalid and unenforceable.",
+    "quote_source": "court",
+    "para": 19
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Accordingly, the Court held that non-compliance with Section 75(4) in the present case violates both statutory requirements and principles of natural justice, thereby vitiating the impugned order.",
+    "quote_source": "court",
+    "para": 22
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "Writ petition accordingly stands allowed in the manner indicated above.",
+   "para": 29
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 22534,
+   "tokens_out": 6690,
+   "seconds": 16.82,
+   "cached": false
+  },
+  {
+   "tokens_in": 13946,
+   "tokens_out": 682,
+   "seconds": 8.74,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

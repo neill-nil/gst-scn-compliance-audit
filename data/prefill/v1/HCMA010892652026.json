@@ -1,0 +1,79 @@
+{
+ "cnr": "HCMA010892652026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "Order in Reference No ZD3312242499573 passed under Section 74 of the TNGST Act, 2017 dated 27.12.2024 for the FY2021-2022",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "Order in Reference No ZD3312242499573 passed under Section 74 of the TNGST Act, 2017 dated 27.12.2024 for the FY2021-2022",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-12-27",
+    "quote": "Order in Reference No ZD3312242499573 passed under Section 74 of the TNGST Act, 2017 dated 27.12.2024 for the FY2021-2022",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-12-27",
+    "type": "order_passed",
+    "quote": "Order in Reference No ZD3312242499573 passed under Section 74 of the TNGST Act, 2017 dated 27.12.2024 for the FY2021-2022",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Subject to the remittance of 50% of the disputed tax demand, as agreed to, within thirty days from the date of receipt of a copy of this order, the impugned order is set aside and the matter is remanded for re- consideration.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12699,
+   "tokens_out": 4701,
+   "seconds": 14.32,
+   "cached": false
+  },
+  {
+   "tokens_in": 2437,
+   "tokens_out": 109,
+   "seconds": 3.3,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

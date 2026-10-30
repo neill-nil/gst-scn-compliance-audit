@@ -1,0 +1,198 @@
+{
+ "cnr": "HCBM010200062025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22"
+   ],
+   "quote": "On such backdrop, on 2 August 2024, a separate show cause notice in Form GST DRC-01 for the Financial Year 2017-2018 to Financial Year 2021-2022 was issued to the company",
+   "para": 9
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-08-02",
+     "quote": "On such backdrop, on 2 August 2024, a separate show cause notice in Form GST DRC-01 for the Financial Year 2017-2018 to Financial Year 2021-2022 was issued to the company",
+     "para": 9
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-01",
+    "quote": "Consequent thereto on 1 February 2025 respondent No.1 has passed an impugned Order in Original imposing penalties of Rs.133,60,60,889/- each on the petitioners.",
+    "para": 10
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-06-11",
+    "type": "pre_scn_intimation",
+    "quote": "On 11 June 2024, an intimation of tax ascertained as being payable under Section 74(5) of the CGST Act, was issued to the company in Form GST DRC- 01A.",
+    "para": 7
+   },
+   {
+    "date": "2024-06-19",
+    "type": "reply_filed",
+    "quote": "The company filed its reply to the intimation issued in Form GST DRC- 01A on 19 June 2024 thereby not accepting the alleged tax and penalty liability proposed to be recovered from the Company.",
+    "para": 7
+   },
+   {
+    "date": "2024-08-02",
+    "type": "scn_issued",
+    "quote": "On such backdrop, on 2 August 2024, a separate show cause notice in Form GST DRC-01 for the Financial Year 2017-2018 to Financial Year 2021-2022 was issued to the company, in which it was inter alia alleged that the company had availed and passed on ineligible Input Tax Credit (ITC) of Rs.70.25 crores and Rs.63.35 crores, by fake invoices without actual supply, violating Section 16(2)(b) of the CGST Act and the proposed penalties under Section 122.",
+    "para": 9
+   },
+   {
+    "date": "2024-09-24",
+    "type": "reply_filed",
+    "quote": "The show cause notices were contested by the company by its reply dated 24 September 2024.",
+    "para": 9
+   },
+   {
+    "date": "2024-09-26",
+    "type": "reply_filed",
+    "quote": "The petitioners also filed their replies to the show cause notices on 26 September 2024 contending that no penalty under Section 122(1A) was imposable in view of the decision of this Court in Shantanu Sanjay Hundekari vs. Union of India 1 against which a Special Leave Petition was dismissed by the Supreme Court in Union of India vs. Shantanu Sanjay Hundekari2.",
+    "para": 9
+   },
+   {
+    "date": "2024-12-02",
+    "type": "hearing_attended",
+    "quote": "On 2 December 2024, a personal hearing was granted on the show cause notices issued to the company, as also issued to the petitioners.",
+    "para": 10
+   },
+   {
+    "date": "2025-02-01",
+    "type": "order_passed",
+    "quote": "Consequent thereto on 1 February 2025 respondent No.1 has passed an impugned Order in Original imposing penalties of Rs.133,60,60,889/- each on the petitioners.",
+    "para": 10
+   },
+   {
+    "date": "2025-02-05",
+    "type": "order_passed",
+    "quote": "Respondent No. 2 issued an electronic summary of the impugned order in Form DRC-07 dated 5 February 2025.",
+    "para": 11
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "On such backdrop, on 2 August 2024, a separate show cause notice in Form GST DRC-01 for the Financial Year 2017-2018 to Financial Year 2021-2022 was issued to the company, in which it was inter alia alleged that the company had availed and passed on ineligible Input Tax Credit (ITC) of Rs.70.25 crores and Rs.63.35 crores, by fake invoices without actual supply, violating Section 16(2)(b) of the CGST Act and the proposed penalties under Section 122.",
+    "para": 9
+   },
+   {
+    "type": "reply_point",
+    "quote": "The petitioners also filed their replies to the show cause notices on 26 September 2024 contending that no penalty under Section 122(1A) was imposable in view of the decision of this Court in Shantanu Sanjay Hundekari vs. Union of India 1 against which a Special Leave Petition was dismissed by the Supreme Court in Union of India vs. Shantanu Sanjay Hundekari2.",
+    "para": 9
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "demand_beyond_scn",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "The Show Cause Notices cover the period from July 2017 to March 2022, whereas the impugned order seeks to penalise the Petitioners for an extended period up to July 2023.",
+    "quote_source": "court",
+    "para": 15
+   },
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "There could not have been any retrospective application of Section 122(1A) of the CGST Act in issuing the impugned show cause notice for the period July 2017 to 1 January 2021, and for such reason also the impugned order-in-original insofar as such period is concerned, cannot be sustained.",
+    "quote_source": "court",
+    "para": 30
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "It is accordingly allowed in terms of prayer clause (a) (supra).",
+   "para": 32
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15781,
+   "tokens_out": 1759,
+   "seconds": 6.66,
+   "cached": false
+  },
+  {
+   "tokens_in": 14014,
+   "tokens_out": 330,
+   "seconds": 2.67,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.financial_years:facts.financial_years",
+   "facts.notices[0].date:facts.notices[0].date",
+   "facts.events[2]:scn_issued",
+   "facts.document_contents[0]:scn_ground"
+  ]
+ }
+}

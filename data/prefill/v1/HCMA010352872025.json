@@ -1,0 +1,104 @@
+{
+ "cnr": "HCMA010352872025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "passed in order under Section 73 in GSTIN 33AAUFA0984D1ZG and Form GST DRC07 having Reference No. ZD3303240981688 and dated 16.03.2024",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "relating to Financial Year 2018-19",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-03-16",
+    "quote": "and dated 16.03.2024 for the tax period April 2018 - March 2019 relating to Financial Year 2018-19",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-03-16",
+    "type": "order_passed",
+    "quote": "passed in order under Section 73 in GSTIN 33AAUFA0984D1ZG and Form GST DRC07 having Reference No. ZD3303240981688 and dated 16.03.2024",
+    "para": 0
+   },
+   {
+    "date": null,
+    "type": "recovery_or_attachment",
+    "quote": "taking into consideration of the fact that entire disputed disputed tax has already been recovered from the petitioner by way of initiation of recovery proceedings pursuant to the impugned order",
+    "para": 6
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "As rightly pointed out by the learned counsel for the petitioner the service effected by the respondent through on-line portal cannot be deemed to be sufficient service.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In the light of the above, this Court has no hesitation to hold that the impugned order is an ex parte order as the same suffers from violation of principles of natural justice and is liable to be aside on account of the fact that the petitioner has not been heard before passing such order.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, the Writ Petition is allowed on the aforesaid terms.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 11728,
+   "tokens_out": 1107,
+   "seconds": 10.41,
+   "cached": false
+  },
+  {
+   "tokens_in": 7827,
+   "tokens_out": 474,
+   "seconds": 9.18,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

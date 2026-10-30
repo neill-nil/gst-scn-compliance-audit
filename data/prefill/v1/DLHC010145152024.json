@@ -1,0 +1,169 @@
+{
+ "cnr": "DLHC010145152024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The order has been passed under Section 73 of the Central Goods and Services Tax Act, 2017 (hereinafter referred to as the Act).",
+   "para": 1
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-22",
+     "quote": "Petitioner impugns order dated 30.12.2023, whereby the impugned Show Cause Notice dated 22.09.2023, proposing a demand of Rs. 1,96,12,996.10 against the Petitioner has been disposed of and a demand including penalty has been raised against the Petitioner.",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-30",
+    "quote": "Petitioner impugns order dated 30.12.2023, whereby the impugned Show Cause Notice dated 22.09.2023, proposing a demand of Rs. 1,96,12,996.10 against the Petitioner has been disposed of and a demand including penalty has been raised against the Petitioner.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-22",
+    "type": "scn_issued",
+    "quote": "Petitioner impugns order dated 30.12.2023, whereby the impugned Show Cause Notice dated 22.09.2023, proposing a demand of Rs. 1,96,12,996.10 against the Petitioner has been disposed of and a demand including penalty has been raised against the Petitioner.",
+    "para": 1
+   },
+   {
+    "date": "2023-11-28",
+    "type": "other",
+    "quote": "Learned counsel for Petitioner submits that Petitioner was served with a Reminder Notice dated 28.11.2023 asking him to furnish a reply to the Show Cause Notice dated 22.09.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-11-29",
+    "type": "reply_filed",
+    "quote": "He further submits that the Petitioner filed a detailed reply dated 29.11.2023 and an additional reply dated 07.12.2023 to the Show Cause Notice.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-07",
+    "type": "reply_filed",
+    "quote": "He further submits that the Petitioner filed a detailed reply dated 29.11.2023 and an additional reply dated 07.12.2023 to the Show Cause Notice.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-30",
+    "type": "order_passed",
+    "quote": "Petitioner impugns order dated 30.12.2023, whereby the impugned Show Cause Notice dated 22.09.2023, proposing a demand of Rs. 1,96,12,996.10 against the Petitioner has been disposed of and a demand including penalty has been raised against the Petitioner.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Perusal of the Show Cause Notice shows that the Department has given separate headings i.e., excess claim Input Tax Credit [“ITC”]; scrutiny of ITC availed; and ITC claimed from cancelled dealers, return defaulters and tax nonpayers.",
+    "para": 3
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "And whereas, the taxpayer has filed their objections/reply online on portal through DRC-06 which has been examined thoroughly and was found to be devoid of merits as no substantive proof in support of movement of goods and for actual supply/receipt of goods has been attached.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Proper Officer had to at least consider the reply on merits and then form an opinion whether the reply was devoid of merits.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "He merely held that the reply is devoid of merits which ex- facie shows that Proper Officer has not applied his mind to the reply submitted by the petitioner.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order dated 29.12.2023 is set aside.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13791,
+   "tokens_out": 5504,
+   "seconds": 13.7,
+   "cached": false
+  },
+  {
+   "tokens_in": 2983,
+   "tokens_out": 270,
+   "seconds": 2.87,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,163 @@
+{
+ "cnr": "HCMA011222072024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "Assessment year 2017-18 in GSTIN:33AAQFA9608L1Z0/2017-18",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2022-12-31",
+     "quote": "show cause notice dated 31.12.2022",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "all communications were uploaded on the common portal and not communicated to the petitioner through any other mode.",
+     "para": 1
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-04-18",
+    "quote": "An order in original dated 18.04.2023 is challenged",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "all communications were uploaded on the common portal and not communicated to the petitioner through any other mode.",
+    "para": 1
+   }
+  },
+  "events": [
+   {
+    "date": "2022-11-25",
+    "type": "pre_scn_intimation",
+    "quote": "intimation dated 25.11.2022",
+    "para": 3
+   },
+   {
+    "date": "2022-12-08",
+    "type": "other",
+    "quote": "that the same was received by the petitioner on 08.12.2022.",
+    "para": 3
+   },
+   {
+    "date": "2022-12-31",
+    "type": "scn_issued",
+    "quote": "show cause notice dated 31.12.2022",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "the tax payer failed to reply to the show cause notice",
+    "para": 4
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "or participate in the personal hearing.",
+    "para": 4
+   },
+   {
+    "date": "2023-04-18",
+    "type": "order_passed",
+    "quote": "the consequential DRC-07 order bearing Ref. No.ZD330423083013W dated 18.04.2023",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "On examining the impugned order, it is clear that the tax proposal was confirmed because the tax payer failed to reply to the show cause notice or participate in the personal hearing.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The petitioner asserts that he was unaware of proceedings culminating in the impugned order because all communications were uploaded on the common portal and not communicated to the petitioner through any other mode.",
+    "quote_source": "argument",
+    "para": 1
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons aforesaid, the impugned order dated 18.04.2023 is set aside on condition that the petitioner remits 15% of the disputed tax demand as agreed to within a period of two weeks from the date of receipt of a copy of this order.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10240,
+   "tokens_out": 1612,
+   "seconds": 10.65,
+   "cached": false
+  },
+  {
+   "tokens_in": 6114,
+   "tokens_out": 462,
+   "seconds": 8.84,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

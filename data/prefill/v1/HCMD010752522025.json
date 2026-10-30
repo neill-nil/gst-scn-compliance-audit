@@ -1,0 +1,113 @@
+{
+ "cnr": "HCMD010752522025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "The case on hand pertains to the assessment year 2019-20.",
+   "para": 1
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-08-30",
+    "quote": "Finally, order dated 30.08.2024 was passed by the first respondent under Sections 16(1), 16(2), 39, 9(3) and 50 of TNGST Act, 2017 and the tax, interest and penalty were determined to the tune of Rs.5,96,90,012/-.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "scn_issued",
+    "quote": "Show cause notice was issued.",
+    "para": 1
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "Personal hearing was granted but not availed.",
+    "para": 1
+   },
+   {
+    "date": "2024-08-30",
+    "type": "order_passed",
+    "quote": "Finally, order dated 30.08.2024 was passed by the first respondent under Sections 16(1), 16(2), 39, 9(3) and 50 of TNGST Act, 2017 and the tax, interest and penalty were determined to the tune of Rs.5,96,90,012/-.",
+    "para": 1
+   },
+   {
+    "date": "2024-11-29",
+    "type": "other",
+    "quote": "The appellant filed application dated 29.11.2024 under Section 161 of the TNGST Act, 2017 to rectify the order issued under Form GST DRC-07 dated 30.08.2024.",
+    "para": 1
+   },
+   {
+    "date": "2025-01-21",
+    "type": "rectification_rejected",
+    "quote": "The application was rejected vide order dated 21.01.2025.",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "denial of personal hearing in rectification proceeding under section 161",
+    "finding": "defect_rejected",
+    "contested": true,
+    "quote": "With utmost respect to the learned Judges, we are unable to agree with their interpretation of the third proviso.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "This writ appeal is dismissed.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13204,
+   "tokens_out": 1495,
+   "seconds": 10.93,
+   "cached": false
+  },
+  {
+   "tokens_in": 4392,
+   "tokens_out": 168,
+   "seconds": 3.32,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

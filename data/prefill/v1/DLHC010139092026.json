@@ -1,0 +1,204 @@
+{
+ "cnr": "DLHC010139092026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "culminating in the issuance of an SCN dated 26.05.2025 under Section 74 of the CGST Act.",
+   "para": 8
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24"
+   ],
+   "quote": "The said SCN covered the period from FY 2018-19 to FY 2023-24 and alleged fraudulent availment of excess ITC.",
+   "para": 8
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-05-26",
+     "quote": "culminating in the issuance of an SCN dated 26.05.2025 under Section 74 of the CGST Act.",
+     "para": 8
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-12-03",
+    "quote": "An Order-in-Original dated 03.12.2025 was subsequently passed by the learned Additional Commissioner of CGST, Delhi South Commissionerate, creating a demand of Rs.4,80,26,753/- (Rupees Four Crore Eighty Lakh Twenty-Seven Thousand Six Hundred Fifty-Three only), along with penalty.",
+    "para": 10
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-11-07",
+    "type": "other",
+    "quote": "On 07.11.2023, the Anti-Evasion Branch of the Central Goods and Services Tax Department issued summons to the Petitioner seeking an explanation with regard to the discrepancy/mismatch between the Input Tax Credit [„ITC‟] reflected in Form GSTR-3B and the corresponding figures reflected in Form GSTR-9.",
+    "para": 5
+   },
+   {
+    "date": "2023-11-22",
+    "type": "reply_filed",
+    "quote": "The Petitioner responded to the aforesaid summons by submitting its reply dated 22.11.2023.",
+    "para": 6
+   },
+   {
+    "date": "2025-05-26",
+    "type": "scn_issued",
+    "quote": "In the meantime, the investigation being undertaken by the Central GST authorities continued, culminating in the issuance of an SCN dated 26.05.2025 under Section 74 of the CGST Act.",
+    "para": 8
+   },
+   {
+    "date": "2025-07-25",
+    "type": "reply_filed",
+    "quote": "In response to the aforesaid SCN, the Petitioner submitted its reply on 25.07.2025.",
+    "para": 9
+   },
+   {
+    "date": "2025-09-16",
+    "type": "hearing_attended",
+    "quote": "Thereafter, the Petitioner was afforded opportunities of personal hearing on 16.09.2025 and 19.11.2025.",
+    "para": 9
+   },
+   {
+    "date": "2025-11-19",
+    "type": "hearing_attended",
+    "quote": "Thereafter, the Petitioner was afforded opportunities of personal hearing on 16.09.2025 and 19.11.2025.",
+    "para": 9
+   },
+   {
+    "date": "2025-12-03",
+    "type": "order_passed",
+    "quote": "An Order-in-Original dated 03.12.2025 was subsequently passed by the learned Additional Commissioner of CGST, Delhi South Commissionerate, creating a demand of Rs.4,80,26,753/- (Rupees Four Crore Eighty Lakh Twenty-Seven Thousand Six Hundred Fifty-Three only), along with penalty.",
+    "para": 10
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "The said SCN covered the period from FY 2018-19 to FY 2023-24 and alleged fraudulent availment of excess ITC.",
+    "para": 8
+   },
+   {
+    "type": "fraud_allegation",
+    "quote": "The said SCN covered the period from FY 2018-19 to FY 2023-24 and alleged fraudulent availment of excess ITC.",
+    "para": 8
+   },
+   {
+    "type": "reply_point",
+    "quote": "It is significant to note that, in the said reply, the Petitioner did not raise any objection to the continuation of the proceedings on the ground of Section 6(2)(b) of the CGST Act.",
+    "para": 9
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "Violation of section 6(2)(b) CGST Act (parallel proceedings by State and Central authorities)",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Learned Counsel appearing on behalf of the Petitioner, however, submits that the entire proceedings culminating in the Impugned Order were conducted in violation of Section 6(2)(b) of the Central Goods and Services Tax Act, 2017 [„CGST Act‟] and have resulted in multiplicity of proceedings in respect of Financial Year [„FY‟] 2020-21.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is contended that the said objection was not considered while passing the Impugned Order.",
+    "quote_source": "argument",
+    "para": 15
+   },
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Likewise, this Court expresses no opinion on the Petitioner‟s challenge to the invocation of the extended period of limitation under Section 74 of the CGST Act, the correctness of the ITC demand, the finding of fraud, wilful misstatement or suppression, or the consequential levy of interest and penalties.",
+    "quote_source": "court",
+    "para": 36
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "With the aforesaid observations, the present Writ Petition stands disposed of, along with the pending applications.",
+   "para": 44
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 20879,
+   "tokens_out": 5717,
+   "seconds": 16.12,
+   "cached": false
+  },
+  {
+   "tokens_in": 6527,
+   "tokens_out": 465,
+   "seconds": 2.61,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[2]:limitation"
+  ]
+ }
+}

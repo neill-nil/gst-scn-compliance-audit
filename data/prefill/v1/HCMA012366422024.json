@@ -1,0 +1,136 @@
+{
+ "cnr": "HCMA012366422024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2020-21",
+    "2021-22"
+   ],
+   "quote": "for the assessment year 2020-21",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-04-15",
+     "quote": "show cause notice in Form DRC-01 dated 15.04.2024",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-10-23",
+    "quote": "impugned orders dated 23.10.2024 passed by the respondent",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-04-15",
+    "type": "scn_issued",
+    "quote": "show cause notice in Form DRC-01 dated 15.04.2024 in W.P.No.7326 of 2024",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "earlier_writ",
+    "quote": "the petitioner had originally challenged the show cause notice in Form DRC-01 dated 15.04.2024 in W.P.No.7326 of 2024",
+    "para": 2
+   },
+   {
+    "date": "2024-06-10",
+    "type": "earlier_writ",
+    "quote": "in the order dated 10.06.2024 passed in W.P.No.7326 of 2024, it has been recorded that the show cause notice was withdrawn",
+    "para": 2
+   },
+   {
+    "date": "2024-10-23",
+    "type": "order_passed",
+    "quote": "the impugned order came to be passed on the basis of the said show cause notice in Form DRC-01 dated 15.04.2024",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, these writ petitions stands disposed of.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9540,
+   "tokens_out": 1421,
+   "seconds": 7.89,
+   "cached": false
+  },
+  {
+   "tokens_in": 5691,
+   "tokens_out": 388,
+   "seconds": 8.64,
+   "cached": true
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

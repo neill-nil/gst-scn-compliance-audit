@@ -1,0 +1,143 @@
+{
+ "cnr": "WBCHCJ0050492025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "A show-cause notice under Section 73(1) of the CGST Act, 2017 was issued calling upon the petitioner to show-cause as to why the demand raised in the show-cause should not be paid by him.",
+   "para": 3
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-08",
+     "quote": "the petitioner shall file the reply to the show-cause notice dated September 8, 2023 within a period of three (3) weeks from the date of receipt of a server copy of this order",
+     "para": 16
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "It is not in dispute that the show-cause notice was issued under the “Additional Notices and Orders” Tab and not under the normal Tab.",
+     "para": 11
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-14",
+    "quote": "No reply to the show-cause notice was filed and the Proper Officer passed an order dated December 14, 2023 under Section 73 (9) of the CGST Act, 2017 determining the tax, interest and penalty.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-08",
+    "type": "scn_issued",
+    "quote": "the petitioner shall file the reply to the show-cause notice dated September 8, 2023 within a period of three (3) weeks from the date of receipt of a server copy of this order",
+    "para": 16
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "No reply to the show-cause notice was filed and the Proper Officer passed an order dated December 14, 2023 under Section 73 (9) of the CGST Act, 2017 determining the tax, interest and penalty.",
+    "para": 3
+   },
+   {
+    "date": "2023-12-14",
+    "type": "order_passed",
+    "quote": "No reply to the show-cause notice was filed and the Proper Officer passed an order dated December 14, 2023 under Section 73 (9) of the CGST Act, 2017 determining the tax, interest and penalty.",
+    "para": 3
+   },
+   {
+    "date": "2025-06-23",
+    "type": "appeal_dismissed",
+    "quote": "This application under Article 226 of the Constitution of India is directed against an order dated June 23, 2025 passed by the Joint Commissioner, CGST & Central Excise (Appeal), Siliguri Appeal Commissionerate.",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Since the show-cause notice was uploaded only under the additional tab as opposed to the normal tab, this Court is of the considered view that such uploading under the additional tab could not constitute due communication of the show-cause notice upon the petitioner against whom an adverse decision was contemplated.",
+    "quote_source": "court",
+    "para": 13
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The order dated December 14, 2023 passed by the Superintendent, CGST & Central Excise being the respondent No.2 and the order of the appellate authority dated June 23, 2025 are set aside subject to the condition that the petitioner shall file the reply to the show-cause notice dated September 8, 2023 within a period of three (3) weeks from the date of receipt of a server copy of this order and if such reply is filed within the time limit as mentioned hereinbefore, the respondent No.2 shall, after considering the representation/reply to the show-cause pass orders in accordance with law after giving a reasonable opportunity of hearing to the petitioner or his authorised representatives, which shall be communicated to the petitioner immediately thereafter.",
+   "para": 16
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5132,
+   "tokens_out": 1008,
+   "seconds": 6.47,
+   "cached": false
+  },
+  {
+   "tokens_in": 7296,
+   "tokens_out": 817,
+   "seconds": 8.85,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "cnr": "DLHC010098702025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "along with an attached Show Cause Notice for FY 2018-19",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-08",
+     "quote": "DRC- 01 dated 08.12.2023",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-03-31",
+    "quote": "DRC-07 dated 31.03.2024bearing reference no. ZD070324056744B along with an attached Order for FY 2018-19",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-08",
+    "type": "scn_issued",
+    "quote": "DRC- 01 dated 08.12.2023 bearing reference no. ZD071223038823I along with an attached Show Cause Notice for FY 2018-19",
+    "para": 1
+   },
+   {
+    "date": "2024-03-31",
+    "type": "order_passed",
+    "quote": "DRC-07 dated 31.03.2024bearing reference no. ZD070324056744B along with an attached Order for FY 2018-19",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is stated by the learned Counsel for the Petitioner that at the relevant time, the assessee was not able to view the “notices tab” on the portal of the Respondent and the assessee was precluded from filing the reply.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In view of the above, the instant writ petition stands allowed and the DRC-01 dated 08.12.2023 and Order dated 31.03.2024 is quashed and set aside.",
+   "para": 3
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13541,
+   "tokens_out": 4927,
+   "seconds": 13.03,
+   "cached": false
+  },
+  {
+   "tokens_in": 6113,
+   "tokens_out": 494,
+   "seconds": 9.15,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

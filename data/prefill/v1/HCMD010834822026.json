@@ -1,0 +1,130 @@
+{
+ "cnr": "HCMD010834822026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "This writ petition challenges the impugned order dated 29.12.2025 which is an assessment order passed under Section 74 of the TNGST Act, 2017.",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "calling for the records on the file of the respondent in GSTIN 33ABWPH2240Q2Z7/2021-2022 dated 29.12.2025 and Form GST DRC- 07 issued in reference number ZD3312254348982 dated 29.12.2025 and uploaded in the portal, quash the same and further direct the respondent to pass order afresh after affording an opportunity to the petitioner to file their objections with supporting documents.",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2025-12-29",
+    "quote": "This writ petition challenges the impugned order dated 29.12.2025 which is an assessment order passed under Section 74 of the TNGST Act, 2017.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "The show cause notice and the impugned assessment order has been uploaded in the GST Portal without the knowledge of the petitioner.",
+    "para": 3
+   }
+  },
+  "events": [
+   {
+    "date": "2025-12-29",
+    "type": "order_passed",
+    "quote": "This writ petition challenges the impugned order dated 29.12.2025 which is an assessment order passed under Section 74 of the TNGST Act, 2017.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "The petitioner had availed excess ITC in GSTR - 3B as compared to the tax declared by the petitioner's suppliers in their GSTR – 1 with respect to the supplies made to the petitioner.",
+    "para": 3
+   },
+   {
+    "type": "reply_point",
+    "quote": "The petitioner had claimed and availed the ITC under both CGST and SGST heads through their monthly return in GSTR-3B and the same figure were available in the GSTR-2A and hence, they had not claimed any excess ITC as alleged by the respondent.",
+    "para": 3
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The respondent failed to consider the claim of ITC made through GSTR-3B and ITC available in GSTR-2A and confirmed the proposal.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The show cause notice and the impugned assessment order has been uploaded in the GST Portal without the knowledge of the petitioner.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The respondent failed to consider the claim of ITC made through GSTR-3B and ITC available in GSTR-2A and confirmed the proposal.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Had the respondent considered the same or afforded the petitioner an effective opportunity of personal hearing, the petitioner could have satisfactorily explained the issue.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In view thereof, this Writ Petition is allowed on the following terms: (i) The impugned order dated 29.12.2025 shall stand set aside, and the matter shall stand remanded back to the file of the respondent;",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13305,
+   "tokens_out": 4953,
+   "seconds": 11.17,
+   "cached": false
+  },
+  {
+   "tokens_in": 6093,
+   "tokens_out": 832,
+   "seconds": 9.37,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [
+   "facts.document_contents[2]: same words as a court finding (would leak the answer)"
+  ],
+  "quotes_not_found": [
+   "facts.order.service_mode:facts.order.service_mode",
+   "facts.document_contents[0]:scn_ground",
+   "facts.document_contents[1]:reply_point",
+   "findings.defects_argued[0]:service_169"
+  ]
+ }
+}

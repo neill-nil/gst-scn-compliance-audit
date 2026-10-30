@@ -1,0 +1,175 @@
+{
+ "cnr": "HCMA012613842025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "to call for the records of the impugned orders issued by the 1st respondent under Section 74 of the Central Goods and Services Act 2017 dated 22.08.2025",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25"
+   ],
+   "quote": "dated 22.08.2025 for the financial years 2018-19 to 2024-2025",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-05-08",
+     "quote": "Thereafter, the petitioner was issued with notices in DRC-01 dated 08.05.2025.",
+     "para": 1
+    },
+    "reply_due": {
+     "value": "2025-05-26",
+     "quote": "In the last mentioned remainder dated 11.08.2025, the time stipulated for the respondents to the show cause notice in DRC -01 notices dated 08.05.2025, was fixed as 26.05.2025.",
+     "para": 2
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-08-22",
+    "quote": "orders all dated 22.08.2025 passed for the tax period 2018-19 to 2024-25.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-04-21",
+    "type": "scn_issued",
+    "quote": "The impugned orders dated 22.08.2025 have preceded notices in DRC-01 dated 21.04.2025, to which the petitioner had replied on 02.05.2025.",
+    "para": 1
+   },
+   {
+    "date": "2025-05-02",
+    "type": "reply_filed",
+    "quote": "The impugned orders dated 22.08.2025 have preceded notices in DRC-01 dated 21.04.2025, to which the petitioner had replied on 02.05.2025.",
+    "para": 1
+   },
+   {
+    "date": "2025-05-08",
+    "type": "scn_issued",
+    "quote": "Thereafter, the petitioner was issued with notices in DRC-01 dated 08.05.2025.",
+    "para": 1
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "The petitioner failed to respond to the same within the time stipulated in the said notices.",
+    "para": 1
+   },
+   {
+    "date": "2025-05-30",
+    "type": "other",
+    "quote": "Under these circumstances, remainders were sent on 30.05.2025 followed by a remainder dated 26.06.2025 and finally by yet another remainder dated 11.08.2025.",
+    "para": 2
+   },
+   {
+    "date": "2025-06-26",
+    "type": "other",
+    "quote": "Under these circumstances, remainders were sent on 30.05.2025 followed by a remainder dated 26.06.2025 and finally by yet another remainder dated 11.08.2025.",
+    "para": 2
+   },
+   {
+    "date": "2025-08-11",
+    "type": "other",
+    "quote": "Under these circumstances, remainders were sent on 30.05.2025 followed by a remainder dated 26.06.2025 and finally by yet another remainder dated 11.08.2025.",
+    "para": 2
+   },
+   {
+    "date": "2025-08-22",
+    "type": "order_passed",
+    "quote": "However, the impugned orders have been passed on 22.08.2025.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Thus there is a violation of principles of natural justice and as the impugned orders have preceded the date fixed for filing the reply.",
+    "quote_source": "court",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "This Writ Petition stands disposed of with the above observations.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10324,
+   "tokens_out": 2368,
+   "seconds": 11.61,
+   "cached": false
+  },
+  {
+   "tokens_in": 5752,
+   "tokens_out": 328,
+   "seconds": 8.96,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

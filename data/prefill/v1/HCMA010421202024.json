@@ -1,0 +1,118 @@
+{
+ "cnr": "HCMA010421202024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "In respect of assessment year 2019-20, the petitioner had received supplies and claimed ITC in respect thereof.",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2023-07-11",
+    "quote": "An assessment order dated 11.07.2023 is assailed both on grounds of breach of principles of natural justice and on the ground that applicable circulars with regard to the procedure to be followed in cases of discrepancy between the GSTR-3B returns and the auto populated GSTR-2A returns were not adhered to.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "scrutiny_notice",
+    "quote": "Pursuant to a notice in Form GST ASMT-10, the petitioner also received an intimation and show cause notice.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "pre_scn_intimation",
+    "quote": "Pursuant to a notice in Form GST ASMT-10, the petitioner also received an intimation and show cause notice.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "scn_issued",
+    "quote": "Pursuant to a notice in Form GST ASMT-10, the petitioner also received an intimation and show cause notice.",
+    "para": 2
+   },
+   {
+    "date": "2023-07-11",
+    "type": "order_passed",
+    "quote": "The impugned assessment order was issued in the above facts and circumstances.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "From the impugned assessment order, it is evident that the entire tax demand pertains to the disparity between the ITC claimed in the GSTR-3B return and that reflected in the auto populated GSTR-2A returns.",
+    "para": 4
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The impugned assessment order does not indicate that the transaction was not genuine.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "non-adherence to circulars regarding GSTR-3B and GSTR-2A disparity",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Learned counsel for the petitioner also contended that applicable circulars were not adhered to in this regard.",
+    "quote_source": "argument",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Therefore, the impugned assessment order is quashed subject to the condition that the petitioner remits 10% of the disputed tax demand as agreed to within a maximum period of two weeks from the date of receipt of a copy of this order.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13291,
+   "tokens_out": 4876,
+   "seconds": 14.7,
+   "cached": false
+  },
+  {
+   "tokens_in": 2733,
+   "tokens_out": 176,
+   "seconds": 3.71,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

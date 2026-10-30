@@ -1,0 +1,145 @@
+{
+ "cnr": "HCMA011752112025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "relating to the Tax Period 2020-21 and to quash the same.",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-25",
+     "quote": "The show cause notice dated 25.11.2024 was uploaded in the GST Portal in “Additional Notices” tab and the petitioner had no ocassion to open the GST Portal.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "The show cause notice dated 25.11.2024 was uploaded in the GST Portal in “Additional Notices” tab and the petitioner had no ocassion to open the GST Portal.",
+     "para": 2
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-13",
+    "quote": "Even the impugned assessment order dated 13.02.2025 was also uploaded in the GST Portal in “Additional Notices”, which is violation of principle of natural justice.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "Even the impugned assessment order dated 13.02.2025 was also uploaded in the GST Portal in “Additional Notices”, which is violation of principle of natural justice.",
+    "para": 2
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-25",
+    "type": "scn_issued",
+    "quote": "The show cause notice dated 25.11.2024 was uploaded in the GST Portal in “Additional Notices” tab and the petitioner had no ocassion to open the GST Portal.",
+    "para": 2
+   },
+   {
+    "date": "2025-02-13",
+    "type": "order_passed",
+    "quote": "Even the impugned assessment order dated 13.02.2025 was also uploaded in the GST Portal in “Additional Notices”, which is violation of principle of natural justice.",
+    "para": 2
+   },
+   {
+    "date": "2025-07-11",
+    "type": "appeal_dismissed",
+    "quote": "the same was rejected on the ground of limitation.",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "recovery_or_attachment",
+    "quote": "Further, the entire disputed tax demand has been recovered from the petitioner and hence, he prayed to set aside the impugned order directing the 1st respondent to permit the petitioner to file their reply and provide an opportunity of personal hearing so that the petitioner would be able to substantiate their case.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In such circumstances, this Court is of the view that the impugned assessment order came to be passed without affording any opportunity of personal hearing to the petitioner, confirming the proposals contained in the show cause notice.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, this writ petition is disposed of.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5030,
+   "tokens_out": 971,
+   "seconds": 5.77,
+   "cached": false
+  },
+  {
+   "tokens_in": 3263,
+   "tokens_out": 180,
+   "seconds": 3.49,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

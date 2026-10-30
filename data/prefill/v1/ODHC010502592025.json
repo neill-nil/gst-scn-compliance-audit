@@ -1,0 +1,137 @@
+{
+ "cnr": "ODHC010502592025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2015-16",
+    "2016-17"
+   ],
+   "quote": "for the Financial Years 2015-16 and 2016-17",
+   "para": 1
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-07-04",
+    "quote": "Order-in-Original dated 4th July, 2024",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-04-07",
+    "type": "other",
+    "quote": "a letter vide C.No. IV (38) 510/TPD/UN- REGD/DGARM/RKL-I/2021/1222-1260 dated 07.04.2021 by the Superintendent, CGST and Central Excise, Rourkela-I Division, Rourkela",
+    "para": 4
+   },
+   {
+    "date": "2021-04-16",
+    "type": "other",
+    "quote": "reminder letter bearing C.No.C.NO.IV(38)510/TPD/UN-REGD/ DGARM/RKL-I/2021/1397-1436 dated 16.04.2021 was also issued.",
+    "para": 4
+   },
+   {
+    "date": "2021-04-23",
+    "type": "scn_issued",
+    "quote": "Demand-cum-Show-cause notices dated 23rd April, 2021 and 30th June, 2021 vide Annexure-4",
+    "para": 1
+   },
+   {
+    "date": "2021-06-30",
+    "type": "scn_issued",
+    "quote": "Demand-cum-Show-cause notices dated 23rd April, 2021 and 30th June, 2021 vide Annexure-4",
+    "para": 1
+   },
+   {
+    "date": "2024-07-04",
+    "type": "order_passed",
+    "quote": "Order-in-Original dated 4th July, 2024",
+    "para": 1
+   },
+   {
+    "date": "2025-06-23",
+    "type": "rectification_rejected",
+    "quote": "order dated 23rd June, 2025 rejecting the petition for rectification",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "Therefore, in order to protect the government revenue, it is imperative on part of this office to raise the impugned Service Tax demand upon the Noticee under Section 73(1) of the Finance Act, 1994.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "However, in absence of any reply to the aforesaid letters, a Show Cause Notice dated 26.04.2021 bearing C.No.V(15)203/S.Tax/Adjn/Commr/RKL/2021/ 5130AA to 5132A was issued upon the Petitioner for the Financial Year 2015-16, which is claimed not to have served upon the petitioner.",
+    "quote_source": "argument",
+    "para": 10
+   },
+   {
+    "type": "other_procedural",
+    "note": "violation of principles of natural justice for inadequate opportunity",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "In view of inadequate opportunity, this Court feels it expedient to set aside the Order-in-Original dated 04.07.2024 (Annexure-7) as also the Order dated 23.06.2025 rejecting the application for rectification of said Adjudication Order.",
+    "quote_source": "argument",
+    "para": 10
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the aforesaid observations and directions, this writ petition is disposed of and pending interlocutory application(s), if any, is disposed of accordingly, but in the circumstances, there shall be no order as to costs.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 21413,
+   "tokens_out": 5070,
+   "seconds": 15.03,
+   "cached": false
+  },
+  {
+   "tokens_in": 6794,
+   "tokens_out": 419,
+   "seconds": 4.18,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.financial_years:facts.financial_years"
+  ]
+ }
+}

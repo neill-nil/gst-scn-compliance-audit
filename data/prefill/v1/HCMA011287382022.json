@@ -1,0 +1,141 @@
+{
+ "cnr": "HCMA011287382022",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "(i) an ITC amount wrongly availed and utilized to the tune of Rs.1,04,15,735/- (IGST-Rs.4,34,365/-, CGST-Rs.49,76,136/- and SGST- Rs.50,05,234/-) during the period from 2017-18 to 2019-20 should not be demanded under Section 74(1) of the CGST Act, 2017;",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19",
+    "2019-20"
+   ],
+   "quote": "(i) an ITC amount wrongly availed and utilized to the tune of Rs.1,04,15,735/- (IGST-Rs.4,34,365/-, CGST-Rs.49,76,136/- and SGST- Rs.50,05,234/-) during the period from 2017-18 to 2019-20 should not be demanded under Section 74(1) of the CGST Act, 2017;",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2022-07-11",
+     "quote": "In this writ petition, the Petitioner has challenged the Show Cause Notice No.03/2022-GST dated 11.07.2022 issued by the Respondent herein.",
+     "para": 0
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-06-23",
+    "type": "pre_scn_intimation",
+    "quote": "The specific case of the Petitioner is that the Petitioner was issued with a notice in Form DRC-01A dated 23.06.2022 by the Respondent, directing the Petitioner to pay the demanded tax amount along with applicable interest and penalty under Section 74(5) of the Central Goods and Services Tax Act, 2017 (hereinafter referred to as “CGST Act”) by 01.07.2022.",
+    "para": 3
+   },
+   {
+    "date": "2022-07-05",
+    "type": "reply_filed",
+    "quote": "In response to the said notice in Form DRC-01A dated 23.06.2022, the Petitioner sent its detailed Reply dated 05.07.2022.",
+    "para": 4
+   },
+   {
+    "date": "2022-07-11",
+    "type": "scn_issued",
+    "quote": "However, without considering the Petitioner's reply, the Respondent has issued the impugned Show Cause Notice dated 11.07.2022 to the Petitioner demanding the aforesaid amount as tax due from the Petitioner.",
+    "para": 4
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "In response to the said notice in Form DRC-01A dated 23.06.2022, the Petitioner sent its detailed Reply dated 05.07.2022.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": true,
+   "quote": "Accordingly, this Writ Petition is dismissed.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15431,
+   "tokens_out": 5265,
+   "seconds": 14.4,
+   "cached": false
+  },
+  {
+   "tokens_in": 7959,
+   "tokens_out": 437,
+   "seconds": 8.34,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

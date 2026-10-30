@@ -1,0 +1,165 @@
+{
+ "cnr": "HCMD010186522024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23"
+   ],
+   "quote": "This batch of five Writ Petitions are filed challenging the impugned orders in Form GST DRC-07 dated 12.12.2023, for the assessment years 2018-19, 2019-20, 2020-21, 2021-22 and 2022-23",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-01-30",
+     "quote": "The petitioner was thereafter issued with a show cause notice in Form GST-DRC-01 dated 30.01.2023, proposing to demand differential GST of 6%, on services provided by the petitioner to RVNL for the reasons set out in Form GST-DRC-01A.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-12",
+    "quote": "The first respondent proceeded to pass the impugned orders in Form GST-DRC-07 dated 12.12.2023, confirming the proposal rejecting the petitioner's claim for concessional rate of 12%, on the works contract services of original work pertaining to railways executed by the petitioner pursuant to the contract entered with RVNL, on the same grounds as was set out in the show cause notice.",
+    "para": 5
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-12-21",
+    "type": "pre_scn_intimation",
+    "quote": "While so, the petitioner was served with an intimation in Form GST DRC-01A dated 21.12.2022.",
+    "para": 3
+   },
+   {
+    "date": "2023-01-30",
+    "type": "scn_issued",
+    "quote": "The petitioner was thereafter issued with a show cause notice in Form GST-DRC-01 dated 30.01.2023, proposing to demand differential GST of 6%, on services provided by the petitioner to RVNL for the reasons set out in Form GST-DRC-01A.",
+    "para": 3
+   },
+   {
+    "date": "2023-03-01",
+    "type": "reply_filed",
+    "quote": "In response to the above notice in Form GST-DRC-01, the petitioner submitted its reply on 01.03.2023, wherein, it was inter-alia submitted that the contract between the petitioner and RVNL, is entitled to the concessional rate of 12%, as the same is covered by Sl No.3(v)(a) of the subject notifications (Rate) as it stood during the relevant period inter alia for the following reasons",
+    "para": 4
+   },
+   {
+    "date": "2023-12-12",
+    "type": "order_passed",
+    "quote": "The first respondent proceeded to pass the impugned orders in Form GST-DRC-07 dated 12.12.2023, confirming the proposal rejecting the petitioner's claim for concessional rate of 12%, on the works contract services of original work pertaining to railways executed by the petitioner pursuant to the contract entered with RVNL, on the same grounds as was set out in the show cause notice.",
+    "para": 5
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "The said notice proceeds on the premise that the subject contract between the petitioner and RVNL is liable to tax at 18%, instead the petitioner had erroneously discharged taxes at lower/concessional rate of 12% on the works contract executed by the petitioner on the following premise viz., i. RVNL does not function under the direct control of Railways; ii. RVNL is a subsidiary of Indian Railways incorporated under the Companies Act, 1956; iii. RVNL is a public sector undertaking listed on the stock exchange; iv. Employees working in RVNL are not considered as employees; and v. RVNL undertakes corporate social responsibility initiatives.",
+    "para": 3
+   },
+   {
+    "type": "reply_point",
+    "quote": "In response to the above notice in Form GST-DRC-01, the petitioner submitted its reply on 01.03.2023, wherein, it was inter-alia submitted that the contract between the petitioner and RVNL, is entitled to the concessional rate of 12%, as the same is covered by Sl No.3(v)(a) of the subject notifications (Rate) as it stood during the relevant period inter alia for the following reasons: a) Services supplied by the petitioner constitute works contract services of construction, erection, commissioning, or installation; b) That the works contract services are original works, and c) That the works contract services “pertain to railways”; d) That the petitioner had paid GST at the rate of 12% on the subject supplies in terms of Sl.No.3(v)(a) of the Rate Notifications.",
+    "para": 4
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The first respondent proceeded to pass the impugned orders in Form GST-DRC-07 dated 12.12.2023, confirming the proposal rejecting the petitioner's claim for concessional rate of 12%, on the works contract services of original work pertaining to railways executed by the petitioner pursuant to the contract entered with RVNL, on the same grounds as was set out in the show cause notice.",
+    "para": 5
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "That the impugned orders have been passed without proper consideration of the reply and thus suffers from non-application of mind to relevant factors thereby vitiating the order.",
+    "quote_source": "argument",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "In view thereof, the impugned orders are set aside and the contract for doubling of track between Vanchi Maniyachchi to Nagercoil, construction of roadbed, minor bridges, platforms, buildings, water and effluent treatment facilities, wagon / coaching maintenance infrastructure, supply of ballast, installation of tracks and other electrical, signalling and telecommunication infrastructure in Madurai and Thiruvananthapuram Divisions of Southern Railway, between the petitioner and RVNL would be covered by Notification 11 of 2017 CGST (RATE) dated 28.06.2017 as amended vide Notification No. 20/2017 dated 22.08.2017, Notification No.8 of 2017 Integrated Tax (Rate) dated 28.06.2017 and G.O.Ms.No. 94 dated 22.8.2017 CT & RE and liable to tax at 12%.",
+   "para": 18
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13253,
+   "tokens_out": 1724,
+   "seconds": 7.31,
+   "cached": false
+  },
+  {
+   "tokens_in": 11486,
+   "tokens_out": 331,
+   "seconds": 2.55,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

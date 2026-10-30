@@ -1,0 +1,195 @@
+{
+ "cnr": "HCMA010331192021",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "initiated the proceedings under Section 73 of the Tamil Nadu Goods and Services Tax Act, 2017",
+   "para": 3
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21"
+   ],
+   "quote": "by issuing a show cause notice dated 31.10.2020 for the period 2017-18 to 2020-21",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2020-10-31",
+     "quote": "by issuing a show cause notice dated 31.10.2020 for the period 2017-18 to 2020-21 and directing the petitioner to file its objection on or before 17.11.2020.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": "2020-11-17",
+     "quote": "by issuing a show cause notice dated 31.10.2020 for the period 2017-18 to 2020-21 and directing the petitioner to file its objection on or before 17.11.2020.",
+     "para": 3
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2021-01-19",
+    "quote": "The impugned orders for the assessment years 2017-18 and 2018-19 dated 19.01.2021, for the assessment years 2019-20 and 2020-21 dated 20.01.2021 and 21.01.2021 respectively were passed confirming the proposal",
+    "para": 4
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2020-10-31",
+    "type": "scn_issued",
+    "quote": "the 1st Respondent initiated the proceedings under Section 73 of the Tamil Nadu Goods and Services Tax Act, 2017 (hereinafter referred to as “TNGST Act or “the Act”), by issuing a show cause notice dated 31.10.2020 for the period 2017-18 to 2020-21",
+    "para": 3
+   },
+   {
+    "date": "2020-11-26",
+    "type": "reply_filed",
+    "quote": "The petitioner filed its replies dated 26.11.2020 and 21.12.2020 for the said period.",
+    "para": 3
+   },
+   {
+    "date": "2020-12-02",
+    "type": "other",
+    "quote": "Thereafter, the 1st Respondent issued notices dated 02.12.2020 and 03.12.2020 and fixed the personal hearing on 14.12.2020.",
+    "para": 3
+   },
+   {
+    "date": "2020-12-03",
+    "type": "other",
+    "quote": "Thereafter, the 1st Respondent issued notices dated 02.12.2020 and 03.12.2020 and fixed the personal hearing on 14.12.2020.",
+    "para": 3
+   },
+   {
+    "date": "2020-12-14",
+    "type": "hearing_scheduled",
+    "quote": "Thereafter, the 1st Respondent issued notices dated 02.12.2020 and 03.12.2020 and fixed the personal hearing on 14.12.2020.",
+    "para": 3
+   },
+   {
+    "date": "2020-12-21",
+    "type": "reply_filed",
+    "quote": "The petitioner filed its replies dated 26.11.2020 and 21.12.2020 for the said period.",
+    "para": 3
+   },
+   {
+    "date": "2021-01-11",
+    "type": "reply_filed",
+    "quote": "The petitioner submitted its reply dated 11.01.2021 wherein it was submitted that they had already demonstrated the genuineness of the transactions with A.R.Enterprises and M.I.Traders for the assessment years 2018-19 and 2019-20",
+    "para": 4
+   },
+   {
+    "date": "2021-01-19",
+    "type": "order_passed",
+    "quote": "The impugned orders for the assessment years 2017-18 and 2018-19 dated 19.01.2021",
+    "para": 4
+   },
+   {
+    "date": "2021-01-20",
+    "type": "order_passed",
+    "quote": "for the assessment years 2019-20 and 2020-21 dated 20.01.2021 and 21.01.2021 respectively were passed confirming the proposal",
+    "para": 4
+   },
+   {
+    "date": "2021-01-21",
+    "type": "order_passed",
+    "quote": "for the assessment years 2019-20 and 2020-21 dated 20.01.2021 and 21.01.2021 respectively were passed confirming the proposal",
+    "para": 4
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "i) Ineligible claim of ITC – Regarding inward supplies. ii) Ineligible claim of ITC on vehicles (One Lorry – TN 13 L 0766). iii) Interest under Section 50 of the Act. iv) Penalty under Section 73(9) of the Act.",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "The petitioner filed copies of invoices, E-way bills, party's ledger account and Bank statements disclosing the payment made to the alleged bill traders viz., Zahira Trading Company, A.R.Enterprises, M.I.Traders, Basheer and Co. and MAK Enterprises.",
+    "para": 4
+   },
+   {
+    "type": "reply_point",
+    "quote": "The petitioner also submitted its explanation to the proposal to reject its claim of ITC on vehicles and its spare parts.",
+    "para": 4
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The impugned orders for the assessment years 2017-18 and 2018-19 dated 19.01.2021, for the assessment years 2019-20 and 2020-21 dated 20.01.2021 and 21.01.2021 respectively were passed confirming the proposal thereby rejecting the claim of ITC in respect of all the 5 suppliers including A.R.Enterprises and M.I.Traders, on the premise that the transactions were not genuine while also confirming the proposal to deny ITC in respect of vehicles and its spare parts.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The writ petitions stand disposed of.",
+   "para": 15
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 22068,
+   "tokens_out": 4396,
+   "seconds": 10.95,
+   "cached": false
+  },
+  {
+   "tokens_in": 8098,
+   "tokens_out": 48,
+   "seconds": 1.28,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

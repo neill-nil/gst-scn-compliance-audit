@@ -1,0 +1,139 @@
+{
+ "cnr": "KAHC010434032025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The petitioner is before this court calling in question a show cause notice dated 11.05.2023 issued by the respondent under Section 73(1) of the Goods and Services Tax Act, 2017 ('the Act' for short) and all consequential orders that are passed.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "An ASMT-10 notice is issued to the petitioner for financial year 2017-2018.",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-05-11",
+     "quote": "The respondent then issues a show cause notice on 11.05.2023 and on 25.08.2023 passes the impugned order without indicating the date and the proceedings which led to passing of the impugned order on certain tax demand under Section 73(9) of the Act.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-08-25",
+    "quote": "The respondent then issues a show cause notice on 11.05.2023 and on 25.08.2023 passes the impugned order without indicating the date and the proceedings which led to passing of the impugned order on certain tax demand under Section 73(9) of the Act.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "scrutiny_notice",
+    "quote": "An ASMT-10 notice is issued to the petitioner for financial year 2017-2018.",
+    "para": 3
+   },
+   {
+    "date": "2023-05-11",
+    "type": "scn_issued",
+    "quote": "The respondent then issues a show cause notice on 11.05.2023 and on 25.08.2023 passes the impugned order without indicating the date and the proceedings which led to passing of the impugned order on certain tax demand under Section 73(9) of the Act.",
+    "para": 3
+   },
+   {
+    "date": "2023-08-25",
+    "type": "order_passed",
+    "quote": "The respondent then issues a show cause notice on 11.05.2023 and on 25.08.2023 passes the impugned order without indicating the date and the proceedings which led to passing of the impugned order on certain tax demand under Section 73(9) of the Act.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In that light of the proceedings being ex-parte, I deem it appropriate to obliterate the orders and remit the matter back to the hands of the Assistant Commissioner to consider the proceedings, afresh.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": true,
+   "quote": "The writ petition is allowed-in-part.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10245,
+   "tokens_out": 2033,
+   "seconds": 12.82,
+   "cached": false
+  },
+  {
+   "tokens_in": 5907,
+   "tokens_out": 433,
+   "seconds": 6.83,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

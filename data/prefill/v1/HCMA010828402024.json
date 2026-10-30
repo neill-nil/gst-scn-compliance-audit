@@ -1,0 +1,180 @@
+{
+ "cnr": "HCMA010828402024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "tax period year April 2018-March, 2019",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2022-07-28",
+     "quote": "show cause notice dated 28.07.2022",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-23",
+    "quote": "An order dated 23.12.2023 is assailed on the ground that the petitioner was not provided a reasonable opportunity to contest the tax demand on merits.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-07-28",
+    "type": "scn_issued",
+    "quote": "The petitioner asserts that he received show cause notice dated 28.07.2022 and that his request for adjournment was not responded to.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "adjournment_requested",
+    "quote": "The petitioner asserts that he received show cause notice dated 28.07.2022 and that his request for adjournment was not responded to.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "She further submits that the petitioner replied to the show cause notice and requested for time.",
+    "para": 4
+   },
+   {
+    "date": null,
+    "type": "extension_requested",
+    "quote": "She further submits that the petitioner replied to the show cause notice and requested for time.",
+    "para": 4
+   },
+   {
+    "date": "2023-12-23",
+    "type": "order_passed",
+    "quote": "An order dated 23.12.2023 is assailed on the ground that the petitioner was not provided a reasonable opportunity to contest the tax demand on merits.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "the tax proposal pertains to the mismatch between the GSTR 1 statement and the GSTR 3B returns.",
+    "para": 3
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "On perusal of the impugned order, it is clear that the tax proposal was confirmed because the petitioner did not reply to the show cause notice.",
+    "para": 5
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "adjournment_75_5",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The petitioner asserts that he received show cause notice dated 28.07.2022 and that his request for adjournment was not responded to.",
+    "quote_source": "argument",
+    "para": 2
+   },
+   {
+    "type": "other_procedural",
+    "note": "Non-issuance of Form ASMT 10",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "She further submits that notice in Form ASMT 10 should have been issued if there is discrepancy in the returns of the petitioner.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "In these circumstances, since the impugned order was issued without the petitioner being heard, the interest of justice warrants that the petitioner be provided an opportunity to contest the tax demand on merits, albeit by putting the petitioner on terms.",
+    "quote_source": "argument",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons set out above, the impugned order dated 23.12.2023 is set aside and the matter is remanded for reconsideration on condition that the petitioner remits 10% of the disputed tax demand as agreed to within a period of two weeks from the date of receipt of a copy of this order.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4452,
+   "tokens_out": 970,
+   "seconds": 5.88,
+   "cached": false
+  },
+  {
+   "tokens_in": 6044,
+   "tokens_out": 1028,
+   "seconds": 9.21,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

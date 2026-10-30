@@ -1,0 +1,151 @@
+{
+ "cnr": "HCMA010879842025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "and the connected order under Section 73 dated 27.08.2024",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "GSTIN:33AAFFR0356M1Z5/2019-20 dated 24.08.2024",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-23",
+     "quote": "thet respondent issued show cause notice dated 23.05.2024",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "by uploading the same in the GST portal without serving physical copy of the same to the petitioner.",
+     "para": 3
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-27",
+    "quote": "and the connected order under Section 73 dated 27.08.2024 and the summary of the order in Form GST DRC-07 dated 27.08.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-23",
+    "type": "scn_issued",
+    "quote": "thet respondent issued show cause notice dated 23.05.2024",
+    "para": 3
+   },
+   {
+    "date": "2024-07-04",
+    "type": "other",
+    "quote": "followed by reminder notices dated 04.07.2024, 14.08.2024 and 23.08.2024",
+    "para": 3
+   },
+   {
+    "date": "2024-08-14",
+    "type": "other",
+    "quote": "followed by reminder notices dated 04.07.2024, 14.08.2024 and 23.08.2024",
+    "para": 3
+   },
+   {
+    "date": "2024-08-23",
+    "type": "other",
+    "quote": "followed by reminder notices dated 04.07.2024, 14.08.2024 and 23.08.2024",
+    "para": 3
+   },
+   {
+    "date": "2024-08-27",
+    "type": "order_passed",
+    "quote": "passed the present impugned order.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, this Court finds that there is a lack of opportunities being provided to serve the notices/orders etc., effectively to the petitioner.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "i) The impugned orders passed by the respondent dated 24.08.2024 is set aside.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10733,
+   "tokens_out": 2023,
+   "seconds": 10.54,
+   "cached": false
+  },
+  {
+   "tokens_in": 6417,
+   "tokens_out": 450,
+   "seconds": 8.77,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

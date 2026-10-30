@@ -1,0 +1,138 @@
+{
+ "cnr": "HCMD010841282026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "This writ petition challenges the impugned orders dated 22.03.2024 and 23.03.2024 which are assessment orders passed under Section 74 of the TNGST Act, 2017.",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "Tax Period : APR 2021-MAR 2022, F.Y.2021-2022, dated 23.03.2024",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-03-22",
+    "quote": "calling for the records pertaining to the impugned order passed by the first respondent vide his proceedings in GSTIN:33BDRPA8702J1Z1/2021-22, dated 22.03.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-03-22",
+    "type": "order_passed",
+    "quote": "calling for the records pertaining to the impugned order passed by the first respondent vide his proceedings in GSTIN:33BDRPA8702J1Z1/2021-22, dated 22.03.2024",
+    "para": 0
+   },
+   {
+    "date": "2024-03-23",
+    "type": "order_passed",
+    "quote": "and its consequential summary order passed by the second respondent bearing Reference No. ZD330324148923F, Tax Period : APR 2021-MAR 2022, F.Y.2021-2022, dated 23.03.2024",
+    "para": 0
+   },
+   {
+    "date": "2024-07-02",
+    "type": "recovery_or_attachment",
+    "quote": "Now, the petitioner came to know that on 02.07.2024, 14.11.2024 and 31.03.2025, the respondents have recovered 64% SGST.",
+    "para": 3
+   },
+   {
+    "date": "2024-11-14",
+    "type": "recovery_or_attachment",
+    "quote": "Now, the petitioner came to know that on 02.07.2024, 14.11.2024 and 31.03.2025, the respondents have recovered 64% SGST.",
+    "para": 3
+   },
+   {
+    "date": "2025-03-31",
+    "type": "recovery_or_attachment",
+    "quote": "Now, the petitioner came to know that on 02.07.2024, 14.11.2024 and 31.03.2025, the respondents have recovered 64% SGST.",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Difference between GSTR-3B and GSTR 7",
+    "para": 3
+   },
+   {
+    "type": "reply_point",
+    "quote": "There exits no such difference between GSTR-7 and GSTR-3B as alleged by the respondents.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Thus, if the respondents have perused the same or have granted an effective opportunity of personal hearing to the petitioner, the petitioner can very well explain the same, but the respondents have utterly failed to do so, which amounts to gross violation of principles of natural justice.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The show cause notice and the impugned assessment order has been uploaded in the GST Portal without the knowledge of the petitioner.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In view thereof, this Writ Petition is allowed on the following terms: (i) The impugned orders dated 22.03.2024 and 23.03.2024 shall stand set aside, and the matter shall stand remanded back to the file of the first respondent;",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13479,
+   "tokens_out": 5194,
+   "seconds": 14.21,
+   "cached": false
+  },
+  {
+   "tokens_in": 2827,
+   "tokens_out": 337,
+   "seconds": 4.02,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.document_contents[0]:scn_ground",
+   "facts.document_contents[1]:reply_point",
+   "findings.defects_argued[0]:hearing_75_4",
+   "findings.defects_argued[1]:service_169"
+  ]
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "cnr": "HCMD011184042024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2023-24"
+   ],
+   "quote": "Tax Period 2023-2024 for the month of August",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2023-10-12",
+    "quote": "an Order-in-Original was made by the respondent on 12.10.2023.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-10-12",
+    "type": "order_passed",
+    "quote": "an Order-in-Original was made by the respondent on 12.10.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-18",
+    "type": "reply_filed",
+    "quote": "The petitioner had also filed its returns for the month of August 2023 on 18.12.2023.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In fine, this writ petition is disposed of with a direction to the respondent to take on record the valid return filed by the petitioner on 18.12.2023 and levy the penalty as provided under the proviso to sub- Section (2) of Section 62 of the Tamil Nadu Goods and Services Tax Act, 2017 and process the same in the manner known to law.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10348,
+   "tokens_out": 883,
+   "seconds": 10.12,
+   "cached": false
+  },
+  {
+   "tokens_in": 3117,
+   "tokens_out": 125,
+   "seconds": 4.64,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

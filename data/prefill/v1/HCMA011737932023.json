@@ -1,0 +1,151 @@
+{
+ "cnr": "HCMA011737932023",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "and the consequential orders passed under section 74 in Reference No.ZD3308231649732 dated 29.08.2023",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "passed for the tax period 2017-2018, by which the proposal in the Show Cause Notice dated 02.08.2023 in DRC-01 has been confirmed against the petitioner.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-08-02",
+     "quote": "by which the proposal in the Show Cause Notice dated 02.08.2023 in DRC-01 has been confirmed against the petitioner.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": "2023-08-24",
+     "quote": "Date by which reply has to be submitted \t 24/08/2023",
+     "para": 4
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "Date of Personal Hearing \t 17/08/2023",
+     "para": 4
+    },
+    "hearing_date": {
+     "value": "2023-08-17",
+     "quote": "Date of Personal Hearing \t 17/08/2023",
+     "para": 4
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-08-29",
+    "quote": "to call for the impugned proceedings of the first respondent in GSTIN:33AMKPG7664E1Z1/2017-18 dated 29.08.2023",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-08-02",
+    "type": "scn_issued",
+    "quote": "by which the proposal in the Show Cause Notice dated 02.08.2023 in DRC-01 has been confirmed against the petitioner.",
+    "para": 2
+   },
+   {
+    "date": "2023-08-02",
+    "type": "other",
+    "quote": "The impugned order was preceded with a reminder dated 02.08.2023 and an intimation dated 17.08.2023 issued by the office of the respondent, wherein a specific timeline was prescribed for filing a reply to the Show Cause Notice and personal hearing.",
+    "para": 3
+   },
+   {
+    "date": "2023-08-17",
+    "type": "hearing_scheduled",
+    "quote": "Date of Personal Hearing \t 17/08/2023",
+    "para": 4
+   },
+   {
+    "date": "2023-08-17",
+    "type": "pre_scn_intimation",
+    "quote": "The impugned order was preceded with a reminder dated 02.08.2023 and an intimation dated 17.08.2023 issued by the office of the respondent, wherein a specific timeline was prescribed for filing a reply to the Show Cause Notice and personal hearing.",
+    "para": 3
+   },
+   {
+    "date": "2023-08-29",
+    "type": "order_passed",
+    "quote": "to call for the impugned proceedings of the first respondent in GSTIN:33AMKPG7664E1Z1/2017-18 dated 29.08.2023",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On a reading of the timeline mentioned in the aforesaid Notice dated 17.08.2023, it is clear that there is a gross violation of the Principles of Natural Justice.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The writ petition is disposed of with the above observations.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10626,
+   "tokens_out": 1960,
+   "seconds": 11.24,
+   "cached": false
+  },
+  {
+   "tokens_in": 2977,
+   "tokens_out": 180,
+   "seconds": 3.99,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "cnr": "HCMA010990182026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "Impugned Assessment Order in Ref. No. ZD331125413118V dated 24.11.2025 under Section 73 of the CGST/TNGST Act, 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "Financial Year 2021-22",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2025-11-24",
+    "quote": "An order dated 24.11.2025 is impugned primarily on the ground of breach of principles of natural justice.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-11-24",
+    "type": "order_passed",
+    "quote": "An order dated 24.11.2025 is impugned primarily on the ground of breach of principles of natural justice.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Subject to the remittance of 25% of the disputed tax demand within thirty days from the date of receipt of a copy of this order, the impugned order is set aside and the matter is remanded for re- consideration.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12549,
+   "tokens_out": 4580,
+   "seconds": 14.51,
+   "cached": false
+  },
+  {
+   "tokens_in": 2362,
+   "tokens_out": 104,
+   "seconds": 4.04,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

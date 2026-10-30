@@ -1,0 +1,139 @@
+{
+ "cnr": "HCMA010601122025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "passed by the respondent herein under Section 74 of the TNGST Act, 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-10-04",
+     "quote": "the show cause notice was issued by the respondent on 04.10.2024.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-10-29",
+    "quote": "impugned assessment order dated 29.10.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-10-04",
+    "type": "scn_issued",
+    "quote": "the show cause notice was issued by the respondent on 04.10.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-10-08",
+    "type": "extension_requested",
+    "quote": "Subsequently, vide communication dated 08.10.2024, the petitioner made a request before the respondent to grant further time for filing their reply.",
+    "para": 2
+   },
+   {
+    "date": "2024-10-29",
+    "type": "order_passed",
+    "quote": "However, without providing sufficient time to the petitioner, the impugned order came to be passed by the respondent on 04.10.2024 [sic, 29.10.2024].",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "adjournment_75_5",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In view of the above, it is clear that the impugned order came to be passed by the respondent not only in contrary to the provisions of Section 74 of the GST Act, 2017, but also in violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, this Court passes the following order:- (i) The impugned order dated 29.10.2024 is set aside and the matter is remanded to the respondent for fresh consideration.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14185,
+   "tokens_out": 4934,
+   "seconds": 15.57,
+   "cached": false
+  },
+  {
+   "tokens_in": 3180,
+   "tokens_out": 227,
+   "seconds": 3.73,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.events[2]:order_passed"
+  ]
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "cnr": "HCMD010293712025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25"
+   ],
+   "quote": "These Writ Petitions have been filed challenging the show cause notices dated 04.02.2025, issued by the first respondent for the Assessment Years 2018-2019 to 2024-2025.",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-02-04",
+     "quote": "the first respondent proceeded to issue the impugned notices in Form DRC 01, dated 04.02.2025, for each of the tax periods involved from 2018-2025 (up to June 2024) across seven tax periods.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-07-01",
+    "type": "other",
+    "quote": "The petitioner further submits that despite bringing the above legal position to the attention of the first respondent through their letters dated 01.07.2024, 26.12.2024 and 01.01.2025, the first respondent proceeded to issue the impugned notices in Form DRC 01, dated 04.02.2025",
+    "para": 3
+   },
+   {
+    "date": "2024-12-26",
+    "type": "other",
+    "quote": "The petitioner further submits that despite bringing the above legal position to the attention of the first respondent through their letters dated 01.07.2024, 26.12.2024 and 01.01.2025, the first respondent proceeded to issue the impugned notices in Form DRC 01, dated 04.02.2025",
+    "para": 3
+   },
+   {
+    "date": "2025-01-01",
+    "type": "other",
+    "quote": "The petitioner further submits that despite bringing the above legal position to the attention of the first respondent through their letters dated 01.07.2024, 26.12.2024 and 01.01.2025, the first respondent proceeded to issue the impugned notices in Form DRC 01, dated 04.02.2025",
+    "para": 3
+   },
+   {
+    "date": "2025-02-04",
+    "type": "scn_issued",
+    "quote": "the first respondent proceeded to issue the impugned notices in Form DRC 01, dated 04.02.2025, for each of the tax periods involved from 2018-2025 (up to June 2024) across seven tax periods.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "Accordingly, these writ petitions stand dismissed.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12556,
+   "tokens_out": 2335,
+   "seconds": 11.98,
+   "cached": false
+  },
+  {
+   "tokens_in": 3858,
+   "tokens_out": 66,
+   "seconds": 3.02,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

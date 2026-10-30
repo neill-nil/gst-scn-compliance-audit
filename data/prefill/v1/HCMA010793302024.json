@@ -1,0 +1,111 @@
+{
+ "cnr": "HCMA010793302024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "because the show cause notice and impugned orders were uploaded on the GST portal",
+    "para": 2
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "pre_scn_intimation",
+    "quote": "such orders were preceded by an intimation, show cause notice and personal hearing notices.",
+    "para": 4
+   },
+   {
+    "date": null,
+    "type": "scn_issued",
+    "quote": "such orders were preceded by an intimation, show cause notice and personal hearing notices.",
+    "para": 4
+   },
+   {
+    "date": null,
+    "type": "hearing_scheduled",
+    "quote": "such orders were preceded by an intimation, show cause notice and personal hearing notices.",
+    "para": 4
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "the tax proposal was confirmed because the petitioner failed to respond to the show cause notice or appear at the personal hearing.",
+    "para": 5
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "the tax proposal was confirmed because the petitioner failed to respond to the show cause notice or appear at the personal hearing.",
+    "para": 5
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The petitioner asserts that he was unaware of proceedings culminating in the impugned assessment years because the show cause notice and impugned orders were uploaded on the GST portal but not communicated to the petitioner through any other mode.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons set out above, orders impugned in these writ petitions are set aside on condition that the petitioner remits 10% of the disputed tax demand in respect of each assessment period.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15229,
+   "tokens_out": 4685,
+   "seconds": 14.15,
+   "cached": false
+  },
+  {
+   "tokens_in": 3702,
+   "tokens_out": 209,
+   "seconds": 4.15,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

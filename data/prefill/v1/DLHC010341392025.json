@@ -1,0 +1,139 @@
+{
+ "cnr": "DLHC010341392025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "Further, on examination, of GST Portal it has been found that there is a liability of Rs.37,58,737/- for the FY 2019-20 pending against the Assessment Notice issued in the form of DRC-01 on dated 22.05.2024.",
+   "para": 5
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-22",
+     "quote": "This order is stated to have arisen from Show Cause Notice dated 22nd May, 2024 which according to the Petitioner was never duly issued upon him.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-07-30",
+    "quote": "The present petition has been filed by the Petitioner under Article 226 of the Constitution of India challenging the impugned order dated 30 th July, 2024 by which a demand of tax to the tune of Rs.19,31,820/-, interest of Rs.16,14,790/- and penalty of Rs.2,03,099/- totalling to a total sum of Rs.37,49,709/- has been raised against the Petitioner.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-22",
+    "type": "scn_issued",
+    "quote": "This order is stated to have arisen from Show Cause Notice dated 22nd May, 2024 which according to the Petitioner was never duly issued upon him.",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, No reply/response filed by you during the stipulated time given during the course accordingly DRC-07 issued on 30/07/2024.",
+    "para": 5
+   },
+   {
+    "date": "2024-07-30",
+    "type": "order_passed",
+    "quote": "However, No reply/response filed by you during the stipulated time given during the course accordingly DRC-07 issued on 30/07/2024.",
+    "para": 5
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "This order is stated to have arisen from Show Cause Notice dated 22nd May, 2024 which according to the Petitioner was never duly issued upon him.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The petition is disposed of in these terms.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 11242,
+   "tokens_out": 1883,
+   "seconds": 10.36,
+   "cached": false
+  },
+  {
+   "tokens_in": 6954,
+   "tokens_out": 362,
+   "seconds": 8.32,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "cnr": "KAHC010428822025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "a show cause notice proposing a demand under Section 73 of the Central Goods and Services Tax Act, 2017 (for short ‘the Act’), is issued.",
+   "para": 3
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2023-05-20",
+    "quote": "Notwithstanding the same, the order in original springs on 20.05.2023.",
+    "para": 4
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2019-12-10",
+    "type": "other",
+    "quote": "On 10.12.2019, the Enforcement Authority of South Zone, conducts an inspection at the petitioner's registered place of business; prepares a report based on the inspection, the accounts of the petitioner was subjected to the audit enquiry and audit observation on 11.01.2023.",
+    "para": 3
+   },
+   {
+    "date": "2023-01-11",
+    "type": "other",
+    "quote": "the accounts of the petitioner was subjected to the audit enquiry and audit observation on 11.01.2023.",
+    "para": 3
+   },
+   {
+    "date": "2023-02-03",
+    "type": "other",
+    "quote": "On 03.02.2023, the audit report was communicated to the petitioner.",
+    "para": 3
+   },
+   {
+    "date": "2023-02-20",
+    "type": "reply_filed",
+    "quote": "The petitioner submitted a detailed reply on 20.02.2023 contesting all the observations made in the course of the audit report.",
+    "para": 3
+   },
+   {
+    "date": "2023-04-10",
+    "type": "pre_scn_intimation",
+    "quote": "The petitioner then was in receipt of an Intimation Notice on 10.04.2023 and despite the objections filed, a show cause notice proposing a demand under Section 73 of the Central Goods and Services Tax Act, 2017 (for short ‘the Act’), is issued.",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "scn_issued",
+    "quote": "despite the objections filed, a show cause notice proposing a demand under Section 73 of the Central Goods and Services Tax Act, 2017 (for short ‘the Act’), is issued.",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "The petitioner again submits another detailed reply with supporting documents contesting the allegations made therein.",
+    "para": 3
+   },
+   {
+    "date": "2023-05-20",
+    "type": "order_passed",
+    "quote": "Notwithstanding the same, the order in original springs on 20.05.2023.",
+    "para": 4
+   },
+   {
+    "date": null,
+    "type": "rectification_rejected",
+    "quote": "The rectification application comes to be rejected.",
+    "para": 4
+   },
+   {
+    "date": "2024-08-30",
+    "type": "appeal_dismissed",
+    "quote": "The petitioner challenges the said rectification application within the department and an order in appeal is passed on 30.08.2024, confirming the tax demand.",
+    "para": 4
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In the light of the non-consideration of the documents that were placed before the appellate authority in the ultimate order of the appellate authority, then it appears the procedural flaw has emerged that the documents are not considered by the appellate authority in the order, which would also be in violation of the principles of natural justice as the opportunity that was granted to place evidence on record does not bear consideration in the impugned order.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": true,
+   "quote": "The petition is allowed-in-part;",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12443,
+   "tokens_out": 2129,
+   "seconds": 11.2,
+   "cached": false
+  },
+  {
+   "tokens_in": 3853,
+   "tokens_out": 221,
+   "seconds": 10.36,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,142 @@
+{
+ "cnr": "HCMA011876792024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "passed under Section 73 of Tamil Nadu Goods and Services Tax Act, 2017 and Central Goods and Services Tax Act, 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "GSTIN: 33AAJFN863K1ZT/2018-19",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-08-30",
+     "quote": "The learned counsel for the petitioner submitted that Show Cause Notice dated 30.08.2023 as well as the orders dated 23.04.2024 issued by the respondents were uploaded in the “Additional Notices” tab of the GST portal.",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "The learned counsel for the petitioner submitted that Show Cause Notice dated 30.08.2023 as well as the orders dated 23.04.2024 issued by the respondents were uploaded in the “Additional Notices” tab of the GST portal.",
+     "para": 4
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-23",
+    "quote": "The learned counsel for the petitioner submitted that Show Cause Notice dated 30.08.2023 as well as the orders dated 23.04.2024 issued by the respondents were uploaded in the “Additional Notices” tab of the GST portal.",
+    "para": 4
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "The learned counsel for the petitioner submitted that Show Cause Notice dated 30.08.2023 as well as the orders dated 23.04.2024 issued by the respondents were uploaded in the “Additional Notices” tab of the GST portal.",
+    "para": 4
+   }
+  },
+  "events": [
+   {
+    "date": "2023-08-30",
+    "type": "scn_issued",
+    "quote": "Show Cause Notice dated 30.08.2023 as well as the orders dated 23.04.2024 issued by the respondents were uploaded in the “Additional Notices” tab of the GST portal.",
+    "para": 4
+   },
+   {
+    "date": "2024-04-23",
+    "type": "order_passed",
+    "quote": "Show Cause Notice dated 30.08.2023 as well as the orders dated 23.04.2024 issued by the respondents were uploaded in the “Additional Notices” tab of the GST portal.",
+    "para": 4
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "As far as this case is concerned, without issuing any prior notice to the petitioner and also, without providing an opportunity to the petitioner, the respondents have passed the impugned orders, which is in violation of the principles of natural justice.",
+    "quote_source": "court",
+    "para": 7
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "As far as this case is concerned, without issuing any prior notice to the petitioner and also, without providing an opportunity to the petitioner, the respondents have passed the impugned orders, which is in violation of the principles of natural justice.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, this writ petition is disposed of.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13825,
+   "tokens_out": 5139,
+   "seconds": 15.92,
+   "cached": false
+  },
+  {
+   "tokens_in": 6472,
+   "tokens_out": 615,
+   "seconds": 8.0,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

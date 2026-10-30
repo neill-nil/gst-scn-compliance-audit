@@ -1,0 +1,148 @@
+{
+ "cnr": "DLHC011073652025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "for the tax period July 2017 to March 2018(hereinafter, ‘impugned order’).",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-27",
+     "quote": "impugned Show Cause Notice dated 27th September, 2023 (hereinafter, ‘impugned SCN’)",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "the impugned SCN and the subsequent reminder notice were both uploaded on the ‘Additional Notices Tab’ and the Petitioner had no knowledge of the same.",
+     "para": 10
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-11-20",
+    "quote": "impugned order dated 20th November, 2023 passed by the Sales Tax Officer Class II/AVATO, Ward 88, Zone-8, for the tax period July 2017 to March 2018(hereinafter, ‘impugned order’).",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-27",
+    "type": "scn_issued",
+    "quote": "in this matter, the impugned SCN was issued to the Petitioner on 27th September, 2023",
+    "para": 9
+   },
+   {
+    "date": "2023-11-10",
+    "type": "other",
+    "quote": "followed by a reminder notice dated 10th November, 2023.",
+    "para": 9
+   },
+   {
+    "date": "2023-11-20",
+    "type": "order_passed",
+    "quote": "Pursuant thereto, the impugned order was passed on 20th November, 2023.",
+    "para": 9
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Under such circumstances, considering the fact that the Petitioner did not get a proper opportunity to be heard and no reply to the impugned SCN has been filed by the Petitioner, the matter deserves to be remanded back to the concerned Adjudicating Authority.",
+    "quote_source": "court",
+    "para": 13
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "However, it is made clear that the issue in respect of the validity of the impugned notifications is left open.",
+    "quote_source": "court",
+    "para": 17
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 14
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 19933,
+   "tokens_out": 5002,
+   "seconds": 12.0,
+   "cached": false
+  },
+  {
+   "tokens_in": 12523,
+   "tokens_out": 540,
+   "seconds": 9.24,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

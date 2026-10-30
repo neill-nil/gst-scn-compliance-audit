@@ -1,0 +1,156 @@
+{
+ "cnr": "WBCHCJ0030552026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "A final report was drawn by the enforcement officer on 9th December, 2022 recommending the case for adjudication under Section 74 of the WBGST/CGST Act, 2017.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-03-13",
+    "quote": "The Deputy Commissioner, State GST, Bureau of Investigation, North Bengal, HQ, as an adjudication authority, passed an order dated 13th March, 2024.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-01-29",
+    "type": "other",
+    "quote": "An enforcement case was initiated against the petitioner on 29 January, 2021 and subsequently notice was issued to produce the documentary evidences to prove the genuineness of ITC.",
+    "para": 2
+   },
+   {
+    "date": "2022-12-09",
+    "type": "other",
+    "quote": "A final report was drawn by the enforcement officer on 9th December, 2022 recommending the case for adjudication under Section 74 of the WBGST/CGST Act, 2017.",
+    "para": 2
+   },
+   {
+    "date": "2023-03-02",
+    "type": "pre_scn_intimation",
+    "quote": "On the basis of the recommendation of the enforcement officer, an adjudication proceeding under Section 74 (5) of the WBGST/CGST Act, 2017 was initiated against the petitioner on 2nd March, 2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-03-15",
+    "type": "scn_issued",
+    "quote": "Thereafter a show cause notice in GST/01 was issued to the petitioner on 15th March, 2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-04-24",
+    "type": "other",
+    "quote": "Alleging that the petitioner failed to reply to the show cause notice, two reminder notices were issued to the petitioner on 24th April, 2023 and 21st December, 2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-21",
+    "type": "other",
+    "quote": "Alleging that the petitioner failed to reply to the show cause notice, two reminder notices were issued to the petitioner on 24th April, 2023 and 21st December, 2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-28",
+    "type": "reply_filed",
+    "quote": "Petitioner replied to the second reminder notice by a reply on 28th December, 2023.",
+    "para": 2
+   },
+   {
+    "date": "2024-03-13",
+    "type": "order_passed",
+    "quote": "The Deputy Commissioner, State GST, Bureau of Investigation, North Bengal, HQ, as an adjudication authority, passed an order dated 13th March, 2024.",
+    "para": 2
+   },
+   {
+    "date": "2025-03-20",
+    "type": "appeal_dismissed",
+    "quote": "The appellate authority, by an order dated March 20, 2025, dismissed the said appeal as not entertained as the same was submitted electronically beyond the stipulated time.",
+    "para": 3
+   },
+   {
+    "date": "2026-05-27",
+    "type": "recovery_or_attachment",
+    "quote": "This Application under Article 226 of the Constitution of India is at the instance of the Registered person and is directed against the adjudication order dated March 13, 2024 passed by the first respondent; the appellate order dated March 20, 2025 passed by the second respondent and the recovery letter dated May 27, 2026.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "It was observed in the said order that the Input Tax Credit (ITC) claimed on inward supplies from five suppliers were found to be ineligible and the petitioner was liable to reverse the ineligible ITC along with interest and penalty under Section 74 of the WBGST.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "authority lacked jurisdiction to adjudicate",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "She further submitted that the respondent no.1 being an officer under the Bureau of Investigation, lacks inherent jurisdiction to issue show cause notice and pass an order of adjudication.",
+    "quote_source": "argument",
+    "para": 5
+   },
+   {
+    "type": "other_procedural",
+    "note": "state authorities lacked jurisdiction without cross empowerment",
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "She submitted that the show cause notice was issued and the adjudication order was passed by the State Tax Authorities.",
+    "quote_source": "argument",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "Accordingly, the writ petition stands allowed.",
+   "para": 29
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 19877,
+   "tokens_out": 5684,
+   "seconds": 16.33,
+   "cached": false
+  },
+  {
+   "tokens_in": 5914,
+   "tokens_out": 210,
+   "seconds": 3.27,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

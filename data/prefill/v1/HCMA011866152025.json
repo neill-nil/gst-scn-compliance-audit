@@ -1,0 +1,148 @@
+{
+ "cnr": "HCMA011866152025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "and the order under Section 73 dated 18.02.2025",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "passed by the first respondent for the AY 2020-21 and to quash the same",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-23",
+     "quote": "The learned counsel for the petitioner would submit that the respondent has issued a show cause notice in Form GST DRC - 01 on 23.11.2024",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "it is evident that the impugned show cause notice was uploaded on the GST Portal Tab.",
+     "para": 5
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-18",
+    "quote": "The challenge in this Writ Petition is to the order dated 18.02.2025 passed by the first respondent",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-23",
+    "type": "scn_issued",
+    "quote": "The learned counsel for the petitioner would submit that the respondent has issued a show cause notice in Form GST DRC - 01 on 23.11.2024",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "Since the petitioner failed to file reply to the said show cause notice, the first respondent has confirmed the proposals contained in the show cause notice and passed the present impugned order.",
+    "para": 3
+   },
+   {
+    "date": "2025-02-18",
+    "type": "order_passed",
+    "quote": "The challenge in this Writ Petition is to the order dated 18.02.2025 passed by the first respondent for the AY 2020-21 and to quash the same and also consequential direction to the respondent to quash the summary order dated 18.02.2025 and remand back the matter to the respondent.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, this Court finds that there is a lack of opportunities being provided to serve the notices/orders etc., effectively to the petitioner.",
+    "quote_source": "court",
+    "para": 7
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In such circumstances, this Court is of the view that the impugned assessment order came to be passed without affording any opportunity of personal hearing to the petitioner, confirming the proposals contained in the show cause notice.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above observations & directions, this Writ Petition is disposed of.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10995,
+   "tokens_out": 1805,
+   "seconds": 10.08,
+   "cached": false
+  },
+  {
+   "tokens_in": 6830,
+   "tokens_out": 530,
+   "seconds": 8.41,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

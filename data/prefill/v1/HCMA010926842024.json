@@ -1,0 +1,151 @@
+{
+ "cnr": "HCMA010926842024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "GSTIN: 33AAPPP8112M1ZA / 2018-2019 dated 20.07.2023",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-05-17",
+     "quote": "show cause notice dated 17.05.2023",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "because the show cause notice and other communications were only uploaded on the GST portal",
+     "para": 0
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-07-20",
+    "quote": "An order in original dated 20.07.2023 is assailed on the ground that the petitioner did not have a reasonable opportunity to contest the tax demand on merits.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-03-14",
+    "type": "pre_scn_intimation",
+    "quote": "principles of natural justice were complied with by issuing intimation dated 14.03.2023",
+    "para": 3
+   },
+   {
+    "date": "2023-05-17",
+    "type": "scn_issued",
+    "quote": "show cause notice dated 17.05.2023",
+    "para": 3
+   },
+   {
+    "date": "2023-06-13",
+    "type": "other",
+    "quote": "and by issuing a reminder on 13.06.2023.",
+    "para": 3
+   },
+   {
+    "date": "2023-07-20",
+    "type": "order_passed",
+    "quote": "An order in original dated 20.07.2023 is assailed on the ground that the petitioner did not have a reasonable opportunity to contest the tax demand on merits.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "On perusal of the impugned order, it is clear that the respondent concluded that ITC had been wrongly availed of and that the tax proposal in that regard was being confirmed because the petitioner did not reply to the show cause notice.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "By asserting that the petitioner was unaware of proceedings culminating in the impugned order because the show cause notice and other communications were only uploaded on the GST portal, the present writ petition was filed.",
+    "quote_source": "argument",
+    "para": 1
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Therefore, impugned order dated 20.07.2023 is set aside on condition that the petitioner remits 10% of the disputed demand towards tax and cess within a period of two weeks from the date of receipt of a copy of this order.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13211,
+   "tokens_out": 5114,
+   "seconds": 17.55,
+   "cached": false
+  },
+  {
+   "tokens_in": 2693,
+   "tokens_out": 223,
+   "seconds": 1.85,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

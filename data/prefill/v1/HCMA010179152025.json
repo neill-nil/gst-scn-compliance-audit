@@ -1,0 +1,160 @@
+{
+ "cnr": "HCMA010179152025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "order dated 28.08.2024 in GSTN 33AESPA5807M2Z9/2019-20",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-25",
+     "quote": "In the case on hand, the show cause notice was issued on 25.05.2024.",
+     "para": 6
+    },
+    "reply_due": {
+     "value": "2024-06-25",
+     "quote": "whereby the time limit was provided for filing reply on or before 25.06.2024 and the personal hearing was fixed on 26.06.2024.",
+     "para": 2
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "whereby the time limit was provided for filing reply on or before 25.06.2024 and the personal hearing was fixed on 26.06.2024.",
+     "para": 2
+    },
+    "hearing_date": {
+     "value": "2024-06-26",
+     "quote": "whereby the time limit was provided for filing reply on or before 25.06.2024 and the personal hearing was fixed on 26.06.2024.",
+     "para": 2
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "Admittedly, the said notice was uploaded under the “View Additional Notices and Orders” column",
+     "para": 6
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-28",
+    "quote": "the records of the respondent in order dated 28.08.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "the respondent uploaded DRC-01, reminders and the impugned order dated 28.08.2024 in “View Additional Notices” and Orders” column on GST Portal",
+    "para": 2
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-25",
+    "type": "scn_issued",
+    "quote": "In the case on hand, the show cause notice was issued on 25.05.2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-06-25",
+    "type": "reply_not_filed",
+    "quote": "thereby, reply could not be filed in time",
+    "para": 6
+   },
+   {
+    "date": "2024-06-26",
+    "type": "hearing_missed",
+    "quote": "Under these circumstances, ex parte impugned order came to be passed by the respondent without providing any opportunity of personal hearing to the petitioner",
+    "para": 2
+   },
+   {
+    "date": "2024-08-28",
+    "type": "order_passed",
+    "quote": "order dated 28.08.2024 in GSTN 33AESPA5807M2Z9/2019-20",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Further, he would submit that in the present case, the respondent has erroneously reversed the ITC of Rs.31,437/- on the ground that the suppliers have filed GSTR 3B return with NIL turnover and failed to pay tax on the invoices declared in GSTR 1 for the relevant period.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Admittedly, the said notice was uploaded under the “View Additional Notices and Orders” column and the part-time accountant who was engaged by the petitioner for filing returns, did not cross-check the 'view additional notices and orders' column and thereby, reply could not be filed in time and it is neither willful nor wanton.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "For all the above reasons, it is clear that the impugned order was passed in violation of principles of natural justice without providing any proper opportunity to the petitioner.",
+    "quote_source": "court",
+    "para": 17
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "(i) The impugned order dated 28.08.2024 is set aside and the matter is remanded to the respondent for fresh consideration.",
+   "para": 17
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 6640,
+   "tokens_out": 1164,
+   "seconds": 6.68,
+   "cached": false
+  },
+  {
+   "tokens_in": 10217,
+   "tokens_out": 652,
+   "seconds": 9.19,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

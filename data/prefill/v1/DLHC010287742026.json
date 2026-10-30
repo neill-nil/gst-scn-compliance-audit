@@ -1,0 +1,154 @@
+{
+ "cnr": "DLHC010287742026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "under Section 73 of the Central Goods and Services Tax Act, 2017 read with the Delhi Goods and Services Tax Act, 2017",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "Financial Year 2018–19",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-10",
+     "quote": "Show Cause Notice dated 10th December, 2023",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "uploaded under the 'Additional Notices & Orders' tab on the GST Portal",
+     "para": 5
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-03-15",
+    "quote": "Order dated 15th March, 2024",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "the impugned adjudication order dated 15.03.2024, were likewise uploaded under the 'Additional Notices & Orders' tab",
+    "para": 5
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-10",
+    "type": "scn_issued",
+    "quote": "the Show Cause Notice dated 10.12.2023, from which the impugned order arises, together with the corresponding Summary of Show Cause Notice",
+    "para": 5
+   },
+   {
+    "date": "2024-02-19",
+    "type": "other",
+    "quote": "Reminder-I dated 19.02.2024",
+    "para": 5
+   },
+   {
+    "date": "2024-02-28",
+    "type": "other",
+    "quote": "Reminder-II dated 28.02.2024",
+    "para": 5
+   },
+   {
+    "date": "2024-03-15",
+    "type": "order_passed",
+    "quote": "resulting in the impugned ex parte order",
+    "para": 5
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Consequently, the Petitioner was unable to file a reply to the impugned Show Cause Notice or appear before the Adjudicating Authority for personal hearing, resulting in the impugned ex parte order.",
+    "quote_source": "argument",
+    "para": 5
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "As observed by this Court, that the challenge to the above mentioned notifications is presently under consideration before the Supreme Court in S.L.P No 4240/2025 titled M/s HCC-SEW-MEIL- AAG JV v. Assistant Commissioner of State Tax &Ors., the challenge made by the Petitioner to the impugned notifications in the present proceedings shall also be subject to the outcome of the decision of the Supreme Court.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside, subject to payment of Rs.20,000/- as costs to the Delhi High Court Bar Association.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 17079,
+   "tokens_out": 5035,
+   "seconds": 14.65,
+   "cached": false
+  },
+  {
+   "tokens_in": 4627,
+   "tokens_out": 363,
+   "seconds": 3.48,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,181 @@
+{
+ "cnr": "HCMA010006852025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "During the relevant period of 2019-20, the petitioner filed its returns and paid the appropriate taxes.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-20",
+     "quote": "Pursuant thereto, a Show Cause Notice in DRC-01 was issued on 20.05.2024, followed by reminder on 10.07.2024.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "Personal hearings were offered on 31.07.2024 and 07.08.2024.",
+     "para": 2
+    },
+    "hearing_date": {
+     "value": "2024-07-31",
+     "quote": "Personal hearings were offered on 31.07.2024 and 07.08.2024.",
+     "para": 2
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-19",
+    "quote": "The present writ petition is filed challenging the impugned order passed by the respondent dated 19.08.2024 on the premise that the petitioner had not submitted its reply when, in fact, the petitioner had submitted its replies on 29.06.2024 and 11.07.2024 in response to the notice in DRC-01 dated 30.05.2024.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-20",
+    "type": "scn_issued",
+    "quote": "Pursuant thereto, a Show Cause Notice in DRC-01 was issued on 20.05.2024, followed by reminder on 10.07.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-06-29",
+    "type": "reply_filed",
+    "quote": "In response to the Show Cause Notice, the petitioner had filed its replies on 29.06.2024 and 11.07.2024 providing a detailed explanation for the alleged discrepancies.",
+    "para": 2
+   },
+   {
+    "date": "2024-07-10",
+    "type": "other",
+    "quote": "Pursuant thereto, a Show Cause Notice in DRC-01 was issued on 20.05.2024, followed by reminder on 10.07.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-07-11",
+    "type": "reply_filed",
+    "quote": "In response to the Show Cause Notice, the petitioner had filed its replies on 29.06.2024 and 11.07.2024 providing a detailed explanation for the alleged discrepancies.",
+    "para": 2
+   },
+   {
+    "date": "2024-07-31",
+    "type": "hearing_scheduled",
+    "quote": "Personal hearings were offered on 31.07.2024 and 07.08.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-08-07",
+    "type": "hearing_scheduled",
+    "quote": "Personal hearings were offered on 31.07.2024 and 07.08.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-08-19",
+    "type": "order_passed",
+    "quote": "The present writ petition is filed challenging the impugned order passed by the respondent dated 19.08.2024 on the premise that the petitioner had not submitted its reply when, in fact, the petitioner had submitted its replies on 29.06.2024 and 11.07.2024 in response to the notice in DRC-01 dated 30.05.2024.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "However, on examination of the information furnished in GSTR-3B, GSTR-01, GSTR-2A, EWB and other records available, it was noticed that there was an Excess Claim of Input Tax Credit.",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "In response to the Show Cause Notice, the petitioner had filed its replies on 29.06.2024 and 11.07.2024 providing a detailed explanation for the alleged discrepancies.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "However, the impugned order proceeds on the premise that the petitioner had not filed any objection nor attended the personal hearing which, according to the petitioner, suffers from non-application of mind.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "However, the impugned order proceeds on the premise that the petitioner had not filed any objection nor attended the personal hearing which, according to the petitioner, suffers from non-application of mind.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view thereof, the impugned order dated 19.08.2024 is set aside.",
+   "para": 4
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13187,
+   "tokens_out": 5752,
+   "seconds": 15.9,
+   "cached": false
+  },
+  {
+   "tokens_in": 5671,
+   "tokens_out": 380,
+   "seconds": 7.36,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [
+   "facts.document_contents[2]: same words as a court finding (would leak the answer)"
+  ],
+  "quotes_not_found": []
+ }
+}

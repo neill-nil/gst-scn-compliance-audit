@@ -1,0 +1,133 @@
+{
+ "cnr": "DLHC010857702025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "seeking as to why the demand should not be raised against the Petitioner firm under Section 73(1) of the Central Goods and Services Tax Act, 2017.",
+   "para": 5
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "for the period 01st April, 2019 to 31st March, 2020",
+   "para": 4
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-08-28",
+    "quote": "impugned Order-in-Original dated 28th August, 2024",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-04-05",
+    "type": "scrutiny_notice",
+    "quote": "A notice in Form GST ASMT 10 was issued to the Petitioner firm on 5th April, 2024",
+    "para": 4
+   },
+   {
+    "date": "2024-05-29",
+    "type": "scn_issued",
+    "quote": "Thereafter a Show Cause Notice was issued on 29th May, 2024",
+    "para": 5
+   },
+   {
+    "date": "2024-07-30",
+    "type": "hearing_scheduled",
+    "quote": "Personal hearing notices were issued on 30th July, 2024, 06th August, 2024 and 13th August, 2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-08-06",
+    "type": "hearing_scheduled",
+    "quote": "Personal hearing notices were issued on 30th July, 2024, 06th August, 2024 and 13th August, 2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-08-13",
+    "type": "hearing_scheduled",
+    "quote": "Personal hearing notices were issued on 30th July, 2024, 06th August, 2024 and 13th August, 2024.",
+    "para": 6
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, the Petitioner neither replied to the notice or the SCN",
+    "para": 6
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "nor did she attend the personal hearing.",
+    "para": 6
+   },
+   {
+    "date": "2024-08-28",
+    "type": "order_passed",
+    "quote": "The impugned Order-in-Original was passed on 28th August, 2024",
+    "para": 7
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "Insofar as the Financial Year 2019-2020 is concerned, in respect of which the present Petition would be connected, challenge to the Notification No. 9/2023- Central Tax dated 31st March, 2023, Notification No. 56/2023- Central Tax dated 28th December, 2023, which is also pending before the Supreme Court - though, no specific orders seeking quashing of the said notifications has been sought in the present Petition.",
+    "quote_source": "argument",
+    "para": 9
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, subject to payment of Rs. 1,00,000/- as costs, the impugned Order-in-Original is set aside.",
+   "para": 15
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 18369,
+   "tokens_out": 5065,
+   "seconds": 13.46,
+   "cached": false
+  },
+  {
+   "tokens_in": 5272,
+   "tokens_out": 237,
+   "seconds": 4.07,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[0]:extension_notification_validity"
+  ]
+ }
+}

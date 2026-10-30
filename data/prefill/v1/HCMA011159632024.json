@@ -1,0 +1,154 @@
+{
+ "cnr": "HCMA011159632024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-11-22",
+     "quote": "Thereafter, show cause notice dated 22.11.2023 was issued.",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "In view of the long interval between the intimation and show cause notice, it is stated that the petitioner did not notice the show cause notice which was uploaded on the common portal.",
+     "para": 1
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-02-05",
+    "quote": "An order in original dated 05.02.2024 is assiled on the ground that the petitioner did not have a reasonable opportunity to contest the tax demand on merits.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-03-04",
+    "type": "pre_scn_intimation",
+    "quote": "Upon receipt of intimation dated 04.03.2023, the petitioner replied on 08.04.2024 and stated that the goods were purchased in a bona-fide manner and that the supplier remitted taxes in respect thereof.",
+    "para": 1
+   },
+   {
+    "date": "2024-04-08",
+    "type": "reply_filed",
+    "quote": "Upon receipt of intimation dated 04.03.2023, the petitioner replied on 08.04.2024 and stated that the goods were purchased in a bona-fide manner and that the supplier remitted taxes in respect thereof.",
+    "para": 1
+   },
+   {
+    "date": "2023-11-22",
+    "type": "scn_issued",
+    "quote": "Thereafter, show cause notice dated 22.11.2023 was issued.",
+    "para": 1
+   },
+   {
+    "date": "2024-02-05",
+    "type": "order_passed",
+    "quote": "An order in original dated 05.02.2024 is assiled on the ground that the petitioner did not have a reasonable opportunity to contest the tax demand on merits.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "Upon receipt of intimation dated 04.03.2023, the petitioner replied on 08.04.2024 and stated that the goods were purchased in a bona-fide manner and that the supplier remitted taxes in respect thereof.",
+    "para": 1
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "On examining the impugned order, it is clear that taxes were paid by the supplier concerned because the order records that payment by the supplier was reflected in the auto populated GSTR 2A.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "In view of the long interval between the intimation and show cause notice, it is stated that the petitioner did not notice the show cause notice which was uploaded on the common portal.",
+    "quote_source": "argument",
+    "para": 1
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "W.P.No.18605 of 2024 is disposed of on the above terms.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10558,
+   "tokens_out": 1862,
+   "seconds": 11.13,
+   "cached": false
+  },
+  {
+   "tokens_in": 6237,
+   "tokens_out": 412,
+   "seconds": 9.34,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

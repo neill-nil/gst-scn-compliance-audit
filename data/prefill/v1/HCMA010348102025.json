@@ -1,0 +1,162 @@
+{
+ "cnr": "HCMA010348102025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "F.Y.2019-20",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-07-19",
+     "quote": "Thereafter, Show Cause Notice dated 19.07.2024 came to be issued to the petitioner",
+     "para": 3
+    },
+    "reply_due": {
+     "value": "2022-06-09",
+     "quote": "wherein it was stated that the petitioner shall file the reply on or before 09.06.2022",
+     "para": 3
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-19",
+    "quote": "Impugned Order passed in GSTIN:33AAJPB3007B1ZP/2019-20 dated 19.08.2024",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-05-10",
+    "type": "scrutiny_notice",
+    "quote": "initially the respondent issued notice dated 10.05.2022 to the petitioner intimating certain discrepancies",
+    "para": 3
+   },
+   {
+    "date": "2022-06-09",
+    "type": "reply_filed",
+    "quote": "for which the petitioner submitted its reply on 09.06.2022.",
+    "para": 3
+   },
+   {
+    "date": "2024-07-19",
+    "type": "scn_issued",
+    "quote": "Thereafter, Show Cause Notice dated 19.07.2024 came to be issued to the petitioner which is an extract of notice dated 10.05.2022",
+    "para": 3
+   },
+   {
+    "date": "2024-08-19",
+    "type": "order_passed",
+    "quote": "Subsequently, the respondent passed the impugned order demanding tax along with interest and penalty.",
+    "para": 3
+   },
+   {
+    "date": "2025-01-07",
+    "type": "recovery_or_attachment",
+    "quote": "Subsequently, the 2nd Respondent issued a recovery notice under FORM DRC-13 on 07.01.2025 to the Indian Bank (3rd respondent in W.P.No.5955 to 2025) to recover the demand amount and freeze the petitioner's account.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Thereafter Show Cause Notice dated 19.07.2024 came to be issued to the petitioner which is an extract of notice dated 10.05.2022, wherein it was stated that the petitioner shall file the reply on or before 09.06.2022 and the notice itself was served on 19.07.2024 and hence it is barred by limitation.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Further, it appears that no opportunity of personal hearing was provided to the petitioner prior to the passing of impugned order.",
+    "quote_source": "court",
+    "para": 9
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, this Court passes the following order:- (i) The impugned order dated 19.08.2024 is set aside and the matter is remanded to 1st the respondent for fresh consideration on condition that the petitioner shall pay 25% of disputed tax to the respondent within a period of four weeks from the date of receipt of a copy of this order and the setting aside of the impugned order will take effect from the date of payment of the said amount.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14993,
+   "tokens_out": 5164,
+   "seconds": 16.29,
+   "cached": false
+  },
+  {
+   "tokens_in": 3584,
+   "tokens_out": 411,
+   "seconds": 3.04,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[0]:limitation"
+  ]
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "cnr": "GAHC010166902024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "which is to be recovered in terms of proviso to Section 73(2) of the Finance Act 1994 read with Section 174 of CGST Act, 2017 and order for recovery of same.",
+   "para": 20
+  },
+  "financial_years": {
+   "value": [
+    "2014-15",
+    "2015-16",
+    "2016-17",
+    "2017-18"
+   ],
+   "quote": "for the period from 2014-2015 to 2017-2018.",
+   "para": 4
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2020-12-31",
+     "quote": "The appellant had issued a consolidated show cause notice dated 31/12/2020 demanding payment of Service Tax for 4(four) different assessment years, as the same had not been paid by the respondent assesse on account of suppression of facts and documents.",
+     "para": 19
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2022-03-23",
+    "quote": "The Adjudicating Authority, vide order dated 23-03-2022, then passed the demand for Service Tax, as follows:",
+    "para": 20
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2020-12-31",
+    "type": "scn_issued",
+    "quote": "The appellants had issued a consolidated show cause notice dated 31/12/2020 demanding payment of Service Tax for 4(four) different assessment years, as the same had not been paid by the respondent assesse on account of suppression of facts and documents.",
+    "para": 19
+   },
+   {
+    "date": "2021-02-20",
+    "type": "reply_filed",
+    "quote": "The respondent's case on the other hand is that the assessee in their reply to the Demand-cum-Show- Cause Notice, vide letter dated 20-02-2021, prayed for allowing them 30 days’ time to submit relevant documents, besides the Form-26AS for the years 2014-2015 to 2017-2018, Audited Balance Sheets and copies of the Income Tax Returns submitted for the above period.",
+    "para": 7
+   },
+   {
+    "date": "2022-03-23",
+    "type": "order_passed",
+    "quote": "The Adjudicating Authority, vide order dated 23-03-2022, then passed the demand for Service Tax, as follows:",
+    "para": 20
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "Further, since they could not locate Work Orders relating to the earlier years, they prayed for time from the Adjudicating Authority to collect the required documents and submit the same.",
+    "para": 7
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "a. I confirm the demand of Service Tax and cess amounting to Rs. 2,60,99,364/- (Rupees Two Crore Sixty Lakhs Ninety Nine Thousand Three Hundred and. Sixty Four only from M/s Rishu Enterprise for the period from 2014-15 (Oct-March) to 2017-18 (April-June) which is to be recovered in terms of proviso to Section 73(2) of the Finance Act 1994 read with Section 174 of CGST Act, 2017 and order for recovery of same.",
+    "para": 20
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "Whether the appellant could have filed an appeal on the basis of a composite notice demanding Service Tax from 4 (four) assessment years, the total of which crosses the monetary limit of Rupees 2 Crores, without any of the Service Tax for each individual assessment year having crossed the above threshold.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On considering the chart given by the appellant with regard to the demand for service tax payable by the respondent for the years 2014-2015 to 2017-2018 vis-à-vis the show cause notice issued on 31.12.2020, we find that the claim for Service Tax for the assessment year 2014-2015 is barred by limitation in terms of Section 71(3) of the Finance Act, 1994.",
+    "quote_source": "court",
+    "para": 47
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "For the reasons stated above, the appeal stands dismissed.",
+   "para": 49
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13235,
+   "tokens_out": 1244,
+   "seconds": 6.67,
+   "cached": false
+  },
+  {
+   "tokens_in": 11468,
+   "tokens_out": 376,
+   "seconds": 3.52,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.notices[0].date:facts.notices[0].date"
+  ]
+ }
+}

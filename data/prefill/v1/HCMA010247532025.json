@@ -1,0 +1,166 @@
+{
+ "cnr": "HCMA010247532025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23"
+   ],
+   "quote": "impugned order in GSTIN: 33AABF09819N1ZS/ 2019-20 dated 26.07.2024, 33AABF09819N1ZS/ 2020-21 dated 14.08.2024, 33AABF09819N1ZS/ 2021-22 dated 16.08.2024 and 33AABF09819N1ZS/ 2022-23 dated 16.08.2024 respectively",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-02-29",
+     "quote": "the notice in Form GST DRC-01 was issued by the respondents on 29.02.2024",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-07-26",
+    "quote": "impugned order in GSTIN: 33AABF09819N1ZS/ 2019-20 dated 26.07.2024, 33AABF09819N1ZS/ 2020-21 dated 14.08.2024, 33AABF09819N1ZS/ 2021-22 dated 16.08.2024 and 33AABF09819N1ZS/ 2022-23 dated 16.08.2024 respectively passed by the 2nd respondent",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-02-29",
+    "type": "scn_issued",
+    "quote": "the notice in Form GST DRC-01 was issued by the respondents on 29.02.2024",
+    "para": 2
+   },
+   {
+    "date": "2024-03-22",
+    "type": "reply_filed",
+    "quote": "for which, the reply, along with all the relevant documents, were filed by the petitioner on 26.03.2024 & 22.03.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-03-26",
+    "type": "reply_filed",
+    "quote": "for which, the reply, along with all the relevant documents, were filed by the petitioner on 26.03.2024 & 22.03.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-07-26",
+    "type": "order_passed",
+    "quote": "These writ petitions have been filed challenging the impugned orders dated 26.07.2024, 14.08.2024 & 16.08.2024 passed by the 2nd respondent.",
+    "para": 0
+   },
+   {
+    "date": "2024-08-14",
+    "type": "order_passed",
+    "quote": "These writ petitions have been filed challenging the impugned orders dated 26.07.2024, 14.08.2024 & 16.08.2024 passed by the 2nd respondent.",
+    "para": 0
+   },
+   {
+    "date": "2024-08-16",
+    "type": "order_passed",
+    "quote": "These writ petitions have been filed challenging the impugned orders dated 26.07.2024, 14.08.2024 & 16.08.2024 passed by the 2nd respondent.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "the impugned order was passed by the respondent as if no documents were furnished.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In this case, it is clear that the reply was filed by the petitioner, along with all the relevant documents, however, the said reply was not considered by the Assessing Officer while passing the impugned assessment order, which is a clear violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "i) The impugned assessment orders dated 26.07.2024, 14.08.2024 & 16.08.2024 are hereby set aside and these matters are remanded back to the 2nd respondent for fresh consideration.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 11156,
+   "tokens_out": 2927,
+   "seconds": 11.43,
+   "cached": false
+  },
+  {
+   "tokens_in": 3010,
+   "tokens_out": 202,
+   "seconds": 3.11,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "cnr": "HCMD010109172025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "The respondent informed the petitioner that the impugned order had been uploaded on the GSTN common portal on 21.10.2024 and 12.09.2024.",
+    "para": 4
+   }
+  },
+  "events": [],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The impugned orders were merely uploaded on the common portal without being physically served on the petitioner.",
+    "quote_source": "argument",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "With the above observations and directions, these Writ Petitions stand disposed of.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14041,
+   "tokens_out": 4427,
+   "seconds": 11.79,
+   "cached": false
+  },
+  {
+   "tokens_in": 3108,
+   "tokens_out": 162,
+   "seconds": 4.74,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

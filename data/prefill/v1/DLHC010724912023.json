@@ -1,0 +1,103 @@
+{
+ "cnr": "DLHC010724912023",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2022-12-30",
+    "quote": "The impugned OIO dated 30.12.2022 was in relation to the Petitioner in W.P.(C) 6235/2023, whereas, the impugned OIO dated 02.03.2023 was in relation to the Petitioners in W.P.(C) 6376/2023 & W.P.(C) 6648/2023.",
+    "para": 9
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2011-10-25",
+    "type": "scn_issued",
+    "quote": "A common Show Cause Notice dated 25.10.2011 came to be issued and on the passage of the Central Goods and Services Tax Act, 2017, the jurisdiction of the Respondent authorities altered and two (2) impugned OsIO came to be issued.",
+    "para": 4
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "14.12.2021",
+    "para": 13
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "08.11.2021 and 22.11.2021",
+    "para": 13
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "The impugned OsIO dated 30.12.2022 [in W.P.(C) 6235/2023] and 02.03.2023 [in W.P.(C) 6376/2023 & W.P.(C) 6648/2023] passed by the Respondents are hereby quashed.",
+    "quote_source": "court",
+    "para": 22
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "The impugned OsIO dated 30.12.2022 [in W.P.(C) 6235/2023] and 02.03.2023 [in W.P.(C) 6376/2023 & W.P.(C) 6648/2023] passed by the Respondents are hereby quashed.",
+   "para": 22
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 8956,
+   "tokens_out": 517,
+   "seconds": 5.2,
+   "cached": false
+  },
+  {
+   "tokens_in": 7189,
+   "tokens_out": 311,
+   "seconds": 4.4,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.events[0]:scn_issued",
+   "facts.events[1]:reply_filed",
+   "facts.events[2]:reply_filed"
+  ]
+ }
+}

@@ -1,0 +1,168 @@
+{
+ "cnr": "JHHC010173572023",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "failing which show Cause Notice will be issued under Section 73(1).",
+   "para": 4
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "for the period 2018-19 (June 2018 to March 2019).",
+   "para": 6
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2020-12-03",
+     "quote": "Later, a show-cause notice under section 73 of the JGST Act was issued on 3rd December 2020",
+     "para": 8
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2021-01-04",
+    "quote": "Form GST DRC-07 dated 4th January 2021 was issued",
+    "para": 8
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2020-01-17",
+    "type": "other",
+    "quote": "Before passing of the order in Form GST DRC-07, the petitioners were informed by the order dated 17th January 2020 that they had defaulted in filing the Return and thus have to pay interest",
+    "para": 4
+   },
+   {
+    "date": "2020-12-03",
+    "type": "scn_issued",
+    "quote": "Later, a show-cause notice under section 73 of the JGST Act was issued on 3rd December 2020",
+    "para": 8
+   },
+   {
+    "date": "2021-01-04",
+    "type": "order_passed",
+    "quote": "Form GST DRC-07 dated 4th January 2021 was issued and a demand of Rs. 92,96,042.91 under section 73 of the JGST Act was made without any adjudication.",
+    "para": 8
+   },
+   {
+    "date": "2022-12-28",
+    "type": "appeal_dismissed",
+    "quote": "These writ petitions seek to challenge the Orders in Appeal dated 28th December 2022 in Appeal Case Nos. AD200821002136V, AD200821002134Z and AD200821002135X passed by the Additional Commissioner State Tax (Appeal), Jamshedpur Division, Jamshedpur.",
+    "para": 1
+   },
+   {
+    "date": "2023-02-11",
+    "type": "other",
+    "quote": "Soon after these Appeals were dismissed, followed the summary of demand in FORM GST APL-04 all dated 11th February 2023",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "You have filed GSTR-3B after due date, but you have not paid Interest U/S 50 of SGST, 2017 on Tax/Cess in Cash Because it was not system calculated.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Later, a show-cause notice under section 73 of the JGST Act was issued on 3rd December 2020 and, without affording any opportunity of hearing, Form GST DRC-07 dated 4th January 2021 was issued and a demand of Rs. 92,96,042.91 under section 73 of the JGST Act was made without any adjudication.",
+    "quote_source": "argument",
+    "para": 8
+   },
+   {
+    "type": "other_procedural",
+    "note": "interest demand without adjudication",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "We have gone through the orders passed by the State Tax Officer and find that there was no adjudication before a demand for the payment of interest was raised because of the delayed filing of the Returns.",
+    "quote_source": "court",
+    "para": 15
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "Having regard to the aforesaid facts, these writ petitions succeed and the order dated 4th January 2021 in Form GST DRC-07 passed by the State Tax Officer, Jamshedpur Division, Jamshedpur in Reference No. ZD200121000051W, Reference No. ZD200121000052U and Reference No.ZD200121000050Y the appellate order dated 28th December 2022 passed in Appeal Case Nos. AD200821002136V, AD200821002134Z and AD200821002135X by the Additional Commissioner State Tax (Appeal), Jamshedpur Division, Jamshedpur and the summary of demand in FORM GST APL-04 and dated 11th February 2023 passed in Order Nos. ZD2002230008049, ZD200223000803B and ZD200223000800H by the Additional Commissioner, Jamshedpur, Jharkhand are set aside, with a liberty to the department to initiate the adjudication proceeding in accordance with law, if so advised.",
+   "para": 17
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 24443,
+   "tokens_out": 5294,
+   "seconds": 15.64,
+   "cached": false
+  },
+  {
+   "tokens_in": 8309,
+   "tokens_out": 628,
+   "seconds": 3.47,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.outcome:findings.outcome"
+  ]
+ }
+}

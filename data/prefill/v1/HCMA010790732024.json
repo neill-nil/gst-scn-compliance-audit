@@ -1,0 +1,166 @@
+{
+ "cnr": "HCMA010790732024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The summary of the order in Form GST DRC-07 dated 30.12.2023 passed under Section 73 of the Tamil Nadu Goods and Service Tax Act, 2017 (TNGST Act)/ Central Goods and Service Tax Act, 2017 (CGST Act) dated for the Financial Year ('FY') 2017-18 both passed by the Respondent and both having Reference Number ZD3312232756991.",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "The petitioner filed its returns for the Financial Year 2017-18 and paid appropriate taxes.",
+   "para": 4
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-28",
+     "quote": "Thereafter, a notice was found in Form DRC-01, dated 28.09.2023.",
+     "para": 5
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-30",
+    "quote": "The summary of the order in Form GST DRC-07 dated 30.12.2023 passed under Section 73 of the Tamil Nadu Goods and Service Tax Act, 2017 (TNGST Act)/ Central Goods and Service Tax Act, 2017 (CGST Act) dated for the Financial Year ('FY') 2017-18 both passed by the Respondent and both having Reference Number ZD3312232756991.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-28",
+    "type": "scn_issued",
+    "quote": "Thereafter, a notice was found in Form DRC-01, dated 28.09.2023.",
+    "para": 5
+   },
+   {
+    "date": "2023-10-28",
+    "type": "reply_filed",
+    "quote": "The petitioner filed its reply on 28.10.2023, 21.11.2023, 29.11.2023 and 18.12.2023.",
+    "para": 5
+   },
+   {
+    "date": "2023-11-21",
+    "type": "reply_filed",
+    "quote": "The petitioner filed its reply on 28.10.2023, 21.11.2023, 29.11.2023 and 18.12.2023.",
+    "para": 5
+   },
+   {
+    "date": "2023-11-29",
+    "type": "reply_filed",
+    "quote": "The petitioner filed its reply on 28.10.2023, 21.11.2023, 29.11.2023 and 18.12.2023.",
+    "para": 5
+   },
+   {
+    "date": "2023-12-18",
+    "type": "reply_filed",
+    "quote": "The petitioner filed its reply on 28.10.2023, 21.11.2023, 29.11.2023 and 18.12.2023.",
+    "para": 5
+   },
+   {
+    "date": "2023-12-30",
+    "type": "order_passed",
+    "quote": "The summary of the order in Form GST DRC-07 dated 30.12.2023 passed under Section 73 of the Tamil Nadu Goods and Service Tax Act, 2017 (TNGST Act)/ Central Goods and Service Tax Act, 2017 (CGST Act) dated for the Financial Year ('FY') 2017-18 both passed by the Respondent and both having Reference Number ZD3312232756991.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "I find that there is merit in the submission of the learned counsel for petitioner that the impugned order suffers from the vice of non-application of mind inasmuch as there is not even a reference to the replies referred above, in the impugned order of assessment.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "However, the impugned order has been passed without affording an opportunity of personal hearing to the petitioner nor even referring to the reply which amounts to gross violation of principles of natural justice.",
+    "quote_source": "argument",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view thereof, the Respondent is directed to re-do the assessment taking into account the objections, after providing the petitioner a reasonable opportunity of hearing.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14059,
+   "tokens_out": 5539,
+   "seconds": 15.22,
+   "cached": false
+  },
+  {
+   "tokens_in": 3117,
+   "tokens_out": 313,
+   "seconds": 2.9,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

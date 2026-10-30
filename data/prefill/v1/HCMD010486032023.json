@@ -1,0 +1,148 @@
+{
+ "cnr": "HCMD010486032023",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "This Writ Petition is filed challenging the impugned order dated 20.03.2023 for the period 2021-22 on the premise that the denial of the Input Tax Credit on the ground that the petitioner has not received any goods from the alleged supplier is in violation of principles of natural justice.",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2023-03-20",
+    "quote": "This Writ Petition is filed challenging the impugned order dated 20.03.2023 for the period 2021-22 on the premise that the denial of the Input Tax Credit on the ground that the petitioner has not received any goods from the alleged supplier is in violation of principles of natural justice.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-08-04",
+    "type": "pre_scn_intimation",
+    "quote": "In response to Form DRC 01A dated 04.08.2022, the petitioner filed its objection vide letters dated 28.11.2022 and 04.02.2023 inter alia highlighting the following:",
+    "para": 4
+   },
+   {
+    "date": "2022-11-28",
+    "type": "reply_filed",
+    "quote": "In response to Form DRC 01A dated 04.08.2022, the petitioner filed its objection vide letters dated 28.11.2022 and 04.02.2023 inter alia highlighting the following:",
+    "para": 4
+   },
+   {
+    "date": "2023-02-04",
+    "type": "reply_filed",
+    "quote": "In response to Form DRC 01A dated 04.08.2022, the petitioner filed its objection vide letters dated 28.11.2022 and 04.02.2023 inter alia highlighting the following:",
+    "para": 4
+   },
+   {
+    "date": "2023-02-04",
+    "type": "reply_filed",
+    "quote": "4. In response to the notice in DRC-01, the petitioner submitted vide reply dated 04.02.2023 inter alia the following:",
+    "para": 4
+   },
+   {
+    "date": "2023-03-20",
+    "type": "order_passed",
+    "quote": "The claim of ITC made by the petitioner on such supplies was rejected vide impugned order dated 20.03.2023 on the premise that Tvl.Thirumuruga Traders is a bill trader and that there were no actual movement of goods supported by E way bills thus the claim of the Input Tax Credit is illegal.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "The claim of ITC made by the petitioner on such supplies was rejected vide impugned order dated 20.03.2023 on the premise that Tvl.Thirumuruga Traders is a bill trader and that there were no actual movement of goods supported by E way bills thus the claim of the Input Tax Credit is illegal.",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "The purchases from Tvl.Thirumuruga Traders is supported by original purchase invoice.",
+    "para": 4
+   },
+   {
+    "type": "reply_point",
+    "quote": "Consideration for such supplies are made.",
+    "para": 4
+   },
+   {
+    "type": "reply_point",
+    "quote": "Transaction are auto populated in GSTR 2A filed by the said supplier i.e., Tvl.Thirumuruga Traders.",
+    "para": 4
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "On receipt of the above reply, the respondent authorities found that the taxable person viz., Tvl.Thirumuruga Traders was not having any business at the registered place of business and it was also found that they effected a huge amount of outward supplies without having any inward supplies.",
+    "para": 5
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Personal hearing was also sought for by the petitioner placing reliance upon Asia L.P.G. Pvt. Ltd. vs State Of Karnataka And Others reported in (1997) 107 STC 29.",
+    "quote_source": "argument",
+    "para": 4
+   },
+   {
+    "type": "other_procedural",
+    "note": "denial of cross-examination",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The petitioner had prayed for cross examination, placing reliance upon the following judgments of the Hon'ble Supreme Court: (i) State of Kerala Vs K.T.Shaduli Grocery Dealer reported in (1977) 39 STC 478, (ii) T.M.Rajaganapathi Traders VS. Commercial Tax Officer, Salem reported in (2005) 142 STC 130",
+    "quote_source": "argument",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "In view thereof, the challenge to the order of assessment stands rejected.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 16079,
+   "tokens_out": 5386,
+   "seconds": 15.06,
+   "cached": false
+  },
+  {
+   "tokens_in": 4127,
+   "tokens_out": 358,
+   "seconds": 3.12,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

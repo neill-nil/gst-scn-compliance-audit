@@ -1,0 +1,176 @@
+{
+ "cnr": "HCMA010377032025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "On verification of the returns filed by the petitioner for the year 2017-18, it was found by the Officials that the petitioner has availed excess Input Tax Credit on comparison of GSTR-3B and GSTR-2A.",
+   "para": 4
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-11-06",
+     "quote": "Then, the respondent vide Show Cause Notice in Form GST DRC-01 dated 06.11.2023, proposed a liability totalling at Rs.1,54,88,042/- and called upon the petitioner to file its Reply by 21.11.2023 and to appear for personal hearing on 17.11.2023.",
+     "para": 4
+    },
+    "reply_due": {
+     "value": "2023-11-21",
+     "quote": "Then, the respondent vide Show Cause Notice in Form GST DRC-01 dated 06.11.2023, proposed a liability totalling at Rs.1,54,88,042/- and called upon the petitioner to file its Reply by 21.11.2023 and to appear for personal hearing on 17.11.2023.",
+     "para": 4
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "Then, the respondent vide Show Cause Notice in Form GST DRC-01 dated 06.11.2023, proposed a liability totalling at Rs.1,54,88,042/- and called upon the petitioner to file its Reply by 21.11.2023 and to appear for personal hearing on 17.11.2023.",
+     "para": 4
+    },
+    "hearing_date": {
+     "value": "2023-11-17",
+     "quote": "Then, the respondent vide Show Cause Notice in Form GST DRC-01 dated 06.11.2023, proposed a liability totalling at Rs.1,54,88,042/- and called upon the petitioner to file its Reply by 21.11.2023 and to appear for personal hearing on 17.11.2023.",
+     "para": 4
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "From a perusal of the materials available on record, it is seen that the Show Cause Notice and impugned Assessment Order were only uploaded in the GST Portal and the same were not served to the petitioner through any other physical mode.",
+     "para": 8
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-31",
+    "quote": "Thereafter, the respondent passed an Assessment Order in Form GST DRC-07 dated 31.12.2023, imposing a demand of Rs.1,34,24,302/- comprising tax, interest and penalty on the petitioner.",
+    "para": 4
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "From a perusal of the materials available on record, it is seen that the Show Cause Notice and impugned Assessment Order were only uploaded in the GST Portal and the same were not served to the petitioner through any other physical mode.",
+    "para": 8
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-27",
+    "type": "pre_scn_intimation",
+    "quote": "Hence, the respondent issued a Notice in Form GST DRC-01A dated 27.09.2023, advising the petitioner to pay the ascertained tax amount of Rs.1,54,88,042/- along with applicable interest and penalty by 04.10.2023.",
+    "para": 4
+   },
+   {
+    "date": "2023-11-06",
+    "type": "scn_issued",
+    "quote": "Then, the respondent vide Show Cause Notice in Form GST DRC-01 dated 06.11.2023, proposed a liability totalling at Rs.1,54,88,042/- and called upon the petitioner to file its Reply by 21.11.2023 and to appear for personal hearing on 17.11.2023.",
+    "para": 4
+   },
+   {
+    "date": "2023-11-17",
+    "type": "hearing_scheduled",
+    "quote": "Then, the respondent vide Show Cause Notice in Form GST DRC-01 dated 06.11.2023, proposed a liability totalling at Rs.1,54,88,042/- and called upon the petitioner to file its Reply by 21.11.2023 and to appear for personal hearing on 17.11.2023.",
+    "para": 4
+   },
+   {
+    "date": "2023-12-30",
+    "type": "reply_filed",
+    "quote": "In response to the said Show Cause Notice, the petitioner filed its Reply vide Form GST DRC-06 dated 30.12.2023.",
+    "para": 4
+   },
+   {
+    "date": "2023-12-31",
+    "type": "order_passed",
+    "quote": "Thereafter, the respondent passed an Assessment Order in Form GST DRC-07 dated 31.12.2023, imposing a demand of Rs.1,34,24,302/- comprising tax, interest and penalty on the petitioner.",
+    "para": 4
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "On verification of the returns filed by the petitioner for the year 2017-18, it was found by the Officials that the petitioner has availed excess Input Tax Credit on comparison of GSTR-3B and GSTR-2A.",
+    "para": 4
+   },
+   {
+    "type": "scn_ground",
+    "quote": "Hence, the respondent issued a Notice in Form GST DRC-01A dated 27.09.2023, advising the petitioner to pay the ascertained tax amount of Rs.1,54,88,042/- along with applicable interest and penalty by 04.10.2023.",
+    "para": 4
+   },
+   {
+    "type": "scn_ground",
+    "quote": "Then, the respondent vide Show Cause Notice in Form GST DRC-01 dated 06.11.2023, proposed a liability totalling at Rs.1,54,88,042/- and called upon the petitioner to file its Reply by 21.11.2023 and to appear for personal hearing on 17.11.2023.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "From a perusal of the materials available on record, it is seen that the Show Cause Notice and impugned Assessment Order were only uploaded in the GST Portal and the same were not served to the petitioner through any other physical mode.",
+    "quote_source": "court",
+    "para": 8
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "It is also seen that the impugned Assessment Order suffers from violation of the principles of natural justice since prior to the passing of same, the petitioner was not provided with an opportunity of hearing.",
+    "quote_source": "court",
+    "para": 9
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, this Writ Petition is disposed of.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12532,
+   "tokens_out": 3879,
+   "seconds": 17.89,
+   "cached": false
+  },
+  {
+   "tokens_in": 7430,
+   "tokens_out": 705,
+   "seconds": 7.51,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

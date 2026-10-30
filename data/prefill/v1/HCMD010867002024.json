@@ -1,0 +1,150 @@
+{
+ "cnr": "HCMD010867002024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "direct the respondent to redo the assessment proceedings for the year 2018-2019.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-27",
+     "quote": "1. Form GST DRC 01 with Show AD3312230641888 27/12/2023 26/01/2024",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "1. Form GST DRC 01 with Show AD3312230641888 27/12/2023 26/01/2024",
+     "para": 2
+    },
+    "hearing_date": {
+     "value": "2024-01-26",
+     "quote": "1. Form GST DRC 01 with Show AD3312230641888 27/12/2023 26/01/2024",
+     "para": 2
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-10",
+    "quote": "vide GSTIN: 33AABCK7367G1ZI/2018-2019 dated 10.04.2024 and quash the same as illegal and devoid of merits",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-27",
+    "type": "scn_issued",
+    "quote": "1. Form GST DRC 01 with Show AD3312230641888 27/12/2023 26/01/2024",
+    "para": 2
+   },
+   {
+    "date": "2024-03-25",
+    "type": "reply_filed",
+    "quote": "3. It is submitted that the petitioner had submitted his objection / reply on 25.03.2024 and proof of having submitted the objection electronically, is also kept in the typed set of papers.",
+    "para": 5
+   },
+   {
+    "date": "2024-04-10",
+    "type": "order_passed",
+    "quote": "This Writ Petition is filed challenging the impugned order dated 10.04.2024 on the limited ground that it has been passed without considering the petitioner's objection dated 25.03.2024",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "GSTR-01 was issued directing the petitioner to show cause as to the mismatch between GSTR-01 and GSTR-09 and that the petitioner had availed excess Input Tax Credit.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Accordingly FORM GST DRC 01 With Show cause issued vide the reference 1st cited. But taxpayer has not filed any reply.",
+    "para": 5
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "This Writ Petition is filed challenging the impugned order dated 10.04.2024 on the limited ground that it has been passed without considering the petitioner's objection dated 25.03.2024 and thus suffers from violation of principles of natural justice and non application of mind to the material on record.",
+    "quote_source": "argument",
+    "para": 0
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above direction, the Writ Petition is disposed of.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9979,
+   "tokens_out": 1766,
+   "seconds": 11.54,
+   "cached": false
+  },
+  {
+   "tokens_in": 5856,
+   "tokens_out": 504,
+   "seconds": 8.87,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "cnr": "UPHC010890762023",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "A show-cause notice dated 06.09.2021 was issued for financial year 2017-18 by Assistant Commissioner, State Tax, Block-3, Jhansi under Section 74(1) of the Act of 2017.",
+   "para": 3
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "A show-cause notice dated 06.09.2021 was issued for financial year 2017-18 by Assistant Commissioner, State Tax, Block-3, Jhansi under Section 74(1) of the Act of 2017.",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2021-09-06",
+     "quote": "A show-cause notice dated 06.09.2021 was issued for financial year 2017-18 by Assistant Commissioner, State Tax, Block-3, Jhansi under Section 74(1) of the Act of 2017.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2021-12-17",
+    "quote": "thereafter, an order under Section 74(9) was passed demanding tax/interest and penalty on 17.12.2021.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-09-06",
+    "type": "scn_issued",
+    "quote": "A show-cause notice dated 06.09.2021 was issued for financial year 2017-18 by Assistant Commissioner, State Tax, Block-3, Jhansi under Section 74(1) of the Act of 2017.",
+    "para": 3
+   },
+   {
+    "date": "2021-10-05",
+    "type": "reply_filed",
+    "quote": "A reply was submitted on 05.10.2021, thereafter, an order under Section 74(9) was passed demanding tax/interest and penalty on 17.12.2021.",
+    "para": 3
+   },
+   {
+    "date": "2021-12-17",
+    "type": "order_passed",
+    "quote": "thereafter, an order under Section 74(9) was passed demanding tax/interest and penalty on 17.12.2021.",
+    "para": 3
+   },
+   {
+    "date": "2022-12-20",
+    "type": "appeal_dismissed",
+    "quote": "The order was subjected to appeal by petitioner before Additional Commissioner, Grade-II (Appeal) IInd, Commercial Tax, Jhansi who dismissed the same on 20.12.2022.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "Writ petition fails and is hereby dismissed.",
+   "para": 35
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 23276,
+   "tokens_out": 1962,
+   "seconds": 12.41,
+   "cached": false
+  },
+  {
+   "tokens_in": 9262,
+   "tokens_out": 50,
+   "seconds": 2.02,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

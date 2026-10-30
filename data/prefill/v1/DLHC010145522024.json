@@ -1,0 +1,223 @@
+{
+ "cnr": "DLHC010145522024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The orders have been passed under Section 73 of the Central Goods and Services Tax Act, 2017 (hereinafter referred to as the Act).",
+   "para": 1
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-05",
+     "quote": "impugned Show Cause Notices dated 05.09.2023 and 29.09.2023 proposing a demand of Rs.42,74,423.00 and Rs.33,32,254.00 respectively against the Petitioner have been disposed of",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   },
+   {
+    "date": {
+     "value": "2023-09-29",
+     "quote": "impugned Show Cause Notices dated 05.09.2023 and 29.09.2023 proposing a demand of Rs.42,74,423.00 and Rs.33,32,254.00 respectively against the Petitioner have been disposed of",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-31",
+    "quote": "Petitioner impugns two orders both dated 31.12.2023, whereby impugned Show Cause Notices dated 05.09.2023 and 29.09.2023 proposing a demand of Rs.42,74,423.00 and Rs.33,32,254.00 respectively against the Petitioner have been disposed of and demand including penalty has been created against the Petitioner.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-05",
+    "type": "scn_issued",
+    "quote": "Petitioner impugns two orders both dated 31.12.2023, whereby impugned Show Cause Notices dated 05.09.2023 and 29.09.2023 proposing a demand of Rs.42,74,423.00 and Rs.33,32,254.00 respectively against the Petitioner have been disposed of",
+    "para": 1
+   },
+   {
+    "date": "2023-09-29",
+    "type": "scn_issued",
+    "quote": "Petitioner impugns two orders both dated 31.12.2023, whereby impugned Show Cause Notices dated 05.09.2023 and 29.09.2023 proposing a demand of Rs.42,74,423.00 and Rs.33,32,254.00 respectively against the Petitioner have been disposed of",
+    "para": 1
+   },
+   {
+    "date": "2023-10-03",
+    "type": "reply_filed",
+    "quote": "Learned counsel for Petitioner submits that Petitioner had filed detailed replies dated 14.12.2023 and 03.10.2023",
+    "para": 2
+   },
+   {
+    "date": "2023-12-14",
+    "type": "reply_filed",
+    "quote": "Learned counsel for Petitioner submits that Petitioner had filed detailed replies dated 14.12.2023 and 03.10.2023",
+    "para": 2
+   },
+   {
+    "date": "2023-12-21",
+    "type": "other",
+    "quote": "Pursuant to the said Show Cause Notices, Petitioner was issued reminders dated 21.12.2023",
+    "para": 3
+   },
+   {
+    "date": "2023-12-26",
+    "type": "reply_filed",
+    "quote": "thereafter Petitioner filed replies dated 26.12.2023 to the said reminders.",
+    "para": 3
+   },
+   {
+    "date": "2023-12-31",
+    "type": "order_passed",
+    "quote": "Petitioner impugns two orders both dated 31.12.2023, whereby impugned Show Cause Notices dated 05.09.2023 and 29.09.2023 proposing a demand of Rs.42,74,423.00 and Rs.33,32,254.00 respectively against the Petitioner have been disposed of and demand including penalty has been created against the Petitioner.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Perusal of the Show Cause Notices dated 05.09.2023 and 29.09.2023 shows that the Department has issued both the notices on similar grounds and headings i.e., excess claim Input Tax Credit [“ITC”]; Scrutiny of ITC availed and scrutiny of ITC reversals",
+    "para": 3
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The Taxpayer has not uploaded the copies of invoices duly mapped with corresponding bank payment details.",
+    "para": 4
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The taxpayer has furnished plain reply which is not duly supported with proper calculations/reconciliation and relevant documents.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Proper Officer had to at least consider the reply on merits and then form an opinion.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "He merely held that the reply dated 03.10.2023 is unsatisfactory and reply dated 14.12.2023 is not supported with proper calculations/reconciliation and relevant documents, which ex-facie shows that the Proper Officer has not applied his mind to the replies submitted by the petitioner.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, impugned orders dated 31.12.2023 are set aside and the matter is remitted to the Proper Officer for re-adjudication.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12291,
+   "tokens_out": 3487,
+   "seconds": 12.19,
+   "cached": false
+  },
+  {
+   "tokens_in": 7238,
+   "tokens_out": 757,
+   "seconds": 8.17,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

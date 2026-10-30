@@ -1,0 +1,151 @@
+{
+ "cnr": "DLHC010997542025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "challenging the impugned order dated 22nd July, 2024 passed by the Sales Tax Officer Class II/AVATO, Ward 83, Zone-7, Delhi for the tax period April 2019 to March 2020 (hereinafter, ‘impugned order’), as also the show cause notice dated 21st May, 2024 (hereinafter, ‘impugned SCN’).",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-21",
+     "quote": "On facts, the impugned SCN in this case was issued to the Petitioner on 21st May, 2024.",
+     "para": 7
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-07-22",
+    "quote": "challenging the impugned order dated 22nd July, 2024 passed by the Sales Tax Officer Class II/AVATO, Ward 83, Zone-7, Delhi for the tax period April 2019 to March 2020 (hereinafter, ‘impugned order’), as also the show cause notice dated 21st May, 2024 (hereinafter, ‘impugned SCN’).",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-21",
+    "type": "scn_issued",
+    "quote": "On facts, the impugned SCN in this case was issued to the Petitioner on 21st May, 2024.",
+    "para": 7
+   },
+   {
+    "date": "2024-06-24",
+    "type": "other",
+    "quote": "Thereafter, a reminder notice dated 24th June, 2024 was also issued to the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, no reply has been filed to the same, nor has any personal hearing been attended by the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "However, no reply has been filed to the same, nor has any personal hearing been attended by the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": "2024-07-22",
+    "type": "order_passed",
+    "quote": "Subsequently, the impugned order has been passed, without the Petitioner availing an opportunity to deal with the case on merits.",
+    "para": 7
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "Additionally, the present petition also challenges the vires of the Notification No. 56/2023- Central Tax dated 28th December, 2023",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The petition is disposed of in these terms.",
+   "para": 15
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 6667,
+   "tokens_out": 1000,
+   "seconds": 6.72,
+   "cached": false
+  },
+  {
+   "tokens_in": 4900,
+   "tokens_out": 137,
+   "seconds": 2.7,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "cnr": "DLHC010262362024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "Accordingly, and for all the aforesaid reasons, we allow the present writ petitions and quash the SCNs as well as any final orders that may have come to be passed and which stand impugned in this batch of writ petitions.",
+   "para": 88
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 84858,
+   "tokens_out": 187,
+   "seconds": 5.33,
+   "cached": false
+  },
+  {
+   "tokens_in": 83091,
+   "tokens_out": 87,
+   "seconds": 4.52,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,145 @@
+{
+ "cnr": "DLHC010507842025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "pursuant to the Show Cause Notice (hereinafter, the ‘Show Cause Notice’) dated 23rd May, 2024 issued under Section 73 of the Central Goods and Service Tax Act, 2017",
+   "para": 3
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "and had made excess claims of Input Tax Credit (‘ITC’) for the financial year 2019-2020.",
+   "para": 4
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-28",
+     "quote": "A brief background of the present case is that on 28th May, 2024 a Show Cause Notice was issued to the Petitioner by the Respondent Department on the Goods and Services Tax (‘GST’) portal.",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": "However, no personal hearing was granted.",
+     "para": 4
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "A brief background of the present case is that on 28th May, 2024 a Show Cause Notice was issued to the Petitioner by the Respondent Department on the Goods and Services Tax (‘GST’) portal.",
+     "para": 4
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-29",
+    "quote": "assailing the assessment order dated 29th August, 2024 passed by the office of the Sales Tax Officer Class II/AVATO, Delhi",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-28",
+    "type": "scn_issued",
+    "quote": "That on 28.05.2024, a Show Cause Notice was issued by the Respondent through the GST portal.",
+    "para": 6
+   },
+   {
+    "date": "2025-01-08",
+    "type": "other",
+    "quote": "Further, on 8th January, 2025 a reminder notice was also issued by the Respondent department to the Petitioner.",
+    "para": 4
+   },
+   {
+    "date": "2024-08-29",
+    "type": "order_passed",
+    "quote": "assailing the assessment order dated 29th August, 2024 passed by the office of the Sales Tax Officer Class II/AVATO, Delhi",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "The same stated that the Petitioner had not declared the correct tax liability while filing the annual returns of GSTR-09 and had made excess claims of Input Tax Credit (‘ITC’) for the financial year 2019-2020.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The challenge raised by the Petitioner is on the ground that since no opportunity was granted for a personal hearing, the impugned order may be set aside and the Petitioner may be given an opportunity to present its case.",
+    "quote_source": "argument",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The petition is disposed of in the above terms, along with pending application(s), if any.",
+   "para": 12
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4777,
+   "tokens_out": 1024,
+   "seconds": 6.41,
+   "cached": false
+  },
+  {
+   "tokens_in": 6365,
+   "tokens_out": 400,
+   "seconds": 8.57,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

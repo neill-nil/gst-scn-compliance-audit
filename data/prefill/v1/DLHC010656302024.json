@@ -1,0 +1,164 @@
+{
+ "cnr": "DLHC010656302024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-29",
+     "quote": "Show Cause Notice dated 29th May, 2024",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "not_served",
+     "quote": "the Show Cause Notice dated 29th May, 2024, was not served",
+     "para": 7
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-27",
+    "quote": "order dated 27th August, 2024",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-07-24",
+    "type": "other",
+    "quote": "Please note that your registration stands suspended with effect from 24/07/2023",
+    "para": 8
+   },
+   {
+    "date": "2024-05-29",
+    "type": "scn_issued",
+    "quote": "arises from Show Cause Notice dated 29th May, 2024",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "It is further noticed that the Petitioner has not filed a reply to the Show Cause Notice dated 29th May, 2024 from which the impugned order arises.",
+    "para": 9
+   },
+   {
+    "date": "2024-08-23",
+    "type": "hearing_scheduled",
+    "quote": "The personal hearing, even though granted on 23rd August, 2024, has not been availed by the Petitioner.",
+    "para": 9
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "The personal hearing, even though granted on 23rd August, 2024, has not been availed by the Petitioner.",
+    "para": 9
+   },
+   {
+    "date": "2024-08-27",
+    "type": "order_passed",
+    "quote": "challenging order dated 27th August, 2024 passed by the Sales Tax Officer Class II/AVATO Jurisdiction, Ward 12, Zone 2, Delhi",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is his case that the Petitioner lacked any knowledge about the Show Cause Notice dated 29th May, 2024 as he did not have access to the portal at the relevant point of time.",
+    "quote_source": "argument",
+    "para": 7
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The petition also challenges the vires of Notification No. 9/2023- Central Tax dated 31st March, 2023 and Notification No. 56/2023- Central Tax dated 28th December, 2023",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside and the matter is relegated to the Adjudicating Authority to be heard on merits.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14009,
+   "tokens_out": 2140,
+   "seconds": 29.55,
+   "cached": false
+  },
+  {
+   "tokens_in": 4577,
+   "tokens_out": 327,
+   "seconds": 4.54,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

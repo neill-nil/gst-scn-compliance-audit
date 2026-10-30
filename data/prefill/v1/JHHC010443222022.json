@@ -1,0 +1,103 @@
+{
+ "cnr": "JHHC010443222022",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "issued by the Respondent No. 2 under Section 73 of the Jharkhand Goods and Service Tax Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "for the period April, 2018 to March, 2019",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2020-12-14",
+    "quote": "CONTAINED IN REF. NO. ZD2012200007583 DATED 14.12.2020 (ANNEXURE-4)",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2020-08-27",
+    "type": "scn_issued",
+    "quote": "Show Cause Notice being Ref. No. ZD200820001390B dated 27.08.2020",
+    "para": 2
+   },
+   {
+    "date": "2020-12-14",
+    "type": "order_passed",
+    "quote": "Summary of Order in FORM GST DRC-07 contained in Ref. No. ZD2012200007583 dated 14.12.2020",
+    "para": 2
+   },
+   {
+    "date": "2021-09-13",
+    "type": "appeal_dismissed",
+    "quote": "Order dated 13.09.2021, as mentioned in Form GST APL-02 (Annexure-5) passed by the Appellate Authority i.e. Joint Commissioner, JGST, Godda, Dumka, whereby and whereunder the appeal filed by the Petitioner against the aforesaid the Summary of Order dated 14.12.2020 (Annexure-4) has been rejected",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "Appellate authority rejected appeal on non-receipt of certified copies",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "This view taken by the appellate authority is hyper technical as an opportunity of hearing ought to have been granted to the petitioner, more particularly when the appeal, which according to the petitioner, had been filed within prescribed period of limitation.",
+    "quote_source": "court",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "Consequently, the instant writ petition is allowed.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13789,
+   "tokens_out": 4805,
+   "seconds": 15.81,
+   "cached": false
+  },
+  {
+   "tokens_in": 2982,
+   "tokens_out": 151,
+   "seconds": 3.75,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.order.date:facts.order.date"
+  ]
+ }
+}

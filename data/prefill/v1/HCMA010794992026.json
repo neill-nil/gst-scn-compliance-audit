@@ -1,0 +1,118 @@
+{
+ "cnr": "HCMA010794992026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2021-22"
+   ],
+   "quote": "W.P.No.20852 of 2026: Petition filed under Article 226 of the Constitution of India praying to issue a writ of certiorarified mandamus to call for the records of the 1st Respondent vide the impugned order issued in Reference No. ZD331225454625F Dated 30.12.2025 in Form GST DRC-07 for 2021-22 and quash the same as being without jurisdiction and authority of law and to direct the 1st Respondent to pass fresh order after hearing the Petitioner.",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2025-12-30",
+    "quote": "The orders impugned herein were issued on 30.12.2025 and the petitioner has lodged these writ petitions on or about 30.03.2026.",
+    "para": 4
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-12-30",
+    "type": "order_passed",
+    "quote": "The orders impugned herein were issued on 30.12.2025 and the petitioner has lodged these writ petitions on or about 30.03.2026.",
+    "para": 4
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Learned counsel for the petitioner submits that the impugned order in respect of assessment period 2018-2019 travels beyond the show cause notice insofar as reversal of input tax credit is concerned.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "He also contends that the impugned order is patently erroneous in directing the reversal of input tax credit on the ground that these supplies are exempted.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "In respect of each tax proposal, the petitioner's reply has been taken into consideration and findings have been recorded on the basis of appraisal of evidence.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "demand_beyond_scn",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Learned counsel for the petitioner submits that the impugned order in respect of assessment period 2018-2019 travels beyond the show cause notice insofar as reversal of input tax credit is concerned.",
+    "quote_source": "argument",
+    "para": 2
+   },
+   {
+    "type": "other_procedural",
+    "note": "reversal of ITC on exempted supplies",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "He also contends that the impugned order is patently erroneous in directing the reversal of input tax credit on the ground that these supplies are exempted.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The writ petitions are disposed of on the above terms without any order as to costs.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10536,
+   "tokens_out": 2031,
+   "seconds": 10.79,
+   "cached": false
+  },
+  {
+   "tokens_in": 6019,
+   "tokens_out": 657,
+   "seconds": 9.28,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [
+   "facts.document_contents[0]: same words as a court finding (would leak the answer)",
+   "facts.document_contents[1]: same words as a court finding (would leak the answer)"
+  ],
+  "quotes_not_found": []
+ }
+}

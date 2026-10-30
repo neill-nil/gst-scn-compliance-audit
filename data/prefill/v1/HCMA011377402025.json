@@ -1,0 +1,159 @@
+{
+ "cnr": "HCMA011377402025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "reference no. ZD330125123549K / 2020-21 dated 16.01.2025 issued by the Respondent",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-29",
+     "quote": "the show cause notice in DRC-01 was issued on 29.11.2024",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-01-16",
+    "quote": "impugned Order in Form GST DRC 07 bearing reference no. ZD330125123549K / 2020-21 dated 16.01.2025",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-29",
+    "type": "scn_issued",
+    "quote": "in this case, in this case, the show cause notice in DRC-01 was issued on 29.11.2024, whereby, the respondent had raised 19 issues against the petitioner.",
+    "para": 2
+   },
+   {
+    "date": "2024-12-29",
+    "type": "reply_filed",
+    "quote": "Subsequently, the reply was filed by the petitioner on 29.12.2024.",
+    "para": 2
+   },
+   {
+    "date": "2025-01-16",
+    "type": "order_passed",
+    "quote": "Thereafter, the impugned order came to be passed on 16.01.2025, whereby 5 additional issues were raised by the respondent, for which, no opportunity was provided to the petitioner either for filing the reply or for personal hearing.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "the show cause notice in DRC-01 was issued on 29.11.2024, whereby, the respondent had raised 19 issues against the petitioner.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Thereafter, the impugned order came to be passed on 16.01.2025, whereby 5 additional issues were raised by the respondent, for which, no opportunity was provided to the petitioner either for filing the reply or for personal hearing.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "demand_beyond_scn",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Hence, it is clear that in total non-application of mind, the respondent had passed the impugned order, which travels beyond the scope of show cause notice.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "However, in this case, all of a sudden, the respondents had raised 5 additional issues, for the very first time, while passing the impugned assessment order, which is a clear violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "(i) The impugned order dated 16.01.2025 is set aside and the matter is remanded to the respondent for fresh consideration",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10053,
+   "tokens_out": 1570,
+   "seconds": 12.07,
+   "cached": false
+  },
+  {
+   "tokens_in": 2799,
+   "tokens_out": 305,
+   "seconds": 2.87,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "cnr": "DLHC010599592025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "f.y 2017-18 .....Petitioner Through: Mr. Anurag Rajput, Adv.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-29",
+     "quote": "Thereafter, the Show Cause Notice dated 29th September, 2023 was issued to the Petitioner.",
+     "para": 11
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-31",
+    "quote": "...challenging the impugned order dated 31st December, 2023 (hereinafter ‘impugned order’) passed in respect of F.Y. 2017-18 by the office of Sales Tax Officer Class II/ AVATO, Delhi wherein a demand of Rs. 3,49,024/- has been raised on the Petitioner.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "...however, the submission of ld. Counsel for the Petitioner is that the impugned order was uploaded on the ‘additional notices tab’ of the GST Portal and had skipped the attention of the Petitioner.",
+    "para": 11
+   }
+  },
+  "events": [
+   {
+    "date": "2023-03-18",
+    "type": "other",
+    "quote": "On facts, it is submitted by ld. Counsel that the Petitioner had filed an application for cancellation of the GST registration on 18th March, 2023.",
+    "para": 11
+   },
+   {
+    "date": "2023-09-29",
+    "type": "scn_issued",
+    "quote": "Thereafter, the Show Cause Notice dated 29th September, 2023 was issued to the Petitioner.",
+    "para": 11
+   },
+   {
+    "date": "2023-10-09",
+    "type": "reply_filed",
+    "quote": "Two replies dated 9th October, 2023 and 19th October, 2023 were filed by the Petitioner to the said Show Cause Notice dated 29th September, 2023.",
+    "para": 11
+   },
+   {
+    "date": "2023-10-19",
+    "type": "reply_filed",
+    "quote": "Two replies dated 9th October, 2023 and 19th October, 2023 were filed by the Petitioner to the said Show Cause Notice dated 29th September, 2023.",
+    "para": 11
+   },
+   {
+    "date": "2023-12-31",
+    "type": "order_passed",
+    "quote": "Thereafter, the impugned order was passed, raising certain demands on the Petitioner.",
+    "para": 11
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "One of the grounds raised by the Petitioner in the present petition is that the Notification No.09/2023- Central Tax dated 31st March, 2023 is invalid and ultra vires and is liable to be set aside.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "the submission of ld. Counsel for the Petitioner is that the impugned order was uploaded on the ‘additional notices tab’ of the GST Portal and had skipped the attention of the Petitioner.",
+    "quote_source": "argument",
+    "para": 10
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "Accordingly, the present writ petition is disposed of in above terms.",
+   "para": 16
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 16795,
+   "tokens_out": 5225,
+   "seconds": 14.62,
+   "cached": false
+  },
+  {
+   "tokens_in": 9416,
+   "tokens_out": 602,
+   "seconds": 8.93,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.financial_years:facts.financial_years",
+   "facts.order.date:facts.order.date",
+   "facts.order.service_mode:facts.order.service_mode"
+  ]
+ }
+}

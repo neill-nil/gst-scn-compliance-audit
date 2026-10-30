@@ -1,0 +1,160 @@
+{
+ "cnr": "DLHC010763712025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "The present petition also challenges the impugned Show Cause Notice dated 22nd May, 2024 (hereinafter ‘impugned SCN’) issued for the financial year 2019-20.",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-22",
+     "quote": "The present petition also challenges the impugned Show Cause Notice dated 22nd May, 2024 (hereinafter ‘impugned SCN’) issued for the financial year 2019-20.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-13",
+    "quote": "The present petition has been filed under Articles 226 & 227 of the Constitution of India, inter alia, challenging the impugned order dated 13th August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 113(Special Zone), Zone 12, Delhi (hereinafter ‘impugned order’).",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-22",
+    "type": "scn_issued",
+    "quote": "The impugned SCN was issued to the Petitioner on 22nd May, 2024.",
+    "para": 12
+   },
+   {
+    "date": "2024-07-25",
+    "type": "other",
+    "quote": "Thereafter, a reminder notice was also issued to the Petitioner, on 25th July, 2024.",
+    "para": 12
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "The submission of the Petitioner is that no reply has been filed by the Petitioner to the impugned SCN, nor any personal hearing has been attended.",
+    "para": 12
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "The submission of the Petitioner is that no reply has been filed by the Petitioner to the impugned SCN, nor any personal hearing has been attended.",
+    "para": 12
+   },
+   {
+    "date": "2024-08-13",
+    "type": "order_passed",
+    "quote": "Thus, the impugned order has been passed without hearing the Petitioner.",
+    "para": 12
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The submission of the Petitioner is that no reply has been filed by the Petitioner to the impugned SCN, nor any personal hearing has been attended.",
+    "quote_source": "argument",
+    "para": 12
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "As observed by this Court in the order dated 22nd April, 2025 as well, since the challenge to the above mentioned notifications is presently under consideration before the Supreme Court in S.L.P No 4240/2025 titled M/s HCC-SEW-MEIL-AAG JV v. Assistant Commissioner of State Tax &Ors., the challenge made by the Petitioner to the impugned notifications in the present proceedings shall also be subject to the outcome of the decision of the Supreme Court.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, in view of the above stated observations, the impugned order is set aside.",
+   "para": 18
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 7756,
+   "tokens_out": 956,
+   "seconds": 4.61,
+   "cached": false
+  },
+  {
+   "tokens_in": 5989,
+   "tokens_out": 359,
+   "seconds": 4.29,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

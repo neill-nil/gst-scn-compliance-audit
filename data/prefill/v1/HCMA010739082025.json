@@ -1,0 +1,108 @@
+{
+ "cnr": "HCMA010739082025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-06-18",
+    "quote": "The challenge in this Writ Petition is to the order passed by the respondent dated 18.06.2024 along with detailed order dated 18.06.2024 for the tax period November 2022 - March 2023 and also the rectified proceedings in Form GST DRC-08 dated 25.01.2025",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-06-18",
+    "type": "order_passed",
+    "quote": "The challenge in this Writ Petition is to the order passed by the respondent dated 18.06.2024 along with detailed order dated 18.06.2024 for the tax period November 2022 - March 2023 and also the rectified proceedings in Form GST DRC-08 dated 25.01.2025",
+    "para": 2
+   },
+   {
+    "date": "2025-01-25",
+    "type": "order_passed",
+    "quote": "The challenge in this Writ Petition is to the order passed by the respondent dated 18.06.2024 along with detailed order dated 18.06.2024 for the tax period November 2022 - March 2023 and also the rectified proceedings in Form GST DRC-08 dated 25.01.2025",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "recovery_or_attachment",
+    "quote": "Further, it is stated that in pursuance of the impugned orders, the respondent has also initiated recovery proceedings against the petitioner, whereby, 50% of the disputed tax has already been recovered from the petitioner, hence, he prays for setting aside the impugned orders and remanding the matters back to the Authority for fresh consideration.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Thus, when there is no response from the tax payer to the notice sent through a particular mode, the Officer who is issuing notices should strictly explore the possibilities of sending notices through some other mode as prescribed in Section 169(1) of the Act, preferably by way of RPAD, which would ultimately achieve the object of the GST Act.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In such circumstances, this Court is of the view that the impugned orders came to be passed without affording any opportunity of personal hearing to the petitioner.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, the Writ Petition is allowed on the aforesaid terms.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5201,
+   "tokens_out": 649,
+   "seconds": 4.99,
+   "cached": false
+  },
+  {
+   "tokens_in": 3434,
+   "tokens_out": 334,
+   "seconds": 4.44,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

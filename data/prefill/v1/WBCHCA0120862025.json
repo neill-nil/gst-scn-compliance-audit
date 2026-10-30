@@ -1,0 +1,107 @@
+{
+ "cnr": "WBCHCA0120862025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "In the instant case, a notice in Form ASMT 10 dated 20th September, 2024 was issued, identifying certain discrepancies in the returns filed by the petitioner in respect of the financial year 2020-2021.",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-12-20",
+    "quote": "The present petition has been filed, inter alia, challenging the order dated 20th December, 2024 issued by the respondent no.1 along with the summary of the order thereof issued in DRC-07 dated 6th January, 2025",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-09-20",
+    "type": "scrutiny_notice",
+    "quote": "In the instant case, a notice in Form ASMT 10 dated 20th September, 2024 was issued, identifying certain discrepancies in the returns filed by the petitioner in respect of the financial year 2020-2021.",
+    "para": 2
+   },
+   {
+    "date": "2024-10-07",
+    "type": "reply_filed",
+    "quote": "The petitioner appears to have responded to the aforesaid notice and had afforded an explanation.",
+    "para": 3
+   },
+   {
+    "date": "2024-12-20",
+    "type": "order_passed",
+    "quote": "The present petition has been filed, inter alia, challenging the order dated 20th December, 2024 issued by the respondent no.1 along with the summary of the order thereof issued in DRC-07 dated 6th January, 2025",
+    "para": 1
+   },
+   {
+    "date": "2025-01-06",
+    "type": "recovery_or_attachment",
+    "quote": "The present petition has been filed, inter alia, challenging the order dated 20th December, 2024 issued by the respondent no.1 along with the summary of the order thereof issued in DRC-07 dated 6th January, 2025",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "skipped show cause notice and directly invoked section 75(12)",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In view thereof, the aforesaid determination made by the respondents cannot be sustained.",
+    "quote_source": "court",
+    "para": 13
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above observations and directions, the writ petition stands disposed of.",
+   "para": 16
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 16727,
+   "tokens_out": 4764,
+   "seconds": 13.05,
+   "cached": false
+  },
+  {
+   "tokens_in": 9295,
+   "tokens_out": 428,
+   "seconds": 9.03,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

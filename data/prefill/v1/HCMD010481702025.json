@@ -1,0 +1,135 @@
+{
+ "cnr": "HCMD010481702025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "The impugned order was preceded by the issuance of notices in Form GST DRC-01A dated 09.12.2021 and Form GST DRC-01 dated 07.02.2022.",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2022-02-07",
+     "quote": "The impugned order was preceded by the issuance of notices in Form GST DRC-01A dated 09.12.2021 and Form GST DRC-01 dated 07.02.2022.",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-03-06",
+    "quote": "PRAYER: Writ Petition filed under Article 226 of the Constitution of India, to issue a Writ of Certiorari, calling for the records pertaining to impugned order of the second respondent in Reference No.ZD330324090219H/2018-19, dated 06.03.2024 and quash the same.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-12-09",
+    "type": "pre_scn_intimation",
+    "quote": "The impugned order was preceded by the issuance of notices in Form GST DRC-01A dated 09.12.2021 and Form GST DRC-01 dated 07.02.2022.",
+    "para": 1
+   },
+   {
+    "date": "2022-02-07",
+    "type": "scn_issued",
+    "quote": "The impugned order was preceded by the issuance of notices in Form GST DRC-01A dated 09.12.2021 and Form GST DRC-01 dated 07.02.2022.",
+    "para": 1
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "A reading of the impugned order indicates that the petitioner neither responded to the notices issued nor appeared for the personal hearing and consequently, the assessment order came to be passed.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "A reading of the impugned order indicates that the petitioner neither responded to the notices issued nor appeared for the personal hearing and consequently, the assessment order came to be passed.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "Accordingly, the impugned Assessment Order dated 06.03.2024, is quashed and the Writ Petition is allowed.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4320,
+   "tokens_out": 1000,
+   "seconds": 6.19,
+   "cached": false
+  },
+  {
+   "tokens_in": 2553,
+   "tokens_out": 69,
+   "seconds": 3.49,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

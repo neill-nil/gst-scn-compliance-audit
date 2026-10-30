@@ -1,0 +1,160 @@
+{
+ "cnr": "DLHC010191962025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-20",
+     "quote": "Show Cause Notice dated 20th May, 2024 (hereinafter ‘impugned SCN’)",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-24",
+    "quote": "impugned order dated 24th August, 2024 (hereinafter ‘impugned order’)",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-20",
+    "type": "scn_issued",
+    "quote": "Show Cause Notice dated 20th May, 2024 (hereinafter ‘impugned SCN’)",
+    "para": 2
+   },
+   {
+    "date": "2024-08-24",
+    "type": "order_passed",
+    "quote": "impugned order dated 24th August, 2024 (hereinafter ‘impugned order’)",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "It is noticed that the impugned order records that the Petitioner has filed a reply, which was found to be non- satisfactory and another opportunity to file the reply was granted.",
+    "para": 6
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "However, the order further records that the said opportunity for personal hearing was not availed of by the Petitioner.",
+    "para": 6
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "On facts, the submission of the Petitioner is that the Respondent No.1- Sales Tax Officer Class II/AVATO, Ward 2, Zone 2, Delhi has not provided sufficient time to file his response and no opportunity for personal hearing was granted to the Petitioner.",
+    "quote_source": "argument",
+    "para": 5
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In view of the above submissions, and considering that the impugned order is silent as to the reasons for finding the reply to be unsatisfactory, this Court is of the opinion that the impugned order is cryptic and non-speaking.",
+    "quote_source": "court",
+    "para": 8
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "However, it is again made clear that the issue in respect of the validity of the impugned notifications is left open and the order of the Adjudicating Authority shall be subject to the outcome of the decision of the Supreme Court in S.L.P No 4240/2025 titled ‘M/s HCC-SEW-MEIL-AAG JV v. Assistant Commissioner of State Tax & Ors",
+    "quote_source": "court",
+    "para": 12
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The petition is disposed of in the above terms.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12888,
+   "tokens_out": 1571,
+   "seconds": 11.38,
+   "cached": false
+  },
+  {
+   "tokens_in": 9119,
+   "tokens_out": 984,
+   "seconds": 10.06,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

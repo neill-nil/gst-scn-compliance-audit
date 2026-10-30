@@ -1,0 +1,152 @@
+{
+ "cnr": "DLHC010003552025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "‘Whereas, a notice DRC-01 under section 73 of DGST/CGST Act, 2017 was issued to the taxpayer with details of tax demand as an attachment with the advice to pay the tax along with interest in DRC-03 within stipulated time given in the notice.",
+   "para": 11
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-11-24",
+     "quote": "However, on facts, the submission of the Petitioner is that a detailed reply to the Show Cause Notice dated 24th November, 2023 has been filed which has not been considered in the impugned order.",
+     "para": 7
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-30",
+    "quote": "(i) The impugned order dated 30th December, 2023 passed by the Office of Sales Tax Officer Class II/AVATO Jurisdiction, Ward 204, Delhi;",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-11-24",
+    "type": "scn_issued",
+    "quote": "However, on facts, the submission of the Petitioner is that a detailed reply to the Show Cause Notice dated 24th November, 2023 has been filed which has not been considered in the impugned order.",
+    "para": 7
+   },
+   {
+    "date": "2023-11-24",
+    "type": "reply_filed",
+    "quote": "However, on facts, the submission of the Petitioner is that a detailed reply to the Show Cause Notice dated 24th November, 2023 has been filed which has not been considered in the impugned order.",
+    "para": 7
+   },
+   {
+    "date": "2023-12-30",
+    "type": "order_passed",
+    "quote": "(i) The impugned order dated 30th December, 2023 passed by the Office of Sales Tax Officer Class II/AVATO Jurisdiction, Ward 204, Delhi;",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "On scrutiny of the same, it has been observed that the same is not acceptable as incomplete, not duly supported by adequate documents, without proper justification and thus unable to clarify the issue.",
+    "para": 11
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The present petition has been filed by the Petitioner – Korea Marine Transport Co. Ltd. under Articles 226 of the Constitution of India inter alia challenging the following: (i) The impugned order dated 30th December, 2023 passed by the Office of Sales Tax Officer Class II/AVATO Jurisdiction, Ward 204, Delhi; (ii) Notification No. 9/2023-Central Tax dated 31st March, 2023, and; (iii) Notification No. 9/2023-State Tax dated 22nd June, 2023.",
+    "quote_source": "argument",
+    "para": 2
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On a perusal of the reply to the Show Cause Notice dated 24th November, 2023, it would show that various grounds have been raised by the Petitioner which have not been considered in the impugned order at all.",
+    "quote_source": "court",
+    "para": 9
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly the matter is remanded for fresh adjudication by the Adjudicating Authority.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15486,
+   "tokens_out": 3618,
+   "seconds": 11.48,
+   "cached": false
+  },
+  {
+   "tokens_in": 9785,
+   "tokens_out": 927,
+   "seconds": 8.63,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "cnr": "HCBM010043742024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "an amount of Rs.35,82,298/- towards service tax under the provisions of Section 73(1) of Finance Act, 1994 read with Section 174 of Central Goods and Service Tax Act, 2017",
+   "para": 1
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2020-12-24",
+     "quote": "show-case notice dated 24th December, 2020",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "not_served",
+     "quote": "show-case notice dated 24th December, 2020 (a copy whereof has not been received by the Petitioner, and hence, not produced)",
+     "para": 3
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-10-26",
+    "quote": "an Order-in-Original dated 26th October, 2023 passed by the Deputy Commissioner, CGST and C. Excise, Raigad",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "email",
+    "quote": "the Petitioner by email received the impugned order dated 26 th October, 2023.",
+    "para": 3
+   }
+  },
+  "events": [
+   {
+    "date": "2020-12-24",
+    "type": "scn_issued",
+    "quote": "show-case notice dated 24th December, 2020",
+    "para": 3
+   },
+   {
+    "date": "2023-10-05",
+    "type": "hearing_scheduled",
+    "quote": "on 5 th October, 2023, an email was received by the Petitioner to attend a hearing on 17 th October, 2023",
+    "para": 3
+   },
+   {
+    "date": "2023-10-17",
+    "type": "hearing_attended",
+    "quote": "on which date, the Petitioner appeared through her Chartered Accountant.",
+    "para": 3
+   },
+   {
+    "date": "2023-10-18",
+    "type": "reply_filed",
+    "quote": "On 18th October, 2023, the Petitioner addressed a letter to the Designated Officer attaching an email dated 5th October, 2023",
+    "para": 3
+   },
+   {
+    "date": "2023-10-26",
+    "type": "order_passed",
+    "quote": "an Order-in-Original dated 26th October, 2023 passed by the Deputy Commissioner, CGST and C. Excise, Raigad",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "It was pointed out that neither Service Tax nor GST were applicable and/or payable by advocates, hence any attempt to pass an order would be without jurisdiction.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "At the outset, we may observe that it appears that the Petitioner was not granted an opportunity of an appropriate hearing before the impugned Order-in-Original was passed against the Petitioner.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "that the show-cause notice on the basis of which the impugned order has been passed was neither issued nor received by the Petitioner.",
+    "quote_source": "argument",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "The Petition accordingly needs to succeed. It stands allowed in terms of prayer clause (a).",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 7088,
+   "tokens_out": 1037,
+   "seconds": 5.86,
+   "cached": false
+  },
+  {
+   "tokens_in": 5321,
+   "tokens_out": 218,
+   "seconds": 3.1,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.notices[0].date:facts.notices[0].date",
+   "facts.notices[0].service_mode:facts.notices[0].service_mode",
+   "facts.events[0]:scn_issued",
+   "findings.defects_argued[0]:hearing_75_4"
+  ]
+ }
+}

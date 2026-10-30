@@ -1,0 +1,85 @@
+{
+ "cnr": "HCMA010892612026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "Order in Reference No ZD331224249771H passed under Section 74 of the TNGST Act, 2017 dated 27.12.2024",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "for the FY2018-2019 passed by the 1st respondent",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-12-27",
+    "quote": "Order in Reference No ZD331224249771H passed under Section 74 of the TNGST Act, 2017 dated 27.12.2024",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-12-27",
+    "type": "order_passed",
+    "quote": "Order in Reference No ZD331224249771H passed under Section 74 of the TNGST Act, 2017 dated 27.12.2024 for the FY2018-2019 passed by the 1st respondent and quash the same.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "On perusal of the impugned order, it is clear that the tax proposal was confirmed because the petitioner had not responded to the show cause notice.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Subject to the remittance of 50% of the disputed tax demand, as agreed to, within thirty days from the date of receipt of a copy of this order, the impugned order is set aside and the matter is remanded for re- consideration.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 8987,
+   "tokens_out": 886,
+   "seconds": 9.93,
+   "cached": false
+  },
+  {
+   "tokens_in": 2437,
+   "tokens_out": 91,
+   "seconds": 4.34,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

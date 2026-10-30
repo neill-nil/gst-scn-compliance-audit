@@ -1,0 +1,156 @@
+{
+ "cnr": "WBCHCA0026392026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "arising out of the order dated 21 st August 2024 passed under Section 73 WBGST /CGST Act, 2017",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "for the tax period from 1 st April 2019 to 31st March 2020,",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-21",
+     "quote": "show cause notice issued in Form DRC – 01 dated 21 st May 2024",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-21",
+    "quote": "arising out of the order dated 21 st August 2024 passed under Section 73 WBGST /CGST Act, 2017",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "this apart the order itself was uploaded on the portal under the tab and view “additional notices and orders” in place and stead of “viewed notices and orders”.",
+    "para": 2
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-21",
+    "type": "scn_issued",
+    "quote": "show cause notice issued in Form DRC – 01 dated 21 st May 2024",
+    "para": 2
+   },
+   {
+    "date": "2024-08-21",
+    "type": "order_passed",
+    "quote": "arising out of the order dated 21 st August 2024 passed under Section 73 WBGST /CGST Act, 2017",
+    "para": 1
+   },
+   {
+    "date": "2025-12-31",
+    "type": "appeal_dismissed",
+    "quote": "Challenging the order passed by the appellate authority in Form APL – 02 dated 31st December 2025",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "a major portion of the demand is based on the reversal of Input Tax Credit availed by the petitioners in terms of the provisions contained in Section 16(4) of the said Act",
+    "para": 7
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Having regard thereto, ordinarily in terms of Section 75(4) of the said Act, the adjudicating authority was obliged to offer an opportunity of personal hearing to the tax payer.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Having regard to the provisions contained in Section 169 of the said Act, though one of the modes of service as contemplated in the said Section is service through common portal, however, in the instant case the order that was uploaded on the common portal was not uploaded under the tab “view notices and orders” rather the same was uploaded under the tab “view additional notices and orders”.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "As a sequel thereto, the order passed by the appellate authority dated 31st December 2025 along with the show notice is set aside.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 11246,
+   "tokens_out": 1907,
+   "seconds": 10.62,
+   "cached": false
+  },
+  {
+   "tokens_in": 7097,
+   "tokens_out": 664,
+   "seconds": 9.61,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.order.service_mode:facts.order.service_mode"
+  ]
+ }
+}

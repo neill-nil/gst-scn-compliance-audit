@@ -1,0 +1,166 @@
+{
+ "cnr": "DLHC011039362025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-27",
+     "quote": "On facts, a Show Cause Notice was issued to the Petitioner on 27th May, 2024 (hereinafter, ‘SCN’).",
+     "para": 7
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "A reminder notice dated 05th July, 2024 was also issued to the Petitioner and a personal hearing was fixed on 10 th July, 2024.",
+     "para": 7
+    },
+    "hearing_date": {
+     "value": "2024-07-10",
+     "quote": "A reminder notice dated 05th July, 2024 was also issued to the Petitioner and a personal hearing was fixed on 10 th July, 2024.",
+     "para": 7
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "Ld. Counsel for the Petitioner submits that the SCN was missed by the Petitioner as it was uploaded on the portal and no communication was sent to the Petitioner either on the registered address or the registered email address of the Petitioner.",
+     "para": 8
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-01",
+    "quote": "The present Petition under Articles 226 and 227 of the Constitution of India, inter alia, challenging the impugned order dated 01st August, 2024 (hereinafter, ‘impugned order’)passed by the Office of the Assistant Commissioner, Ward- 201, Zone-11 for the Financial Year.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-27",
+    "type": "scn_issued",
+    "quote": "On facts, a Show Cause Notice was issued to the Petitioner on 27th May, 2024 (hereinafter, ‘SCN’).",
+    "para": 7
+   },
+   {
+    "date": "2024-07-05",
+    "type": "other",
+    "quote": "A reminder notice dated 05th July, 2024 was also issued to the Petitioner and a personal hearing was fixed on 10 th July, 2024.",
+    "para": 7
+   },
+   {
+    "date": "2024-07-10",
+    "type": "hearing_scheduled",
+    "quote": "A reminder notice dated 05th July, 2024 was also issued to the Petitioner and a personal hearing was fixed on 10 th July, 2024.",
+    "para": 7
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, no reply has been filed to the same nor any personal hearing has been attended by the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "However, no reply has been filed to the same nor any personal hearing has been attended by the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": "2024-08-01",
+    "type": "order_passed",
+    "quote": "Thereafter, the impugned order has been passed without the Petitioner having an opportunity to deal with the case on merits.",
+    "para": 7
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "Additionally, the present petition also challenges the vires of the following notifications",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Ld. Counsel for the Petitioner submits that the SCN was missed by the Petitioner as it was uploaded on the portal and no communication was sent to the Petitioner either on the registered address or the registered email address of the Petitioner.",
+    "quote_source": "argument",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The impugned order is accordingly set aside, subject to payment of Rs. 20,000/- as costs to be deposited with the Delhi High Court Clerks Association.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14906,
+   "tokens_out": 2311,
+   "seconds": 10.78,
+   "cached": false
+  },
+  {
+   "tokens_in": 5039,
+   "tokens_out": 295,
+   "seconds": 4.21,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.order.date:facts.order.date"
+  ]
+ }
+}

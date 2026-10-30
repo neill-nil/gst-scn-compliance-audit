@@ -1,0 +1,186 @@
+{
+ "cnr": "ODHC010024992026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "under Section 74 of the Central Goods and Services Tax Act, 2017/Odisha Goods and Services Tax Act, 2017 (Collectively, “the GST Act”)",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23"
+   ],
+   "quote": "for the tax periods 2018-19 to 2022-23",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-11-17",
+     "quote": "a fresh Demand-cum-Show Cause Notice dated 17.11.2025 and Summary of Show Cause Notice in Form GST DRC-01 dated 25.11.2025",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": false,
+     "quote": "Summary of Show Cause Notice in Form GST DRC-01 dated 25.11.2025 by clubbing the tax periods contained in Financial Years 2018-19 to 2022-23 was issued.",
+     "para": 2
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-12-19",
+    "quote": "proceed to pass Order-in-Original on the very next date, i.e., 19.12.2025.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-06-26",
+    "type": "scn_issued",
+    "quote": "The petitioner being served with Demand-cum-Show Cause Notice dated 26.06.2025 for the tax periods 2018-19 to 2022-23 under Section 74 of the Central Goods and Services Tax Act, 2017/Odisha Goods and Services Tax Act, 2017 (Collectively, “the GST Act”) filed application for rectification on 24.08.2025 under Section 161.",
+    "para": 2
+   },
+   {
+    "date": "2025-08-24",
+    "type": "other",
+    "quote": "filed application for rectification on 24.08.2025 under Section 161.",
+    "para": 2
+   },
+   {
+    "date": "2025-09-25",
+    "type": "earlier_writ",
+    "quote": "a Writ Petition being W.P.(C) No.27456 of 2025 was filed which came to be disposed of on 25.09.2025 with a direction to consider the said application for rectification.",
+    "para": 2
+   },
+   {
+    "date": "2025-11-17",
+    "type": "scn_issued",
+    "quote": "Consequent upon such direction, a fresh Demand-cum-Show Cause Notice dated 17.11.2025 and Summary of Show Cause Notice in Form GST DRC-01 dated 25.11.2025 by clubbing the tax periods contained in Financial Years 2018-19 to 2022-23 was issued.",
+    "para": 2
+   },
+   {
+    "date": "2025-12-08",
+    "type": "hearing_scheduled",
+    "quote": "The petitioner was served notice dated 08.12.2025 for personal hearing on 18.12.2025.",
+    "para": 2
+   },
+   {
+    "date": "2025-12-18",
+    "type": "hearing_attended",
+    "quote": "On the said date, it was brought to the notice of the concerned authority that the petitioner has approached this Court challenging the fresh Demand-cum-Notice as aforesaid in writ petition as the same is contrary to the direction of this Court in Order dated 25.09.2025 in W.P.(C) No.27456 of 2025.",
+    "para": 2
+   },
+   {
+    "date": "2025-12-19",
+    "type": "order_passed",
+    "quote": "The present Writ Petition being W.P.(C) No.1504 of 2026 is filed challenging the said order dated 19.12.2025.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "As the issue is in time bound matter such that the issue is related to F.Y.2018-19 and the last date to issued Order in Original is 31st December, 2025, therefore, there is no other option left except to issue the Order in Original in a time bound manner.",
+    "para": 5
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On noticing such fact, this Court is of the considered view that the authority has passed order with undue haste, thereby caused serious prejudice to the petitioner.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Flagging issue of limitation involving mixed question of law and fact, the petitioner preferred W.P.(C) No.36758 of 2025, which fact was intimated to the Assistant Commissioner-cum-Central GST and Central Excise, Jajpur Division, Jajpur Road on 18.12.2025.",
+    "quote_source": "argument",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In view of the above, this Court is of the considered opinion that the Writ Petitions deserve to be allowed and are, hereby, allowed.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14064,
+   "tokens_out": 3155,
+   "seconds": 12.39,
+   "cached": false
+  },
+  {
+   "tokens_in": 4407,
+   "tokens_out": 265,
+   "seconds": 2.94,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [
+   "facts.notices[0].hearing_date_given: a value needs a quote, and no value means no quote"
+  ],
+  "quotes_not_found": [
+   "facts.order.date:facts.order.date"
+  ]
+ }
+}

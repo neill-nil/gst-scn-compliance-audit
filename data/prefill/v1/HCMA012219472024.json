@@ -1,0 +1,166 @@
+{
+ "cnr": "HCMA012219472024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2022-23"
+   ],
+   "quote": "During the relevant period viz., 2022-23, the petitioner filed its return and paid the appropriate taxes.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-06-05",
+     "quote": "The relevant portion of the Show Cause Notice dated 05.06.2024 is extracted hereunder:",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-09-03",
+    "quote": "The writ petition is filed challenging the impugned order dated 03.09.2024 on the premise that it has been made in gross disregard of the reply which was filed in response to the Show Cause Notice dated 05.06.2024 and thus, suffers from violation of principles of natural justice.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-11-15",
+    "type": "other",
+    "quote": "While so, the petitioner's place of business was inspected on the basis of authorization in terms of Section 67(1) of TNGST Act, 2017 on 15.11.2023.",
+    "para": 2
+   },
+   {
+    "date": "2024-06-05",
+    "type": "scn_issued",
+    "quote": "The relevant portion of the Show Cause Notice dated 05.06.2024 is extracted hereunder:",
+    "para": 4
+   },
+   {
+    "date": "2024-07-03",
+    "type": "reply_filed",
+    "quote": "In response, the petitioner filed its reply on 03.07.2024 wherein it was explained in detail the nature of transaction.",
+    "para": 5
+   },
+   {
+    "date": "2024-09-03",
+    "type": "order_passed",
+    "quote": "The writ petition is filed challenging the impugned order dated 03.09.2024 on the premise that it has been made in gross disregard of the reply which was filed in response to the Show Cause Notice dated 05.06.2024 and thus, suffers from violation of principles of natural justice.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "In absence of nature of supplies it was proposed to determine the taxability at the GST rate of 18% as below:",
+    "para": 4
+   },
+   {
+    "type": "reply_point",
+    "quote": "The nature of transaction involved in this case is supply of service by way of giving or renting of vehicles on hire, a means of transportation of goods road to a major player M/s Zinc Foods (P) Ltd., who provides GTA Service falling under tariff heading 9966 or 9973 is NIL rated as per Notification No.12/2017 - Central Tax (Rate) dated 28.06.2017/",
+    "para": 5
+   },
+   {
+    "type": "reply_point",
+    "quote": "When the lorry hire charges received from GTA is exempt under Heading 9966/9973, income of Rs.2846520/- earned out of such exempted transactions is not liable to GST as well.",
+    "para": 8
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "For the defect the taxpayer not submitted any relevant documents, hence the taxpayer reply is not accepted.",
+    "para": 8
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On perusal of the impugned order of assessment, this Court is of the view that there is merit in the submission of the learned counsel for the petitioner that the impugned order suffers from non-application of mind inasmuch it merely reiterates the proposal and does not deal with any of the aspects set out in the reply in respect of the above two issues.",
+    "quote_source": "court",
+    "para": 12
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view thereof, the impugned order dated 03.09.2024 is set aside.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 17223,
+   "tokens_out": 3790,
+   "seconds": 13.5,
+   "cached": false
+  },
+  {
+   "tokens_in": 11480,
+   "tokens_out": 573,
+   "seconds": 8.19,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}
