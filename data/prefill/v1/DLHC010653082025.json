@@ -1,0 +1,157 @@
+{
+ "cnr": "DLHC010653082025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-31",
+     "quote": "The present petition challenges the impugned Show Cause Notice dated 31st May, 2024 (hereinafter ‘impugned SCN’).",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-13",
+    "quote": "inter alia, seeking the quashing of the impugned order dated 13th August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 10, Zone-2, Delhi.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-31",
+    "type": "scn_issued",
+    "quote": "The present petition challenges the impugned Show Cause Notice dated 31st May, 2024 (hereinafter ‘impugned SCN’).",
+    "para": 3
+   },
+   {
+    "date": "2024-07-10",
+    "type": "other",
+    "quote": "A reminder notice is also stated to have been issued to the Petitioner on 10th July, 2024.",
+    "para": 8
+   },
+   {
+    "date": "2024-08-13",
+    "type": "order_passed",
+    "quote": "inter alia, seeking the quashing of the impugned order dated 13th August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 10, Zone-2, Delhi.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The challenge in the present petition is similar to a batch of petitions wherein inter alia, the impugned notifications were challenged.",
+    "quote_source": "argument",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "the Petitioners have been unable to file replies due to several reasons and were unable to avail of personal hearings in most cases.",
+    "quote_source": "argument",
+    "para": 9
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "the submission of the Petitioner is that no reply has been filed by the Petitioner to the impugned SCN nor any personal hearing has been attended.",
+    "quote_source": "argument",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Under such circumstances, considering the fact that the Petitioner did not get a proper opportunity to be heard and no reply to the SCN has been filed by the Petitioner, the matter deserves to be remanded back to the concerned Adjudicating Authority.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 17738,
+   "tokens_out": 4944,
+   "seconds": 15.81,
+   "cached": false
+  },
+  {
+   "tokens_in": 4956,
+   "tokens_out": 391,
+   "seconds": 4.37,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[2]:reply_not_considered"
+  ]
+ }
+}

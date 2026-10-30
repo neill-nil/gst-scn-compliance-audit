@@ -1,0 +1,162 @@
+{
+ "cnr": "DLHC010919542024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-08-23",
+    "quote": "The Petitioner herein impugns the Order dated 23.08.2024 passed by the Respondent imposing a service tax liability of Rs. 30,68,03,113/- along with interest and a penalty of Rs. 30,78,71,573/- on the Petitioner.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2013-10-18",
+    "type": "scn_issued",
+    "quote": "This order dated 23.08.2024 emanates from the Demand-cum-Show Cause Notices dated 18.10.2013, 21.05.2014, 07.09.2015, 13.10.2016 and 01.03.2018 issued for Financial Years 2008-09 to 2011-12, 2012-13, 2013-14, 2014-15 and 2015-16 to 30.06.2017; and the Petitioner seeks here the quashing of these SCNs (“the impugned SCNs”) as well.",
+    "para": 1
+   },
+   {
+    "date": "2014-05-21",
+    "type": "scn_issued",
+    "quote": "This order dated 23.08.2024 emanates from the Demand-cum-Show Cause Notices dated 18.10.2013, 21.05.2014, 07.09.2015, 13.10.2016 and 01.03.2018 issued for Financial Years 2008-09 to 2011-12, 2012-13, 2013-14, 2014-15 and 2015-16 to 30.06.2017; and the Petitioner seeks here the quashing of these SCNs (“the impugned SCNs”) as well.",
+    "para": 1
+   },
+   {
+    "date": "2015-06-10",
+    "type": "order_passed",
+    "quote": "Vide Order-in-Original dated 10.06.2015, the Principal Commissioner of Service Tax dropped proceedings in respect of the first SCN dated 18.10.2013.",
+    "para": 7
+   },
+   {
+    "date": "2015-09-07",
+    "type": "scn_issued",
+    "quote": "This order dated 23.08.2024 emanates from the Demand-cum-Show Cause Notices dated 18.10.2013, 21.05.2014, 07.09.2015, 13.10.2016 and 01.03.2018 issued for Financial Years 2008-09 to 2011-12, 2012-13, 2013-14, 2014-15 and 2015-16 to 30.06.2017; and the Petitioner seeks here the quashing of these SCNs (“the impugned SCNs”) as well.",
+    "para": 1
+   },
+   {
+    "date": "2015-10-30",
+    "type": "hearing_attended",
+    "quote": "In respect of the SCN dated 07.09.2015, a personal hearing was also held as far back as 30.10.2015.",
+    "para": 2
+   },
+   {
+    "date": "2016-10-13",
+    "type": "scn_issued",
+    "quote": "This order dated 23.08.2024 emanates from the Demand-cum-Show Cause Notices dated 18.10.2013, 21.05.2014, 07.09.2015, 13.10.2016 and 01.03.2018 issued for Financial Years 2008-09 to 2011-12, 2012-13, 2013-14, 2014-15 and 2015-16 to 30.06.2017; and the Petitioner seeks here the quashing of these SCNs (“the impugned SCNs”) as well.",
+    "para": 1
+   },
+   {
+    "date": "2018-03-01",
+    "type": "scn_issued",
+    "quote": "This order dated 23.08.2024 emanates from the Demand-cum-Show Cause Notices dated 18.10.2013, 21.05.2014, 07.09.2015, 13.10.2016 and 01.03.2018 issued for Financial Years 2008-09 to 2011-12, 2012-13, 2013-14, 2014-15 and 2015-16 to 30.06.2017; and the Petitioner seeks here the quashing of these SCNs (“the impugned SCNs”) as well.",
+    "para": 1
+   },
+   {
+    "date": "2018-09-18",
+    "type": "appeal_dismissed",
+    "quote": "The Tribunal set aside the OIO dated 10.06.2015 and remanded the matter back to the original Adjudicating Authority for the purpose of verifying the claim of the Petitioner and as to whether, on certain contracts, the Petitioner has paid full rate of service tax rather than the concessional rate of service tax under the composition Scheme.",
+    "para": 8
+   },
+   {
+    "date": "2024-08-23",
+    "type": "order_passed",
+    "quote": "However, out of the blue, without giving any hearing opportunity (as the notices issued in 2024 were served on wrong email ids), the Respondent passed the impugned Order dated 23.08.2024 demanding a service tax liability of Rs. 30,68,03,113/- along with interest and a penalty of Rs. 30,78,71,573/-.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "The Respondent, inter alia, alleged that by dividing the work contract into two parts and paying service tax applicable under only one work contract, service tax amounting to Rs. 21,01,50,386/- has been evaded by the Petitioner.",
+    "para": 6
+   },
+   {
+    "type": "scn_ground",
+    "quote": "Besides this, in this SCN, it was also alleged that the Petitioner is ineligible for seeking exemption from payment of service tax qua the job work provided by the Railway to the joint venture (which included the Petitioner as well).",
+    "para": 10
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "inordinate delay in adjudication",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "As is apparent from the table above, the rationale espoused in the decision of this Court in Vos Technologies India, would apply with full vigour to the facts of the present case.",
+    "quote_source": "court",
+    "para": 19
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "However, out of the blue, without giving any hearing opportunity (as the notices issued in 2024 were served on wrong email ids), the Respondent passed the impugned Order dated 23.08.2024 demanding a service tax liability of Rs.",
+    "quote_source": "court",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "For the said reason, the impugned SCNs dated 18.10.2013, 21.05.2014, 07.09.2015, 13.10.2016 and 01.03.2018 and the impugned order dated 23.08.2024 issued by the Respondent are hereby quashed.",
+   "para": 19
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 9066,
+   "tokens_out": 1914,
+   "seconds": 7.51,
+   "cached": false
+  },
+  {
+   "tokens_in": 7299,
+   "tokens_out": 389,
+   "seconds": 2.39,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.events[0]:scn_issued",
+   "facts.events[1]:scn_issued",
+   "facts.events[2]:order_passed",
+   "facts.events[3]:scn_issued",
+   "facts.events[5]:scn_issued",
+   "facts.events[6]:scn_issued"
+  ]
+ }
+}

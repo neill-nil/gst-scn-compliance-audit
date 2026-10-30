@@ -1,0 +1,161 @@
+{
+ "cnr": "DLHC010903322024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "pertaining to the Financial Year 2019-20",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-27",
+     "quote": "a SCN dated 27th May, 2024, was issued upon them",
+     "para": 7
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-28",
+    "quote": "subsequently, the impugned order dated 28th August, 2024 was passed",
+    "para": 8
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-27",
+    "type": "scn_issued",
+    "quote": "a SCN dated 27th May, 2024, was issued upon them, proposing to create a demand of tax, interest and penalty of Rs. 43,82,768/-.",
+    "para": 7
+   },
+   {
+    "date": "2024-06-27",
+    "type": "reply_filed",
+    "quote": "Thereafter, a reply dated 27th June, 2024 was filed by the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": "2024-08-28",
+    "type": "order_passed",
+    "quote": "Subsequently, the impugned order dated 28th August, 2024 was passed, confirming the liability of Rs. 43,82,768/-. upon the Petitioner.",
+    "para": 8
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "Submission: We have made purchase of Rs. 22,40,138 (Inclusive of GST) in FY 2019-20 from the party named Singh Trading Co, Chawla Trader, Perfect Overseas, Satguru Impex, Guru Dev Impex., K S G M Steel Industries, Shri Ganesh Traders, Frontier Electricals. mentioned in the notice, the said credit is available in Table 8A as the supplier has duly filed GSTR-1 in stipulated time.",
+    "para": 9
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The reply of the taxpayer has been examined and found that reply is incomplete/not comprehensive and no supporting documents has been attached.",
+    "para": 9
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "However, no notice for personal hearing was issued upon the Petitioner.",
+    "quote_source": "argument",
+    "para": 7
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The petition also challenges the vires of Notification No. 9/2023- Central Tax dated 31st March, 2023 and Notification No. 56/2023-Central Tax dated 28th December, 2023 as also the Notification No. 9/2023-State Tax dated 22nd June, 2023 and Notification No. 56/2023-State Tax dated 11th July, 2024 (hereinafter ‘impugned notifications’).",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The present petition is disposed of in said terms.",
+   "para": 15
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 6463,
+   "tokens_out": 1028,
+   "seconds": 6.58,
+   "cached": false
+  },
+  {
+   "tokens_in": 4696,
+   "tokens_out": 431,
+   "seconds": 3.76,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.order.date:facts.order.date"
+  ]
+ }
+}

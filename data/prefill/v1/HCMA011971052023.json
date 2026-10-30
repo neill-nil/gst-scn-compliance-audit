@@ -1,0 +1,163 @@
+{
+ "cnr": "HCMA011971052023",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "stating that the petitioner utilized excess ITC for the Assessment Year 2017-18 and hence, there is a difference in GSTR-2A and GSTR-3B returns.",
+   "para": 4
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-06-21",
+     "quote": "(iii) Notice in Form DRC-01 dated 21.06.2023;",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "registered_post",
+     "quote": "Out of the said notices, the Notice in Form DRC-01 dated 21.06.2023 sent through Registered Post was only delivered to the petitioner belatedly.",
+     "para": 4
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-08-16",
+    "quote": "quash the proceeding dated 16.08.2023 passed therein.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "The learned counsel also submitted that all the aforesaid notices and impugned order were uploaded in the online portal and the same were not served to the petitioner by any other mode.",
+    "para": 4
+   }
+  },
+  "events": [
+   {
+    "date": "2023-02-27",
+    "type": "scrutiny_notice",
+    "quote": "(i) Notice in Form GST ASMT-10 dated 27.02.2023;",
+    "para": 4
+   },
+   {
+    "date": "2023-05-15",
+    "type": "pre_scn_intimation",
+    "quote": "(ii) Notice in Form DRC-01A dated 15.05.2023;",
+    "para": 4
+   },
+   {
+    "date": "2023-06-21",
+    "type": "scn_issued",
+    "quote": "(iii) Notice in Form DRC-01 dated 21.06.2023;",
+    "para": 4
+   },
+   {
+    "date": "2023-06-28",
+    "type": "hearing_scheduled",
+    "quote": "(iii) Personal Hearing Notice dated 28.06.2023;",
+    "para": 4
+   },
+   {
+    "date": "2023-07-28",
+    "type": "other",
+    "quote": "(iv) Reminder-1 dated 28.07.2023.",
+    "para": 4
+   },
+   {
+    "date": "2023-08-16",
+    "type": "order_passed",
+    "quote": "However, without issuing any fresh notice, the respondent had passed the impugned order dated 16.08.2023, stating that the petitioner utilized excess ITC for the Assessment Year 2017-18 and hence, there is a difference in GSTR-2A and GSTR-3B returns.",
+    "para": 4
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "the respondent had passed the impugned order dated 16.08.2023, stating that the petitioner utilized excess ITC for the Assessment Year 2017-18 and hence, there is a difference in GSTR-2A and GSTR-3B returns.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "As far as this case is concerned, without providing an opportunity of hearing to the petitioner, the respondent has passed the impugned order, which is in violation of Section 75(4) of the Tamil Nadu Goods and Services Tax Act, 2017.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, this writ petition is disposed of.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4714,
+   "tokens_out": 1237,
+   "seconds": 6.19,
+   "cached": false
+  },
+  {
+   "tokens_in": 2947,
+   "tokens_out": 195,
+   "seconds": 2.45,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

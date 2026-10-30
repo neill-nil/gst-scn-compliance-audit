@@ -1,0 +1,150 @@
+{
+ "cnr": "HCMA012188312024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "PRAYER: Writ Petition filed under Article 226 of the Constitution of India, praying to issue a Writ of Certiorari calling for the records of 1st Respondent's order passed under Section 73 of TNGST Act, 2017 in Reference No.ZD330424226343S dated 28.04.2024 along with summary of order dated 28.04.2024 relating F.Y. 2018-19 and quash the same.",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "PRAYER: Writ Petition filed under Article 226 of the Constitution of India, praying to issue a Writ of Certiorari calling for the records of 1st Respondent's order passed under Section 73 of TNGST Act, 2017 in Reference No.ZD330424226343S dated 28.04.2024 along with summary of order dated 28.04.2024 relating F.Y. 2018-19 and quash the same.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-28",
+     "quote": "2.1. Subsequently, notice was issued in DRC-01 to the petitioner on 28.12.2023 through GST Portal.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "2.1. Subsequently, notice was issued in DRC-01 to the petitioner on 28.12.2023 through GST Portal.",
+     "para": 2
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-28",
+    "quote": "PRAYER: Writ Petition filed under Article 226 of the Constitution of India, praying to issue a Writ of Certiorari calling for the records of 1st Respondent's order passed under Section 73 of TNGST Act, 2017 in Reference No.ZD330424226343S dated 28.04.2024 along with summary of order dated 28.04.2024 relating F.Y. 2018-19 and quash the same.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-28",
+    "type": "scn_issued",
+    "quote": "2.1. Subsequently, notice was issued in DRC-01 to the petitioner on 28.12.2023 through GST Portal.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "The petitioner had filed reply to the show cause notice.",
+    "para": 2
+   },
+   {
+    "date": "2024-04-28",
+    "type": "order_passed",
+    "quote": "PRAYER: Writ Petition filed under Article 226 of the Constitution of India, praying to issue a Writ of Certiorari calling for the records of 1st Respondent's order passed under Section 73 of TNGST Act, 2017 in Reference No.ZD330424226343S dated 28.04.2024 along with summary of order dated 28.04.2024 relating F.Y. 2018-19 and quash the same.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "On examination of monthly returns, the following defects were noticed: i) Under declaration of output tax ii) Excess claim of ITC",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The grievance of the petitioner is that the impugned order records that further opportunity of hearing cannot be granted.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is the case of the petitioner that no personal hearing opportunity was ever granted to the petitioner, the impugned order thus suffers from the vice of violation of principles of natural justice.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The Respondents shall proceed with the assessment, after granting the petitioner a reasonable opportunity of hearing in accordance with law.",
+   "para": 4
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4319,
+   "tokens_out": 1369,
+   "seconds": 4.85,
+   "cached": false
+  },
+  {
+   "tokens_in": 2552,
+   "tokens_out": 146,
+   "seconds": 2.53,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,157 @@
+{
+ "cnr": "DLHC011072492025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "challenging the impugned order dated 5th March, 2024 passed by the Sales Tax Officer Class II/AVATO, SGST, Ward 88, Zone-8, Vyapar Bhawan, IP Estate, New Delhi for the tax period April 2018 to March 2019 (hereinafter, ‘impugned order’).",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-08",
+     "quote": "a show cause notice was issued to the Petitioner on 8th December, 2023",
+     "para": 8
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "the SCN dated 8th December, 2023, as also the subsequent reminder notice were both uploaded on the ‘Additional Notices Tab’ and the Petitioner had no knowledge of the same.",
+     "para": 9
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-03-05",
+    "quote": "challenging the impugned order dated 5th March, 2024 passed by the Sales Tax Officer Class II/AVATO, SGST, Ward 88, Zone-8, Vyapar Bhawan, IP Estate, New Delhi for the tax period April 2018 to March 2019 (hereinafter, ‘impugned order’).",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-08",
+    "type": "scn_issued",
+    "quote": "a show cause notice was issued to the Petitioner on 8th December, 2023, followed by a reminder notice dated 24th January, 2024.",
+    "para": 8
+   },
+   {
+    "date": "2024-01-24",
+    "type": "other",
+    "quote": "a show cause notice was issued to the Petitioner on 8th December, 2023, followed by a reminder notice dated 24th January, 2024.",
+    "para": 8
+   },
+   {
+    "date": "2024-03-05",
+    "type": "order_passed",
+    "quote": "Pursuant thereto, the impugned order was passed on 5th March, 2024.",
+    "para": 8
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In the present case, the SCN was issued to the Petitioner on 8th December, 2023 and the same does not appear to have come to the notice of the Petitioner.",
+    "quote_source": "court",
+    "para": 13
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "considering the fact that the Petitioner did not get a proper opportunity to be heard and the SCN dated 8th December, 2023 was, in fact, uploaded on the ‘Additional Notices Tab’, the matter deserves to be remanded back to the concerned Adjudicating Authority.",
+    "quote_source": "court",
+    "para": 14
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "However, it is made clear that the issue in respect of the validity of the impugned notifications is left open.",
+    "quote_source": "court",
+    "para": 18
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 15
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 20258,
+   "tokens_out": 5101,
+   "seconds": 14.41,
+   "cached": false
+  },
+  {
+   "tokens_in": 12957,
+   "tokens_out": 757,
+   "seconds": 9.12,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

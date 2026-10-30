@@ -1,0 +1,164 @@
+{
+ "cnr": "HCMA010113822025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "During the relevant period 2019-20, the petitioner filed its return and paid appropriate taxes.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-31",
+     "quote": "The petitioner was thereafter issued with ASMT-10 dated 04.04.2024 followed by notices in Form DRC-01A dated 07.05.2024 and DRC-01 dated 31.05.2024.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-20",
+    "quote": "The present Writ Petition is filed challenging the impugned order dated 20.08.2024 passed by the respondent relating to the financial year 2019-20.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-04-04",
+    "type": "scrutiny_notice",
+    "quote": "The petitioner was thereafter issued with ASMT-10 dated 04.04.2024 followed by notices in Form DRC-01A dated 07.05.2024 and DRC-01 dated 31.05.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-05-07",
+    "type": "pre_scn_intimation",
+    "quote": "The petitioner was thereafter issued with ASMT-10 dated 04.04.2024 followed by notices in Form DRC-01A dated 07.05.2024 and DRC-01 dated 31.05.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-05-31",
+    "type": "scn_issued",
+    "quote": "The petitioner was thereafter issued with ASMT-10 dated 04.04.2024 followed by notices in Form DRC-01A dated 07.05.2024 and DRC-01 dated 31.05.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-06-29",
+    "type": "reply_filed",
+    "quote": "The petitioner had submitted its reply on 29.06.2024, wherein it was submitted that the petitioner had infact discharged the outward taxes in respect of the supply of services rendered/effected to the following recipients:",
+    "para": 2
+   },
+   {
+    "date": "2024-08-20",
+    "type": "order_passed",
+    "quote": "The present Writ Petition is filed challenging the impugned order dated 20.08.2024 passed by the respondent relating to the financial year 2019-20.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "The petitioner had submitted its reply on 29.06.2024, wherein it was submitted that the petitioner had infact discharged the outward taxes in respect of the supply of services rendered/effected to the following recipients: Name of the registered supplier Supplier who provide services Surya Facilities Services Pvt.Ltd., Manpower Supplier-H.K & Technical Innovision Ltd. Security services Klean N.Karee Supplier of cleaning products Exceljuta Talent Solutions Pvt.Ltd Software Service Eureka Forbes Industrial H.K.Equipment Supplier Sri Bhoomidurga Marketing Industrial Equipment Supplier Sri Ram & Co Consumables Uma Infotech Pvt.Ltd Accounting Software Lakshmi Sanitations Sanitation materials",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "However, the impugned order has been passed on the premise that invoice copies have not been produced.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "However, the impugned order has been passed on the premise that invoice copies have not been produced.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view thereof, the impugned order, dated 20.08.2024 is set aside.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13602,
+   "tokens_out": 5509,
+   "seconds": 16.24,
+   "cached": false
+  },
+  {
+   "tokens_in": 2884,
+   "tokens_out": 173,
+   "seconds": 2.64,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [
+   "facts.document_contents[1]: same words as a court finding (would leak the answer)"
+  ],
+  "quotes_not_found": []
+ }
+}

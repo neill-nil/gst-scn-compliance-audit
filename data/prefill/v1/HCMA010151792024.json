@@ -1,0 +1,165 @@
+{
+ "cnr": "HCMA010151792024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "passed under Section 73 of the CGST/TNGST Act, 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20",
+    "2020-21"
+   ],
+   "quote": "for tax period 2018-19 and uploaded along with Form DRC-07 from the files of the first respondent herein, QUASH the same. Prayer in W.P.No.2167 of 2024: Writ Petition filed under Article 226 of the Constitution of India, pleased to issue a Writ of Certiorari, to call for the records of the impugned assessment order in ZD330823169810B on dated 30.08.2023 passed under Section 73 of the CGST/TNGST Act, 2017, for tax period 2019-20 and uploaded along with Form DRC-07 from the files of the first respondent herein, QUASH the same. Prayer in W.P.No.2171 of 2024: Writ Petition filed under Article 226 of the Constitution of India, pleased to issue a Writ of Certiorari, to call for the records of the impugned assessment order in ZD3308231451799 dated 25.08.2023 passed under Section 73 of the CGST/TNGST Act, 2017, for tax period 2019-20 and uploaded along with Form DRC-07 from the files of the first respondent herein, QUASH the same. Prayer in W.P.No.2175 of 2024: Writ Petition filed under Article 226 of the Constitution of India, pleased to issue a Writ of Certiorari, to call for the records of the impugned assessment order in ZD330823169746Y dated 30.08.2023 passed under Section 73 of the CGST/TNGST Act, 2017, for tax period 2020-21",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-07-20",
+     "quote": "pursuant to the respective show cause notice dated 20.07.2023",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "The show cause notices and the impugned assessment orders were uploaded in the “View Additional Notices and Orders” tab on the GST portal.",
+     "para": 3
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-08-24",
+    "quote": "assessment orders dated 24.08.2023, 25.08.2023, 30.08.2023, & 30.08.2023",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "The show cause notices and the impugned assessment orders were uploaded in the “View Additional Notices and Orders” tab on the GST portal.",
+    "para": 3
+   }
+  },
+  "events": [
+   {
+    "date": "2023-07-20",
+    "type": "scn_issued",
+    "quote": "pursuant to the respective show cause notice dated 20.07.2023",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "the petitioner did not access the notices and, therefore, could not reply thereto.",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "a personal hearing was offered to the petitioner in respect of each assessment year, but, the petitioner failed to attend the same.",
+    "para": 4
+   },
+   {
+    "date": "2023-08-24",
+    "type": "order_passed",
+    "quote": "assessment orders dated 24.08.2023, 25.08.2023, 30.08.2023, & 30.08.2023",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "The tax liability arises out of alleged discrepancies between the GSTR 3B & GSTR 2A returns or between the GSTR 7 and GSTR 2A returns.",
+    "para": 6
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Learned counsel for the petitioner submits that the show cause notices and the impugned assessment orders were uploaded in the “View Additional Notices and Orders” tab on the GST portal.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "The impugned assessment orders indicate that the petitioner was not heard before such orders were issued.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "These Writ Petitions are disposed of on the above terms.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14342,
+   "tokens_out": 5606,
+   "seconds": 17.34,
+   "cached": false
+  },
+  {
+   "tokens_in": 3258,
+   "tokens_out": 260,
+   "seconds": 1.77,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.notices[0].service_mode:facts.notices[0].service_mode",
+   "facts.order.service_mode:facts.order.service_mode"
+  ]
+ }
+}

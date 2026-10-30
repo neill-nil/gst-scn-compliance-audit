@@ -1,0 +1,166 @@
+{
+ "cnr": "DLHC010025762025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "The DGGI Show Cause Notice dated 29.07.2024 was issued under Section 74 of the CGST Act and covers the period from FY 2017-18 (July onwards) to FY 2019-20.",
+   "para": 34
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19",
+    "2019-20"
+   ],
+   "quote": "The DGGI Show Cause Notice dated 29.07.2024 was issued under Section 74 of the CGST Act and covers the period from FY 2017-18 (July onwards) to FY 2019-20.",
+   "para": 34
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-07-29",
+     "quote": "By way of the present Writ Petition, the Petitioner assails the Show Cause Notice dated 29.07.2024 issued by the Directorate General of GST Intelligence, Delhi Zonal Unit [„DGGI/DZU‟] under Sections 74 and 122 of the Central Goods and Services Tax Act, 2017 [„CGST Act‟], read with Section 20 of the Integrated Goods and Services Tax Act, 2017 [„IGST Act‟].",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-01-31",
+    "quote": "The present judgment shall accordingly proceed on the basis that the impugned Order-in-Original was passed on 31.01.2025.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-07-29",
+    "type": "scn_issued",
+    "quote": "The DGGI Show Cause Notice dated 29.07.2024 was issued under Section 74 of the CGST Act and covers the period from FY 2017-18 (July onwards) to FY 2019-20.",
+    "para": 34
+   },
+   {
+    "date": "2024-12-23",
+    "type": "other",
+    "quote": "A corrigendum was thereafter issued on 23.12.2024.",
+    "para": 11
+   },
+   {
+    "date": "2025-01-31",
+    "type": "order_passed",
+    "quote": "On 31.01.2025, the competent adjudicating authority passed Order-in-Original No. 73/SPP/ADC/CGST/DSC/2024-25 pursuant to the Show Cause Notice dated 29.07.2024.",
+    "para": 13
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "The said Show Cause Notice proposed, inter alia, recovery of ITC aggregating to Rs.7,81,78,980/-, comprising IGST of Rs.4,46,05,885/-, CGST of Rs.1,67,86,547/- and SGST of Rs.1,67,86,547/-, along with applicable interest and penalties.",
+    "para": 10
+   },
+   {
+    "type": "fraud_allegation",
+    "quote": "The DGGI Show Cause Notice dated 29.07.2024 was issued under Section 74 of the CGST Act and covers the period from FY 2017-18 (July onwards) to FY 2019-20.",
+    "para": 34
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "By the said order, the demand of Rs.7,81,78,980/- was confirmed under Section 74(9) of the CGST Act read with the relevant provisions of the DGST Act and the IGST Act, along with applicable interest.",
+    "para": 13
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Consequently, the mere fact that the Show Cause Notice dated 29.07.2024 covers more than one financial year cannot, by itself, render the notice without jurisdiction.",
+    "quote_source": "court",
+    "para": 43
+   },
+   {
+    "type": "other_procedural",
+    "note": "parallel proceedings barred under Section 6(2)(b)",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It was further submitted that the proceedings initiated by the DGGI also concern alleged wrongful availment and utilisation of ITC for substantially the same period.",
+    "quote_source": "argument",
+    "para": 15
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "In view of the aforesaid discussion, the present Writ Petition is dismissed.",
+   "para": 49
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 8643,
+   "tokens_out": 1346,
+   "seconds": 5.5,
+   "cached": false
+  },
+  {
+   "tokens_in": 14176,
+   "tokens_out": 555,
+   "seconds": 8.13,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

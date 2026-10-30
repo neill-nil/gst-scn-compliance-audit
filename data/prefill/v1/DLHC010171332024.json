@@ -1,0 +1,166 @@
+{
+ "cnr": "DLHC010171332024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The order has been passed under Section 73 of the Central Goods and Services Tax Act, 2017 (hereinafter referred to as the Act).",
+   "para": 1
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-23",
+     "quote": "Petitioner impugns order dated 28.12.2023, whereby the impugned Show Cause Notice dated 23.09.2023, proposing a demand of Rs.",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-28",
+    "quote": "Petitioner impugns order dated 28.12.2023, whereby the impugned Show Cause Notice dated 23.09.2023, proposing a demand of Rs.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-23",
+    "type": "scn_issued",
+    "quote": "Petitioner impugns order dated 28.12.2023, whereby the impugned Show Cause Notice dated 23.09.2023, proposing a demand of Rs.",
+    "para": 1
+   },
+   {
+    "date": "2023-10-23",
+    "type": "reply_filed",
+    "quote": "Learned counsel for Petitioner submits that Petitioner had filed a detailed reply dated 23.10.2023, however, the impugned order dated 28.12.2023 does not take into consideration the reply submitted by the Petitioner and is a cryptic order.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-28",
+    "type": "order_passed",
+    "quote": "Petitioner impugns order dated 28.12.2023, whereby the impugned Show Cause Notice dated 23.09.2023, proposing a demand of Rs.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Perusal of the Show Cause Notice shows that the Department has given separate headings i.e., excess claim Input Tax Credit [“ITC”]; under declaration of ineligible ITC and ITC claimed from cancelled dealers, return defaulters and tax nonpayers.",
+    "para": 3
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The impugned order, however, after recording the narration, records that the reply uploaded by the tax payer is not satisfactory and no substantial documents have been submitted by the taxpayer.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Proper Officer had to at least consider the reply on merits and then form an opinion.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "He merely held that the reply is not satisfactory nor any substantial documents were submitted by the taxpayer which ex-facie shows that Proper Officer has not applied his mind to the reply submitted by the Petitioner.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The challenge to Notification No. 9 of 2023 with regard to the initial extension of time is left open.",
+    "quote_source": "court",
+    "para": 10
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order dated 28.12.2023 is set aside.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4567,
+   "tokens_out": 990,
+   "seconds": 6.85,
+   "cached": false
+  },
+  {
+   "tokens_in": 2800,
+   "tokens_out": 367,
+   "seconds": 3.75,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

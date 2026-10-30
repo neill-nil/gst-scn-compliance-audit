@@ -1,0 +1,93 @@
+{
+ "cnr": "UPHC020763312025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "order dated 25.04.2024 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-04-25",
+    "quote": "order dated 25.04.2024 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-04-25",
+    "type": "order_passed",
+    "quote": "Present petition has been filed challenging the order dated 25.04.2024 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+    "para": 2
+   },
+   {
+    "date": "2025-01-17",
+    "type": "appeal_dismissed",
+    "quote": "as well as the order dated 17.01.2025 whereby the appeal was dismissed as being beyond limitation.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Since the aforesaid dictum is applicable in the present facts and circumstances, accordingly, the impugned orders cannot be sustained and the orders dated 25.04.2024 & 17.01.2025 are accordingly quashed.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "With the aforesaid, the present petition is allowed.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14320,
+   "tokens_out": 4632,
+   "seconds": 13.39,
+   "cached": false
+  },
+  {
+   "tokens_in": 3247,
+   "tokens_out": 191,
+   "seconds": 4.51,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

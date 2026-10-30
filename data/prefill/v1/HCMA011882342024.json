@@ -1,0 +1,139 @@
+{
+ "cnr": "HCMA011882342024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "Ref.No.ZD3308242807634/2019-20 dated 29.08.2024",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-21",
+     "quote": "the respondent has issued a show cause notice in Form DRC-01, dated 21.05.2024",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-29",
+    "quote": "Ref.No.ZD3308242807634/2019-20 dated 29.08.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-21",
+    "type": "scn_issued",
+    "quote": "the respondent has issued a show cause notice in Form DRC-01, dated 21.05.2024",
+    "para": 2
+   },
+   {
+    "date": "2024-06-20",
+    "type": "reply_filed",
+    "quote": "the petitioner filed a reply on in Form GST DRC-06 dated 20.06.2024",
+    "para": 2
+   },
+   {
+    "date": "2024-08-29",
+    "type": "order_passed",
+    "quote": "passed the impugned order, thereby, confirming the proposals contained in the show cause notice.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In terms of Section 75 (4) of the CGST Act, it is mandatory on the part of the respondent to provide an opportunity of hearing to the assessee before passing any adverse order, whereas, in the present case, no such opportunity was granted to the petitioner before confirming the demand made in the show cause notice, therefore, the impugned order is not only against the provisions contemplated under the Section 75 (4) of CGST Act but also suffers from violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, the Writ Petition is allowed on the aforesaid terms.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4499,
+   "tokens_out": 844,
+   "seconds": 6.25,
+   "cached": false
+  },
+  {
+   "tokens_in": 2732,
+   "tokens_out": 245,
+   "seconds": 4.27,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

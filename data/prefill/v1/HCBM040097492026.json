@@ -1,0 +1,135 @@
+{
+ "cnr": "HCBM040097492026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "Challenge is to show cause notice dated 26/06/2025 issued by respondent no.4, under Section 74 of The Central Goods and Services Tax Act, 2017 (for short “CGST Act”).",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20",
+    "2020-21"
+   ],
+   "quote": "The notice dated 27/06/2025 pertains to financial years 2018-19 to 2020-21 saying that the petitioner has, during this period, suppressed taxable value, and thereby made short payments of Central Goods and Service Tax.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-06-26",
+     "quote": "Challenge is to show cause notice dated 26/06/2025 issued by respondent no.4, under Section 74 of The Central Goods and Services Tax Act, 2017 (for short “CGST Act”).",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-06-26",
+    "type": "scn_issued",
+    "quote": "Challenge is to show cause notice dated 26/06/2025 issued by respondent no.4, under Section 74 of The Central Goods and Services Tax Act, 2017 (for short “CGST Act”).",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "fraud_allegation",
+    "quote": "The notice dated 27/06/2025 pertains to financial years 2018-19 to 2020-21 saying that the petitioner has, during this period, suppressed taxable value, and thereby made short payments of Central Goods and Service Tax.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_found",
+    "contested": true,
+    "quote": "In the present case, since this Court has, subsequent to decision of the Delhi High Court, taken a different view, the authorities below will be bound by the subsequent judgments.",
+    "quote_source": "court",
+    "para": 13
+   }
+  ],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": false,
+   "quote": "With the above liberty, and for the reasons set out in Milroc Good Earth Developers (supra) and Rite Water Solutions (India) Ltd. (supra), the petition is partly allowed.",
+   "para": 18
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 6280,
+   "tokens_out": 854,
+   "seconds": 5.93,
+   "cached": false
+  },
+  {
+   "tokens_in": 9452,
+   "tokens_out": 533,
+   "seconds": 7.41,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

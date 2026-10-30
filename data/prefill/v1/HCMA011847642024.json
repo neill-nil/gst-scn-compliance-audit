@@ -1,0 +1,157 @@
+{
+ "cnr": "HCMA011847642024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "for the tax period April 2018 to March 2019.",
+   "para": 4
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-10-30",
+     "quote": "Show Cause Notice in DRC-01 dated 30.10.2023.",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "Both the show cause notice and impugned proceedings were uploaded in the GST portal and the same were not served to the petitioner through any other mode.",
+     "para": 4
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-01-06",
+    "quote": "Summary of the order of the 1st respondent in Form GST DRC-07 bearing Ref.No.ZD33012402846M/2018-19 dated 06.01.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "Both the show cause notice and impugned proceedings were uploaded in the GST portal and the same were not served to the petitioner through any other mode.",
+    "para": 4
+   }
+  },
+  "events": [
+   {
+    "date": "2023-10-03",
+    "type": "pre_scn_intimation",
+    "quote": "Thereafter, the 1st respondent had issued an intimation in Form DRC-01A dated 03.10.2023",
+    "para": 4
+   },
+   {
+    "date": "2023-10-30",
+    "type": "scn_issued",
+    "quote": "and Show Cause Notice in DRC-01 dated 30.10.2023.",
+    "para": 4
+   },
+   {
+    "date": "2023-11-25",
+    "type": "hearing_scheduled",
+    "quote": "The learned counsel for the petitioner submitted that the 1st respondent had issued a Personal Hearing Notice dated 25.11.2023, calling upon the petitioner to appear for personal hearing on 02.12.2023.",
+    "para": 4
+   },
+   {
+    "date": "2023-12-02",
+    "type": "hearing_scheduled",
+    "quote": "The learned counsel for the petitioner submitted that the 1st respondent had issued a Personal Hearing Notice dated 25.11.2023, calling upon the petitioner to appear for personal hearing on 02.12.2023.",
+    "para": 4
+   },
+   {
+    "date": "2024-01-06",
+    "type": "order_passed",
+    "quote": "Finally, the 1st respondent has passed the impugned order dated 06.01.2024, confirming the proposal in the show cause notice.",
+    "para": 4
+   },
+   {
+    "date": "2024-06-27",
+    "type": "recovery_or_attachment",
+    "quote": "and the consequential impugned bank attachment proceeding issued by the third respondent in Ref.No.33ABFFS8428J1ZV/APR-2018 to MAR-2019 along with Form GST DRC-13 dated 27.06.2024 to the 4th respondent",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "As far as this case is concerned, without providing an opportunity of hearing to the petitioner, the 1st respondent has passed the impugned order, which is in violation of the principles of natural justice.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, this writ petition is disposed of.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5215,
+   "tokens_out": 1184,
+   "seconds": 5.26,
+   "cached": false
+  },
+  {
+   "tokens_in": 7240,
+   "tokens_out": 427,
+   "seconds": 7.96,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "cnr": "DLHC010291382025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "challenging the order dated 11th August, 2024 issued by the office of the Sales Tax Officer Class II/AVATO Jurisdiction, Delhi (hereinafter, the ‘Sales Tax Officer’) under Section 73 of the Central Goods and Services Tax Act, 2017 (hereinafter, ‘CGST Act. 2017’).",
+   "para": 3
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-29",
+     "quote": "Show Cause Notice dated 29th May, 2024 (hereinafter, ‘the SCN’)",
+     "para": 11
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-11",
+    "quote": "challenging the order dated 11th August, 2024 issued by the office of the Sales Tax Officer Class II/AVATO Jurisdiction, Delhi",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-29",
+    "type": "scn_issued",
+    "quote": "Show Cause Notice dated 29th May, 2024 (hereinafter, ‘the SCN’) issued by the Sales Tax Officer",
+    "para": 11
+   },
+   {
+    "date": "2024-08-03",
+    "type": "other",
+    "quote": "on 3rd August, 2024 office of the Sales Tax Officer issued a reminder notice to the Petitioner for reply to the SCN to be furnished.",
+    "para": 11
+   },
+   {
+    "date": "2024-08-11",
+    "type": "order_passed",
+    "quote": "challenging the order dated 11th August, 2024 issued by the office of the Sales Tax Officer Class II/AVATO Jurisdiction, Delhi (hereinafter, the ‘Sales Tax Officer’) under Section 73 of the Central Goods and Services Tax Act, 2017",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "The taxpayer neither replied to the SCN nor he or his attorney/ authorised representative appeared before the assessing authority for personal hearing despite multiple opportunity.",
+    "para": 11
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The validity of the impugned notifications was under consideration before this Court in a batch of petitions with the lead petition being W.P.(C) 16499/2023 titled ‘DJST Traders Pvt.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "This Court is of the opinion that since the Petitioner has not been afforded an opportunity to be heard and the said SCN, as also the consequent impugned order has been passed without hearing the Petitioner.",
+    "quote_source": "court",
+    "para": 11
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Further, the impugned order is a non-speaking order.",
+    "quote_source": "court",
+    "para": 11
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 17432,
+   "tokens_out": 5089,
+   "seconds": 14.55,
+   "cached": false
+  },
+  {
+   "tokens_in": 10103,
+   "tokens_out": 700,
+   "seconds": 9.33,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

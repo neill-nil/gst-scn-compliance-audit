@@ -1,0 +1,154 @@
+{
+ "cnr": "HCMA010467312025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2022-23"
+   ],
+   "quote": "GSTIN. 33AAIFM9700B2ZN/ 2022-23",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "all the show cause notice/personal hearing notice, which culminated in the impugned order, were merely uploaded in the GST Portal under the ''View Additional Notices Tab''",
+     "para": 3
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-05-28",
+    "quote": "along with DRC-07 vide reference number ZD3305242671598 dated 28.05.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "hence, the same were unnoticed by the petitioner, therefore, the petitioner could not file reply nor appear for the personal hearing",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "hence, the same were unnoticed by the petitioner, therefore, the petitioner could not file reply nor appear for the personal hearing",
+    "para": 3
+   },
+   {
+    "date": "2024-05-28",
+    "type": "order_passed",
+    "quote": "impugned order in GSTIN order passed by the respondent in GSTIN. 33AAIFM9700B2ZN/ 2022-23 along with DRC-07 vide reference number ZD3305242671598 dated 28.05.2024",
+    "para": 0
+   },
+   {
+    "date": null,
+    "type": "recovery_or_attachment",
+    "quote": "Further, it is stated that the respondent-Department, in pursuance of the impugned order, already initiated recovery proceedings against the petitioner and a sum of Rs.1,50,294/- from and out of the total demand of Rs.3,53,820/- has been recovered.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Taking into consideration of the submissions made on either side and perusal of record, there is no dispute on the aspect that notices, which culminated in the impugned order were merely uploaded in the GST portal, which were unnoticed by the petitioner as the petitioner had no occasion to view the Portal then and there, hence, the petitioner could not file reply or appear for the personal hearing.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "However, the respondent passed the impugned order without even affording any opportunity of hearing to the petitioner, which is nothing by an ex parte order, as the same suffers from violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, the Writ Petition is allowed on the aforesaid terms.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10443,
+   "tokens_out": 1975,
+   "seconds": 11.53,
+   "cached": false
+  },
+  {
+   "tokens_in": 6343,
+   "tokens_out": 771,
+   "seconds": 8.8,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

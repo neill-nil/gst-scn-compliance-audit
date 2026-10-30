@@ -1,0 +1,145 @@
+{
+ "cnr": "HCMA012202502025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2022-23"
+   ],
+   "quote": "the tax period 2022 – 2023.",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-12",
+     "quote": "preceded by a Notice in GST DRC 01 dated 12.11.2024",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-06-03",
+    "quote": "impugned order dated 03.06.2025",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-12",
+    "type": "scn_issued",
+    "quote": "preceded by a Notice in GST DRC 01 dated 12.11.2024 issued for the tax period 2022 – 2023.",
+    "para": 3
+   },
+   {
+    "date": "2025-01-23",
+    "type": "reply_filed",
+    "quote": "Pursuant to which, the Petitioner replied to the said Show Cause Notice dated 12.11.2024 vide Reply dated 23.01.2025.",
+    "para": 4
+   },
+   {
+    "date": "2025-06-03",
+    "type": "order_passed",
+    "quote": "The Petitioner is before this Court against the impugned order dated 03.06.2025",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "in the Show Cause Notice in DRC 01 dated 21.11.2024, the Petitioner was merely asked to produce copies of all purchase Invoices, Lorry Transport Receipts, money paid to transporter, Bank Receipts, details of amount paid to his sellers and also Toll gates.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "post facto bank enquiry without notice",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "This Court is inclined to quash the impugned order in so far as the demand in respect of Defect No.9 is concerned, as there is a manifest violation of Principles of Natural Justice, as the Petitioner has not been given the details of the post facto enquiry, which happened after the hearing and before passing of the impugned order.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": true,
+   "quote": "Therefore to that extent the impugned order is quashed and the case is remitted back to the Respondent to pass a fresh order in so far as Defect No.9 is concerned.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4438,
+   "tokens_out": 701,
+   "seconds": 6.0,
+   "cached": false
+  },
+  {
+   "tokens_in": 2671,
+   "tokens_out": 317,
+   "seconds": 4.9,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

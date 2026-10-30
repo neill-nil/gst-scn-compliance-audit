@@ -1,0 +1,191 @@
+{
+ "cnr": "BRHC010520472024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "confirm the demand of Service Tax amounting to Rs.3,54,59,160/- (Rupees Three Crores Fifty Four Lakhs Fifty Nine Thousand One Hundred and Sixty only) (Inclusive of all Cesses) against the noticee under the proviso to Section 73(1) of the Finance Act, 1994",
+   "para": 4
+  },
+  "financial_years": {
+   "value": [
+    "2016-17",
+    "2017-18"
+   ],
+   "quote": "total amounting to Rs.3,54,59,160/- for the period April, 2016-June, 2017.",
+   "para": 8
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2021-10-13",
+     "quote": "The Respondent No. 2 issued a show cause notice on 13.10.2021",
+     "para": 8
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-02-29",
+    "quote": "arises out of the Order No. 17/ST/Commissioner/2023-24 dated 29.02.2024.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-10-13",
+    "type": "scn_issued",
+    "quote": "The Respondent No. 2 issued a show cause notice on 13.10.2021",
+    "para": 8
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "even as no defence reply could be filed by the petitioner pursuant to the show cause notice",
+    "para": 9
+   },
+   {
+    "date": "2024-01-11",
+    "type": "hearing_scheduled",
+    "quote": "The date of personal hearing was fixed calling upon the petitioner to appear on 11.01.2024.",
+    "para": 9
+   },
+   {
+    "date": "2024-01-11",
+    "type": "adjournment_requested",
+    "quote": "In response to the notice of personal hearing, a representative of the petitioner appeared and requested for time",
+    "para": 9
+   },
+   {
+    "date": "2024-02-14",
+    "type": "hearing_scheduled",
+    "quote": "second date of hearing was fixed on 14.02.2024",
+    "para": 10
+   },
+   {
+    "date": "2024-02-14",
+    "type": "hearing_attended",
+    "quote": "It is submitted that the discussions which took place on 14.02.2024 have been mentioned in the first part of paragraph ‘3.2’ of the impugned order (Annexure-P4) and from this part of the order, it would appear that second date of hearing was fixed on 14.02.2024",
+    "para": 10
+   },
+   {
+    "date": "2024-02-29",
+    "type": "order_passed",
+    "quote": "arises out of the Order No. 17/ST/Commissioner/2023-24 dated 29.02.2024.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "alleging that the Company is engaged in providing taxable services as defined under Section 65B(51) of the Act of 1994 read with Section 65B(44) of the said Act to its various clients in lieu of consideration for money",
+    "para": 8
+   },
+   {
+    "type": "fraud_allegation",
+    "quote": "have willfully escaped the assessment of taxable value by resorting to suppression with intention to evade the payment of service tax including Krishi Kalyan Cess and Swachh Bharat Cess total amounting to Rs.3,54,59,160/- for the period April, 2016-June, 2017.",
+    "para": 8
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "the representative of the petitioner was explicitly asked to provide substantiating documentation supporting the assertions made by the noticee but even after 15 days, the noticee had failed to submit any documents in support of his claim.",
+    "para": 10
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In our considered opinion, the statutory requirement as envisaged under Section 33A of the Central Excise Act, 1944 read with paragraph ‘14.3’ of the master circular has not been complied with.",
+    "quote_source": "court",
+    "para": 27
+   },
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Learned counsel further submits that the impugned order (Annexure-P4) has been passed much after the expiry of the period of limitation as provided under sub-section (4B) of Section 73 of the Act of 1994.",
+    "quote_source": "argument",
+    "para": 15
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "This writ application is allowed to the extent indicated hereinabove.",
+   "para": 30
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 22518,
+   "tokens_out": 5625,
+   "seconds": 19.54,
+   "cached": false
+  },
+  {
+   "tokens_in": 15144,
+   "tokens_out": 610,
+   "seconds": 7.7,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [
+   "facts.notices[0].hearing_date_given: a value needs a quote, and no value means no quote"
+  ],
+  "quotes_not_found": []
+ }
+}
