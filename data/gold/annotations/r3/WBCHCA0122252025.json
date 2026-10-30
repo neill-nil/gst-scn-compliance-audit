@@ -92,7 +92,7 @@
  },
  "review": {
   "status": "out_of_scope",
-  "kind": "first",
+  "kind": "second",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",

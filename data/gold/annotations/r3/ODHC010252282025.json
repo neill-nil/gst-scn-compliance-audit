@@ -19,7 +19,7 @@
     "date": {
      "value": "2020-11-27",
      "quote": "show cause notice dated 27th November, 2020",
-     "para": 2
+     "para": 3
     },
     "reply_due": {
      "value": null,
@@ -75,19 +75,19 @@
     "date": "2020-11-27",
     "type": "scn_issued",
     "quote": "proceeding under Section 74 of the GST Act was initiated by issue of show cause notice dated 27th November, 2020",
-    "para": 2
+    "para": 3
    },
    {
     "date": null,
     "type": "reply_not_filed",
     "quote": "having failed to file reply within the period stipulated therein, the assessment order has been passed",
-    "para": 2
+    "para": 3
    },
    {
     "date": "2022-02-07",
     "type": "order_passed",
     "quote": "the assessment order has been passed whereby a demand in Form GST DRC-07 was issued.",
-    "para": 2
+    "para": 3
    }
   ],
   "document_contents": []
@@ -108,16 +108,16 @@
     "note": null,
     "finding": "defect_rejected",
     "contested": false,
-    "quote": "In view of the aforesaid provision, it is made clear that even though the petitioner has not been communicated with the order physically, but since the same was made available on the common portal, it is deemed to have been served on him.",
+    "quote": "Such being perception, which assists this Court to arrive at a conclusion that if notice/order is uploaded on common GST portal, the same shall be considered as service on the assessee (petitioner) in view of unambiguous provisions contained in Section 169 of the GST Act and the writ petition is not maintainable being filed beyond the condonable period provided under Section 107 of the GST Act.",
     "quote_source": "court",
-    "para": 9
+    "para": 10
    }
   ],
   "outcome": {
    "disposition": "dismissed",
    "remanded": false,
    "quote": "For the reasons assigned in the foregoing paragraphs and discussions made supra, the writ petition, sans merit, stands dismissed; and pending Interlocutory Applications, if any, are also dismissed accordingly.",
-   "para": 8
+   "para": 10
   }
  },
  "review": {

@@ -112,24 +112,6 @@
     "quote": "The CGST Act / DGST Act does not provide for issuance of the multiple audit memos determining the liability of a tax payer.",
     "quote_source": "court",
     "para": 7
-   },
-   {
-    "type": "other_procedural",
-    "note": "audit allegedly continued beyond the s.65(4) time limit",
-    "finding": "not_decided",
-    "contested": false,
-    "quote": "It is the petitioner’s case that pursuant to the said notice, an audit was conducted under Section 65 of the CGST Act/the DGST Act much beyond the period as stipulated under Section 65(4) of the CGST Act /the DGST Act.",
-    "quote_source": "argument",
-    "para": 5
-   },
-   {
-    "type": "other_procedural",
-    "note": "s.74 SCN invalid because based on irregular audit memos",
-    "finding": "defect_rejected",
-    "contested": false,
-    "quote": "Any irregularities in issuing the audit memos does not impinge the validity of the impugned SCN.",
-    "quote_source": "court",
-    "para": 10
    }
   ],
   "outcome": {
@@ -145,7 +127,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Audit years 2017-18 to 2020-21 are stated, but the SCN demand years are not clearly specified; financial_years left null. Audit s.65(4) timing is not the s.73/74 notice/order limitation category.",
+  "notes": "Court found repeated audit memos demanding payment lacked statutory basis, but held the subsequent s.74 SCN remained valid. Petitioner also challenged audit duration under s.65(4); court did not decide that timing point. Audit years 2017-18 to 2020-21 are stated, but the SCN demand years are not clearly specified; financial_years left null.",
   "seconds": null,
   "saved_at": "2026-10-30T21:02:45"
  }
