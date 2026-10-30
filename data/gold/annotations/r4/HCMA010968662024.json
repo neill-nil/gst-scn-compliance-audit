@@ -1,0 +1,142 @@
+{
+ "cnr": "HCMA010968662024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "Assessment year 2017-18",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-01",
+     "quote": "The taxpayer has not filed the reply for the show cause notice dated 01.09.2023",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-28",
+    "quote": "An order in original dated 28.12.2023 is challenged in this writ petition",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-01",
+    "type": "scn_issued",
+    "quote": "The taxpayer has not filed the reply for the show cause notice dated 01.09.2023",
+    "para": 4
+   },
+   {
+    "date": "2023-10-03",
+    "type": "extension_requested",
+    "quote": "Initially, the petitioner requested for time by reply dated 03.10.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-11-03",
+    "type": "reply_filed",
+    "quote": "detailed replies dated 03.11.2023 and 21.11.2023 were uploaded in Form GST DRC-06 dated 06.11.2023 and 23.11.2023, respectively.",
+    "para": 2
+   },
+   {
+    "date": "2023-11-21",
+    "type": "reply_filed",
+    "quote": "detailed replies dated 03.11.2023 and 21.11.2023 were uploaded in Form GST DRC-06 dated 06.11.2023 and 23.11.2023, respectively.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-28",
+    "type": "order_passed",
+    "quote": "An order in original dated 28.12.2023 is challenged in this writ petition on the ground that the petitioner's reply was not taken into consideration.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "“The taxpayer has not filed the reply for the show cause notice dated 01.09.2023”",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Thus, the above mentioned replies were not taken into consideration.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons set out above, impugned order dated 28.12.2023 is set aside and the matter is remanded for re-consideration.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r4",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Checked against full judgment, no changes. The order itself falsely recorded 'The taxpayer has not filed the reply for the show cause notice dated 01.09.2023' despite two replies (03.11.2023, 21.11.2023) being on record with DRC-06 proof of upload -- reply_not_considered/defect_found is squarely supported at para 4. Outcome disposed/remanded matches para 5-6 (order set aside, remanded for fresh consideration with a hearing).",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:36:45"
+ }
+}

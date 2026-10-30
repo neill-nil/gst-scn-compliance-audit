@@ -1,0 +1,116 @@
+{
+ "cnr": "DLHC010275132025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-07-23",
+     "quote": "assailing the Show Cause Notice dated 23rd July, 2024 (hereinafter, ‘SCN’)",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-01-27",
+    "quote": "as also the Order-in-Original dated 27th January, 2025 (hereinafter, ‘impugned order’).",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-07-23",
+    "type": "scn_issued",
+    "quote": "assailing the Show Cause Notice dated 23rd July, 2024 (hereinafter, ‘SCN’)",
+    "para": 2
+   },
+   {
+    "date": "2025-01-27",
+    "type": "order_passed",
+    "quote": "as also the Order-in-Original dated 27th January, 2025 (hereinafter, ‘impugned order’).",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "The above decision has thus, decided the issue of consolidated notice for multiple years.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "Accordingly, the present petition is disposed of with liberty given to the Petitioner to file an appeal under Section 107 of the Central Goods and Service Tax Act, 2017, before the Appellate Authority by 30th September, 2025, along with the requisite pre-deposit.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r4",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Checked against full judgment, no changes. Batch order over 7 connected petitions (AVIK POLYMERS, KAMDHENU PLASTIC, SHRI BALAJI PLASTIC, SHRIRAM ENTERPRISES [this case], MANSI PLASTICS, SANJAY ENTERPRISES, R.V ENTERPRISES); the SCN (23.07.2024) and order (27.01.2025) dates are stated generically for 'the present petitions' as a group, not singled out for one lead petitioner, so unlike the JBN Impex batch (case DLHC010184962026) these are genuinely common facts, not another petitioner's. contested=false is correct and is a good example of rule 5 working as intended: this judgment applies its own precedent (Ambika Traders) and the Commercial Steel Limited SC case on writ maintainability generally, but never itself notes the Bombay HC's contrary Milroc/Rite Water line (seen in other cases in this batch) or any pending SC case on this specific point -- so despite the real conflict existing elsewhere, this judgment's own text doesn't flag it, and per rule 5 we don't import outside knowledge. consolidated_scn/defect_rejected and disposed/not-remanded (relegated to statutory appeal) both correct.",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:36:13"
+ }
+}

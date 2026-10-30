@@ -1,0 +1,150 @@
+{
+ "cnr": "DLHC010279642025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "assailing the Show Cause Notice dated 10th December, 2023 (hereinafter, ‘the SCN’) for the tax period April 2018 to March 2019",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-10",
+     "quote": "assailing the Show Cause Notice dated 10th December, 2023 (hereinafter, ‘the SCN’) for the tax period April 2018 to March 2019",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-21",
+    "quote": "as also the consequent order dated 21st April, 2024 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi (hereinafter, ‘the impugned order’)",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-10",
+    "type": "scn_issued",
+    "quote": "assailing the Show Cause Notice dated 10th December, 2023 (hereinafter, ‘the SCN’) for the tax period April 2018 to March 2019",
+    "para": 3
+   },
+   {
+    "date": "2024-02-28",
+    "type": "reply_filed",
+    "quote": "a reply dated 28th February 2024 along with supporting documents was filed by the Petitioner pursuant to the SCN dated 10th December, 2023.",
+    "para": 8
+   },
+   {
+    "date": null,
+    "type": "hearing_attended",
+    "quote": "Ld. Counsel for the Respondent submits that the Petitioner was also afforded a personal hearing, which was duly attended by the Petitioner.",
+    "para": 11
+   },
+   {
+    "date": "2024-04-21",
+    "type": "order_passed",
+    "quote": "as also the consequent order dated 21st April, 2024 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi (hereinafter, ‘the impugned order’)",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "In the SCN, a demand of Rs.23,38,002/- was raised upon the Petitioner.",
+    "para": 8
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The taxpayer failed to submit the documents in support of meeting the conditions of Section 16(2)(b) and provisio to Sec 16(2) of the GST Act 2017 i.e. document regarding payment of freight charges to the transporter, weigh bridge slips and party-wise payment ledger, bank statement etc.",
+    "para": 11
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The validity of the impugned notifications was under consideration before this Court in a batch of petitions with the lead petition being W.P.(C) 16499/2023 titled ‘DJST Traders Pvt. Ltd. vs. Union of India and Ors.’.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "In the opinion of this Court, the impugned order has been passed after duly considering the reply of the Petitioner.",
+    "quote_source": "court",
+    "para": 11
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "Petition is disposed of in these terms.",
+   "para": 16
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r4",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Checked against full judgment (same Delhi template/batch as case 12, DLHC010279262025). Added a hearing_attended event (para 11: 'the Petitioner was also afforded a personal hearing, which was duly attended') that the draft omitted despite the sibling case including the equivalent fact. Everything else -- extension_notification_validity not_decided/contested=true (same DJST Traders batch order, conflicting HC views, pending SC SLP), reply_not_considered defect_rejected (order quoted shows the reply was considered and rejected on documents, not ignored), outcome disposed/not remanded -- matches the judgment.",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:31:46"
+ }
+}

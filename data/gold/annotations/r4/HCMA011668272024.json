@@ -1,0 +1,146 @@
+{
+ "cnr": "HCMA011668272024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The challenge in this Writ Petition is to the order dated 30.04.2024 passed by the respondent under Sections 61, 73 and 50 of the TNGST Act 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-08-21",
+     "quote": "the petitioner has been issued with a show cause notice in Form GST DRC-01 dated 21.08.2023",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-30",
+    "quote": "passed the impugned order dated 30.04.2024",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-08-21",
+    "type": "scn_issued",
+    "quote": "the petitioner has been issued with a show cause notice in Form GST DRC-01 dated 21.08.2023",
+    "para": 3
+   },
+   {
+    "date": "2024-04-12",
+    "type": "reply_filed",
+    "quote": "to which, the petitioner filed their replies on 12.04.2024, 26.04.2024 and 29.04.2024",
+    "para": 3
+   },
+   {
+    "date": "2024-04-26",
+    "type": "reply_filed",
+    "quote": "to which, the petitioner filed their replies on 12.04.2024, 26.04.2024 and 29.04.2024",
+    "para": 3
+   },
+   {
+    "date": "2024-04-29",
+    "type": "reply_filed",
+    "quote": "to which, the petitioner filed their replies on 12.04.2024, 26.04.2024 and 29.04.2024",
+    "para": 3
+   },
+   {
+    "date": "2024-04-30",
+    "type": "order_passed",
+    "quote": "passed the impugned order dated 30.04.2024",
+    "para": 3
+   },
+   {
+    "date": "2024-08-02",
+    "type": "recovery_or_attachment",
+    "quote": "also initiated recovery proceedings dated 02.08.2024 and recovered a sum of Rs.5,35,346 from the petitioner's bank account",
+    "para": 3
+   },
+   {
+    "date": "2024-08-28",
+    "type": "other",
+    "quote": "the petitioner has preferred an Appeal dated 28.08.2024",
+    "para": 4
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "the respondent, without considering those replies in a proper perspective, passed the impugned order dated 30.04.2024",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "this Court is inclined to disposed of the Writ Petition with the following directions;- i The respondent is directed to defer the recovery proceedings till the disposal of the Appeal filed by the petitioner dated 28.08.2024.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r4",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Checked against full judgment, no changes. reply_not_considered correctly not_decided/argument-quote: the court expressly defers the merits to the pending statutory appeal (para 7, 'the petitioner has to pursue his remedy via Appeal') and only directs recovery to be deferred pending that appeal -- it never rules on whether the replies were actually considered. Outcome disposed/not remanded matches para 7-8.",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:33:51"
+ }
+}
