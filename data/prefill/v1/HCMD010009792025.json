@@ -1,0 +1,101 @@
+{
+ "cnr": "HCMD010009792025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "The challenge in the writ petition is to the assessment order of the year 2017-18.",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-10-25",
+    "quote": "The challenge in the writ petition is to the order in GSTIN. 33AAGCC2404D2ZE/2017-18, dated 25.10.2024, issued by the 1st respondent and consequential impugned Form GST DRC-07 in Reference No.ZD331024200558U, dated 25.10.2024 issued by the 2nd Respondent",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-10-25",
+    "type": "order_passed",
+    "quote": "The challenge in the writ petition is to the order in GSTIN. 33AAGCC2404D2ZE/2017-18, dated 25.10.2024, issued by the 1st respondent and consequential impugned Form GST DRC-07 in Reference No.ZD331024200558U, dated 25.10.2024 issued by the 2nd Respondent",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "A perusal of the order impugned herein would also show that the Assessing Officer had not made any determination of the tax payable by the petitioner as envisaged under Section 74 of the Act, nor has followed the guidelines issued in Circular dated 29.08.2024 of the Commissioner of State Tax.",
+    "quote_source": "court",
+    "para": 3
+   },
+   {
+    "type": "other_procedural",
+    "note": "non-following of circular no. 8/2024",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "A perusal of the order impugned herein would also show that the Assessing Officer had not made any determination of the tax payable by the petitioner as envisaged under Section 74 of the Act, nor has followed the guidelines issued in Circular dated 29.08.2024 of the Commissioner of State Tax.",
+    "quote_source": "court",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In fine, this Writ Petition is allowed, the impugned order is set aside and the matter is remitted back to the first respondent for fresh consideration.",
+   "para": 4
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4353,
+   "tokens_out": 573,
+   "seconds": 5.63,
+   "cached": false
+  },
+  {
+   "tokens_in": 2586,
+   "tokens_out": 370,
+   "seconds": 5.12,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.order.date:facts.order.date",
+   "facts.events[0]:order_passed"
+  ]
+ }
+}

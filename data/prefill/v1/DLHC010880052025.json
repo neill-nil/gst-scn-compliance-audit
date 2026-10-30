@@ -1,0 +1,153 @@
+{
+ "cnr": "DLHC010880052025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "Financial Year 2019-20.",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-20",
+     "quote": "Show Cause Notice dated 20th May, 2024",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "the SCN dated 20th May, 2024 from which the impugned order arises, was uploaded on the ‘Additional Notices Tab’",
+     "para": 8
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-25",
+    "quote": "impugned order dated 25th August, 2024",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "the impugned order dated 25th August, 2024 was passed without providing the Petitioner a personal hearing and in the absence of a reply on behalf of the Petitioner.",
+    "para": 8
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-20",
+    "type": "scn_issued",
+    "quote": "the SCN dated 20th May, 2024 from which the impugned order arises, was uploaded on the ‘Additional Notices Tab’",
+    "para": 8
+   },
+   {
+    "date": "2024-08-25",
+    "type": "order_passed",
+    "quote": "the impugned order dated 25th August, 2024 was passed without providing the Petitioner a personal hearing and in the absence of a reply on behalf of the Petitioner.",
+    "para": 8
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "However, as observed by this Court in the order dated 22nd April, 2025 as well, since the challenge to the above mentioned notifications is presently under consideration before the Supreme Court in S.L.P No 4240/2025 titled M/s HCC-SEW-MEIL-AAG JV v. Assistant Commissioner of State Tax &Ors., the challenge made by the Petitioner to the impugned notifications in the present proceedings shall also be subject to the outcome of the decision of the Supreme Court.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Insofar as the submission that the notices were uploaded on the Additional Tab is concerned, the same is not tenable as they are dated post 16th January 2024.",
+    "quote_source": "court",
+    "para": 12
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The submission on behalf of the Petitioner is that the impugned order dated 25th August, 2024 was passed without providing the Petitioner a personal hearing and in the absence of a reply on behalf of the Petitioner.",
+    "quote_source": "argument",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside, subject to payment of Rs. 20,000/- as costs to the Delhi High Court Bar Association.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 18320,
+   "tokens_out": 4933,
+   "seconds": 17.88,
+   "cached": false
+  },
+  {
+   "tokens_in": 11214,
+   "tokens_out": 1121,
+   "seconds": 8.09,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[0]:extension_notification_validity"
+  ]
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "cnr": "DLHC010829062025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20"
+   ],
+   "quote": "Impugned order dated 17th August, 2024 for the Financial Year 2019- 20 passed by the Sales Tax Officer Class II/Avato Ward 39, Zone-1, Delhi.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-19",
+     "quote": "● Show Cause Notice 19th December, 2023 issued by the Sales Tax Officer Class II/Avato Ward 39, Zone-1, Delhi.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "The same were only uploaded with the old GST portal of the Petitioner itself.",
+     "para": 7
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   },
+   {
+    "date": {
+     "value": "2024-05-29",
+     "quote": "● Show Cause Notices dated 29th May, 2024 issued by the Sales Tax Officer Class II/Avato Ward 39, Zone-1, Delhi.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "The same were only uploaded with the old GST portal of the Petitioner itself.",
+     "para": 7
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-17",
+    "quote": "Impugned order dated 17th August, 2024 for the Financial Year 2019- 20 passed by the Sales Tax Officer Class II/Avato Ward 39, Zone-1, Delhi.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-19",
+    "type": "scn_issued",
+    "quote": "● Show Cause Notice 19th December, 2023 issued by the Sales Tax Officer Class II/Avato Ward 39, Zone-1, Delhi.",
+    "para": 2
+   },
+   {
+    "date": "2024-03-20",
+    "type": "order_passed",
+    "quote": "● Impugned order dated 20th March, 2024 for the Financial Year 2018-19 passed by the Sales Tax Officer Class II/Avato Ward 39, Zone-1, Delhi.",
+    "para": 2
+   },
+   {
+    "date": "2024-05-29",
+    "type": "scn_issued",
+    "quote": "● Show Cause Notices dated 29th May, 2024 issued by the Sales Tax Officer Class II/Avato Ward 39, Zone-1, Delhi.",
+    "para": 2
+   },
+   {
+    "date": "2024-07-15",
+    "type": "other",
+    "quote": "Reminders dated 15th July, 2024 and 8th February, 2024 are also stated to be issued to the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": "2024-08-17",
+    "type": "order_passed",
+    "quote": "● Impugned order dated 17th August, 2024 for the Financial Year 2019- 20 passed by the Sales Tax Officer Class II/Avato Ward 39, Zone-1, Delhi.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "However, it is made clear that the issue in respect of the validity of the impugned notifications is left open.",
+    "quote_source": "court",
+    "para": 14
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "On facts, it is the case of the Petitioner that the SCNs did not come to the knowledge of the Petitioner as the registration of the Petitioner was cancelled and the Petitioner had gone back to his native place after closing of business.",
+    "quote_source": "argument",
+    "para": 7
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Under such circumstances, considering the fact that the Petitioner did not get a proper opportunity to be heard and no reply to the SCNs has been filed by the Petitioner, the matter deserves to be remanded back to the concerned Adjudicating Authority.",
+    "quote_source": "court",
+    "para": 10
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 12
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 7058,
+   "tokens_out": 1345,
+   "seconds": 6.23,
+   "cached": false
+  },
+  {
+   "tokens_in": 5291,
+   "tokens_out": 396,
+   "seconds": 3.13,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

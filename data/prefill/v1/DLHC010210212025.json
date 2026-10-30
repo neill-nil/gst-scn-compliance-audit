@@ -1,0 +1,265 @@
+{
+ "cnr": "DLHC010210212025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "A Show Cause Notice (hereinafter, ‘SCN’) was issued to the Petitioner on 29th May, 2023 along with form DRC-01 by the DGGI, Ghaziabad Regional Unit for the financial years 2017-2018, 2018-2019, 2019-2020, 2020-2021 and 2021-2022.",
+   "para": 5
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22"
+   ],
+   "quote": "A Show Cause Notice (hereinafter, ‘SCN’) was issued to the Petitioner on 29th May, 2023 along with form DRC-01 by the DGGI, Ghaziabad Regional Unit for the financial years 2017-2018, 2018-2019, 2019-2020, 2020-2021 and 2021-2022.",
+   "para": 5
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-05-29",
+     "quote": "A Show Cause Notice (hereinafter, ‘SCN’) was issued to the Petitioner on 29th May, 2023 along with form DRC-01 by the DGGI, Ghaziabad Regional Unit for the financial years 2017-2018, 2018-2019, 2019-2020, 2020-2021 and 2021-2022.",
+     "para": 5
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-01-23",
+    "quote": "assailing the Order-in-Original bearing no. 74/ADJ-DGGI/DN/2024-25 dated 23rd January, 2025 (hereinafter, ‘impugned order’) passed by Respondent - Additional Commissioner, Adjudication (DGGSTI), CGST Delhi North.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-05-29",
+    "type": "scn_issued",
+    "quote": "A Show Cause Notice (hereinafter, ‘SCN’) was issued to the Petitioner on 29th May, 2023 along with form DRC-01 by the DGGI, Ghaziabad Regional Unit for the financial years 2017-2018, 2018-2019, 2019-2020, 2020-2021 and 2021-2022.",
+    "para": 5
+   },
+   {
+    "date": "2024-11-12",
+    "type": "hearing_scheduled",
+    "quote": "You did not appear on any of PH scheduled for 12.11.2024, 28.11.2024 and 12.12.2024, thus failed to submit even any Oral submission before the undersigned.",
+    "para": 14
+   },
+   {
+    "date": "2024-11-12",
+    "type": "hearing_missed",
+    "quote": "You did not appear on any of PH scheduled for 12.11.2024, 28.11.2024 and 12.12.2024, thus failed to submit even any Oral submission before the undersigned.",
+    "para": 14
+   },
+   {
+    "date": "2024-11-28",
+    "type": "hearing_scheduled",
+    "quote": "You did not appear on any of PH scheduled for 12.11.2024, 28.11.2024 and 12.12.2024, thus failed to submit even any Oral submission before the undersigned.",
+    "para": 14
+   },
+   {
+    "date": "2024-11-28",
+    "type": "hearing_missed",
+    "quote": "You did not appear on any of PH scheduled for 12.11.2024, 28.11.2024 and 12.12.2024, thus failed to submit even any Oral submission before the undersigned.",
+    "para": 14
+   },
+   {
+    "date": "2024-12-12",
+    "type": "hearing_scheduled",
+    "quote": "You did not appear on any of PH scheduled for 12.11.2024, 28.11.2024 and 12.12.2024, thus failed to submit even any Oral submission before the undersigned.",
+    "para": 14
+   },
+   {
+    "date": "2024-12-12",
+    "type": "hearing_missed",
+    "quote": "You did not appear on any of PH scheduled for 12.11.2024, 28.11.2024 and 12.12.2024, thus failed to submit even any Oral submission before the undersigned.",
+    "para": 14
+   },
+   {
+    "date": "2024-12-05",
+    "type": "other",
+    "quote": "Moreover, vide application dated 5th December 2024, the Petitioner had sought cross examination of the witnesses, officers, etc. on behalf of Mr. Gaurav Gupta.",
+    "para": 14
+   },
+   {
+    "date": "2024-12-19",
+    "type": "reply_filed",
+    "quote": "A detailed reply was filed by the Petitioner to the SCN on 19th December 2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-12-20",
+    "type": "hearing_scheduled",
+    "quote": "Personal Hearings in this case were fixed for 12.11.24, 28.11.24, 12.12:24 and addition PH 20.12. 2024.",
+    "para": 31
+   },
+   {
+    "date": "2024-12-20",
+    "type": "hearing_attended",
+    "quote": "Advocate Rishabh Jain along with the proprietor of M/s AMBIKA TRADERS Shri Gaurav Gupta appeared on 20.12.2024 and submitted detailed reply of SCN.",
+    "para": 31
+   },
+   {
+    "date": "2024-12-30",
+    "type": "reply_filed",
+    "quote": "Thereafter, an additional reply to the SCN was filed by the Petitioner on 30th December 2024.",
+    "para": 6
+   },
+   {
+    "date": "2025-01-23",
+    "type": "order_passed",
+    "quote": "The impugned order is stated to have been passed on 23rd January, 2025 along with form DRC-07 dated 4th February 2025, whereby a demand to the tune of Rs. 83,76,32,528/- was affirmed by the Respondent, along with a penalty of an equivalent amount.",
+    "para": 6
+   },
+   {
+    "date": "2025-02-04",
+    "type": "order_passed",
+    "quote": "The present petition further assails the form DRC-07 dated 4th February, 2025 issued along with the impugned order.",
+    "para": 2
+   },
+   {
+    "date": "2025-03-18",
+    "type": "rectification_rejected",
+    "quote": "A corrigendum to the aforesaid impugned order was also issued on 18th March, 2025, whereby the penalty imposed upon Mr. Gaurav Gupta was rectified, as the same had been erroneously recorded as Rs. 1,00,000/- instead of the correct amount of Rs. 75,000/-.",
+    "para": 7
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "fraud_allegation",
+    "quote": "Vide the said SCN, a demand of Rs. 83,76,32,528/- was raised against the Petitioner on the ground of alleged fraudulent availment and wrongful passing on of Input Tax Credit (hereinafter, ‘ITC’).",
+    "para": 5
+   },
+   {
+    "type": "scn_ground",
+    "quote": "From the statement _of the transporters, who deposed during the course of investigation, it may be inferred that M/s Ambika Traders never received any supplies (goods or services or both) from these twenty non- existent/fake suppliers and they fraudulently got possession of the transport documents and forged them.",
+    "para": 26
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Therefore, in view of the facts of the case and observations as above, I find no reason to deny the allegations raised in the impugned Show Cause Notice that fake/ non-existent Supplier firms have been engaged in supplying of fake invoices to Noticee No. 1 without any actual supply of goods and or services.",
+    "para": 33
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "In this regard, I find that it has been established that Supplier firms were non-existent/fake firms and they have neither received any goods physically nor supplied any goods physically.",
+    "para": 33
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "After perusing the impugned order which runs into almost 100 pages, it cannot be said that the replies filed by the Petitioner have not been considered by the Adjudicating Authority.",
+    "quote_source": "court",
+    "para": 40
+   },
+   {
+    "type": "demand_beyond_scn",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Insofar as the statement that the impugned order travels beyond SCN is concerned, the same is a completely untenable argument as the SCN contemplates demands of tax, interest, and penalty for wrongful availment or utilization of ITC under Section 122 of the CGST Act.",
+    "quote_source": "court",
+    "para": 56
+   },
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "On an ex-facie perusal of Section 74 of the Central Goods & Services Tax Act, 2017 [“CGST”]/Delhi Goods & Services Tax Act, 2017 [“DGST”], we find ourselves unable to sustain that challenge in the absence of any prohibition that may have been statutorily engrafted in this respect.",
+    "quote_source": "court",
+    "para": 52
+   },
+   {
+    "type": "other_procedural",
+    "note": "denial of cross-examination",
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "The allegation that an opportunity of cross-examination was not afforded to the Petitioner is completely misplaced inasmuch as such proceedings of SCN cannot be converted into mini-trials.",
+    "quote_source": "court",
+    "para": 57
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The writ petition is disposed of with costs of Rs.25,000/- to the Delhi High Court Bar Association.",
+   "para": 69
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 22323,
+   "tokens_out": 2802,
+   "seconds": 8.56,
+   "cached": false
+  },
+  {
+   "tokens_in": 20556,
+   "tokens_out": 568,
+   "seconds": 2.54,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.events[8]:reply_filed"
+  ]
+ }
+}

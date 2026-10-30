@@ -1,0 +1,183 @@
+{
+ "cnr": "DLHC010716962024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "pertaining to the financial year 2018-19 as also the consequent order dated 27th April, 2024 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi (hereinafter, ‘the impugned order’).",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-01",
+     "quote": "challenging the show cause notice dated 1st December, 2023 (hereinafter, ‘the SCN’) issued by the Sales Tax Officer Class II/ AVATO, New Delhi, pertaining to the financial year 2018-19",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-27",
+    "quote": "Subsequently, the impugned order dated 27th April, 2024 was passed, raising a demand of Rs. 15,47,274/- upon the Petitioner.",
+    "para": 7
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-01",
+    "type": "scn_issued",
+    "quote": "In the present case, the submission of the Petitioner on facts is that upon issuance of the SCN dated 1st December, 2023, a reply was filed on their behalf dated 31st December, 2023.",
+    "para": 6
+   },
+   {
+    "date": "2023-12-31",
+    "type": "reply_filed",
+    "quote": "In the present case, the submission of the Petitioner on facts is that upon issuance of the SCN dated 1st December, 2023, a reply was filed on their behalf dated 31st December, 2023.",
+    "para": 6
+   },
+   {
+    "date": "2024-03-08",
+    "type": "hearing_scheduled",
+    "quote": "Upon filing of the reply, a notice for personal hearing dated 8th March, 2024 was issued to the Petitioner, fixing a date for personal hearing i.e., 28th March, 2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-03-28",
+    "type": "hearing_missed",
+    "quote": "However, the same was not attended by the Petitioner.",
+    "para": 6
+   },
+   {
+    "date": "2024-04-27",
+    "type": "order_passed",
+    "quote": "Subsequently, the impugned order dated 27th April, 2024 was passed, raising a demand of Rs. 15,47,274/- upon the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": "2024-06-01",
+    "type": "other",
+    "quote": "It is the case of the Petitioner that after passing of the impugned order, a rectification application dated 1st June, 2024 was filed by them, stating that the impugned order has been passed without considering the reply filed by the Petitioner.",
+    "para": 8
+   },
+   {
+    "date": "2024-07-18",
+    "type": "rectification_rejected",
+    "quote": "However, the said application for rectification was also rejected vide order dated 18th July, 2024.",
+    "para": 8
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "The short issue that has been raised by the Petitioner in this case is that there was a mistake in the filing of Form GSTR-9 due to a clerical error, which led to the issuance of the SCN and the consequent impugned order.",
+    "para": 11
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Not Agreed with Tax Payer Specific reasons entered reply furnished by the taxpayer found not satisfactory no relevant document has been uploaded/submitted",
+    "para": 10
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The petition also challenges the vires of Notification No. 09/2023- Central Tax dated 31st March, 2023",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In light of the above stated facts and circumstances, this Court is of the opinion that since the reply filed by the Petitioner has not been considered while passing the impugned order, an opportunity ought to be afforded to the Petitioner to contest the matter on merits.",
+    "quote_source": "court",
+    "para": 12
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The present writ petition is disposed of in above terms.",
+   "para": 17
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 17120,
+   "tokens_out": 5538,
+   "seconds": 13.69,
+   "cached": false
+  },
+  {
+   "tokens_in": 4647,
+   "tokens_out": 369,
+   "seconds": 2.47,
+   "cached": true
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

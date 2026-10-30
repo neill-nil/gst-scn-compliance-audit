@@ -1,0 +1,93 @@
+{
+ "cnr": "UPHC020843952025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "Present petition has been filed challenging the order dated 04.04.2024 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-04-04",
+    "quote": "Present petition has been filed challenging the order dated 04.04.2024 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-04-04",
+    "type": "order_passed",
+    "quote": "Present petition has been filed challenging the order dated 04.04.2024 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+    "para": 2
+   },
+   {
+    "date": "2025-09-23",
+    "type": "appeal_dismissed",
+    "quote": "as well as the order dated 23.09.2025 whereby the appeal was dismissed as being beyond limitation.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Since the aforesaid dictum is applicable in the present facts and circumstances, accordingly, the impugned orders cannot be sustained and the orders dated 04.04.2024 & 23.09.2025 are accordingly quashed.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "Matter is remanded to the assessing authority to pass fresh order after giving an opportunity of hearing to the petitioner.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5039,
+   "tokens_out": 535,
+   "seconds": 5.39,
+   "cached": false
+  },
+  {
+   "tokens_in": 6901,
+   "tokens_out": 461,
+   "seconds": 9.75,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

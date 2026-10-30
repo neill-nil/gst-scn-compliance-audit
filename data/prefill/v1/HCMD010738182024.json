@@ -1,0 +1,145 @@
+{
+ "cnr": "HCMD010738182024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "The petitioner is aggrieved by the impugned order, dated 12.02.2024 passed by the 1st respondent for the assessment year 2019-20.",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-11-15",
+     "quote": "The impugned order precedes notices in DRC-01A, dated 26.10.2023 and DRC-01, dated 15.11.2023.",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-02-12",
+    "quote": "The petitioner is aggrieved by the impugned order, dated 12.02.2024 passed by the 1st respondent for the assessment year 2019-20.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-10-26",
+    "type": "pre_scn_intimation",
+    "quote": "The impugned order precedes notices in DRC-01A, dated 26.10.2023 and DRC-01, dated 15.11.2023.",
+    "para": 1
+   },
+   {
+    "date": "2023-11-15",
+    "type": "scn_issued",
+    "quote": "The impugned order precedes notices in DRC-01A, dated 26.10.2023 and DRC-01, dated 15.11.2023.",
+    "para": 1
+   },
+   {
+    "date": "2024-02-12",
+    "type": "order_passed",
+    "quote": "The petitioner is aggrieved by the impugned order, dated 12.02.2024 passed by the 1st respondent for the assessment year 2019-20.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Having considered the submissions made by the learned counsel for the petitioner and the learned Additional Government Pleader for the respondents, I am of the view that the petitioner may have a case on merits as the dispute pertains to difference of turn over reported in GSTR-7 and GSTR-3B.",
+    "para": 5
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "passed without issuance of notices",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The contention of the petitioner is that the impugned order has been passed without issuance of the aforesaid notices and therefore, there is a gross violation of principles of natural justice.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Having considered the submissions made by the learned counsel for the petitioner and the learned Additional Government Pleader for the respondents, I am of the view that the petitioner may have a case on merits as the dispute pertains to difference of turn over reported in GSTR-7 and GSTR-3B.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12964,
+   "tokens_out": 5129,
+   "seconds": 21.6,
+   "cached": false
+  },
+  {
+   "tokens_in": 2569,
+   "tokens_out": 185,
+   "seconds": 4.44,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

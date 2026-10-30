@@ -1,0 +1,142 @@
+{
+ "cnr": "DLHC010148612025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-20",
+     "quote": "that the SCN dated 20th May, 2024, from which the impugned order arises, was uploaded on the ‘Additional Notices Tab’.",
+     "para": 9
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "that the SCN dated 20th May, 2024, from which the impugned order arises, was uploaded on the ‘Additional Notices Tab’.",
+     "para": 9
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-28",
+    "quote": "challenging the order dated 28th August, 2024 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi (hereinafter, ‘the impugned order’).",
+    "para": 5
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-20",
+    "type": "scn_issued",
+    "quote": "the SCN dated 20th May, 2024, from which the impugned order arises, was uploaded on the ‘Additional Notices Tab’.",
+    "para": 9
+   },
+   {
+    "date": "2024-08-28",
+    "type": "order_passed",
+    "quote": "challenging the order dated 28th August, 2024 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi (hereinafter, ‘the impugned order’).",
+    "para": 5
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The present petition has also been filed by the Petitioner under Article 226 of the Constitution of India challenging the order dated 28th August, 2024 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi (hereinafter, ‘the impugned order’).",
+    "quote_source": "argument",
+    "para": 5
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "In the present case, the submission of the Petitioner, on facts is that the SCN dated 20th May, 2024, from which the impugned order arises, was uploaded on the ‘Additional Notices Tab’.",
+    "quote_source": "argument",
+    "para": 9
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 14
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 6290,
+   "tokens_out": 801,
+   "seconds": 5.87,
+   "cached": false
+  },
+  {
+   "tokens_in": 4523,
+   "tokens_out": 338,
+   "seconds": 5.05,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[0]:extension_notification_validity"
+  ]
+ }
+}

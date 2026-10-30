@@ -1,0 +1,152 @@
+{
+ "cnr": "ODHC010400762025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "invoking provisions of Section 74 of the GST Act, the Deputy Director, Directorate General of Goods and Services Tax Intelligence, Rourkela Regional Unit (for convenience be referred to as “DGGI”) issued a Show Cause Notice bearing No.34/2021-22, dated 13.08.2021 relating to tax period(s) December, 2017, March, 2018 and August, 2018 (covering Financial Years 2017-18 and 2018-19), which contained self-same allegations, which had already been dealt with by the State Proper Officer.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19"
+   ],
+   "quote": "issued a Show Cause Notice bearing No.34/2021-22, dated 13.08.2021 relating to tax period(s) December, 2017, March, 2018 and August, 2018 (covering Financial Years 2017-18 and 2018-19), which contained self-same allegations, which had already been dealt with by the State Proper Officer.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2021-08-13",
+     "quote": "A show cause notice bearing No.34/2021-22 was issued vide C.No.10/DGGI/RRU/INV/ GST/2018-Part 41/896, dated 13.08.2021 to M/s. Tansam Engineering and Construction Company",
+     "para": 7
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-01-30",
+    "quote": "passing Order-in-Original on 30.01.2025 under Section 74 raising demand of tax, interest and penalty under both the Central Goods and Services Tax Act as also the Odisha Goods and Services Tax Act vide Summary of Orders in Form GST DRC-07 dated 31.01.2025 (Annexures-2 and 3).",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-08-13",
+    "type": "scn_issued",
+    "quote": "invoking provisions of Section 74 of the GST Act, the Deputy Director, Directorate General of Goods and Services Tax Intelligence, Rourkela Regional Unit (for convenience be referred to as “DGGI”) issued a Show Cause Notice bearing No.34/2021-22, dated 13.08.2021 relating to tax period(s) December, 2017, March, 2018 and August, 2018 (covering Financial Years 2017-18 and 2018-19), which contained self-same allegations, which had already been dealt with by the State Proper Officer.",
+    "para": 2
+   },
+   {
+    "date": "2022-07-30",
+    "type": "reply_filed",
+    "quote": "Notwithstanding reply in Form GST DRC-06 was submitted on 30.07.2022 apprising the factual scenario along with relevant evidence before the DGGI, the Assistant Commissioner, Rourkela-I Division proceeded with the matter.",
+    "para": 2
+   },
+   {
+    "date": "2024-09-11",
+    "type": "hearing_attended",
+    "quote": "In course of personal hearing on 11.09.2024, the petitioner stated to have reiterated its stand that based on Tax Evasion Report containing same sort of allegation of availing input tax credit on the strength of fake invoices issued by certain named suppliers relating to transactions effected during the tax periods from July, 2017 to March, 2018 and April, 2018 to March, 2019, the State Proper Officer had already completed proceedings under Section 74 of the GST Act, against which the appeals have also come to be concluded.",
+    "para": 2
+   },
+   {
+    "date": "2025-01-30",
+    "type": "order_passed",
+    "quote": "Nonetheless, the Assistant Commissioner, GST and Central Excise, Rourkela-I Division, Rourkela (hereinafter be referred to as “Central Proper Officer”) passed Order-in-Original on 30.01.2025 under Section 74 raising demand of tax, interest and penalty under both the Central Goods and Services Tax Act as also the Odisha Goods and Services Tax Act vide Summary of Orders in Form GST DRC-07 dated 31.01.2025 (Annexures-2 and 3).",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "parallel proceedings by central and state authorities on same subject matter, section 6(2)",
+    "finding": "defect_found",
+    "contested": true,
+    "quote": "In view of the express bar under Section 6(2)(b).",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "Ergo, the writ petition is allowed and pending interlocutory applications, if any, shall stand disposed of, but in the circumstances there shall be no order as to costs.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 18201,
+   "tokens_out": 1520,
+   "seconds": 6.69,
+   "cached": true
+  },
+  {
+   "tokens_in": 16434,
+   "tokens_out": 153,
+   "seconds": 3.8,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.provision:facts.provision",
+   "facts.order.date:facts.order.date",
+   "facts.events[0]:scn_issued",
+   "facts.events[3]:order_passed",
+   "findings.defects_argued[0]:other_procedural"
+  ]
+ }
+}

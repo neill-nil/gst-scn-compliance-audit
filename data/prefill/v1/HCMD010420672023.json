@@ -1,0 +1,164 @@
+{
+ "cnr": "HCMD010420672023",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "whether the impugned order has been made after affording the petitioner a reasonable opportunity of hearing as contemplated under Section 73 / 74 of the CGST Act, 2017.",
+   "para": 4
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2022-12-30",
+    "quote": "Order-in-Original No.MDU-GST-ADC-17-2022, dated 30.12.2022",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "registered_post",
+    "quote": "the petitioner received a registered personal cover on 15.02.2023 containing the impugned order-in-original, dated 30.12.2022.",
+    "para": 6
+   }
+  },
+  "events": [
+   {
+    "date": "2022-05-25",
+    "type": "reply_filed",
+    "quote": "It is submitted that the petitioner in fact submitted a reply, dated 25.05.2022",
+    "para": 6
+   },
+   {
+    "date": "2022-08-25",
+    "type": "other",
+    "quote": "It is submitted by the learned Counsel for the petitioner that he had received an intimation on 25.08.2022 informing him that he may appear for a personal hearing on 02.09.2022.",
+    "para": 5
+   },
+   {
+    "date": "2022-09-02",
+    "type": "hearing_scheduled",
+    "quote": "It is submitted by the learned Counsel for the petitioner that he had received an intimation on 25.08.2022 informing him that he may appear for a personal hearing on 02.09.2022.",
+    "para": 5
+   },
+   {
+    "date": "2022-09-02",
+    "type": "adjournment_requested",
+    "quote": "On the basis of the request made vide e-mail by the consultant on behalf of the petitioner, the matter stood adjourned to 02.09.2022.",
+    "para": 5
+   },
+   {
+    "date": "2022-09-16",
+    "type": "other",
+    "quote": "On 16.09.2022, another intimation was given fixing the personal hearing on 20.09.2022.",
+    "para": 5
+   },
+   {
+    "date": "2022-09-20",
+    "type": "hearing_scheduled",
+    "quote": "On 16.09.2022, another intimation was given fixing the personal hearing on 20.09.2022.",
+    "para": 5
+   },
+   {
+    "date": "2022-09-19",
+    "type": "adjournment_requested",
+    "quote": "In response to which, the learned Counsel for the petitioner vide e-mail, dated 19.09.2022 submitted that he had been tested covid postive and is in isolation and under the medication. Thus he sought for a time.",
+    "para": 5
+   },
+   {
+    "date": "2022-09-21",
+    "type": "other",
+    "quote": "In response to the above request, a notice for personal hearing was again issued on 21.09.2022 fixing the personal hearing on 22.09.2022 and 23.09.2022 respectively.",
+    "para": 5
+   },
+   {
+    "date": "2022-09-22",
+    "type": "hearing_scheduled",
+    "quote": "In response to the above request, a notice for personal hearing was again issued on 21.09.2022 fixing the personal hearing on 22.09.2022 and 23.09.2022 respectively.",
+    "para": 5
+   },
+   {
+    "date": "2022-09-23",
+    "type": "hearing_scheduled",
+    "quote": "In response to the above request, a notice for personal hearing was again issued on 21.09.2022 fixing the personal hearing on 22.09.2022 and 23.09.2022 respectively.",
+    "para": 5
+   },
+   {
+    "date": "2022-09-21",
+    "type": "adjournment_requested",
+    "quote": "The petitioner's Counsel vide his e-mail, dated 21.09.2022 stated that he is in quarantine having tested positive, thus, unable to attend official work and thus, he request for time.",
+    "para": 5
+   },
+   {
+    "date": "2022-12-30",
+    "type": "order_passed",
+    "quote": "impugned Order-in-Original No.MDU-GST-ADC-17-2022, dated 30.12.2022 passed by the respondent herein",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "adjournment_75_5",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Having failed, this Court is of the view that the opportunity, if any, that was granted was not real but illusory.",
+    "quote_source": "court",
+    "para": 8
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is submitted that the petitioner in fact submitted a reply, dated 25.05.2022, the impugned order does not even contain a reference to the said reply, clearly showing non-application of mind to the material on record.",
+    "quote_source": "argument",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Therefore, the impugned order is liable to be set aside and accordingly, set aside.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5196,
+   "tokens_out": 1506,
+   "seconds": 9.39,
+   "cached": false
+  },
+  {
+   "tokens_in": 3429,
+   "tokens_out": 293,
+   "seconds": 7.12,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.events[11]:order_passed"
+  ]
+ }
+}

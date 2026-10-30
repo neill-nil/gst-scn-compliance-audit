@@ -1,0 +1,140 @@
+{
+ "cnr": "HCMA010606192024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "notices in Form GST DRC-01A were issued under Section 74 of the CGST Act.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-03-02",
+    "quote": "Order-in-Original in Form GST DRC-07 bearing reference Nos.ZD330324009770S & ZD3303240101339 respectively dated 02.03.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-11-03",
+    "type": "other",
+    "quote": "subsequent to the inspection conducted by the respondent at the petitioner’s premises on 03.11.2022, notices in Form GST DRC-01A were issued under Section 74 of the CGST Act.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "pre_scn_intimation",
+    "quote": "subsequent to the inspection conducted by the respondent at the petitioner’s premises on 03.11.2022, notices in Form GST DRC-01A were issued under Section 74 of the CGST Act.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "The petitioner filed replies enclosing detailed reconciliations as required by the impugned notices.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "scn_issued",
+    "quote": "the respondent again issued show cause notices in Form GST DRC- 01 proposing to demand tax on the same allegations as stated in the earlier notices.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "The petitioner again filed replies in Form GST DRC-06 and appeared in person.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "hearing_attended",
+    "quote": "The petitioner again filed replies in Form GST DRC-06 and appeared in person.",
+    "para": 2
+   },
+   {
+    "date": "2024-03-02",
+    "type": "order_passed",
+    "quote": "the respondent passed the impugned orders in Form GST DRC-07 confirming the demand.",
+    "para": 2
+   },
+   {
+    "date": "2024-06-13",
+    "type": "earlier_writ",
+    "quote": "this Court in W.P.Nos.14655 of 2024 and connected matters, by an order dated 13.06.2024, set aside the orders for non-consideration of the petitioner’s replies.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "The reply has been scrutinized and identified that reply is not in order due to neither filed any relevant document to the payment of difference of tax liability Rs.182673/- nor document of proof to substantiate no difference turnover between GSTR 3B and GSTR 1.",
+    "para": 4
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Therefore the proposal of levy tax Rs.182673/- is hereby confirmed",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Even in these matters, although the petitioner had filed replies, they were not considered, and the impugned orders were passed without providing sufficient reasons for rejecting the petitioner’s explanations.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view of the above, the orders impugned herein are set aside.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14252,
+   "tokens_out": 5191,
+   "seconds": 14.13,
+   "cached": false
+  },
+  {
+   "tokens_in": 3213,
+   "tokens_out": 178,
+   "seconds": 3.47,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

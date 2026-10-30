@@ -1,0 +1,102 @@
+{
+ "cnr": "HCMA010933412025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-08-27",
+    "quote": "dated 27.08.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "uploaded the said order on the Gst On-line Portal",
+    "para": 3
+   }
+  },
+  "events": [
+   {
+    "date": "2024-08-27",
+    "type": "order_passed",
+    "quote": "passed the impugned order confirming the proposals contained in the show cause notice and uploaded the said order on the Gst On-line Portal",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "recovery_or_attachment",
+    "quote": "only when the bank account of the petitioner came to be attached, the petitioner came to know of the impugned proceedings and challenging the same, the present Writ Petition is filed.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In such circumstances, this Court is of the view that the impugned assessment order came to be passed without affording any opportunity of personal hearing to the petitioner.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, this Court is inclined to set aside the impugned order, as the same suffers from the violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, the Writ Petition is allowed on the aforesaid terms.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14234,
+   "tokens_out": 4569,
+   "seconds": 17.41,
+   "cached": false
+  },
+  {
+   "tokens_in": 3204,
+   "tokens_out": 340,
+   "seconds": 2.49,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "cnr": "KAHC020025472024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The petitioner is before this Court calling in question the adjudication orders dated 30.12.2023 passed by respondent No.1 under Section 73(9) of the CGST/KGST Acts, 2017 read with the Rule 142(5) of the CGST/KGST Rule, 2017.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2023-12-30",
+    "quote": "The petitioner is before this Court calling in question the adjudication orders dated 30.12.2023 passed by respondent No.1 under Section 73(9) of the CGST/KGST Acts, 2017 read with the Rule 142(5) of the CGST/KGST Rule, 2017.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-30",
+    "type": "order_passed",
+    "quote": "The petitioner is before this Court calling in question the adjudication orders dated 30.12.2023 passed by respondent No.1 under Section 73(9) of the CGST/KGST Acts, 2017 read with the Rule 142(5) of the CGST/KGST Rule, 2017.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "Writ petition is allowed.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 18146,
+   "tokens_out": 482,
+   "seconds": 3.89,
+   "cached": false
+  },
+  {
+   "tokens_in": 33208,
+   "tokens_out": 397,
+   "seconds": 8.93,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.provision:facts.provision",
+   "facts.order.date:facts.order.date",
+   "facts.events[0]:order_passed"
+  ]
+ }
+}

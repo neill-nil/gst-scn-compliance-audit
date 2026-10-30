@@ -1,0 +1,142 @@
+{
+ "cnr": "HCMD010250282024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "followed by show cause notice in Form GST DRC- 01 under Section 73 of the Act",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "The petitioner was served with notice in Form ASMT 10 dated 21.12.2021 for the period 2018-2019",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "reply_due": {
+     "value": "2023-06-29",
+     "quote": "Date by which reply has to be submitted 29/06/2023",
+     "para": 2
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": "However, the table with regard to date, time and venue of personal hearing states ''Not Applicable''.",
+     "para": 2
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-07-24",
+    "quote": "Thereafter, the order of assessment was made on 24.07.2023.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-12-21",
+    "type": "scrutiny_notice",
+    "quote": "The petitioner was served with notice in Form ASMT 10 dated 21.12.2021 for the period 2018-2019",
+    "para": 2
+   },
+   {
+    "date": "2023-07-24",
+    "type": "order_passed",
+    "quote": "Thereafter, the order of assessment was made on 24.07.2023.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It was submitted by the learned counsel for the petitioner that failure to grant personal hearing vitiates the entire proceedings.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "summary_only",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "More so, the respondent has only passed the summary order without attaching any order of assessment.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, this Writ Petition is disposed of.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13108,
+   "tokens_out": 4920,
+   "seconds": 19.47,
+   "cached": false
+  },
+  {
+   "tokens_in": 2641,
+   "tokens_out": 183,
+   "seconds": 3.7,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

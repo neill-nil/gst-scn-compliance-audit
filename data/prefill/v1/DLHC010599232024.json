@@ -1,0 +1,140 @@
+{
+ "cnr": "DLHC010599232024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "Order-In-Original No.09/PJ/ADJ/AC/2024-25 dated 26th April, 2024 (hereinafter, ‘the impugned order’) passed by the Assistant Commissioner, Division Shahdara under Section 73 of the Delhi/Central Goods and Services Tax Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "period April 2018 to March 2019",
+   "para": 7
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-04-26",
+    "quote": "Order-In-Original No.09/PJ/ADJ/AC/2024-25 dated 26th April, 2024",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-02-01",
+    "type": "scrutiny_notice",
+    "quote": "a notice in form GST ASMT-10 was issued by the Respondent-GST Department on 1st February, 2023 in regards to the same subject matter (i.e., to scrutinise the returns for the period April 2018 to March 2019 under Section 61 of the CGST Act, 2017).",
+    "para": 7
+   },
+   {
+    "date": "2023-05-23",
+    "type": "reply_filed",
+    "quote": "The Petitioner is stated to have filed a reply for the same in form GST ASMT-11 on 23rd May, 2023, as well.",
+    "para": 7
+   },
+   {
+    "date": "2023-11-07",
+    "type": "scn_issued",
+    "quote": "Show Cause Notice dated 7th November, 2023 bearing reference number GEXCOM/SoR/19-18/2023-CGSTRANGE-145-DIV-2- SHDRCOMMRTE-DELHI(E)",
+    "para": 2
+   },
+   {
+    "date": "2024-01-22",
+    "type": "hearing_scheduled",
+    "quote": "though the same had been provided on four dates, i.e., 22nd January, 2024, 02nd February, 2024, 09th February, 2024 and 22nd April, 2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-02-02",
+    "type": "hearing_scheduled",
+    "quote": "though the same had been provided on four dates, i.e., 22nd January, 2024, 02nd February, 2024, 09th February, 2024 and 22nd April, 2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-02-09",
+    "type": "hearing_scheduled",
+    "quote": "though the same had been provided on four dates, i.e., 22nd January, 2024, 02nd February, 2024, 09th February, 2024 and 22nd April, 2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-04-22",
+    "type": "hearing_scheduled",
+    "quote": "though the same had been provided on four dates, i.e., 22nd January, 2024, 02nd February, 2024, 09th February, 2024 and 22nd April, 2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-04-26",
+    "type": "order_passed",
+    "quote": "Subsequently, the impugned order seems to have been passed on 26th April, 2024.",
+    "para": 7
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "no pre-consultation notice in form GST DRC-01A",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "On facts, the submission of the Petitioner is that the Respondents- CGST Department has failed to issue a pre-consultation notice in form GST DRC-01A as contemplated under Rule 142(1A) of Central Goods and Services Tax Rules, 2017.",
+    "quote_source": "argument",
+    "para": 6
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "Additionally, the present petition also, inter alia, challenges the Notification 56/2023(Central Tax) dated 28th December, 2023 and Notification 09/2023(Central Tax) dated 31st March, 2023 issued by the Central Board of Indirect Taxes and Customs (hereinafter, ‘the impugned notifications’).",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside and the matter is relegated to the Adjudicating Authority to be heard on merits.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 16884,
+   "tokens_out": 5352,
+   "seconds": 15.08,
+   "cached": false
+  },
+  {
+   "tokens_in": 9659,
+   "tokens_out": 883,
+   "seconds": 8.57,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "cnr": "DLHC010692512025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-21",
+     "quote": "The Show Cause Notice was issued to the Petitioner on 21st May 2024, to which no reply has been filed.",
+     "para": 11
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "Ld. Counsel for the Petitioner submits that for some reason the impugned SCN, and the impugned order were only uploaded on the GST portal, and not sent by any other mode, which is the reason why the Petitioner did not acquire any knowledge of the same.",
+     "para": 11
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-23",
+    "quote": "seeking quashing of the impugned order dated 23rd August, 2024 passed by the Sales Tax Officer Class II/AVATO Ward 101, Zone-9, Delhi.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_unspecified",
+    "quote": "Ld. Counsel for the Petitioner submits that for some reason the impugned SCN, and the impugned order were only uploaded on the GST portal, and not sent by any other mode, which is the reason why the Petitioner did not acquire any knowledge of the same.",
+    "para": 11
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-21",
+    "type": "scn_issued",
+    "quote": "The Show Cause Notice was issued to the Petitioner on 21st May 2024, to which no reply has been filed.",
+    "para": 11
+   },
+   {
+    "date": "2024-07-15",
+    "type": "other",
+    "quote": "Thereafter, a reminder notice was uploaded on the GST portal on 15th July 2024.",
+    "para": 11
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "Thereafter, a reminder notice was uploaded on the GST portal on 15th July 2024. However, no reply to the same has also been filed.",
+    "para": 11
+   },
+   {
+    "date": "2024-08-23",
+    "type": "order_passed",
+    "quote": "seeking quashing of the impugned order dated 23rd August, 2024 passed by the Sales Tax Officer Class II/AVATO Ward 101, Zone-9, Delhi.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "As observed by this Court in the order dated 22nd April, 2025 as well, since the challenge to the above mentioned notifications is presently under consideration before the Supreme Court in S.L.P No 4240/2025 titled M/s HCC-SEW-MEIL-AAG JV v. Assistant Commissioner of State Tax &Ors., the challenge made by the Petitioner to the impugned notifications in the present proceedings shall also be subject to the outcome of the decision of the Supreme Court.",
+    "quote_source": "argument",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "Accordingly, the present petition is disposed of in above terms.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 6193,
+   "tokens_out": 1017,
+   "seconds": 5.65,
+   "cached": false
+  },
+  {
+   "tokens_in": 9327,
+   "tokens_out": 631,
+   "seconds": 9.33,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

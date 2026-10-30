@@ -1,0 +1,129 @@
+{
+ "cnr": "HCMA010934782024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "An order in original dated 10.04.2024 is assailed on the ground of breach of principles of natural justice.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-01-09",
+     "quote": "She points out that the impugned order was preceded by an intimation dated 06.12.2023, a show cause notice dated 09.01.2024 and multiple personal hearing notices.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-10",
+    "quote": "An order in original dated 10.04.2024 is assailed on the ground of breach of principles of natural justice.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-06",
+    "type": "pre_scn_intimation",
+    "quote": "She points out that the impugned order was preceded by an intimation dated 06.12.2023, a show cause notice dated 09.01.2024 and multiple personal hearing notices.",
+    "para": 3
+   },
+   {
+    "date": "2024-01-09",
+    "type": "scn_issued",
+    "quote": "She points out that the impugned order was preceded by an intimation dated 06.12.2023, a show cause notice dated 09.01.2024 and multiple personal hearing notices.",
+    "para": 3
+   },
+   {
+    "date": "2024-04-10",
+    "type": "order_passed",
+    "quote": "An order in original dated 10.04.2024 is assailed on the ground of breach of principles of natural justice.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons aforesaid, impugned order dated 10.04.2024 is set aside on condition that the petitioner remits 10% of the disputed tax demand within a period of two weeks from the date of receipt of a copy of this order.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13160,
+   "tokens_out": 5017,
+   "seconds": 14.52,
+   "cached": false
+  },
+  {
+   "tokens_in": 5771,
+   "tokens_out": 453,
+   "seconds": 8.43,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

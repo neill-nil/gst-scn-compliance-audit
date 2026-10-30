@@ -1,0 +1,154 @@
+{
+ "cnr": "HCMA011645762024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "quash the order under Section 73 of the Tamil Nadu Goods and Service Tax Act, 2017 / Central Goods and Service Tax Act, 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "for the financial year 2018-2019.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-27",
+     "quote": "Subsequently, the respondent issued a summary show cause notice dated 27.12.2023 in Form GST DRC-01",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "instead, they were uploaded only on the GST common portal.",
+     "para": 2
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": true,
+     "quote": "Subsequently, the respondent issued a summary show cause notice dated 27.12.2023 in Form GST DRC-01",
+     "para": 2
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-24",
+    "quote": "dated 24.04.2024 having Reference No.ZD3304241816611 (impugned order) GST DRC-07 passed by the respondent",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-27",
+    "type": "scn_issued",
+    "quote": "Subsequently, the respondent issued a summary show cause notice dated 27.12.2023 in Form GST DRC-01",
+    "para": 2
+   },
+   {
+    "date": "2024-04-03",
+    "type": "other",
+    "quote": "followed by reminder notices on 03.04.2024 and 18.04.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-04-18",
+    "type": "other",
+    "quote": "followed by reminder notices on 03.04.2024 and 18.04.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-04-24",
+    "type": "order_passed",
+    "quote": "Thereafter, the respondent passed the impugned order on 24.04.2024, raising a demand of Rs.2,05,32,993/-.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "However, the impugned order was passed without providing the petitioner with an opportunity for a personal hearing.",
+    "quote_source": "argument",
+    "para": 4
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The petitioner was unaware of the notices issued by the respondent, as they were only uploaded on the GST common portal and were not physically served, thereby depriving the petitioner of an effective opportunity to respond to the show cause notice or to correct the clerical mistake in the GSTR-9 filing.",
+    "quote_source": "argument",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, the writ petition is disposed of.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13962,
+   "tokens_out": 5126,
+   "seconds": 14.25,
+   "cached": false
+  },
+  {
+   "tokens_in": 3068,
+   "tokens_out": 250,
+   "seconds": 1.63,
+   "cached": true
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,142 @@
+{
+ "cnr": "HCMA010264432025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "consequential order U/s 74 of the CGST Act, 2017 with the Ref No.ZD330924196947L dated 30.09.2024 for the Tax period 2020-21 and quash the same.",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "consequential order U/s 74 of the CGST Act, 2017 with the Ref No.ZD330924196947L dated 30.09.2024 for the Tax period 2020-21 and quash the same.",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-05-26",
+     "quote": "The show cause notice dated 26.05.2023 was uploaded in the GST Portal tab in view additional notices column and the petitioner had no ocassion to open the GST Portal.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "The show cause notice dated 26.05.2023 was uploaded in the GST Portal tab in view additional notices column and the petitioner had no ocassion to open the GST Portal.",
+     "para": 2
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-09-30",
+    "quote": "consequential order U/s 74 of the CGST Act, 2017 with the Ref No.ZD330924196947L dated 30.09.2024 for the Tax period 2020-21 and quash the same.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-05-26",
+    "type": "scn_issued",
+    "quote": "The show cause notice dated 26.05.2023 was uploaded in the GST Portal tab in view additional notices column and the petitioner had no ocassion to open the GST Portal.",
+    "para": 2
+   },
+   {
+    "date": "2024-09-30",
+    "type": "order_passed",
+    "quote": "consequential order U/s 74 of the CGST Act, 2017 with the Ref No.ZD330924196947L dated 30.09.2024 for the Tax period 2020-21 and quash the same.",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "According to the petitioner, the petitioner was not aware of the issuance of the show cause notice issued through the GST Portal and the original of the said show cause notice was not furnished to them.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Thus, in such circumstances, this Court is of the view that the impugned order came to be passed without affording opportunity of personal hearing to the petitioner to establish their case, thereby violating the principles of natural justice",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The order impugned herein is set aside and the matter is remanded back to the respondent for re- consideration.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4668,
+   "tokens_out": 977,
+   "seconds": 6.4,
+   "cached": false
+  },
+  {
+   "tokens_in": 2901,
+   "tokens_out": 297,
+   "seconds": 3.69,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

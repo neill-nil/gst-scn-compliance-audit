@@ -1,0 +1,137 @@
+{
+ "cnr": "HCBM040080042026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "Challenge is to the show cause notice dated 28/12/2023 issued under Section 74 of The Central Goods and Services Tax Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22"
+   ],
+   "quote": "The notice and order issued pertain to the Financial Year 2017-18 to 2021-22.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-28",
+     "quote": "Challenge is to the show cause notice dated 28/12/2023 issued under Section 74 of The Central Goods and Services Tax Act, 2017",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-30",
+    "quote": "and consequent order dated 30/08/2024 issued by respondent no.2 – Joint Commissioner, CGST and C.Ex.Nagpur –II.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-28",
+    "type": "scn_issued",
+    "quote": "Challenge is to the show cause notice dated 28/12/2023 issued under Section 74 of The Central Goods and Services Tax Act, 2017",
+    "para": 2
+   },
+   {
+    "date": "2024-08-30",
+    "type": "order_passed",
+    "quote": "and consequent order dated 30/08/2024 issued by respondent no.2 – Joint Commissioner, CGST and C.Ex.Nagpur –II.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_found",
+    "contested": true,
+    "quote": "In the light of the statutory scheme, we find that there is no scope for consolidating various financial years/tax period which is attempted by the impugned Show Cause Notices assailed in the Petition.",
+    "quote_source": "court",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": false,
+   "quote": "The show cause notice dated 28/12/2023 issued by respondent no.1 and the consequential order dated 30/08/2024 passed by respondent no.2 are quashed and set aside.",
+   "para": 14
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5888,
+   "tokens_out": 827,
+   "seconds": 4.59,
+   "cached": false
+  },
+  {
+   "tokens_in": 8616,
+   "tokens_out": 495,
+   "seconds": 10.44,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

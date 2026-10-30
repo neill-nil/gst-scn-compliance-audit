@@ -1,0 +1,149 @@
+{
+ "cnr": "HCMA010715812025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-08-10",
+     "quote": "the notice in Form GST DRC-01 was issued by the respondents on 10.08.2024",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-07-27",
+    "quote": "the impugned assessment order dated 27.07.2024",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-08-10",
+    "type": "scn_issued",
+    "quote": "the notice in Form GST DRC-01 was issued by the respondents on 10.08.2024",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "for which, the reply, along with all the relevant documents, were filed by the petitioner.",
+    "para": 2
+   },
+   {
+    "date": "2024-07-27",
+    "type": "order_passed",
+    "quote": "the impugned assessment order dated 27.07.2024",
+    "para": 1
+   },
+   {
+    "date": null,
+    "type": "other",
+    "quote": "Under these circumstances, the rectification application has been filed by the petitioner",
+    "para": 2
+   },
+   {
+    "date": "2025-03-12",
+    "type": "rectification_rejected",
+    "quote": "however, the same was rejected vide the impugned rejection order dated 12.03.2025",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In this case, the impugned assessment order was passed without considering the reply filed by the petitioner, which is a clear violation of principles of natural justice and hence, the said assessment order is liable to be set aside.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The impugned assessment order dated 27.07.2024 and the impugned rejection order dated 12.03.2025 are hereby set aside and the matter is remanded back to the Assessing Officer for reconsideration and to pass fresh assessment order.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13924,
+   "tokens_out": 4983,
+   "seconds": 20.25,
+   "cached": false
+  },
+  {
+   "tokens_in": 6548,
+   "tokens_out": 581,
+   "seconds": 9.56,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

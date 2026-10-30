@@ -1,0 +1,131 @@
+{
+ "cnr": "DLHC010341402025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "passed under Section 73(9) of the Central Goods and Services Tax Act (hereinafter ‘the Act’).",
+   "para": 3
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-19",
+     "quote": "seeking to quash the Document/Show Cause Notice dated 19th November, 2024 along with its attachments",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "It is noticed that the proceedings emanate from a letter which is uploaded on the dashboard of the Petitioner’s GST portal.",
+     "para": 9
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-19",
+    "quote": "as also seeking to quash the ex-parte order dated 19th February, 2025 (hereinafter ‘impugned order’)",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-19",
+    "type": "scn_issued",
+    "quote": "The present petition has been filed by the Petitioner – Pankaj Garg under Articles 226 and 227 of the Constitution of India seeking to quash the Document/Show Cause Notice dated 19th November, 2024",
+    "para": 3
+   },
+   {
+    "date": "2025-02-19",
+    "type": "order_passed",
+    "quote": "as also seeking to quash the ex-parte order dated 19th February, 2025 (hereinafter ‘impugned order’) passed under Section 73(9) of the Central Goods and Services Tax Act",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "summary_only",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Under such circumstances, the plea that the document is not a Show Cause Notice is a completely frivolous and a specious plea being taken by the Petitioner, to simply justify the non-filing of its reply.",
+    "quote_source": "court",
+    "para": 15
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The petition is disposed of in these terms.",
+   "para": 19
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5954,
+   "tokens_out": 669,
+   "seconds": 4.82,
+   "cached": false
+  },
+  {
+   "tokens_in": 4187,
+   "tokens_out": 178,
+   "seconds": 4.7,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,200 @@
+{
+ "cnr": "BRHC010843652024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2015-16",
+    "2016-17"
+   ],
+   "quote": "This writ application has been filed for setting aside the demand-cum-show cause notice dated 17.10.2020 as contained in Annexure ‘P-1’ issued by Respondent No. 3 for the financial years 2015-16 and 2016-17",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2020-10-17",
+     "quote": "This writ application has been filed for setting aside the demand-cum-show cause notice dated 17.10.2020 as contained in Annexure ‘P-1’ issued by Respondent No. 3 for the financial years 2015-16 and 2016-17",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-07-04",
+    "quote": "The petitioner has further challenged the order dated 04.07.2024 (Annexure ‘P-4’) issued by Respondent No. 2",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2019-12-03",
+    "type": "other",
+    "quote": "The petitioner had been given ample opportunity to submit relevant documents required for ascertaining liability of service tax vide its Letter No. 1449 dated 03.12.2019 which was returned undelivered by the postal authority with remarks “LEFT”.",
+    "para": 13
+   },
+   {
+    "date": "2020-08-13",
+    "type": "other",
+    "quote": "Further, letter dated 13.08.2020 and reminder letter of even No. 155 dated 01.10.2020 on the new address as reflected on the GST portal were issued to the noticee to provide required documents and information.",
+    "para": 13
+   },
+   {
+    "date": "2020-10-01",
+    "type": "other",
+    "quote": "Further, letter dated 13.08.2020 and reminder letter of even No. 155 dated 01.10.2020 on the new address as reflected on the GST portal were issued to the noticee to provide required documents and information.",
+    "para": 13
+   },
+   {
+    "date": "2020-10-17",
+    "type": "scn_issued",
+    "quote": "This writ application has been filed for setting aside the demand-cum-show cause notice dated 17.10.2020 as contained in Annexure ‘P-1’ issued by Respondent No. 3",
+    "para": 1
+   },
+   {
+    "date": "2023-12-29",
+    "type": "other",
+    "quote": "Attention of this Court has been drawn towards Annexure ‘P-3 series’ which are the letters issued to the petitioner on 29.12.2023 and 05.02.2024.",
+    "para": 19
+   },
+   {
+    "date": "2024-02-05",
+    "type": "other",
+    "quote": "Attention of this Court has been drawn towards Annexure ‘P-3 series’ which are the letters issued to the petitioner on 29.12.2023 and 05.02.2024.",
+    "para": 19
+   },
+   {
+    "date": "2024-02-12",
+    "type": "reply_filed",
+    "quote": "The noticee in response of the notice submitted written defence reply dated 12.02.2024 stating, among others, as follows",
+    "para": 26
+   },
+   {
+    "date": "2024-07-04",
+    "type": "order_passed",
+    "quote": "The petitioner has further challenged the order dated 04.07.2024 (Annexure ‘P-4’) issued by Respondent No. 2",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "whereby and whereunder the Respondent No. 3 called upon the petitioner to show cause as to why the demand for payment of service tax amounting to Rs.25,25,313/- and an equivalent penalty and further interest be not imposed upon him.",
+    "para": 1
+   },
+   {
+    "type": "reply_point",
+    "quote": "(ii) The allegation of non-payment of tax in the SCN is on M/s Sidhartha Travels (PAN: AHEPK7765K) and not on Anil Kumar (PAN: AHEPK7765K).",
+    "para": 26
+   },
+   {
+    "type": "reply_point",
+    "quote": "(iii) The SCN is for the period of 2015-16 and 2016-17 and the demand is based on value as per sale of service declared in the ITR.",
+    "para": 26
+   },
+   {
+    "type": "reply_point",
+    "quote": "(vii) As all the documents related to service tax and other matters have been gutted in the fire broken in the establishment so they are not in a position to submit any document related to business.",
+    "para": 26
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "This Court is, therefore, of the prima-facie view that no jurisdictional error has been committed by the respondent no. 2 or respondent no. 3 in invoking the extended period of limitation of five years under proviso to Sub-Section (1) of Section 73 of the Act of 1994.",
+    "quote_source": "court",
+    "para": 33
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "However, learned Senior Counsel for the petitioner has contended that the Respondent No. 3 has not considered the submissions made in the written defence reply.",
+    "quote_source": "argument",
+    "para": 25
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "This writ application stands disposed of accordingly.",
+   "para": 41
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10659,
+   "tokens_out": 1804,
+   "seconds": 8.58,
+   "cached": false
+  },
+  {
+   "tokens_in": 18299,
+   "tokens_out": 655,
+   "seconds": 7.94,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

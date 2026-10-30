@@ -1,0 +1,133 @@
+{
+ "cnr": "KAHC020189172025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "In that view of the matter, she submits that in the present case the show-notice dated 16.05.2024 had been issued for 5 assessment years viz., 2019-20, 2020-21, 2021-22, 2022-23 and 2023-24 and the order passed in Sub-section (9) of Section 73 were for four assessment years viz., 2020-21, 2021-22, 2022- 23 and 2023-24",
+   "para": 6
+  },
+  "financial_years": {
+   "value": [
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24"
+   ],
+   "quote": "In that view of the matter, she submits that in the present case the show-notice dated 16.05.2024 had been issued for 5 assessment years viz., 2019-20, 2020-21, 2021-22, 2022-23 and 2023-24 and the order passed in Sub-section (9) of Section 73 were for four assessment years viz., 2020-21, 2021-22, 2022- 23 and 2023-24",
+   "para": 6
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-16",
+     "quote": "In that view of the matter, she submits that in the present case the show-notice dated 16.05.2024 had been issued for 5 assessment years viz., 2019-20, 2020-21, 2021-22, 2022-23 and 2023-24",
+     "para": 6
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-16",
+    "type": "scn_issued",
+    "quote": "In that view of the matter, she submits that in the present case the show-notice dated 16.05.2024 had been issued for 5 assessment years viz., 2019-20, 2020-21, 2021-22, 2022-23 and 2023-24",
+    "para": 6
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_found",
+    "contested": true,
+    "quote": "In that view of the matter, she submits that in the present case the show-notice dated 16.05.2024 had been issued for 5 assessment years viz., 2019-20, 2020-21, 2021-22, 2022-23 and 2023-24 and the order passed in Sub-section (9) of Section 73 were for four assessment years viz., 2020-21, 2021-22, 2022- 23 and 2023-24 and as such she submits that the show-cause notice having been issued for 5 years subsequent order under Sub-section (9) of Section 73 having been passed for four years is not permissible by relying upon the decision in in M/s Pramur Homes and Shelters’s case rendered by Co-ordinate Bench of this Court.",
+    "quote_source": "argument",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "The Review Petition is allowed.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4996,
+   "tokens_out": 1068,
+   "seconds": 7.28,
+   "cached": false
+  },
+  {
+   "tokens_in": 6814,
+   "tokens_out": 602,
+   "seconds": 7.9,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [
+   "findings.defects_argued[0]: found/rejected must quote the court, not an argument"
+  ],
+  "quotes_not_found": []
+ }
+}

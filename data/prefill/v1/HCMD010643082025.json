@@ -1,0 +1,152 @@
+{
+ "cnr": "HCMD010643082025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "The surviving issue is only regarding the levy of penalty under Section 74 of the GST Act, 2017, as extended period of limitation has been invoked.",
+   "para": 5
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22"
+   ],
+   "quote": "It is the further case of the petitioner that the consolidated show cause notice issued for the period between 2017-18 and 2021-22.",
+   "para": 7
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-07-01",
+     "quote": "Show Cause Notice No. 20/2024 - GST (DPU) with DIN 20240759XN0300020172, dated 01.07.2024",
+     "para": 0
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-01-30",
+    "quote": "Order in Original 03/2025-GST passed in DIN. 20250159XN030000BFEB dated 30.01.2025",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-07-01",
+    "type": "scn_issued",
+    "quote": "Show Cause Notice No. 20/2024 - GST (DPU) with DIN 20240759XN0300020172, dated 01.07.2024",
+    "para": 0
+   },
+   {
+    "date": "2025-01-30",
+    "type": "order_passed",
+    "quote": "Order in Original 03/2025-GST passed in DIN. 20250159XN030000BFEB dated 30.01.2025",
+    "para": 0
+   },
+   {
+    "date": "2025-01-31",
+    "type": "order_passed",
+    "quote": "consequential order U/s 74 in summary of the order in Form GST DRC-07 having reference number ZD3301253055303 dated 31.01.2025",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "demand_beyond_scn",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The argument of the petitioner is that the impugned order has been passed without jurisdiction and contrary to the show cause notice issued to the petitioner.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is the further case of the petitioner that the consolidated show cause notice issued for the period between 2017-18 and 2021-22.",
+    "quote_source": "argument",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "This writ petition is dismissed, with the above liberty.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13514,
+   "tokens_out": 5157,
+   "seconds": 20.77,
+   "cached": false
+  },
+  {
+   "tokens_in": 2844,
+   "tokens_out": 271,
+   "seconds": 6.1,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

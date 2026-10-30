@@ -1,0 +1,173 @@
+{
+ "cnr": "HCMA012055302024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "as per the provisions of Section 73 of the Act as follows:",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "During the relevant period viz., 2018-19, the petitioner filed its return and paid the appropriate taxes.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2022-03-10",
+     "quote": "Pursuant thereto, a Show Cause Notice in Form DRC-01 was issued to the petitioner on 10.03.2022, followed by reminders on 24.02.2024 for 29.02.2024 and on 22.03.2024 for 27.03.2024.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-24",
+    "quote": "The present writ petition is filed challenging the impugned order 24.04.2024 on the premise that it traverses beyond the Show Cause Notice thereby denying the petitioner's opportunity to put forth his case.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-03-10",
+    "type": "scn_issued",
+    "quote": "Pursuant thereto, a Show Cause Notice in Form DRC-01 was issued to the petitioner on 10.03.2022, followed by reminders on 24.02.2024 for 29.02.2024 and on 22.03.2024 for 27.03.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-02-24",
+    "type": "other",
+    "quote": "Pursuant thereto, a Show Cause Notice in Form DRC-01 was issued to the petitioner on 10.03.2022, followed by reminders on 24.02.2024 for 29.02.2024 and on 22.03.2024 for 27.03.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-03-22",
+    "type": "other",
+    "quote": "Pursuant thereto, a Show Cause Notice in Form DRC-01 was issued to the petitioner on 10.03.2022, followed by reminders on 24.02.2024 for 29.02.2024 and on 22.03.2024 for 27.03.2024.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, the petitioner had neither filed its reply nor availed the opportunity for a personal hearing.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "However, the petitioner had neither filed its reply nor availed the opportunity for a personal hearing.",
+    "para": 2
+   },
+   {
+    "date": "2024-04-24",
+    "type": "order_passed",
+    "quote": "The present writ petition is filed challenging the impugned order 24.04.2024 on the premise that it traverses beyond the Show Cause Notice thereby denying the petitioner's opportunity to put forth his case.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Its noticed that you have excess claimed ITC as detailed below:",
+    "para": 2
+   },
+   {
+    "type": "scn_ground",
+    "quote": "On verification of Form GSTR-1 outward supplies with Form GSTR-7, it is noticed that there is an additional tax liability in respect of GSTR-7 as detailed below:",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "However, the impugned order has been passed on the premise that there are certain discrepancies between GSTR-3B and GSTR-2A/GSTR-2B and that this results in a differential amount of Rs.804538/- under the CGST and SGST Act, respectively.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "demand_beyond_scn",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is the case of the petitioner that the alleged discrepancies between GSTR-3B vs. GSTR- 2A/GSTR-2B were never the subject matter of notice and thus the impugned order cannot be sustained.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view thereof, the impugned order is set aside and the same shall be treated as a Show Cause Notice.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5506,
+   "tokens_out": 1444,
+   "seconds": 7.03,
+   "cached": false
+  },
+  {
+   "tokens_in": 3739,
+   "tokens_out": 199,
+   "seconds": 2.82,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

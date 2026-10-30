@@ -1,0 +1,154 @@
+{
+ "cnr": "KAHC010301602025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "quashing the order of adjudication by the respondent no. 1 dated 22.03.2024 passed under section 73(9) for the tax period 2018-19 of the central goods and service act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "quashing the order of adjudication by the respondent no. 1 dated 22.03.2024 passed under section 73(9) for the tax period 2018-19 of the central goods and service act, 2017",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-01-30",
+     "quote": "After which, a show cause notice comes to be issued demanding an amount of ₹7,65,858/- including interest and penalty on the non- payment of Goods and Services Tax (for short ‘the GST’), on 30.01.2024.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-03-22",
+    "quote": "This led to passage of the impugned order dated 22.03.2024, which is admittedly an exparte order, as the petitioner neither appeared before the concerned Authority nor submitted his reply to the show cause notice on account of cancellation of GST registration.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-01-23",
+    "type": "pre_scn_intimation",
+    "quote": "Copy of the GST DRC-01A Bearing No.CTO-SGSTO-172-MG1R2 MGIRI-DRC01a- 19820232024 dated 23.01.2024, is enclosed and marked as Annexure - A5.",
+    "para": 2
+   },
+   {
+    "date": "2024-01-30",
+    "type": "scn_issued",
+    "quote": "After which, a show cause notice comes to be issued demanding an amount of ₹7,65,858/- including interest and penalty on the non- payment of Goods and Services Tax (for short ‘the GST’), on 30.01.2024.",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "Therefore, the petitioner did not appear before the concerned Authority or submit his reply to the show cause notice so issued on 30.01.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-03-22",
+    "type": "order_passed",
+    "quote": "This led to passage of the impugned order dated 22.03.2024, which is admittedly an exparte order, as the petitioner neither appeared before the concerned Authority nor submitted his reply to the show cause notice on account of cancellation of GST registration.",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "After which, a show cause notice comes to be issued demanding an amount of ₹7,65,858/- including interest and penalty on the non- payment of Goods and Services Tax (for short ‘the GST’), on 30.01.2024.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "ex parte proceedings",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In that light, it becomes an admitted fact that the proceedings which has led the petitioner to challenge before this Court are exparte proceedings and are in violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": true,
+   "quote": "The writ petition is partly allowed.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5335,
+   "tokens_out": 1201,
+   "seconds": 7.9,
+   "cached": false
+  },
+  {
+   "tokens_in": 7532,
+   "tokens_out": 473,
+   "seconds": 7.53,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.provision:facts.provision",
+   "facts.financial_years:facts.financial_years"
+  ]
+ }
+}
