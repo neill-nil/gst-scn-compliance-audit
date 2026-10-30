@@ -1,0 +1,65 @@
+{
+ "cnr": "DLHC010184962026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": true,
+    "quote": "we are of the view that since this Court has consistently taken a view that consolidation of the notices for various financial years is very much permitted, we see no reason to take a different view",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "That being so, these writ petitions stand dismissed.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "second",
+  "reviewed_by": "r1",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Common order for 3 petitions; the only facts stated (prayer) are JBN Impex's W.P. 5814, not this petitioner's, so facts left empty. contested: judgment notes Madras and AP High Courts take the opposite view.",
+  "seconds": 14,
+  "saved_at": "2026-10-30T20:51:21"
+ }
+}

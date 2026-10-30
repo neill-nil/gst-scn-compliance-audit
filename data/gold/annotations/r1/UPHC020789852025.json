@@ -1,0 +1,116 @@
+{
+ "cnr": "UPHC020789852025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "Present petition has been filed challenging the order dated 25.04.2024 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": "no date was fixed for personal hearing",
+     "para": 4
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-25",
+    "quote": "Present petition has been filed challenging the order dated 25.04.2024 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-04-25",
+    "type": "order_passed",
+    "quote": "challenging the order dated 25.04.2024 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+    "para": 2
+   },
+   {
+    "date": "2025-09-25",
+    "type": "appeal_dismissed",
+    "quote": "the order dated 25.09.2025 whereby the appeal was dismissed as being beyond limitation",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Since the aforesaid dictum is applicable in the present facts and circumstances, accordingly, the impugned orders cannot be sustained and the orders dated 25.04.2024 & 25.09.2025 are accordingly quashed.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "Matter is remanded to the assessing authority to pass fresh order after giving an opportunity of hearing to the petitioner.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r1",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "hearing_date_given=false comes from the State's counsel (para 4).",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:47:05"
+ }
+}

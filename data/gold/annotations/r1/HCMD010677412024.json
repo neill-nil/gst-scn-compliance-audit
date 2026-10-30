@@ -1,0 +1,118 @@
+{
+ "cnr": "HCMD010677412024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "In this writ petition, the petitioner has challenged the impugned order dated 29.12.2023 passed for the assessment year 2018-19.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-10-06",
+     "quote": "In this connection, a reference is made to the notice in DRC 01 dated 06.10.2023, wherein time for personal hearing has not been given.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": "In this connection, a reference is made to the notice in DRC 01 dated 06.10.2023, wherein time for personal hearing has not been given.",
+     "para": 3
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-29",
+    "quote": "In this writ petition, the petitioner has challenged the impugned order dated 29.12.2023 passed for the assessment year 2018-19.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-10-06",
+    "type": "scn_issued",
+    "quote": "In this connection, a reference is made to the notice in DRC 01 dated 06.10.2023, wherein time for personal hearing has not been given.",
+    "para": 3
+   },
+   {
+    "date": "2023-12-29",
+    "type": "order_passed",
+    "quote": "In this writ petition, the petitioner has challenged the impugned order dated 29.12.2023 passed for the assessment year 2018-19.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "There is clear violation of principles of natural justice, although the petitioner is guilty of delay in approaching this Court.",
+    "quote_source": "court",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "The Writ Petition stands allowed by way of remand.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r1",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "UNSURE: para 3 opens with the petitioner's case, but 'although the petitioner is guilty of delay' is the court's own voice, so read as the court's finding.",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:48:05"
+ }
+}

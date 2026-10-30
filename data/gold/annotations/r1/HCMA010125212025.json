@@ -1,0 +1,179 @@
+{
+ "cnr": "HCMA010125212025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "passed for the F.Y.2019-20",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-07-13",
+     "quote": "followed by notice in DRC-01A on 12.05.2023 and DRC-01 on 13.07.2023.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-16",
+    "quote": "dated 16.08.2024 passed for the F.Y.2019-20 and quash the same",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-06-15",
+    "type": "scrutiny_notice",
+    "quote": "Pursuant thereto, a notice in ASMT-10 was issued on 15.06.2022, followed by notice in DRC-01A on 12.05.2023 and DRC-01 on 13.07.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-05-12",
+    "type": "pre_scn_intimation",
+    "quote": "Pursuant thereto, a notice in ASMT-10 was issued on 15.06.2022, followed by notice in DRC-01A on 12.05.2023 and DRC-01 on 13.07.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-07-13",
+    "type": "scn_issued",
+    "quote": "Pursuant thereto, a notice in ASMT-10 was issued on 15.06.2022, followed by notice in DRC-01A on 12.05.2023 and DRC-01 on 13.07.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-10-05",
+    "type": "hearing_scheduled",
+    "quote": "Personal hearings were offered on 05.10.2023, 11.10.2023 and 16.10.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-10-11",
+    "type": "hearing_scheduled",
+    "quote": "Personal hearings were offered on 05.10.2023, 11.10.2023 and 16.10.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-10-16",
+    "type": "hearing_scheduled",
+    "quote": "Personal hearings were offered on 05.10.2023, 11.10.2023 and 16.10.2023.",
+    "para": 2
+   },
+   {
+    "date": "2023-10-18",
+    "type": "reply_filed",
+    "quote": "In response to the Show Cause Notice, the petitioner had filed its reply on 18.10.2023",
+    "para": 2
+   },
+   {
+    "date": "2024-08-16",
+    "type": "order_passed",
+    "quote": "challenging the impugned order passed by the first respondent dated 16.08.2024",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "i. Mismatch between GSTR-3B and GSTR-2A ii. Suppression of Inward Supply",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "wherein it was submitted that the Input Tax Credit claimed by the petitioner was in fact correct and that the discrepancies are only due to the reversal of excess Input Tax Credit.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "However, the impugned order proceeds on the premise that the petitioner had not filed any objection nor attended the personal hearing",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It was thus submitted that the impugned order suffers from non-application of mind to the material on record.",
+    "quote_source": "argument",
+    "para": 1
+   },
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "quash the same as barred by limitation",
+    "quote_source": "argument",
+    "para": 0
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view thereof, the impugned order dated 16.08.2024 is set aside.",
+   "para": 4
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r1",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Remand on the State's own offer (para 3) = not_decided. Limitation argued only in the prayer, not discussed.",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:48:04"
+ }
+}

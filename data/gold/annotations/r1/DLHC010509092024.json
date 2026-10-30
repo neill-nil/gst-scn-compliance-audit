@@ -1,0 +1,227 @@
+{
+ "cnr": "DLHC010509092024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "issued under Section 74(1) of the Central Goods and Services Tax Act, 2017",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22"
+   ],
+   "quote": "covering the financial years 2017-18 to 2021-22",
+   "para": 31
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-07-26",
+     "quote": "Show Cause Notice dated 26.07.2024",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-03",
+    "quote": "Order-in- Original No.62/AY/AC/NP/2024-25 dated 03.02.2025",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-15",
+    "type": "other",
+    "quote": "On 15.12.2023, Respondent No.1 issued Form GST ADT-01 proposing to conduct an audit under Section 65 of the CGST Act for the period from July, 2017 to March, 2022.",
+    "para": 9
+   },
+   {
+    "date": "2023-12-20",
+    "type": "reply_filed",
+    "quote": "The Petitioner furnished documents and information in response to the said notice on 20.12.2023, 26.12.2023 and 13.01.2024.",
+    "para": 9
+   },
+   {
+    "date": "2023-12-26",
+    "type": "reply_filed",
+    "quote": "The Petitioner furnished documents and information in response to the said notice on 20.12.2023, 26.12.2023 and 13.01.2024.",
+    "para": 9
+   },
+   {
+    "date": "2024-01-13",
+    "type": "reply_filed",
+    "quote": "The Petitioner furnished documents and information in response to the said notice on 20.12.2023, 26.12.2023 and 13.01.2024.",
+    "para": 9
+   },
+   {
+    "date": "2024-02-01",
+    "type": "other",
+    "quote": "Thereafter, an audit memo dated 01.02.2024 was issued raising various discrepancies relating, inter alia, to availment of input tax credit (ITC), payment of tax under Reverse Charge Mechanism (RCM) and other transactions.",
+    "para": 10
+   },
+   {
+    "date": "2024-02-15",
+    "type": "reply_filed",
+    "quote": "The Petitioner submitted a Reply/Clarification dated 15.02.2024 along with supporting documents.",
+    "para": 10
+   },
+   {
+    "date": "2024-03-26",
+    "type": "other",
+    "quote": "A further audit memo dated 26.03.2024 was issued raising, inter alia, allegations concerning ITC, RCM, supplies made to certain suppliers, export transactions and other issues.",
+    "para": 11
+   },
+   {
+    "date": "2024-03-30",
+    "type": "reply_filed",
+    "quote": "The Petitioner submitted Replies dated 30.03.2024 and 26.04.2024 thereto.",
+    "para": 11
+   },
+   {
+    "date": "2024-04-26",
+    "type": "reply_filed",
+    "quote": "The Petitioner submitted Replies dated 30.03.2024 and 26.04.2024 thereto.",
+    "para": 11
+   },
+   {
+    "date": "2024-06-26",
+    "type": "other",
+    "quote": "On 26.06.2024, the Respondents issued Form GST ADT-02 under Section 65(6) of the CGST Act raising audit objections involving a tax liability of approximately Rs.78,53,548/-, excluding interest.",
+    "para": 12
+   },
+   {
+    "date": "2024-07-08",
+    "type": "pre_scn_intimation",
+    "quote": "On 08.07.2024, Form GST DRC-01A was issued intimating the proposed liability under Section 74(5) of the CGST Act.",
+    "para": 13
+   },
+   {
+    "date": "2024-07-19",
+    "type": "reply_filed",
+    "quote": "The Petitioner submitted its response dated 19.07.2024, disputing both the audit findings as well as the proposed invocation of Section 74.",
+    "para": 13
+   },
+   {
+    "date": "2024-07-26",
+    "type": "scn_issued",
+    "quote": "Thereafter, on 26.07.2024, Respondent No.1 issued SCN in Form GST DRC-01 under Section 74(1) of the CGST Act proposing recovery of tax, interest and penalty.",
+    "para": 14
+   },
+   {
+    "date": "2025-02-03",
+    "type": "order_passed",
+    "quote": "The adjudicating authority thereafter proceeded to adjudicate the SCN and passed the Impugned Order dated 03.02.2025, confirming the demand of tax, together with applicable interest and penalty, as determined therein.",
+    "para": 17
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "fraud_allegation",
+    "quote": "The SCN alleges, inter alia, that the Petitioner had suppressed facts with intent to evade payment of appropriate taxes.",
+    "para": 14
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The proceedings under Section 74 of the CGST Act are without jurisdiction as the SCN does not disclose the requisite ingredients of fraud, wilful misstatement or suppression of facts with intent to evade tax.",
+    "quote_source": "argument",
+    "para": 21
+   },
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Accordingly, the mere issuance of a consolidated SCN covering multiple financial years does not constitute a patent lack of jurisdiction so as to warrant interference under Article 226 of the Constitution.",
+    "quote_source": "court",
+    "para": 32
+   },
+   {
+    "type": "other_procedural",
+    "note": "Audit proceedings and ADT-02 vitiated",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The audit proceedings and the consequential Audit Report in Form ADT-02 are vitiated since the Replies and documents furnished by the Petitioner were not considered before the audit was concluded and the SCN was issued.",
+    "quote_source": "argument",
+    "para": 21
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The Impugned Order is liable to be set aside for failure to consider the detailed Reply submitted by the Petitioner and the documents placed on record, including DRC-03s evidencing payment/reversal of the amounts in question.",
+    "quote_source": "argument",
+    "para": 21
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "Accordingly, the present Writ Petition, along with the pending applications, is dismissed.",
+   "para": 47
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r1",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "",
+  "seconds": 1189,
+  "saved_at": "2026-10-30T16:54:49"
+ }
+}

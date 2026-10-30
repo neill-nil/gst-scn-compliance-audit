@@ -1,0 +1,130 @@
+{
+ "cnr": "HCMA012572562025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "relating to the tax period April 2019 to March 2020.",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-11-08",
+     "quote": "pursuant to the notice issued in DRC-01 dated 08.11.2023",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-07-31",
+    "quote": "challenging the impugned order dated 31.07.2024",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-11-08",
+    "type": "scn_issued",
+    "quote": "pursuant to the notice issued in DRC-01 dated 08.11.2023",
+    "para": 1
+   },
+   {
+    "date": "2023-11-16",
+    "type": "reply_filed",
+    "quote": "The petitioner submitted a reply to the said notice in DRC-06 dated 16.11.2023.",
+    "para": 1
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "Though a personal hearing was called for by the respondent, the petitioner failed to appear, and consequently, the impugned order dated 31.07.2024 came to be passed ex parte.",
+    "para": 1
+   },
+   {
+    "date": "2024-07-31",
+    "type": "order_passed",
+    "quote": "the impugned order dated 31.07.2024 came to be passed ex parte.",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Considering the fact that the petitioner was aware of the proceedings but did not avail the opportunity of personal hearing or file an appeal within the prescribed time, no interference is warranted to the impugned order.",
+    "quote_source": "court",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "This Writ Petition stands disposed of with the above observations, No costs.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r1",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Draft had non_speaking_order, which was never argued; the argued complaint is the ex parte order (hearing). Liberty to appeal is not a remand.",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:48:04"
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "cnr": "HCMA011909282024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "GSTIN: 33AAGCP6153N1Z3/2017-2018 dated 29.12.2023",
+   "para": 4
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-29",
+     "quote": "Form GST DRC-01 dated 29.12.2023",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "All the notices and impugned order were uploaded in the tab “Additional Notices and Orders” in the petitioner's account on the GST portal.",
+     "para": 4
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-29",
+    "quote": "the first respondent has passed an order in GSTIN: 33AAGCP6153N1Z3/2017-2018 dated 29.12.2023",
+    "para": 4
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "All the notices and impugned order were uploaded in the tab “Additional Notices and Orders” in the petitioner's account on the GST portal.",
+    "para": 4
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "other",
+    "quote": "based on the GST Audit conducted by the audit team under Section 65 of the Tamil Nadu Goods and Services Tax Act, 2017, the first respondent has passed an order in GSTIN: 33AAGCP6153N1Z3/2017-2018 dated 29.12.2023 and Form GST DRC-01 dated 29.12.2023",
+    "para": 4
+   },
+   {
+    "date": "2023-12-29",
+    "type": "order_passed",
+    "quote": "the first respondent has passed an order in GSTIN: 33AAGCP6153N1Z3/2017-2018 dated 29.12.2023",
+    "para": 4
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "As far as this case is concerned, without issuing any prior notice to the petitioner and also, without providing an opportunity to the petitioner, the first respondent has passed the impugned order, which is in violation of the principles of natural justice.",
+    "quote_source": "court",
+    "para": 7
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "As far as this case is concerned, without issuing any prior notice to the petitioner and also, without providing an opportunity to the petitioner, the first respondent has passed the impugned order, which is in violation of the principles of natural justice.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, this writ petition is disposed of.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r1",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Court's own finding in para 7 comes before the 10% condition, so found, not a consent remand. 'No prior notice issued' labelled service_169.",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:48:04"
+ }
+}

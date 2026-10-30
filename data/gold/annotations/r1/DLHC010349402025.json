@@ -1,0 +1,171 @@
+{
+ "cnr": "DLHC010349402025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "assailing the Show Cause Notice dated 6th December, 2023 (hereinafter, ‘the SCN’) for the tax period April 2018 to March 2019",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-06",
+     "quote": "assailing the Show Cause Notice dated 6th December, 2023 (hereinafter, ‘the SCN’) for the tax period April 2018 to March 2019",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-12",
+    "quote": "as also the consequent order dated 12th April, 2024 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi (hereinafter, ‘the impugned order’)",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-06",
+    "type": "scn_issued",
+    "quote": "assailing the Show Cause Notice dated 6th December, 2023 (hereinafter, ‘the SCN’) for the tax period April 2018 to March 2019",
+    "para": 2
+   },
+   {
+    "date": "2024-01-08",
+    "type": "reply_filed",
+    "quote": "the submission of the Petitioner, on facts, is that a reply was filed on 8th January, 2024, inter alia, seeking time to file the reply on merits to the SCN dated 6th December, 2023.",
+    "para": 11
+   },
+   {
+    "date": "2024-03-09",
+    "type": "other",
+    "quote": "Thereafter, a reminder notice dated 9th March 2024 was issued to the Petitioner affording an opportunity to file the reply and attend personal hearing.",
+    "para": 11
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, neither the Petitioner filed the reply nor attended the personal hearing.",
+    "para": 11
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "However, neither the Petitioner filed the reply nor attended the personal hearing.",
+    "para": 11
+   },
+   {
+    "date": "2024-04-12",
+    "type": "order_passed",
+    "quote": "as also the consequent order dated 12th April, 2024 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi (hereinafter, ‘the impugned order’)",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "In the SCN, a demand of Rs.17,85,040/- was raised upon the Petitioner.",
+    "para": 11
+   },
+   {
+    "type": "reply_point",
+    "quote": "the submission of the Petitioner, on facts, is that a reply was filed on 8th January, 2024, inter alia, seeking time to file the reply on merits to the SCN dated 6th December, 2023.",
+    "para": 11
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "In the opinion of this Court, the impugned order has been passed after duly affording an opportunity to the Petitioner to file a reply and attend personal hearing.",
+    "quote_source": "court",
+    "para": 11
+   },
+   {
+    "type": "other_procedural",
+    "note": "no opportunity to file a reply",
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "In the opinion of this Court, the impugned order has been passed after duly affording an opportunity to the Petitioner to file a reply and attend personal hearing.",
+    "quote_source": "court",
+    "para": 11
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "However, it is also made clear that the issue in respect of the validity of the impugned notifications is left open.",
+    "quote_source": "court",
+    "para": 14
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "Petition is disposed of in these terms.",
+   "para": 15
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r1",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "",
+  "seconds": 10763,
+  "saved_at": "2026-10-30T20:08:21"
+ }
+}

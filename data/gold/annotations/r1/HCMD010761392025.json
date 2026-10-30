@@ -1,0 +1,131 @@
+{
+ "cnr": "HCMD010761392025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2022-09-14",
+     "quote": "It appears that the petitioner was issued with a notice, dated 14.09.2022 in Form GST DRC 01",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-06-16",
+    "quote": "impugned order, dated 16.06.2023",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-09-14",
+    "type": "scn_issued",
+    "quote": "It appears that the petitioner was issued with a notice, dated 14.09.2022 in Form GST DRC 01",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "which was also replied by the petitioner through his Charted Accountant.",
+    "para": 2
+   },
+   {
+    "date": "2023-06-16",
+    "type": "order_passed",
+    "quote": "These aspects have not been considered while passing the impugned order, dated 16.06.2023, in which a sum of Rs.16,40,742/- has been demanded and at the same time a sum of Rs.1,82,988/- was appropriated.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "These aspects have not been considered while passing the impugned order, dated 16.06.2023, in which a sum of Rs.16,40,742/- has been demanded and at the same time a sum of Rs.1,82,988/- was appropriated.",
+    "quote_source": "court",
+    "para": 2
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Since the petitioner has not been heard while passing the final order and time was sought for by the petitioner’s Consultant, I am of the view that the case can be remitted back for the petitioner to participate in the proceedings.",
+    "quote_source": "court",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order, dated 16.06.2023 is set aside and the case shall be remitted back to the respondent.",
+   "para": 3
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r1",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "",
+  "seconds": 506,
+  "saved_at": "2026-10-30T20:43:36"
+ }
+}

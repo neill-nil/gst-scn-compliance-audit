@@ -1,0 +1,116 @@
+{
+ "cnr": "DLHC010184742026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "D. Issue appropriate Writ in the nature of Certiorari or any other appropriate writ/order/directions for quashing the Impugned Show Cause Notice dated 23.10.2023, issued along with FORM GST DRC – 01 on 03.08.2024 by Respondent No. 2 under Section 74 of the Central Goods & Services Tax Act, 2017 as the same have been issued for multiple financial years, in a wholly arbitrary and illegal manner.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-10-23",
+     "quote": "D. Issue appropriate Writ in the nature of Certiorari or any other appropriate writ/order/directions for quashing the Impugned Show Cause Notice dated 23.10.2023, issued along with FORM GST DRC – 01 on 03.08.2024 by Respondent No. 2 under Section 74 of the Central Goods & Services Tax Act, 2017 as the same have been issued for multiple financial years, in a wholly arbitrary and illegal manner.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-12-05",
+    "quote": "C. Issue appropriate Writ in the nature of Certiorari or any other appropriate writ/order/directions for quashing the Impugned Order dated 05.12.2024 issued by Respondent No. 1 on 20.01.2025 under Section 74 of the Central Goods & Services Tax Act, 2017 as the same have been issued for multiple financial years, in a wholly arbitrary and illegal manner.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-10-23",
+    "type": "scn_issued",
+    "quote": "D. Issue appropriate Writ in the nature of Certiorari or any other appropriate writ/order/directions for quashing the Impugned Show Cause Notice dated 23.10.2023, issued along with FORM GST DRC – 01 on 03.08.2024 by Respondent No. 2 under Section 74 of the Central Goods & Services Tax Act, 2017 as the same have been issued for multiple financial years, in a wholly arbitrary and illegal manner.",
+    "para": 2
+   },
+   {
+    "date": "2024-12-05",
+    "type": "order_passed",
+    "quote": "C. Issue appropriate Writ in the nature of Certiorari or any other appropriate writ/order/directions for quashing the Impugned Order dated 05.12.2024 issued by Respondent No. 1 on 20.01.2025 under Section 74 of the Central Goods & Services Tax Act, 2017 as the same have been issued for multiple financial years, in a wholly arbitrary and illegal manner.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": true,
+    "quote": "we are of the view that since this Court has consistently taken a view that consolidation of the notices for various financial years is very much permitted, we see no reason to take a different view",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "That being so, these writ petitions stand dismissed.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r1",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Common order with DLHC010184962026 and W.P. 5866 (same findings). contested: judgment notes Madras and AP High Courts take the opposite view.",
+  "seconds": 9,
+  "saved_at": "2026-10-30T20:53:10"
+ }
+}
