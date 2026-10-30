@@ -37,3 +37,9 @@ CLAUDE.md
 
 # macOS
 .DS_Store
+
+# Local-only files: report source, course brief, proposal, downloaded run archives
+docs/mid_report/
+BleedTokens.pdf
+LMA_Group_Project_v1.pdf
+b1_results.zip
