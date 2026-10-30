@@ -1,0 +1,133 @@
+{
+  "repo_url": "https://github.com/neill-nil/gst-scn-compliance-audit.git",
+  "source_branch": "mid-baselines",
+  "repo_commit": "6c563663bbd486c5dbbff753e57797c911ade6b1",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model_details": {
+    "parent_model": "",
+    "format": "gguf",
+    "family": "qwen3",
+    "families": [
+      "qwen3"
+    ],
+    "parameter_size": "8.2B",
+    "quantization_level": "Q4_K_M",
+    "context_length": 40960,
+    "embedding_length": 4096,
+    "runner": "ggml"
+  },
+  "ollama_version": "0.40.13",
+  "gpu": [
+    "Tesla T4, 15360 MiB",
+    "Tesla T4, 15360 MiB"
+  ],
+  "python_version": "3.13.15",
+  "seed": 1,
+  "temperature": 0.0,
+  "max_tokens": 4096,
+  "thinking": "off (/no_think in the repository wrapper)",
+  "context_length": 16384,
+  "parallel_requests": 2,
+  "views": [
+    "full_record",
+    "notice_only"
+  ],
+  "cases_per_view": 54,
+  "outputs": 108,
+  "started_utc": "2026-10-30T18:10:46Z",
+  "packaged_utc": "2026-10-30T19:56:16Z",
+  "scoring": {
+    "split": "test",
+    "unargued_as_rejected": false
+  },
+  "sha256": {
+    "gold": "1ad04611c4bcc914d16a34c4a55355d21619e6f3e6a9c49e6128506ae40b73b5",
+    "test_split": "e10df0eebed9a66c720f60b672be78bc586ba476a167807a9e20811cb15baae1",
+    "full_record_inputs": "627750f4dc506a3d3cf7151303f9b5a73cc3325c51ce646a8f741f52f8d62dd4",
+    "notice_only_inputs": "073e8aa3ba970a7e67d3e0c384c1c4620f1b0381373eb6701aefc3fe21a01d93"
+  },
+  "quality_warnings": [
+    {
+      "cnr": "HCMA010761122025",
+      "view": "full_record",
+      "missing_types": [
+        "limitation"
+      ],
+      "duplicate_types": []
+    },
+    {
+      "cnr": "ODHC010198702026",
+      "view": "full_record",
+      "missing_types": [
+        "limitation"
+      ],
+      "duplicate_types": []
+    },
+    {
+      "cnr": "HCMA011912822024",
+      "view": "full_record",
+      "missing_types": [
+        "extension_notification_validity",
+        "summary_only"
+      ],
+      "duplicate_types": []
+    },
+    {
+      "cnr": "DLHC010526342024",
+      "view": "full_record",
+      "missing_types": [
+        "limitation"
+      ],
+      "duplicate_types": []
+    },
+    {
+      "cnr": "UPHC021039642025",
+      "view": "full_record",
+      "missing_types": [
+        "limitation"
+      ],
+      "duplicate_types": []
+    },
+    {
+      "cnr": "HCMA011208632026",
+      "view": "full_record",
+      "missing_types": [
+        "limitation"
+      ],
+      "duplicate_types": []
+    },
+    {
+      "cnr": "ODHC010198702026",
+      "view": "notice_only",
+      "missing_types": [
+        "limitation"
+      ],
+      "duplicate_types": []
+    },
+    {
+      "cnr": "KAHC010437992025",
+      "view": "notice_only",
+      "missing_types": [
+        "limitation"
+      ],
+      "duplicate_types": []
+    },
+    {
+      "cnr": "UPHC020945582025",
+      "view": "notice_only",
+      "missing_types": [
+        "limitation"
+      ],
+      "duplicate_types": []
+    },
+    {
+      "cnr": "HCMA011208632026",
+      "view": "notice_only",
+      "missing_types": [
+        "limitation"
+      ],
+      "duplicate_types": []
+    }
+  ]
+}
