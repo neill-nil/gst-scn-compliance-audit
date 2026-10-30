@@ -5,8 +5,11 @@ Reads data/gold/annotations/<reviewer>/<cnr>.json (written by the review tool) a
                                    reviewer's if only they have finished)
   data/gold/double/first.jsonl     the two versions of each double-reviewed case, for the agreement score:
   data/gold/double/second.jsonl      python -m eval.agreement --a data/gold/double/first.jsonl --b data/gold/double/second.jsonl
-  data/gold/out_of_scope.csv       cases reviewers marked out of scope, with their note
+  data/gold/out_of_scope.csv       cases reviewers marked out of scope (or adjudication excluded), with the note
   data/splits/test.txt             the CNRs in records.jsonl
+Disagreements are settled in data/gold/adjudication.csv (cnr, decision, note): decision "second" uses the
+second reviewer's version, "out_of_scope" or "duplicate" leaves the case out of gold. The agreement files
+always keep both original versions.
 Records are written flat (facts and findings at the top level, plus court, case_no, decision_date and
 annotation), the format eval/score.py reads. Only status "reviewed" counts; "needs_fix" and
 "in_progress" are left out and listed.
@@ -45,6 +48,11 @@ def main():
     with open(ROOT / "data" / "splits" / "review_queue.csv", newline="", encoding="utf-8") as f:
         queue = list(csv.DictReader(f))
 
+    adjudication = {}  # cnr -> {"decision": first | second | out_of_scope | duplicate, "note"}
+    if (GOLD / "adjudication.csv").exists():
+        with open(GOLD / "adjudication.csv", newline="", encoding="utf-8") as f:
+            adjudication = {r["cnr"]: r for r in csv.DictReader(f)}
+
     reviews = {}  # (reviewer, cnr) -> record
     for path in sorted((GOLD / "annotations").glob("*/*.json")):
         reviews[(path.parent.name, path.stem)] = json.loads(path.read_text(encoding="utf-8"))
@@ -65,10 +73,16 @@ def main():
             open_items.append(f"{cnr} ({who['first']}: {status(who['first'], cnr)})")
             continue
         reviewed_by = [who[k] for k in done]
-        gold.append(flat(reviews[(who[done[0]], cnr)], meta[cnr], reviewed_by))
-        if len(done) == 2:
+        if len(done) == 2:  # agreement uses both original versions, whatever the adjudication decides
             first.append(flat(reviews[(who["first"], cnr)], meta[cnr], reviewed_by))
             second.append(flat(reviews[(who["second"], cnr)], meta[cnr], reviewed_by))
+        decision = adjudication.get(cnr, {}).get("decision", "first")
+        if decision in ("out_of_scope", "duplicate"):
+            out_of_scope.append({"cnr": cnr, "reviewer": "adjudication",
+                                 "note": f"{decision}: {adjudication[cnr]['note']}"})
+            continue
+        use = decision if decision in done else done[0]
+        gold.append(flat(reviews[(who[use], cnr)], meta[cnr], reviewed_by))
 
     write_jsonl(GOLD / "records.jsonl", gold)
     write_jsonl(GOLD / "double" / "first.jsonl", first)
