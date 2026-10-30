@@ -1,0 +1,2 @@
+{"step": 1, "stage": "precondition_check", "defect": "hearing_75_4", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(4)"}, "ok": false, "output_summary": "timeout", "model": "qwen3-8b", "tokens_in": 90, "tokens_out": 5, "seconds": 2.0}
+{"step": 2, "stage": "precondition_check", "defect": "hearing_75_4", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(4)"}, "ok": true, "output_summary": "found on retry", "model": "qwen3-8b", "tokens_in": 90, "tokens_out": 20, "seconds": 1.0}
