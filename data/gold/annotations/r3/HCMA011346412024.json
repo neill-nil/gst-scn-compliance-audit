@@ -123,7 +123,7 @@
   ],
   "outcome": {
    "disposition": "disposed",
-   "remanded": true,
+   "remanded": false,
    "quote": "the delay of 25 days in filing the appeal is condoned and the respondent is directed to take the appeal on record and pass orders on merits and in accordance with law.",
    "para": 5
   }
@@ -134,7 +134,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "UNSURE: FY 2022-23 GST demand, but s.73/74 not stated. No separate personal-hearing complaint argued; lack of opportunity follows from service. Judgment dates DRC-01 before DRC-01A, an apparent chronology inconsistency.",
+  "notes": "UNSURE: FY 2022-23 GST demand, but s.73/74 not stated. No separate personal-hearing complaint argued; lack of opportunity follows from service. Judgment dates DRC-01 before DRC-01A, an apparent chronology inconsistency. Appeal was restored to appellate authority; assessment was not remanded to the tax officer.",
   "seconds": null,
   "saved_at": "2026-10-30T21:02:45"
  }

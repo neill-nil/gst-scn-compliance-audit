@@ -96,24 +96,18 @@
     "para": 2
    }
   ],
-  "document_contents": [
-   {
-    "type": "order_reasoning",
-    "quote": "We have gone through the impugned order and we find that the Adjudicating Authority has specifically examined the issue as under which HSN Code, the spare parts meant only for a particular model being manufactured by the petitioner company would fall and has thereafter returned a specific finding that it should have been categorized under HSN code 8714 (Parts and Accessories of Vehicles of Headings 8711 to 8713) and consequently the tax was payable @ 28%, whereas it has been paid @ 18% only.",
-    "para": 5
-   }
-  ]
+  "document_contents": []
  },
  "findings": {
   "defects_argued": [
    {
     "type": "reply_not_considered",
     "note": null,
-    "finding": "not_decided",
+    "finding": "defect_rejected",
     "contested": false,
-    "quote": "The main contention of learned counsel for the petitioner is that the reply of the petitioner has not been properly considered by the Adjudicating Officer and consequently the matter should be remitted back to the Adjudicating Authority.",
-    "quote_source": "argument",
-    "para": 3
+    "quote": "We have gone through the impugned order and we find that the Adjudicating Authority has specifically examined the issue as under which HSN Code, the spare parts meant only for a particular model being manufactured by the petitioner company would fall and has thereafter returned a specific finding that it should have been categorized under HSN code 8714 (Parts and Accessories of Vehicles of Headings 8711 to 8713) and consequently the tax was payable @ 28%, whereas it has been paid @ 18% only.",
+    "quote_source": "court",
+    "para": 5
    }
   ],
   "outcome": {
@@ -129,7 +123,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "",
+  "notes": "Court says the adjudicating officer specifically examined the issue raised; that rejects the complaint that the reply was not considered. Merits of the tax classification were left to appeal.",
   "seconds": null,
   "saved_at": "2026-10-30T21:02:45"
  }
