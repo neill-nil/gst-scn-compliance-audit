@@ -1,0 +1,130 @@
+{
+ "cnr": "UKHC010029982026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The petitioner has assailed an adjudication order dated 01.12.2025 passed by respondent no.3 u/s 73(9) of the Uttarakhand Goods and Services Tax Act, 2017/Central Goods and Services Tax Act read with Rule 122, whereby a demand of differential amount of tax @ 10% has been raised in respect of spare parts manufactured by the petitioner company during the financial year 2021-22.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "The petitioner has assailed an adjudication order dated 01.12.2025 passed by respondent no.3 u/s 73(9) of the Uttarakhand Goods and Services Tax Act, 2017/Central Goods and Services Tax Act read with Rule 122, whereby a demand of differential amount of tax @ 10% has been raised in respect of spare parts manufactured by the petitioner company during the financial year 2021-22.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-09-26",
+     "quote": "The order preceded an audit u/s 65 of the CGST Act and, based on the audit report, a show cause notice was issued to the petitioner on 26.09.2025.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-12-01",
+    "quote": "The petitioner has assailed an adjudication order dated 01.12.2025 passed by respondent no.3 u/s 73(9) of the Uttarakhand Goods and Services Tax Act, 2017/Central Goods and Services Tax Act read with Rule 122, whereby a demand of differential amount of tax @ 10% has been raised in respect of spare parts manufactured by the petitioner company during the financial year 2021-22.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-09-26",
+    "type": "scn_issued",
+    "quote": "The order preceded an audit u/s 65 of the CGST Act and, based on the audit report, a show cause notice was issued to the petitioner on 26.09.2025.",
+    "para": 2
+   },
+   {
+    "date": "2025-11-04",
+    "type": "reply_filed",
+    "quote": "The petitioner replied to the same on 04.11.2025 and after providing personal hearing to the petitioner, the impugned adjudication order has been passed.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "hearing_attended",
+    "quote": "The petitioner replied to the same on 04.11.2025 and after providing personal hearing to the petitioner, the impugned adjudication order has been passed.",
+    "para": 2
+   },
+   {
+    "date": "2025-12-01",
+    "type": "order_passed",
+    "quote": "The petitioner has assailed an adjudication order dated 01.12.2025 passed by respondent no.3 u/s 73(9) of the Uttarakhand Goods and Services Tax Act, 2017/Central Goods and Services Tax Act read with Rule 122, whereby a demand of differential amount of tax @ 10% has been raised in respect of spare parts manufactured by the petitioner company during the financial year 2021-22.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "We have gone through the impugned order and we find that the Adjudicating Authority has specifically examined the issue as under which HSN Code, the spare parts meant only for a particular model being manufactured by the petitioner company would fall and has thereafter returned a specific finding that it should have been categorized under HSN code 8714 (Parts and Accessories of Vehicles of Headings 8711 to 8713) and consequently the tax was payable @ 28%, whereas it has been paid @ 18% only.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "For the aforesaid reasons, we decline to examine the impugned order on merits and dispose of the writ petition with liberty to the petitioner to avail the statutory remedy, if so advised.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r2",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Corrected reply_not_considered to defect_rejected based on paragraph 5. Removed the paragraph 5 judicial conclusion from document_contents because it was court reasoning, not content of the adjudication document.",
+  "seconds": 0,
+  "saved_at": "2026-10-30T20:37:05"
+ }
+}
