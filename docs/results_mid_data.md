@@ -96,6 +96,16 @@ Most defects cannot be judged from the notice alone, so "can't tell" is the hone
 
 B1 answers "no defect" instead of "can't tell" most often for demand beyond the notice (55% can't tell), limitation (63%) and other procedural (41%).
 
+### Ablations (`full_record`, same scoring and bootstrap)
+| Ablation | Comparison | F1 | Difference (95% CI) |
+|---|---|---|---|
+| A2 statute text | B2 with vs without CGST Act ss.73/74/75/168A/169 | 0.55 vs 0.45 | F1 +0.09 [−0.03, +0.20]; precision +0.08 [0.00, +0.20] |
+| A3 model scale | B2 without statute (Gemini) vs B1 (Qwen3-8B), same facts-only input | 0.45 vs 0.42 | F1 +0.03 [−0.10, +0.18] |
+
+B2's lead over B1 (+0.12, significant) splits into a statute part (+0.09) and a small model-size part (+0.03); neither part is significant alone.
+Without the statute, B2 finds 12, raises 5 false alarms and misses 24. On `notice_only` it says "can't tell" 97% of the time.
+Outputs: `runs/b2_nostatute` on `mid-baselines`.
+
 ### Error analysis (`full_record`)
 - **Most misses are honest "can't tell"s, not wrong answers.** Of the real defects each system missed:
   - B2 said "can't tell" for 18 of 21 and "no defect" for 3;

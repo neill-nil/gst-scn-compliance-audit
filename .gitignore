@@ -1,6 +1,7 @@
 # Claude working context (personal)
 CLAUDE.local.md
 .context/
+.claude/
 
 # Data: raw PDFs, extracted text and intermediates are rebuilt from manifests (S3 key + sha256).
 # Tracked in git: data/manifests/*.csv, data/gold/, data/splits/
@@ -17,6 +18,9 @@ __pycache__/
 .venv/
 venv/
 .ipynb_checkpoints/
+src/__pycache__/
+src/baselines/__pycache__/
+eval/__pycache__/
 
 # Secrets
 .env
@@ -25,3 +29,17 @@ venv/
 runs/cache/
 runs/llm_calls.jsonl
 runs/prefill/
+
+# Schema Related
+R4_schema_agenda.md
+
+CLAUDE.md
+
+# macOS
+.DS_Store
+
+# Local-only files: report source, course brief, proposal, downloaded run archives
+docs/mid_report/
+BleedTokens.pdf
+LMA_Group_Project_v1.pdf
+b1_results.zip
