@@ -1,0 +1,101 @@
+{
+ "cnr": "DLHC010829062025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20"
+   ],
+   "quote": "Impugned order dated 17th August, 2024 for the Financial Year 2019- 20 passed by the Sales Tax Officer Class II/Avato Ward 39, Zone-1, Delhi.",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "On facts, it is the case of the Petitioner that the SCNs did not come to the knowledge of the Petitioner as the registration of the Petitioner was cancelled and the Petitioner had gone back to his native place after closing of business.",
+    "quote_source": "argument",
+    "para": 7
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "the Petitioners have been unable to file replies due to several reasons and were unable to avail of personal hearings in most cases.",
+    "quote_source": "argument",
+    "para": 9
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "the challenge is that the extension was granted contrary to the mandate under Section 168A of the Central Goods and Services Tax Act, 2017 and ratification was given subsequent to the issuance of the notification.",
+    "quote_source": "argument",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 12
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 7058,
+   "tokens_out": 262,
+   "seconds": 3.87,
+   "cached": false
+  },
+  {
+   "tokens_in": 5291,
+   "tokens_out": 313,
+   "seconds": 4.84,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

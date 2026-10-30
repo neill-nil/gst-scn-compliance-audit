@@ -1,0 +1,177 @@
+{
+ "cnr": "DLHC010716962024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "pertaining to the financial year 2018-19",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-01",
+     "quote": "challenging the show cause notice dated 1st December, 2023",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-27",
+    "quote": "consequent order dated 27th April, 2024 passed by the office of Sales Tax Officer Class II/ AVATO, Delhi (hereinafter, ‘the impugned order’).",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-01",
+    "type": "scn_issued",
+    "quote": "upon issuance of the SCN dated 1st December, 2023, a reply was filed on their behalf dated 31st December, 2023.",
+    "para": 6
+   },
+   {
+    "date": "2023-12-31",
+    "type": "reply_filed",
+    "quote": "a reply was filed on their behalf dated 31st December, 2023.",
+    "para": 6
+   },
+   {
+    "date": "2024-03-08",
+    "type": "hearing_scheduled",
+    "quote": "a notice for personal hearing dated 8th March, 2024 was issued to the Petitioner, fixing a date for personal hearing i.e., 28th March, 2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-03-28",
+    "type": "hearing_missed",
+    "quote": "However, the same was not attended by the Petitioner.",
+    "para": 6
+   },
+   {
+    "date": "2024-04-27",
+    "type": "order_passed",
+    "quote": "Subsequently, the impugned order dated 27th April, 2024 was passed, raising a demand of Rs. 15,47,274/- upon the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": "2024-06-01",
+    "type": "rectification_rejected",
+    "quote": "a rectification application dated 1st June, 2024 was filed by them, stating that the impugned order has been passed without considering the reply filed by the Petitioner.",
+    "para": 8
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "The said issue has also been raised by the Petitioner in the reply dated 31st December, 2023.",
+    "para": 11
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Specific reasons entered reply furnished by the taxpayer found not satisfactory no relevant document has been uploaded/submitted",
+    "para": 10
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The validity of the impugned notification was under consideration before this Court in a batch of petitions with the lead petition being W.P.(C) 16499/2023 titled ‘DJST Traders Pvt. Ltd. vs. Union of India and Ors.’.",
+    "quote_source": "argument",
+    "para": 4
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In light of the above stated facts and circumstances, this Court is of the opinion that since the reply filed by the Petitioner has not been considered while passing the impugned order, an opportunity ought to be afforded to the Petitioner to contest the matter on merits.",
+    "quote_source": "court",
+    "para": 12
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14105,
+   "tokens_out": 2144,
+   "seconds": 9.1,
+   "cached": false
+  },
+  {
+   "tokens_in": 9838,
+   "tokens_out": 767,
+   "seconds": 7.9,
+   "cached": true
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

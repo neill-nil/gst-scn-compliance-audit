@@ -1,0 +1,104 @@
+{
+ "cnr": "KAHC010371662026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "The Adjudication Order dated 03.01.2025 in No. ACCT/LGSTO-21/ADJ-01/T.No.934/2024-25 by the first respondent for the tax period 2020-21 [Annexure-H]",
+   "para": 1
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2025-01-03",
+    "quote": "The Adjudication Order dated 03.01.2025 in No. ACCT/LGSTO-21/ADJ-01/T.No.934/2024-25 by the first respondent for the tax period 2020-21 [Annexure-H]",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-03-24",
+    "type": "other",
+    "quote": "directing the 1st and 2nd respondents to permit the petitioner to amend Form No. DRC-03 dated 24.03.2021 to Annexure-E reflect the year as Financial Year 2020-21 instead of Financial Year 2019-20 either through online or manual means",
+    "para": 3
+   },
+   {
+    "date": "2025-01-03",
+    "type": "order_passed",
+    "quote": "The Adjudication Order dated 03.01.2025 in No. ACCT/LGSTO-21/ADJ-01/T.No.934/2024-25 by the first respondent for the tax period 2020-21 [Annexure-H]",
+    "para": 1
+   },
+   {
+    "date": "2025-01-03",
+    "type": "order_passed",
+    "quote": "The Adjudication Order dated 03.01.2025 in No. ACCT/(A)-1.1/GST/DRC-7/58/T. No.654/2024- 25 by the second respondent [Annexure-K] for the same tax period.",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "Two adjudication orders passed by different authorities for the same tax period",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Sri K. Hema Kumar, the learned Additional Government Advocate, does not dispute that two Adjudication Orders could not have been for the same tax period while pointing out that the first Adjudication Order is after scrutiny under Section 61 of the Central Goods and Services Tax Act/Karnataka Goods and Services Tax Act, 2017 [for short, 'the Act'] and the second Adjudication Order is after audit as contemplated under Section 65 of the Act.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "The petition is allowed quashing the Adjudication Order dated 03.01.2025 in No. ACCT/LGSTO-21/ADJ-01/T.No.-934/2024-25 passed by the first respondent for the tax period 2020-21 [Annexure-H] and the also the Adjudication Order dated 03.01.2025 in No. ACCT/ (A)-1.1/GST/DRC-7/58/T.No.- 654/2024-25 passed by the second respondent [Annexure-K] for the same tax period.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15640,
+   "tokens_out": 4902,
+   "seconds": 15.77,
+   "cached": false
+  },
+  {
+   "tokens_in": 8429,
+   "tokens_out": 907,
+   "seconds": 8.73,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.events[0]:other",
+   "findings.outcome:findings.outcome"
+  ]
+ }
+}

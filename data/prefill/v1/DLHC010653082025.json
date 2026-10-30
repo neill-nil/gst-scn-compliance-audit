@@ -1,0 +1,146 @@
+{
+ "cnr": "DLHC010653082025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-31",
+     "quote": "The present petition challenges the impugned Show Cause Notice dated 31st May, 2024 (hereinafter ‘impugned SCN’).",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-13",
+    "quote": "seeking the quashing of the impugned order dated 13th August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 10, Zone-2, Delhi.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-31",
+    "type": "scn_issued",
+    "quote": "The present petition challenges the impugned Show Cause Notice dated 31st May, 2024 (hereinafter ‘impugned SCN’).",
+    "para": 3
+   },
+   {
+    "date": "2024-07-10",
+    "type": "other",
+    "quote": "A reminder notice is also stated to have been issued to the Petitioner on 10th July, 2024.",
+    "para": 8
+   },
+   {
+    "date": "2024-08-13",
+    "type": "order_passed",
+    "quote": "seeking the quashing of the impugned order dated 13th August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 10, Zone-2, Delhi.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "As observed by this Court in the order dated 22nd April, 2025 as well, since the challenge to the above mentioned notifications is presently under consideration before the Supreme Court in S.L.P No 4240/2025 titled M/s HCC-SEW-MEIL-AAG JV v. Assistant Commissioner of State Tax &Ors., the challenge made by the Petitioner to the impugned notifications in the present proceedings shall also be subject to the outcome of the decision of the Supreme Court.",
+    "quote_source": "argument",
+    "para": 6
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "On facts, however, the submission of the Petitioner is thatno reply has been filed by the Petitioner to the impugned SCN nor any personal hearing has been attended.",
+    "quote_source": "argument",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 17732,
+   "tokens_out": 4938,
+   "seconds": 14.15,
+   "cached": false
+  },
+  {
+   "tokens_in": 10483,
+   "tokens_out": 771,
+   "seconds": 10.27,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

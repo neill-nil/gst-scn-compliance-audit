@@ -1,0 +1,154 @@
+{
+ "cnr": "HCMA010769672020",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "under Section 74(1) of the Central Goods & Services Tax Act, 2017 (CGST Act, 2017) and Tamil Nadu Goods and Service Tax Act, 2017 (TNGST Act, 2017).",
+   "para": 3
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19"
+   ],
+   "quote": "in respect of the periods from July 2017 to March 2018 and April 2018 to March 2019 and quash the same.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2019-11-20",
+     "quote": "Show Cause Notice dated 20.11.2019",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "Objection if any of the above proposal, you are requested to appear in person on or before 20.12.2019 at 11.00 am at my chamber along with original documents with two sets of Xerox copy and soft copy",
+     "para": 3
+    },
+    "hearing_date": {
+     "value": "2019-12-20",
+     "quote": "you are requested to appear in person on or before 20.12.2019 at 11.00 am",
+     "para": 3
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2020-05-05",
+    "quote": "order of the 1st respondent Order No.ERD-009-20190925 dated 05.05.2020",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2019-11-20",
+    "type": "scn_issued",
+    "quote": "The Impugned Orders both dated 05.05.2020 for the Assessment Years 2017-2018 & 2018-2019 preceded a Show Cause Notice dated 20.11.2019 bearing reference:GSTIN:33ALPPS1578K1ZG/2017-2018 under Section 74(1)",
+    "para": 3
+   },
+   {
+    "date": "2019-12-19",
+    "type": "reply_filed",
+    "quote": "The petitioner replied to the above Show Cause Notice dated 20.11.2019 and on 19.12.2019 and had requested the respondent to permit the petitioner to cross-examine the officers",
+    "para": 7
+   },
+   {
+    "date": "2020-05-05",
+    "type": "order_passed",
+    "quote": "order of the 1st respondent Order No.ERD-009-20190925 dated 05.05.2020",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "In the absence of inward and outward supply documents, I propose to reject the entire Input Tax Credit under CGST Act and SGST Act 2017.",
+    "para": 3
+   },
+   {
+    "type": "reply_point",
+    "quote": "The petitioner replied to the above Show Cause Notice dated 20.11.2019 and on 19.12.2019 and had requested the respondent to permit the petitioner to cross-examine the officers from the second respondent who had put the petitioner’s mills/factories under lock and seal on 16.05.2019",
+    "para": 7
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "There is no doubt that the impugned orders have been passed in violation of principles of natural justice in as much as, the petitioner was not allowed to cross examine the officers of the 2ndrespondent’s who had taken possession of the factory of the petitioner under the provisions of Securitization and Reconstruction of Financial Assets and Enforcement of Securities Interest Act, 2002 read with Security Interest (Enforcement) Rules, 2002.",
+    "quote_source": "court",
+    "para": 35
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, these writ petitions stand allowed by way of remand with the above observation.",
+   "para": 58
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 34762,
+   "tokens_out": 5168,
+   "seconds": 12.59,
+   "cached": false
+  },
+  {
+   "tokens_in": 27399,
+   "tokens_out": 603,
+   "seconds": 10.25,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.events[1]:reply_filed",
+   "facts.document_contents[1]:reply_point"
+  ]
+ }
+}

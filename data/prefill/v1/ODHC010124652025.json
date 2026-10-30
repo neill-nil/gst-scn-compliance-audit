@@ -1,0 +1,153 @@
+{
+ "cnr": "ODHC010124652025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "pertaining to Financial Year 2019-20 in the assessment framed under Section 73 of the Central Goods and Services Tax Act, 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "pertaining to Financial Year 2019-20 in the assessment framed under Section 73 of the Central Goods and Services Tax Act, 2017",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-20",
+     "quote": "Perusal of the assessment order reveals that the show- cause notice dated 20.05.2024 as issued by the Assessing Authority to the Noticee-petitioner was relating to excess input tax credit to the tune of Rs.42,45,522/- for the Financial Year 2019-20.",
+     "para": 7
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-28",
+    "quote": "challenge is laid to Order dated 28.08.2024 passed by the Assistant Commissioner, GST & Central Excise, Cuttack-I Division, Cuttack",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "not_served",
+    "quote": "The petitioner asserts that having never been served with Order-in-Original dated 28.08.2024, on getting a phone call from an Official of GST and Central Excise, Cuttack requesting him to discharge liability by making payment of tax and penalty as demanded by the said assessment order under Section 73 of the CGST Act, it could come to his knowledge that huge demand comprising tax, interest and penalty has been raised against him by way of an ex parte order.",
+    "para": 2
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-20",
+    "type": "scn_issued",
+    "quote": "Perusal of the assessment order reveals that the show- cause notice dated 20.05.2024 as issued by the Assessing Authority to the Noticee-petitioner was relating to excess input tax credit to the tune of Rs.42,45,522/- for the Financial Year 2019-20.",
+    "para": 7
+   },
+   {
+    "date": "2024-08-28",
+    "type": "order_passed",
+    "quote": "challenge is laid to Order dated 28.08.2024 passed by the Assistant Commissioner, GST & Central Excise, Cuttack-I Division, Cuttack raising a demand comprising tax to the tune of Rs.42,45,522/-",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Perusal of the assessment order reveals that the show- cause notice dated 20.05.2024 as issued by the Assessing Authority to the Noticee-petitioner was relating to excess input tax credit to the tune of Rs.42,45,522/- for the Financial Year 2019-20.",
+    "para": 7
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Thus, it is discernible that the entire demand of tax to the tune of Rs.42,45,522/- was on account of disallowance of ITC on the allegation that the same is “wrongly availed and utilised” by the petitioner.",
+    "para": 7
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is with humility submitted by the learned Senior Counsel that though it is claimed by the Assessing Authority that dates were allotted for personal hearing on three occasions, due to circumstances unavoidable neither the Noticee nor could his representative avail such opportunities; but, the Assessing Authority having proceeded to undertake ex parte assessment under Section 73 of the CGST Act, documents available on portal and accessible by him could have been utilised and benefit should have been extended.",
+    "quote_source": "argument",
+    "para": 5
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The petitioner asserts that having never been served with Order-in-Original dated 28.08.2024, on getting a phone call from an Official of GST and Central Excise, Cuttack requesting him to discharge liability by making payment of tax and penalty as demanded by the said assessment order under Section 73 of the CGST Act, it could come to his knowledge that huge demand comprising tax, interest and penalty has been raised against him by way of an ex parte order.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "In such view of the matter, the impugned ex parte assessment order dated 28.08.2024 framed under Section 73 of the GST Act by the Assistant Commissioner, GST & Central Excise, Cuttack-I Division, Cuttack is hereby set aside.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 18046,
+   "tokens_out": 2478,
+   "seconds": 10.03,
+   "cached": false
+  },
+  {
+   "tokens_in": 6589,
+   "tokens_out": 447,
+   "seconds": 3.83,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

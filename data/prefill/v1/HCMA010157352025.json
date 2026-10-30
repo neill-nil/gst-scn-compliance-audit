@@ -1,0 +1,166 @@
+{
+ "cnr": "HCMA010157352025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "dated 29.12.2023 for the assessment period 2017-18 and to quash the same.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-29",
+     "quote": "thereafter, Form GST DRC-01 dated 29.09.2023 and the remainder dated 19.02.2024, since all such notices were merely uploaded in the GST Portal, under the ''Additional Notices'' column, the petitioner has no occasion to view the portal",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "thereafter, Form GST DRC-01 dated 29.09.2023 and the remainder dated 19.02.2024, since all such notices were merely uploaded in the GST Portal, under the ''Additional Notices'' column",
+     "para": 3
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-29",
+    "quote": "The challenge in this Writ Petition is to the order passed by the respondent in Form GST DRC-07 dated 29.12.2023 along with a detailed order in GSTIN : 33AYAPM9399N1ZM/2017-18 dated 29.12.2023 and to quash the same.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-26",
+    "type": "pre_scn_intimation",
+    "quote": "directly issued Notice in Form GST DRC-01A dated 26.09.2023",
+    "para": 3
+   },
+   {
+    "date": "2023-09-29",
+    "type": "scn_issued",
+    "quote": "thereafter, Form GST DRC-01 dated 29.09.2023",
+    "para": 3
+   },
+   {
+    "date": "2023-12-01",
+    "type": "hearing_scheduled",
+    "quote": "opportunity of personal hearing was granted to the petitioner on 01.12.2023 but the petitioner has not appeared",
+    "para": 3
+   },
+   {
+    "date": "2023-12-01",
+    "type": "hearing_missed",
+    "quote": "not even appeared during the personal hearing fixed on 01.12.2023",
+    "para": 4
+   },
+   {
+    "date": "2023-12-27",
+    "type": "reply_filed",
+    "quote": "thereafter, the petitioner filed reply on 27.12.2023",
+    "para": 6
+   },
+   {
+    "date": "2023-12-29",
+    "type": "order_passed",
+    "quote": "the respondent without hearing the petitioner passed the impugned order on 29.12.2023",
+    "para": 6
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "However, since all such such notices were merely uploaded in the GST Portal, under the tab ''Additional Notices', the same were unnoticed by the petitioner.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, it is clear that the impugned order suffers from violation of principles of natural justice and against the provisions of Section 75 (4) of the TNGST Act, inasmuch as, an opportunity of hearing ought to have been granted, where any adverse decision is contemplated against taxpayer (petitioner in this case).",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, the Writ Petition is allowed on the aforesaid terms No costs.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14492,
+   "tokens_out": 5303,
+   "seconds": 12.99,
+   "cached": false
+  },
+  {
+   "tokens_in": 7194,
+   "tokens_out": 733,
+   "seconds": 10.05,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

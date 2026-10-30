@@ -1,0 +1,89 @@
+{
+ "cnr": "ODHC010343832025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "proper officer has exercised power under Section 73 of the GST Act read with Rule 142 of the Rules framed thereunder for recovery of Input Tax Credit",
+   "para": 4
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "for the period from April, 2021 to March, 2022.",
+   "para": 6
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-06-17",
+    "type": "pre_scn_intimation",
+    "quote": "It is also discernible from the Form GST DRC-01A, i.e., intimation of tax ascertained as being payable under Section 73(5)/74(5) dated 17.06.2025, that the petitioner was assessed to tax to the tune of Rs.1,88,120/-",
+    "para": 6
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "A representation / reply filed before the Joint Commissioner of State Tax, Bhubaneswar-I Circle, Bhubaneswar on 03.05.2025 has not been attended to.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In the result, therefore, without expressing any opinion touching the merit of the matter, this writ petition is disposed of with the aforesaid observation and direction, but in the circumstances, there shall be no order as to costs.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 29183,
+   "tokens_out": 3071,
+   "seconds": 11.29,
+   "cached": false
+  },
+  {
+   "tokens_in": 11433,
+   "tokens_out": 168,
+   "seconds": 4.55,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

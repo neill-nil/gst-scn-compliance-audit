@@ -1,0 +1,156 @@
+{
+ "cnr": "HCMA010395712025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "demanding tax along with interest and penalty for the assessment year 2017-2018.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-01-01",
+     "quote": "initially the 1st respondent issued show cause notice dated 01.01.2024 to the petitioner.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-06-20",
+    "quote": "Together with its Annexure in Order No.13/2024 [GST] dated 20.06.2024 bearing File No.ADJ/ADJ/GST/69/2024-CGST-Range-I- DIV-KRKL-COMMRTE-PUDUCHERRY of the 1st Respondent",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-01-01",
+    "type": "scn_issued",
+    "quote": "initially the 1st respondent issued show cause notice dated 01.01.2024 to the petitioner.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "hearing_attended",
+    "quote": "Thereafter, the petitioner appeared before the 1st respondent and sought time to file reply.",
+    "para": 2
+   },
+   {
+    "date": "2024-06-20",
+    "type": "order_passed",
+    "quote": "Subsequently, the respondent passed the impugned assessment order dated 20.06.2024 along with summary order dated 21.06.2024 demanding tax along with interest and penalty for the assessment year 2017-2018.",
+    "para": 2
+   },
+   {
+    "date": "2024-12-11",
+    "type": "recovery_or_attachment",
+    "quote": "Thereafter, the 2nd respondent passed the attachment order dated 11.12.2024.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In the case on hand, the 1st respondent have issued show cause notice to the petitioner, for which the petitioner sought time to file reply.",
+    "quote_source": "court",
+    "para": 7
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Further, it appears that no opportunity of personal hearing was provided to the petitioner prior to the passing of impugned order.",
+    "quote_source": "court",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, this writ petition is disposed of.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4998,
+   "tokens_out": 963,
+   "seconds": 4.48,
+   "cached": false
+  },
+  {
+   "tokens_in": 3231,
+   "tokens_out": 260,
+   "seconds": 2.35,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.order.date:facts.order.date"
+  ]
+ }
+}

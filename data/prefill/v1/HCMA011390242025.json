@@ -1,0 +1,160 @@
+{
+ "cnr": "HCMA011390242025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "dated 22.05.2025 for the financial year 2020-2021 and quash the same.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-25",
+     "quote": "the respondent-Department issued a notice in Form DRC-01 dated 25.11.2024",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-22",
+    "quote": "impugned order dated 22.02.2025",
+    "para": 6
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-25",
+    "type": "scn_issued",
+    "quote": "the respondent-Department issued a notice in Form DRC-01 dated 25.11.2024",
+    "para": 2
+   },
+   {
+    "date": "2024-12-25",
+    "type": "reply_filed",
+    "quote": "for which the petitioner filed his replies on 25.12.2024 and 20.02.2025 along with other supporting documents.",
+    "para": 2
+   },
+   {
+    "date": "2025-02-20",
+    "type": "reply_filed",
+    "quote": "for which the petitioner filed his replies on 25.12.2024 and 20.02.2025 along with other supporting documents.",
+    "para": 2
+   },
+   {
+    "date": "2025-02-22",
+    "type": "order_passed",
+    "quote": "Reference No.ZD330225227792I in GSTIN/ID- 33ACOFS5428G1ZX dated 22.02.2025",
+    "para": 0
+   },
+   {
+    "date": "2025-05-22",
+    "type": "rectification_rejected",
+    "quote": "consequential impugned order of rejection of application for rectification in Reference No.ZD330525240716F passed in GSTIN/Temp.ID-33ACOFS5428G1ZX dated 22.05.2025",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In the present case, though the petitioner has filed his reply to the Form DRC-01 notice issued by the respondent, no consideration was made and no findings were given by the respondent in respect of the said reply filed by the petitioner.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Further, it appears that no opportunity of personal hearing was provided to the petitioner prior to the passing of impugned order.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above observations & directions, this Writ Petition is disposed of.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13585,
+   "tokens_out": 5155,
+   "seconds": 12.32,
+   "cached": false
+  },
+  {
+   "tokens_in": 2881,
+   "tokens_out": 280,
+   "seconds": 5.65,
+   "cached": true
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

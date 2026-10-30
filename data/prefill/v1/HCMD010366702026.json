@@ -1,0 +1,113 @@
+{
+ "cnr": "HCMD010366702026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "this is an order of assessment passed under Section 74 of the TNGST Act",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "passed by the respondent for the F.Y.2019-2020",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2025-03-18",
+    "quote": "impugned order dated 18.03.2025",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-03-18",
+    "type": "order_passed",
+    "quote": "This writ petition is filed challenging the impugned order dated 18.03.2025, which is an order of assessment passed under Section 74 of the TNGST Act",
+    "para": 1
+   },
+   {
+    "date": "2025-04-23",
+    "type": "rectification_rejected",
+    "quote": "and the orders dated 23.04.2025, which is an order passed rejecting the rectification application that is filed by the petitioner.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "it was only mentioned that on verification of GSTR-2B details the taxable person has claimed ITC on purchase of vehicles for own use and also claimed ITC on ineligible invoices.",
+    "para": 4
+   },
+   {
+    "type": "fraud_allegation",
+    "quote": "There is absolutely no whisper as to any willful attempt to evade tax or short pay tax.",
+    "para": 4
+   },
+   {
+    "type": "reply_point",
+    "quote": "The petitioner has shown cause by stating that upon noticing the defect, the petitioner has rectified the same and has also paid the entire tax liability.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In view thereof, I am of the view that the averments in the show cause notice do not categorically put across to the petitioner the ingredients as per section 74 of the Act.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In view thereof, this writ petition is ordered on the following terms: (i)The impugned orders dated 18.03.2025 shall stand quashed. (ii)The matter is remitted back to the file of the first respondent for fresh consideration.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14590,
+   "tokens_out": 4802,
+   "seconds": 15.58,
+   "cached": false
+  },
+  {
+   "tokens_in": 3385,
+   "tokens_out": 223,
+   "seconds": 2.88,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.provision:facts.provision"
+  ]
+ }
+}

@@ -123,9 +123,13 @@ def _extract_json(text: str):
 
 
 def _drop_schema_echo(obj, schema: dict):
-    """Models sometimes copy the schema's own header keys ("$schema", "title", "description") into the answer."""
+    """Models sometimes copy the schema's own keywords ("$schema", "title", "properties", ...) into the answer."""
     if isinstance(obj, dict):
-        for key in ("$schema", "title", "description"):
+        wanted = set(schema.get("properties", {}))
+        inner = obj.get("properties")
+        if wanted and isinstance(inner, dict) and wanted <= set(inner) and not wanted & set(obj):
+            obj = inner  # the answer was wrapped in a copy of the schema: {"type": "object", "properties": {answer}}
+        for key in ("$schema", "title", "description", "type", "properties", "required", "additionalProperties"):
             if key not in schema.get("properties", {}):
                 obj.pop(key, None)
     return obj

@@ -1,0 +1,187 @@
+{
+ "cnr": "UPHC010748612025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "Whereafter notice was issued under Section 73(1) of the Act on 23.12.2023 indicating the difference in the amount of Input Tax Credit (ITC) for the tax period April, 2018 to March, 2019.",
+   "para": 3
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "For the tax period April, 2018 to March, 2019, the return of the petitioner was scrutinized by the department and a notice under Section 61 of the Act intimating discrepancies in the return after scrutiny was issued.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-23",
+     "quote": "Whereafter notice was issued under Section 73(1) of the Act on 23.12.2023 indicating the difference in the amount of Input Tax Credit (ITC) for the tax period April, 2018 to March, 2019.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": "2024-01-20",
+     "quote": "In the show cause notice, the date indicated by which reply was to be submitted was 20.01.2024 and date of personal hearing was also fixed on the same date.",
+     "para": 3
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "In the show cause notice, the date indicated by which reply was to be submitted was 20.01.2024 and date of personal hearing was also fixed on the same date.",
+     "para": 3
+    },
+    "hearing_date": {
+     "value": "2024-01-20",
+     "quote": "In the show cause notice, the date indicated by which reply was to be submitted was 20.01.2024 and date of personal hearing was also fixed on the same date.",
+     "para": 3
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-30",
+    "quote": "The respondent no. 2 passed order dated 30.04.2024 under Section 73(9) of the Act partly accepting the reply furnished by the petitioner.",
+    "para": 5
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "scrutiny_notice",
+    "quote": "For the tax period April, 2018 to March, 2019, the return of the petitioner was scrutinized by the department and a notice under Section 61 of the Act intimating discrepancies in the return after scrutiny was issued.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-23",
+    "type": "scn_issued",
+    "quote": "Whereafter notice was issued under Section 73(1) of the Act on 23.12.2023 indicating the difference in the amount of Input Tax Credit (ITC) for the tax period April, 2018 to March, 2019.",
+    "para": 3
+   },
+   {
+    "date": "2024-01-18",
+    "type": "reply_filed",
+    "quote": "The petitioner filed his reply on 18.01.2024 to the show cause notice inter-alia indicating that in the case of petitioner, the tax is charged on Reverse Charge Mechanism (RCM) wherein the tax is to be paid by the recipient of the service and filed the relevant tax invoices of the transactions.",
+    "para": 4
+   },
+   {
+    "date": "2024-04-30",
+    "type": "order_passed",
+    "quote": "The respondent no. 2 passed order dated 30.04.2024 under Section 73(9) of the Act partly accepting the reply furnished by the petitioner.",
+    "para": 5
+   },
+   {
+    "date": "2024-10-09",
+    "type": "rectification_rejected",
+    "quote": "The petitioner filed an application under Section 161 of the Act seeking rectification of the error apparent on the fact of record relying on the fact that the transactions were governed by RCM, however, the application was rejected by order dated 09.10.2024.",
+    "para": 6
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Whereafter notice was issued under Section 73(1) of the Act on 23.12.2023 indicating the difference in the amount of Input Tax Credit (ITC) for the tax period April, 2018 to March, 2019.",
+    "para": 3
+   },
+   {
+    "type": "reply_point",
+    "quote": "The petitioner filed his reply on 18.01.2024 to the show cause notice inter-alia indicating that in the case of petitioner, the tax is charged on Reverse Charge Mechanism (RCM) wherein the tax is to be paid by the recipient of the service and filed the relevant tax invoices of the transactions.",
+    "para": 4
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "O;kikjh dk mRrj dfri; fcUnqvksa ij Lohdkj ;ksX; ugha ik;k x;k] D;ksfd O;kikjh ds }kjk vius mRrj ds lIykbZ ,xsUlV vkjlh,e :0 71595250-38 ?kksf\"kr fd;k x;k gSA",
+    "para": 13
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "This Court has repeatedly frowned on the action of the respondents in fixing identical date of reply and date of hearing, as the same apparently is an empty formality and essentially results in violation of principle of natural justice.",
+    "quote_source": "court",
+    "para": 12
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Such a cursory disposal of the objection raised in reply to the show cause notice cannot be countenanced when plea raised is very specific.",
+    "quote_source": "court",
+    "para": 14
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In view of above fact situation, wherein besides non granting of opportunity of hearing, the order impugned i.e. 30.04.2024 passed, is wholly cursory, the same cannot be sustained.",
+    "quote_source": "court",
+    "para": 15
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "Consequently, the petition is allowed.",
+   "para": 17
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12401,
+   "tokens_out": 3428,
+   "seconds": 12.9,
+   "cached": false
+  },
+  {
+   "tokens_in": 7866,
+   "tokens_out": 976,
+   "seconds": 7.36,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.document_contents[2]:order_reasoning"
+  ]
+ }
+}

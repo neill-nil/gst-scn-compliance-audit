@@ -1,0 +1,160 @@
+{
+ "cnr": "WBCHCJ0028682026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The Adjudication Order dated January 27, 2025 passed by the respondent no.2 under Section 73(9) of the WBGST/CGST Act, 2017 and the Appellate Order dated March 27, 2026 passed by the respondent no.1 are under challenge in this writ petition.",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "A show-cause notice under Section 73 dated November 18, 2024 was issued on the ground that upon scrutiny of the returns furnished by the petitioner for the period from 01/04/2020 to 31/03/2021 certain discrepancies were detected.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-18",
+     "quote": "A show-cause notice under Section 73 dated November 18, 2024 was issued on the ground that upon scrutiny of the returns furnished by the petitioner for the period from 01/04/2020 to 31/03/2021 certain discrepancies were detected.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "It is not in dispute that the show-cause notice and the Adjudication Order were uploaded in the “Additional Notices and Orders Tab” at the relevant point of time.",
+     "para": 7
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-01-27",
+    "quote": "The Adjudication Order dated January 27, 2025 passed by the respondent no.2 under Section 73(9) of the WBGST/CGST Act, 2017 and the Appellate Order dated March 27, 2026 passed by the respondent no.1 are under challenge in this writ petition.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "It is not in dispute that the show-cause notice and the Adjudication Order were uploaded in the “Additional Notices and Orders Tab” at the relevant point of time.",
+    "para": 7
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-18",
+    "type": "scn_issued",
+    "quote": "A show-cause notice under Section 73 dated November 18, 2024 was issued on the ground that upon scrutiny of the returns furnished by the petitioner for the period from 01/04/2020 to 31/03/2021 certain discrepancies were detected.",
+    "para": 2
+   },
+   {
+    "date": "2025-01-06",
+    "type": "other",
+    "quote": "That apart, from the Reminder Letter dated January 6, 2025, it appears that the date of personal hearing was fixed on a date prior to the date fixed for filing the reply to the show-cause notice.",
+    "para": 8
+   },
+   {
+    "date": "2025-01-27",
+    "type": "order_passed",
+    "quote": "The ex parte adjudication order under Section 73(9) of the WBGST/CGST Act, 2017 dated January 27, 2025 was passed determining the liability on account of tax, interest and penalty.",
+    "para": 2
+   },
+   {
+    "date": "2026-03-27",
+    "type": "appeal_dismissed",
+    "quote": "The Adjudication Order dated January 27, 2025 passed by the respondent no.2 under Section 73(9) of the WBGST/CGST Act, 2017 and the Appellate Order dated March 27, 2026 passed by the respondent no.1 are under challenge in this writ petition.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "A show-cause notice under Section 73 dated November 18, 2024 was issued on the ground that upon scrutiny of the returns furnished by the petitioner for the period from 01/04/2020 to 31/03/2021 certain discrepancies were detected.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "It is now judicially settled that uploading of Notices and Orders in the Additional Notices and Orders Tab cannot be said to be sufficient communication as per the provisions of Section 73 of the WBGST/CGST Act, 2017.",
+    "quote_source": "court",
+    "para": 7
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Thus, there has been a violation of the principles of natural justice as adequate opportunity to defend the show-cause notice cannot be said to have been afforded to the petitioner.",
+    "quote_source": "court",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the Order of Adjudication dated January 27, 2025 passed by the respondent no.2 and the Appellate Order dated March 27, 2026 passed by the respondent no.1 are set aside.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13812,
+   "tokens_out": 5542,
+   "seconds": 16.15,
+   "cached": false
+  },
+  {
+   "tokens_in": 2996,
+   "tokens_out": 271,
+   "seconds": 2.73,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

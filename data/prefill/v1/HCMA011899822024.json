@@ -1,0 +1,168 @@
+{
+ "cnr": "HCMA011899822024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "dated 10.05.2024 passed for the F.Y.2020-2021",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-08-31",
+     "quote": "Form GST DRC-01 & Show Cause Notice dated 31.08.2023",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "all the aforesaid notices and impugned order uploaded in the “View Additional Notices and Orders” tab of the GST portal and the same were not served to the petitioner by any other mode.",
+     "para": 4
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-05-10",
+    "quote": "impugned order in Reference No.ZD330524067153M in GSTIN/ID No.33AFIPB0986P1Z5 dated 10.05.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "all the aforesaid notices and impugned order uploaded in the “View Additional Notices and Orders” tab of the GST portal and the same were not served to the petitioner by any other mode.",
+    "para": 4
+   }
+  },
+  "events": [
+   {
+    "date": "2024-04-19",
+    "type": "other",
+    "quote": "On 19.04.2024, the Intelligence Wing Officer had conducted an inspection in the petitioner's premises",
+    "para": 4
+   },
+   {
+    "date": "2023-07-20",
+    "type": "pre_scn_intimation",
+    "quote": "Form GST DRC-01A & Intimation Notice dated 20.07.2023",
+    "para": 4
+   },
+   {
+    "date": "2023-08-31",
+    "type": "scn_issued",
+    "quote": "Form GST DRC-01 & Show Cause Notice dated 31.08.2023",
+    "para": 4
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "By inadvertence, the petitioner's Accountant could not file reply to the Show Cause Notice.",
+    "para": 4
+   },
+   {
+    "date": "2024-05-10",
+    "type": "order_passed",
+    "quote": "Subsequently, the respondent has passed the impugned order dated 10.05.2024.",
+    "para": 4
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "stating that on examination of books of accounts, records and documents furnished by the petitioner at the time of inspection, following defects were noticed: (i) Interest on belated payment of Tax (ii) Excess claim of ITC – GSTR2A Vs. GSTR3B as per GSTR9 (iii) Reversal of ITC apportionment of Credit and Blocked Credit under Section 17(2) (iv) Rental Income from shop (v) Rental Charges paid to Municipality (vi) Credit Note Received but no reversal made (vii) ITC availed on Blocked Credit.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "He also submitted that all the aforesaid notices and impugned order uploaded in the “View Additional Notices and Orders” tab of the GST portal and the same were not served to the petitioner by any other mode.",
+    "quote_source": "argument",
+    "para": 4
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "As far as this case is concerned, without providing an opportunity of hearing to the petitioner, the respondent has passed the impugned order, which is in violation of the principles of natural justice.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, this writ petition is disposed of.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4805,
+   "tokens_out": 1164,
+   "seconds": 7.93,
+   "cached": false
+  },
+  {
+   "tokens_in": 3038,
+   "tokens_out": 286,
+   "seconds": 1.92,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[0]:service_169"
+  ]
+ }
+}

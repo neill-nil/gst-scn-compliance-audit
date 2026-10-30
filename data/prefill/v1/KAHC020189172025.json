@@ -1,0 +1,145 @@
+{
+ "cnr": "KAHC020189172025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "In that view of the matter, she submits that in the present case the show-notice dated 16.05.2024 had been issued for 5 assessment years viz., 2019-20, 2020-21, 2021-22, 2022-23 and 2023-24 and the order passed in Sub-section (9) of Section 73 were for four assessment years viz., 2020-21, 2021-22, 2022- 23 and 2023-24",
+   "para": 6
+  },
+  "financial_years": {
+   "value": [
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24"
+   ],
+   "quote": "In that view of the matter, she submits that in the present case the show-notice dated 16.05.2024 had been issued for 5 assessment years viz., 2019-20, 2020-21, 2021-22, 2022-23 and 2023-24 and the order passed in Sub-section (9) of Section 73 were for four assessment years viz., 2020-21, 2021-22, 2022- 23 and 2023-24",
+   "para": 6
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-16",
+     "quote": "In that view of the matter, she submits that in the present case the show-notice dated 16.05.2024 had been issued for 5 assessment years viz., 2019-20, 2020-21, 2021-22, 2022-23 and 2023-24",
+     "para": 6
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-16",
+    "type": "scn_issued",
+    "quote": "In that view of the matter, she submits that in the present case the show-notice dated 16.05.2024 had been issued for 5 assessment years viz., 2019-20, 2020-21, 2021-22, 2022-23 and 2023-24",
+    "para": 6
+   },
+   {
+    "date": null,
+    "type": "order_passed",
+    "quote": "and the order passed in Sub-section (9) of Section 73 were for four assessment years viz., 2020-21, 2021-22, 2022- 23 and 2023-24",
+    "para": 6
+   },
+   {
+    "date": "2025-08-05",
+    "type": "earlier_writ",
+    "quote": "This Court vide order dated 05.08.2025 in WP No.105375 of 2025 taking into consideration his submission made then had dismissed the above said writ petition, reserving liberty to urge all contentions in appeal so filed by the petitioner.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_found",
+    "contested": true,
+    "quote": "As such, I am of the considered opinion that since the Co-ordinate Bench of this Court in M/s Pramur Homes and Shelters’ case has categorically come to a conclusion that a consolidated show-cause notice could not have been issued and any proceedings and in relation thereto proceeded with, I am bound by the decision rendered by the Co-ordinate Bench.",
+    "quote_source": "court",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "i. The Review Petition is allowed.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4996,
+   "tokens_out": 1273,
+   "seconds": 5.72,
+   "cached": false
+  },
+  {
+   "tokens_in": 3229,
+   "tokens_out": 206,
+   "seconds": 3.74,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[0]:consolidated_scn"
+  ]
+ }
+}

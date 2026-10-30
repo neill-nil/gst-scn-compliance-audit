@@ -1,0 +1,70 @@
+{
+ "cnr": "KAHC020025472024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "calling in question the adjudication orders dated 30.12.2023 passed by respondent No.1 under Section 73(9) of the CGST/KGST Acts, 2017 read with the Rule 142(5) of the CGST/KGST Rule, 2017.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2023-12-30",
+    "quote": "QUASH THE IMPUGNED ORDER DATED 30.12.2023 PASSED BY THEN RESPONDENT NO.1, ENCLOSED AS ANNEXURE-A FOR THE REASONS STATED IN THE GROUNDS.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": false,
+   "quote": "i) Writ petition is allowed.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 18146,
+   "tokens_out": 322,
+   "seconds": 4.81,
+   "cached": false
+  },
+  {
+   "tokens_in": 32996,
+   "tokens_out": 190,
+   "seconds": 10.56,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

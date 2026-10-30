@@ -1,0 +1,155 @@
+{
+ "cnr": "HCMA012089552024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "The present writ petition is filed on the limited ground that the impugned order dated 22.04.2024 has been passed without affording the petitioners an opportunity of personal hearing.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-29",
+     "quote": "A notice in DRC01 dated 29.12.2023 was issued followed by reminders dated 08.02.2024, 15.02.2024, 22.02.2024.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": "The learned counsel for the petitioner would submit that in all the reminders though there is a column for date and time of personal hearing neither the date nor the time was specified therein.",
+     "para": 3
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-22",
+    "quote": "The present writ petition is filed on the limited ground that the impugned order dated 22.04.2024 has been passed without affording the petitioners an opportunity of personal hearing.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-29",
+    "type": "scn_issued",
+    "quote": "A notice in DRC01 dated 29.12.2023 was issued followed by reminders dated 08.02.2024, 15.02.2024, 22.02.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-04-22",
+    "type": "order_passed",
+    "quote": "The present writ petition is filed on the limited ground that the impugned order dated 22.04.2024 has been passed without affording the petitioners an opportunity of personal hearing.",
+    "para": 0
+   },
+   {
+    "date": "2024-09-09",
+    "type": "recovery_or_attachment",
+    "quote": "consequential recovery notice in Form GST-DRC-13 dated 09.09.2024 for the tax period 2018-2019 and quash the same as it has been issued without proper application of mind and contrary to the provisions of law.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "On examination of information furnished in the return under various heads it was noticed that the value of outward supply reported in GSTR 1 is greater than the value of outward supply reported in GSTR 9.",
+    "para": 2
+   },
+   {
+    "type": "scn_ground",
+    "quote": "Similarly, the value of taxable supply disclosed in the E-way bill is greater than that in GSTR 1.",
+    "para": 2
+   },
+   {
+    "type": "scn_ground",
+    "quote": "It was also found that certain input tax credit which they are not entitled to and which would attract the restriction under 17(1) has been availed.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Considering the submissions made on both sides, this Court is of the view that failure to grant a personal hearing is contrary to the mandate contained under Section 75(4) of the GST Act and also gross violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the writ petition stands disposed of.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13932,
+   "tokens_out": 5303,
+   "seconds": 19.85,
+   "cached": false
+  },
+  {
+   "tokens_in": 3056,
+   "tokens_out": 186,
+   "seconds": 3.11,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

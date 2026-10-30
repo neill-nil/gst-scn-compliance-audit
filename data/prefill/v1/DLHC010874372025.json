@@ -1,0 +1,166 @@
+{
+ "cnr": "DLHC010874372025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "tax period April 2018 to March 2019",
+   "para": 5
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-16",
+     "quote": "show cause notice dated 16th December, 2023",
+     "para": 5
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-05",
+    "quote": "impugned order dated 5th April, 2024",
+    "para": 5
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-16",
+    "type": "scn_issued",
+    "quote": "On facts, the impugned SCN was issued to the Petitioner on 16 th December, 2023.",
+    "para": 11
+   },
+   {
+    "date": "2024-02-28",
+    "type": "other",
+    "quote": "A reminder notice dated 28th February, 2024 was also issued to the Petitioner.",
+    "para": 11
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, no reply has been filed to the impugned SCN, nor has any personal hearing been attended by the Petitioner.",
+    "para": 11
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "However, no reply has been filed to the impugned SCN, nor has any personal hearing been attended by the Petitioner.",
+    "para": 11
+   },
+   {
+    "date": "2024-04-05",
+    "type": "order_passed",
+    "quote": "Thereafter, the impugned order has been passed, raising the following demands:",
+    "para": 11
+   },
+   {
+    "date": "2025-09-09",
+    "type": "recovery_or_attachment",
+    "quote": "Thereafter, on 9th September, 2025 an attachment order in FORM GST DRC-22 was issued, directing debit freeze and provisional attachment of bank accounts of the Petitioner",
+    "para": 11
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Ld. Counsel for the Petitioner has made an attempt to argue that the impugned SCN and impugned order have been uploaded on the ‘Additional Notices Tab’ and thereby, the same were not brought to the knowledge of the Petitioner.",
+    "quote_source": "court",
+    "para": 13
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The challenge in the present petition is similar to a batch of petitions wherein, inter alia, the impugned notifications were challenged.",
+    "quote_source": "argument",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The petition is disposed of in these terms.",
+   "para": 22
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 19206,
+   "tokens_out": 5106,
+   "seconds": 14.77,
+   "cached": false
+  },
+  {
+   "tokens_in": 5693,
+   "tokens_out": 279,
+   "seconds": 4.25,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

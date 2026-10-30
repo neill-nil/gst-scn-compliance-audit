@@ -1,0 +1,153 @@
+{
+ "cnr": "DLHC010889882024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The writ petitioner impugns a final order dated 31 August 2024 passed under Section 73 of the Central Goods and Services Tax Act, 2017",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "Tax Period: April 2019- March 2020",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-29",
+     "quote": "The record would reflect that upon receipt of a Show Cause Notice dated 29 May 2024, the petitioner had furnished a response",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-31",
+    "quote": "The writ petitioner impugns a final order dated 31 August 2024 passed under Section 73 of the Central Goods and Services Tax Act, 2017",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-29",
+    "type": "scn_issued",
+    "quote": "The record would reflect that upon receipt of a Show Cause Notice dated 29 May 2024, the petitioner had furnished a response",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "And whereas, the taxpayer submitted its reply in DRC-06, but the same is found not comprehensive, conceivable, perspicuous and also no one appeared on behalf of the firm to provide explanation/clarification with regard to the reply submitted against DRC-01.",
+    "para": 2
+   },
+   {
+    "date": "2024-08-31",
+    "type": "order_passed",
+    "quote": "The writ petitioner impugns a final order dated 31 August 2024 passed under Section 73 of the Central Goods and Services Tax Act, 2017",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "And whereas, the taxpayer submitted its reply in DRC-06, but the same is found not comprehensive, conceivable, perspicuous and also no one appeared on behalf of the firm to provide explanation/clarification with regard to the reply submitted against DRC-01.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Since, the reply filed by the taxpayer is not comprehensible, conceivable, perspicuous and ambiguous, therefore, the proposed demand mentioned in the Show Cause Notice i.e. conveyed through notice DRC-01 is confirmed.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The challenge to Notification No. 9/2023-Central Tax dated 31 March 2023 and Notification No. 56/2023-Central Tax dated 28 December 2023 which are issued under Section 168A of the CGST Act, is kept open to be addressed in appropriate proceedings and if need so arises.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "We consequently allow the writ petition and quash the order dated 31 August 2024.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14738,
+   "tokens_out": 5181,
+   "seconds": 14.28,
+   "cached": false
+  },
+  {
+   "tokens_in": 3459,
+   "tokens_out": 232,
+   "seconds": 2.72,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.notices[0].date:facts.notices[0].date",
+   "facts.events[0]:scn_issued"
+  ]
+ }
+}

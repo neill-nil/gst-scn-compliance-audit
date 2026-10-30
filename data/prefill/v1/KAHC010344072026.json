@@ -1,0 +1,91 @@
+{
+ "cnr": "KAHC010344072026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The petitioner is aggrieved by the Adjudication Order dated 30.07.2024 [Annexure C] under Section 73 (9) of the Central Goods and Services Tax/Karnataka Goods and Services Tax, 2017 [for short, ‘the CGST/KGST Act’]",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "The transactions are relevant to the tax period 2019-20;",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-07-30",
+    "quote": "The petitioner is aggrieved by the Adjudication Order dated 30.07.2024 [Annexure C]",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-07-30",
+    "type": "order_passed",
+    "quote": "The petitioner is aggrieved by the Adjudication Order dated 30.07.2024 [Annexure C] under Section 73 (9) of the Central Goods and Services Tax/Karnataka Goods and Services Tax, 2017",
+    "para": 1
+   },
+   {
+    "date": "2025-06-24",
+    "type": "appeal_dismissed",
+    "quote": "The order-in-appeal is dated 24.06.2025 which is produced as Annexure-A",
+    "para": 1
+   },
+   {
+    "date": "2026-05-06",
+    "type": "recovery_or_attachment",
+    "quote": "and the consequential Demand in Form GST DRC-13 is dated 06.05.2026 [Annexure-B].",
+    "para": 1
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": true,
+   "quote": "The petition is allowed-in-part quashing the Adjudication Order dated 30.07.2024 [Annexure- C], the Order-in-Original dated 24.06.2025 [Annexure-A] and Demand in form GST DRC-13 dated 06.05.2026 [Annexure-B] restoring the proceedings to the first respondent to consider and pass orders in the light of this Court's affirmation of the proposition exposited by the High Court of Kerala [supra].",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 15832,
+   "tokens_out": 4774,
+   "seconds": 14.83,
+   "cached": false
+  },
+  {
+   "tokens_in": 4006,
+   "tokens_out": 181,
+   "seconds": 3.63,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

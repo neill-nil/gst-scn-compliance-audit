@@ -1,0 +1,154 @@
+{
+ "cnr": "DLHC010880052025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "impugned order dated 25th August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 63, Zone-6, Delhi for the Financial Year 2019-20.",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-20",
+     "quote": "The present petition furtherchallenges the impugned Show Cause Notice dated 20th May, 2024 (hereinafter ‘impugned SCN’).",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "the submission of ld. Counsel for the Petitioner is that the SCN dated 20th May, 2024 from which the impugned order arises, was uploaded on the ‘Additional Notices Tab’, therefore, the same did not come to the knowledge of the Petitioner.",
+     "para": 8
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-25",
+    "quote": "seeking the quashing of the impugned order dated 25th August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 63, Zone-6, Delhi for the Financial Year 2019-20.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-20",
+    "type": "scn_issued",
+    "quote": "The present petition furtherchallenges the impugned Show Cause Notice dated 20th May, 2024 (hereinafter ‘impugned SCN’).",
+    "para": 3
+   },
+   {
+    "date": "2024-07-16",
+    "type": "other",
+    "quote": "Thereafter, two reminder notices dated 16th July, 2024 and 30th July, 2024 were also issued to the Petitioner",
+    "para": 8
+   },
+   {
+    "date": "2024-07-30",
+    "type": "other",
+    "quote": "Thereafter, two reminder notices dated 16th July, 2024 and 30th July, 2024 were also issued to the Petitioner",
+    "para": 8
+   },
+   {
+    "date": "2024-08-25",
+    "type": "order_passed",
+    "quote": "seeking the quashing of the impugned order dated 25th August, 2024 passed by the Sales Tax Officer Class II/Avato Ward 63, Zone-6, Delhi for the Financial Year 2019-20.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The challenge in the present petition is similar to a batch of petitions wherein inter alia, the impugned notifications were challenged.",
+    "quote_source": "argument",
+    "para": 5
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Insofar as the submission that the notices were uploaded on the Additional Tab is concerned, the same is not tenable as they are dated post 16th January 2024.",
+    "quote_source": "court",
+    "para": 12
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside, subject to payment of Rs. 20,000/- as costs to the Delhi High Court Bar Association.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 18314,
+   "tokens_out": 5184,
+   "seconds": 14.97,
+   "cached": false
+  },
+  {
+   "tokens_in": 11005,
+   "tokens_out": 711,
+   "seconds": 9.91,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

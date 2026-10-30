@@ -1,0 +1,210 @@
+{
+ "cnr": "DLHC010270222025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "I confirm the demand of Input Tax Credit of Rs. 34,92,903/- availed/ utilized without receipt of goods by the notice under Section 74(1) of the CGST Act, 2017 read with Section 74(1) of the Delhi GST Act, 2017 and Section 20 of IGST Act, 2017.",
+   "para": 7
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2022-07-22",
+     "quote": "A perusal of the record would show that there are two show cause notices dated 22nd July, 2022 and 3rd August, 2024 which have been issued.",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   },
+   {
+    "date": {
+     "value": "2024-08-03",
+     "quote": "A perusal of the record would show that there are two show cause notices dated 22nd July, 2022 and 3rd August, 2024 which have been issued.",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "Further it is also noticed that the said notice of personal hearing provided three dates of hearing i.e., 13th, 14th and 15th January, 2025.",
+     "para": 5
+    },
+    "hearing_date": {
+     "value": "2025-01-13",
+     "quote": "The grievance in this case is that the personal hearings were fixed on 13th, 14th and 15th January, 2025.",
+     "para": 3
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-01-28",
+    "quote": "The present petition has been filed under Article 226 of the Constitution of India, 1950 seeking to quash order dated 28th January, 2025 passed by the Respondent-Assistant Commissioner, Division MCIE, CGST Delhi East Commissionerate",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-07-22",
+    "type": "scn_issued",
+    "quote": "A perusal of the record would show that there are two show cause notices dated 22nd July, 2022 and 3rd August, 2024 which have been issued.",
+    "para": 4
+   },
+   {
+    "date": "2024-08-03",
+    "type": "scn_issued",
+    "quote": "A perusal of the record would show that there are two show cause notices dated 22nd July, 2022 and 3rd August, 2024 which have been issued.",
+    "para": 4
+   },
+   {
+    "date": "2025-01-08",
+    "type": "other",
+    "quote": "No reply to the Show Cause Notice dated 3rd August, 2024 was filed by the Petitioner even after the notice for personal hearing, which was sent on 8th January, 2025.",
+    "para": 4
+   },
+   {
+    "date": "2025-01-13",
+    "type": "hearing_scheduled",
+    "quote": "The grievance in this case is that the personal hearings were fixed on 13th, 14th and 15th January, 2025.",
+    "para": 3
+   },
+   {
+    "date": "2025-01-14",
+    "type": "hearing_scheduled",
+    "quote": "The grievance in this case is that the personal hearings were fixed on 13th, 14th and 15th January, 2025.",
+    "para": 3
+   },
+   {
+    "date": "2025-01-15",
+    "type": "hearing_scheduled",
+    "quote": "The grievance in this case is that the personal hearings were fixed on 13th, 14th and 15th January, 2025.",
+    "para": 3
+   },
+   {
+    "date": "2025-01-15",
+    "type": "hearing_missed",
+    "quote": "Ld. Counsel for the Petitioner submits that he joined the link on 15th January, 2025 at 12:00 PM, however, he was not granted access to attend the hearing.",
+    "para": 3
+   },
+   {
+    "date": "2025-01-28",
+    "type": "order_passed",
+    "quote": "The order has been passed on 28th January, 2025 almost two weeks after the date of personal hearing.",
+    "para": 6
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "confirming demand of Input Tax Credit of Rs. 34,92,903/- availed without receipt of goods along with equivalent penalty and appropriate interest.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Considering the fact that (i) The Department has given the show cause notice and the personal hearing notices to the Petitioner; (ii) The Petitioner has not been diligent; the Department cannot be held to blame for not giving a proper hearing.",
+    "quote_source": "court",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The petition is disposed of with the liberty to the Petitioner to avail its appellate remedies within 30 days along with the pre-deposit.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14044,
+   "tokens_out": 6066,
+   "seconds": 15.46,
+   "cached": false
+  },
+  {
+   "tokens_in": 6436,
+   "tokens_out": 426,
+   "seconds": 7.47,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

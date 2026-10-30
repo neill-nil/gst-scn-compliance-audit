@@ -1,0 +1,176 @@
+{
+ "cnr": "DLHC010769532024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "for the tax period April 2019 to March 2020.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-29",
+     "quote": "However, on facts, the SCN was issued to the Petitioner on 29th May, 2024.",
+     "para": 6
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-23",
+    "quote": "consequent order dated 23rd August, 2024 (hereinafter, ‘impugned order’)",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-29",
+    "type": "scn_issued",
+    "quote": "However, on facts, the SCN was issued to the Petitioner on 29th May, 2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-07-15",
+    "type": "other",
+    "quote": "Thereafter, a reminder notice dated 15th July, 2024 was also issued to the Petitioner.",
+    "para": 6
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, no reply has been filed to the SCN nor the personal hearing has been attended by the Petitioner.",
+    "para": 6
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "However, no reply has been filed to the SCN nor the personal hearing has been attended by the Petitioner.",
+    "para": 6
+   },
+   {
+    "date": "2024-08-23",
+    "type": "order_passed",
+    "quote": "consequent order dated 23rd August, 2024 (hereinafter, ‘impugned order’)",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "● Excess Input Tax Credit (hereinafter, ‘ITC’) claimed on account of non- reconciliation of information;",
+    "para": 7
+   },
+   {
+    "type": "scn_ground",
+    "quote": "● Under declaration of Ineligible ITC; and",
+    "para": 7
+   },
+   {
+    "type": "scn_ground",
+    "quote": "● ITC claimed from cancelled dealers, return defaulters & tax non- payers.",
+    "para": 7
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "The issue that falls for the consideration of this Court is whether the time limit for adjudication of show cause notice and passing order under Section 73 of the GST Act and SGST Act (Telangana GST Act) for financial year 2019-2020 could have been extended by issuing the Notifications in question under Section 168-A of the GST Act.",
+    "quote_source": "argument",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Ld. Counsel for the Petitioner submits that the impugned order has been passed without the Petitioner having an opportunity to deal with the case on merits.",
+    "quote_source": "argument",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 17586,
+   "tokens_out": 5176,
+   "seconds": 16.79,
+   "cached": false
+  },
+  {
+   "tokens_in": 4883,
+   "tokens_out": 317,
+   "seconds": 3.41,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,145 @@
+{
+ "cnr": "HCMA010345562025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "GSTIN: 33AAHFT4559Q1ZG/2017-18 dated 05.02.2025",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-22",
+     "quote": "the notice in Form GST DRC-01 was issued by the respondents on 22.09.2023",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-02-05",
+    "quote": "impugned order in GSTIN: 33AAHFT4559Q1ZG/2017-18 dated 05.02.2025 passed by the 2nd respondent",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-22",
+    "type": "scn_issued",
+    "quote": "the notice in Form GST DRC-01 was issued by the respondents on 22.09.2023",
+    "para": 2
+   },
+   {
+    "date": "2024-03-27",
+    "type": "reply_filed",
+    "quote": "for which, the reply, along with all the relevant documents, were filed by the petitioner on 27.03.2024.",
+    "para": 2
+   },
+   {
+    "date": "2025-02-05",
+    "type": "order_passed",
+    "quote": "the impugned order was passed by the respondent as if no documents were furnished.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "However, the impugned order was passed by the respondent as if no documents were furnished.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In this case, it is clear that the reply was filed by the petitioner, along with all the relevant documents, however, the said reply was not considered by the Assessing Officer while passing the impugned assessment order, which is a clear violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "i) The impugned assessment order dated 05.02.2025 is hereby set aside and this matter is remanded back to the 2nd respondent for fresh consideration.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4551,
+   "tokens_out": 849,
+   "seconds": 5.39,
+   "cached": false
+  },
+  {
+   "tokens_in": 5939,
+   "tokens_out": 456,
+   "seconds": 9.05,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "cnr": "HCMA010485722024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "Under section 73 of TNGST ACT.2017",
+   "para": 5
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "GSTIN: 33AAFCS1371Q1Z1/2017-18 dated 28.12.2023",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2023-12-28",
+    "quote": "An assessment order dated 28.12.2023 is the subject of challenge.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-07-01",
+    "type": "scrutiny_notice",
+    "quote": "In those circumstances, the petitioner states that a notice in Form GST ASMT-10 was received in July 2023.",
+    "para": 1
+   },
+   {
+    "date": "2023-12-21",
+    "type": "hearing_attended",
+    "quote": "As requested by the taxpayer a personal hearing was offered on 21.12.2023 and their representative Mr.Gajendra panda (Branch Manager), Chennai had attended the same and he stated that as this registered person is GTA the entire turnover is under RCM which is to be paid by recipient of service only.",
+    "para": 5
+   },
+   {
+    "date": "2023-12-28",
+    "type": "order_passed",
+    "quote": "The impugned order was issued thereafter on 28.12.2023.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "By such reply, the petitioner asserted that the entire turnover is taxable under RCM basis on the recipient of service.",
+    "para": 1
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Further he did not produce any relevant document in respect of tamilnadu branch like P & L, purchase, sales details, balance sheet and ITR details.",
+    "para": 5
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, the impugned assessment order is undoubtedly vitiated by non application of mind.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons set out above, the impugned assessment order is quashed and the matter is remanded for re-consideration.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5555,
+   "tokens_out": 588,
+   "seconds": 5.12,
+   "cached": false
+  },
+  {
+   "tokens_in": 3788,
+   "tokens_out": 195,
+   "seconds": 4.22,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

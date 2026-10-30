@@ -1,0 +1,79 @@
+{
+ "cnr": "HCMA010977222026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "for the tax Period April 2019-March 2020",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-08-28",
+    "quote": "An order dated 28.08.2024 is impugned primarily on the ground of breach of principles of natural justice.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-08-28",
+    "type": "order_passed",
+    "quote": "An order dated 28.08.2024 is impugned primarily on the ground of breach of principles of natural justice.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Subject to the remittance of 50% of the disputed tax demand, as agreed to, within thirty days from the date of receipt of a copy of this order, the impugned order is set aside and the matter is remanded for re- consideration.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 12438,
+   "tokens_out": 4527,
+   "seconds": 14.07,
+   "cached": false
+  },
+  {
+   "tokens_in": 2309,
+   "tokens_out": 91,
+   "seconds": 5.02,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

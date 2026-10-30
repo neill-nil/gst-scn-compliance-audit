@@ -1,0 +1,135 @@
+{
+ "cnr": "HCMA011241012026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "Because the petitioner did not reply to the show cause notice, the tax proposal was confirmed along with interest and penalty under Section 73 of the applicable GST enactments.",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "impugned assessment order dated 10.10.2023 bearing GSTIN no. 33AAFCG7358B1ZT/2019-20 passed by",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-08-17",
+     "quote": "A show cause notice dated 17.08.2023 was issued to the petitioner",
+     "para": 0
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-10-10",
+    "quote": "impugned assessment order dated 10.10.2023 bearing GSTIN no. 33AAFCG7358B1ZT/2019-20 passed by the Respondent",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-08-17",
+    "type": "scn_issued",
+    "quote": "A show cause notice dated 17.08.2023 was issued to the petitioner",
+    "para": 0
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "Because the petitioner did not reply to the show cause notice, the tax proposal was confirmed along with interest and penalty under Section 73 of the applicable GST enactments.",
+    "para": 0
+   },
+   {
+    "date": "2023-10-10",
+    "type": "order_passed",
+    "quote": "impugned assessment order dated 10.10.2023 bearing GSTIN no. 33AAFCG7358B1ZT/2019-20 passed by the Respondent",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "A show cause notice dated 17.08.2023 was issued to the petitioner calling upon the petitioner to explain the alleged turnover difference of Rs.9,88,97,000/- between the GST returns of the petitioner and Form 26AS under the Income-Tax Act, 1961.",
+    "para": 0
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "This writ petition is disposed of on the above terms.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4259,
+   "tokens_out": 1018,
+   "seconds": 5.46,
+   "cached": false
+  },
+  {
+   "tokens_in": 2492,
+   "tokens_out": 69,
+   "seconds": 3.16,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

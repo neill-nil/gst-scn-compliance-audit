@@ -1,0 +1,147 @@
+{
+ "cnr": "KAHC010012102025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "participate in the proceedings under Section 73 of Karnataka State Goods and Service Tax (for short, KGST) Act, 2017.",
+   "para": 3
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-30",
+     "quote": "Learned counsel would submit that the impugned show- cause notice was issued on 30.09.2023 and 29.09.2023 as at Annexures-D and D1",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-10-31",
+    "quote": "issued vide impugned order no. ZD29112301913H bearing reference no. acct(lgsto)- 111/t./2023-2024 dated 31.10.2023",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-29",
+    "type": "scn_issued",
+    "quote": "Learned counsel would submit that the impugned show- cause notice was issued on 30.09.2023 and 29.09.2023 as at Annexures-D and D1",
+    "para": 3
+   },
+   {
+    "date": "2023-09-30",
+    "type": "scn_issued",
+    "quote": "Learned counsel would submit that the impugned show- cause notice was issued on 30.09.2023 and 29.09.2023 as at Annexures-D and D1",
+    "para": 3
+   },
+   {
+    "date": "2023-10-31",
+    "type": "order_passed",
+    "quote": "issued vide impugned order no. ZD29112301913H bearing reference no. acct(lgsto)- 111/t./2023-2024 dated 31.10.2023",
+    "para": 0
+   },
+   {
+    "date": "2023-11-16",
+    "type": "order_passed",
+    "quote": "along with summary thereof vide form GST DRC-07 dated 16.11.2023",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Learned counsel would submit that the impugned show-cause notice was issued on 30.09.2023 and 29.09.2023 as at Annexures-D and D1 and the petitioner could not reply or participate in the proceedings before the respondent as his father was undergoing treatment and the petitioner had to attend to his father.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "i) The impugned orders at Annexures-A and A1 order bearing No.ZD291123018913H bearing Reference No.ACCT(LGSTO)-111/T/ 2-23-2024 dated 31.10.2023 along with summary thereof vide form GST DRC-07 dated 16.11.2023 and consequential orders are quashed.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 14370,
+   "tokens_out": 5279,
+   "seconds": 15.53,
+   "cached": false
+  },
+  {
+   "tokens_in": 3203,
+   "tokens_out": 304,
+   "seconds": 5.98,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.order.date:facts.order.date",
+   "facts.events[2]:order_passed",
+   "findings.defects_argued[0]:reply_not_considered"
+  ]
+ }
+}

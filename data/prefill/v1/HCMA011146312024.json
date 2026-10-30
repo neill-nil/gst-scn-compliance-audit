@@ -1,0 +1,165 @@
+{
+ "cnr": "HCMA011146312024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "He also submits that the ingredients of Section 74 of applicable GST statutes are not satisfied in the case at hand.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "in GSTIN/ID: 33APBS2236L1ZV/2017-18 dated 27-11-2023 passed by the respondent and to quash the same as opposed to principles of natural justice",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-06-14",
+     "quote": "show cause notice dated 14.06.2023",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "The petitioner asserts that the show cause notice and other communications were merely uploaded on the GST portal and not communicated to the petitioner through any other mode.",
+     "para": 0
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-11-27",
+    "quote": "An order in original dated 27.11.2023 is challenged in this writ petition",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-05-09",
+    "type": "pre_scn_intimation",
+    "quote": "He submits that principles of natural justice were complied with by issuing intimation dated 09.05.2023",
+    "para": 3
+   },
+   {
+    "date": "2023-06-14",
+    "type": "scn_issued",
+    "quote": "show cause notice dated 14.06.2023",
+    "para": 3
+   },
+   {
+    "date": "2023-10-20",
+    "type": "hearing_scheduled",
+    "quote": "and by issuing a personal hearing notice dated 20.10.2023.",
+    "para": 3
+   },
+   {
+    "date": "2023-11-27",
+    "type": "order_passed",
+    "quote": "An order in original dated 27.11.2023 is challenged in this writ petition",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Learned counsel for the petitioner submits that the confirmed tax proposal pertains to the mismatch between the petitioner's GSTR 3B and 1 returns.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "On examining the impugned order, it is clear that the tax proposal was confirmed because the tax payer neither paid the amounts demanded nor filed any objections.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The petitioner asserts that the show cause notice and other communications were merely uploaded on the GST portal and not communicated to the petitioner through any other mode.",
+    "quote_source": "argument",
+    "para": 0
+   },
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "He also submits that the ingredients of Section 74 of applicable GST statutes are not satisfied in the case at hand.",
+    "quote_source": "argument",
+    "para": 2
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "For reasons aforesaid, the impugned order dated 27.11.2023 is set aside on condition that the petitioner remits 10% of the disputed tax demand as agreed to within a period of two weeks from the date of receipt of a copy of this order.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13146,
+   "tokens_out": 5189,
+   "seconds": 19.6,
+   "cached": false
+  },
+  {
+   "tokens_in": 2663,
+   "tokens_out": 309,
+   "seconds": 4.31,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

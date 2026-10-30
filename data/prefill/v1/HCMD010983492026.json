@@ -1,0 +1,143 @@
+{
+ "cnr": "HCMD010983492026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-09-25",
+     "quote": "though a show cause notice in Form GST DRC-01 dated 25.09.2025 was issued",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "the show cause notice and all subsequent communications were duly uploaded on the GST portal in the manner prescribed under the GST Act and Rules.",
+     "para": 4
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-12-29",
+    "quote": "the impugned Order in GSTIN 33IWNPS2271A1ZH/ 2021-22 dated 29.12.2025 issued by the Respondent",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-09-25",
+    "type": "scn_issued",
+    "quote": "though a show cause notice in Form GST DRC-01 dated 25.09.2025 was issued",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "the petitioner could not submit a reply since she had entrusted the GST compliance to a part-time accountant, who failed to notice the notice and the subsequent proceedings uploaded on the GST portal.",
+    "para": 2
+   },
+   {
+    "date": "2025-12-29",
+    "type": "order_passed",
+    "quote": "Consequently, the impugned order dated 29.12.2025 came to be passed without affording the petitioner an effective opportunity of hearing.",
+    "para": 2
+   },
+   {
+    "date": "2026-06-29",
+    "type": "recovery_or_attachment",
+    "quote": "It is further submitted that the petitioner came to know about the assessment only when recovery proceedings were initiated on 29.06.2026.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Considering the facts and circumstances of the case, this Court is of the view that the impugned order has been passed without affording the petitioner an effective opportunity of hearing and is, therefore, in violation of the principles of natural justice.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, the Writ Petition stands disposed of.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13087,
+   "tokens_out": 5043,
+   "seconds": 16.4,
+   "cached": true
+  },
+  {
+   "tokens_in": 2627,
+   "tokens_out": 261,
+   "seconds": 4.43,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

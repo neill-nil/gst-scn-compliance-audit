@@ -1,0 +1,145 @@
+{
+ "cnr": "HCMD011303502025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "passed by the respondent under Section 73 of TNGST Act 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "GSTIN: 33ARTPC1275D1Z1/2020-21",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-11-13",
+     "quote": "But the show cause notice was uploaded only in the portal on 13.11.2024.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "But the show cause notice was uploaded only in the portal on 13.11.2024.",
+     "para": 2
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-01-23",
+    "quote": "The petitioner challenges the impugned assessment order dated 23.01.2025",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2020-10-29",
+    "type": "other",
+    "quote": "The petitioner's registration was cancelled on 29.10.2020.",
+    "para": 2
+   },
+   {
+    "date": "2024-11-13",
+    "type": "scn_issued",
+    "quote": "But the show cause notice was uploaded only in the portal on 13.11.2024.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "Since the petitioner was not aware, he did not take part in the enquiry nor she offer any explanation.",
+    "para": 2
+   },
+   {
+    "date": "2025-01-23",
+    "type": "order_passed",
+    "quote": "Final order was passed on 23.01.2025.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "As already noted, the petitioner's registration has already been cancelled.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "This writ petition stands allowed.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13048,
+   "tokens_out": 5015,
+   "seconds": 14.95,
+   "cached": false
+  },
+  {
+   "tokens_in": 2614,
+   "tokens_out": 146,
+   "seconds": 3.55,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

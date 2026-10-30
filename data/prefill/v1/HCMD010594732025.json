@@ -1,0 +1,133 @@
+{
+ "cnr": "HCMD010594732025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The respondent, on noticing some discrepancy in the same, issued a show cause notice under Section 73(1) of the TNGST Act, 2017.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "He had filed GST returns for the financial year 2019-20.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-20",
+    "quote": "thereby, the impugned assessment order was passed on 20.08.2024.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "scn_issued",
+    "quote": "The respondent, on noticing some discrepancy in the same, issued a show cause notice under Section 73(1) of the TNGST Act, 2017.",
+    "para": 2
+   },
+   {
+    "date": "2024-08-20",
+    "type": "order_passed",
+    "quote": "thereby, the impugned assessment order was passed on 20.08.2024.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Considering the fact that the impugned order of assessment is passed claiming GST dues of Rs.1,28,94,480/- and that the petitioner was not given any opportunity before passing the impugned order, hence, for complying with the principles of natural justice, this Court is inclined to set aside the impugned order on the following terms",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the Writ Petition stands disposed of.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4371,
+   "tokens_out": 659,
+   "seconds": 5.79,
+   "cached": false
+  },
+  {
+   "tokens_in": 2604,
+   "tokens_out": 210,
+   "seconds": 4.36,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,162 @@
+{
+ "cnr": "DLHC010837282025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "pertaining to the Financial Year 2019-2020.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-29",
+     "quote": "The impugned SCN was issued to the Petitioner on 29th May, 2024, with an opportunity to file a reply thereto.",
+     "para": 11
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "The only reason given by the Petitioner for not filing any reply to the impugned SCN is that the impugned SCN, reminder letters, as also the impugned order were uploaded on the ‘Additional Notices Tab’ and hence, were not brought to the attention of the Petitioner.",
+     "para": 11
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-24",
+    "quote": "the subsequent order dated 24th August, 2024 (hereinafter, ‘the impugned order)pertaining to the Financial Year 2019-2020.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "The only reason given by the Petitioner for not filing any reply to the impugned SCN is that the impugned SCN, reminder letters, as also the impugned order were uploaded on the ‘Additional Notices Tab’ and hence, were not brought to the attention of the Petitioner.",
+    "para": 11
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-29",
+    "type": "scn_issued",
+    "quote": "The impugned SCN was issued to the Petitioner on 29th May, 2024, with an opportunity to file a reply thereto.",
+    "para": 11
+   },
+   {
+    "date": "2024-07-22",
+    "type": "other",
+    "quote": "Thereafter, reminder notices were also issued to the Petitioner on 22nd July, 2024 and 11th August, 2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-08-11",
+    "type": "other",
+    "quote": "Thereafter, reminder notices were also issued to the Petitioner on 22nd July, 2024 and 11th August, 2024.",
+    "para": 11
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, it is an admitted position that no reply to the impugned SCN was filed on behalf of the Petitioner.",
+    "para": 11
+   },
+   {
+    "date": "2024-08-24",
+    "type": "order_passed",
+    "quote": "the subsequent order dated 24th August, 2024 (hereinafter, ‘the impugned order)pertaining to the Financial Year 2019-2020.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The only reason given by the Petitioner for not filing any reply to the impugned SCN is that the impugned SCN, reminder letters, as also the impugned order were uploaded on the ‘Additional Notices Tab’ and hence, were not brought to the attention of the Petitioner.",
+    "quote_source": "argument",
+    "para": 9
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "Additionally, the present petition also challenges the vires of the following notifications...",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside.",
+   "para": 12
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 17744,
+   "tokens_out": 5253,
+   "seconds": 15.42,
+   "cached": false
+  },
+  {
+   "tokens_in": 4962,
+   "tokens_out": 279,
+   "seconds": 2.63,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "findings.defects_argued[1]:extension_notification_validity"
+  ]
+ }
+}

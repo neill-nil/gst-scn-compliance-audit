@@ -1,0 +1,209 @@
+{
+ "cnr": "HCMA012414712024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "During the relevant period of 2019- 20, the petitioner had filed the returns and paid appropriate taxes.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-31",
+     "quote": "It is submitted by the learned Counsel for the petitioner that a show cause notice in Form DRC 01 was issued to the petitioner on 31.05.2024.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-23",
+    "quote": "The present writ petition is filed challenging the impugned order dated 23.08.2024, on the premise that the impugned order suffers from violation of principles of natural justice.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-31",
+    "type": "scn_issued",
+    "quote": "It is submitted by the learned Counsel for the petitioner that a show cause notice in Form DRC 01 was issued to the petitioner on 31.05.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-06-29",
+    "type": "reply_filed",
+    "quote": "In response to the show cause notice the petitioner filed its reply dated 29.06.2024 and 16.08.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-16",
+    "type": "reply_filed",
+    "quote": "In response to the show cause notice the petitioner filed its reply dated 29.06.2024 and 16.08.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-20",
+    "type": "other",
+    "quote": "Thereafter 3 reminder notices were also issued to the petitioner viz., 20.08.2024, 21.08.2024 and 22.08.2024 with personal hearing on 21.08.2024, 22.08.2024 and 23.08.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-21",
+    "type": "other",
+    "quote": "Thereafter 3 reminder notices were also issued to the petitioner viz., 20.08.2024, 21.08.2024 and 22.08.2024 with personal hearing on 21.08.2024, 22.08.2024 and 23.08.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-21",
+    "type": "hearing_scheduled",
+    "quote": "Thereafter 3 reminder notices were also issued to the petitioner viz., 20.08.2024, 21.08.2024 and 22.08.2024 with personal hearing on 21.08.2024, 22.08.2024 and 23.08.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-22",
+    "type": "other",
+    "quote": "Thereafter 3 reminder notices were also issued to the petitioner viz., 20.08.2024, 21.08.2024 and 22.08.2024 with personal hearing on 21.08.2024, 22.08.2024 and 23.08.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-22",
+    "type": "hearing_scheduled",
+    "quote": "Thereafter 3 reminder notices were also issued to the petitioner viz., 20.08.2024, 21.08.2024 and 22.08.2024 with personal hearing on 21.08.2024, 22.08.2024 and 23.08.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-23",
+    "type": "hearing_scheduled",
+    "quote": "Thereafter 3 reminder notices were also issued to the petitioner viz., 20.08.2024, 21.08.2024 and 22.08.2024 with personal hearing on 21.08.2024, 22.08.2024 and 23.08.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-23",
+    "type": "reply_filed",
+    "quote": "In response the petitioner filed its reply on 23.08.2024 the same day on which the last of the three personal hearings was fixed.",
+    "para": 3
+   },
+   {
+    "date": "2024-08-23",
+    "type": "order_passed",
+    "quote": "However, the impugned order does not even refer to the reply filed on 23.08.2024, instead the impugned order is passed on the very same day on which the final personal hearing was fixed i.e., 23.08.2024.",
+    "para": 3
+   },
+   {
+    "date": "2024-09-20",
+    "type": "other",
+    "quote": "PRAYER: Writ Petition filed under Article 226 of the Constitution of India, praying to issue a Writ of Certiorari, to call for the records relating to the impugned order in reference ZD330824211484J/2019-20 dated 23.08.2024 passed by the respondent and the consequential rejection order bearing Reference No: ZD330924005214S/2019-20 dated 20.09.2024 passed by the respondent and quash the same.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "(i) Excess ITC claimed on account of non-reconciliation of information.",
+    "para": 2
+   },
+   {
+    "type": "scn_ground",
+    "quote": "(ii) ITC to be reversed on non-business transactions and exempt supplies.",
+    "para": 2
+   },
+   {
+    "type": "scn_ground",
+    "quote": "(iii) Under declaration of ineligible ITC.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On considering the submissions of both sides this Court is of the view that the impugned order does suffer from non application of mind inasmuch as despite the fact that the petitioner had submitted its reply dated 23.08.2024 the respondent authority has proceeded to pass the order on the very same day on which the personal hearing was fixed and without even setting out or making any reference to the reply dated 23.08.2024.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In view thereof, the impugned order is set aside.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13758,
+   "tokens_out": 6295,
+   "seconds": 15.11,
+   "cached": false
+  },
+  {
+   "tokens_in": 2969,
+   "tokens_out": 234,
+   "seconds": 2.69,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

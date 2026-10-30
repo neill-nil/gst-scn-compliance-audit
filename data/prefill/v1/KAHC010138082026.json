@@ -1,0 +1,91 @@
+{
+ "cnr": "KAHC010138082026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "scrutiny of returns of the taxable period 2018- 19 has noticed certain discrepancies from comparison between 'Outward taxable supplies (other than zero rated)' and 'Outward taxable supplies (zero rated)' as per GSTR-3B and GSTR-1 and it is observed that the assessee has short declared the taxable amount.",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-04-26",
+    "quote": "IMPUGNED ORDER VIDE FORM GST DRC-07 (ANNEXURE-A) BEARING REFERENCE NO.ZD2904240695260 DATED 26.04.2024 PASSED BY THE RESPONDENT NO.1",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-04-26",
+    "type": "order_passed",
+    "quote": "IMPUGNED ORDER VIDE FORM GST DRC-07 (ANNEXURE-A) BEARING REFERENCE NO.ZD2904240695260 DATED 26.04.2024 PASSED BY THE RESPONDENT NO.1",
+    "para": 1
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "Adjudication is proceeded with and order passed while observing that the assessee has neither filed any reply nor participated in the proceedings.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "scrutiny of returns of the taxable period 2018- 19 has noticed certain discrepancies from comparison between 'Outward taxable supplies (other than zero rated)' and 'Outward taxable supplies (zero rated)' as per GSTR-3B and GSTR-1 and it is observed that the assessee has short declared the taxable amount.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Taking note of that the order passed is in-effect an ex-parte order, it would be appropriate to set aside the order at Annexure-A and remit the matter for fresh consideration before respondent No.1 to the stage of reply to show-cause notice.",
+   "para": 3
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4309,
+   "tokens_out": 652,
+   "seconds": 3.24,
+   "cached": false
+  },
+  {
+   "tokens_in": 2542,
+   "tokens_out": 112,
+   "seconds": 3.71,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}
