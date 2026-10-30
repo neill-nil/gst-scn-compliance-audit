@@ -1,0 +1,139 @@
+{
+ "cnr": "KAHC010482892024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "THIS PETITION IS FILED UNDER ARTICLES 226 & 227 OF THE CONSTITUTION OF INDIA, PRAYING TO QUASH THE ORDER OF ADJUDICATION DATED 16.12.2023 PASSED BY THE RESPONDENT UNDER SECTION 73(10) R/W SECTION 73(9), SECTION 50 AND SECTION 122(2)(a) OF THE IGST AND CGST ACTS, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "BEARING ORDER NO.ZD290923046629R FOR THE TAX PERIOD JULY 2017 TO MARCH 2018, HEREIN ENCLOSED AND MARKED AS ANNEXURE-A, ETC.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-26",
+     "quote": "The matter stands remanded back to first respondent and is restored to the stage of show cause notice dated 26.09.2023",
+     "para": 5
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "email",
+     "quote": "The impugned order reveals that notices were issued to the petitioner by way of his registered E-mail and inspite of service of it, he has neither replied nor participated in the proceedings initiated against him.",
+     "para": 2
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-16",
+    "quote": "Aggrieved by the impugned order dated 16.12.2023 passed by the first respondent vide Annexure-'A' to the writ petition, the petitioner has preferred this petition.",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-26",
+    "type": "scn_issued",
+    "quote": "The matter stands remanded back to first respondent and is restored to the stage of show cause notice dated 26.09.2023",
+    "para": 5
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "The impugned order reveals that notices were issued to the petitioner by way of his registered E-mail and inspite of service of it, he has neither replied nor participated in the proceedings initiated against him.",
+    "para": 2
+   },
+   {
+    "date": "2023-12-16",
+    "type": "order_passed",
+    "quote": "Aggrieved by the impugned order dated 16.12.2023 passed by the first respondent vide Annexure-'A' to the writ petition, the petitioner has preferred this petition.",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "On the ground that the petitioner has wrongly claimed transitional credit, proceedings have been initiated against him and the impugned order has been passed.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Irrespective of him closing down the business, it is his responsibility to keep the said E-mail active and any services done on the said E-mail has to be treated as sufficient notice under the given facts and circumstances of the case.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "However, as the order is passed without hearing the petitioner, this Court is of the opinion that it would be appropriate in the interest of justice to set aside the same by imposing cost on the petitioner and remand the matter back to first respondent.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The writ petition is disposed of.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "second",
+  "reviewed_by": "r2",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Corrected service_169 to defect_rejected based on the express ruling that registered-email service was sufficient. Retained hearing_75_4 as not_decided because the interest-of-justice remand, with costs, did not declare a hearing defect.",
+  "seconds": 0,
+  "saved_at": "2026-10-30T20:37:23"
+ }
+}

@@ -1,0 +1,166 @@
+{
+ "cnr": "HCMA010377092025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "impugned order dated 20.08.2024 for the FY 2019-20",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-23",
+     "quote": "the respondent issued a show cause notice in Form GST DRC-01 dated 23.05.2024",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-20",
+    "quote": "impugned order dated 20.08.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-23",
+    "type": "scn_issued",
+    "quote": "The respondent issued a show cause notice in Form GST DRC-01 dated 23.05.2024",
+    "para": 6
+   },
+   {
+    "date": "2024-06-26",
+    "type": "other",
+    "quote": "The respondent issued a show cause notice in Form GST DRC-01 dated 23.05.2024, which was followed by three reminders, dated 26.06.2024, 06.07.2024 and 22.07.2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-07-06",
+    "type": "other",
+    "quote": "The respondent issued a show cause notice in Form GST DRC-01 dated 23.05.2024, which was followed by three reminders, dated 26.06.2024, 06.07.2024 and 22.07.2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-07-22",
+    "type": "other",
+    "quote": "The respondent issued a show cause notice in Form GST DRC-01 dated 23.05.2024, which was followed by three reminders, dated 26.06.2024, 06.07.2024 and 22.07.2024.",
+    "para": 6
+   },
+   {
+    "date": "2024-07-26",
+    "type": "reply_filed",
+    "quote": "The petitioner, on receipt of such notices, filed a detailed reply dated 26.07.2024 along with supportive documents.",
+    "para": 6
+   },
+   {
+    "date": "2024-08-20",
+    "type": "order_passed",
+    "quote": "The challenge in this Writ Petition is to the order passed by the respondent dated 20.08.2024 for the FY 2019-20 and to quash the same.",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "“taxpayer's (petitioner) has not produced valid documentary evidence. Hence, the taxpayer reply was not acceptable''",
+    "para": 6
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Further, before passing the impugned order, the petitioner has not been afforded with any opportunity of personal hearing.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Thereafter, the respondent ought to have called upon the petitioner to appear for the personal hearing, instead, the respondent passed a cryptic order, by merely stating that the documents filed by the petitioner were not valid and the reply was not acceptable.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, this Court has no hesitation to hold that the impugned order passed by the respondent is a non-speaking order and suffers from violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "i) The impugned order passed by the respondent dated 20.08.2024 is set aside.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "UNSURE: The judgment does not state whether the demand was under s.73 or s.74; provision left null.",
+  "seconds": 772,
+  "saved_at": "2026-10-30T20:41:00"
+ }
+}

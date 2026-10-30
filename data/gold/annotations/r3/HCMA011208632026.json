@@ -1,0 +1,67 @@
+{
+ "cnr": "HCMA011208632026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "GSTIN 33ADEPV5873B1ZI /2021-2022 Dated 29-12-2025",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "Order issued after assessee's death",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Hence, the impugned order cannot be sustained and is hereby set aside.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The writ petition is disposed of on the above terms.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "UNSURE: s.73/74 not stated. Prayer dates DRC-07/order 29.12.2025, body says assailed order 29.09.2025; order date left null. Fresh proceedings against legal heirs permitted, not remanded.",
+  "seconds": null,
+  "saved_at": "2026-10-30T21:02:45"
+ }
+}

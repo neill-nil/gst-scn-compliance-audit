@@ -1,0 +1,86 @@
+{
+ "cnr": "KAHC010437992025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "under sections 73(10), 73(9), 50 & 122 of the KGST Act, 2017 and CGST Act, 2017",
+   "para": 3
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "for the tax periods April 2019 to March 2020",
+   "para": 3
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-07-19",
+    "quote": "Adjudication Order dated 19-07-2024",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-07-19",
+    "type": "order_passed",
+    "quote": "Adjudication Order dated 19-07-2024",
+    "para": 3
+   },
+   {
+    "date": "2024-07-20",
+    "type": "order_passed",
+    "quote": "summary of Order under section 73(9) in Form GST DRC-07 dated 20-07-2024",
+    "para": 3
+   },
+   {
+    "date": "2025-02-21",
+    "type": "other",
+    "quote": "Order dated 21-02-2025 passed by the Joint Commissioner of Commercial Taxes, (Appeals)-4, Bengaluru",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "This not having been done has resulted in the respondents passing an order on the ground that the petitioner has claimed excess ITC when the petitioner apparently has not.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "The writ petition is allowed.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r2",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Confirmed reply_not_considered as defect_found. Tightened fact quotes to exact judgment text and changed the 21.02.2025 appellate event from appeal_dismissed to other because the judgment identifies the appellate order but does not expressly state its disposition.",
+  "seconds": 0,
+  "saved_at": "2026-10-30T20:43:39"
+ }
+}

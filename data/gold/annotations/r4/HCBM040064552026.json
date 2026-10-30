@@ -1,0 +1,121 @@
+{
+ "cnr": "HCBM040064552026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "Challenge is to show cause notice dated 10/01/2025 issued by respondent no. 2 – Assistant Commissioner, CGST & CX, Nagpur-II under Section 74(1) of The Central Goods and Services Tax Act, 2017",
+   "para": 4
+  },
+  "financial_years": {
+   "value": [
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24"
+   ],
+   "quote": "The notice issued pertain from September, 2020 to July, 2023 (Financial years 2020-21 to 2023-24)",
+   "para": 4
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-01-10",
+     "quote": "Challenge is to show cause notice dated 10/01/2025 issued by respondent no. 2 – Assistant Commissioner, CGST & CX, Nagpur-II under Section 74(1) of The Central Goods and Services Tax Act, 2017",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-01-10",
+    "type": "scn_issued",
+    "quote": "Challenge is to show cause notice dated 10/01/2025 issued by respondent no. 2 – Assistant Commissioner, CGST & CX, Nagpur-II under Section 74(1) of The Central Goods and Services Tax Act, 2017 (for short “CGST Act”)",
+    "para": 4
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "fraud_allegation",
+    "quote": "period, suppressed taxable value, and thereby made short payments of Central Goods and Service Tax to the tune of Rs. 1,69,57,069/-.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_found",
+    "contested": true,
+    "quote": "There is no distinction made under Section 74 of the CGST Act that would permit the respondents to issue consolidated notices in a case where fraudulent availment of income tax credits is alleged.",
+    "quote_source": "court",
+    "para": 10
+   }
+  ],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": false,
+   "quote": "With the above liberty, and for the reasons set out in Milroc Good Earth Developers (supra) and Rite Water Solutions (India) Ltd. (supra), the petition is partly allowed.",
+   "para": 19
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r4",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Checked against full judgment (same Bombay/Nagpur-bench template as case HCBM040088372026). Trimmed the document_contents quote to drop an embedded PDF-footer artifact ('Order wp 1829.2026.odt') that the extraction tool spliced into the sentence mid-word; the trimmed quote still matches the judgment verbatim and keeps the substance (suppressed taxable value, quantum). consolidated_scn/defect_found/contested=true at para 10 is correct and verbatim including the judgment's own typo ('income tax credits' for 'input tax credits') -- kept as the court actually wrote it. Outcome partly_allowed/not remanded matches para 19 (SCN quashed outright, liberty to re-issue, not a remand).",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:35:23"
+ }
+}

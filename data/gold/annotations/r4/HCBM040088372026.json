@@ -1,0 +1,122 @@
+{
+ "cnr": "HCBM040088372026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "Challenge is to show cause notice dated 18/06/2025 issued by respondent no.3, under Section 74 of The Central Goods and Services Tax Act, 2017 (for short “CGST Act”).",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23"
+   ],
+   "quote": "The notice dated 18/06/2025 pertains to financial years 2018-19 to 2022-23 saying that the petitioner has, during this period, suppressed taxable value, and thereby made short payments of Central Goods and Service Tax.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-06-18",
+     "quote": "Challenge is to show cause notice dated 18/06/2025 issued by respondent no.3, under Section 74 of The Central Goods and Services Tax Act, 2017 (for short “CGST Act”).",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-06-18",
+    "type": "scn_issued",
+    "quote": "Challenge is to show cause notice dated 18/06/2025 issued by respondent no.3, under Section 74 of The Central Goods and Services Tax Act, 2017 (for short “CGST Act”).",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "fraud_allegation",
+    "quote": "The notice dated 18/06/2025 pertains to financial years 2018-19 to 2022-23 saying that the petitioner has, during this period, suppressed taxable value, and thereby made short payments of Central Goods and Service Tax.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_found",
+    "contested": true,
+    "quote": "There is no distinction made under Section 74 of the CGST Act that would permit the respondents to issue consolidated notices in a case where fraudulent availment of Input Tax Credits is alleged.",
+    "quote_source": "court",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": false,
+   "quote": "With the above liberty, and for the reasons set out in Milroc Good Earth Developers (supra) and Rite Water Solutions (India) Ltd. (supra), the petition is partly allowed.",
+   "para": 18
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r4",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Checked against full judgment, no changes. consolidated_scn/defect_found squarely supported (para 8, following the Bombay HC's own Milroc Good Earth Developers / Rite Water Solutions line); contested=true is clearly right -- the judgment extensively documents the conflict with the Delhi HC (Mathur Polymers, Technosys) and notes a challenge to the Bombay view is 'under consideration' for the Supreme Court (para 16), plus discusses an SLP dismissed in limine (not on merits, so no binding resolution). Outcome partly_allowed/not remanded matches para 18: the SCN is quashed outright (not sent back for reconsideration), with liberty to issue a fresh notice -- that is different from a remand of the existing proceeding.",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:33:24"
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "cnr": "WBCHCA0122252025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "in respect of the financial year 2019-2020.",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-05-30",
+    "quote": "challenging the order dated 30th May, 2024 issued by the respondent no.1",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-09-20",
+    "type": "scrutiny_notice",
+    "quote": "In the instant case, a notice in Form ASMT 10 dated 20th September, 2024 was issued, identifying certain discrepancies in the returns filed by the petitioner in respect of the financial year 2019-2020.",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "The petitioner appears to have responded to the aforesaid notice and had afforded an explanation.",
+    "para": 3
+   },
+   {
+    "date": "2024-05-30",
+    "type": "order_passed",
+    "quote": "though, the detailed order thereto appears to have been passed on 30th May, 2024.",
+    "para": 4
+   },
+   {
+    "date": "2024-10-09",
+    "type": "order_passed",
+    "quote": "which had been communicated to the petitioner in Form DRC 07 dated 9th October, 2024",
+    "para": 4
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "The same would demonstrate that there is a short payment of duty of Rs. 54,06,403/-.",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "Insofar as discrepancy of short payment and delayed filing of return in GSTR 3B attracting late fees and interest is concerned, the petitioner admitted that there had been short payment, delay and having regard thereto, the petitioner had sought for payment of interest on the sum due in installments.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "direct adjudication and recovery under section 75(12) without show-cause notice",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In my view, once, the self-assessed tax as per Section 37 is included in the return furnished under Section 39 of the said Act, Section 75(12) of the said Act can no longer be invoked as is clear from the above explanation.",
+    "quote_source": "court",
+    "para": 12
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "However, at the same time, having regard to the admission made by the petitioner in response to the ASMT 10, I am of the view the aforesaid order passed by the respondents on 30th May, 2024 can be treated as a show cause and having regard thereto, the petitioner shall be at liberty to respond to the said show cause within a period of three weeks from date.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "out_of_scope",
+  "kind": "second",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "FY 2019–20 fits the date limit, but the challenged recovery was made under s.75(12). The court says the department bypassed s.73/74 [8].",
+  "seconds": 121,
+  "saved_at": "2026-10-30T20:50:38"
+ }
+}

@@ -1,0 +1,140 @@
+{
+ "cnr": "HCMA011958962024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "the petitioner has made a taxable supply of a net turnover of Rs.66,77,000/- for which, short payment of tax @ 18% has been proposed to be demanded along with interest/penalty",
+   "para": 7
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "bearing Reference No.33GHFPS4309C1ZJ/2018- 19 dated 25.04.2024",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-25",
+    "quote": "impugned proceeding bearing Reference No.33GHFPS4309C1ZJ/2018- 19 dated 25.04.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": null,
+    "type": "scn_issued",
+    "quote": "on receipt of show cause notice issued by the respondent dated 12.08.2024",
+    "para": 3
+   },
+   {
+    "date": "2023-11-18",
+    "type": "reply_filed",
+    "quote": "the petitioner filed a reply dated 18.11.2023, providing a detailed explanation",
+    "para": 3
+   },
+   {
+    "date": "2024-04-25",
+    "type": "order_passed",
+    "quote": "bearing Reference No.33GHFPS4309C1ZJ/2018- 19 dated 25.04.2024 along with summary of the order in Form GST DRC- 07 dated 26.04.2024 passed by the respondent",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "stating that the petitioner has made a taxable supply of a net turnover of Rs.66,77,000/- for which, short payment of tax @ 18% has been proposed to be demanded along with interest/penalty",
+    "para": 7
+   },
+   {
+    "type": "reply_point",
+    "quote": "stating that the service of hiring of vehicle for transportation is exempted from payment of tax, hence, the petitioner assumed that the same need not be reported in the GST returns and according filed only NIL returns",
+    "para": 7
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "erroneously observed that the petitioner failed to appear for the personal hearing and also proceeded to confirm the impugned demand",
+    "para": 7
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Thus, it is crystal clear that the impugned order is nothing but total non-application of mind and also suffers from violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, the Writ Petition is allowed on the aforesaid terms.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r2",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Scope corrected: the SCN alleges taxable supply, short payment of tax, and proposed tax/interest/penalty without fraud allegations, substantively invoking Section 73. Confirmed reply_not_considered as defect_found. The judgment's stated SCN date (12.08.2024) is impossible relative to its stated 18.11.2023 reply and April 2024 order, so the structured SCN date is left null while retaining the source quotation in the event.",
+  "seconds": 0,
+  "saved_at": "2026-10-30T21:00:26"
+ }
+}

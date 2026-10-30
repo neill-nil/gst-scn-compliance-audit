@@ -1,0 +1,151 @@
+{
+ "cnr": "HCMA011637932024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "Order No.GST/33ACDPI3993H2ZK/ 18-19",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-27",
+     "quote": "the respondent issued a show cause notice on 27.12.2023 vide the common portal under \"View Additional Notices/Orders.\"",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "the respondent issued a show cause notice on 27.12.2023 vide the common portal under \"View Additional Notices/Orders.\"",
+     "para": 2
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-26",
+    "quote": "the respondent passed the impugned order on 26.04.2024, allegedly in contravention of Section 75(4) of the GST Act.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-27",
+    "type": "scn_issued",
+    "quote": "the respondent issued a show cause notice on 27.12.2023 vide the common portal under \"View Additional Notices/Orders.\"",
+    "para": 2
+   },
+   {
+    "date": "2024-04-22",
+    "type": "other",
+    "quote": "A reminder notice was later issued on 22.04.2024, for which the petitioner filed a reply in FORM GST DRC-06 on the same day.",
+    "para": 2
+   },
+   {
+    "date": "2024-04-22",
+    "type": "reply_filed",
+    "quote": "A reminder notice was later issued on 22.04.2024, for which the petitioner filed a reply in FORM GST DRC-06 on the same day.",
+    "para": 2
+   },
+   {
+    "date": "2024-04-26",
+    "type": "order_passed",
+    "quote": "the respondent passed the impugned order on 26.04.2024, allegedly in contravention of Section 75(4) of the GST Act.",
+    "para": 2
+   },
+   {
+    "date": "2024-07-25",
+    "type": "recovery_or_attachment",
+    "quote": "Furthermore, 41% of the demanded tax amount was recovered from the petitioner on 25.07.2024, after the impugned order was passed.",
+    "para": 4
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "The order inaccurately suggests that the petitioner neither utilized the opportunity to respond nor provided any vital documentary evidence.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "This failure to consider the petitioner’s reply and the lack of opportunity for a personal hearing constitutes a violation of the principles of natural justice.",
+    "quote_source": "court",
+    "para": 4
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "This failure to consider the petitioner’s reply and the lack of opportunity for a personal hearing constitutes a violation of the principles of natural justice.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the order and the summary of the Order in DRC-07, dated 26.04.2024 is set aside, and the matter is remanded for reconsideration.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "UNSURE: FY 2018-19 and GST demand are clear, but the judgment does not expressly state that the demand proceeding was under s.73/74.",
+  "seconds": null,
+  "saved_at": "2026-10-30T21:02:45"
+ }
+}

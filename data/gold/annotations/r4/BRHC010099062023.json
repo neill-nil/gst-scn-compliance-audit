@@ -1,0 +1,139 @@
+{
+ "cnr": "BRHC010099062023",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "passed by the respondent no. 2 for the period 2017-18 under Section 74(9) of the Bihar Goods and Services Tax Act, 2005",
+   "para": 3
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "passed by the respondent no. 2 for the period 2017-18 under Section 74(9) of the Bihar Goods and Services Tax Act, 2005",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2022-05-24",
+     "quote": "he was given a demand- cum-show cause notice in GST DRC-01 dated 24.05.2022",
+     "para": 14
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "Even the date of personal hearing was provided on 31.08.2021.",
+     "para": 21
+    },
+    "hearing_date": {
+     "value": "2021-08-31",
+     "quote": "Even the date of personal hearing was provided on 31.08.2021.",
+     "para": 21
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2022-06-28",
+    "quote": "the order dated 28.06.2022 (as contained in Annexure-5 Series) passed by the respondent no. 2",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-05-24",
+    "type": "scn_issued",
+    "quote": "he was given a demand- cum-show cause notice in GST DRC-01 dated 24.05.2022",
+    "para": 14
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "but the petitioner did not submit any response to the same in GST DRC- 06.",
+    "para": 14
+   },
+   {
+    "date": "2021-08-31",
+    "type": "hearing_missed",
+    "quote": "The petitioner did not turn up on the date fixed in the matter for personal hearing.",
+    "para": 23
+   },
+   {
+    "date": "2022-06-28",
+    "type": "order_passed",
+    "quote": "the order dated 28.06.2022 (as contained in Annexure-5 Series) passed by the respondent no. 2 for the period 2017-18 under Section 74(9)",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "This being the position, we are of the considered opinion that there is no violation of principles of natural justice much less any violation of the statutory provisions as contained in sub-section (4) of Section 75 of the CGST/ BGST Act, 2017.",
+    "quote_source": "court",
+    "para": 23
+   },
+   {
+    "type": "other_procedural",
+    "note": "parallel proceeding by central agency and state authority",
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "So far as the challenge to the impugned order (Annexure- ‘5’) is concerned, it is liable to fail for the reason that this order has not been passed during pendency of any proceeding on the same subject matter with the central agency.",
+    "quote_source": "court",
+    "para": 17
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "These writ applications stand disposed of accordingly.",
+   "para": 29
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r4",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Swapped the hearing_75_4 quote for the court's actual conclusion sentence at para 23 ('no violation of principles of natural justice much less any violation of... sub-section (4) of Section 75') -- the draft's quote only recited the undisputed facts leading up to it. Dated the hearing_missed event 2021-08-31 (the hearing date already established in notices[0].hearing_date) instead of leaving it null. Note: the judgment's own para 21 places the s.74 personal-hearing date (31.08.2021) before the s.74 SCN/DRC-01 date (24.05.2022) -- an apparent internal inconsistency in the judgment itself (31.08.2021 is also the date of an earlier DGGI summons, para 4); kept as stated since it is the court's own text and we don't correct the court. Companion case CWJC 2806/2023 (same order, different FY) is not this record; this is the lead petition (CWJC 1898/2023) argued in full. Two defects (hearing_75_4, other_procedural/parallel-proceeding) both correctly rejected on the merits; in scope.",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:24:17"
+ }
+}

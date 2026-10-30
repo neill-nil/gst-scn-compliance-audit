@@ -1,0 +1,90 @@
+{
+ "cnr": "HCMA010761122025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2025-01-29",
+    "quote": "This writ petition has been filed challenging the impugned order dated 29.01.2025 passed by the respondent.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-08-24",
+    "type": "reply_filed",
+    "quote": "initially, the show cause notice was issued by the respondent, for which the petitioner had filed their replies dated 24.08.2024, 18.12.2024 & 09.01.2025.",
+    "para": 2
+   },
+   {
+    "date": "2024-12-18",
+    "type": "reply_filed",
+    "quote": "initially, the show cause notice was issued by the respondent, for which the petitioner had filed their replies dated 24.08.2024, 18.12.2024 & 09.01.2025.",
+    "para": 2
+   },
+   {
+    "date": "2025-01-09",
+    "type": "reply_filed",
+    "quote": "initially, the show cause notice was issued by the respondent, for which the petitioner had filed their replies dated 24.08.2024, 18.12.2024 & 09.01.2025.",
+    "para": 2
+   },
+   {
+    "date": "2025-01-29",
+    "type": "order_passed",
+    "quote": "This writ petition has been filed challenging the impugned order dated 29.01.2025 passed by the respondent.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "In such view of the matter, this Court does not find any merits in the submissions made by the petitioner.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "Accordingly, this writ petition is dismissed.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r4",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Order-date and order_passed quotes had lower-case \"this\" vs judgment's \"This\"; capitalised to match verbatim. Single complaint (reply_not_considered), rightly rejected per para 5-6. Outcome correct.",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:14:56"
+ }
+}

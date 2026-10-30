@@ -1,0 +1,161 @@
+{
+ "cnr": "ODHC010248542026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "Challenging the Order-in-Original dated 26th December, 2025 vide Annexure-1 passed under Section 73 of the Central Goods and Services Tax Act, 2017/Odisha Goods and Services Tax Act, 2017",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "for the tax periods from April, 2021 to March, 2022",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-08-18",
+     "quote": "show-cause notice in Form GST DRC-01, dated 18th August, 2025 was issued under Section 73(1) of the GST Act",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-12-26",
+    "quote": "Challenging the Order-in-Original dated 26th December, 2025 vide Annexure-1",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-08-18",
+    "type": "scn_issued",
+    "quote": "show-cause notice in Form GST DRC-01, dated 18th August, 2025 was issued under Section 73(1) of the GST Act",
+    "para": 2
+   },
+   {
+    "date": "2025-09-17",
+    "type": "reply_filed",
+    "quote": "It is submitted that the petitioner furnished reply to show-cause notice on 17th September, 2025 by exercising his option to avail personal hearing in the matter.",
+    "para": 2
+   },
+   {
+    "date": "2025-09-17",
+    "type": "hearing_requested",
+    "quote": "the petitioner furnished reply to show-cause notice on 17th September, 2025 by exercising his option to avail personal hearing in the matter.",
+    "para": 2
+   },
+   {
+    "date": "2025-12-26",
+    "type": "order_passed",
+    "quote": "Challenging the Order-in-Original dated 26th December, 2025 vide Annexure-1 passed under Section 73",
+    "para": 1
+   },
+   {
+    "date": "2026-01-06",
+    "type": "other",
+    "quote": "rectification order dated 6th January, 2026 vide Annexure-2 passed under Section 161 of the said Act",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "alleging that no tax has been paid by the petitioner towards royalty, DMF, EMF, dead rent and surface rent, which constitute taxable supply, as the said aspects of supply are subject to tax under the reverse charge mechanism.",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "In the reply, categorical stand is taken that no taxable event had occurred during the relevant period as mining operation did not commence at that juncture; as a result of which tax could not have been saddled on the petitioner.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The tax payer was also issued Reminder and was also given opportunity for personal hearing but the Tax payer has neither replied to the SCN nor appeared for personal hearing.",
+    "para": 6
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Ergo, the order dated 26th December, 2025 and 6th January, 2026 cannot be held to be tenable in the eye of law for want of affording an opportunity of hearing to the petitioner and non- consideration of reply to show cause notice.",
+    "quote_source": "court",
+    "para": 6
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Ergo, the order dated 26th December, 2025 and 6th January, 2026 cannot be held to be tenable in the eye of law for want of affording an opportunity of hearing to the petitioner and non- consideration of reply to show cause notice.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "In the result, the writ petition stands disposed of with the above observation and direction.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r2",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Confirmed hearing_75_4 and reply_not_considered as defect_found. Added the explicit hearing-request event from the 17.09.2025 reply and corrected capitalization in the quoted order passage so it matches the judgment exactly.",
+  "seconds": 0,
+  "saved_at": "2026-10-30T20:49:20"
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "cnr": "DLHC010185112026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": true,
+    "quote": "In both these matters, this Court has already held that the consolidation is very much permissible.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "That being so, these writ petitions stand dismissed.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "UNSURE: Joint judgment quotes prayer and dates for W.P.(C) 5814/2026 (JBN Impex), not Progressive Alloys W.P.(C) 5866/2026. These facts removed. Common ruling concerns s.74 consolidated notices, but Progressive-specific years and provision not stated.",
+  "seconds": null,
+  "saved_at": "2026-10-30T21:02:45"
+ }
+}

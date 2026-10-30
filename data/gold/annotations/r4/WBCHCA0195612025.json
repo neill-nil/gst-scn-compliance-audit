@@ -1,0 +1,175 @@
+{
+ "cnr": "WBCHCA0195612025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "The present writ petition has been filed inter alia challenging the order dated 29th January, 2025 issued under Section 74 of the WBGST/CST Act, 2017",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22"
+   ],
+   "quote": "in respect of the tax period July 2017 to March 2022.",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-08-01",
+     "quote": "a proceeding under Section 74 was initiated by issuing a notice dated 1st August, 2024 in the Form DRC-01.",
+     "para": 1
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-01-29",
+    "quote": "The present writ petition has been filed inter alia challenging the order dated 29th January, 2025 issued under Section 74 of the WBGST/CST Act, 2017",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-02-13",
+    "type": "other",
+    "quote": "upon the audit observation being published in the form ADT-2 dated 13/16th February, 2024",
+    "para": 8
+   },
+   {
+    "date": "2024-08-01",
+    "type": "scn_issued",
+    "quote": "a proceeding under Section 74 was initiated by issuing a notice dated 1st August, 2024 in the Form DRC-01.",
+    "para": 1
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "Despite the fact that the petitioner had clarified its position once again, in the response to the show cause",
+    "para": 3
+   },
+   {
+    "date": "2025-01-29",
+    "type": "order_passed",
+    "quote": "challenging the order dated 29th January, 2025 issued under Section 74 of the WBGST/CST Act, 2017",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "2.1. Irregular availment of ITC contravening the provisions of Section 16 of CGST Act, 2017 as the supplier did not file GSTR-3B return:",
+    "para": 1
+   },
+   {
+    "type": "scn_ground",
+    "quote": "2.2. Irregular availement of ITC (Block Credit) against the invoices related to purchase/repair and maintenance of motor vehicles in violation of Section 17(5) of CGST Act, 2017:-",
+    "para": 1
+   },
+   {
+    "type": "scn_ground",
+    "quote": "2.3. Irregular availment of ineligible credit in violation of Section 16(1) & 16(2) of CGST Act, 2017:",
+    "para": 1
+   },
+   {
+    "type": "scn_ground",
+    "quote": "2.4. Excess availment of ITC in GSTR-3B in comparison to GSTR-2A violating the provisions of Section 20 of the IGST Act, 2017:",
+    "para": 1
+   },
+   {
+    "type": "scn_ground",
+    "quote": "2.5. Non-payment of GST on the supplies received from unregistered supplies under RCM:",
+    "para": 1
+   },
+   {
+    "type": "scn_ground",
+    "quote": "2.6. Non-payment of GST on GTA services & Legal services received under RCM:",
+    "para": 1
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "such response appears to have been brushed aside on the ground that the proof of payment by way of bank statement was not disclosed.",
+    "para": 3
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "proper officer has concluded that the petitioner has failed to substantiate the factum of payment to sundry creditors within the statutory period of 180 days for the petitioner to avail the input tax credit, by disclosure of bank statements.",
+    "para": 9
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "I find that the aforesaid aspect has duly been considered by the proper officer in paragraph 9.3.3 of the order impugned.",
+    "quote_source": "court",
+    "para": 9
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "With the above observations and directions, WPA 9655 of 2025 stands disposed of.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r4",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Checked against full judgment, no changes. Petitioner pressed 4 of 11 SCN grounds (2.2-2.4, 2.8); only 2.8 (180-day sundry-creditor payment) maps to a schema defect type (reply_not_considered) and the court expressly found it was considered (para 9, defect_rejected). Grounds 2.2-2.4 are a merits/jurisdictional-error argument about ITC eligibility, not a procedural defect in our taxonomy, and the court declined to examine them under Art.226 (paras 10-11) rather than ruling on a defect type -- correctly left out of defects_argued. Outcome 'disposed'/not remanded is correct: the order was not set aside, only liberty given to raise other un-pleaded grounds in a future appeal. Note: counsel's submission at para 4 cites the order date as '4th February, 2025', conflicting with para 1's '29th January, 2025' used throughout the rest of the judgment and the operative order -- kept 29.01.2025 as the authoritative date (judgment's own internal inconsistency, not a model error).",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:28:28"
+ }
+}

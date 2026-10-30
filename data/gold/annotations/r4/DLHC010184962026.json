@@ -1,0 +1,103 @@
+{
+ "cnr": "DLHC010184962026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "Section 74 (2) and Section 74 (10) of the Central Goods & Services Tax Act, 2017, cannot be used by Respondents to determine tax by issuing consolidated show cause notices by combining multiple financial years and consequently issuing an order consolidating and combining multiple financial years to the detriment of taxpayers and curtailing the rights of taxpayers as far as principles of natural justice and limitation are concerned.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": true,
+    "quote": "In both these matters, this Court has already held that the consolidation is very much permissible.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "That being so, these writ petitions stand dismissed.",
+   "para": 13
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r4",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Batch judgment (3 petitions: JBN Impex 5814/2026, Brilliant Metals 5838/2026 [this case], Progressive Alloys 5866/2026). The notice/order dates and events in the draft were all lifted from JBN Impex's prayer clause (para 2, 'the prayer in W.P.(C) 5814/2026 reads thus') -- not this petitioner's. Per the batch-judgment rule, nulled financial_years, notices[0].date, order.date and the three events since nothing in the judgment is specific to Brilliant Metals; kept provision=74 since that is the common statutory basis argued by all three (prayer items A/B, generic, not petition-specific). consolidated_scn/defect_rejected, contested=true (Madras/AP HC disagree; Aparna Collection pending before Supreme Court per para 4) and the dismissed outcome are common to the whole batch and correctly kept.",
+  "seconds": null,
+  "saved_at": "2026-10-30T20:21:38"
+ }
+}

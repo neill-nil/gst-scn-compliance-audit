@@ -1,0 +1,78 @@
+{
+ "cnr": "UPHC020833222025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "Present petition has been filed challenging the order dated 30.12.2023 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+   "para": 3
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2023-12-30",
+    "quote": "Present petition has been filed challenging the order dated 30.12.2023 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-30",
+    "type": "order_passed",
+    "quote": "Present petition has been filed challenging the order dated 30.12.2023 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+    "para": 3
+   },
+   {
+    "date": "2025-09-10",
+    "type": "appeal_dismissed",
+    "quote": "as well as the order dated 10.09.2025 whereby the appeal was dismissed as being beyond limitation.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Since the aforesaid dictum is applicable in the present facts and circumstances, accordingly, the impugned orders cannot be sustained and the orders dated 30.12.2023 & 10.09.2025 are accordingly quashed.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "With the aforesaid, the present petition is allowed.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "",
+  "seconds": null,
+  "saved_at": "2026-10-30T21:02:45"
+ }
+}

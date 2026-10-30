@@ -1,0 +1,173 @@
+{
+ "cnr": "HCMA010457152024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-07-26",
+     "quote": "A show cause notice dated 26.07.2023 followed.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-08-23",
+    "quote": "The petitioner challenges an assessment order dated 23.08.2023 primarily on the ground that documents produced by the petitioner were disregarded.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-03-27",
+    "type": "pre_scn_intimation",
+    "quote": "Upon receipt of an intimation on 27.03.2023 alleging that the petitioner had availed of Input Tax Credit (ITC) fraudulently, the petitioner replied on 15.06.2023 refuting the charge and attaching requisite documents.",
+    "para": 2
+   },
+   {
+    "date": "2023-06-15",
+    "type": "reply_filed",
+    "quote": "Upon receipt of an intimation on 27.03.2023 alleging that the petitioner had availed of Input Tax Credit (ITC) fraudulently, the petitioner replied on 15.06.2023 refuting the charge and attaching requisite documents.",
+    "para": 2
+   },
+   {
+    "date": "2023-07-26",
+    "type": "scn_issued",
+    "quote": "A show cause notice dated 26.07.2023 followed.",
+    "para": 2
+   },
+   {
+    "date": "2023-07-26",
+    "type": "reply_filed",
+    "quote": "The petitioner replied to the show cause notice on 26.07.2023 and pointed out that the e-way bill system was introduced from 1st April 2018 and is not applicable to the relevant supply.",
+    "para": 2
+   },
+   {
+    "date": "2023-08-23",
+    "type": "order_passed",
+    "quote": "The petitioner challenges an assessment order dated 23.08.2023 primarily on the ground that documents produced by the petitioner were disregarded.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "fraud_allegation",
+    "quote": "Upon receipt of an intimation on 27.03.2023 alleging that the petitioner had availed of Input Tax Credit (ITC) fraudulently, the petitioner replied on 15.06.2023 refuting the charge and attaching requisite documents.",
+    "para": 2
+   },
+   {
+    "type": "scn_ground",
+    "quote": "In such show cause notice, it was stated that certain suppliers were issuing fake invoices and that the petitioner was a beneficiary thereof.",
+    "para": 2
+   },
+   {
+    "type": "reply_point",
+    "quote": "The petitioner replied to the show cause notice on 26.07.2023 and pointed out that the e-way bill system was introduced from 1st April 2018 and is not applicable to the relevant supply.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "\"Your reply for the above notice submitted was scrutinized and it is found that you have uploaded the invoice copies only and not submitted the e-way bill copy as supporting document for your claim.",
+    "para": 6
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "The above extract indicates clearly that the documents produced by the petitioner along with the reply to intimation and reply to show cause notice were disregarded and the assessing officer reproduced the statements from the show cause notice.",
+    "quote_source": "court",
+    "para": 7
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Since there was no application of mind, the impugned assessment order is not sustainable.",
+    "quote_source": "court",
+    "para": 7
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "He also submitted that no personal hearing was provided to the petitioner.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Hence, the impugned assessment order dated 23.08.2023 is quashed and the matter is remanded for re-consideration.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "UNSURE: GST assessment and s.74(5) in order extract, but demand proceeding not expressly identified as s.73/74.",
+  "seconds": null,
+  "saved_at": "2026-10-30T21:02:45"
+ }
+}
