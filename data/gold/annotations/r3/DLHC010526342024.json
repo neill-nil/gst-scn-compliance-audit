@@ -1,0 +1,152 @@
+{
+ "cnr": "DLHC010526342024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "The petitioner is, essentially, aggrieved by the Show Cause Notice dated 01.08.2024 (hereafter the impugned SCN) issued by the adjudicating authority under Section 74 of the Central Goods and Services Tax Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-08-01",
+     "quote": "The petitioner is, essentially, aggrieved by the Show Cause Notice dated 01.08.2024 (hereafter the impugned SCN) issued by the adjudicating authority under Section 74 of the Central Goods and Services Tax Act, 2017 (hereafter the CGST Act) and the Delhi Goods and Services Tax Act, 2017 (hereafter the DGST Act) read with Section 20 of the Integrated Goods and Services Tax Act, 2017 (hereafter the IGST Act).",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2019-12-19",
+    "type": "other",
+    "quote": "On 19.12.2019 the petitioner’s case was referred to Anti-Evasion Wing to examine and investigate the petition’s refund.",
+    "para": 3
+   },
+   {
+    "date": "2021-04-27",
+    "type": "other",
+    "quote": "Thereafter on 27.04.2021, respondent no.3 issued a notice to the petitioner for conducting the audit for the financial years 2017-18 to 2019-20.",
+    "para": 3
+   },
+   {
+    "date": "2022-04-22",
+    "type": "other",
+    "quote": "In terms of the additional notice dated 22.04.2022, the audit period was extended to cover the financial year 2020-21 as well.",
+    "para": 4
+   },
+   {
+    "date": "2024-07-27",
+    "type": "pre_scn_intimation",
+    "quote": "iii. Issue a writ of certiorari or any other appropriate writ, order or direction in the nature thereof quashing the intimation vide GST DRC- 01A dated 27.07.2024 and demand-cum-show cause notice (GST DRC-01) dated 01.08.2024 issued by Respondent No.3",
+    "para": 1
+   },
+   {
+    "date": "2024-08-01",
+    "type": "scn_issued",
+    "quote": "The petitioner is, essentially, aggrieved by the Show Cause Notice dated 01.08.2024 (hereafter the impugned SCN) issued by the adjudicating authority under Section 74 of the Central Goods and Services Tax Act, 2017",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "repeated audit memos demanded payment without statutory authority",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "The CGST Act / DGST Act does not provide for issuance of the multiple audit memos determining the liability of a tax payer.",
+    "quote_source": "court",
+    "para": 7
+   },
+   {
+    "type": "other_procedural",
+    "note": "audit allegedly continued beyond the s.65(4) time limit",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "It is the petitioner’s case that pursuant to the said notice, an audit was conducted under Section 65 of the CGST Act/the DGST Act much beyond the period as stipulated under Section 65(4) of the CGST Act /the DGST Act.",
+    "quote_source": "argument",
+    "para": 5
+   },
+   {
+    "type": "other_procedural",
+    "note": "s.74 SCN invalid because based on irregular audit memos",
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Any irregularities in issuing the audit memos does not impinge the validity of the impugned SCN.",
+    "quote_source": "court",
+    "para": 10
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The petition is, accordingly, disposed of.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Audit years 2017-18 to 2020-21 are stated, but the SCN demand years are not clearly specified; financial_years left null. Audit s.65(4) timing is not the s.73/74 notice/order limitation category.",
+  "seconds": null,
+  "saved_at": "2026-10-30T21:02:45"
+ }
+}

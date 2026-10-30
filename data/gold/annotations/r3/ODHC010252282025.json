@@ -1,0 +1,133 @@
+{
+ "cnr": "ODHC010252282025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "under Section 74 of the Central Goods and Services Tax Act, 2017 and the Odisha Goods and Services Tax Act, 2017",
+   "para": 3
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "pertaining to the financial year, 2018-19",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2020-11-27",
+     "quote": "show cause notice dated 27th November, 2020",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2022-02-07",
+    "quote": "order dated 7th February, 2022",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2020-11-27",
+    "type": "scn_issued",
+    "quote": "proceeding under Section 74 of the GST Act was initiated by issue of show cause notice dated 27th November, 2020",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "having failed to file reply within the period stipulated therein, the assessment order has been passed",
+    "para": 2
+   },
+   {
+    "date": "2022-02-07",
+    "type": "order_passed",
+    "quote": "the assessment order has been passed whereby a demand in Form GST DRC-07 was issued.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Since there is no fraud element involved in the transactions that are subject matter of assessment, the proceeding under Section 74 of the GST Act is illegal, arbitrary and irrational.",
+    "quote_source": "argument",
+    "para": 3
+   },
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "In view of the aforesaid provision, it is made clear that even though the petitioner has not been communicated with the order physically, but since the same was made available on the common portal, it is deemed to have been served on him.",
+    "quote_source": "court",
+    "para": 9
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "For the reasons assigned in the foregoing paragraphs and discussions made supra, the writ petition, sans merit, stands dismissed; and pending Interlocutory Applications, if any, are also dismissed accordingly.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "",
+  "seconds": null,
+  "saved_at": "2026-10-30T21:02:45"
+ }
+}

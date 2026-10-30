@@ -1,0 +1,151 @@
+{
+ "cnr": "HCMA012917462025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2023-24"
+   ],
+   "quote": "for the tax period Apr 2023- Mar 2024",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-07-26",
+     "quote": "followed by a show cause notice in DRC.01 dated 26.07.2024.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-10-15",
+    "quote": "The petitioner is before this Court against the order dated 15.10.2024",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-07-01",
+    "type": "pre_scn_intimation",
+    "quote": "which was preceded by a notice dated 01.07.2024 in DRC-01A",
+    "para": 3
+   },
+   {
+    "date": "2024-07-22",
+    "type": "reply_filed",
+    "quote": "to which the petitioner replied on 22.07.2024",
+    "para": 3
+   },
+   {
+    "date": "2024-07-26",
+    "type": "scn_issued",
+    "quote": "followed by a show cause notice in DRC.01 dated 26.07.2024.",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "The petitioner failed to file a reply to the show cause notice in DRC-01 dated 26.07.2024",
+    "para": 3
+   },
+   {
+    "date": "2024-10-15",
+    "type": "order_passed",
+    "quote": "the impugned order in Drc-07 has been passed .",
+    "para": 4
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "The impugned order has clearly indicated as to how the Input Tax Credit was denied to the petitioner.",
+    "para": 9
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "It is not open for the petitioner to plead that there was a violation of Principles of Natural Justice, as the petitioner has been put to notice vide reminder dated 16.09.2024 regarding the wrong availing of the Input Tax Credit on the strength of the invoices issued by the aforesaid suppliers namely two persons, Maha Deviki Trading and Indian Traders.",
+    "quote_source": "court",
+    "para": 9
+   },
+   {
+    "type": "demand_beyond_scn",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "It is not open for the petitioner to plead that there was a violation of Principles of Natural Justice, as the petitioner has been put to notice vide reminder dated 16.09.2024 regarding the wrong availing of the Input Tax Credit on the strength of the invoices issued by the aforesaid suppliers namely two persons, Maha Deviki Trading and Indian Traders.",
+    "quote_source": "court",
+    "para": 9
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, this Writ Petition is disposed of with the above observations.",
+   "para": 14
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "UNSURE: FY 2023-24 and DRC-01 demand, but no express s.73/74. Petitioner also argued fake-supplier allegations were absent from DRC-01; court found they were in the reminder.",
+  "seconds": null,
+  "saved_at": "2026-10-30T21:02:51"
+ }
+}

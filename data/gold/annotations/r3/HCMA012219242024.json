@@ -1,0 +1,171 @@
+{
+ "cnr": "HCMA012219242024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "During the relevant period viz., 2020-21, the petitioner filed its return and paid the appropriate taxes.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-06-05",
+     "quote": "The relevant portion of the Show Cause Notice dated 05.06.2024 is extracted hereunder:",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-31",
+    "quote": "along with detailed order in Reference No:33ADXPB2142C1Z1/2020-21 dated 31.08.2024 and quash the same,",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-11-15",
+    "type": "other",
+    "quote": "While so, the petitioner's place of business was inspected on the basis of authorization in terms of Section 67(1) of TNGST Act, 2017 on 15.11.2023.",
+    "para": 2
+   },
+   {
+    "date": "2024-06-05",
+    "type": "scn_issued",
+    "quote": "The relevant portion of the Show Cause Notice dated 05.06.2024 is extracted hereunder:",
+    "para": 4
+   },
+   {
+    "date": "2024-07-03",
+    "type": "reply_filed",
+    "quote": "In response, the petitioner filed its reply on 03.07.2024 wherein it was explained in detail the nature of transaction.",
+    "para": 5
+   },
+   {
+    "date": "2024-07-03",
+    "type": "reply_filed",
+    "quote": "The petitioner submitted its reply dated 03.07.2024 in response to the above proposal inter alia highlighting that the taxable value of supplies which are proposed in the Show Cause Notice comprises of two elements viz., Lorry freight and transport income.",
+    "para": 8
+   },
+   {
+    "date": "2024-08-31",
+    "type": "order_passed",
+    "quote": "along with detailed order in Reference No:33ADXPB2142C1Z1/2020-21 dated 31.08.2024 and quash the same,",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Further verification of 26AS statement revealed that apart from Government Departments, the tax payer has also provided certain services to the following whereby TDS has been deducted under section 194C.",
+    "para": 4
+   },
+   {
+    "type": "reply_point",
+    "quote": "The nature of transaction involved in this case is supply of service by way of giving or renting of vehicles on hire, a means of transportation of goods road to a major player M/s Zinc Foods (P) Ltd., who provides GTA Service falling under tariff heading 9966 or 9973 is NIL rated as per Notification No.12/2017 - Central Tax (Rate) dated 28.06.2017/",
+    "para": 5
+   },
+   {
+    "type": "scn_ground",
+    "quote": "It is noticed that the tax payer has incurred Lorry freight under the expenses schedule of profit, loss account statement for the year 2020-21 as below:",
+    "para": 7
+   },
+   {
+    "type": "reply_point",
+    "quote": "With regard to this defect it is stated that I have paid tax dues of CGST Rs. 1,02,502/- and SGST Rs. 1,02,502/- under RCM along with interest on lorry freight turnover of Rs.41,00,087/- through DRC-03 dated 25.05.2022.",
+    "para": 8
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "For the defect the taxpayer not submitted any relevant documents, hence the taxpayer reply is not accepted.",
+    "para": 8
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On perusal of the impugned order of assessment, this Court is of the view that there is merit in the submission of the learned counsel for the petitioner that the impugned order suffers from non-application of mind inasmuch it merely reiterates the proposal and does not deal with any of the aspects set out in the reply in respect of the above two issues.",
+    "quote_source": "court",
+    "para": 12
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "On perusal of the impugned order of assessment, this Court is of the view that there is merit in the submission of the learned counsel for the petitioner that the impugned order suffers from non-application of mind inasmuch it merely reiterates the proposal and does not deal with any of the aspects set out in the reply in respect of the above two issues.",
+    "quote_source": "court",
+    "para": 12
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the writ petition stands disposed of.",
+   "para": 14
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "UNSURE: FY 2020-21 GST demand and procedural complaint, but s.73/74 not expressly stated.",
+  "seconds": null,
+  "saved_at": "2026-10-30T21:02:45"
+ }
+}
