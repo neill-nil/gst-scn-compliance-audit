@@ -85,4 +85,4 @@ Review: each person checks their own share's drafts.
 - **Quick-check facts.** In the pilot, Flash Lite never got a stated fact wrong, but it sometimes left one empty.
 - **Fix every quote flagged in `checks`.**
 
-A second person double-checks a sample. Instructions and the review tool follow. The decided labelling rules are in [`schema_proposal_v0_1.md`](schema_proposal_v0_1.md) (rules 1–13 and the "Judgement calls" section).
+A second person double-checks a sample. Instructions and the review tool: [`review_guide.md`](review_guide.md). The decided labelling rules are in [`schema_proposal_v0_1.md`](schema_proposal_v0_1.md) (rules 1–13 and the "Judgement calls" section).

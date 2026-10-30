@@ -1,6 +1,6 @@
 # NoticeCheck — team plan (mid submission 31 Oct, final 15 Nov)
 
-**Now (29 Oct): everyone runs their pre-fill share, see [prefill_run.md](prefill_run.md).**
+**Now (30 Oct, mid submission due tonight): everyone reviews their 19 cases by 4 pm, see [review_guide.md](review_guide.md).** Role 4 also finishes their pre-fill share ([prefill_run.md](prefill_run.md)).
 
 **How to use this folder:** read this page, then your own role file. When you work with an AI assistant, give it three files: your role file, [`contracts.md`](contracts.md) (the shared data formats) and [`../../data/README.md`](../../data/README.md).
 
