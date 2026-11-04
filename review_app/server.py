@@ -6,6 +6,7 @@ Your reviews are saved to data/gold/annotations/<reviewer>/<cnr>.json.
 
 Usage: python -m review_app.server            # then pick your reviewer id (r1..r4) on the page
        python -m review_app.server --port 8600
+       python -m review_app.server --queue data/splits/review_queue.csv   # the mid queue
 """
 import argparse
 import csv
@@ -22,7 +23,7 @@ from src.prefill.verify_quotes import ROOT, judgment_paragraphs, norm, quotes_in
 
 DRAFTS = ROOT / "data" / "prefill" / "v1"
 ANNOTATIONS = ROOT / "data" / "gold" / "annotations"
-QUEUE = ROOT / "data" / "splits" / "review_queue.csv"
+QUEUE = ROOT / "data" / "splits" / "review_queue_v2.csv"  # --queue to change
 PAGE = Path(__file__).with_name("index.html")
 
 _paras, _lock = {}, threading.Lock()
@@ -140,7 +141,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--port", type=int, default=8501)
     ap.add_argument("--no-browser", action="store_true")
+    ap.add_argument("--queue", type=Path, default=QUEUE)
     args = ap.parse_args()
+    globals()["QUEUE"] = args.queue.resolve()
     url = f"http://127.0.0.1:{args.port}/"
     server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
     print(f"Review tool running at {url}  (Ctrl+C to stop)")

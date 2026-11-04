@@ -6,7 +6,10 @@ Reads data/gold/annotations/<reviewer>/<cnr>.json (written by the review tool) a
   data/gold/double/first.jsonl     the two versions of each double-reviewed case, for the agreement score:
   data/gold/double/second.jsonl      python -m eval.agreement --a data/gold/double/first.jsonl --b data/gold/double/second.jsonl
   data/gold/out_of_scope.csv       cases reviewers marked out of scope (or adjudication excluded), with the note
-  data/splits/test.txt             the CNRs in records.jsonl
+  data/gold/dev_records.jsonl      reviewed dev cases (tuning only; never reported as results)
+  data/splits/test.txt             the test CNRs in records.jsonl (the held-out court's cases are scored with
+                                   --split heldout instead; they are in records.jsonl too)
+Queues: data/splits/review_queue.csv (mid, all test) and review_queue_v2.csv (column "set": dev/test/heldout).
 Disagreements are settled in data/gold/adjudication.csv (cnr, decision, note): decision "second" uses the
 second reviewer's version, "out_of_scope" or "duplicate" leaves the case out of gold. The agreement files
 always keep both original versions.
@@ -23,6 +26,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 GOLD = ROOT / "data" / "gold"
+QUEUES = ("review_queue.csv", "review_queue_v2.csv")
 
 
 def flat(record: dict, meta: dict, reviewed_by: list[str]) -> dict:
@@ -45,8 +49,15 @@ def write_jsonl(path: Path, rows: list[dict]):
 def main():
     with open(ROOT / "data" / "manifests" / "screened.csv", newline="", encoding="utf-8") as f:
         meta = {r["cnr"]: r for r in csv.DictReader(f)}
-    with open(ROOT / "data" / "splits" / "review_queue.csv", newline="", encoding="utf-8") as f:
-        queue = list(csv.DictReader(f))
+    heldout = {l.strip() for l in (ROOT / "data/splits/heldout.txt").read_text().splitlines() if l.strip()} \
+        if (ROOT / "data/splits/heldout.txt").exists() else set()
+    queue = []
+    for name in QUEUES:
+        path = ROOT / "data" / "splits" / name
+        if path.exists():
+            with open(path, newline="", encoding="utf-8") as f:
+                queue += [{**r, "set": r.get("set") or "test"} for r in csv.DictReader(f)]
+    case_set = {r["cnr"]: ("heldout" if r["cnr"] in heldout and r["set"] == "test" else r["set"]) for r in queue}
 
     adjudication = {}  # cnr -> {"decision": first | second | out_of_scope | duplicate, "note"}
     if (GOLD / "adjudication.csv").exists():
@@ -61,7 +72,7 @@ def main():
         r = reviews.get((reviewer, cnr))
         return r["review"]["status"] if r else "not started"
 
-    gold, first, second, out_of_scope, open_items = [], [], [], [], []
+    gold, dev, first, second, out_of_scope, open_items = [], [], [], [], [], []
     for cnr in dict.fromkeys(r["cnr"] for r in queue):
         who = {r["kind"]: r["reviewer"] for r in queue if r["cnr"] == cnr}
         done = [k for k in ("first", "second") if k in who and status(who[k], cnr) == "reviewed"]
@@ -82,18 +93,22 @@ def main():
                                  "note": f"{decision}: {adjudication[cnr]['note']}"})
             continue
         use = decision if decision in done else done[0]
-        gold.append(flat(reviews[(who[use], cnr)], meta[cnr], reviewed_by))
+        record = flat(reviews[(who[use], cnr)], meta[cnr], reviewed_by)
+        record["annotation"]["set"] = case_set[cnr]
+        (dev if case_set[cnr] == "dev" else gold).append(record)
 
     write_jsonl(GOLD / "records.jsonl", gold)
+    write_jsonl(GOLD / "dev_records.jsonl", dev)
     write_jsonl(GOLD / "double" / "first.jsonl", first)
     write_jsonl(GOLD / "double" / "second.jsonl", second)
     with open(GOLD / "out_of_scope.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["cnr", "reviewer", "note"])
         w.writeheader()
         w.writerows(out_of_scope)
-    (ROOT / "data" / "splits" / "test.txt").write_text("".join(r["cnr"] + "\n" for r in gold), encoding="utf-8")
+    tests = [r["cnr"] for r in gold if r["annotation"]["set"] == "test"]
+    (ROOT / "data" / "splits" / "test.txt").write_text("".join(c + "\n" for c in tests), encoding="utf-8")
 
-    print(f"gold: {len(gold)} cases   double-reviewed: {len(first)}   out of scope: {len(out_of_scope)}   "
+    print(f"gold: {len(tests)} test + {len(gold) - len(tests)} held-out cases, {len(dev)} dev   double-reviewed: {len(first)}   out of scope: {len(out_of_scope)}   "
           f"not finished: {len(open_items)}")
     for r in reviewers_left(queue, status):
         print("  ", r)

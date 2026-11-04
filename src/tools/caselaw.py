@@ -27,7 +27,13 @@ def _ids(name: str) -> set[str]:
 
 @lru_cache(maxsize=1)
 def blocked() -> frozenset[str]:
-    return frozenset().union(*(_ids(n) for n in BLOCKED_SPLITS))
+    queued = set()
+    for name in ("review_queue.csv", "review_queue_v2.csv"):  # cases being reviewed for dev, test or held-out
+        path = SPLITS / name
+        if path.exists():
+            with open(path, newline="", encoding="utf-8") as f:
+                queued |= {r["cnr"] for r in csv.DictReader(f)}
+    return frozenset(queued).union(*(_ids(n) for n in BLOCKED_SPLITS))
 
 
 def build_cache() -> int:

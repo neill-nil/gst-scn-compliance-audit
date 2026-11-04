@@ -2,6 +2,7 @@
 
 One function, `complete`, talks to any OpenAI-compatible chat endpoint:
   - "gemini": Google's Gemini API through its OpenAI-compatible endpoint (free tier, key in .env)
+  - "groq":   Groq's free API (a non-Gemini frontier model for baseline B2)
   - "local":  a local or Kaggle server (vLLM or Ollama) serving Qwen3 / Gemma 3
 
 Features: JSON output validated against a schema (one corrective retry), retry with backoff on rate
@@ -39,6 +40,12 @@ BACKENDS = {
         "api_key": ("GEMINI_API_KEY", None),
         "model": ("GEMINI_MODEL", None),
         "rpm": ("GEMINI_RPM", "8"),
+    },
+    "groq": {  # second frontier family for B2 (decision D7); free tier, OpenAI-compatible
+        "base_url": ("GROQ_BASE_URL", "https://api.groq.com/openai/v1"),
+        "api_key": ("GROQ_API_KEY", None),
+        "model": ("GROQ_MODEL", "llama-3.3-70b-versatile"),
+        "rpm": ("GROQ_RPM", "20"),
     },
     "local": {
         "base_url": ("LOCAL_BASE_URL", "http://localhost:8000/v1"),

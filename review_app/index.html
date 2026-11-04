@@ -74,7 +74,7 @@ async function loadQueue() {
   $("#count").textContent = `${done}/${rows.length} done`;
   $("#queue").innerHTML = rows.map(r => `
     <button class="q ${data && data.meta.cnr === r.cnr ? "cur" : ""}" onclick="openCase('${r.cnr}')">
-      ${r.order}. ${r.cnr}${r.kind === "second" ? '<span class="tag second">2nd review</span>' : ""}
+      ${r.order}. ${r.cnr}${r.set && r.set !== "test" ? `<span class="tag">${r.set}</span>` : ""}${r.kind === "second" ? '<span class="tag second">2nd review, no AI</span>' : ""}
       ${r.done ? `<span class="tag ${r.done === "reviewed" ? "done" : r.done}">${r.done.replace(/_/g, " ")}</span>` : ""}
       <small>${esc(r.court_name)} · ${r.pages} pages</small></button>`).join("");
 }

@@ -7,16 +7,7 @@ These cards are a design decision (final_plan.md D1-D3); tune them on the dev sp
 """
 from src.noticecheck.record import contents, events, fact, has
 
-# Defect type -> provision (strict scoring table, decision D3; to be checked by role 3 against the Act).
-PROVISION = {
-    "hearing_75_4": "CGST Act s.75(4)", "adjournment_75_5": "CGST Act s.75(5)",
-    "reply_not_considered": "CGST Act s.75(6)", "non_speaking_order": "CGST Act s.75(6)",
-    "demand_beyond_scn": "CGST Act s.75(7)", "service_169": "CGST Act s.169(1)",
-    "signature": "CGST Rules r.26(3)", "summary_only": "CGST Rules r.142(1)",
-    "limitation": None,  # s.73(10) or s.74(10), from the record's provision
-    "extension_notification_validity": "CGST Act s.168A", "consolidated_scn": None,  # s.73(1) / s.74(1)
-    "section_74_ingredients": "CGST Act s.74(1)", "other_procedural": None,
-}
+from src.common.provisions import PROVISION, provision_for  # noqa: E402  (shared with the strict score)
 MODEL_CARDS = {
     "reply_not_considered": {
         "needs": "a reply that was filed, and what the order says",
@@ -42,13 +33,6 @@ MODEL_CARDS = {
 }
 CONTESTED = {"extension_notification_validity", "consolidated_scn"}  # D2: always contested when the point arises
 TYPES = list(PROVISION)
-
-
-def provision_for(defect: str, record: dict) -> str | None:
-    if defect in ("limitation", "consolidated_scn"):
-        p = fact(record, "provision")[0]
-        return f"CGST Act s.{p}({'10' if defect == 'limitation' else '1'})" if p in ("73", "74") else None
-    return PROVISION[defect]
 
 
 def finding(defect, verdict, record, evidence=(), missing=(), confidence=0.9, note=None):

@@ -1,7 +1,7 @@
 """The two model calls the baselines import, as thin wrappers over src.common.llm.complete.
 
     generate(prompt, model, seed)    -> B1: the local Qwen3 server (LOCAL_BASE_URL, e.g. Ollama or vLLM)
-    generate_frontier(prompt, model) -> B2: the Gemini API (GEMINI_API_KEY)
+    generate_frontier(prompt, model) -> B2: the Gemini API (GEMINI_API_KEY), or Groq with model "groq:<name>"
 
 Both return (text, {"tokens_in", "tokens_out"}). Every call is cached and logged by complete().
 """
@@ -25,6 +25,9 @@ def generate(prompt: str, model: str, seed: int) -> tuple[str, dict]:
 
 
 def generate_frontier(prompt: str, model: str) -> tuple[str, dict]:
-    out = complete("gemini", [{"role": "user", "content": prompt}], temperature=0.0, max_tokens=4096,
-                   model=None if model == "frontier-tbd" else model, tag="b2")
+    """model "frontier-tbd" = the Gemini model in .env; "groq:<name>" = a model on Groq (e.g. groq:llama-3.3-70b-versatile)."""
+    backend, name = ("groq", model.split(":", 1)[1]) if model.startswith("groq:") else \
+        ("gemini", None if model == "frontier-tbd" else model)
+    out = complete(backend, [{"role": "user", "content": prompt}], temperature=0.0, max_tokens=4096,
+                   model=name, tag="b2")
     return _strip_think(out["text"]), {"tokens_in": out["tokens_in"], "tokens_out": out["tokens_out"]}

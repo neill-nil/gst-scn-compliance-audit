@@ -153,8 +153,11 @@ def normalize_provision(s: str | None) -> str | None:
 # ---------------------------------------------------------------------------
 
 def gold_defects_by_type(record: dict) -> dict[str, dict]:
+    from src.common.provisions import provision_for
     by_type = {}
     for entry in record.get("defects_argued", []):
+        # Gold labels carry no provision; the strict score uses the fixed defect -> provision table.
+        entry = {**entry, "provision": entry.get("provision") or provision_for(entry["type"], record)}
         by_type.setdefault(entry["type"], entry)  # first entry wins; types should be unique per case
     return by_type
 
@@ -180,7 +183,8 @@ def classify(gold_entry: dict | None, pred: dict | None, strict: bool, unargued_
         if not is_defect_pred:
             return "miss"
         if strict and gold_entry is not None:
-            if normalize_provision(pred.get("provision")) != normalize_provision(gold_entry.get("provision")):
+            from src.common.provisions import provisions_match
+            if not provisions_match(pred.get("provision"), gold_entry.get("provision")):
                 return "wrong_provision"
         return "tp"
     else:  # defect_rejected (real or unargued-as-rejected)
@@ -201,6 +205,8 @@ def score_defects(gold: dict[str, dict], outputs: dict[tuple[str, str], dict], v
         for t in DEFECT_TYPES:
             cat = classify(gold_map.get(t), pred_map.get(t), strict, unargued_as_rejected)
             counts[t][cat] += 1
+            if t not in gold_map and (pred_map.get(t) or {}).get("verdict") == "defect":
+                counts[t]["unargued_flag"] += 1  # flagged but nobody argued it: cannot be checked against a court
 
     def summarize(types: list[str]) -> dict:
         tp = sum(counts[t]["tp"] for t in types)
@@ -216,6 +222,7 @@ def score_defects(gold: dict[str, dict], outputs: dict[tuple[str, str], dict], v
         fa_denom = fa + tn
         return {
             "tp": tp, "false_alarm": fa, "wrong_provision": wp, "miss": miss, "true_negative": tn,
+            "flags_on_unargued": sum(counts[t]["unargued_flag"] for t in types),
             "precision": precision, "recall": recall, "f1": f1,
             "false_alarm_rate": fa / fa_denom if fa_denom else None,
         }

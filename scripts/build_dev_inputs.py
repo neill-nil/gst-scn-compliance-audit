@@ -1,8 +1,8 @@
 """Checker inputs for the dev split, for building and tuning NoticeCheck without touching test cases.
 
-For each dev case it takes the best record available: a human-reviewed one from data/gold/annotations/dev/
-(once the dev queue is reviewed), else the role-1 pilot record (data/pilot_drafts/role1/v0_1/), else the
-Gemini draft (data/prefill/v1/). It flattens it like scripts/build_gold.py and builds the views with
+For each dev case it takes the best record available: a human-reviewed one from data/gold/dev_records.jsonl
+(built by scripts/build_gold.py from the dev reviews in review_queue_v2.csv), else the role-1 pilot record
+(data/pilot_drafts/role1/v0_1/), else the Gemini draft (data/prefill/v1/). It flattens it like scripts/build_gold.py and builds the views with
 src/baselines/inputs.py. It also writes the dev answer key (data/interim/dev/records.jsonl) for scoring.
 Drafts are unreviewed, so dev scores are only for spotting problems, never for reporting.
 
@@ -19,8 +19,7 @@ OUT = ROOT / "data" / "interim" / "dev"
 
 
 def best_record(cnr: str):
-    for path, source in ((ROOT / "data/gold/annotations/dev" / f"{cnr}.json", "reviewed"),
-                         (ROOT / "data/pilot_drafts/role1/v0_1" / f"{cnr}.json", "pilot_reviewed"),
+    for path, source in ((ROOT / "data/pilot_drafts/role1/v0_1" / f"{cnr}.json", "pilot_reviewed"),
                          (ROOT / "data/prefill/v1" / f"{cnr}.json", "draft")):
         if path.exists():
             return json.loads(path.read_text(encoding="utf-8")), source
@@ -32,8 +31,16 @@ def main():
         meta = {r["cnr"]: r for r in csv.DictReader(f)}
     dev = [l.strip() for l in (ROOT / "data/splits/dev.txt").read_text().splitlines() if l.strip()]
     OUT.mkdir(parents=True, exist_ok=True)
+    reviewed = {}
+    if (ROOT / "data/gold/dev_records.jsonl").exists():
+        with open(ROOT / "data/gold/dev_records.jsonl", encoding="utf-8") as f:
+            reviewed = {r["cnr"]: r for r in map(json.loads, f)}
     records, sources = [], {}
     for cnr in dev:
+        if cnr in reviewed:
+            records.append({**reviewed[cnr], "annotation": {**reviewed[cnr]["annotation"], "source": "reviewed"}})
+            sources["reviewed"] = sources.get("reviewed", 0) + 1
+            continue
         rec, source = best_record(cnr)
         if rec is None or not rec.get("facts") or not rec.get("findings"):
             continue
