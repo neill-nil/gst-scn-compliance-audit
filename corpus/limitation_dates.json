@@ -1,0 +1,31 @@
+{
+  "_about": "Inputs to limitation_check. Every date names its official source. 'verified' means the date was read from that source's official PDF (hash in corpus/SOURCES.md); unverified dates must be checked before results depending on them are reported.",
+  "annual_return_due": {
+    "2017-18": {"date": "2020-02-05", "verified": true, "source": "CBIC Instruction 02/2021-22 (GST-Investigation), para 3: 05th & 07th February, 2020 (Notification no. 06/2020-Central Tax dated 03.02.2020); 07.02.2020 applies to some States, 05.02.2020 used here"},
+    "2018-19": {"date": "2020-12-31", "verified": true, "source": "CBIC Instruction 02/2021-22 (GST-Investigation), para 3: 31st December, 2020 (Notification no. 80/2020-Central Tax dated 28.10.2020)"},
+    "2019-20": {"date": "2021-03-31", "verified": true, "source": "CBIC Instruction 02/2021-22 (GST-Investigation), para 3: 31st March, 2021 (Notification no. 04/2021-Central Tax dated 28.02.2021)"},
+    "2020-21": {"date": "2022-02-28", "verified": false, "source": "Notification no. 40/2021-Central Tax dated 29.12.2021 (inserts rule 80(1A)); official PDF not yet retrieved (cbic.gov.in TLS certificate failed); date taken from secondary reports. Statutory default would be 2021-12-31 (rule 80(1))"},
+    "2021-22": {"date": "2022-12-31", "verified": true, "source": "CGST Rules r.80(1): on or before the thirty-first day of December following the end of the financial year (consolidation as amended to 01.01.2022); no extension notification checked"},
+    "2022-23": {"date": "2023-12-31", "verified": true, "source": "CGST Rules r.80(1) default; no extension notification checked"},
+    "2023-24": {"date": "2024-12-31", "verified": true, "source": "CGST Rules r.80(1) default; no extension notification checked"}
+  },
+  "section_168A_order_extensions_s73": {
+    "_note": "Extensions of the s.73(10) time limit for orders under s.73(9) (tax not paid / short paid / ITC wrongly availed). The latest notification for a year wins. They do not apply to s.74. Their validity is challenged before several High Courts and the Supreme Court (SLP 4240/2025), so any answer that depends on them is contested.",
+    "2017-18": [
+      {"until": "2023-09-30", "notification": "13/2022-Central Tax dated 05.07.2022, para (i)", "verified": true},
+      {"until": "2023-12-31", "notification": "09/2023-Central Tax dated 31.03.2023, para (i)", "verified": true}
+    ],
+    "2018-19": [
+      {"until": "2024-03-31", "notification": "09/2023-Central Tax dated 31.03.2023, para (ii)", "verified": true},
+      {"until": "2024-04-30", "notification": "56/2023-Central Tax dated 28.12.2023, para (i)", "verified": true}
+    ],
+    "2019-20": [
+      {"until": "2024-06-30", "notification": "09/2023-Central Tax dated 31.03.2023, para (iii)", "verified": true},
+      {"until": "2024-08-31", "notification": "56/2023-Central Tax dated 28.12.2023, para (ii)", "verified": true}
+    ]
+  },
+  "periods": {
+    "73": {"order_years": 3, "scn_months_before_order_limit": 3, "source": "CGST Act s.73(10) and s.73(2)"},
+    "74": {"order_years": 5, "scn_months_before_order_limit": 6, "source": "CGST Act s.74(10) and s.74(2)"}
+  }
+}

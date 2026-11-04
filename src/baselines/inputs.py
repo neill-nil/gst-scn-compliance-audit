@@ -58,7 +58,7 @@ def _first_notice_date(record: dict) -> str | None:
 def strip_gold_only(record: dict, keep_fact_fields: set[str]) -> dict:
     """METADATA_FIELDS + whichever fact fields the view allows; never defects_argued/outcome/annotation."""
     out = {k: v for k, v in record.items() if k in METADATA_FIELDS}
-    for k in keep_fact_fields:
+    for k in sorted(keep_fact_fields):  # sorted: a set's order changes between runs, and so would the prompt
         if k in record:
             out[k] = record[k]
     assert not (GOLD_ONLY_FIELDS & out.keys()), "leak: gold-only field survived stripping"

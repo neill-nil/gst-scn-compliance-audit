@@ -43,3 +43,8 @@ docs/mid_report/
 BleedTokens.pdf
 LMA_Group_Project_v1.pdf
 b1_results.zip
+
+# Official statute PDFs (re-download from corpus/SOURCES.md)
+corpus/source_files/
+runs/sandbox_outbox/
+runs/dev_*/
