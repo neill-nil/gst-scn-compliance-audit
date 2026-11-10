@@ -94,6 +94,11 @@ def main():
         pos = min(len(lists[r]), n_dev + 1 + 3 * sum(1 for x in lists[r] if x[0] == "second"))
         lists[r].insert(pos, ("second", "test", c))
 
+    # Review order (11 Nov, 4 days left): held-out first, then test (second reviews spread through it), dev last
+    # and optional (NoticeCheck can be tuned on drafts if dev reviews do not get done). Assignments are unchanged.
+    priority = {"heldout": 0, "test": 1, "dev": 2}
+    lists = {r: sorted(items, key=lambda x: priority[x[1]]) for r, items in lists.items()}
+
     rows = [{"reviewer": r, "order": n, "cnr": c, "kind": kind, "set": s, "court_name": meta[c]["court_name"],
              "pages": meta[c]["pages"], "title": meta[c]["title"]}
             for r in names for n, (kind, s, c) in enumerate(lists[r], 1)]
@@ -105,7 +110,7 @@ def main():
     print(f"dev {len(dev)}, test {len(test)}, heldout {len(held)}, second reviews {DOUBLE} -> {path}")
     for r in names:
         mine = [x for x in rows if x["reviewer"] == r]
-        print(f"  {r}: {len(mine)} reviews ({sum(x['set'] == 'dev' for x in mine)} dev first)")
+        print(f"  {r}: {len(mine)} reviews ({sum(x['set'] == 'dev' for x in mine)} dev, last)")
 
 
 if __name__ == "__main__":
