@@ -40,6 +40,11 @@ Exactly as in round 1. Read [`review_guide.md`](review_guide.md), sections "Each
 3. **Outcome**, then a **quick check of the facts** (fix red quotes).
 4. **Save as reviewed.** If unsure, start the Notes with `UNSURE:`; Neill decides.
 
+Rules added in round 2 (from reviewers' questions):
+- **Complaints are only the petitioner's complaints about the department's procedure.** The taxpayer's story about the tax itself (merits) is not a card. Nor is the judge or the department criticising the petitioner (delay, "afterthought").
+- **"Extended period of limitation"** is the longer 5-year time limit that only s.74 allows, and only when there is fraud, wilful misstatement or suppression. "Invoking the extended period is bad in law" means s.74 was used without fraud: type **`section_74_ingredients`**. Use **`limitation`** only when the argument is that the notice or order came after the time limit (counting dates). Use both only if both are argued and the court deals with dates too.
+- **Article 226/227** only says the case is a writ petition. Judge scope by the GST proceeding underneath (s.73/74, DRC-01/DRC-07).
+
 Two reminders from round 1:
 - "Sent back to the officer" is **not** the same as "defect found". Remands by consent, or for "one more opportunity" / "in the interest of justice", are **not decided**.
 - If a card's quote is the lawyer's argument, look for the court's answer to that argument a few paragraphs later.
