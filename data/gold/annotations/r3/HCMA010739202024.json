@@ -135,7 +135,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "UNSURE: Inspection reply ignored was argued; court grants conditional opportunity despite taxpayer missing SCN response/hearing, without explicit fault finding. Retain not_decided, flag adjudication. Added actual inspection-reply date. Section 73/74 is not stated, so provision remains null.",
+  "notes": "UNSURE: Inspection reply ignored was argued; court grants conditional opportunity despite taxpayer missing SCN response/hearing, without explicit fault finding. Retain not_decided, flag adjudication. Added actual inspection-reply date. Section 73/74 is not stated, so provision remains null. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

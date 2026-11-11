@@ -138,7 +138,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Service defect and hearing-before-reply defect explicitly found in 7-8. Retained two findings and remand. Specific hearing/reply dates not given; left null. Appeal-condonation discussion is consequence of the same service defect, not an extra demand-stage ground.",
+  "notes": "Service defect and hearing-before-reply defect explicitly found in 7-8. Retained two findings and remand. Specific hearing/reply dates not given; left null. Appeal-condonation discussion is consequence of the same service defect, not an extra demand-stage ground. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

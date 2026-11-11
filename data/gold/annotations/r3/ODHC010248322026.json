@@ -163,7 +163,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "All three findings are explicit in 6.1-6.3: no hearing, ignored reply, no reasons for discarding it. SCN, reply, original assessment and rectification dates are supported; no hearing date inferred from demand for a hearing.",
+  "notes": "All three findings are explicit in 6.1-6.3: no hearing, ignored reply, no reasons for discarding it. SCN, reply, original assessment and rectification dates are supported; no hearing date inferred from demand for a hearing. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

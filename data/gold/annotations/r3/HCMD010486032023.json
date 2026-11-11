@@ -158,7 +158,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Personal hearing/cross-examination requests unresolved; court declines factual review and grants appeal liberty. DRC-01 is mentioned without date, so added an unknown-date notice instead of empty notices. Removed duplicate 4Feb reply event and corrected paragraph 3.1 references; no section73/74 inferred.",
+  "notes": "Personal hearing/cross-examination requests unresolved; court declines factual review and grants appeal liberty. DRC-01 is mentioned without date, so added an unknown-date notice instead of empty notices. Removed duplicate 4Feb reply event and corrected paragraph 3.1 references; no section73/74 inferred. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

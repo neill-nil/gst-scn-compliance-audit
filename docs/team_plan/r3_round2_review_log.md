@@ -1,6 +1,6 @@
 # R3 round-2 full re-audit
 
-This replaces the earlier provisional log. All **32 primary assignments** were re-audited: **19 reviewed, 9 awaiting adjudication, 4 out of scope**. The seven second-review assignments were subsequently reviewed; this pass is not eligible for independent reviewer-agreement scoring.
+This replaces the earlier provisional log. The original **32 primary assignments** were re-audited with AI assistance: **19 reviewed, 9 awaiting adjudication, 4 out of scope**. The seven second-review assignments were subsequently reviewed; this pass is not eligible for independent reviewer-agreement scoring.
 
 The nine `UNSURE:` records use `needs_fix` so the current gold builder does not silently include provisional choices. Their source audit is complete; the remaining task is Neill’s decision on the specific question below. No adjudication message has been sent.
 
