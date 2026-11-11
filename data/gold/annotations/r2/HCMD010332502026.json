@@ -1,0 +1,157 @@
+{
+ "cnr": "HCMD010332502026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "The impugned orders are passed under Section 74 of the TN GST Act, 2017.",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2020-21"
+   ],
+   "quote": "for the assessment year 2018-2019 and 2020-2021",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-03-28",
+     "quote": "Show cause notices were issued on the petitioner on 28.03.2025 alleging that there is turnover difference between GSTR-3B and the profit and loss account as submitted by the petitioner in Form 26AS to the income tax authorities.",
+     "para": 0
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-12-03",
+    "quote": "The impugned orders dated 03.12.2025 shall stand set aside.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-03-27",
+    "type": "other",
+    "quote": "The show cause notice further states that the taxpayer paid the pending tax due of CGST Rs.16,22,731/- and SGST of Rs.16,22,731/- vide DRC-03 dated 27.03.2025.",
+    "para": 0
+   },
+   {
+    "date": "2025-03-28",
+    "type": "scn_issued",
+    "quote": "Show cause notices were issued on the petitioner on 28.03.2025 alleging that there is turnover difference between GSTR-3B and the profit and loss account as submitted by the petitioner in Form 26AS to the income tax authorities.",
+    "para": 0
+   },
+   {
+    "date": null,
+    "type": "reply_filed",
+    "quote": "The petitioner submitted a detailed reply explaining the circumstances in which the tax was not paid at the earliest point of time.",
+    "para": 0
+   },
+   {
+    "date": "2025-12-03",
+    "type": "order_passed",
+    "quote": "The impugned orders dated 03.12.2025 shall stand set aside.",
+    "para": 0
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "Show cause notices were issued on the petitioner on 28.03.2025 alleging that there is turnover difference between GSTR-3B and the profit and loss account as submitted by the petitioner in Form 26AS to the income tax authorities.",
+    "para": 0
+   },
+   {
+    "type": "scn_ground",
+    "quote": "The show cause notice further states that the taxpayer paid the pending tax due of CGST Rs.16,22,731/- and SGST of Rs.16,22,731/- vide DRC-03 dated 27.03.2025.",
+    "para": 0
+   },
+   {
+    "type": "scn_ground",
+    "quote": "Therefore, the notices were issued, for the belated payment as also for the payment of penalty under Section 74 of the TNGST Act.",
+    "para": 0
+   },
+   {
+    "type": "scn_ground",
+    "quote": "This apart, show cause notices were also issued with reference to non filing of GSTR-9 and GSTR-9C imposing penalties amount of Rs.10,000/- each for CGST and SCST.",
+    "para": 0
+   },
+   {
+    "type": "reply_point",
+    "quote": "The petitioner submitted a detailed reply explaining the circumstances in which the tax was not paid at the earliest point of time.",
+    "para": 0
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In such a factual scenario, I am of the view that since the show cause notice or the impugned order that did not expressly record the intention to evade tax as also willful misstatement or suppression of facts, the present proceedings as such cannot grand.",
+    "quote_source": "court",
+    "para": 0
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "These writ petitions are ordered on the following terms: (i)The impugned orders dated 03.12.2025 shall stand set aside.",
+   "para": 0
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r2",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "UNSURE: Judgment gives inconsistent dates for the impugned orders: prayer/final relief 03.12.2025, opening 13.12.2025, and one narrative sentence 03.02.2025 (before the SCNs). Used 03.12.2025 from operative relief. It mentions plural SCNs without clearly distinguishing their count.",
+  "seconds": null,
+  "saved_at": "2026-11-12T00:31:17"
+ }
+}
