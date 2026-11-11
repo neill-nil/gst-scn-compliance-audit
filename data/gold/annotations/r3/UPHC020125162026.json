@@ -1,0 +1,77 @@
+{
+ "cnr": "UPHC020125162026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "order dated 29.09.2025 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2025-09-29",
+    "quote": "order dated 29.09.2025 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-02-10",
+    "type": "appeal_dismissed",
+    "quote": "as well as the order dated 10.02.2025 whereby the appeal was dismissed as being beyond limitation.",
+    "para": 2
+   },
+   {
+    "date": "2025-09-29",
+    "type": "order_passed",
+    "quote": "order dated 29.09.2025 passed under Section 73 of the U.P. Goods and Services Tax Act, 2017",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Since the aforesaid dictum is applicable in the present facts and circumstances, accordingly, the impugned orders cannot be sustained and the orders dated 29.09.2025 & 10.02.2025 are accordingly quashed.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "Matter is remanded to the assessing authority to pass fresh order after giving an opportunity of hearing to the petitioner.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "needs_fix",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "UNSURE: Hearing defect supported by the State admission and this court’s express application of Mahaveer Trading; allowed and remanded. Dates and section taken from this petitioner’s paragraph 2, not the quoted precedent. Notice dates and financial years are unstated. Source itself dates the appeal 10 February 2025 before the assessment of 29 September 2025; retained the printed dates without inventing a correction. Chronology requires adjudication. AI-assisted re-audit; full extracted judgment and populated fields checked.",
+  "seconds": null
+ }
+}

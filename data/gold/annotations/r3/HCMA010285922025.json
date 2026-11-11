@@ -1,0 +1,123 @@
+{
+ "cnr": "HCMA010285922025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "the impugned order in GSTIN: 33AAHFV3417D1ZI/2019-20 dated 13.08.2024 passed by the 2nd respondent",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-02-13",
+     "quote": "the notice in Form GST DRC-01 was issued by the respondents on 13.02.2024",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-13",
+    "quote": "the impugned order in GSTIN: 33AAHFV3417D1ZI/2019-20 dated 13.08.2024 passed by the 2nd respondent",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-02-13",
+    "type": "scn_issued",
+    "quote": "the notice in Form GST DRC-01 was issued by the respondents on 13.02.2024",
+    "para": 2
+   },
+   {
+    "date": "2024-05-08",
+    "type": "reply_filed",
+    "quote": "the reply, along with all the relevant documents, were filed by the petitioner on 08.05.2024",
+    "para": 2
+   },
+   {
+    "date": "2024-08-13",
+    "type": "order_passed",
+    "quote": "the impugned order in GSTIN: 33AAHFV3417D1ZI/2019-20 dated 13.08.2024 passed by the 2nd respondent",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In this case, it is clear that the reply was filed by the petitioner, along with all the relevant documents, however, the said reply was not considered by the Assessing Officer while passing the impugned assessment order, which is a clear violation of principles of natural justice.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, this writ petition is disposed of.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "second",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Court expressly found reply and documents filed 8 May 2024 were ignored in paragraph 5; order set aside and remanded. Later direction to schedule hearing is remedy, not separate finding of an earlier hearing defect. Removed argument paraphrase from order contents; provision not stated.",
+  "seconds": null
+ }
+}

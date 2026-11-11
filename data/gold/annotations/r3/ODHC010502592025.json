@@ -1,0 +1,97 @@
+{
+ "cnr": "ODHC010502592025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2024-07-04",
+    "quote": "Order-in-Original dated 4th July, 2024",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-04-07",
+    "type": "other",
+    "quote": "a letter vide C.No. IV (38) 510/TPD/UN- REGD/DGARM/RKL-I/2021/1222-1260 dated 07.04.2021 by the Superintendent, CGST and Central Excise, Rourkela-I Division, Rourkela",
+    "para": 4
+   },
+   {
+    "date": "2021-04-16",
+    "type": "other",
+    "quote": "reminder letter bearing C.No.C.NO.IV(38)510/TPD/UN-REGD/ DGARM/RKL-I/2021/1397-1436 dated 16.04.2021 was also issued.",
+    "para": 4
+   },
+   {
+    "date": "2021-04-23",
+    "type": "scn_issued",
+    "quote": "Demand-cum-Show-cause notices dated 23rd April, 2021 and 30th June, 2021 vide Annexure-4",
+    "para": 1
+   },
+   {
+    "date": "2021-06-30",
+    "type": "scn_issued",
+    "quote": "Demand-cum-Show-cause notices dated 23rd April, 2021 and 30th June, 2021 vide Annexure-4",
+    "para": 1
+   },
+   {
+    "date": "2024-07-04",
+    "type": "order_passed",
+    "quote": "Order-in-Original dated 4th July, 2024",
+    "para": 1
+   },
+   {
+    "date": "2025-06-23",
+    "type": "rectification_rejected",
+    "quote": "order dated 23rd June, 2025 rejecting the petition for rectification",
+    "para": 1
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "Therefore, in order to protect the government revenue, it is imperative on part of this office to raise the impugned Service Tax demand upon the Noticee under Section 73(1) of the Finance Act, 1994.",
+    "para": 4
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the aforesaid observations and directions, this writ petition is disposed of and pending interlocutory application(s), if any, is disposed of accordingly, but in the circumstances, there shall be no order as to costs.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "out_of_scope",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Scope verified from opening order and operative relief: Finance Act1994 service tax for pre-GST periods. Earlier note said only FY2015-16; opening prayer covers FY2015-16 and 2016-17. GST registration is background. AI-assisted scope re-audit; excluded records are not gold labels.",
+  "seconds": null
+ }
+}

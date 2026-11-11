@@ -1,0 +1,117 @@
+{
+ "cnr": "KAHC010434032025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The petitioner is before this court calling in question a show cause notice dated 11.05.2023 issued by the respondent under Section 73(1) of the Goods and Services Tax Act, 2017 ('the Act' for short) and all consequential orders that are passed.",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "An ASMT-10 notice is issued to the petitioner for financial year 2017-2018.",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-05-11",
+     "quote": "The respondent then issues a show cause notice on 11.05.2023 and on 25.08.2023 passes the impugned order without indicating the date and the proceedings which led to passing of the impugned order on certain tax demand under Section 73(9) of the Act.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-08-25",
+    "quote": "The respondent then issues a show cause notice on 11.05.2023 and on 25.08.2023 passes the impugned order without indicating the date and the proceedings which led to passing of the impugned order on certain tax demand under Section 73(9) of the Act.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-05-11",
+    "type": "scn_issued",
+    "quote": "The respondent then issues a show cause notice on 11.05.2023 and on 25.08.2023 passes the impugned order without indicating the date and the proceedings which led to passing of the impugned order on certain tax demand under Section 73(9) of the Act.",
+    "para": 3
+   },
+   {
+    "date": "2023-08-25",
+    "type": "order_passed",
+    "quote": "The respondent then issues a show cause notice on 11.05.2023 and on 25.08.2023 passes the impugned order without indicating the date and the proceedings which led to passing of the impugned order on certain tax demand under Section 73(9) of the Act.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "The learned counsel appearing for the respondents is not in a position to dispute the fact that the petitioner was not afforded an opportunity before passing of the order, as it is admittedly ex-parte.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": true,
+   "quote": "The matter is remitted back to the hands of respondent No.2 - The Commercial Tax Officer for proceedings afresh on hearing the petitioner.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "No opportunity conceded in 5 and adopted in 6; hearing defect found. Remand expressly ordered in 7. Removed undated event and corrected opening paragraph. AI-assisted re-audit; full extracted judgment and populated fields checked.",
+  "seconds": null
+ }
+}

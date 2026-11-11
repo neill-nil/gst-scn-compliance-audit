@@ -1,0 +1,176 @@
+{
+ "cnr": "DLHC010792392025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19"
+   ],
+   "quote": "Vide the impugned SCNs the demand raised against the Petitioner for the Financial Years 2017-18 and 2018-19 is as under:",
+   "para": 4
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-31",
+     "quote": "challenging the impugned Show Cause Notices dated 31st May, 2024 and 26th September, 2023 (hereinafter, ‘impugned SCNs’) and the consequent orders dated 01st August, 2024 and 20th December, 2023",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   },
+   {
+    "date": {
+     "value": "2023-09-26",
+     "quote": "challenging the impugned Show Cause Notices dated 31st May, 2024 and 26th September, 2023 (hereinafter, ‘impugned SCNs’) and the consequent orders dated 01st August, 2024 and 20th December, 2023",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-01",
+    "quote": "challenging the impugned Show Cause Notices dated 31st May, 2024 and 26th September, 2023 (hereinafter, ‘impugned SCNs’) and the consequent orders dated 01st August, 2024 and 20th December, 2023",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-09-26",
+    "type": "scn_issued",
+    "quote": "challenging the impugned Show Cause Notices dated 31st May, 2024 and 26th September, 2023 (hereinafter, ‘impugned SCNs’) and the consequent orders dated 01st August, 2024 and 20th December, 2023",
+    "para": 3
+   },
+   {
+    "date": "2023-12-20",
+    "type": "order_passed",
+    "quote": "challenging the impugned Show Cause Notices dated 31st May, 2024 and 26th September, 2023 (hereinafter, ‘impugned SCNs’) and the consequent orders dated 01st August, 2024 and 20th December, 2023",
+    "para": 3
+   },
+   {
+    "date": "2024-05-31",
+    "type": "scn_issued",
+    "quote": "challenging the impugned Show Cause Notices dated 31st May, 2024 and 26th September, 2023 (hereinafter, ‘impugned SCNs’) and the consequent orders dated 01st August, 2024 and 20th December, 2023",
+    "para": 3
+   },
+   {
+    "date": "2024-08-01",
+    "type": "order_passed",
+    "quote": "challenging the impugned Show Cause Notices dated 31st May, 2024 and 26th September, 2023 (hereinafter, ‘impugned SCNs’) and the consequent orders dated 01st August, 2024 and 20th December, 2023",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "However, it is made clear that the issue in respect of the validity of the impugned notifications is left open.",
+    "quote_source": "court",
+    "para": 19
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Under such circumstances, considering the fact that the Petitioner did not get a proper opportunity to be heard and no reply to the impugned SCNs has been filed by the Petitioner, the matter deserves to be remanded back to the concerned Adjudicating Authority.",
+    "quote_source": "court",
+    "para": 16
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned orders are set aside.",
+   "para": 17
+  }
+ },
+ "review": {
+  "status": "needs_fix",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "UNSURE: Retained hearing defect_found because paragraph 16 expressly finds no proper opportunity, not merely because remand was granted. Notification validity expressly left open with pending Supreme Court proceedings (contested). Added both dated notices and lead assessment date; second assessment remains in events. Section cannot be imported from quoted cases. UNSURE financial years: paragraph 4 prose says 2017–18/2018–19, but its first table says April 2019–March 2020; retained prose and flagged conflict. AI-assisted re-audit; full extracted judgment and populated fields checked.",
+  "seconds": null
+ }
+}
