@@ -5,7 +5,7 @@
   "provision": {
    "value": "73",
    "quote": "The petitioner is before this court calling in question a show cause notice dated 11.05.2023 issued by the respondent under Section 73(1) of the Goods and Services Tax Act, 2017 ('the Act' for short) and all consequential orders that are passed.",
-   "para": 2
+   "para": 1
   },
   "financial_years": {
    "value": [
@@ -72,12 +72,6 @@
   },
   "events": [
    {
-    "date": null,
-    "type": "scrutiny_notice",
-    "quote": "An ASMT-10 notice is issued to the petitioner for financial year 2017-2018.",
-    "para": 3
-   },
-   {
     "date": "2023-05-11",
     "type": "scn_issued",
     "quote": "The respondent then issues a show cause notice on 11.05.2023 and on 25.08.2023 passes the impugned order without indicating the date and the proceedings which led to passing of the impugned order on certain tax demand under Section 73(9) of the Act.",
@@ -112,12 +106,12 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Respondent conceded no opportunity; court set aside orders and directed fresh hearing.",
+  "notes": "No opportunity conceded in 5 and adopted in 6; hearing defect found. Remand expressly ordered in 7. Removed undated event and corrected opening paragraph. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

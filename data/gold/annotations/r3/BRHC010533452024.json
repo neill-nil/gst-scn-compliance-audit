@@ -85,12 +85,6 @@
     "para": 24
    },
    {
-    "date": null,
-    "type": "reply_not_filed",
-    "quote": "The noticee did not submit any defence reply against the demand-cum-show cause notice",
-    "para": 24
-   },
-   {
     "date": "2023-10-30",
     "type": "hearing_attended",
     "quote": "The noticee appeared on 30.10.2023 and submitted a letter requesting for four weeks’ time.",
@@ -136,7 +130,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Judgment concerns service tax under Finance Act 1994 for FY 2015-16 and 2016-17, not CGST/SGST section 73/74 demand.",
+  "notes": "Scope verified from prayer and facts: Finance Act1994 service tax FY2015-16/2016-17, despite CGST-named respondent. Section73 here is not CGST section73. AI-assisted scope re-audit; excluded records are not gold labels.",
   "seconds": null
  }
 }

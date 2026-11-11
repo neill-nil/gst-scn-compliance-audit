@@ -86,8 +86,8 @@
    {
     "date": "2024-07-15",
     "type": "order_passed",
-    "quote": "the impugned order was passed by the respondent as if no documents were furnished",
-    "para": 2
+    "quote": "The impugned assessment order dated 15.07.2024 and the impugned rejection order dated 29.01.2025 are hereby set aside",
+    "para": 7
    },
    {
     "date": "2025-01-29",
@@ -124,12 +124,12 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court expressly finds reply and documents ignored, sets aside assessment and rectification orders.",
+  "notes": "Reply ignored is an express court finding in paragraphs 6–7, corroborated by the respondent concession. Both assessment and rectification rejection set aside; remand explicit. Corrected dated assessment event to a quotation that actually supplies its date. DRC-01 does not establish summary-only; section unstated. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

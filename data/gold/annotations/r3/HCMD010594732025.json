@@ -72,12 +72,6 @@
   },
   "events": [
    {
-    "date": null,
-    "type": "scn_issued",
-    "quote": "The respondent, on noticing some discrepancy in the same, issued a show cause notice under Section 73(1) of the TNGST Act, 2017.",
-    "para": 2
-   },
-   {
     "date": "2024-08-20",
     "type": "order_passed",
     "quote": "thereby, the impugned assessment order was passed on 20.08.2024.",
@@ -106,12 +100,12 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court expressly found no opportunity before assessment (para 5); fresh order directed after deposit.",
+  "notes": "No opportunity expressly accepted by court in 5; conditional fresh assessment ordered. Retained hearing defect_found, disposed and remanded. Removed undated event. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

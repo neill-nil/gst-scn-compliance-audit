@@ -82,12 +82,6 @@
     "para": 6
    },
    {
-    "date": null,
-    "type": "order_passed",
-    "quote": "and the order passed in Sub-section (9) of Section 73 were for four assessment years viz., 2020-21, 2021-22, 2022- 23 and 2023-24",
-    "para": 6
-   },
-   {
     "date": "2025-08-05",
     "type": "earlier_writ",
     "quote": "This Court vide order dated 05.08.2025 in WP No.105375 of 2025 taking into consideration his submission made then had dismissed the above said writ petition, reserving liberty to urge all contentions in appeal so filed by the petitioner.",
@@ -101,9 +95,9 @@
    {
     "type": "consolidated_scn",
     "note": null,
-    "finding": "not_decided",
+    "finding": "defect_found",
     "contested": true,
-    "quote": "WP No.105375 of 2025 is restored to file.",
+    "quote": "I am of the considered opinion that since the Co-ordinate Bench of this Court in M/s Pramur Homes and Shelters’ case has categorically come to a conclusion that a consolidated show-cause notice could not have been issued and any proceedings and in relation thereto proceeded with, I am bound by the decision rendered by the Co-ordinate Bench.",
     "quote_source": "court",
     "para": 8
    }
@@ -121,7 +115,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. UNSURE: Court accepts the binding consolidated-notice precedent but only allows review and restores the writ for later hearing; no case-specific notice is quashed here. Marked not_decided pending adjudication.",
+  "notes": "UNSURE: Reversed my earlier not_decided change: paragraph 8 adopts the binding prohibition as the reason to allow review. Outcome remains review allowed, no remand to tax authority; the writ is restored. Neill should adjudicate whether this procedural review posture should instead be coded not_decided. Conflicting High Courts expressly mentioned; contested=true. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

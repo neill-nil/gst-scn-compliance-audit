@@ -47,17 +47,17 @@
      "para": null
     },
     "summary_only": {
-     "value": true,
-     "quote": "the respondent issued a summary show cause notice dated 27.12.2023 in Form GST DRC-01",
-     "para": 2
+     "value": null,
+     "quote": null,
+     "para": null
     }
    }
   ],
   "order": {
    "date": {
-    "value": "2024-04-24",
-    "quote": "passed the impugned order on 24.04.2024, raising a demand of Rs.2,05,32,993/-.",
-    "para": 2
+    "value": "2024-04-20",
+    "quote": "dated 20.04.2024 having Reference No.ZD3304241816611 along with summary of the order dated 24.04.2024",
+    "para": 0
    },
    "signed": {
     "value": null,
@@ -71,12 +71,6 @@
    }
   },
   "events": [
-   {
-    "date": null,
-    "type": "scrutiny_notice",
-    "quote": "During scrutiny under Section 61, the respondent pointed out the discrepancy between the gross tax payable and the tax paid as per Form GSTR-9.",
-    "para": 2
-   },
    {
     "date": "2023-12-27",
     "type": "scn_issued",
@@ -100,6 +94,12 @@
     "type": "order_passed",
     "quote": "Thereafter, the respondent passed the impugned order on 24.04.2024, raising a demand of Rs.2,05,32,993/-.",
     "para": 2
+   },
+   {
+    "date": "2024-04-20",
+    "type": "order_passed",
+    "quote": "dated 20.04.2024 having Reference No.ZD3304241816611 along with summary of the order dated 24.04.2024",
+    "para": 0
    }
   ],
   "document_contents": []
@@ -138,7 +138,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Portal-only service and no hearing argued; court granted conditional opportunity in interest of justice without a firm defect ruling.",
+  "notes": "UNSURE: Conditional interest-of-justice reconsideration: retain hearing/service not_decided, with court narrative ambiguity flagged. DRC-01 mention alone does not establish summary-only. Prayer distinguishes assessment 20 April from DRC-07 summary 24 April; corrected order date and removed undated event. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

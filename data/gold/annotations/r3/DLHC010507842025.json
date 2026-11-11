@@ -102,12 +102,12 @@
   "defects_argued": [
    {
     "type": "hearing_75_4",
+    "finding": "defect_found",
+    "quote": "This Court notes that, for whatever reasons, the Petitioner was not afforded an opportunity to file a reply or even appear for the hearing, yet a demand to the tune of Rs. 88,474/- has been raised against the Petitioner.",
+    "para": 9,
+    "quote_source": "court",
     "note": null,
-    "finding": "not_decided",
-    "contested": false,
-    "quote": "The challenge raised by the Petitioner is on the ground that since no opportunity was granted for a personal hearing, the impugned order may be set aside and the Petitioner may be given an opportunity to present its case.",
-    "quote_source": "argument",
-    "para": 7
+    "contested": false
    }
   ],
   "outcome": {
@@ -123,7 +123,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court noted lack of hearing but sent petitioner to appeal; no finding of department fault.",
+  "notes": "UNSURE: Paragraph 9 expressly finds no opportunity to reply or attend hearing; changed hearing to defect_found despite appeal-only relief (an explicit finding controls over disposition). No remand. Source inconsistencies remain: paragraph 3 says SCN 23 May, paragraphs 4/6 say 28 May; retained the latter detailed account. Reminder 8 January 2025 postdates order 29 August 2024. Demand differs between paragraphs 4 and 9. These are source conflicts, not corrected by inference; require adjudication. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

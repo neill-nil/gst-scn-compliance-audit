@@ -62,14 +62,14 @@
      "para": null
     },
     "hearing_date_given": {
-     "value": true,
-     "quote": "Further it is also noticed that the said notice of personal hearing provided three dates of hearing i.e., 13th, 14th and 15th January, 2025.",
-     "para": 5
+     "value": null,
+     "quote": null,
+     "para": null
     },
     "hearing_date": {
-     "value": "2025-01-13",
-     "quote": "The grievance in this case is that the personal hearings were fixed on 13th, 14th and 15th January, 2025.",
-     "para": 3
+     "value": null,
+     "quote": null,
+     "para": null
     },
     "service_mode": {
      "value": null,
@@ -157,7 +157,7 @@
   ],
   "document_contents": [
    {
-    "type": "scn_ground",
+    "type": "order_reasoning",
     "quote": "confirming demand of Input Tax Credit of Rs. 34,92,903/- availed without receipt of goods along with equivalent penalty and appropriate interest.",
     "para": 2
    }
@@ -183,12 +183,12 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court held hearing notices were given and petitioner was not diligent (paras 4-9); appeal liberty only.",
+  "notes": "Court rejects hearing complaint in 8. Hearing dates came from a later notice, so retained in events and removed from the SCN fields. Appeal liberty is not remand. Corrected confirmed-demand text to order_reasoning. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

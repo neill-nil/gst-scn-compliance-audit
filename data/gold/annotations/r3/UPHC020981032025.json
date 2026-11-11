@@ -38,7 +38,7 @@
     "para": 2
    },
    {
-    "date": null,
+    "date": "2025-10-24",
     "type": "appeal_dismissed",
     "quote": "as well as the order dated 24.10.2025 whereby the appeal was dismissed as being beyond limitation.",
     "para": 2
@@ -66,12 +66,12 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court applied prior hearing-date rule to this section 73 order and quashed it for fresh decision.",
+  "notes": "Hearing defect supported by the State admission and this court’s express application of Mahaveer Trading; allowed and remanded. Dates and section taken from this petitioner’s paragraph 2, not the quoted precedent. Notice dates and financial years are unstated. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

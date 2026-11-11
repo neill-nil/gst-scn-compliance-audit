@@ -5,14 +5,14 @@
   "provision": {
    "value": "73",
    "quote": "passed under section 73(9) for the tax period 2018-19 of the Central Goods and Service Act, 2017.",
-   "para": 2
+   "para": 1
   },
   "financial_years": {
    "value": [
     "2018-19"
    ],
    "quote": "passed under section 73(9) for the tax period 2018-19 of the Central Goods and Service Act, 2017.",
-   "para": 2
+   "para": 1
   },
   "notices": [
    {
@@ -47,9 +47,9 @@
      "para": null
     },
     "summary_only": {
-     "value": null,
-     "quote": null,
-     "para": null
+     "value": false,
+     "quote": "quashing the Show cause notice dated 30.01.2024",
+     "para": 1
     }
    }
   ],
@@ -123,7 +123,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. UNSURE: Paragraph 4 mentions a pending Supreme Court challenge to an unspecified circular; unclear whether this warrants a separate procedural complaint. Paragraph 6 expressly finds a natural-justice violation.",
+  "notes": "UNSURE: Court expressly finds a natural-justice breach (6), so defect_found is retained. Kept other_procedural because no specific hearing/service mechanism is established. The unspecified circular in 4 is not enough to invent a section-168A challenge. SCN and DRC-01 summary distinguished; corrected opening-prayer paragraph. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

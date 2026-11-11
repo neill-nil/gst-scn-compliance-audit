@@ -133,12 +133,12 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court finds Additional Notices tab insufficient communication (para 7) and a hearing date before reply deadline (para 8); orders set aside with fresh adjudication.",
+  "notes": "Service defect and hearing-before-reply defect explicitly found in 7-8. Retained two findings and remand. Specific hearing/reply dates not given; left null. Appeal-condonation discussion is consequence of the same service defect, not an extra demand-stage ground. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

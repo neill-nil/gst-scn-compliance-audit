@@ -3,9 +3,9 @@
  "schema_version": "0.1",
  "facts": {
   "provision": {
-   "value": "73",
-   "quote": "proper officer has exercised power under Section 73 of the GST Act read with Rule 142 of the Rules framed thereunder for recovery of Input Tax Credit",
-   "para": 4
+   "value": null,
+   "quote": null,
+   "para": null
   },
   "financial_years": {
    "value": [
@@ -57,7 +57,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Rule 86A credit-ledger blocking/reply pending, rather than a section 73/74 demand adjudication.",
+  "notes": "Scope verified from prayer/facts and operative order: Rule86A ledger block, FY2024-25. No section73/74 demand adjudication in this petition. General quoted section74 precedent is not this case. AI-assisted scope re-audit; excluded records are not gold labels.",
   "seconds": null
  }
 }

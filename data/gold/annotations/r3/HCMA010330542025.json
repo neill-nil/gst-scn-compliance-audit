@@ -5,7 +5,7 @@
   "provision": {
    "value": "74",
    "quote": "issued under Section 74 of the CGST/TNGST Act, 2017 covering a consolidated period of six financial years 2017-18 to 2022-23",
-   "para": 2
+   "para": 1
   },
   "financial_years": {
    "value": [
@@ -17,14 +17,14 @@
     "2022-23"
    ],
    "quote": "covering a consolidated period of six financial years 2017-18 to 2022-23",
-   "para": 2
+   "para": 1
   },
   "notices": [
    {
     "date": {
      "value": "2024-06-26",
      "quote": "Show Cause Notice No. 38/2024 GST dated 26.06.2024",
-     "para": 2
+     "para": 1
     },
     "reply_due": {
      "value": null,
@@ -62,7 +62,7 @@
    "date": {
     "value": "2025-01-16",
     "quote": "Order-in-Original No. 1/2024 dated 16.01.2025",
-    "para": 2
+    "para": 1
    },
    "signed": {
     "value": null,
@@ -80,22 +80,16 @@
     "date": "2024-06-26",
     "type": "scn_issued",
     "quote": "Show Cause Notice No. 38/2024 GST dated 26.06.2024, issued by the second respondent (DGGI)",
-    "para": 2
+    "para": 1
    },
    {
     "date": "2025-01-16",
     "type": "order_passed",
     "quote": "impugned Order-in-Original No.1/2024-GST [DIN:20250159XN0000885508] dated 16.01.2025",
-    "para": 2
+    "para": 1
    }
   ],
-  "document_contents": [
-   {
-    "type": "scn_ground",
-    "quote": "The Revenue’s allegation that the petitioner suppressed facts to avoid a higher rate under S.No. 135 of the Fourth Schedule (taxed at 14% CGST) is without merit, as the issue arises out of a bonafide interpretation of the classification entries.",
-    "para": 2
-   }
-  ]
+  "document_contents": []
  },
  "findings": {
   "defects_argued": [
@@ -125,6 +119,15 @@
     "quote": "the authorities cannot bunch multiple assessment years or pass composite orders in a manner that bypasses the individual limitation periods prescribed under the Act.",
     "quote_source": "argument",
     "para": 5
+   },
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "The Revenue’s allegation that the petitioner suppressed facts to avoid a higher rate under S.No. 135 of the Fourth Schedule (taxed at 14% CGST) is without merit, as the issue arises out of a bonafide interpretation of the classification entries.",
+    "quote_source": "argument",
+    "para": 2
    }
   ],
   "outcome": {
@@ -135,12 +138,12 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court found DGGI notice adjudicated by wrong officer (paras 11-13). Counsel also raised consolidated years and extended limitation; court did not decide those grounds.",
+  "notes": "Officer-jurisdiction defect found in 11-13. Limitation, consolidated years and section-74 ingredients are argued but not determined. contested=false: no conflict identified here. Removed argumentative document-content entry; distinguished prayer/paragraph 1 from paragraph 2. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

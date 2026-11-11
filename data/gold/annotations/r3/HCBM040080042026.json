@@ -91,7 +91,7 @@
   "document_contents": [
    {
     "type": "scn_ground",
-    "quote": "The impugned proceedings, during this period, proceeded on the erroneous premise that the petitioner had short paid GST on sales made during Financial Year 2017-18 to 2021-22.",
+    "quote": "the petitioner had short paid GST on sales made during Financial Year 2017-18 to 2021-22.",
     "para": 2
    }
   ]
@@ -103,9 +103,9 @@
     "note": null,
     "finding": "defect_found",
     "contested": true,
-    "quote": "In the light of the statutory scheme, we find that there is no scope for consolidating various financial years/tax period which is attempted by the impugned Show Cause Notices assailed in the Petition.",
+    "quote": "With the above liberty, and for the reasons set out in Milroc Good Earth Developers (supra) and Rite Water Solutions (India) Ltd. (supra), the petition is partly allowed. The show cause notice dated 28/12/2023 issued by respondent no.1 and the consequential order dated 30/08/2024 passed by respondent no.2 are quashed and set aside.",
     "quote_source": "court",
-    "para": 3
+    "para": 14
    }
   ],
   "outcome": {
@@ -116,12 +116,12 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Bombay court applies its consolidated-notice rule despite Delhi conflict; quashes notice and order. Liberty to issue a fresh notice is not remand.",
+  "notes": "Consolidation defect found, contested=true because competing Delhi view explicitly discussed. Replaced quoted precedent with this court applying it in 14. Fresh-notice liberty is not remand. Removed evaluative erroneous-premise language from SCN-ground quote. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

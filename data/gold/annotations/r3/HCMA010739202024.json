@@ -78,10 +78,10 @@
     "para": 2
    },
    {
-    "date": null,
+    "date": "2023-02-15",
     "type": "reply_filed",
-    "quote": "In course of inspection, 15 discrepancies were pointed out and the petitioner submitted a reply in relation to each discrepancy.",
-    "para": 2
+    "quote": "the reply dated 15.02.2023",
+    "para": 3
    },
    {
     "date": "2023-09-20",
@@ -135,7 +135,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. UNSURE: Inspection reply existed but no SCN reply or hearing participation; court grants conditional reconsideration without a clear finding of ignored SCN reply.",
+  "notes": "UNSURE: Inspection reply ignored was argued; court grants conditional opportunity despite taxpayer missing SCN response/hearing, without explicit fault finding. Retain not_decided, flag adjudication. Added actual inspection-reply date. Section 73/74 is not stated, so provision remains null. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

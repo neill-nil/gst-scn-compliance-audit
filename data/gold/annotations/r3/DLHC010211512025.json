@@ -176,27 +176,45 @@
     "note": null,
     "finding": "not_decided",
     "contested": false,
-    "quote": "It was further submitted that the reply dated 31.08.2024 furnished by the Petitioner was not duly considered.",
-    "quote_source": "argument",
-    "para": 16
+    "quote": "These objections essentially require examination of the adjudication record.",
+    "quote_source": "court",
+    "para": 34
    },
    {
     "type": "non_speaking_order",
     "note": null,
     "finding": "not_decided",
     "contested": false,
-    "quote": "It was also contended that the relied-upon investigation material was not supplied to the Petitioner and that the Impugned Orders are non-speaking orders.",
-    "quote_source": "argument",
-    "para": 16
+    "quote": "These objections essentially require examination of the adjudication record.",
+    "quote_source": "court",
+    "para": 34
    },
    {
     "type": "section_74_ingredients",
     "note": null,
     "finding": "not_decided",
     "contested": false,
-    "quote": "It was lastly submitted that there was no fraud, wilful misstatement or suppression of facts so as to justify invocation of Section 74 of the CGST Act.",
-    "quote_source": "argument",
-    "para": 16
+    "quote": "The same can appropriately be urged before the appellate authority, which is competent to examine the material relied upon by the Department as well as the defence raised by the Petitioner.",
+    "quote_source": "court",
+    "para": 40
+   },
+   {
+    "type": "other_procedural",
+    "finding": "not_decided",
+    "quote": "Likewise, the question whether the relied-upon material was duly supplied and whether the adjudicating authorities correctly dealt with the defence raised by the Petitioner can be examined in the statutory appellate proceedings.",
+    "para": 34,
+    "quote_source": "court",
+    "note": "non-supply of relied-upon investigation material",
+    "contested": false
+   },
+   {
+    "type": "other_procedural",
+    "finding": "not_decided",
+    "quote": "Whether any liability has, in fact, been duplicated or whether the two proceedings concern identical transactions is a matter which would require examination of the respective Show Cause Notices and adjudication records.",
+    "para": 38,
+    "quote_source": "court",
+    "note": "overlapping demands in the two Central proceedings",
+    "contested": false
    }
   ],
   "outcome": {
@@ -207,12 +225,12 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court rejected section 6(2)(b) jurisdiction objection; left reply, order reasoning and section 74 ingredients for appeal.",
+  "notes": "Added missing non-supply-of-documents and Central-demand-overlap complaints, both not_decided (34,38-40). State/Central jurisdiction objection expressly rejected (32,42), although appellate reconsideration remains open. Two Central SCNs and orders retained in events; single order field selects 31 January, with 10 January preserved separately. Earlier State FY not automatically copied into Central facts. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

@@ -96,12 +96,6 @@
     "para": 2
    },
    {
-    "date": "2023-05-03",
-    "type": "reply_filed",
-    "quote": "it is stated that the petitioner replied on 03.05.2023 pointing out that the supplier recorded the supply belatedly in his returns.",
-    "para": 2
-   },
-   {
     "date": "2023-05-09",
     "type": "other",
     "quote": "Such dispatch appears to have been made on 09.05.2023.",
@@ -112,6 +106,12 @@
     "type": "order_passed",
     "quote": "An assessment order dated 11.05.2023 in respect of assessment period dated 2021-2022 is assailed in this writ petition",
     "para": 0
+   },
+   {
+    "date": "2023-05-03",
+    "type": "other",
+    "quote": "the petitioner's reply dated 03.05.2023",
+    "para": 5
    }
   ],
   "document_contents": [
@@ -134,9 +134,9 @@
     "note": null,
     "finding": "not_decided",
     "contested": false,
-    "quote": "Learned counsel for the petitioner submits that this reply was disregarded while confirming the tax proposal.",
-    "quote_source": "argument",
-    "para": 3
+    "quote": "It is likely that the courier was not received as on the date of issuance of the impugned assessment order.",
+    "quote_source": "court",
+    "para": 5
    }
   ],
   "outcome": {
@@ -147,12 +147,12 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Courier reply may not have arrived before order; court grants conditional remand without finding an ignored reply.",
+  "notes": "Court says courier likely had not arrived; no established ignored reply. Retained not_decided. Distinguished reply document date from filing/receipt; retained dispatch date separately. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

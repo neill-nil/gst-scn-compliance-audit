@@ -14,7 +14,45 @@
    "quote": "This Writ Petition is filed challenging the impugned order dated 20.03.2023 for the period 2021-22 on the premise that the denial of the Input Tax Credit on the ground that the petitioner has not received any goods from the alleged supplier is in violation of principles of natural justice.",
    "para": 0
   },
-  "notices": [],
+  "notices": [
+   {
+    "date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
   "order": {
    "date": {
     "value": "2023-03-20",
@@ -37,19 +75,13 @@
     "date": "2022-08-04",
     "type": "pre_scn_intimation",
     "quote": "In response to Form DRC 01A dated 04.08.2022, the petitioner filed its objection vide letters dated 28.11.2022 and 04.02.2023 inter alia highlighting the following:",
-    "para": 4
+    "para": 3
    },
    {
     "date": "2022-11-28",
     "type": "reply_filed",
     "quote": "In response to Form DRC 01A dated 04.08.2022, the petitioner filed its objection vide letters dated 28.11.2022 and 04.02.2023 inter alia highlighting the following:",
-    "para": 4
-   },
-   {
-    "date": "2023-02-04",
-    "type": "reply_filed",
-    "quote": "In response to Form DRC 01A dated 04.08.2022, the petitioner filed its objection vide letters dated 28.11.2022 and 04.02.2023 inter alia highlighting the following:",
-    "para": 4
+    "para": 3
    },
    {
     "date": "2023-02-04",
@@ -73,17 +105,17 @@
    {
     "type": "reply_point",
     "quote": "The purchases from Tvl.Thirumuruga Traders is supported by original purchase invoice.",
-    "para": 4
+    "para": 3
    },
    {
     "type": "reply_point",
     "quote": "Consideration for such supplies are made.",
-    "para": 4
+    "para": 3
    },
    {
     "type": "reply_point",
     "quote": "Transaction are auto populated in GSTR 2A filed by the said supplier i.e., Tvl.Thirumuruga Traders.",
-    "para": 4
+    "para": 3
    },
    {
     "type": "order_reasoning",
@@ -121,12 +153,12 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Personal hearing and cross-examination were sought; court declined fact review and sent taxpayer to appeal without a firm ruling on those requests.",
+  "notes": "Personal hearing/cross-examination requests unresolved; court declines factual review and grants appeal liberty. DRC-01 is mentioned without date, so added an unknown-date notice instead of empty notices. Removed duplicate 4Feb reply event and corrected paragraph 3.1 references; no section73/74 inferred. AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }

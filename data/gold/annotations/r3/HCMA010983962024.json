@@ -109,13 +109,13 @@
     "para": 17
    },
    {
-    "type": "reply_not_considered",
-    "note": null,
-    "finding": "defect_found",
-    "contested": false,
-    "quote": "On perusal of the impugned order, it is recorded therein that the tax payer failed to file a reply.",
+    "type": "service_169",
+    "finding": "not_decided",
+    "quote": "Since the petitioner asserted that such failure to participate was on account of not being aware of proceedings, the interest of justice warrants that an opportunity be provided to the petitioner to contest the tax demand on merits by putting the petitioner on terms.",
+    "para": 18,
     "quote_source": "court",
-    "para": 19
+    "note": null,
+    "contested": false
    }
   ],
   "outcome": {
@@ -126,12 +126,12 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Two joined petitions: court rejected ASMT-10 prerequisite but found reply ignored in one case; both sent back on distinct grounds.",
+  "notes": "Corrected cross-petition contamination: this CNR is Mandarina, WP15307, not Gani Fashion WP15330. Removed reply-not-considered defect from the companion petition. Retained rejection of ASMT-10 prerequisite and added Mandarina portal-service complaint as not_decided. Own FY2018-19, SCN28Dec2023 and order11Apr2024 retained; conditional remand applies under 20(i). AI-assisted re-audit; full extracted judgment and populated fields checked.",
   "seconds": null
  }
 }
