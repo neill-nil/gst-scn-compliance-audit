@@ -1,0 +1,116 @@
+{
+ "cnr": "UPHC020961672025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "service_mode": {
+     "para": null,
+     "value": null,
+     "quote": null
+    },
+    "hearing_date": {
+     "para": null,
+     "value": null,
+     "quote": null
+    },
+    "summary_only": {
+     "para": null,
+     "value": null,
+     "quote": null
+    },
+    "hearing_date_given": {
+     "para": 4,
+     "value": false,
+     "quote": "no date was fixed for personal hearing"
+    },
+    "signed": {
+     "para": null,
+     "value": null,
+     "quote": null
+    },
+    "date": {
+     "para": null,
+     "value": null,
+     "quote": null
+    },
+    "reply_due": {
+     "para": null,
+     "value": null,
+     "quote": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2022-05-21",
+    "quote": "Present petition has been filed challenging the order dated 21.05.2022 passed under Section 75 of the U.P. Goods and Services Tax Act, 2017",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2022-05-21",
+    "type": "order_passed",
+    "quote": "Present petition has been filed challenging the order dated 21.05.2022 passed under Section 75 of the U.P. Goods and Services Tax Act, 2017 (for short, 'the GST Act') as well as the order dated 23.09.2025 whereby the appeal was dismissed as being beyond limitation.",
+    "para": 2
+   },
+   {
+    "date": "2025-09-23",
+    "type": "appeal_dismissed",
+    "quote": "Present petition has been filed challenging the order dated 21.05.2022 passed under Section 75 of the U.P. Goods and Services Tax Act, 2017 (for short, 'the GST Act') as well as the order dated 23.09.2025 whereby the appeal was dismissed as being beyond limitation.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Since the aforesaid dictum is applicable in the present facts and circumstances, accordingly, the impugned orders cannot be sustained and the orders dated 21.05.2022 & 23.09.2025 are accordingly quashed.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "With the aforesaid, the present petition is allowed.",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r2",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "UNSURE: The order is described as under s.75; underlying demand section 73/74 is not specified. Treated as in scope.",
+  "seconds": null,
+  "saved_at": "2026-11-11T23:42:24"
+ }
+}

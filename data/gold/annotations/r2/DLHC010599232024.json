@@ -1,0 +1,193 @@
+{
+ "cnr": "DLHC010599232024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "Order-In-Original No.09/PJ/ADJ/AC/2024-25 dated 26th April, 2024 (hereinafter, ‘the impugned order’) passed by the Assistant Commissioner, Division Shahdara under Section 73 of the Delhi/Central Goods and Services Tax Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "(i.e., to scrutinise the returns for the period April 2018 to March 2019 under Section 61 of the CGST Act, 2017)",
+   "para": 11
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-11-07",
+     "quote": "Show Cause Notice dated 7th November, 2023 bearing reference number GEXCOM/SoR/19-18/2023-CGSTRANGE-145-DIV-2- SHDRCOMMRTE-DELHI(E) (hereinafter ‘impugned SCN’)",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "personal hearing, though the same had been provided on four dates",
+     "para": 11
+    },
+    "hearing_date": {
+     "value": "2024-01-22",
+     "quote": "22nd January, 2024, 02nd February, 2024, 09th February, 2024 and 22nd April, 2024",
+     "para": 11
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-26",
+    "quote": "Order-In-Original No.09/PJ/ADJ/AC/2024-25 dated 26th April, 2024 (hereinafter, ‘the impugned order’)",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-02-01",
+    "type": "scrutiny_notice",
+    "quote": "It is noticed that prior to the issuance of impugned SCN, a notice in form GST ASMT-10 was issued by the Respondent-GST Department on 1st February, 2023 in regards to the same subject matter (i.e., to scrutinise the returns for the period April 2018 to March 2019 under Section 61 of the CGST Act, 2017).",
+    "para": 11
+   },
+   {
+    "date": "2023-05-23",
+    "type": "reply_filed",
+    "quote": "The Petitioner is stated to have filed a reply for the same in form GST ASMT-11 on 23rd May, 2023, as well.",
+    "para": 11
+   },
+   {
+    "date": "2023-11-07",
+    "type": "scn_issued",
+    "quote": "Show Cause Notice dated 7th November, 2023 bearing reference number GEXCOM/SoR/19-18/2023-CGSTRANGE-145-DIV-2- SHDRCOMMRTE-DELHI(E) (hereinafter ‘impugned SCN’)",
+    "para": 2
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "no reply has been filed",
+    "para": 11
+   },
+   {
+    "date": "2024-01-22",
+    "type": "hearing_scheduled",
+    "quote": "though the same had been provided on four dates, i.e., 22nd January, 2024, 02nd February, 2024, 09th February, 2024 and 22nd April, 2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-01-22",
+    "type": "hearing_missed",
+    "quote": "personal hearings have not been availed by the Petitioner in respect of the impugned SCN",
+    "para": 11
+   },
+   {
+    "date": "2024-02-02",
+    "type": "hearing_scheduled",
+    "quote": "though the same had been provided on four dates, i.e., 22nd January, 2024, 02nd February, 2024, 09th February, 2024 and 22nd April, 2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-02-02",
+    "type": "hearing_missed",
+    "quote": "personal hearings have not been availed by the Petitioner in respect of the impugned SCN",
+    "para": 11
+   },
+   {
+    "date": "2024-02-09",
+    "type": "hearing_scheduled",
+    "quote": "though the same had been provided on four dates, i.e., 22nd January, 2024, 02nd February, 2024, 09th February, 2024 and 22nd April, 2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-02-09",
+    "type": "hearing_missed",
+    "quote": "personal hearings have not been availed by the Petitioner in respect of the impugned SCN",
+    "para": 11
+   },
+   {
+    "date": "2024-04-22",
+    "type": "hearing_scheduled",
+    "quote": "though the same had been provided on four dates, i.e., 22nd January, 2024, 02nd February, 2024, 09th February, 2024 and 22nd April, 2024.",
+    "para": 11
+   },
+   {
+    "date": "2024-04-22",
+    "type": "hearing_missed",
+    "quote": "personal hearings have not been availed by the Petitioner in respect of the impugned SCN",
+    "para": 11
+   },
+   {
+    "date": "2024-04-26",
+    "type": "order_passed",
+    "quote": "Order-In-Original No.09/PJ/ADJ/AC/2024-25 dated 26th April, 2024",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "no pre-consultation notice in DRC-01A",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "All the rights and remedies of the parties are left open.",
+    "quote_source": "court",
+    "para": 11
+   },
+   {
+    "type": "extension_notification_validity",
+    "note": null,
+    "finding": "not_decided",
+    "contested": true,
+    "quote": "the issue in respect of the validity of the impugned notifications is left open",
+    "quote_source": "court",
+    "para": 11
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Accordingly, the impugned order is set aside and the matter is relegated to the Adjudicating Authority to be heard on merits.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r2",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "",
+  "seconds": null,
+  "saved_at": "2026-11-11T23:44:51"
+ }
+}
