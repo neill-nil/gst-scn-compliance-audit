@@ -1,6 +1,6 @@
 # R3 round-2 full re-audit
 
-This replaces the earlier provisional log. All **32 primary assignments** were re-audited: **19 reviewed, 9 awaiting adjudication, 4 out of scope**. The seven independent/no-AI second-review assignments were not reviewed or changed.
+This replaces the earlier provisional log. All **32 primary assignments** were re-audited: **19 reviewed, 9 awaiting adjudication, 4 out of scope**. The seven second-review assignments were subsequently reviewed with AI at the reviewer’s explicit request; they cannot be used for an independent reviewer-agreement measure.
 
 The nine `UNSURE:` records use `needs_fix` so the current gold builder does not silently include provisional choices. Their source audit is complete; the remaining task is Neill’s decision on the specific question below. No adjudication message has been sent.
 
@@ -54,7 +54,7 @@ The rule applied consistently: an express court finding controls even when relie
 - All 32 primary CNRs match the round-2 queue exactly.
 - All 348 populated quotations match the cleaned judgment text under the repository’s whitespace/punctuation normalization; zero schema or quote-match failures. This proves text presence, not legal correctness.
 - No undated timeline events remain.
-- The seven second-review assignments are unchanged from the branch baseline.
+- The seven second-review assignments were subsequently saved with `kind=second`; each note discloses AI assistance.
 - The gold dataset was not rebuilt. Only the primary annotations and this log are part of this audit change.
 
 ## Case-by-case decisions and evidence
@@ -690,3 +690,17 @@ W.P.(C)/11102/2025 of M/S DHRL INDIA SERVICES PVT LTD Vs THE SALES TAX OFFICER C
 **Adjudication:** provisional best answer recorded above; do not treat it as approved gold until the uncertainty in the decision note is resolved.
 
 **Changes from the previous review:** `findings.defects_argued[0].finding`, `findings.defects_argued[0].para`, `findings.defects_argued[0].quote`, `findings.defects_argued[0].quote_source`.
+
+## Subsequent review of the seven second assignments
+
+These reviews used AI at r3’s explicit request. Their annotations are useful as case reviews, but they are not independent observations for reviewer-agreement scoring.
+
+| Queue | Case | Saved status | Key decision |
+|---|---|---|---|
+| 5 | DLHC010742252025 | reviewed | Additional Notices objection rejected; lack of proper opportunity found; notification validity open; remanded with costs. |
+| 8 | HCMA011201082025 | reviewed | Hearing defect expressly found after reply; order set aside and remanded. |
+| 11 | HCMD010052922025 | needs_fix | Failure to determine tax and follow circular found; section 73/74 scope uncertain because judgment says section 74 was not invoked. |
+| 14 | UPHC020961672025 | out_of_scope | Own assessment described under section 75 only; section 73/74 demand unestablished, pending scope adjudication. |
+| 17 | UPHC021037272025 | reviewed | Own order under section 74(9); hearing defect found and remanded. |
+| 20 | HCMA010285922025 | reviewed | Filed reply ignored; remanded. Later hearing direction is the remedy. |
+| 23 | DLHC010599232024 | reviewed | DRC-01A argument and notification validity left undecided; further opportunity given; prior ASMT-11 is not a reply to the SCN. |
