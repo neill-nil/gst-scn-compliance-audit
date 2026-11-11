@@ -15,9 +15,9 @@
   "notices": [
    {
     "date": {
-     "value": "2024-12-29",
-     "quote": "the notice in Form GST DRC-01 was issued by the respondents on 29.12.2024, for which, the reply, along with all the relevant documents, were filed by the petitioner on 18.03.2024.",
-     "para": 2
+     "value": null,
+     "quote": null,
+     "para": null
     },
     "reply_due": {
      "value": null,
@@ -70,7 +70,7 @@
   },
   "events": [
    {
-    "date": "2024-12-29",
+    "date": null,
     "type": "scn_issued",
     "quote": "the notice in Form GST DRC-01 was issued by the respondents on 29.12.2024, for which, the reply, along with all the relevant documents, were filed by the petitioner on 18.03.2024.",
     "para": 2
@@ -121,8 +121,8 @@
   "reviewed_by": "r2",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "UNSURE: Judgment dates SCN 29.12.2024, but reply 18.03.2024 and order 13.08.2024; retained SCN date as expressly stated.",
+  "notes": "ADJUDICATED: Notice date set to null: the stated 29.12.2024 falls after the reply (18.03.2024) and the order (13.08.2024), so it is a typo and the true date is unknown. UNSURE: Judgment dates SCN 29.12.2024, but reply 18.03.2024 and order 13.08.2024; retained SCN date as expressly stated.",
   "seconds": null,
-  "saved_at": "2026-11-11T23:57:47"
+  "saved_at": "2026-11-12T02:34:58"
  }
 }

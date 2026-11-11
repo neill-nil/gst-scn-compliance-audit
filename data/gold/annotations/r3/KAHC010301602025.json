@@ -101,8 +101,8 @@
  "findings": {
   "defects_argued": [
    {
-    "type": "other_procedural",
-    "note": "ex-parte proceedings due to cancelled registration",
+    "type": "hearing_75_4",
+    "note": null,
     "finding": "defect_found",
     "contested": false,
     "quote": "In that light, it becomes an admitted fact that the proceedings which has led the petitioner to challenge before this Court are exparte proceedings and are in violation of principles of natural justice.",
@@ -118,12 +118,13 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "UNSURE: Court expressly finds a natural-justice breach (6), so defect_found is retained. Kept other_procedural because no specific hearing/service mechanism is established. The unspecified circular in 4 is not enough to invent a section-168A challenge. SCN and DRC-01 summary distinguished; corrected opening-prayer paragraph. AI-assisted re-audit; full extracted judgment and populated fields checked.",
-  "seconds": null
+  "notes": "ADJUDICATED: Type changed other_procedural -> hearing_75_4, defect_found: the court holds the proceedings were ex parte and in violation of natural justice (an ex parte order = no hearing, as in the other ex parte cases). Reviewer note: Court expressly finds a natural-justice breach (6), so defect_found is retained. Kept other_procedural because no specific hearing/service mechanism is established. The unspecified circular in 4 is not enough to invent a section-168A challenge. SCN and DRC-01 summary distinguished; corrected opening-prayer paragraph. AI-assisted re-audit; full extracted judgment and populated fields checked.",
+  "seconds": null,
+  "saved_at": "2026-11-12T00:56:37"
  }
 }

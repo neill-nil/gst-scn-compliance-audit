@@ -8,12 +8,9 @@
    "para": null
   },
   "financial_years": {
-   "value": [
-    "2017-18",
-    "2018-19"
-   ],
-   "quote": "Vide the impugned SCNs the demand raised against the Petitioner for the Financial Years 2017-18 and 2018-19 is as under:",
-   "para": 4
+   "value": null,
+   "quote": null,
+   "para": null
   },
   "notices": [
    {
@@ -150,7 +147,7 @@
    {
     "type": "hearing_75_4",
     "note": null,
-    "finding": "defect_found",
+    "finding": "not_decided",
     "contested": false,
     "quote": "Under such circumstances, considering the fact that the Petitioner did not get a proper opportunity to be heard and no reply to the impugned SCNs has been filed by the Petitioner, the matter deserves to be remanded back to the concerned Adjudicating Authority.",
     "quote_source": "court",
@@ -165,12 +162,13 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "UNSURE: Retained hearing defect_found because paragraph 16 expressly finds no proper opportunity, not merely because remand was granted. Notification validity expressly left open with pending Supreme Court proceedings (contested). Added both dated notices and lead assessment date; second assessment remains in events. Section cannot be imported from quoted cases. UNSURE financial years: paragraph 4 prose says 2017–18/2018–19, but its first table says April 2019–March 2020; retained prose and flagged conflict. AI-assisted re-audit; full extracted judgment and populated fields checked.",
-  "seconds": null
+  "notes": "ADJUDICATED: Hearing changed to not_decided after comparing with r2: the remand is equitable. The petitioner did not check the portal and is made to pay costs (para 20); para 16 states why the court gives another chance and does not find the department at fault. ADJUDICATED (12 Nov): kept contested extension validity. Financial years set to null: the judgment's prose and table disagree, so neither is reliable. Reviewer note: Retained hearing defect_found because paragraph 16 expressly finds no proper opportunity, not merely because remand was granted. Notification validity expressly left open with pending Supreme Court proceedings (contested). Added both dated notices and lead assessment date; second assessment remains in events. Section cannot be imported from quoted cases. UNSURE financial years: paragraph 4 prose says 2017–18/2018–19, but its first table says April 2019–March 2020; retained prose and flagged conflict. AI-assisted re-audit; full extracted judgment and populated fields checked.",
+  "seconds": null,
+  "saved_at": "2026-11-12T02:34:58"
  }
 }

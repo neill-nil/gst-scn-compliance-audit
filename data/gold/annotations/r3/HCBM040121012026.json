@@ -3,9 +3,9 @@
  "schema_version": "0.1",
  "facts": {
   "provision": {
-   "value": "73",
-   "quote": "Challenge is to show cause notice dated 25/06/2025 issued by respondent no. 1, under Section 73 of The Central Goods and Services Tax Act, 2017 (for short “CGST Act”).",
-   "para": 2
+   "value": null,
+   "quote": null,
+   "para": null
   },
   "financial_years": {
    "value": [
@@ -108,12 +108,13 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "UNSURE: Consolidation defect found in own operative order15; competing Delhi view and pending challenges justify contested=true. No remand. Paragraph2 identifies original notice as section73 while later discussion/fresh-notice liberty says74; retain73 from direct description, flag source inconsistency. AI-assisted re-audit; full extracted judgment and populated fields checked.",
-  "seconds": null
+  "notes": "ADJUDICATED: Kept consolidated_scn defect_found, contested (same Bombay line as the other consolidated-notice cases). Provision set to null: the judgment calls the notice s.73 in one place and s.74 in another. Reviewer note: Consolidation defect found in own operative order15; competing Delhi view and pending challenges justify contested=true. No remand. Paragraph2 identifies original notice as section73 while later discussion/fresh-notice liberty says74; retain73 from direct description, flag source inconsistency. AI-assisted re-audit; full extracted judgment and populated fields checked.",
+  "seconds": null,
+  "saved_at": "2026-11-12T00:56:36"
  }
 }

@@ -95,7 +95,7 @@
    {
     "type": "consolidated_scn",
     "note": null,
-    "finding": "defect_found",
+    "finding": "not_decided",
     "contested": true,
     "quote": "I am of the considered opinion that since the Co-ordinate Bench of this Court in M/s Pramur Homes and Shelters’ case has categorically come to a conclusion that a consolidated show-cause notice could not have been issued and any proceedings and in relation thereto proceeded with, I am bound by the decision rendered by the Co-ordinate Bench.",
     "quote_source": "court",
@@ -110,12 +110,13 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "UNSURE: Reversed my earlier not_decided change: paragraph 8 adopts the binding prohibition as the reason to allow review. Outcome remains review allowed, no remand to tax authority; the writ is restored. Neill should adjudicate whether this procedural review posture should instead be coded not_decided. Conflicting High Courts expressly mentioned; contested=true. AI-assisted re-audit; full extracted judgment and populated fields checked.",
-  "seconds": null
+  "notes": "ADJUDICATED: Changed consolidated_scn to not_decided (contested kept): this is a review petition; the court only restores the writ petition for a fresh hearing because it is bound by the co-ordinate bench, and does not quash this notice. Reviewer note: Reversed my earlier not_decided change: paragraph 8 adopts the binding prohibition as the reason to allow review. Outcome remains review allowed, no remand to tax authority; the writ is restored. Neill should adjudicate whether this procedural review posture should instead be coded not_decided. Conflicting High Courts expressly mentioned; contested=true. AI-assisted re-audit; full extracted judgment and populated fields checked.",
+  "seconds": null,
+  "saved_at": "2026-11-12T00:56:37"
  }
 }

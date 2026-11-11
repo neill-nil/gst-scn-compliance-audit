@@ -17,43 +17,6 @@
   "notices": [
    {
     "date": {
-     "value": "2024-05-30",
-     "quote": "a show cause notice in FORM GRT DRC-01 dated 30.05.2024.",
-     "para": 2
-    },
-    "reply_due": {
-     "value": null,
-     "quote": null,
-     "para": null
-    },
-    "hearing_date_given": {
-     "value": null,
-     "quote": null,
-     "para": null
-    },
-    "hearing_date": {
-     "value": null,
-     "quote": null,
-     "para": null
-    },
-    "service_mode": {
-     "value": null,
-     "quote": null,
-     "para": null
-    },
-    "signed": {
-     "value": null,
-     "quote": null,
-     "para": null
-    },
-    "summary_only": {
-     "value": null,
-     "quote": null,
-     "para": null
-    }
-   },
-   {
-    "date": {
      "value": "2024-05-31",
      "quote": "A perusal of the records would indicate that the respondent had issued a summary of show cause notice dated 31.05.2024 to the petitioner for the tax period April 2019 to March 2020 under Section 73 of the TNGST Act, 2017",
      "para": 4
@@ -195,12 +158,13 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "UNSURE: Court expressly finds ignored reconciliation and one-line non-speaking order in 5; ASMT-10 objection left unanswered. DRC-01 does not prove summary-only. Recorded both 30 May notice recital and 31 May summary described by court; uncertain whether distinct documents or date inconsistency, for adjudication. AI-assisted re-audit; full extracted judgment and populated fields checked.",
-  "seconds": null
+  "notes": "ADJUDICATED: Kept the found findings. One notice, not two: 30.05 (petitioner's account) and 31.05 (court's reading of the records) are the same notice; kept the court's date. Provision 73 from the court's own description. Reviewer note: Court expressly finds ignored reconciliation and one-line non-speaking order in 5; ASMT-10 objection left unanswered. DRC-01 does not prove summary-only. Recorded both 30 May notice recital and 31 May summary described by court; uncertain whether distinct documents or date inconsistency, for adjudication. AI-assisted re-audit; full extracted judgment and populated fields checked.",
+  "seconds": null,
+  "saved_at": "2026-11-12T00:56:36"
  }
 }

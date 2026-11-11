@@ -133,12 +133,13 @@
   }
  },
  "review": {
-  "status": "needs_fix",
+  "status": "reviewed",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "UNSURE: Conditional interest-of-justice reconsideration: retain hearing/service not_decided, with court narrative ambiguity flagged. DRC-01 mention alone does not establish summary-only. Prayer distinguishes assessment 20 April from DRC-07 summary 24 April; corrected order date and removed undated event. AI-assisted re-audit; full extracted judgment and populated fields checked.",
-  "seconds": null
+  "notes": "ADJUDICATED: Kept not_decided: conditional reconsideration 'in the interest of justice' is not a finding. Reviewer note: Conditional interest-of-justice reconsideration: retain hearing/service not_decided, with court narrative ambiguity flagged. DRC-01 mention alone does not establish summary-only. Prayer distinguishes assessment 20 April from DRC-07 summary 24 April; corrected order date and removed undated event. AI-assisted re-audit; full extracted judgment and populated fields checked.",
+  "seconds": null,
+  "saved_at": "2026-11-12T00:56:36"
  }
 }
