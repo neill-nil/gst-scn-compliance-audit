@@ -17,6 +17,8 @@ That makes 108 model calls. You don't need to understand the code: the steps bel
 2. **Verify your phone number:** profile picture → Settings → Phone verification. Without it, notebooks have no internet and no GPU.
 
 ## 2. Create the notebook
+**Ready-made notebook:** import [`notebooks/b1_mid_baselines_kaggle.ipynb`](../../notebooks/b1_mid_baselines_kaggle.ipynb) into Kaggle, select the session settings below, and run Cells 1–5 in order. It includes the complete workflow, GPU/readiness checks, resumable cached inference, scoring, and ZIP export. It pins the experiment to commit `6c563663bbd486c5dbbff753e57797c911ade6b1` for reproducibility.
+
 1. Click **+ Create** → **New Notebook**.
 2. In the right-hand panel (open it with the `>|` icon if hidden), under **Session options**:
    - **Accelerator:** `GPU T4 x2`.
