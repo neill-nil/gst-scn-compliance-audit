@@ -1,0 +1,124 @@
+{
+ "cnr": "KAHC010628882026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2022-23"
+   ],
+   "quote": "AUDIT REPORT DATED 31.08.2026 FOR THE YEAR 2022-23",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2026-09-02",
+     "quote": "the subsequent Show Cause Notice in Form GST DRC-01 dated 02.09.2026 [Annexure-E]",
+     "para": 2
+    },
+    "reply_due": {
+     "value": "2026-10-01",
+     "quote": "The petitioner is extended an opportunity with the issuance of the show cause notice to file a reply until 01.10.2026",
+     "para": 4
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2026-07-30",
+    "type": "other",
+    "quote": "petitioner's objections dated 30.07.2026 to the audit observations",
+    "para": 2
+   },
+   {
+    "date": "2026-08-31",
+    "type": "other",
+    "quote": "the first respondent's Audit Report dated 31.08.2026",
+    "para": 2
+   },
+   {
+    "date": "2026-09-02",
+    "type": "scn_issued",
+    "quote": "the subsequent Show Cause Notice in Form GST DRC-01 dated 02.09.2026 [Annexure-E] with a request for direction to the first respondent to consider the petitioner's objections dated 30.07.2026 to the audit observations.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "Audit objections allegedly ignored before SCN",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "to show cause against the proposed demand and even seek a personal hearing to vindicate its cause against the confirmation of the demand in the adjudication process.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "Hence, the petition stands disposed of, permitting the petitioner to file a detailed response to the propositions in the show cause notice by 23.10.2026",
+   "para": 5
+  }
+ },
+ "review": {
+  "status": "reviewed",
+  "kind": "first",
+  "reviewed_by": "r2",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "UNSURE: The SCN section is unstated; the court describes contemplated proceedings under s.73 or s.74. Treated as in scope.",
+  "seconds": null,
+  "saved_at": "2026-11-11T23:28:44"
+ }
+}
