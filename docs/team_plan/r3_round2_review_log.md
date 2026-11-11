@@ -1,3 +1,7 @@
+# Verification status: audit incomplete
+
+The 28 in-scope annotations are now marked `needs_fix`, pending complete source review. The prior log below records provisional decisions, not verified gold. A confirmed error was corrected in HCMA010330542025: consolidated_scn contested=false because this judgment does not identify conflicting court views or a pending Supreme Court issue for that ground. Cases 9 and 38 also require consistent treatment of similar hearing-remand language.
+
 # R3 round-2 primary reviews
 
 For each case I checked scope, arguments and the court’s finding against the judgment; then outcome, facts and exact quote matches. Paragraph numbers below refer to the review app’s extracted judgment paragraphs. `UNSURE:` notes require Neill’s adjudication.

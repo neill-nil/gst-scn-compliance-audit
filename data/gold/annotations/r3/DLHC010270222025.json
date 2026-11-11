@@ -183,12 +183,12 @@
   }
  },
  "review": {
-  "status": "reviewed",
+  "status": "needs_fix",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Court held hearing notices were given and petitioner was not diligent (paras 4-9); appeal liberty only.",
+  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court held hearing notices were given and petitioner was not diligent (paras 4-9); appeal liberty only.",
   "seconds": null
  }
 }

@@ -116,12 +116,12 @@
   }
  },
  "review": {
-  "status": "reviewed",
+  "status": "needs_fix",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "UNSURE: Court accepts the binding consolidated-notice precedent but only allows review and restores the writ for later hearing; no case-specific notice is quashed here. Marked not_decided pending adjudication.",
+  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. UNSURE: Court accepts the binding consolidated-notice precedent but only allows review and restores the writ for later hearing; no case-specific notice is quashed here. Marked not_decided pending adjudication.",
   "seconds": null
  }
 }

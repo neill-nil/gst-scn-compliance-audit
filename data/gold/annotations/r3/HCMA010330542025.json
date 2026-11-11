@@ -121,7 +121,7 @@
     "type": "consolidated_scn",
     "note": null,
     "finding": "not_decided",
-    "contested": true,
+    "contested": false,
     "quote": "the authorities cannot bunch multiple assessment years or pass composite orders in a manner that bypasses the individual limitation periods prescribed under the Act.",
     "quote_source": "argument",
     "para": 5
@@ -135,12 +135,12 @@
   }
  },
  "review": {
-  "status": "reviewed",
+  "status": "needs_fix",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Court found DGGI notice adjudicated by wrong officer (paras 11-13). Counsel also raised consolidated years and extended limitation; court did not decide those grounds.",
+  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court found DGGI notice adjudicated by wrong officer (paras 11-13). Counsel also raised consolidated years and extended limitation; court did not decide those grounds.",
   "seconds": null
  }
 }

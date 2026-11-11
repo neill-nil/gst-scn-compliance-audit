@@ -133,12 +133,12 @@
   }
  },
  "review": {
-  "status": "reviewed",
+  "status": "needs_fix",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Court finds Additional Notices tab insufficient communication (para 7) and a hearing date before reply deadline (para 8); orders set aside with fresh adjudication.",
+  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court finds Additional Notices tab insufficient communication (para 7) and a hearing date before reply deadline (para 8); orders set aside with fresh adjudication.",
   "seconds": null
  }
 }

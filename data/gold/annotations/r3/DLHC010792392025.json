@@ -90,12 +90,12 @@
   }
  },
  "review": {
-  "status": "reviewed",
+  "status": "needs_fix",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Notification validity left open (para 19). Court separately found petitioner lacked a proper opportunity (para 16) and remanded for reply and hearing.",
+  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Notification validity left open (para 19). Court separately found petitioner lacked a proper opportunity (para 16) and remanded for reply and hearing.",
   "seconds": null
  }
 }

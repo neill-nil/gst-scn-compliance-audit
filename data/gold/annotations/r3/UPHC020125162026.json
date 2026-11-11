@@ -66,12 +66,12 @@
   }
  },
  "review": {
-  "status": "reviewed",
+  "status": "needs_fix",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "UNSURE: Judgment states assessment dated 29.09.2025 but appeal dismissal dated 10.02.2025, an impossible sequence. Kept dates as printed. Hearing and reply due on same day admitted by State.",
+  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. UNSURE: Judgment states assessment dated 29.09.2025 but appeal dismissal dated 10.02.2025, an impossible sequence. Kept dates as printed. Hearing and reply due on same day admitted by State.",
   "seconds": null
  }
 }

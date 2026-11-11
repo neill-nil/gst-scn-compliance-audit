@@ -66,12 +66,12 @@
   }
  },
  "review": {
-  "status": "reviewed",
+  "status": "needs_fix",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Court applied prior hearing-date rule to this section 73 order and quashed it for fresh decision.",
+  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court applied prior hearing-date rule to this section 73 order and quashed it for fresh decision.",
   "seconds": null
  }
 }

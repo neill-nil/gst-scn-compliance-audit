@@ -130,12 +130,12 @@
   }
  },
  "review": {
-  "status": "reviewed",
+  "status": "needs_fix",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "UNSURE: Inspection reply existed but no SCN reply or hearing participation; court grants conditional reconsideration without a clear finding of ignored SCN reply.",
+  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. UNSURE: Inspection reply existed but no SCN reply or hearing participation; court grants conditional reconsideration without a clear finding of ignored SCN reply.",
   "seconds": null
  }
 }

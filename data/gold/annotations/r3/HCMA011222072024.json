@@ -136,12 +136,12 @@
   }
  },
  "review": {
-  "status": "reviewed",
+  "status": "needs_fix",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Court grants conditional reconsideration without deciding whether portal upload constituted improper service; government says registered post was received.",
+  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court grants conditional reconsideration without deciding whether portal upload constituted improper service; government says registered post was received.",
   "seconds": null
  }
 }

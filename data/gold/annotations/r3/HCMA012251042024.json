@@ -158,12 +158,12 @@
   }
  },
  "review": {
-  "status": "reviewed",
+  "status": "needs_fix",
   "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Court finds ignored reconciliation and one-line order. ASMT-10 ground not ruled on. Corrected exact order-date quote.",
+  "notes": "AUDIT PENDING: Previous pass used incomplete excerpts for some cases; do not treat as verified gold until full judgment and fact review is completed. Court finds ignored reconciliation and one-line order. ASMT-10 ground not ruled on. Corrected exact order-date quote.",
   "seconds": null
  }
 }
