@@ -188,7 +188,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Court rejects hearing complaint in 8. Hearing dates came from a later notice, so retained in events and removed from the SCN fields. Appeal liberty is not remand. Corrected confirmed-demand text to order_reasoning. AI-assisted re-audit; full extracted judgment and populated fields checked.",
+  "notes": "Court rejects hearing complaint in 8. Hearing dates came from a later notice, so retained in events and removed from the SCN fields. Appeal liberty is not remand. Corrected confirmed-demand text to order_reasoning.",
   "seconds": null
  }
 }

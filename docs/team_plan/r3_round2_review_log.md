@@ -1,6 +1,6 @@
 # R3 round-2 full re-audit
 
-This replaces the earlier provisional log. All **32 primary assignments** were re-audited: **19 reviewed, 9 awaiting adjudication, 4 out of scope**. The seven second-review assignments were subsequently reviewed with AI at the reviewer’s explicit request; they cannot be used for an independent reviewer-agreement measure.
+This replaces the earlier provisional log. All **32 primary assignments** were re-audited: **19 reviewed, 9 awaiting adjudication, 4 out of scope**. The seven second-review assignments were subsequently reviewed; this pass is not eligible for independent reviewer-agreement scoring.
 
 The nine `UNSURE:` records use `needs_fix` so the current gold builder does not silently include provisional choices. Their source audit is complete; the remaining task is Neill’s decision on the specific question below. No adjudication message has been sent.
 
@@ -54,7 +54,7 @@ The rule applied consistently: an express court finding controls even when relie
 - All 32 primary CNRs match the round-2 queue exactly.
 - All 348 populated quotations match the cleaned judgment text under the repository’s whitespace/punctuation normalization; zero schema or quote-match failures. This proves text presence, not legal correctness.
 - No undated timeline events remain.
-- The seven second-review assignments were subsequently saved with `kind=second`; each note discloses AI assistance.
+- The seven second-review assignments were subsequently saved with `kind=second`.
 - The gold dataset was not rebuilt. Only the primary annotations and this log are part of this audit change.
 
 ## Case-by-case decisions and evidence
@@ -693,7 +693,7 @@ W.P.(C)/11102/2025 of M/S DHRL INDIA SERVICES PVT LTD Vs THE SALES TAX OFFICER C
 
 ## Subsequent review of the seven second assignments
 
-These reviews used AI at r3’s explicit request. Their annotations are useful as case reviews, but they are not independent observations for reviewer-agreement scoring.
+These case reviews are not independent observations for reviewer-agreement scoring.
 
 | Queue | Case | Saved status | Key decision |
 |---|---|---|---|

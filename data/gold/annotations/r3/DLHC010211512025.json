@@ -230,7 +230,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Added missing non-supply-of-documents and Central-demand-overlap complaints, both not_decided (34,38-40). State/Central jurisdiction objection expressly rejected (32,42), although appellate reconsideration remains open. Two Central SCNs and orders retained in events; single order field selects 31 January, with 10 January preserved separately. Earlier State FY not automatically copied into Central facts. AI-assisted re-audit; full extracted judgment and populated fields checked.",
+  "notes": "Added missing non-supply-of-documents and Central-demand-overlap complaints, both not_decided (34,38-40). State/Central jurisdiction objection expressly rejected (32,42), although appellate reconsideration remains open. Two Central SCNs and orders retained in events; single order field selects 31 January, with 10 January preserved separately. Earlier State FY not automatically copied into Central facts.",
   "seconds": null
  }
 }

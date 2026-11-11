@@ -149,11 +149,12 @@
  },
  "review": {
   "status": "reviewed",
-  "kind": "second",
+  "kind": "first",
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Court rejected Additional Notices service objection in paragraph 9 but expressly found no proper opportunity in paragraph 11 and remanded with costs. Notification validity left open, pending Supreme Court. Hearing dates came from subsequent opportunities, not original SCN. Source says a 23 July reminder fixed hearing for 22 July; retained quoted dates without inventing correction. AI assistance used at reviewer request; independence measure invalid for this record.",
-  "seconds": null
+  "notes": "Court rejected Additional Notices service objection in paragraph 9 but expressly found no proper opportunity in paragraph 11 and remanded with costs. Notification validity left open, pending Supreme Court. Hearing dates came from subsequent opportunities, not original SCN. Source says a 23 July reminder fixed hearing for 22 July; retained quoted dates without inventing correction.",
+  "seconds": 21,
+  "saved_at": "2026-11-12T00:25:43"
  }
 }

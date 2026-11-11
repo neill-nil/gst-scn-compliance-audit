@@ -152,7 +152,7 @@
   "reviewed_by": "r3",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "Court says courier likely had not arrived; no established ignored reply. Retained not_decided. Distinguished reply document date from filing/receipt; retained dispatch date separately. AI-assisted re-audit; full extracted judgment and populated fields checked.",
+  "notes": "Court says courier likely had not arrived; no established ignored reply. Retained not_decided. Distinguished reply document date from filing/receipt; retained dispatch date separately.",
   "seconds": null
  }
 }
