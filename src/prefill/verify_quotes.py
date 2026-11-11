@@ -24,8 +24,11 @@ QUOTE_MARKS = str.maketrans({c: "'" for c in "‘’‚‛„‟“”\"`´′�
 
 
 def norm(s: str) -> str:
-    """Collapse whitespace and treat all quote-mark and dash glyphs alike (PDF text and models mix them)."""
-    return re.sub(r"\s+", " ", s.translate(QUOTE_MARKS)).strip()
+    """Collapse whitespace and treat all quote-mark and dash glyphs alike (PDF text and models mix them).
+    A word hyphenated across a line break ("show-" / "cause") comes out of the PDF as "show- cause"; it is
+    matched as "show-cause"."""
+    s = re.sub(r"\s+", " ", s.translate(QUOTE_MARKS)).strip()
+    return re.sub(r"(?<=\w)- (?=\w)", "-", s)
 
 
 def court_code(cnr: str) -> str:
