@@ -1,0 +1,142 @@
+{
+ "cnr": "BRHC010533452024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2015-16",
+    "2016-17"
+   ],
+   "quote": "for the Financial Year 2015 – 16 and 2016 – 17.",
+   "para": 3
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2021-04-28",
+     "quote": "demand-cum-show cause notice dated 28.04.2021",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-01-02",
+    "quote": "order dated 02.01.2024",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2021-04-13",
+    "type": "pre_scn_intimation",
+    "quote": "vide letter dated 13.04.2021, email dated 14.04.2021 and reminder dated 20.04.2021 by the Department",
+    "para": 24
+   },
+   {
+    "date": "2021-04-28",
+    "type": "scn_issued",
+    "quote": "demand-cum-show cause notice was issued on 28.04.2021",
+    "para": 24
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "The noticee did not submit any defence reply against the demand-cum-show cause notice",
+    "para": 24
+   },
+   {
+    "date": "2023-10-30",
+    "type": "hearing_attended",
+    "quote": "The noticee appeared on 30.10.2023 and submitted a letter requesting for four weeks’ time.",
+    "para": 17
+   },
+   {
+    "date": "2024-01-02",
+    "type": "order_passed",
+    "quote": "order in original which is impugned in the present writ application was issued on 02.01.2024.",
+    "para": 17
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "A show cause notice has been issued to the petitioner by the respondent no. 1 stating that he is providing taxable service and has suppressed the taxable turnover for the Financial Year 2015 – 16 and 2016 – 17.",
+    "para": 3
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The respondent no. 1 passed an ex parte order holding therein inter alia that the petitioner is engaged in providing taxable services under Section 65 of the Finance Act, 1994 (hereinafter referred to as ‘the Act of 1994’) with the subsequent amendments and does not fall under any of the entries of the Mega Exemption Notification No. 25/2012-Service Tax dated 20.06.2012 as amended.",
+    "para": 3
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "The respondent no. 1 held vide order dated 02.01.2024 as contained in Annexure ‘P2’ (hereinafter referred to as the ‘impugned order’) that the petitioner has suppressed taxable turnover in contravention of the provisions of the Act of 1994 and imposed service tax of Rs.1,26,03,035/- and an equivalent penalty among other penalty and interest.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "This writ application stands disposed of accordingly.",
+   "para": 42
+  }
+ },
+ "review": {
+  "status": "out_of_scope",
+  "kind": "first",
+  "reviewed_by": "r3",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "notes": "Judgment concerns service tax under Finance Act 1994 for FY 2015-16 and 2016-17, not CGST/SGST section 73/74 demand.",
+  "seconds": null
+ }
+}
