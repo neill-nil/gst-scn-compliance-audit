@@ -106,15 +106,6 @@
     "quote": "who have illegally and arbitrarily not only demanded higher penalty from the petitioner in excess of what was demanded in the show cause notice",
     "quote_source": "court",
     "para": 17
-   },
-   {
-    "type": "other_procedural",
-    "note": "s.122 penalty despite s.74 penalty for the same act",
-    "finding": "defect_found",
-    "contested": false,
-    "quote": "the invocation of Section 122 of the KGST / CGST Act in the impugned orders also being illegal and arbitrary",
-    "quote_source": "court",
-    "para": 17
    }
   ],
   "outcome": {
@@ -130,8 +121,8 @@
   "reviewed_by": "r2",
   "drafted_by": "gemini-3.5-flash-lite",
   "prompt_version": "2026-10-29.1",
-  "notes": "UNSURE: s.75(13) duplicate-penalty ground is coded other_procedural; demand beyond SCN is clear.",
+  "notes": "",
   "seconds": null,
-  "saved_at": "2026-11-11T23:36:08"
+  "saved_at": "2026-11-11T23:39:44"
  }
 }
