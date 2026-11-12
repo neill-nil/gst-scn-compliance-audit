@@ -6,9 +6,9 @@ the browser and turn off your laptop. When it finishes, you download one zip fil
 
 There are two sessions:
 - **Session 1 (12 Nov):** notebook A (NoticeCheck dev run) and notebook B (B1 re-run).
-- **Session 2 (13 Nov, only after Neill says "frozen"):** notebooks C and D (the test runs that go in the paper).
+- **Session 2 (13 Nov, only after Neill says "frozen"):** notebooks C1, C2, D1, D2 (the test runs that go in the paper).
 
-Each notebook has exactly **3 cells**. Cells 1 and 2 are the same in every notebook; only Cell 3 changes.
+Each notebook has exactly **3 cells**. Cell 2 is the same in every notebook; Session 2 uses its own Cell 1; Cell 3 changes per notebook.
 
 ---
 
@@ -97,48 +97,127 @@ while any(p.poll() is None for p in b1):
 
 ---
 
-## Session 2 (13 Nov): notebooks C and D. Only after Neill says "frozen"
-These are the runs reported in the paper. Each notebook runs 4 jobs, two at a time. Neill will confirm the time
-per notebook after the dev run (current estimate: about 5 hours each). Run C and D on **two different accounts**
-so each stays within its weekly GPU hours.
+## Session 2 (13 Nov): notebooks C1, C2, D1, D2. Only after Neill says "frozen"
+These are the runs reported in the paper. In Session 1 Kaggle used only one of the two GPUs, so Session 2
+starts **two model servers, one per GPU**, and each notebook runs 2 jobs. That's **about 3–3.5 hours per notebook**.
 
-### Notebook C: `nc-C-main`, main system 3 times + notice-only → download `test_main.zip`
-Cell 3:
+**Order:** start C1 and C2 together (or one after the other if Kaggle allows only one GPU session), then D1 and D2.
+All four need about 13 GPU hours; with Session 1 that's about 18 of the 30 weekly hours, so one account is enough.
+
+Each notebook: Cell 1 is the **Session 2 Cell 1** below (not the Session 1 one), Cell 2 is the usual **Cell 2**,
+and Cell 3 is the notebook's own cell. Then **Save Version → Save & Run All (Commit)**, as always.
+
+### Session 2 Cell 1: two model servers, one per GPU (same in C1, C2, D1, D2)
 ```python
-jobs = [("nc_full", "full_record", 1), ("nc_full", "full_record", 2),
-        ("nc_full", "full_record", 3), ("nc_full", "notice_only", 1)]
-def run(cfg, view, seed):
-    rid = f"{cfg}_{view}_s{seed}"
-    return subprocess.Popen(["python", "-m", "src.noticecheck.cli", "--inputs", f"data/interim/inputs/{view}.jsonl",
-                             "--config", f"configs/{cfg}.json", "--run-id", rid, "--seed", str(seed)],
-                            stdout=open(f"{rid}.log", "w"), stderr=subprocess.STDOUT)
-for i in range(0, len(jobs), 2):
-    ps = [run(*j) for j in jobs[i:i + 2]]
-    while any(p.poll() is None for p in ps):
-        time.sleep(60)
-    print(time.strftime("%H:%M"), "done:", jobs[i:i + 2], [p.returncode for p in ps], flush=True)
-!zip -qr /kaggle/working/test_main.zip runs *.log -x 'runs/cache/*'
+!apt-get -qq update && apt-get -qq install -y zstd pciutils lshw poppler-utils zip > /dev/null
+!curl -fsSL https://ollama.com/install.sh | sh
+import os, subprocess, time
+base = dict(os.environ, OLLAMA_CONTEXT_LENGTH="16384", OLLAMA_NUM_PARALLEL="2", OLLAMA_KEEP_ALIVE="-1")
+for gpu in (0, 1):
+    subprocess.Popen(["ollama", "serve"], env=dict(base, CUDA_VISIBLE_DEVICES=str(gpu), OLLAMA_HOST=f"127.0.0.1:{11434 + gpu}"),
+                     stdout=open(f"/kaggle/working/ollama_{gpu}.log", "w"), stderr=subprocess.STDOUT)
+time.sleep(10)
+!ollama pull qwen3:8b
+!ollama list
+!OLLAMA_HOST=127.0.0.1:11435 ollama list
+```
+Both `ollama list` lines must show `qwen3:8b`.
+
+### Notebook C1: `nc-C1`, main system, runs 1 and 2 → download `test_C1.zip`
+Cell 1: **Session 2 Cell 1** (above). Cell 2: the usual **Cell 2**. Cell 3:
+```python
+import json
+jobs = [("nc_full", "full_record", 1), ("nc_full", "full_record", 2)]
+cnrs = [json.loads(l)["cnr"] for l in open("data/interim/inputs/full_record.jsonl")]
+halves = {"a": cnrs[:69], "b": cnrs[69:]}
+procs = []
+for k, (cfg, view, seed) in enumerate(jobs):          # job 1 on GPU 0, job 2 on GPU 1
+    for h, ids in halves.items():                      # each job split in two, so each GPU serves 2 requests at a time
+        rid = f"{cfg}_{view}_s{seed}_{h}"
+        procs.append(subprocess.Popen(
+            ["python", "-m", "src.noticecheck.cli", "--inputs", f"data/interim/inputs/{view}.jsonl",
+             "--config", f"configs/{cfg}.json", "--run-id", rid, "--seed", str(seed), "--cnr", *ids],
+            env=dict(os.environ, LOCAL_BASE_URL=f"http://localhost:{11434 + k}/v1"),
+            stdout=open(f"{rid}.log", "w"), stderr=subprocess.STDOUT))
+while any(p.poll() is None for p in procs):
+    time.sleep(60)
+!tail -n 2 *.log
+!zip -qr /kaggle/working/test_C1.zip runs *.log /kaggle/working/ollama_0.log /kaggle/working/ollama_1.log -x 'runs/cache/*'
 %cd /kaggle/working
 !rm -rf /kaggle/working/repo
 !ls -la /kaggle/working
 ```
 
-### Notebook D: `nc-D-ablations`, the four ablations → download `test_ablations.zip`
-Cell 3: the same as notebook C, with only the first line and the zip name changed:
+### Notebook C2: `nc-C2`, main system run 3 + notice-only → download `test_C2.zip`
+Cell 1: **Session 2 Cell 1** (above). Cell 2: the usual **Cell 2**. Cell 3:
 ```python
-jobs = [("nc_no_tools", "full_record", 1), ("nc_no_retrieval", "full_record", 1),
-        ("nc_no_verifier", "full_record", 1), ("nc_no_handoff", "full_record", 1)]
-def run(cfg, view, seed):
-    rid = f"{cfg}_{view}_s{seed}"
-    return subprocess.Popen(["python", "-m", "src.noticecheck.cli", "--inputs", f"data/interim/inputs/{view}.jsonl",
-                             "--config", f"configs/{cfg}.json", "--run-id", rid, "--seed", str(seed)],
-                            stdout=open(f"{rid}.log", "w"), stderr=subprocess.STDOUT)
-for i in range(0, len(jobs), 2):
-    ps = [run(*j) for j in jobs[i:i + 2]]
-    while any(p.poll() is None for p in ps):
-        time.sleep(60)
-    print(time.strftime("%H:%M"), "done:", jobs[i:i + 2], [p.returncode for p in ps], flush=True)
-!zip -qr /kaggle/working/test_ablations.zip runs *.log -x 'runs/cache/*'
+import json
+jobs = [("nc_full", "full_record", 3), ("nc_full", "notice_only", 1)]
+cnrs = [json.loads(l)["cnr"] for l in open("data/interim/inputs/full_record.jsonl")]
+halves = {"a": cnrs[:69], "b": cnrs[69:]}
+procs = []
+for k, (cfg, view, seed) in enumerate(jobs):          # job 1 on GPU 0, job 2 on GPU 1
+    for h, ids in halves.items():                      # each job split in two, so each GPU serves 2 requests at a time
+        rid = f"{cfg}_{view}_s{seed}_{h}"
+        procs.append(subprocess.Popen(
+            ["python", "-m", "src.noticecheck.cli", "--inputs", f"data/interim/inputs/{view}.jsonl",
+             "--config", f"configs/{cfg}.json", "--run-id", rid, "--seed", str(seed), "--cnr", *ids],
+            env=dict(os.environ, LOCAL_BASE_URL=f"http://localhost:{11434 + k}/v1"),
+            stdout=open(f"{rid}.log", "w"), stderr=subprocess.STDOUT))
+while any(p.poll() is None for p in procs):
+    time.sleep(60)
+!tail -n 2 *.log
+!zip -qr /kaggle/working/test_C2.zip runs *.log /kaggle/working/ollama_0.log /kaggle/working/ollama_1.log -x 'runs/cache/*'
+%cd /kaggle/working
+!rm -rf /kaggle/working/repo
+!ls -la /kaggle/working
+```
+
+### Notebook D1: `nc-D1`, ablations: no tools, no retrieval → download `test_D1.zip`
+Cell 1: **Session 2 Cell 1** (above). Cell 2: the usual **Cell 2**. Cell 3:
+```python
+import json
+jobs = [("nc_no_tools", "full_record", 1), ("nc_no_retrieval", "full_record", 1)]
+cnrs = [json.loads(l)["cnr"] for l in open("data/interim/inputs/full_record.jsonl")]
+halves = {"a": cnrs[:69], "b": cnrs[69:]}
+procs = []
+for k, (cfg, view, seed) in enumerate(jobs):          # job 1 on GPU 0, job 2 on GPU 1
+    for h, ids in halves.items():                      # each job split in two, so each GPU serves 2 requests at a time
+        rid = f"{cfg}_{view}_s{seed}_{h}"
+        procs.append(subprocess.Popen(
+            ["python", "-m", "src.noticecheck.cli", "--inputs", f"data/interim/inputs/{view}.jsonl",
+             "--config", f"configs/{cfg}.json", "--run-id", rid, "--seed", str(seed), "--cnr", *ids],
+            env=dict(os.environ, LOCAL_BASE_URL=f"http://localhost:{11434 + k}/v1"),
+            stdout=open(f"{rid}.log", "w"), stderr=subprocess.STDOUT))
+while any(p.poll() is None for p in procs):
+    time.sleep(60)
+!tail -n 2 *.log
+!zip -qr /kaggle/working/test_D1.zip runs *.log /kaggle/working/ollama_0.log /kaggle/working/ollama_1.log -x 'runs/cache/*'
+%cd /kaggle/working
+!rm -rf /kaggle/working/repo
+!ls -la /kaggle/working
+```
+
+### Notebook D2: `nc-D2`, ablations: no verifier, no hand-off → download `test_D2.zip`
+Cell 1: **Session 2 Cell 1** (above). Cell 2: the usual **Cell 2**. Cell 3:
+```python
+import json
+jobs = [("nc_no_verifier", "full_record", 1), ("nc_no_handoff", "full_record", 1)]
+cnrs = [json.loads(l)["cnr"] for l in open("data/interim/inputs/full_record.jsonl")]
+halves = {"a": cnrs[:69], "b": cnrs[69:]}
+procs = []
+for k, (cfg, view, seed) in enumerate(jobs):          # job 1 on GPU 0, job 2 on GPU 1
+    for h, ids in halves.items():                      # each job split in two, so each GPU serves 2 requests at a time
+        rid = f"{cfg}_{view}_s{seed}_{h}"
+        procs.append(subprocess.Popen(
+            ["python", "-m", "src.noticecheck.cli", "--inputs", f"data/interim/inputs/{view}.jsonl",
+             "--config", f"configs/{cfg}.json", "--run-id", rid, "--seed", str(seed), "--cnr", *ids],
+            env=dict(os.environ, LOCAL_BASE_URL=f"http://localhost:{11434 + k}/v1"),
+            stdout=open(f"{rid}.log", "w"), stderr=subprocess.STDOUT))
+while any(p.poll() is None for p in procs):
+    time.sleep(60)
+!tail -n 2 *.log
+!zip -qr /kaggle/working/test_D2.zip runs *.log /kaggle/working/ollama_0.log /kaggle/working/ollama_1.log -x 'runs/cache/*'
 %cd /kaggle/working
 !rm -rf /kaggle/working/repo
 !ls -la /kaggle/working

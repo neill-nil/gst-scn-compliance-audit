@@ -35,6 +35,21 @@ def norm(s: str) -> str:
     return re.sub(r"\s+", " ", (s or "").replace("“", '"').replace("”", '"').replace("’", "'")).strip().lower()
 
 
+def clean_quote(q: str) -> str:
+    """Models copy the prompt's wrapper ('[record: "..."]') around a quote; keep only the quoted words."""
+    q = re.sub(r'^\s*\[?\s*record\s*:\s*', "", q or "", flags=re.I).strip()
+    q = re.sub(r'\]\s*$', "", q).strip()
+    while q[:1] in ('"', "'", "“", "”") and q[-1:] in ('"', "'", "“", "”") and len(q) > 1:
+        q = q[1:-1].strip()
+    return q
+
+
+def quote_in_record(quote: str, record_quotes: list[str]) -> bool:
+    """True if the quote (or each part of it around '...') appears word for word in one record quote."""
+    parts = [norm(p) for p in re.split(r"\.\.\.|…", clean_quote(quote)) if len(p.strip()) >= 15] or [norm(clean_quote(quote))]
+    return any(all(part in q for part in parts) or (len(q) >= 20 and q in parts[0]) for q in record_quotes if q)
+
+
 class Run:
     """Holds one case's state and its trace."""
 
@@ -134,8 +149,8 @@ def verify(run: Run, findings: list[dict]) -> list[dict]:
     for f in findings:
         f = dict(f)
         if f["verdict"] == "defect":
-            good = [e for e in f["evidence"] if e["source"] == "record" and e["quote"]
-                    and any(norm(e["quote"]) in q or (len(q) >= 20 and q in norm(e["quote"])) for q in quotes if q)]
+            good = [dict(e, quote=clean_quote(e["quote"])) for e in f["evidence"]
+                    if e["source"] == "record" and e["quote"] and quote_in_record(e["quote"], quotes)]
             if not good:
                 f.update(verdict="cant_tell", evidence=[], missing_facts=f["missing_facts"] + ["a record quote showing the defect"])
                 run.log("verify", defect=f["type"], ok=True, output_summary="defect dropped: no verified record quote")

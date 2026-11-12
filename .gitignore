@@ -48,3 +48,4 @@ b1_results.zip
 corpus/source_files/
 runs/sandbox_outbox/
 runs/dev_*/
+/*.zip
