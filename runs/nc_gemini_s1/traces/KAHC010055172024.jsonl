@@ -1,0 +1,14 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "gemini-3.5-flash-lite", "ok": true, "tokens_in": 1303, "tokens_out": 302, "seconds": 5.34, "error": null}
+{"step": 2, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74', 'text': '74. Determination of tax 2[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 3, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.75', 'text': '75. General provisions relating to determination of tax.—(1) Where the service of notice or issuance of order is stayed by an order of a court or Appellate Tribunal, ", "seconds": 0.001}
+{"step": 4, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.107"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.107', 'text': '107. Appeals to Appellate Authority.—(1) Any person aggrieved by any decision or order passed under this Act or the State Goods and Services Tax Act or the Union Ter", "seconds": 0.001}
+{"step": 5, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 6, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "tool": null, "model": "gemini-3.5-flash-lite", "ok": true, "tokens_in": 1784, "tokens_out": 85, "seconds": 4.33, "error": null}
+{"step": 14, "stage": "handoff", "ok": true, "output_summary": "unclear,defect_free"}
