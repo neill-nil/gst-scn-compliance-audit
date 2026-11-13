@@ -1,0 +1,18 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1142, "tokens_out": 1212, "seconds": 58.49, "error": null}
+{"step": 2, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73', 'text': '73. Determination of tax 1[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 3, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74', 'text': '74. Determination of tax 2[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 4, "stage": "plan", "tool": "limitation_check", "args": {"provision": "73", "order_date": "2025-02-05", "financial_year": "2024-04", "apply_extensions": true}, "by": "model", "ok": false, "output_summary": "financial_year must look like \"2020-21\", got '2024-04'", "seconds": 0.004}
+{"step": 5, "stage": "plan", "tool": "limitation_check", "args": {"provision": "74", "order_date": "2026-01-28", "financial_year": "2025-04", "apply_extensions": true}, "by": "model", "ok": false, "output_summary": "financial_year must look like \"2020-21\", got '2025-04'", "seconds": 0.004}
+{"step": 6, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1339, "tokens_out": 820, "seconds": 42.76, "error": null}
+{"step": 7, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73(10)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73(10)', 'text': '(10) The proper officer shall issue the order under sub-section (9) within three years from the due date for furnishing of annual return for the financial year to", "seconds": 0.001}
+{"step": 8, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74(10)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74(10)', 'text': '(10) The proper officer shall issue the order under sub-section (9) within a period of five years from the due date for furnishing of annual return for the financ", "seconds": 0.001}
+{"step": 9, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 14, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 15, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 16, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 17, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1506, "tokens_out": 903, "seconds": 46.38, "error": null}
+{"step": 18, "stage": "handoff", "ok": true, "output_summary": "unclear,defect_free"}

@@ -1,0 +1,14 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 2318, "tokens_out": 2180, "seconds": 107.92, "error": null}
+{"step": 2, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73', 'text': '73. Determination of tax 1[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 3, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74', 'text': '74. Determination of tax 2[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 4, "stage": "plan", "tool": "caselaw_search", "args": {"query": "limitation period for s.73 orders", "k": 3}, "by": "model", "ok": true, "output_summary": "[{'cnr': 'HCMA013145892025', 'court': 'Madras', 'decision_date': '2026-01-08', 'para': 4, 'text': '4. The impugned order is primarily challenged on the ground that it has been passed in contravention ", "seconds": 0.042}
+{"step": 5, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 6, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1349, "tokens_out": 656, "seconds": 32.27, "error": null}
+{"step": 14, "stage": "handoff", "ok": true, "output_summary": "unclear,defect_free"}

@@ -1,0 +1,15 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1142, "tokens_out": 1232, "seconds": 62.87, "error": null}
+{"step": 2, "stage": "plan", "tool": "limitation_check", "args": {"provision": "73", "financial_year": "2024-04", "scn_date": "2024-08-06", "order_date": "2024-08-06", "apply_extensions": true}, "by": "model", "ok": false, "output_summary": "financial_year must look like \"2020-21\", got '2024-04'", "seconds": 0.006}
+{"step": 3, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73(10)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73(10)', 'text': '(10) The proper officer shall issue the order under sub-section (9) within three years from the due date for furnishing of annual return for the financial year to", "seconds": 0.001}
+{"step": 4, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1272, "tokens_out": 1359, "seconds": 70.61, "error": null}
+{"step": 5, "stage": "plan", "tool": "limitation_check", "args": {"provision": "73", "financial_year": "2024-25", "scn_date": "2024-08-06", "order_date": "2024-08-06", "apply_extensions": true}, "by": "model", "ok": false, "output_summary": "no annual-return due date for 2024-25 (covered: 2017-18, 2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24); FY 2024-25 onward falls under s.74A", "seconds": 0.004}
+{"step": 6, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 14, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 743, "tokens_out": 716, "seconds": 41.43, "error": null}
+{"step": 15, "stage": "handoff", "ok": true, "output_summary": "unclear,defect_free"}

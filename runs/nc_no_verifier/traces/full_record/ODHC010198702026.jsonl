@@ -1,0 +1,14 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1195, "tokens_out": 564, "seconds": 24.63, "error": null}
+{"step": 2, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74', 'text': '74. Determination of tax 2[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 3, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.168A"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.168A', 'text': '168A. Power of Government to extend time limit in special circumstances.— (1) Notwithstanding anything contained in this Act, the Government may, on the recommendat", "seconds": 0.002}
+{"step": 4, "stage": "plan", "tool": "caselaw_search", "args": {"query": "Section 74 order validity without show cause notice", "k": 5}, "by": "model", "ok": true, "output_summary": "[{'cnr': 'HCMD010168992026', 'court': 'Madras', 'decision_date': '2026-02-06', 'para': 2, 'text': '2. The learned counsel appearing for the petitioner would submit that a DRC-1 show cause notice was i", "seconds": 0.088}
+{"step": 5, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 6, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1243, "tokens_out": 701, "seconds": 34.79, "error": null}
+{"step": 14, "stage": "handoff", "ok": true, "output_summary": "unclear,defect_free"}

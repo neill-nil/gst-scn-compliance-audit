@@ -1,0 +1,14 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1131, "tokens_out": 1226, "seconds": 61.46, "error": null}
+{"step": 2, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74(10)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74(10)', 'text': '(10) The proper officer shall issue the order under sub-section (9) within a period of five years from the due date for furnishing of annual return for the financ", "seconds": 0.007}
+{"step": 3, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.168A"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.168A', 'text': '168A. Power of Government to extend time limit in special circumstances.— (1) Notwithstanding anything contained in this Act, the Government may, on the recommendat", "seconds": 0.002}
+{"step": 4, "stage": "plan", "tool": "caselaw_search", "args": {"query": "limitation period for s.74 orders", "k": 5}, "by": "model", "ok": true, "output_summary": "[{'cnr': 'HCMA010191472026', 'court': 'Madras', 'decision_date': '2026-02-06', 'para': 5, 'text': '5. The Petitioner ought to have been give a proper Notice as there were allegations to justify invoca", "seconds": 0.052}
+{"step": 5, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "defect"}
+{"step": 6, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 916, "tokens_out": 815, "seconds": 40.98, "error": null}
+{"step": 14, "stage": "handoff", "ok": true, "output_summary": "unclear"}

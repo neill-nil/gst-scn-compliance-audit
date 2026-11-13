@@ -1,0 +1,18 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 3268, "tokens_out": 2251, "seconds": 111.59, "error": null}
+{"step": 2, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74', 'text': '74. Determination of tax 2[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 3, "stage": "plan", "tool": "caselaw_search", "args": {"query": "multiple financial years under Section 74", "k": 5}, "by": "model", "ok": true, "output_summary": "[{'cnr': 'WBCHCA0175192025', 'court': 'Calcutta', 'decision_date': '2026-10-01', 'para': 1, 'text': '1. Learned Senior Counsel appearing for the petitioner submits that the impugned Show Cause Notice ", "seconds": 0.013}
+{"step": 4, "stage": "plan", "tool": "limitation_check", "args": {"provision": "74", "financial_year": "2023-04", "scn_date": "2023-10-23", "order_date": "2024-12-05", "apply_extensions": true}, "by": "model", "ok": false, "output_summary": "financial_year must look like \"2020-21\", got '2023-04'", "seconds": 0.003}
+{"step": 5, "stage": "plan", "tool": "statute_search", "args": {"query": "multiple financial years Section 74", "k": 5}, "by": "model", "ok": true, "output_summary": "[{'ref': 'CGST Act s.62(1)', 'text': '(1) Notwithstanding anything to the contrary contained in section 73 or section 74 2[or section 74A], where a registered person fails to furnish the return under ", "seconds": 0.213}
+{"step": 6, "stage": "plan", "tool": "date_diff", "args": {"start": "2023-10-23", "end": "2024-12-05"}, "by": "model", "ok": true, "output_summary": "{'days': 409}", "seconds": 0.002}
+{"step": 7, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1676, "tokens_out": 945, "seconds": 46.53, "error": null}
+{"step": 8, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74', 'text': '74. Determination of tax 2[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 9, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 14, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 15, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 16, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 17, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1413, "tokens_out": 936, "seconds": 40.53, "error": null}
+{"step": 18, "stage": "handoff", "ok": true, "output_summary": "unclear,defect_free"}

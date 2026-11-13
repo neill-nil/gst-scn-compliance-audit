@@ -1,0 +1,19 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 2630, "tokens_out": 2426, "seconds": 124.02, "error": null}
+{"step": 2, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73', 'text': '73. Determination of tax 1[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.001}
+{"step": 3, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74', 'text': '74. Determination of tax 2[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.001}
+{"step": 4, "stage": "plan", "tool": "limitation_check", "args": {"provision": "73", "order_date": "2024-08-31", "financial_year": "2024-02", "apply_extensions": true}, "by": "model", "ok": false, "output_summary": "financial_year must look like \"2020-21\", got '2024-02'", "seconds": 0.003}
+{"step": 5, "stage": "plan", "tool": "limitation_check", "args": {"provision": "74", "order_date": "2025-11-21", "financial_year": "2025-02", "apply_extensions": true}, "by": "model", "ok": false, "output_summary": "financial_year must look like \"2020-21\", got '2025-02'", "seconds": 0.003}
+{"step": 6, "stage": "plan", "tool": "date_diff", "args": {"start": "2024-08-31", "end": "2025-11-21"}, "by": "model", "ok": true, "output_summary": "{'days': 447}", "seconds": 0.002}
+{"step": 7, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1495, "tokens_out": 1094, "seconds": 56.19, "error": null}
+{"step": 8, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73', 'text': '73. Determination of tax 1[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 9, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74', 'text': '74. Determination of tax 2[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 10, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 14, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 15, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 16, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 17, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 18, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 3267, "tokens_out": 1109, "seconds": 59.39, "error": null}
+{"step": 19, "stage": "handoff", "ok": true, "output_summary": "unclear,defect_free"}

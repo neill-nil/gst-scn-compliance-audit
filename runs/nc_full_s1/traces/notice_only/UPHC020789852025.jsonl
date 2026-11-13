@@ -1,0 +1,16 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 976, "tokens_out": 938, "seconds": 51.96, "error": null}
+{"step": 2, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73', 'text': '73. Determination of tax 1[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 3, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73(10)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73(10)', 'text': '(10) The proper officer shall issue the order under sub-section (9) within three years from the due date for furnishing of annual return for the financial year to", "seconds": 0.002}
+{"step": 4, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(4)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.75(4)', 'text': '(4) An opportunity of hearing shall be granted where a request is received in writing from the person chargeable with tax or penalty, or where any adverse decision", "seconds": 0.002}
+{"step": 5, "stage": "plan", "tool": "limitation_check", "args": {"provision": "73", "financial_year": "2023-2024", "order_date": "2024-04-25", "apply_extensions": true}, "by": "model", "ok": false, "output_summary": "invalid arguments for limitation_check: '2023-2024' does not match '^\\\\d{4}-\\\\d{2}$'", "seconds": 0.007}
+{"step": 6, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 2232, "tokens_out": 2625, "seconds": 141.8, "error": null}
+{"step": 7, "stage": "plan", "tool": "limitation_check", "args": {"provision": "73", "financial_year": "2023-24", "order_date": "2024-04-25", "apply_extensions": true}, "by": "model", "ok": true, "output_summary": "{'annual_return_due': '2024-12-31', 'scn_last_date': '2027-09-30', 'order_last_date': '2027-12-31', 'scn_in_time': None, 'order_in_time': True, 'extension_notifications_used': [], 'contested': False, ", "seconds": 0.004}
+{"step": 8, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "defect"}
+{"step": 9, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 14, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 15, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 16, "stage": "handoff", "ok": true, "output_summary": ""}

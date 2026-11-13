@@ -1,0 +1,461 @@
+{
+  "run_dir": "runs/nc_no_verifier",
+  "split_file": "data/splits/test.txt",
+  "n_gold_cases": 125,
+  "views": {
+    "full_record": {
+      "n_cases_with_output": 125,
+      "defects": {
+        "view": "full_record",
+        "strict": false,
+        "n_cases_scored": 125,
+        "overall": {
+          "tp": 33,
+          "false_alarm": 10,
+          "wrong_provision": 0,
+          "miss": 71,
+          "true_negative": 27,
+          "flags_on_unargued": 30,
+          "precision": 0.7674418604651163,
+          "recall": 0.3173076923076923,
+          "f1": 0.4489795918367347,
+          "false_alarm_rate": 0.2702702702702703
+        },
+        "rule_detectable": {
+          "tp": 19,
+          "false_alarm": 5,
+          "wrong_provision": 0,
+          "miss": 35,
+          "true_negative": 7,
+          "flags_on_unargued": 6,
+          "precision": 0.7916666666666666,
+          "recall": 0.35185185185185186,
+          "f1": 0.48717948717948717,
+          "false_alarm_rate": 0.4166666666666667
+        },
+        "reasoning_dependent": {
+          "tp": 14,
+          "false_alarm": 5,
+          "wrong_provision": 0,
+          "miss": 36,
+          "true_negative": 20,
+          "flags_on_unargued": 24,
+          "precision": 0.7368421052631579,
+          "recall": 0.28,
+          "f1": 0.40579710144927544,
+          "false_alarm_rate": 0.2
+        },
+        "by_type": {
+          "hearing_75_4": {
+            "tp": 11,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 32,
+            "true_negative": 5,
+            "flags_on_unargued": 0,
+            "precision": 1.0,
+            "recall": 0.2558139534883721,
+            "f1": 0.40740740740740744,
+            "false_alarm_rate": 0.0
+          },
+          "adjournment_75_5": {
+            "tp": 0,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 0,
+            "true_negative": 0,
+            "flags_on_unargued": 0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "false_alarm_rate": null
+          },
+          "reply_not_considered": {
+            "tp": 8,
+            "false_alarm": 2,
+            "wrong_provision": 0,
+            "miss": 8,
+            "true_negative": 6,
+            "flags_on_unargued": 3,
+            "precision": 0.8,
+            "recall": 0.5,
+            "f1": 0.6153846153846154,
+            "false_alarm_rate": 0.25
+          },
+          "non_speaking_order": {
+            "tp": 4,
+            "false_alarm": 1,
+            "wrong_provision": 0,
+            "miss": 5,
+            "true_negative": 0,
+            "flags_on_unargued": 12,
+            "precision": 0.8,
+            "recall": 0.4444444444444444,
+            "f1": 0.5714285714285714,
+            "false_alarm_rate": 1.0
+          },
+          "demand_beyond_scn": {
+            "tp": 0,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 1,
+            "true_negative": 1,
+            "flags_on_unargued": 3,
+            "precision": null,
+            "recall": 0.0,
+            "f1": null,
+            "false_alarm_rate": 0.0
+          },
+          "service_169": {
+            "tp": 7,
+            "false_alarm": 4,
+            "wrong_provision": 0,
+            "miss": 3,
+            "true_negative": 2,
+            "flags_on_unargued": 1,
+            "precision": 0.6363636363636364,
+            "recall": 0.7,
+            "f1": 0.6666666666666666,
+            "false_alarm_rate": 0.6666666666666666
+          },
+          "signature": {
+            "tp": 1,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 0,
+            "true_negative": 0,
+            "flags_on_unargued": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "false_alarm_rate": null
+          },
+          "summary_only": {
+            "tp": 1,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 0,
+            "true_negative": 1,
+            "flags_on_unargued": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "false_alarm_rate": 0.0
+          },
+          "limitation": {
+            "tp": 0,
+            "false_alarm": 1,
+            "wrong_provision": 0,
+            "miss": 0,
+            "true_negative": 0,
+            "flags_on_unargued": 5,
+            "precision": 0.0,
+            "recall": null,
+            "f1": null,
+            "false_alarm_rate": 1.0
+          },
+          "extension_notification_validity": {
+            "tp": 0,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 0,
+            "true_negative": 0,
+            "flags_on_unargued": 0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "false_alarm_rate": null
+          },
+          "consolidated_scn": {
+            "tp": 0,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 10,
+            "true_negative": 8,
+            "flags_on_unargued": 0,
+            "precision": null,
+            "recall": 0.0,
+            "f1": null,
+            "false_alarm_rate": 0.0
+          },
+          "section_74_ingredients": {
+            "tp": 0,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 1,
+            "true_negative": 1,
+            "flags_on_unargued": 3,
+            "precision": null,
+            "recall": 0.0,
+            "f1": null,
+            "false_alarm_rate": 0.0
+          },
+          "other_procedural": {
+            "tp": 1,
+            "false_alarm": 2,
+            "wrong_provision": 0,
+            "miss": 11,
+            "true_negative": 3,
+            "flags_on_unargued": 3,
+            "precision": 0.3333333333333333,
+            "recall": 0.08333333333333333,
+            "f1": 0.13333333333333333,
+            "false_alarm_rate": 0.4
+          }
+        }
+      },
+      "contested": {
+        "view": "full_record",
+        "n_expected": 26,
+        "rate": 0.8076923076923077
+      },
+      "handoff": {
+        "note": "proxy: gold label covers only the defect_free reason",
+        "tp": 30,
+        "fp": 51,
+        "fn": 15,
+        "tn": 29,
+        "precision": 0.37037037037037035,
+        "recall": 0.6666666666666666
+      },
+      "traces": {
+        "tool_call_right_tool_rate": null,
+        "tool_call_valid_args_rate": null,
+        "n_error_steps": 0,
+        "error_recovery_rate": null
+      },
+      "unsafe_actions": {
+        "n_send_reply_actions": 0,
+        "n_unsafe": 0,
+        "unsafe_rate": 0.0
+      },
+      "cost": {
+        "noticecheck_v1": {
+          "calls": {
+            "mean": 2.1751824817518246,
+            "median": 2,
+            "total": 298,
+            "n": 137
+          },
+          "tokens_in": {
+            "mean": 4368.167883211679,
+            "median": 4356,
+            "total": 598439,
+            "n": 137
+          },
+          "tokens_out": {
+            "mean": 3388.934306569343,
+            "median": 3344,
+            "total": 464284,
+            "n": 137
+          },
+          "seconds": {
+            "mean": 166.87350364963504,
+            "median": 163.67,
+            "total": 22861.67,
+            "n": 137
+          }
+        }
+      },
+      "defects_strict": {
+        "view": "full_record",
+        "strict": true,
+        "n_cases_scored": 125,
+        "overall": {
+          "tp": 33,
+          "false_alarm": 10,
+          "wrong_provision": 0,
+          "miss": 71,
+          "true_negative": 27,
+          "flags_on_unargued": 30,
+          "precision": 0.7674418604651163,
+          "recall": 0.3173076923076923,
+          "f1": 0.4489795918367347,
+          "false_alarm_rate": 0.2702702702702703
+        },
+        "rule_detectable": {
+          "tp": 19,
+          "false_alarm": 5,
+          "wrong_provision": 0,
+          "miss": 35,
+          "true_negative": 7,
+          "flags_on_unargued": 6,
+          "precision": 0.7916666666666666,
+          "recall": 0.35185185185185186,
+          "f1": 0.48717948717948717,
+          "false_alarm_rate": 0.4166666666666667
+        },
+        "reasoning_dependent": {
+          "tp": 14,
+          "false_alarm": 5,
+          "wrong_provision": 0,
+          "miss": 36,
+          "true_negative": 20,
+          "flags_on_unargued": 24,
+          "precision": 0.7368421052631579,
+          "recall": 0.28,
+          "f1": 0.40579710144927544,
+          "false_alarm_rate": 0.2
+        },
+        "by_type": {
+          "hearing_75_4": {
+            "tp": 11,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 32,
+            "true_negative": 5,
+            "flags_on_unargued": 0,
+            "precision": 1.0,
+            "recall": 0.2558139534883721,
+            "f1": 0.40740740740740744,
+            "false_alarm_rate": 0.0
+          },
+          "adjournment_75_5": {
+            "tp": 0,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 0,
+            "true_negative": 0,
+            "flags_on_unargued": 0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "false_alarm_rate": null
+          },
+          "reply_not_considered": {
+            "tp": 8,
+            "false_alarm": 2,
+            "wrong_provision": 0,
+            "miss": 8,
+            "true_negative": 6,
+            "flags_on_unargued": 3,
+            "precision": 0.8,
+            "recall": 0.5,
+            "f1": 0.6153846153846154,
+            "false_alarm_rate": 0.25
+          },
+          "non_speaking_order": {
+            "tp": 4,
+            "false_alarm": 1,
+            "wrong_provision": 0,
+            "miss": 5,
+            "true_negative": 0,
+            "flags_on_unargued": 12,
+            "precision": 0.8,
+            "recall": 0.4444444444444444,
+            "f1": 0.5714285714285714,
+            "false_alarm_rate": 1.0
+          },
+          "demand_beyond_scn": {
+            "tp": 0,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 1,
+            "true_negative": 1,
+            "flags_on_unargued": 3,
+            "precision": null,
+            "recall": 0.0,
+            "f1": null,
+            "false_alarm_rate": 0.0
+          },
+          "service_169": {
+            "tp": 7,
+            "false_alarm": 4,
+            "wrong_provision": 0,
+            "miss": 3,
+            "true_negative": 2,
+            "flags_on_unargued": 1,
+            "precision": 0.6363636363636364,
+            "recall": 0.7,
+            "f1": 0.6666666666666666,
+            "false_alarm_rate": 0.6666666666666666
+          },
+          "signature": {
+            "tp": 1,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 0,
+            "true_negative": 0,
+            "flags_on_unargued": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "false_alarm_rate": null
+          },
+          "summary_only": {
+            "tp": 1,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 0,
+            "true_negative": 1,
+            "flags_on_unargued": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "false_alarm_rate": 0.0
+          },
+          "limitation": {
+            "tp": 0,
+            "false_alarm": 1,
+            "wrong_provision": 0,
+            "miss": 0,
+            "true_negative": 0,
+            "flags_on_unargued": 5,
+            "precision": 0.0,
+            "recall": null,
+            "f1": null,
+            "false_alarm_rate": 1.0
+          },
+          "extension_notification_validity": {
+            "tp": 0,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 0,
+            "true_negative": 0,
+            "flags_on_unargued": 0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "false_alarm_rate": null
+          },
+          "consolidated_scn": {
+            "tp": 0,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 10,
+            "true_negative": 8,
+            "flags_on_unargued": 0,
+            "precision": null,
+            "recall": 0.0,
+            "f1": null,
+            "false_alarm_rate": 0.0
+          },
+          "section_74_ingredients": {
+            "tp": 0,
+            "false_alarm": 0,
+            "wrong_provision": 0,
+            "miss": 1,
+            "true_negative": 1,
+            "flags_on_unargued": 3,
+            "precision": null,
+            "recall": 0.0,
+            "f1": null,
+            "false_alarm_rate": 0.0
+          },
+          "other_procedural": {
+            "tp": 1,
+            "false_alarm": 2,
+            "wrong_provision": 0,
+            "miss": 11,
+            "true_negative": 3,
+            "flags_on_unargued": 3,
+            "precision": 0.3333333333333333,
+            "recall": 0.08333333333333333,
+            "f1": 0.13333333333333333,
+            "false_alarm_rate": 0.4
+          }
+        }
+      }
+    }
+  }
+}

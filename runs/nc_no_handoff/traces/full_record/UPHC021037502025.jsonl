@@ -1,0 +1,13 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1131, "tokens_out": 900, "seconds": 38.1, "error": null}
+{"step": 2, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74(10)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74(10)', 'text': '(10) The proper officer shall issue the order under sub-section (9) within a period of five years from the due date for furnishing of annual return for the financ", "seconds": 0.002}
+{"step": 3, "stage": "plan", "tool": "caselaw_search", "args": {"query": "limitation period for GST demand under s.74", "k": 5}, "by": "model", "ok": true, "output_summary": "[{'cnr': 'WBCHCA0313992025', 'court': 'Calcutta', 'decision_date': '2025-09-12', 'para': 5, 'text': '5. The total demand of C.G.S.T. and S.G.S.T. was Rs.8,73,86,825/- and a sum of Rs.5,50,62,464/- has", "seconds": 0.046}
+{"step": 4, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "defect"}
+{"step": 5, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 6, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 735, "tokens_out": 713, "seconds": 30.72, "error": null}
+{"step": 13, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(4)"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.75(4)', 'text': '(4) An opportunity of hearing shall be granted where a request is received in writing from the person chargeable with tax or penalty, or where any adverse decision", "seconds": 0.002}

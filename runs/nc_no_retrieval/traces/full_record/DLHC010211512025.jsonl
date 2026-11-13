@@ -1,0 +1,16 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1775, "tokens_out": 1186, "seconds": 63.46, "error": null}
+{"step": 2, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74', 'text': '74. Determination of tax 2[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.001}
+{"step": 3, "stage": "plan", "tool": "limitation_check", "args": {"provision": "74", "financial_year": "2024-03", "scn_date": "2024-08-02", "order_date": "2025-01-31", "apply_extensions": true}, "by": "model", "ok": false, "output_summary": "financial_year must look like \"2020-21\", got '2024-03'", "seconds": 0.002}
+{"step": 4, "stage": "plan", "tool": "caselaw_search", "args": {"query": "High Court treatment of Section 74 time limits under s.168A extensions", "k": 5}, "by": "model", "ok": true, "output_summary": "[{'cnr': 'ODHC010788652024', 'court': 'Orissa', 'decision_date': '2024-11-08', 'para': 2, 'text': '2. Mr. Mishra, learned advocate, Standing Counsel appears on behalf of revenue and submits, the proce", "seconds": 0.027}
+{"step": 5, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1905, "tokens_out": 1250, "seconds": 64.02, "error": null}
+{"step": 6, "stage": "plan", "tool": "limitation_check", "args": {"provision": "74", "financial_year": "2024-25", "scn_date": "2024-08-02", "order_date": "2025-01-31", "apply_extensions": true}, "by": "model", "ok": false, "output_summary": "no annual-return due date for 2024-25 (covered: 2017-18, 2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24); FY 2024-25 onward falls under s.74A", "seconds": 0.003}
+{"step": 7, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 14, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 15, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 3064, "tokens_out": 2256, "seconds": 117.74, "error": null}
+{"step": 16, "stage": "handoff", "ok": true, "output_summary": ""}

@@ -1,0 +1,15 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 3248, "tokens_out": 2105, "seconds": 103.64, "error": null}
+{"step": 2, "stage": "plan", "tool": "limitation_check", "args": {"provision": "74", "financial_year": "2017-18", "scn_date": "2022-05-24", "order_date": "2022-06-28", "apply_extensions": true}, "by": "model", "ok": true, "output_summary": "{'annual_return_due': '2020-02-05', 'scn_last_date': '2024-08-05', 'order_last_date': '2025-02-05', 'scn_in_time': True, 'order_in_time': True, 'extension_notifications_used': [], 'contested': False, ", "seconds": 0.007}
+{"step": 3, "stage": "plan", "tool": "date_diff", "args": {"start": "2022-05-24", "end": "2022-06-28"}, "by": "model", "ok": true, "output_summary": "{'days': 35}", "seconds": 0.005}
+{"step": 4, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74(10)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74(10)', 'text': '(10) The proper officer shall issue the order under sub-section (9) within a period of five years from the due date for furnishing of annual return for the financ", "seconds": 0.002}
+{"step": 5, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(4)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.75(4)', 'text': '(4) An opportunity of hearing shall be granted where a request is received in writing from the person chargeable with tax or penalty, or where any adverse decision", "seconds": 0.005}
+{"step": 6, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 7, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 12, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 13, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 14, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1058, "tokens_out": 956, "seconds": 47.49, "error": null}
+{"step": 15, "stage": "handoff", "ok": true, "output_summary": ""}

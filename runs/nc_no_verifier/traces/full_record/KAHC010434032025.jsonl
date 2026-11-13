@@ -1,0 +1,12 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1404, "tokens_out": 746, "seconds": 31.99, "error": null}
+{"step": 2, "stage": "plan", "tool": "limitation_check", "args": {"provision": "73", "financial_year": "2017-18", "scn_date": "2023-05-11", "order_date": "2023-08-25", "apply_extensions": true}, "by": "model", "ok": true, "output_summary": "{'annual_return_due': '2020-02-05', 'scn_last_date': '2023-09-30', 'order_last_date': '2023-12-31', 'scn_in_time': True, 'order_in_time': True, 'extension_notifications_used': ['13/2022-Central Tax da", "seconds": 0.004}
+{"step": 3, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 4, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 5, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 6, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "contested"}
+{"step": 9, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "contested"}
+{"step": 10, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 11, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 924, "tokens_out": 513, "seconds": 22.98, "error": null}
+{"step": 12, "stage": "handoff", "ok": true, "output_summary": ""}

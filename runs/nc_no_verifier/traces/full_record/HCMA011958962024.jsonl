@@ -1,0 +1,13 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": false, "tokens_in": 2958, "tokens_out": 3000, "seconds": 149.96, "error": "ValueError: no JSON object found in model output"}
+{"step": 2, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 3, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 4, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 5, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 6, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 10, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(6)"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.75(6)', 'text': '(6) The proper officer, in his order, shall set out the relevant facts and the basis of his decision.', 'heading': 'General provisions relating to determination of", "seconds": 0.006}
+{"step": 11, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(7)"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.75(7)', 'text': '(7) The amount of tax, interest and penalty demanded in the order shall not be in excess of the amount specified in the notice and no demand shall be confirmed on ", "seconds": 0.002}
+{"step": 12, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 2400, "tokens_out": 2077, "seconds": 103.75, "error": null}
+{"step": 13, "stage": "handoff", "ok": true, "output_summary": ""}

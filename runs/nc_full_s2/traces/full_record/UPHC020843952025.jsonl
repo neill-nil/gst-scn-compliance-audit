@@ -1,0 +1,14 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1263, "tokens_out": 1315, "seconds": 69.14, "error": null}
+{"step": 2, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73', 'text': '73. Determination of tax 1[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 3, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74', 'text': '74. Determination of tax 2[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 4, "stage": "plan", "tool": "caselaw_search", "args": {"query": "limitation period for GST demand orders", "k": 5}, "by": "model", "ok": true, "output_summary": "[{'cnr': 'HCMA013055252025', 'court': 'Madras', 'decision_date': '2025-12-19', 'para': 5, 'text': '5. The statutory appeals against the orders dated 14.12.2024 and 17.12.2024 in DRC – 07 under Section", "seconds": 0.047}
+{"step": 5, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 6, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": false, "tokens_in": 3344, "tokens_out": 2263, "seconds": 117.6, "error": "ValidationError: {'enum': ['cant_tell']} is not one of ['defect', 'no_defect', 'cant_tell']\n\nFailed validating 'enum' in schema['properties']['findings']['items']['properties']['verdict']:\n    {'enum': ['defect', 'no_defect', 'cant_tell']}\n\nOn instance['findings'][0]['verdict']:\n    {'enum': ['cant_tell']}"}
+{"step": 14, "stage": "handoff", "ok": true, "output_summary": "unclear,defect_free"}

@@ -1,0 +1,14 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1370, "tokens_out": 1183, "seconds": 49.74, "error": null}
+{"step": 2, "stage": "plan", "tool": "limitation_check", "args": {"provision": "73", "financial_year": "2022-23", "scn_date": "2023-09-30", "order_date": "2023-10-31", "apply_extensions": true}, "by": "model", "ok": true, "output_summary": "{'annual_return_due': '2023-12-31', 'scn_last_date': '2026-09-30', 'order_last_date': '2026-12-31', 'scn_in_time': True, 'order_in_time': True, 'extension_notifications_used': [], 'contested': False, ", "seconds": 0.004}
+{"step": 3, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73(10)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73(10)', 'text': '(10) The proper officer shall issue the order under sub-section (9) within three years from the due date for furnishing of annual return for the financial year to", "seconds": 0.001}
+{"step": 4, "stage": "plan", "tool": "caselaw_search", "args": {"query": "s.168A extension notifications in s.73 proceedings", "k": 5}, "by": "model", "ok": true, "output_summary": "[{'cnr': 'DLHC010841042024', 'court': 'Delhi', 'decision_date': '2025-05-15', 'para': 3, 'text': '3. The submission of the Petitioner is that the extension of limitation period vide Notification 56/20", "seconds": 0.019}
+{"step": 5, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 6, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 11, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 12, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 971, "tokens_out": 641, "seconds": 27.14, "error": null}
+{"step": 14, "stage": "handoff", "ok": true, "output_summary": "unclear,defect_free"}

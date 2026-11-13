@@ -1,0 +1,15 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 2112, "tokens_out": 2765, "seconds": 149.49, "error": null}
+{"step": 2, "stage": "plan", "tool": "limitation_check", "args": {"provision": "73", "financial_year": "2024-25", "scn_date": "2024-11-19", "order_date": "2024-11-20", "apply_extensions": true}, "by": "model", "ok": false, "output_summary": "no annual-return due date for 2024-25 (covered: 2017-18, 2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24); FY 2024-25 onward falls under s.74A", "seconds": 0.004}
+{"step": 3, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73(10)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73(10)', 'text': '(10) The proper officer shall issue the order under sub-section (9) within three years from the due date for furnishing of annual return for the financial year to", "seconds": 0.002}
+{"step": 4, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74(10)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74(10)', 'text': '(10) The proper officer shall issue the order under sub-section (9) within a period of five years from the due date for furnishing of annual return for the financ", "seconds": 0.002}
+{"step": 5, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1242, "tokens_out": 1494, "seconds": 80.91, "error": null}
+{"step": 6, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73(9)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73(9)', 'text': '(9) The proper officer shall, after considering the representation, if any, made by person chargeable with tax, determine the amount of tax, interest and a penalty", "seconds": 0.002}
+{"step": 7, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 14, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 15, "stage": "handoff", "ok": true, "output_summary": "unclear,defect_free"}

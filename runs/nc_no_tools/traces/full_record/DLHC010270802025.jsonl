@@ -1,0 +1,11 @@
+{"step": 1, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 2, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 3, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "defect"}
+{"step": 4, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 5, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 6, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(6)"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.75(6)', 'text': '(6) The proper officer, in his order, shall set out the relevant facts and the basis of his decision.', 'heading': 'General provisions relating to determination of", "seconds": 0.002}
+{"step": 8, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.168A"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.168A', 'text': '168A. Power of Government to extend time limit in special circumstances.— (1) Notwithstanding anything contained in this Act, the Government may, on the recommendat", "seconds": 0.005}
+{"step": 9, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1201, "tokens_out": 1422, "seconds": 64.29, "error": null}
+{"step": 10, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.169(1)"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.169(1)', 'text': '(1) Any decision, order, summons, notice or other communication under this Act or the rules made thereunder shall be served by any one of the following methods, n", "seconds": 0.002}
+{"step": 11, "stage": "handoff", "ok": true, "output_summary": "unclear"}

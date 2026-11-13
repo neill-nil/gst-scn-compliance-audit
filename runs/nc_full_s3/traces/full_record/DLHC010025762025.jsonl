@@ -1,0 +1,15 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": false, "tokens_in": 3820, "tokens_out": 3000, "seconds": 152.77, "error": "JSONDecodeError: Unterminated string starting at: line 21 column 18 (char 545)"}
+{"step": 2, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 3, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 4, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 5, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 6, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "contested"}
+{"step": 10, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(6)"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.75(6)', 'text': '(6) The proper officer, in his order, shall set out the relevant facts and the basis of his decision.', 'heading': 'General provisions relating to determination of", "seconds": 0.002}
+{"step": 11, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(7)"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.75(7)', 'text': '(7) The amount of tax, interest and penalty demanded in the order shall not be in excess of the amount specified in the notice and no demand shall be confirmed on ", "seconds": 0.001}
+{"step": 12, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74(1)"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.74(1)', 'text': '(1) Where it appears to the proper officer that any tax has not been paid or short paid or erroneously refunded or where input tax credit has been wrongly availed ", "seconds": 0.001}
+{"step": 13, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1827, "tokens_out": 1436, "seconds": 71.54, "error": null}
+{"step": 14, "stage": "verify", "tool": "caselaw_search", "args": {"query": "single show cause notice for multiple financial years consolidated", "k": 3}, "by": "code", "ok": true, "output_summary": "[{'cnr': 'DLHC010227212025', 'court': 'Delhi', 'decision_date': '2025-08-20', 'para': 3, 'text': '3. One of the issues that arises in the present petition is as to whether a single Show Cause Notice c", "seconds": 0.039}
+{"step": 15, "stage": "handoff", "ok": true, "output_summary": ""}
