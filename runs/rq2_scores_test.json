@@ -1,0 +1,265 @@
+{
+ "base": {
+  "fields": {
+   "precision": 0.37780149413020275,
+   "recall": 0.8213457076566125,
+   "f1": 0.5175438596491229
+  },
+  "events": {
+   "precision": 0.3972602739726027,
+   "recall": 0.43844492440604754,
+   "f1": 0.4168377823408624
+  },
+  "document_contents": {
+   "precision": 0.3031496062992126,
+   "recall": 0.6062992125984252,
+   "f1": 0.4041994750656168
+  },
+  "quotes_found_share": 0.8830260648442466,
+  "per_field": {
+   "provision": {
+    "precision": 0.5084745762711864,
+    "recall": 0.8571428571428571,
+    "f1": 0.6382978723404255
+   },
+   "financial_years": {
+    "precision": 0.8202247191011236,
+    "recall": 0.8690476190476191,
+    "f1": 0.8439306358381503
+   },
+   "notice.date": {
+    "precision": 0.6929824561403509,
+    "recall": 0.8404255319148937,
+    "f1": 0.7596153846153846
+   },
+   "notice.reply_due": {
+    "precision": 0.038461538461538464,
+    "recall": 0.5,
+    "f1": 0.07142857142857144
+   },
+   "notice.hearing_date_given": {
+    "precision": 0.17708333333333334,
+    "recall": 0.8095238095238095,
+    "f1": 0.2905982905982906
+   },
+   "notice.hearing_date": {
+    "precision": 0.23076923076923078,
+    "recall": 0.75,
+    "f1": 0.3529411764705882
+   },
+   "notice.service_mode": {
+    "precision": 0.11702127659574468,
+    "recall": 0.6111111111111112,
+    "f1": 0.19642857142857142
+   },
+   "notice.signed": {
+    "precision": 0.016129032258064516,
+    "recall": 1.0,
+    "f1": 0.031746031746031744
+   },
+   "notice.summary_only": {
+    "precision": 0.02702702702702703,
+    "recall": 1.0,
+    "f1": 0.052631578947368425
+   },
+   "order.date": {
+    "precision": 0.908256880733945,
+    "recall": 0.853448275862069,
+    "f1": 0.88
+   },
+   "order.signed": {
+    "precision": 0.015873015873015872,
+    "recall": 1.0,
+    "f1": 0.03125
+   },
+   "order.service_mode": {
+    "precision": 0.05194805194805195,
+    "recall": 0.3076923076923077,
+    "f1": 0.0888888888888889
+   }
+  },
+  "n_cases": 125,
+  "n_with_json": 118,
+  "schema_valid": 31
+ },
+ "tuned": {
+  "fields": {
+   "precision": 0.9035087719298246,
+   "recall": 0.7169373549883991,
+   "f1": 0.7994825355756792
+  },
+  "events": {
+   "precision": 0.7393364928909952,
+   "recall": 0.673866090712743,
+   "f1": 0.7050847457627119
+  },
+  "document_contents": {
+   "precision": 0.5590551181102362,
+   "recall": 0.5590551181102362,
+   "f1": 0.5590551181102362
+  },
+  "quotes_found_share": 0.9603960396039604,
+  "per_field": {
+   "provision": {
+    "precision": 0.9111111111111111,
+    "recall": 0.5857142857142857,
+    "f1": 0.7130434782608697
+   },
+   "financial_years": {
+    "precision": 0.9113924050632911,
+    "recall": 0.8571428571428571,
+    "f1": 0.8834355828220858
+   },
+   "notice.date": {
+    "precision": 0.896551724137931,
+    "recall": 0.8297872340425532,
+    "f1": 0.861878453038674
+   },
+   "notice.reply_due": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1": 0.4
+   },
+   "notice.hearing_date_given": {
+    "precision": 1.0,
+    "recall": 0.09523809523809523,
+    "f1": 0.17391304347826084
+   },
+   "notice.hearing_date": {
+    "precision": 1.0,
+    "recall": 0.125,
+    "f1": 0.2222222222222222
+   },
+   "notice.service_mode": {
+    "precision": 0.7619047619047619,
+    "recall": 0.8888888888888888,
+    "f1": 0.8205128205128205
+   },
+   "notice.signed": {
+    "precision": null,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "notice.summary_only": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1": 0.6666666666666666
+   },
+   "order.date": {
+    "precision": 0.9583333333333334,
+    "recall": 0.7931034482758621,
+    "f1": 0.8679245283018867
+   },
+   "order.signed": {
+    "precision": null,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "order.service_mode": {
+    "precision": 0.625,
+    "recall": 0.38461538461538464,
+    "f1": 0.4761904761904762
+   }
+  },
+  "n_cases": 125,
+  "n_with_json": 104,
+  "schema_valid": 103,
+  "fields_f1_minus_base": {
+   "diff": 0.2819386759265563,
+   "ci95": [
+    0.21602720902809602,
+    0.33914467697907197
+   ]
+  }
+ },
+ "gemini": {
+  "fields": {
+   "precision": 0.9574468085106383,
+   "recall": 0.9396751740139211,
+   "f1": 0.9484777517564403
+  },
+  "events": {
+   "precision": 0.9693654266958425,
+   "recall": 0.9568034557235421,
+   "f1": 0.9630434782608696
+  },
+  "document_contents": {
+   "precision": 0.9612403100775194,
+   "recall": 0.9763779527559056,
+   "f1": 0.9687500000000001
+  },
+  "quotes_found_share": 0.9684729064039409,
+  "per_field": {
+   "provision": {
+    "precision": 0.9436619718309859,
+    "recall": 0.9571428571428572,
+    "f1": 0.9503546099290779
+   },
+   "financial_years": {
+    "precision": 0.9642857142857143,
+    "recall": 0.9642857142857143,
+    "f1": 0.9642857142857143
+   },
+   "notice.date": {
+    "precision": 0.956989247311828,
+    "recall": 0.9468085106382979,
+    "f1": 0.9518716577540107
+   },
+   "notice.reply_due": {
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1": 0.75
+   },
+   "notice.hearing_date_given": {
+    "precision": 0.8461538461538461,
+    "recall": 0.5238095238095238,
+    "f1": 0.6470588235294118
+   },
+   "notice.hearing_date": {
+    "precision": 1.0,
+    "recall": 0.875,
+    "f1": 0.9333333333333333
+   },
+   "notice.service_mode": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "notice.signed": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "notice.summary_only": {
+    "precision": 0.25,
+    "recall": 1.0,
+    "f1": 0.4
+   },
+   "order.date": {
+    "precision": 0.9912280701754386,
+    "recall": 0.9741379310344828,
+    "f1": 0.9826086956521738
+   },
+   "order.signed": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "order.service_mode": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   }
+  },
+  "n_cases": 125,
+  "n_with_json": 125,
+  "schema_valid": 125,
+  "fields_f1_minus_base": {
+   "diff": 0.4309338921073175,
+   "ci95": [
+    0.3934215927750411,
+    0.46864259071307146
+   ]
+  }
+ }
+}

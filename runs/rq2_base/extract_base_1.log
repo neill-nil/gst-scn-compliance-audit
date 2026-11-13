@@ -1,0 +1,151 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+Unsloth: xformers is installed but cannot load with torch 2.11.0+cu130 (it was built for 2.10.0+cu128), so PyTorch attention is used instead.
+To install a matching xformers, run `unsloth install-kernels xformers`, or `pip uninstall xformers` to hide this. UNSLOTH_ENABLE_LOGGING=1 shows the full error.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2026.11.4: Fast Qwen3 patching. Transformers: 5.17.0.
+   \\   /|    Tesla T4. Num GPUs = 1. Max memory: 14.562 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.11.0+cu130. CUDA: 7.5. CUDA Toolkit: 13.0. Triton: 3.6.0
+\        /    Bfloat16 = FALSE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+/usr/local/lib/python3.13/dist-packages/huggingface_hub/constants.py:302: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:02<14:19,  2.16s/it]Loading weights:   1%|          | 2/399 [00:02<06:54,  1.04s/it]Loading weights:  10%|▉         | 38/399 [00:02<00:13, 27.53it/s]Loading weights:  17%|█▋        | 67/399 [00:02<00:06, 52.60it/s]Loading weights:  25%|██▍       | 98/399 [00:02<00:03, 83.22it/s]Loading weights:  31%|███       | 123/399 [00:02<00:02, 105.89it/s]Loading weights:  39%|███▉      | 156/399 [00:02<00:01, 142.04it/s]Loading weights:  46%|████▌     | 182/399 [00:03<00:01, 164.63it/s]Loading weights:  52%|█████▏    | 208/399 [00:03<00:01, 184.75it/s]Loading weights:  59%|█████▉    | 235/399 [00:03<00:00, 202.83it/s]Loading weights:  66%|██████▋   | 265/399 [00:03<00:00, 227.04it/s]Loading weights:  73%|███████▎  | 293/399 [00:03<00:00, 239.14it/s]Loading weights:  80%|████████  | 321/399 [00:03<00:00, 248.01it/s]Loading weights:  87%|████████▋ | 349/399 [00:03<00:00, 228.35it/s]Loading weights:  95%|█████████▍| 378/399 [00:04<00:00, 134.04it/s]Loading weights: 100%|██████████| 399/399 [00:04<00:00, 95.20it/s] 
+rq2_base shard 1: 68 cases to run (0 done)
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[1/68] HCMA010761122025 json=ok tokens_out=1243 70.3s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[2/68] DLHC010349402025 json=ok tokens_out=889 53.8s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[3/68] DLHC010279742025 json=ok tokens_out=760 45.9s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[4/68] HCBM040107542026 json=ok tokens_out=705 42.4s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[5/68] BRHC010099062023 json=ok tokens_out=1031 62.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[6/68] UPHC020789852025 json=ok tokens_out=1508 86.0s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[7/68] HCMA011909282024 json=ok tokens_out=1346 74.3s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[8/68] DLHC010132862025 json=ok tokens_out=1199 67.7s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[9/68] HCMD010677412024 json=ok tokens_out=802 43.0s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[10/68] KAHC010437992025 json=ok tokens_out=934 53.8s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[11/68] UPHC020945582025 json=ok tokens_out=1202 68.8s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[12/68] WBCHCA0414552026 json=ok tokens_out=798 43.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[13/68] DLHC010325082025 json=ok tokens_out=850 52.3s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[14/68] ODHC010248542026 json=ok tokens_out=1078 61.4s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[15/68] HCMA011912822024 json=ok tokens_out=813 44.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[16/68] WBCHCJ0050492025 json=ok tokens_out=826 47.1s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[17/68] DLHC010526342024 json=ok tokens_out=795 45.3s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[18/68] ODHC010252282025 json=ok tokens_out=610 37.5s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[19/68] HCMA012917462025 json=ok tokens_out=869 52.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[20/68] UPHC020833222025 json=ok tokens_out=1349 77.0s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[21/68] UPHC021039642025 json=FAIL tokens_out=1974 112.8s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[22/68] HCMA011208632026 json=ok tokens_out=688 37.4s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[23/68] HCMA010179482025 json=ok tokens_out=984 56.1s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[24/68] DLHC010279262025 json=ok tokens_out=819 50.4s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[25/68] HCBM040088372026 json=ok tokens_out=634 39.1s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[26/68] HCBM040064552026 json=ok tokens_out=644 39.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[27/68] HCMA010968662024 json=ok tokens_out=738 40.3s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[28/68] KAHC010398662026 json=ok tokens_out=804 43.5s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[29/68] UPHC020763312025 json=ok tokens_out=1535 87.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[30/68] HCMA010793302024 json=ok tokens_out=728 42.7s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[31/68] UPHC020843952025 json=ok tokens_out=972 55.9s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[32/68] HCMA012188312024 json=ok tokens_out=706 38.4s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[33/68] UPHC020844342025 json=ok tokens_out=1537 87.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[34/68] HCMA011032642024 json=ok tokens_out=1170 63.8s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[35/68] JHHC010173572023 json=ok tokens_out=943 58.1s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[36/68] GAHC010160832025 json=ok tokens_out=924 56.4s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[37/68] KAHC010428822025 json=ok tokens_out=1293 75.1s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[38/68] DLHC010742252025 json=ok tokens_out=1271 76.4s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[39/68] HCMA011201082025 json=ok tokens_out=914 50.1s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[40/68] HCMD010243892024 json=ok tokens_out=763 41.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[41/68] UPHC021037272025 json=ok tokens_out=607 35.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[42/68] HCMA010285922025 json=ok tokens_out=843 46.3s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[43/68] DLHC010328742025 json=ok tokens_out=744 45.8s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[44/68] HCMA011975972024 json=ok tokens_out=1424 80.0s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[45/68] DLHC010270802025 json=ok tokens_out=788 48.1s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[46/68] HCMA011390242025 json=ok tokens_out=973 53.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[47/68] UPHC020887882025 json=ok tokens_out=1759 100.3s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[48/68] WBCHCA0026392026 json=ok tokens_out=873 49.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[49/68] HCMA011285532024 json=ok tokens_out=742 41.5s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[50/68] UPHC021037502025 json=ok tokens_out=580 34.2s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[51/68] UPHC020790052025 json=ok tokens_out=1663 94.8s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[52/68] KAHC010434032025 json=ok tokens_out=886 48.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[53/68] HCMD010594732025 json=ok tokens_out=553 30.4s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[54/68] WBCHCJ0028682026 json=ok tokens_out=1024 56.7s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[55/68] HCMA011222072024 json=ok tokens_out=859 47.4s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[56/68] UPHC020981032025 json=ok tokens_out=598 35.1s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[57/68] HCMD010486032023 json=ok tokens_out=697 41.9s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[58/68] DLHC010211512025 json=FAIL tokens_out=2048 122.1s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[59/68] DLHC010251412025 json=ok tokens_out=850 52.1s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[60/68] UPHC020029552026 json=ok tokens_out=1521 86.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[61/68] UPHC021037432025 json=ok tokens_out=1533 87.4s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[62/68] KAHC010371662026 json=ok tokens_out=974 56.9s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[63/68] DLHC010341402025 json=ok tokens_out=741 44.4s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[64/68] DLHC010025762025 json=ok tokens_out=1428 86.3s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[65/68] HCBM040038252026 json=ok tokens_out=716 42.9s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[66/68] UPHC020951052025 json=FAIL tokens_out=2048 117.1s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[67/68] DLHC010829062025 json=ok tokens_out=1281 77.6s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[68/68] HCMA010879842025 json=ok tokens_out=876 49.4s

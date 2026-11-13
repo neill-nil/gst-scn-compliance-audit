@@ -49,3 +49,4 @@ corpus/source_files/
 runs/sandbox_outbox/
 runs/dev_*/
 /*.zip
+runs/rq2_lora/adapter/

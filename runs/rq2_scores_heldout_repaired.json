@@ -1,0 +1,265 @@
+{
+ "base": {
+  "fields": {
+   "precision": 0.34285714285714286,
+   "recall": 0.9,
+   "f1": 0.4965517241379311
+  },
+  "events": {
+   "precision": 0.2413793103448276,
+   "recall": 0.3333333333333333,
+   "f1": 0.28
+  },
+  "document_contents": {
+   "precision": 0.045454545454545456,
+   "recall": 0.5,
+   "f1": 0.08333333333333334
+  },
+  "quotes_found_share": 0.7752808988764045,
+  "per_field": {
+   "provision": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1": 0.8571428571428571
+   },
+   "financial_years": {
+    "precision": 0.7272727272727273,
+    "recall": 0.8888888888888888,
+    "f1": 0.7999999999999999
+   },
+   "notice.date": {
+    "precision": 0.6666666666666666,
+    "recall": 0.8888888888888888,
+    "f1": 0.761904761904762
+   },
+   "notice.reply_due": {
+    "precision": 0.2,
+    "recall": 0.5,
+    "f1": 0.28571428571428575
+   },
+   "notice.hearing_date_given": {
+    "precision": 0.0,
+    "recall": null,
+    "f1": 0.0
+   },
+   "notice.hearing_date": {
+    "precision": 0.0,
+    "recall": null,
+    "f1": 0.0
+   },
+   "notice.service_mode": {
+    "precision": 0.1,
+    "recall": 1.0,
+    "f1": 0.18181818181818182
+   },
+   "notice.signed": {
+    "precision": 0.0,
+    "recall": null,
+    "f1": 0.0
+   },
+   "notice.summary_only": {
+    "precision": 0.14285714285714285,
+    "recall": 1.0,
+    "f1": 0.25
+   },
+   "order.date": {
+    "precision": 0.8,
+    "recall": 0.8888888888888888,
+    "f1": 0.8421052631578948
+   },
+   "order.signed": {
+    "precision": 0.0,
+    "recall": null,
+    "f1": 0.0
+   },
+   "order.service_mode": {
+    "precision": 0.0,
+    "recall": null,
+    "f1": 0.0
+   }
+  },
+  "n_cases": 12,
+  "n_with_json": 12,
+  "schema_valid": 2
+ },
+ "tuned": {
+  "fields": {
+   "precision": 0.9210526315789473,
+   "recall": 0.875,
+   "f1": 0.8974358974358975
+  },
+  "events": {
+   "precision": 0.6818181818181818,
+   "recall": 0.7142857142857143,
+   "f1": 0.6976744186046512
+  },
+  "document_contents": {
+   "precision": 0.045454545454545456,
+   "recall": 0.5,
+   "f1": 0.08333333333333334
+  },
+  "quotes_found_share": 0.9514563106796117,
+  "per_field": {
+   "provision": {
+    "precision": 1.0,
+    "recall": 0.8888888888888888,
+    "f1": 0.9411764705882353
+   },
+   "financial_years": {
+    "precision": 0.875,
+    "recall": 0.7777777777777778,
+    "f1": 0.823529411764706
+   },
+   "notice.date": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "notice.reply_due": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "notice.hearing_date_given": {
+    "precision": null,
+    "recall": null,
+    "f1": 0.0
+   },
+   "notice.hearing_date": {
+    "precision": null,
+    "recall": null,
+    "f1": 0.0
+   },
+   "notice.service_mode": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "notice.signed": {
+    "precision": null,
+    "recall": null,
+    "f1": 0.0
+   },
+   "notice.summary_only": {
+    "precision": null,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "order.date": {
+    "precision": 0.8,
+    "recall": 0.8888888888888888,
+    "f1": 0.8421052631578948
+   },
+   "order.signed": {
+    "precision": null,
+    "recall": null,
+    "f1": 0.0
+   },
+   "order.service_mode": {
+    "precision": null,
+    "recall": null,
+    "f1": 0.0
+   }
+  },
+  "n_cases": 12,
+  "n_with_json": 12,
+  "schema_valid": 11,
+  "fields_f1_minus_base": {
+   "diff": 0.4008841732979664,
+   "ci95": [
+    0.25040290088638195,
+    0.5149359886201992
+   ]
+  }
+ },
+ "gemini": {
+  "fields": {
+   "precision": 1.0,
+   "recall": 0.925,
+   "f1": 0.961038961038961
+  },
+  "events": {
+   "precision": 0.9069767441860465,
+   "recall": 0.9285714285714286,
+   "f1": 0.9176470588235294
+  },
+  "document_contents": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0
+  },
+  "quotes_found_share": 0.9512195121951219,
+  "per_field": {
+   "provision": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "financial_years": {
+    "precision": 1.0,
+    "recall": 0.8888888888888888,
+    "f1": 0.9411764705882353
+   },
+   "notice.date": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "notice.reply_due": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.6666666666666666
+   },
+   "notice.hearing_date_given": {
+    "precision": null,
+    "recall": null,
+    "f1": 0.0
+   },
+   "notice.hearing_date": {
+    "precision": null,
+    "recall": null,
+    "f1": 0.0
+   },
+   "notice.service_mode": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "notice.signed": {
+    "precision": null,
+    "recall": null,
+    "f1": 0.0
+   },
+   "notice.summary_only": {
+    "precision": null,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "order.date": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "order.signed": {
+    "precision": null,
+    "recall": null,
+    "f1": 0.0
+   },
+   "order.service_mode": {
+    "precision": null,
+    "recall": null,
+    "f1": 0.0
+   }
+  },
+  "n_cases": 12,
+  "n_with_json": 12,
+  "schema_valid": 12,
+  "fields_f1_minus_base": {
+   "diff": 0.46448723690102994,
+   "ci95": [
+    0.3231286795626577,
+    0.5971223021582734
+   ]
+  }
+ }
+}

@@ -11,7 +11,9 @@ Paired bootstrap (cases resampled) for the fact-field F1 of each system minus th
 Usage:
     python -m eval.score_extraction --system gemini=prefill --system base=runs/rq2_base --system tuned=runs/rq2_tuned
     (a run dir holds outputs*.jsonl lines {"cnr", "facts"}; "prefill" means the Gemini drafts in data/prefill/v1)
-    [--split test|heldout|all] [--out runs/rq2_scores.json]
+    [--split test|heldout|all] [--out runs/rq2_scores.json] [--repair]
+--repair: when an output is not valid JSON (usually cut off at the token limit), keep its longest valid beginning
+and close the open brackets (same rule for every system). Reported separately from the raw scores.
 """
 import argparse
 import json
@@ -112,7 +114,47 @@ def summarise(per_case: dict) -> dict:
     return out
 
 
-def load_system(spec: str) -> dict:
+def salvage(text: str):
+    """Longest prefix of a broken JSON object that parses once its open brackets are closed; None if nothing does."""
+    text = re.sub(r"<think>.*?</think>", "", text or "", flags=re.S)
+    start = text.find("{")
+    if start < 0:
+        return None
+    text = text[start:]
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError as e:
+        limit = e.pos
+    cuts, stack, in_str, esc = [], [], False, False
+    for i, ch in enumerate(text[:limit]):
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch in "{[":
+            stack.append("}" if ch == "{" else "]")
+        elif ch in "}]":
+            if stack:
+                stack.pop()
+            cuts.append((i + 1, tuple(stack)))
+        elif ch == ",":
+            cuts.append((i, tuple(stack)))
+    for cut, open_ in reversed(cuts[-200:]):
+        try:
+            obj = json.loads(text[:cut] + "".join(reversed(open_)))
+            return obj if isinstance(obj, dict) else None
+        except json.JSONDecodeError:
+            continue
+    return None
+
+
+def load_system(spec: str, repair: bool = False) -> dict:
     if spec == "prefill":
         out = {}
         for p in (ROOT / "data" / "prefill" / "v1").glob("*.json"):
@@ -122,7 +164,10 @@ def load_system(spec: str) -> dict:
     for p in sorted((ROOT / spec).glob("outputs*.jsonl")):
         for line in open(p, encoding="utf-8"):
             r = json.loads(line)
-            out[r["cnr"]] = r.get("facts")
+            facts = r.get("facts")
+            if facts is None and repair:
+                facts = salvage(r.get("text"))
+            out[r["cnr"]] = facts
     return out
 
 
@@ -132,6 +177,7 @@ def main():
     ap.add_argument("--split", default="test", choices=("test", "heldout", "all"))
     ap.add_argument("--n-boot", type=int, default=2000)
     ap.add_argument("--out", default=None)
+    ap.add_argument("--repair", action="store_true")
     args = ap.parse_args()
 
     from src.prefill.schema import FACTS_SCHEMA
@@ -152,7 +198,7 @@ def main():
     results, per_system = {}, {}
     for spec in args.system:
         name, path = spec.split("=", 1)
-        preds = load_system(path)
+        preds = load_system(path, args.repair)
         per_case = {c: case_counts(preds.get(c), gold[c], texts.get(c, "")) for c in cnrs}
         s = summarise(per_case)
         have = [c for c in cnrs if preds.get(c) is not None]
