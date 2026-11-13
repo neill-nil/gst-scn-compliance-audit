@@ -22,10 +22,32 @@ VAL_SHARE = 0.1
 SEED = 2
 
 
+# A short description of the output format. The full JSON schema is ~3k tokens, too long to repeat in every
+# training example; this lists the same keys and allowed values, so the untuned model knows the format too.
+OUTPUT_FORMAT = """Reply with one JSON object and nothing else, with exactly these keys:
+{"provision": F, "financial_years": F, "notices": [NOTICE, ...], "order": ORDER, "events": [EVENT, ...],
+ "document_contents": [DOC, ...]}
+F (a fact) = {"value": ..., "quote": "exact words from the judgment" or null, "para": paragraph number or null};
+  if the judgment does not state the value, all three are null.
+provision.value: "73", "74" or null. financial_years.value: list like ["2018-19"] or null.
+NOTICE = {"date": F, "reply_due": F, "hearing_date_given": F, "hearing_date": F, "service_mode": F,
+  "signed": F, "summary_only": F}; dates are "YYYY-MM-DD"; hearing_date_given, signed, summary_only are
+  true/false; service_mode is one of portal_additional_notices_tab, portal_notices_tab, portal_unspecified,
+  email, registered_post, hand_delivery, not_served.
+ORDER = {"date": F, "signed": F, "service_mode": F}.
+EVENT = {"date": "YYYY-MM-DD" or null, "type": T, "quote": "...", "para": n}; T is one of scrutiny_notice,
+  pre_scn_intimation, scn_issued, reply_filed, reply_not_filed, extension_requested, extension_granted,
+  hearing_requested, hearing_scheduled, hearing_adjourned, adjournment_requested, hearing_attended,
+  hearing_missed, order_passed, rectification_rejected, appeal_dismissed, recovery_or_attachment,
+  earlier_writ, other.
+DOC = {"type": "scn_ground" | "fraud_allegation" | "reply_point" | "order_reasoning", "quote": "...", "para": n}.
+"""
+
+
 def prompt(cnr: str) -> tuple[str, bool]:
     text = judgment_text(cnr)
     cut = len(text) > MAX_CHARS
-    return f"{COMMON}\n{FACTS_TASK}\nJUDGMENT:\n{text[:MAX_CHARS]}", cut
+    return f"{COMMON}\n{FACTS_TASK}\n{OUTPUT_FORMAT}\nJUDGMENT:\n{text[:MAX_CHARS]}", cut
 
 
 def facts_of(record: dict) -> dict:
