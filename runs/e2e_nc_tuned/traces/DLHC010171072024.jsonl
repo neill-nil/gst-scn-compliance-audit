@@ -1,0 +1,18 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 1531, "tokens_out": 1303, "seconds": 61.18, "error": null}
+{"step": 2, "stage": "plan", "tool": "limitation_check", "args": {"provision": "73", "scn_date": "2023-09-25", "order_date": "2023-12-26", "apply_extensions": true}, "by": "model", "ok": false, "output_summary": "invalid arguments for limitation_check: 'financial_year' is a required property", "seconds": 0.003}
+{"step": 3, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73', 'text': '73. Determination of tax 1[, pertaining to the period up to Financial Year 2023-24,] not paid or short paid or erroneously refunded or input tax credit wrongly availe", "seconds": 0.002}
+{"step": 4, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(4)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.75(4)', 'text': '(4) An opportunity of hearing shall be granted where a request is received in writing from the person chargeable with tax or penalty, or where any adverse decision", "seconds": 0.002}
+{"step": 5, "stage": "plan", "tool": "date_diff", "args": {"start": "2023-09-25", "end": "2023-12-26"}, "by": "model", "ok": true, "output_summary": "{'days': 92}", "seconds": 0.002}
+{"step": 6, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 3310, "tokens_out": 2458, "seconds": 112.25, "error": null}
+{"step": 7, "stage": "plan", "tool": "limitation_check", "args": {"provision": "73", "financial_year": "2023-24", "scn_date": "2023-09-25", "order_date": "2023-12-26", "apply_extensions": true}, "by": "model", "ok": true, "output_summary": "{'annual_return_due': '2024-12-31', 'scn_last_date': '2027-09-30', 'order_last_date': '2027-12-31', 'scn_in_time': True, 'order_in_time': True, 'extension_notifications_used': [], 'contested': False, ", "seconds": 0.007}
+{"step": 8, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 14, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 15, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 16, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(6)"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.75(6)', 'text': '(6) The proper officer, in his order, shall set out the relevant facts and the basis of his decision.', 'heading': 'General provisions relating to determination of", "seconds": 0.002}
+{"step": 17, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 3212, "tokens_out": 2167, "seconds": 99.97, "error": null}
+{"step": 18, "stage": "handoff", "ok": true, "output_summary": ""}

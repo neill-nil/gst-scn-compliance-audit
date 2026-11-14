@@ -1,0 +1,12 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": false, "tokens_in": 2640, "tokens_out": 3000, "seconds": 138.91, "error": "ValueError: no JSON object found in model output"}
+{"step": 2, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 3, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 4, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "defect"}
+{"step": 5, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 6, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 10, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 823, "tokens_out": 952, "seconds": 43.67, "error": null}
+{"step": 11, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.169(1)"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.169(1)', 'text': '(1) Any decision, order, summons, notice or other communication under this Act or the rules made thereunder shall be served by any one of the following methods, n", "seconds": 0.002}
+{"step": 12, "stage": "handoff", "ok": true, "output_summary": "unclear"}

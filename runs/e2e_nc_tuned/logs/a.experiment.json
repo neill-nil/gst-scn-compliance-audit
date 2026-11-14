@@ -1,0 +1,21 @@
+{
+ "system": "noticecheck_v1",
+ "run_id": "e2e_nc_tuned_a",
+ "config": {
+  "backend": "local",
+  "model": "qwen3:8b",
+  "seed": 1,
+  "temperature": 0.0,
+  "max_tokens": 1500,
+  "tools": true,
+  "retrieval": true,
+  "verifier": true,
+  "handoff": true,
+  "max_tool_calls": 8
+ },
+ "commit": "a7b92c3ad5f0d995cf3ffe30bcb0a37081f46c57",
+ "inputs": "runs/rq2_tuned/checker_full_record.jsonl",
+ "inputs_sha256": "03d3f108b0f74130b5e7072f7ce5409e719b67fab3c660f14948cac353938edb",
+ "corpus_sha256": "24c6729d906ac5a98249bf9136b8a097c12e9b915fcecc856d73937d6425a7a8",
+ "started": "2026-11-13T21:55:36"
+}

@@ -1,0 +1,18 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 3334, "tokens_out": 2178, "seconds": 97.05, "error": null}
+{"step": 2, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.73(10)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.73(10)', 'text': '(10) The proper officer shall issue the order under sub-section (9) within three years from the due date for furnishing of annual return for the financial year to", "seconds": 0.002}
+{"step": 3, "stage": "plan", "tool": "statute_lookup", "args": {"ref": "CGST Act s.74(10)"}, "by": "model", "ok": true, "output_summary": "{'ref': 'CGST Act s.74(10)', 'text': '(10) The proper officer shall issue the order under sub-section (9) within a period of five years from the due date for furnishing of annual return for the financ", "seconds": 0.002}
+{"step": 4, "stage": "plan", "tool": "date_diff", "args": {"start": "2022-05-21", "end": "2022-09-23"}, "by": "model", "ok": true, "output_summary": "{'days': 125}", "seconds": 0.002}
+{"step": 5, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "defect"}
+{"step": 6, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "no_defect"}
+{"step": 8, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 10, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 11, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 12, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 13, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(6)"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.75(6)', 'text': '(6) The proper officer, in his order, shall set out the relevant facts and the basis of his decision.', 'heading': 'General provisions relating to determination of", "seconds": 0.001}
+{"step": 14, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(7)"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.75(7)', 'text': '(7) The amount of tax, interest and penalty demanded in the order shall not be in excess of the amount specified in the notice and no demand shall be confirmed on ", "seconds": 0.001}
+{"step": 15, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 3208, "tokens_out": 2296, "seconds": 99.38, "error": null}
+{"step": 16, "stage": "precondition_check", "tool": "statute_lookup", "args": {"ref": "CGST Act s.75(4)"}, "by": "code", "ok": true, "output_summary": "{'ref': 'CGST Act s.75(4)', 'text': '(4) An opportunity of hearing shall be granted where a request is received in writing from the person chargeable with tax or penalty, or where any adverse decision", "seconds": 0.002}
+{"step": 17, "stage": "verify", "defect": "hearing_75_4", "ok": true, "output_summary": "defect dropped: no verified record quote"}
+{"step": 18, "stage": "handoff", "ok": true, "output_summary": ""}
