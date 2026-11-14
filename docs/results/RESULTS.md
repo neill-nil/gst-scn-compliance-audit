@@ -181,7 +181,7 @@ to measure components on a small real test set, not as evidence that the parts a
 |---|---|---|---|
 | **RAG** (core) | Recall@k of gold provisions; citation faithfulness | Law text fetched by exact section (`statute_lookup`, ~310 valid calls per run); **0 wrong sections** vs 9–14 for the baselines; every defect quote verified to exist in the record; abstains ("can't tell") without evidence. Free-text search is weak: **Recall@5 = 0.11** (hierarchical) vs 0.08 (flat) over 167 complaint quotes. Case-law search backs contested points (81% flagged) | **Partly**: strong grounding and citation, weak search, which the design avoids relying on |
 | **Reasoning** (core) | Accuracy of each intermediate check | 13 separate checks scored individually (section 7); rule vs reasoning split; miss analysis by step (section 8); verifier analysis; contested law flagged, not decided | **Delivered and analysed**; gains clear on strict F1, modest on detection |
-| **Tool calling** (core) | Tool-call accuracy; unsafe-action rate | ~630 model tool calls per run, **95–97% valid arguments** (Gemini 100%); time-limit calculator used in **90–98%** of cases where the dates allow it; recovered from an argument error in only 15 of 50 cases; **0 unsafe actions** | **Good**, error recovery weak |
+| **Tool calling** (core) | Tool-call accuracy; unsafe-action rate | ~630 model tool calls per run, **95–97% valid arguments** (Gemini 100%); time-limit calculator used in **90–98%** of cases where the dates allow it; recovered from an argument error in only 15 of 50 cases; **0 unsafe actions**. On the synthetic set the calculator caught all 8 late orders, which B2 (no calculator) missed | **Good**, error recovery weak |
 | **Fine-tuning** (moderate) | Field F1 vs large prompted model | 0.52 → **0.80** (0.88 repaired) vs Gemini drafts 0.95 (inflated); section 13 | **Strong** |
 | **Agentic** (light) | Hand-off precision / recall | Model plans its own tool calls; asks for missing facts; hand-off recall 0.73, precision 0.41 (proxy: the answer key only covers the "no defect found" reason); sending a reply needs human approval | **Delivered, light as planned** |
 
@@ -279,13 +279,29 @@ pairs). Expected caveat: NoticeCheck's 5 rule-based types are deterministic code
 near-perfectly by construction; the informative numbers are **B1's false alarms on clean records**, the **model-judged
 types (reply ignored, no reasons)**, and whether NoticeCheck plans the time-limit check correctly.
 
-| System | Where | Status |
-|---|---|---|
-| B0 rules | laptop | **done:** F1 0.40, precision 1.00, recall 0.25, 0 false alarms (it only has rules for hearing, signature, portal service) |
-| NoticeCheck + Gemini | laptop | running |
-| B2 Gemini + statute | laptop | queued after it |
-| **NoticeCheck (Qwen)** | Kaggle notebook S | **pending** |
-| **B1 (Qwen)** | Kaggle notebook S | **pending** |
+Results so far (700 labelled case × type pairs: 56 planted defects, 644 clean):
+
+| System | Where | F1 | Precision | Recall | Strict F1 | False alarms on clean facts | Unargued flags | Status |
+|---|---|---|---|---|---|---|---|---|
+| B0 rules | laptop | 0.40 | 1.00 | 0.25 | n/a | 0 of 644 | 0 | done |
+| B2 Gemini + statute | laptop | 0.91 | 1.00 | 0.84 | 0.58 | 0 of 644 | 0 | done |
+| NoticeCheck + Gemini | laptop | **0.99** | 0.98 | **1.00** | **0.99** | 1 of 644 | 6 | done |
+| **NoticeCheck (Qwen)** | Kaggle notebook S | | | | | | | **pending** |
+| **B1 (Qwen)** | Kaggle notebook S | | | | | | | **pending** |
+
+What the finished rows show:
+- **Tools matter when the facts are there.** B2 (Gemini with the law text but no calculator) said "no defect" on 7 of
+  the 8 orders passed after the time limit and missed all 8; NoticeCheck + Gemini caught all 8 by calling the
+  limitation calculator. The real test set had no court-found time-limit defect, so this is the only place the
+  calculator's value shows.
+- **Citations:** B2 found 47 of 56 planted defects but cited a wrong or no section on 17 of them (e.g. none for
+  summary-only notices, s.73(9) for an ignored reply), so its strict F1 is 0.58; NoticeCheck's sections were all right.
+- **False alarms on clean facts are rare for every system** (0, 0 and 1 of 644). NoticeCheck's one false alarm called
+  an order "without reasons" in a case where the planted defect was the ignored reply. Its 6 unargued flags are
+  "other procedural" calls that repeat the planted defect.
+- Expected by design: NoticeCheck's rule-based types are code over these facts, so their perfect score mainly shows
+  the rules and the calculator are wired correctly. The model-judged types (reply ignored, no reasons) were also all
+  caught (16 of 16), with the one false alarm above.
 
 ## 17. Other notes
 - **Dev vs test:** NoticeCheck scored 0.68 on the 49 dev cases and 0.47 on test. Dev was easier (partly drafts) and
