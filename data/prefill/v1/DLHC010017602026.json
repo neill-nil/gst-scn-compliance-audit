@@ -1,0 +1,148 @@
+{
+ "cnr": "DLHC010017602026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-15",
+     "quote": "The Show Cause Notice With Reference No. ZD071223082410T dated 15.12.2023",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "was uploaded on the GST portal under the “Additional Notices and Orders” tab.",
+     "para": 3
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-03",
+    "quote": "bearing reference number ZD070424006580R dated 03.04.2024 passed by the Ld. Respondent",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-15",
+    "type": "scn_issued",
+    "quote": "the impugned show cause notice dated 15th December, 2023",
+    "para": 3
+   },
+   {
+    "date": "2024-04-03",
+    "type": "order_passed",
+    "quote": "the impugned order-in-original dated 3rd April, 2024 was passed solely on the ground of non-prosecution, without affording the petitioner a reasonable opportunity of being heard.",
+    "para": 4
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "proposes a tax demand of Rs.10,91,910/- on account of (a) alleged excess Input Tax Credit on account of mismatch in GSTR-2A and GSTR-3B; (b) non-reversal of Input Tax Credit relating to exempt supplies; and (c) Input Tax Credit claimed in respect of dealers whose registrations had been cancelled",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "That the show cause notice and the reminders were uploaded on “Additional Notice” tab.",
+    "quote_source": "court",
+    "para": 9
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Despite the aforesaid defect in service, the impugned order-in- original dated 3rd April, 2024 was passed solely on the ground of non- prosecution, without affording the petitioner a reasonable opportunity of being heard.",
+    "quote_source": "court",
+    "para": 4
+   }
+  ],
+  "outcome": {
+   "disposition": "partly_allowed",
+   "remanded": true,
+   "quote": "Accordingly, we quash and set aside the impugned order-in- original dated 3rd April, 2024.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 6440,
+   "tokens_out": 798,
+   "seconds": 6.69,
+   "cached": false
+  },
+  {
+   "tokens_in": 4673,
+   "tokens_out": 338,
+   "seconds": 3.59,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.notices[0].date:facts.notices[0].date"
+  ]
+ }
+}

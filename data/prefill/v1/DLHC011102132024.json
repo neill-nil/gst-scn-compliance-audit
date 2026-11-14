@@ -1,0 +1,192 @@
+{
+ "cnr": "DLHC011102132024",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "original Show Cause Notice1 under Section 73 of the Central Goods and Services Tax Act, 20172 has come to be rejected in the following terms:",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "(Summary of SCN) on 24.05.2024 for the period April-2019 to March-2020, asking him to furnish the reply by 24.06.2024 and avail personal hearing 28.06.2024.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-05-24",
+     "quote": "along with GST DRC-01 vide reference No. ZD0705240269960 (Summary of SCN) on 24.05.2024 for the period April-2019 to March-2020, asking him to furnish the reply by 24.06.2024 and avail personal hearing 28.06.2024.",
+     "para": 2
+    },
+    "reply_due": {
+     "value": "2024-06-24",
+     "quote": "along with GST DRC-01 vide reference No. ZD0705240269960 (Summary of SCN) on 24.05.2024 for the period April-2019 to March-2020, asking him to furnish the reply by 24.06.2024 and avail personal hearing 28.06.2024.",
+     "para": 2
+    },
+    "hearing_date_given": {
+     "value": true,
+     "quote": "along with GST DRC-01 vide reference No. ZD0705240269960 (Summary of SCN) on 24.05.2024 for the period April-2019 to March-2020, asking him to furnish the reply by 24.06.2024 and avail personal hearing 28.06.2024.",
+     "para": 2
+    },
+    "hearing_date": {
+     "value": "2024-06-28",
+     "quote": "along with GST DRC-01 vide reference No. ZD0705240269960 (Summary of SCN) on 24.05.2024 for the period April-2019 to March-2020, asking him to furnish the reply by 24.06.2024 and avail personal hearing 28.06.2024.",
+     "para": 2
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": true,
+     "quote": "(Summary of SCN) on 24.05.2024 for the period April-2019 to March-2020, asking him to furnish the reply by 24.06.2024 and avail personal hearing 28.06.2024.",
+     "para": 2
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-24",
+    "type": "scn_issued",
+    "quote": "The taxpayer M/s Mudita Express Cargo Pvt. Ltd., GSTIN- 07AADCM3657R1ZT was served upon a notice under section 73 of CGST/DGST Act, 2017 regarding (Voluntary Payment Intimation, if applicable) along with GST DRC-01 vide reference No. ZD0705240269960 (Summary of SCN) on 24.05.2024 for the period April-2019 to March-2020, asking him to furnish the reply by 24.06.2024 and avail personal hearing 28.06.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-06-24",
+    "type": "adjournment_requested",
+    "quote": "The taxpayer filed adjournment on 24.06.2024, for the period of four weeks, however, no sufficient cause was mentioned as envisaged u/s 75(5) of the Act 2017.",
+    "para": 2
+   },
+   {
+    "date": "2024-06-28",
+    "type": "hearing_missed",
+    "quote": "In response to DRC-01 issued to the taxpayer u/s 73 of CGST/DGST Act, 2017 for the year 2019-20, the taxpayer neither filed reply through DRC- 06 nor availed personal hearing on the scheduled date and time.",
+    "para": 2
+   },
+   {
+    "date": "2024-06-28",
+    "type": "reply_not_filed",
+    "quote": "In response to DRC-01 issued to the taxpayer u/s 73 of CGST/DGST Act, 2017 for the year 2019-20, the taxpayer neither filed reply through DRC- 06 nor availed personal hearing on the scheduled date and time.",
+    "para": 2
+   },
+   {
+    "date": "2024-07-23",
+    "type": "reply_filed",
+    "quote": "Taxpayer filed reply on 23.07.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-07-26",
+    "type": "hearing_scheduled",
+    "quote": "Observing the principle of natural justice before deciding the case reminder was issued on 26.07.2024, asking the taxpayer to avail personal hearing on 01.08.2024.",
+    "para": 2
+   },
+   {
+    "date": "2024-07-31",
+    "type": "adjournment_requested",
+    "quote": "The taxpayer on 31.07.2024 sought adjournment of a week time without mentioning any sufficient cause as envisaged u/s 75(5) of the Act 2017.",
+    "para": 2
+   },
+   {
+    "date": "2024-08-01",
+    "type": "hearing_missed",
+    "quote": "Again the taxpayer failed to appear for personal hearing on the re-scheduled date and time.",
+    "para": 2
+   },
+   {
+    "date": "2024-08-25",
+    "type": "order_passed",
+    "quote": "In view of the aforesaid and on the aforenoted short ground alone, we are of the considered opinion that the impugned orders dated 25 August 2024 and 19 December 2024 are liable to be set aside.",
+    "para": 5
+   },
+   {
+    "date": "2024-12-19",
+    "type": "order_passed",
+    "quote": "In view of the aforesaid and on the aforenoted short ground alone, we are of the considered opinion that the impugned orders dated 25 August 2024 and 19 December 2024 are liable to be set aside.",
+    "para": 5
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "The reply filed by the taxpayer is not comprehensible, conceivable, not perspicuous and is ambiguous.",
+    "para": 2
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Since, the reply filed by the taxpayer is not comprehensible, conceivable, not perspicuous and is ambiguous. Therefore, the proposed demand mentioned in the Show Cause Notice is confirmed.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Consequently and since the impugned order is wholly unreasoned, we find ourselves unable to sustain the same.",
+    "quote_source": "court",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "We, accordingly, allow the present writ petition and quash the impugned orders dated 25 August 2024 and 19 December 2024.",
+   "para": 6
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5218,
+   "tokens_out": 2167,
+   "seconds": 8.69,
+   "cached": false
+  },
+  {
+   "tokens_in": 3451,
+   "tokens_out": 185,
+   "seconds": 1.45,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

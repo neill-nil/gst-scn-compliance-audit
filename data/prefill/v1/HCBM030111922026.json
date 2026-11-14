@@ -1,0 +1,171 @@
+{
+ "cnr": "HCBM030111922026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "passed by the Respondent No.2 under Section 73 (1) of the Maharashtra Goods and Services Tax Act, 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "for the Financial Year 2021-22.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-06-18",
+     "quote": "show cause notice dated 18.06.2025 was issued",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-12-26",
+    "quote": "impugned adjudication order dated 26.12.2025",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-05-07",
+    "type": "scrutiny_notice",
+    "quote": "The petitioner’s case was selected for scrutiny under Section 61 of the MGST Act and accordingly, notice dated 07.05.2024 was issued to the petitioner",
+    "para": 3
+   },
+   {
+    "date": "2025-06-18",
+    "type": "scn_issued",
+    "quote": "Thereafter a show cause notice dated 18.06.2025 was issued to the petitioner",
+    "para": 3
+   },
+   {
+    "date": "2025-07-16",
+    "type": "reply_filed",
+    "quote": "The petitioner replied the show cause notice on 16.07.2025",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "hearing_attended",
+    "quote": "Thereafter, after hearing the petitioner, adjudication order was passed on 26.12.2025",
+    "para": 4
+   },
+   {
+    "date": "2025-12-26",
+    "type": "order_passed",
+    "quote": "By the impugned adjudication order dated 26.12.2025, tax liability of Rs. 2,06,46,142/- including interest and penalty is imposed on the petitioner.",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "stating that the TDS turnover as per GSTR 2A returns was Rs. 3,19,75,708/- and the unpaid tax on the same was Rs. 57,55,627/-.",
+    "para": 3
+   },
+   {
+    "type": "reply_point",
+    "quote": "explaining that the services provided by the petitioner to the Municipal Corporation, Aurangabad was due to misconception.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "demand_beyond_scn",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Since the same is contrary to the provision sub-Section (7) of Section 75, the impugned notice and the adjudication order cannot be sustained in the facts of the present case.",
+    "quote_source": "court",
+    "para": 12
+   },
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "The impugned order is unsustainable on this ground also.",
+    "quote_source": "court",
+    "para": 13
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "The impugned show cause notice dated 18.06.2025 as well as the impugned order dated 26.12.2025 are hereby quashed and set aside.",
+   "para": 14
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5384,
+   "tokens_out": 5225,
+   "seconds": 13.5,
+   "cached": false
+  },
+  {
+   "tokens_in": 3617,
+   "tokens_out": 229,
+   "seconds": 1.59,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -1,0 +1,142 @@
+{
+ "cnr": "HCMA010378672025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2018-19"
+   ],
+   "quote": "GSTIN : 33ACFPV0826L1ZF/2018-19",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-12-27",
+     "quote": "show cause notice in Form GST DRC-01 vide Ref. No.ZD331223232256U dated 27.12.2023",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_notices_tab",
+     "quote": "the impugned show cause notice and three reminder notices were uploaded on the GST Portal Tab",
+     "para": 5
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-04-29",
+    "quote": "consequential order passed in GSTIN : 33ACFPV0826L1ZF/2018-19 along with DRC-07 VIDE Ref. nO.ZD3304242419521 dated 29.04.2024 passed by the first respondent",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2023-12-27",
+    "type": "scn_issued",
+    "quote": "show cause notice in Form GST DRC-01 vide Ref. No.ZD331223232256U dated 27.12.2023",
+    "para": 2
+   },
+   {
+    "date": "2024-04-29",
+    "type": "order_passed",
+    "quote": "consequential order passed in GSTIN : 33ACFPV0826L1ZF/2018-19 along with DRC-07 VIDE Ref. nO.ZD3304242419521 dated 29.04.2024 passed by the first respondent",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "it is evident that the impugned show cause notice and three reminder notices were uploaded on the GST Portal Tab and the petitioner was not aware of the issuance of those notices through the GST Portal.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "this Court is of the view that the impugned assessment order came to be passed without affording any opportunity of personal hearing to the petitioner.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "allowed",
+   "remanded": true,
+   "quote": "In the result, the Writ Petition is allowed on the aforesaid terms.",
+   "para": 7
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 10809,
+   "tokens_out": 1484,
+   "seconds": 10.96,
+   "cached": false
+  },
+  {
+   "tokens_in": 3244,
+   "tokens_out": 395,
+   "seconds": 5.87,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

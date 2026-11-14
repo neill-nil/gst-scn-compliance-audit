@@ -23,7 +23,7 @@ from src.prefill.verify_quotes import ROOT, judgment_paragraphs, norm, quotes_in
 
 DRAFTS = ROOT / "data" / "prefill" / "v1"
 ANNOTATIONS = ROOT / "data" / "gold" / "annotations"
-QUEUE = ROOT / "data" / "splits" / "review_queue_v2.csv"  # --queue to change
+QUEUE = ROOT / "data" / "splits" / "review_queue_v3.csv"  # fresh set (14 Nov); --queue to change
 PAGE = Path(__file__).with_name("index.html")
 
 _paras, _lock = {}, threading.Lock()

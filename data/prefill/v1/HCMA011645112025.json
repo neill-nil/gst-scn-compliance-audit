@@ -1,0 +1,100 @@
+{
+ "cnr": "HCMA011645112025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "relating to tax period April 2020-March, 2021",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2025-02-06",
+    "quote": "challenging the impugned order dated 06.02.2025 passed by the respondent.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-02-06",
+    "type": "order_passed",
+    "quote": "this writ petition has been filed challenging the impugned order dated 06.02.2025 passed by the respondent.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, this Court finds that there is a lack of opportunities being provided to serve the notices/orders etc., effectively to the petitioner.",
+    "quote_source": "court",
+    "para": 9
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Under these circumstances, the impugned order came to be passed by the respondent without providing any opportunity of personal hearing to the petitioner.",
+    "quote_source": "argument",
+    "para": 3
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The impugned order dated 06.02.2025 is set aside and the matter is remanded to the respondent for fresh consideration on condition that the petitioner shall pay 25% of disputed tax amount to the respondent within a period of four weeks from the date of receipt of a copy of this order.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4827,
+   "tokens_out": 410,
+   "seconds": 5.78,
+   "cached": false
+  },
+  {
+   "tokens_in": 3060,
+   "tokens_out": 438,
+   "seconds": 5.36,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.events[0]:order_passed"
+  ]
+ }
+}

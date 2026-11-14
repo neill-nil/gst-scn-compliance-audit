@@ -1,0 +1,157 @@
+{
+ "cnr": "ODHC010661432025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "The State Tax Officer, Commercial Tax and Goods and Service Tax Circle, Angul passed ex parte Order under Section 73 of the GST Act on 06.01.2025.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "whereas as per E-Way Bill report, it was Rs.16,14,20,56,024/-, and, therefore, the petitioner was called upon to make good the short payment of tax to the tune of Rs.8,62,80,720/-.",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "Being informed by the Office of the authority concerned, it could come to knowledge of the petitioner that the notices and order were uploaded under the tab with heading— “Additional Notices/Orders”.",
+     "para": 2
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-01-06",
+    "quote": "The State Tax Officer, Commercial Tax and Goods and Service Tax Circle, Angul passed ex parte Order under Section 73 of the GST Act on 06.01.2025.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "Being informed by the Office of the authority concerned, it could come to knowledge of the petitioner that the notices and order were uploaded under the tab with heading— “Additional Notices/Orders”.",
+    "para": 2
+   }
+  },
+  "events": [
+   {
+    "date": "2023-11-13",
+    "type": "scrutiny_notice",
+    "quote": "issued Form GST ASMT-10 dated 13th November, 2023 as prescribed under Rule 99 of the Central Goods and Services Tax Rules, 2017/the Odisha Goods and Services Tax Rules, 2017",
+    "para": 2
+   },
+   {
+    "date": "2025-01-06",
+    "type": "order_passed",
+    "quote": "The State Tax Officer, Commercial Tax and Goods and Service Tax Circle, Angul passed ex parte Order under Section 73 of the GST Act on 06.01.2025.",
+    "para": 2
+   },
+   {
+    "date": "2025-06-20",
+    "type": "rectification_rejected",
+    "quote": "Without affording an opportunity of hearing, the said application for rectification could not have been rejected vide Order dated 20th June, 2025",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "alleges that the tax payable on supplies including zero-rated supplies as per GSTR-3B returns filed for the tax periods relating to the financial year 2020-21 was Rs.16,05,57,75,136/-, whereas as per E-Way Bill report, it was Rs.16,14,20,56,024/-, and, therefore, the petitioner was called upon to make good the short payment of tax to the tune of Rs.8,62,80,720/-.",
+    "para": 2
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Having had the occasion to go through the decisions, this Court can safely say that uploading the notices and orders in the portal under the category/tab— “Additional Notices/Orders” cannot be held to be valid service contemplated under Section 169 of the GST Act.",
+    "quote_source": "court",
+    "para": 5
+   },
+   {
+    "type": "non_speaking_order",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Since the order dated 20.06.2025 rejecting the application under Section 161 of the GST Act is not a speaking order, said order cannot be held to be tenable.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above observations and directions, the writ petition stands disposed of on the peculiar facts as pleaded.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 27441,
+   "tokens_out": 10600,
+   "seconds": 21.13,
+   "cached": false
+  },
+  {
+   "tokens_in": 9253,
+   "tokens_out": 365,
+   "seconds": 1.51,
+   "cached": true
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": [
+   "facts.events[2]:rectification_rejected",
+   "facts.document_contents[0]:scn_ground"
+  ]
+ }
+}

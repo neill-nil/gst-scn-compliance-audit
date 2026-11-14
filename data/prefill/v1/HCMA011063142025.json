@@ -1,0 +1,157 @@
+{
+ "cnr": "HCMA011063142025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2017-18"
+   ],
+   "quote": "Challenging the order dated 27.12.2023 passed by the respondent relating to the assessment year 2017-18, the petitioner had filed the present Writ Petition.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2023-09-15",
+     "quote": "a show cause notice in Form DRC-01 dated 15.09.2023 were issued to the petitioner through GST common portal.",
+     "para": 3
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "a show cause notice in Form DRC-01 dated 15.09.2023 were issued to the petitioner through GST common portal.",
+     "para": 3
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2023-12-27",
+    "quote": "quash the order dated 27.12.2023.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": "portal_additional_notices_tab",
+    "quote": "instead it was uploaded in the common portal under the head “Additional Notices and Orders” tab, thereby, the petitioner was unaware of the initiated proceedings",
+    "para": 4
+   }
+  },
+  "events": [
+   {
+    "date": "2023-08-28",
+    "type": "pre_scn_intimation",
+    "quote": "an intimation notice in Form DRC-01A dated 28.08.2023, followed by which, a show cause notice in Form DRC-01 dated 15.09.2023 were issued to the petitioner through GST common portal.",
+    "para": 3
+   },
+   {
+    "date": "2023-09-15",
+    "type": "scn_issued",
+    "quote": "an intimation notice in Form DRC-01A dated 28.08.2023, followed by which, a show cause notice in Form DRC-01 dated 15.09.2023 were issued to the petitioner through GST common portal.",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "reply_not_filed",
+    "quote": "However, the petitioner had neither filed its reply nor availed the opportunity of personal hearing.",
+    "para": 3
+   },
+   {
+    "date": null,
+    "type": "hearing_missed",
+    "quote": "However, the petitioner had neither filed its reply nor availed the opportunity of personal hearing.",
+    "para": 3
+   },
+   {
+    "date": "2023-12-27",
+    "type": "order_passed",
+    "quote": "Hence, the impugned order came to be passed by the respondent, confirming the proposals contained in the show cause notice.",
+    "para": 3
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "order_reasoning",
+    "quote": "Hence, the impugned order came to be passed by the respondent, confirming the proposals contained in the show cause notice.",
+    "para": 3
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, this Court finds that there is a lack of opportunities being provided to serve the notices/orders etc., effectively to the petitioner.",
+    "quote_source": "court",
+    "para": 8
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above directions, this Writ Petition is disposed of.",
+   "para": 9
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4767,
+   "tokens_out": 1156,
+   "seconds": 6.62,
+   "cached": false
+  },
+  {
+   "tokens_in": 3000,
+   "tokens_out": 289,
+   "seconds": 2.93,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

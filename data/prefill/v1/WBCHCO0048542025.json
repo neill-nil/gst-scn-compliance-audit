@@ -1,0 +1,142 @@
+{
+ "cnr": "WBCHCO0048542025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "Apropos the facts of the case, a show cause cum demand notice dated 03.04.2024 in Form GSTR DRC-01B was issued upon the petitioner under Section 74(5) of the CGST Act, 2017.",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21"
+   ],
+   "quote": "The said notice was for the period 01.07.2017 to November 2020 and proposed to assess tax to the tune of Rs. 1,12,66,764/-.",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-04-03",
+     "quote": "Apropos the facts of the case, a show cause cum demand notice dated 03.04.2024 in Form GSTR DRC-01B was issued upon the petitioner under Section 74(5) of the CGST Act, 2017.",
+     "para": 0
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-01-14",
+    "quote": "The Writ Petition has been filed challenging inter alia, the legality, validity and sustainability of the Order of Adjudication dated 14.01.2025 passed by the respondent No. 2, the adjudicating authority under the Central Goods and Service Tax Act, 2017 and the West Bengal Goods and Services Tax Act, 2017.",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-04-03",
+    "type": "scn_issued",
+    "quote": "Apropos the facts of the case, a show cause cum demand notice dated 03.04.2024 in Form GSTR DRC-01B was issued upon the petitioner under Section 74(5) of the CGST Act, 2017.",
+    "para": 0
+   },
+   {
+    "date": "2024-08-05",
+    "type": "reply_filed",
+    "quote": "The petitioner filed a detailed written reply dated 05.08.2024 before the adjudicating authority.",
+    "para": 0
+   },
+   {
+    "date": "2025-01-14",
+    "type": "order_passed",
+    "quote": "After granting three opportunities, the adjudicating authority proceeded to pass the impugned order ex parte on 14.01.2025.",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "However, the adjudicating authority, without considering the said reply, proceeded to pass the impugned ex parte order dated 14.01.2025.",
+    "quote_source": "court",
+    "para": 10
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The order of adjudication dated 14.01.2025 passed by the respondent No. 2 is hereby quashed and set aside.",
+   "para": 11
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13387,
+   "tokens_out": 9363,
+   "seconds": 24.65,
+   "cached": false
+  },
+  {
+   "tokens_in": 2781,
+   "tokens_out": 253,
+   "seconds": 1.58,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

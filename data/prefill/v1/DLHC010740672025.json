@@ -1,0 +1,89 @@
+{
+ "cnr": "DLHC010740672025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "An Ex-parte order under Section 74 was also passed by the GST authorities",
+   "para": 9
+  },
+  "financial_years": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2025-04-24",
+    "quote": "Vide order dated 24th April, 2025, passed by Deputy Commissioner, CBIC, North Delhi (hereinafter ‘order dated 24th April 2025’) a total demand of Rs.2,71,09,090/- has been confirmed including tax, interest and penalty in the following terms:",
+    "para": 7
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-11-14",
+    "type": "scn_issued",
+    "quote": "Parallelly, another Show Cause Notice dated 14th November, 2024 was issued (hereinafter, ‘SCN-2’) to the Petitioner, in respect of certain discrepancies in availing the Input Tax Credit (hereinafter, ‘ITC’) by the Petitioner.",
+    "para": 6
+   },
+   {
+    "date": "2024-12-18",
+    "type": "scn_issued",
+    "quote": "Thereafter, another Show Cause Notice dated 18th December, 2024 (hereinafter, ‘SCN-3’) was issued to the Petitioner.",
+    "para": 7
+   },
+   {
+    "date": "2025-04-24",
+    "type": "order_passed",
+    "quote": "Vide order dated 24th April, 2025, passed by Deputy Commissioner, CBIC, North Delhi (hereinafter ‘order dated 24th April 2025’) a total demand of Rs.2,71,09,090/- has been confirmed including tax, interest and penalty in the following terms:",
+    "para": 7
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": false,
+   "quote": "The petition is disposed of in the above terms.",
+   "para": 14
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5337,
+   "tokens_out": 608,
+   "seconds": 4.66,
+   "cached": false
+  },
+  {
+   "tokens_in": 3570,
+   "tokens_out": 149,
+   "seconds": 3.79,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

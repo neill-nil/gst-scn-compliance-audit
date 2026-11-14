@@ -1,0 +1,104 @@
+{
+ "cnr": "HCMA011449872025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "order under Section 73 of the TNGST Act, 2017",
+   "para": 0
+  },
+  "financial_years": {
+   "value": [
+    "2020-21"
+   ],
+   "quote": "GSTIN:33CTBPK8105N1ZL/2020-21 dated 12.02.2025",
+   "para": 0
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2025-02-12",
+    "quote": "impugned assessment order dated 12.02.2025 came to be passed by the first respondent respondent without providing any opportunity of personal hearing to the petitioner.",
+    "para": 3
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-02-12",
+    "type": "order_passed",
+    "quote": "Under these circumstances, the impugned assessment order dated 12.02.2025 came to be passed by the first respondent respondent without providing any opportunity of personal hearing to the petitioner.",
+    "para": 3
+   },
+   {
+    "date": "2025-06-28",
+    "type": "recovery_or_attachment",
+    "quote": "Subsequently, the second respondent has attached the petitioner's bank account vide impugned order dated 28.06.2025.",
+    "para": 3
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, this Court finds that there is a lack of opportunities being provided to serve the notices/orders etc., effectively to the petitioner.",
+    "quote_source": "court",
+    "para": 9
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In such circumstances, this Court is of the view that the impugned assessment order dated 12.02.2025 came to be passed without affording any opportunity of personal hearing to the petitioner, confirming the proposals contained in the show cause notice.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The impugned orders dated 12.02.2025 & 28.06.2025 are set aside and the matter is remanded to the authorities concerned for fresh consideration on condition that the petitioner shall pay 25% of the disputed tax amount, after deducting the amount already recovered by the respondents within a period of four weeks from the date of receipt of a copy of this order.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 5459,
+   "tokens_out": 553,
+   "seconds": 4.94,
+   "cached": false
+  },
+  {
+   "tokens_in": 3692,
+   "tokens_out": 437,
+   "seconds": 4.53,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

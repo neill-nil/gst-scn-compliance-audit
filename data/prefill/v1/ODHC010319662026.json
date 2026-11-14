@@ -1,0 +1,133 @@
+{
+ "cnr": "ODHC010319662026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "raising a demand under Section 73 in terms of the Central Goods and Services Tax Act, 2017 and the Odisha Goods and Services Tax Act, 2017 read with Section 20 of the Integrated Goods and Services Tax Act, 2017, pertaining to Financial Year 2021-22",
+   "para": 1
+  },
+  "financial_years": {
+   "value": [
+    "2021-22"
+   ],
+   "quote": "pertaining to Financial Year 2021-22 (covering tax periods from 01.04.2021 to 31.03.2022) are assailed in the afore-noted writ petition",
+   "para": 1
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-09-26",
+     "quote": "Show Cause Notice in Form GST DRC-06 (Ref. No.ZD210925039360M), dated 26.09.2025 (Annexure-1) under Section 73 of the GST Act indicating “NA” against serial No.2 (Date of personal hearing)",
+     "para": 2
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": "Show Cause Notice in Form GST DRC-06 (Ref. No.ZD210925039360M), dated 26.09.2025 (Annexure-1) under Section 73 of the GST Act indicating “NA” against serial No.2 (Date of personal hearing), serial No.3 (Time of personal hearing) and serial No.4 (Venue where personal hearing will be held)",
+     "para": 2
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_unspecified",
+     "quote": "another Show Cause Notice was issued by the Assistant Commissioner, opposite party No.2, vide Ref. No.ZD210925039360M dated 26.09.2025 in Form GST DRC-01 in the common portal in the name of deceased “Manoranjan Mohapatra”",
+     "para": 2
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": true,
+     "quote": "Summary of Show Cause Notice in Form GST DRC-01, dated 26.09.2025",
+     "para": 1
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-12-29",
+    "quote": "passed an Order-in-Original bearing No.AC/CTC-I/GST-69/2025, dated 29.12.2025 (Annexure-2) in the name of “Manoranjan Mohapatra”, who is dead since 24.11.2022.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-09-26",
+    "type": "scn_issued",
+    "quote": "another Show Cause Notice was issued by the Assistant Commissioner, opposite party No.2, vide Ref. No.ZD210925039360M dated 26.09.2025 in Form GST DRC-01 in the common portal in the name of deceased “Manoranjan Mohapatra”",
+    "para": 2
+   },
+   {
+    "date": "2025-12-29",
+    "type": "order_passed",
+    "quote": "The proceeding thus concluded under Section 73 of the GST Act, said Authority passed an Order-in-Original bearing No.AC/CTC-I/GST-69/2025, dated 29.12.2025 (Annexure-2) in the name of “Manoranjan Mohapatra”, who is dead since 24.11.2022.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "notice and order issued against a dead person",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In view of provisions of Section 93 of the GST Act and bearing in mind the afore-noted decisions, the action of the Assistant Commissioner of GST and Central Excise, Cuttack-I Division, Cuttack cannot be defended and the notice and the order against a dead person cannot be sustained as they are rendered non est in the eye of law.",
+    "quote_source": "court",
+    "para": null
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the aforesaid observation, the writ petition is disposed of and pending Interlocutory Application(s), if any, shall be deemed to have been disposed of.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 28557,
+   "tokens_out": 2354,
+   "seconds": 11.54,
+   "cached": false
+  },
+  {
+   "tokens_in": 24074,
+   "tokens_out": 485,
+   "seconds": 8.02,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

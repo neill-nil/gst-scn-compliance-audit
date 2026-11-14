@@ -33,10 +33,14 @@ def download(key: str) -> bytes:
             time.sleep(2 ** attempt)
 
 
+FRESH = Path(__file__).resolve().parents[1] / "data" / "splits" / "fresh.txt"
+FRESH_IDS = set(FRESH.read_text().split()) if FRESH.exists() else set()
+
+
 def fetch(row, data_dir: Path) -> str:
     text_path = data_dir / "text" / row["court"] / f"{row['cnr']}.txt.gz"
     pdf_path = data_dir / "raw" / row["court"] / f"{row['cnr']}.pdf"
-    keep_pdf = row["bucket"] == "reasoned"
+    keep_pdf = row["bucket"] == "reasoned" or row["cnr"] in FRESH_IDS  # fresh cases are reviewed from the PDF too
     if text_path.exists() and (not keep_pdf or pdf_path.exists()):
         return "kept"
     try:
@@ -68,7 +72,7 @@ def main():
         rows = [r for r in csv.DictReader(f)
                 if r["bucket"] in TEXT_BUCKETS and r["duplicate_of_earlier"] == "False"]
     if args.reasoned_only:
-        rows = [r for r in rows if r["bucket"] == "reasoned"]
+        rows = [r for r in rows if r["bucket"] == "reasoned" or r["cnr"] in FRESH_IDS]
     with ThreadPoolExecutor(16) as ex:
         results = list(ex.map(lambda r: fetch(r, data_dir), rows))
     problems = [x for x in results if x not in ("kept", "downloaded")]

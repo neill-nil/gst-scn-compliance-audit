@@ -17,7 +17,7 @@ from src.tools.bm25 import BM25
 ROOT = Path(__file__).resolve().parents[2]
 SPLITS = ROOT / "data" / "splits"
 CACHE = ROOT / "data" / "interim" / "caselaw_paragraphs.jsonl.gz"
-BLOCKED_SPLITS = ("dev.txt", "test.txt", "heldout.txt", "reserved.txt")
+BLOCKED_SPLITS = ("dev.txt", "test.txt", "heldout.txt", "reserved.txt", "fresh.txt")
 
 
 def _ids(name: str) -> set[str]:
@@ -28,7 +28,7 @@ def _ids(name: str) -> set[str]:
 @lru_cache(maxsize=1)
 def blocked() -> frozenset[str]:
     queued = set()
-    for name in ("review_queue.csv", "review_queue_v2.csv"):  # cases being reviewed for dev, test or held-out
+    for name in ("review_queue.csv", "review_queue_v2.csv", "review_queue_v3.csv"):  # cases being reviewed for dev, test or held-out
         path = SPLITS / name
         if path.exists():
             with open(path, newline="", encoding="utf-8") as f:

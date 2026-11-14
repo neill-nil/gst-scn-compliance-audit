@@ -97,12 +97,18 @@ def main():
 
     run = ROOT / args.run
     gold = {r["cnr"]: r for r in map(json.loads, open(ROOT / "data/gold/records.jsonl", encoding="utf-8"))}
+    import csv  # cases outside the gold set (the fresh set): metadata from the manifest
+    for m in csv.DictReader(open(ROOT / "data/manifests/screened.csv", encoding="utf-8")):
+        if m["cnr"] not in gold and m["bucket"] != "out_of_scope":
+            gold[m["cnr"]] = {"cnr": m["cnr"], "schema_version": "0.1", "court": m["court_name"],
+                              "case_no": m["title"].split(" of ")[0], "decision_date": m["decision_date"]}
+    order = {c: i for i, c in enumerate(gold)}
     rows = [json.loads(l) for p in sorted(run.glob("outputs*.jsonl")) for l in open(p, encoding="utf-8")]
     validator = jsonschema.Draft202012Validator(FACTS_SCHEMA)
     salvaged = 0
     out_path = run / "checker_full_record.jsonl"
     with open(out_path, "w", encoding="utf-8") as f:
-        for r in sorted(rows, key=lambda r: list(gold).index(r["cnr"])):
+        for r in sorted(rows, key=lambda r: order[r["cnr"]]):
             facts = r.get("facts")
             if facts is None:
                 facts, salvaged = salvage(r.get("text")), salvaged + 1

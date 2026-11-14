@@ -1,0 +1,145 @@
+{
+ "cnr": "WBCHCA0084902025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "73",
+   "quote": "and the show cause issued on the basis thereof would demonstrate that the demand in the show cause is forty times higher, than the demand in original notice issued in DRC-01A. He has also drawn the attention of this Court to the provisions of Section 73(5) of the said Act.",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "the discrepancy notified in the notice in Form GST DRC -01A dated 10th January, 2024 for financial year 2019-20",
+   "para": 2
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2024-03-01",
+     "quote": "the show cause notice in form DRC 01 dated 1st March, 2024",
+     "para": 4
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-05-13",
+    "quote": "the consequent order under Section 73 of the said Act dated 13th May, 2024",
+    "para": 5
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-01-10",
+    "type": "pre_scn_intimation",
+    "quote": "the discrepancy notified in the notice in Form GST DRC -01A dated 10th January, 2024 for financial year 2019-20",
+    "para": 2
+   },
+   {
+    "date": "2024-03-01",
+    "type": "scn_issued",
+    "quote": "and the show cause notice in form DRC 01 dated 1st March, 2024",
+    "para": 4
+   },
+   {
+    "date": "2024-05-13",
+    "type": "order_passed",
+    "quote": "the consequent order under Section 73 of the said Act dated 13th May, 2024",
+    "para": 5
+   },
+   {
+    "date": "2024-12-12",
+    "type": "appeal_dismissed",
+    "quote": "and the appellate order dated 12th December, 2024 also cannot be sustained.",
+    "para": 5
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "other_procedural",
+    "note": "demand in SCN much higher than DRC-01A",
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "I am of the view that ordinarily the petitioner having not been provided with an opportunity to offer explanation to the notice in DRC -01A, the show-cause in DRC-01 dated 1st March, 2024 cannot be sustained.",
+    "quote_source": "court",
+    "para": 5
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "With the above observations and directions, the writ petition is disposed of.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4757,
+   "tokens_out": 972,
+   "seconds": 6.9,
+   "cached": false
+  },
+  {
+   "tokens_in": 2990,
+   "tokens_out": 206,
+   "seconds": 3.85,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

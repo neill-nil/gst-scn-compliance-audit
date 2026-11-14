@@ -1,0 +1,92 @@
+{
+ "cnr": "APHC010457982026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25"
+   ],
+   "quote": "Learned counsel for the petitioner while referring to the various averments made in the affidavit filed in support of the writ petition, made submissions inter alia that the order of respondent No.3 covering tax period for the different Assessment Years i.e., 2021-22 to 2024-25 is not sustainable",
+   "para": 3
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": "2025-12-11",
+    "quote": "Aggrieved by common Assessment Order dated 11.12.2025 issued by respondent No.3, filed the present writ petition on various grounds.",
+    "para": 2
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-12-11",
+    "type": "order_passed",
+    "quote": "Aggrieved by common Assessment Order dated 11.12.2025 issued by respondent No.3, filed the present writ petition on various grounds.",
+    "para": 2
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "consolidated_scn",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Suffice to state that impugned order is liable to be set aside on the ground that the same is a composite order covering the tax periods 2021-22 to 2024-25.",
+    "quote_source": "court",
+    "para": 6
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "Writ Petition is disposed of, as indicated above.",
+   "para": 8
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 13999,
+   "tokens_out": 4622,
+   "seconds": 12.07,
+   "cached": false
+  },
+  {
+   "tokens_in": 3087,
+   "tokens_out": 240,
+   "seconds": 3.73,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

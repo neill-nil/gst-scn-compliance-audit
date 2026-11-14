@@ -1,0 +1,190 @@
+{
+ "cnr": "DLHC010266232026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "issued the Impugned SCN under Section 74 of the CGST Act",
+   "para": 5
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23"
+   ],
+   "quote": "for the financial years 2018-19 to 2022-23 together with applicable interest and penalty.",
+   "para": 5
+  },
+  "notices": [
+   {
+    "date": {
+     "value": "2025-06-17",
+     "quote": "On 17.06.2025, the Directorate General of Goods and Services Tax Intelligence (hereinafter referred to as „DGGI‟), Delhi Zonal Unit, issued the Impugned SCN under Section 74 of the CGST Act",
+     "para": 5
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2025-12-16",
+    "quote": "Order-in- Original No. 91/JC/DN/RAVIPARKASH/2025-26 dated 16.12.2025 (hereinafter referred to as the „Impugned Order‟) alongwith DRC-07 dated 16.12.2025",
+    "para": 1
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-06-17",
+    "type": "scn_issued",
+    "quote": "On 17.06.2025, the Directorate General of Goods and Services Tax Intelligence (hereinafter referred to as „DGGI‟), Delhi Zonal Unit, issued the Impugned SCN under Section 74 of the CGST Act",
+    "para": 5
+   },
+   {
+    "date": "2025-07-16",
+    "type": "reply_filed",
+    "quote": "The Petitioner submitted a reply dated 16.07.2025 denying the allegations contained in the Impugned SCN.",
+    "para": 7
+   },
+   {
+    "date": "2025-10-09",
+    "type": "hearing_scheduled",
+    "quote": "The Impugned Order records that opportunities of personal hearing had been fixed on 09.10.2025, 14.10.2025 and 06.11.2025.",
+    "para": 8
+   },
+   {
+    "date": "2025-10-14",
+    "type": "hearing_scheduled",
+    "quote": "The Impugned Order records that opportunities of personal hearing had been fixed on 09.10.2025, 14.10.2025 and 06.11.2025.",
+    "para": 8
+   },
+   {
+    "date": "2025-11-06",
+    "type": "hearing_scheduled",
+    "quote": "The Impugned Order records that opportunities of personal hearing had been fixed on 09.10.2025, 14.10.2025 and 06.11.2025.",
+    "para": 8
+   },
+   {
+    "date": "2025-12-16",
+    "type": "order_passed",
+    "quote": "Thereafter, the adjudicating authority passed the Impugned Order dated 16.12.2025 under Section 74 of the CGST Act confirming the proposed demand of tax together with applicable interest and penalty.",
+    "para": 8
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "scn_ground",
+    "quote": "The allegations in the Impugned SCN principally pertained to mis-declaration, undervaluation and clandestine clearance of taxable goods.",
+    "para": 5
+   },
+   {
+    "type": "reply_point",
+    "quote": "The Petitioner also sought permission to cross-examine certain persons upon whose statements and records reliance had been placed in the Impugned SCN.",
+    "para": 7
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "reply_not_considered",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Although the Petitioner had filed a reply dated 16.07.2025 to the Impugned SCN, the Adjudicating Authority has merely observed that the reply is “neither in consonance to the allegations made in the Show Cause Notice nor do they seem to validate their stance” without considering or dealing with the submissions raised therein.",
+    "quote_source": "argument",
+    "para": 11
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Although the Impugned Order records that personal hearings were fixed on 09.10.2025, 14.10.2025 and 06.11.2025, no notice intimating the aforesaid dates was ever served upon the Petitioner.",
+    "quote_source": "argument",
+    "para": 11
+   },
+   {
+    "type": "other_procedural",
+    "note": "denial of cross-examination and statement under coercion",
+    "finding": "not_decided",
+    "contested": false,
+    "quote": "Despite a specific request made in the reply to the Impugned SCN, the Petitioner was not afforded an opportunity to cross- examine the said persons.",
+    "quote_source": "argument",
+    "para": 11
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "Consequently, the present Petition is dismissed and all the pending applications are disposed of.",
+   "para": 30
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 7170,
+   "tokens_out": 1367,
+   "seconds": 6.21,
+   "cached": false
+  },
+  {
+   "tokens_in": 5403,
+   "tokens_out": 469,
+   "seconds": 3.64,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -88,6 +88,16 @@ def main():
         f.writelines(json.dumps(r, ensure_ascii=False) + "\n" for r in rows)
     for k, (n, cut) in counts.items():
         print(f"{k}: {n} examples ({cut} truncated at {MAX_CHARS} chars)")
+    fresh_list = ROOT / "data/splits/fresh.txt"
+    if fresh_list.exists():  # fresh set (labelled after the freeze): prompts only, the answers come from review
+        fresh = [c for c in ids("fresh.txt")]
+        with open(OUT / "fresh.jsonl", "w", encoding="utf-8") as f:
+            for c in fresh:
+                p, cut = prompt(c)
+                f.write(json.dumps({"cnr": c, "split": "fresh", "source": "none", "truncated": cut,
+                                    "messages": [{"role": "user", "content": p}]}, ensure_ascii=False) + "\n")
+        print(f"fresh: {len(fresh)} prompts")
+        assert not set(fresh) & (set(train_pool) | {g["cnr"] for g in gold}), "fresh case used elsewhere"
     leak = {r for r in train_pool} & {g["cnr"] for g in gold}
     assert not leak, f"test cases in training data: {leak}"
 

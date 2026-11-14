@@ -1,0 +1,136 @@
+{
+ "cnr": "HCMA011442442025",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": null,
+   "quote": null,
+   "para": null
+  },
+  "financial_years": {
+   "value": [
+    "2019-20"
+   ],
+   "quote": "bearing reference GSTIN 33AAFPD1041F1ZL/ 2019-20",
+   "para": 0
+  },
+  "notices": [
+   {
+    "date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "reply_due": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "hearing_date_given": {
+     "value": false,
+     "quote": "Under these circumstances, the impugned order came to be passed by the respondent without providing any opportunity of personal hearing to the petitioner.",
+     "para": 3
+    },
+    "hearing_date": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "service_mode": {
+     "value": "portal_additional_notices_tab",
+     "quote": "all notices/communications were uploaded by the respondent under the “View Additional Notices and Orders” column in the GST common portal.",
+     "para": 3
+    },
+    "signed": {
+     "value": null,
+     "quote": null,
+     "para": null
+    },
+    "summary_only": {
+     "value": null,
+     "quote": null,
+     "para": null
+    }
+   }
+  ],
+  "order": {
+   "date": {
+    "value": "2024-08-21",
+    "quote": "call for records of the impugned order date 21.08.2024 bearing reference GSTIN 33AAFPD1041F1ZL/ 2019-20 along with Form GST DRC-07 the summary of the order dated 21.08.2024",
+    "para": 0
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2024-08-21",
+    "type": "order_passed",
+    "quote": "call for records of the impugned order date 21.08.2024 bearing reference GSTIN 33AAFPD1041F1ZL/ 2019-20 along with Form GST DRC-07 the summary of the order dated 21.08.2024 bearing reference No.ZD3308241784247 of the respondent and quash the same",
+    "para": 0
+   }
+  ],
+  "document_contents": []
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "service_169",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "Therefore, this Court finds that there is a lack of opportunities being provided to serve the notices/orders etc., effectively to the petitioner.",
+    "quote_source": "court",
+    "para": 9
+   },
+   {
+    "type": "hearing_75_4",
+    "note": null,
+    "finding": "defect_found",
+    "contested": false,
+    "quote": "In such circumstances, this Court is of the view that the impugned assessment order came to be passed without affording any opportunity of personal hearing to the petitioner, confirming the proposals contained in the show cause notice.",
+    "quote_source": "court",
+    "para": 7
+   }
+  ],
+  "outcome": {
+   "disposition": "disposed",
+   "remanded": true,
+   "quote": "The impugned order dated 21.08.2024 is set aside and the matter is remanded to the respondent for fresh consideration on condition that the petitioner shall pay 25% of the disputed tax amount to the respondent within a period of four weeks from the date of receipt of a copy of this order.",
+   "para": 10
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 4988,
+   "tokens_out": 817,
+   "seconds": 5.93,
+   "cached": false
+  },
+  {
+   "tokens_in": 3221,
+   "tokens_out": 330,
+   "seconds": 4.36,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}

@@ -152,3 +152,66 @@ while any(p.poll() is None for p in procs): time.sleep(60)
 !rm -rf /kaggle/working/repo
 !ls -la /kaggle/working
 ```
+
+---
+
+## Notebook H: `nc-H-fresh`, the full system on 20 fresh cases → download `fresh_H.zip` (about 1 h)
+20 judgments nobody has reviewed, trained on or used (`data/splits/fresh.txt`, picked on 14 Nov after the system
+was frozen). The fine-tuned extractor reads each judgment, then NoticeCheck (Qwen) checks the facts. The team
+reviews the same 20 cases separately (review_queue_v3.csv) without seeing these outputs; then we score.
+
+**Before H, once: upload the fine-tuned weights as a private Kaggle dataset** (they are too big for GitHub)
+1. kaggle.com → **Create → New Dataset**.
+2. Drag in **all files** from the folder `runs/rq2_lora/adapter` on your laptop (adapter_model.safetensors,
+   adapter_config.json, tokenizer.json, tokenizer_config.json, chat_template.jinja, README.md).
+3. Title **noticecheck-adapter**, visibility **Private** → **Create**. Wait until it says the upload is complete.
+4. In notebook H (before Save Version): right-hand panel → **Add Input** → **Your Work → Datasets** →
+   **noticecheck-adapter** → **Add**.
+
+**H Cell 1** (libraries and Ollama, about 6 minutes):
+```python
+!apt-get -qq update && apt-get -qq install -y zstd pciutils lshw poppler-utils zip > /dev/null
+!pip install -q unsloth jsonschema pytest
+!curl -fsSL https://ollama.com/install.sh | sh
+!python -c "import unsloth, torch; print('unsloth', unsloth.__version__, 'GPUs', torch.cuda.device_count())"
+```
+
+**H Cell 2** (code, judgments, adapter, model download, about 10 minutes):
+```python
+import os, subprocess, time, json, glob
+!git clone -b noticecheck-core https://github.com/neill-nil/gst-scn-compliance-audit.git /kaggle/working/repo
+%cd /kaggle/working/repo
+!git log --oneline -1
+!python scripts/fetch_data.py --reasoned-only
+!python -m scripts.build_rq2_data
+!python -m src.tools.caselaw
+!python -m pytest -q tests/test_tools.py
+ADAPTER = os.path.dirname(glob.glob("/kaggle/input/**/adapter_config.json", recursive=True)[0])
+print("adapter:", ADAPTER, os.listdir(ADAPTER))
+!python -c "from huggingface_hub import snapshot_download; snapshot_download('unsloth/Qwen3-8B-unsloth-bnb-4bit')"
+```
+`build_rq2_data` must print `fresh: 20 prompts`, and the adapter line must list `adapter_model.safetensors`.
+
+**H Cell 3** (extract with the fine-tuned model, then NoticeCheck; about 40 minutes):
+```python
+# 1) fine-tuned extractor on the 20 fresh judgments, half on each GPU
+procs = [subprocess.Popen(["python", "-m", "src.rq2.extract", "--run-id", "rq2_fresh", "--split", "fresh", "--adapter", ADAPTER, "--shard", str(k), "--shards", "2"], env=dict(os.environ, CUDA_VISIBLE_DEVICES=str(k)), stdout=open(f"extract_fresh_{k}.log", "w"), stderr=subprocess.STDOUT) for k in (0, 1)]
+while any(p.poll() is None for p in procs): time.sleep(30)
+!tail -n 2 extract_fresh_*.log
+!python -m scripts.build_e2e_inputs --run runs/rq2_fresh
+# 2) two Ollama servers (one per GPU) and NoticeCheck on the extracted facts
+base = dict(os.environ, OLLAMA_CONTEXT_LENGTH="16384", OLLAMA_NUM_PARALLEL="2", OLLAMA_KEEP_ALIVE="-1")
+servers = [subprocess.Popen(["ollama", "serve"], env=dict(base, CUDA_VISIBLE_DEVICES=str(g), OLLAMA_HOST=f"127.0.0.1:{11434 + g}"), stdout=open(f"/kaggle/working/ollama_{g}.log", "w"), stderr=subprocess.STDOUT) for g in (0, 1)]
+time.sleep(10)
+!ollama pull qwen3:8b
+os.environ.update(LOCAL_MODEL="qwen3:8b", LOCAL_RPM="0")
+cnrs = [json.loads(l)["cnr"] for l in open("runs/rq2_fresh/checker_full_record.jsonl")]
+parts = [cnrs[i::4] for i in range(4)]
+procs = [subprocess.Popen(["python", "-m", "src.noticecheck.cli", "--inputs", "runs/rq2_fresh/checker_full_record.jsonl", "--config", "configs/nc_full.json", "--run-id", f"fresh_nc_{i}", "--seed", "1", "--cnr", *ids], env=dict(os.environ, LOCAL_BASE_URL=f"http://localhost:{11434 + i % 2}/v1"), stdout=open(f"fresh_nc_{i}.log", "w"), stderr=subprocess.STDOUT) for i, ids in enumerate(parts)]
+while any(p.poll() is None for p in procs): time.sleep(30)
+!tail -n 2 fresh_nc_*.log
+!zip -qr /kaggle/working/fresh_H.zip runs/rq2_fresh runs/fresh_nc_* extract_fresh_*.log fresh_nc_*.log
+%cd /kaggle/working
+!rm -rf /kaggle/working/repo
+!ls -la /kaggle/working
+```

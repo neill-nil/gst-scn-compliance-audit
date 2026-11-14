@@ -1,0 +1,120 @@
+{
+ "cnr": "HCMD010082662026",
+ "schema_version": "0.1",
+ "facts": {
+  "provision": {
+   "value": "74",
+   "quote": "u/s.74 of the TNGST Act 2017",
+   "para": 2
+  },
+  "financial_years": {
+   "value": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24"
+   ],
+   "quote": "for the period April, 2018 to March 2019",
+   "para": 2
+  },
+  "notices": [],
+  "order": {
+   "date": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "signed": {
+    "value": null,
+    "quote": null,
+    "para": null
+   },
+   "service_mode": {
+    "value": null,
+    "quote": null,
+    "para": null
+   }
+  },
+  "events": [
+   {
+    "date": "2025-11-14",
+    "type": "order_passed",
+    "quote": "along with a Summary of order in Reference No.ZD331125253542Q dated 14.11.2025 on the file of the 2nd Respondent for the period April, 2019 to March 2020",
+    "para": 2
+   },
+   {
+    "date": "2025-12-29",
+    "type": "order_passed",
+    "quote": "along with a Summary of order in Reference No.ZD331225429722K dated 29.12.2025 on the file of the 2nd Respondent for the period April, 2018 to March 2019",
+    "para": 2
+   }
+  ],
+  "document_contents": [
+   {
+    "type": "reply_point",
+    "quote": "However, in this case, upon receipt of the show cause notice, a detailed reply, along with all the supporting documents, was filed by the petitioner and the same was duly considered by the respondent while passing the impugned order.",
+    "para": 14
+   },
+   {
+    "type": "order_reasoning",
+    "quote": "Upon perusal of the impugned orders, it is clear that after considering the reply filed by the petitioner, the Assessing Officer had categorically arrived at a conclusion that “the said defects and omissions in the annual returns are willful in nature”.",
+    "para": 11
+   }
+  ]
+ },
+ "findings": {
+  "defects_argued": [
+   {
+    "type": "section_74_ingredients",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "Such willful act of the petitioner certainly attracts the provisions of Section 74 of the GST Act and thus, there is no fault on the part of the respondent in invoking the said provisions.",
+    "quote_source": "court",
+    "para": 11
+   },
+   {
+    "type": "limitation",
+    "note": null,
+    "finding": "defect_rejected",
+    "contested": false,
+    "quote": "In such case, the question of limitation would not at all come into picture and hence, this Court is not inclined to accept the submissions made by the petitioner.",
+    "quote_source": "court",
+    "para": 14
+   }
+  ],
+  "outcome": {
+   "disposition": "dismissed",
+   "remanded": false,
+   "quote": "Accordingly, these writ petitions are dismissed.",
+   "para": 18
+  }
+ },
+ "review": {
+  "status": "prefill",
+  "drafted_by": "gemini-3.5-flash-lite",
+  "prompt_version": "2026-10-29.1",
+  "reviewed_by": [],
+  "notes": ""
+ },
+ "usage": [
+  {
+   "tokens_in": 6288,
+   "tokens_out": 753,
+   "seconds": 6.53,
+   "cached": false
+  },
+  {
+   "tokens_in": 4521,
+   "tokens_out": 272,
+   "seconds": 3.64,
+   "cached": false
+  }
+ ],
+ "checks": {
+  "schema_problems": [],
+  "quotes_not_found": []
+ }
+}
