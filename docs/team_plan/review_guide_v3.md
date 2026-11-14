@@ -63,11 +63,13 @@ Note that **COURT_DECIDED comes from the judgment, never from NoticeCheck**. Not
 decided; that is exactly what you add.
 
 ## Where things are
-- **Your sheet:** `docs/team_plan/fresh_check/r1.csv` (or r2, r3, r4). Open it in Excel, LibreOffice or Google
-  Sheets. About 1 hour of work.
-- **The judgments:** run `git pull` and then `python scripts/fetch_data.py --reasoned-only`. Each row's
-  `judgment_pdf` column gives the file, e.g. `data/raw/7_26/DLHC010740672025.pdf`. Use Ctrl+F with a few words of
-  NoticeCheck's quote to find the right place.
+**Use the check page (easiest):** Neill sends you a link. Open it, click your id (r1–r4) at the top, and work
+through your 5 cases with the tabs. The judgment is on the left (with a Find box; "show ¶ in judgment" jumps to the
+quoted paragraph), NoticeCheck's answers are on the right with buttons for the boxes above. Answers save as you
+click. If the page says "saved on this device only", click **Copy my answers** at the end and send it to Neill.
+
+The same work as a spreadsheet, if you prefer: `docs/team_plan/fresh_check/rN.csv` (judgments via
+`python scripts/fetch_data.py --reasoned-only`, file named in the `judgment_pdf` column).
 
 | You | Calls to check |
 |---|---|
