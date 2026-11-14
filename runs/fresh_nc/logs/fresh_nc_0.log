@@ -1,0 +1,6 @@
+5 cases to run (0 already done) -> /kaggle/working/repo/runs/fresh_nc_0
+[1/5] WBCHCA0084902025 {'cant_tell': 10, 'contested': 2, 'no_defect': 1} calls=2 271s
+[2/5] ODHC010661432025 {'cant_tell': 12, 'no_defect': 1} calls=2 160s
+[3/5] HCMA011063142025 {'no_defect': 3, 'cant_tell': 6, 'defect': 2, 'contested': 2} calls=2 116s
+[4/5] HCMA011744252025 {'cant_tell': 8, 'no_defect': 3, 'contested': 2} calls=2 188s
+[5/5] DLHC010294292024 {'cant_tell': 12, 'no_defect': 1} calls=3 251s

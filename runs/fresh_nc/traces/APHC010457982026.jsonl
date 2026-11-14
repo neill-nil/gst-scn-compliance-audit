@@ -1,0 +1,12 @@
+{"step": 1, "stage": "plan", "tool": null, "model": "qwen3:8b", "ok": false, "tokens_in": 2246, "tokens_out": 2453, "seconds": 104.46, "error": "JSONDecodeError: Invalid control character at: line 26 column 13 (char 700)"}
+{"step": 2, "stage": "precondition_check", "defect": "hearing_75_4", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 3, "stage": "precondition_check", "defect": "adjournment_75_5", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 4, "stage": "precondition_check", "defect": "service_169", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 5, "stage": "precondition_check", "defect": "signature", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 6, "stage": "precondition_check", "defect": "summary_only", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 7, "stage": "precondition_check", "defect": "limitation", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 8, "stage": "precondition_check", "defect": "extension_notification_validity", "tool": null, "by": "rule", "ok": true, "output_summary": "cant_tell"}
+{"step": 9, "stage": "precondition_check", "defect": "consolidated_scn", "tool": null, "by": "rule", "ok": true, "output_summary": "contested"}
+{"step": 10, "stage": "precondition_check", "tool": null, "model": "qwen3:8b", "ok": true, "tokens_in": 626, "tokens_out": 690, "seconds": 30.15, "error": null}
+{"step": 11, "stage": "verify", "tool": "caselaw_search", "args": {"query": "single show cause notice for multiple financial years consolidated", "k": 3}, "by": "code", "ok": true, "output_summary": "[{'cnr': 'DLHC010227212025', 'court': 'Delhi', 'decision_date': '2025-08-20', 'para': 3, 'text': '3. One of the issues that arises in the present petition is as to whether a single Show Cause Notice c", "seconds": 3.072}
+{"step": 12, "stage": "handoff", "ok": true, "output_summary": "out_of_scope,unclear,defect_free"}

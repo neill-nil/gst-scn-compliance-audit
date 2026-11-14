@@ -176,13 +176,13 @@ reviews the same 20 cases separately (review_queue_v3.csv) without seeing these 
 !python -c "import unsloth, torch; print('unsloth', unsloth.__version__, 'GPUs', torch.cuda.device_count())"
 ```
 
-**H Cell 2** (code, judgments, adapter, model download, about 10 minutes):
+**H Cell 2** (code, judgments, adapter, model download, about 20 minutes):
 ```python
 import os, subprocess, time, json, glob
 !git clone -b noticecheck-core https://github.com/neill-nil/gst-scn-compliance-audit.git /kaggle/working/repo
 %cd /kaggle/working/repo
 !git log --oneline -1
-!python scripts/fetch_data.py --reasoned-only
+!python scripts/fetch_data.py                 # all in-scope texts (the case-law index needs them), about 10-15 minutes
 !python -m scripts.build_rq2_data
 !python -m src.tools.caselaw
 !python -m pytest -q tests/test_tools.py

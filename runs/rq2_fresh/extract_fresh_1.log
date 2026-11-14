@@ -1,0 +1,34 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+Unsloth: xformers is installed but cannot load with torch 2.11.0+cu130, so PyTorch attention is used instead.
+To install a matching xformers, run `unsloth install-kernels xformers`, or `pip uninstall xformers` to hide this. UNSLOTH_ENABLE_LOGGING=1 shows the full error.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2026.11.4: Fast Qwen3 patching. Transformers: 5.17.0.
+   \\   /|    Tesla T4. Num GPUs = 1. Max memory: 14.562 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.11.0+cu130. CUDA: 7.5. CUDA Toolkit: 13.0. Triton: 3.6.0
+\        /    Bfloat16 = FALSE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:02<16:11,  2.44s/it]Loading weights:   1%|          | 2/399 [00:02<08:06,  1.23s/it]Loading weights:  10%|▉         | 39/399 [00:02<00:14, 24.49it/s]Loading weights:  22%|██▏       | 87/399 [00:03<00:04, 62.44it/s]Loading weights:  30%|██▉       | 119/399 [00:03<00:03, 88.70it/s]Loading weights:  37%|███▋      | 148/399 [00:03<00:02, 113.83it/s]Loading weights:  45%|████▍     | 178/399 [00:03<00:01, 141.12it/s]Loading weights:  52%|█████▏    | 206/399 [00:03<00:01, 164.09it/s]Loading weights:  59%|█████▊    | 234/399 [00:03<00:00, 186.83it/s]Loading weights:  66%|██████▌   | 263/399 [00:03<00:00, 209.13it/s]Loading weights:  73%|███████▎  | 291/399 [00:03<00:00, 174.14it/s]Loading weights:  81%|████████  | 323/399 [00:03<00:00, 204.35it/s]Loading weights:  88%|████████▊ | 353/399 [00:04<00:00, 226.37it/s]Loading weights:  95%|█████████▌| 380/399 [00:04<00:00, 143.17it/s]Loading weights: 100%|██████████| 399/399 [00:04<00:00, 89.03it/s] 
+Unsloth 2026.11.4 patched 36 layers with 36 QKV layers, 36 O layers and 36 MLP layers.
+Unsloth: compiling each transformer block as one region (Qwen3DecoderLayer).
+rq2_fresh shard 1: 10 cases to run (0 done)
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[1/10] HCBM030111922026 json=ok tokens_out=979 59.1s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[2/10] DLHC010294292024 json=ok tokens_out=675 39.3s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[3/10] ODHC010661432025 json=ok tokens_out=769 49.1s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[4/10] DLHC010266232026 json=ok tokens_out=1256 78.0s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[5/10] ODHC010319662026 json=ok tokens_out=2042 129.8s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[6/10] DLHC010837552025 json=ok tokens_out=1319 79.4s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[7/10] DLHC010740672025 json=ok tokens_out=1247 77.3s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[8/10] DLHC010017602026 json=ok tokens_out=621 41.9s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[9/10] DLHC011102132024 json=ok tokens_out=1319 82.7s
+Both `max_new_tokens` (=2048) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[10/10] HCMA010378672025 json=ok tokens_out=829 52.1s
