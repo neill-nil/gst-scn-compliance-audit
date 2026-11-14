@@ -1,0 +1,249 @@
+{
+ "tools": {
+  "nc_full_s1": {
+   "calls_by_tool": {
+    "limitation_check": 220,
+    "date_diff": 36,
+    "statute_lookup": 308,
+    "caselaw_search": 55,
+    "statute_search": 5
+   },
+   "valid_args_rate": 0.9471153846153846,
+   "argument_errors": {
+    "limitation_check": 33
+   },
+   "correct_refusals_out_of_scope_fy": {
+    "limitation_check": 17
+   },
+   "limitation_check_called_when_applicable": 0.975,
+   "n_cases_limitation_applicable": 40,
+   "n_model_tool_calls": 624,
+   "cases_with_argument_error": 17,
+   "recovered_with_valid_call": 3
+  },
+  "nc_full_s2": {
+   "calls_by_tool": {
+    "limitation_check": 217,
+    "statute_lookup": 321,
+    "date_diff": 34,
+    "caselaw_search": 59,
+    "statute_search": 4
+   },
+   "valid_args_rate": 0.9559055118110236,
+   "argument_errors": {
+    "limitation_check": 27,
+    "statute_lookup": 1
+   },
+   "correct_refusals_out_of_scope_fy": {
+    "limitation_check": 19
+   },
+   "limitation_check_called_when_applicable": 0.9,
+   "n_cases_limitation_applicable": 40,
+   "n_model_tool_calls": 635,
+   "cases_with_argument_error": 19,
+   "recovered_with_valid_call": 7
+  },
+  "nc_full_s3": {
+   "calls_by_tool": {
+    "limitation_check": 214,
+    "statute_lookup": 313,
+    "caselaw_search": 57,
+    "date_diff": 38,
+    "statute_search": 1
+   },
+   "valid_args_rate": 0.9678972712680578,
+   "argument_errors": {
+    "limitation_check": 20
+   },
+   "correct_refusals_out_of_scope_fy": {
+    "limitation_check": 23
+   },
+   "limitation_check_called_when_applicable": 0.925,
+   "n_cases_limitation_applicable": 40,
+   "n_model_tool_calls": 623,
+   "cases_with_argument_error": 14,
+   "recovered_with_valid_call": 5
+  },
+  "nc_gemini_s1": {
+   "calls_by_tool": {
+    "limitation_check": 160,
+    "statute_lookup": 413,
+    "caselaw_search": 39,
+    "date_diff": 6
+   },
+   "valid_args_rate": 1.0,
+   "argument_errors": {},
+   "correct_refusals_out_of_scope_fy": {},
+   "limitation_check_called_when_applicable": 1.0,
+   "n_cases_limitation_applicable": 40,
+   "n_model_tool_calls": 618,
+   "cases_with_argument_error": 0,
+   "recovered_with_valid_call": 0
+  }
+ },
+ "verifier": {
+  "nc_full_s1": {
+   "not_decided": 2,
+   "unargued_flag_removed": 3,
+   "true_defect_dropped": 1
+  },
+  "nc_full_s2": {
+   "unargued_flag_removed": 4
+  },
+  "nc_full_s3": {
+   "unargued_flag_removed": 6,
+   "not_decided": 1
+  },
+  "nc_gemini_s1": {
+   "unargued_flag_removed": 1,
+   "true_defect_dropped": 1
+  },
+  "e2e_nc_tuned": {
+   "unargued_flag_removed": 3,
+   "held_out_case": 1
+  }
+ },
+ "retrieval": {
+  "n_queries": 167,
+  "hierarchical": {
+   "recall@1_section": 0.03592814371257485,
+   "recall@3_section": 0.07784431137724551,
+   "recall@5_section": 0.11377245508982035,
+   "recall@1_subsection": 0.029940119760479042,
+   "recall@3_subsection": 0.03592814371257485,
+   "recall@5_subsection": 0.0658682634730539,
+   "recall@5_section_by_type": {
+    "section_74_ingredients": 0.33,
+    "consolidated_scn": 0.08,
+    "reply_not_considered": 0.09,
+    "hearing_75_4": 0.09,
+    "extension_notification_validity": 0.0,
+    "service_169": 0.17,
+    "demand_beyond_scn": 0.33,
+    "summary_only": 0.0,
+    "non_speaking_order": 0.17,
+    "limitation": 0.33,
+    "signature": 0.0
+   }
+  },
+  "flat": {
+   "recall@1_section": 0.017964071856287425,
+   "recall@3_section": 0.04790419161676647,
+   "recall@5_section": 0.07784431137724551,
+   "recall@5_section_by_type": {
+    "section_74_ingredients": 0.17,
+    "consolidated_scn": 0.0,
+    "reply_not_considered": 0.03,
+    "hearing_75_4": 0.05,
+    "extension_notification_validity": 0.0,
+    "service_169": 0.13,
+    "demand_beyond_scn": 0.33,
+    "summary_only": 0.33,
+    "non_speaking_order": 0.17,
+    "limitation": 0.33,
+    "signature": 0.0
+   }
+  }
+ },
+ "false_alarms_by_type": {
+  "nc_full_s1": {
+   "service_169": 4,
+   "other_procedural": 1,
+   "reply_not_considered": 2,
+   "non_speaking_order": 1
+  },
+  "nc_full_s2": {
+   "service_169": 4,
+   "reply_not_considered": 1,
+   "other_procedural": 2,
+   "non_speaking_order": 1
+  },
+  "nc_full_s3": {
+   "service_169": 4,
+   "reply_not_considered": 4,
+   "other_procedural": 1,
+   "limitation": 1,
+   "non_speaking_order": 1
+  },
+  "b1_v2": {
+   "service_169": 3,
+   "limitation": 1,
+   "non_speaking_order": 1
+  },
+  "b2_v2": {
+   "service_169": 4,
+   "consolidated_scn": 1,
+   "reply_not_considered": 2,
+   "non_speaking_order": 1,
+   "hearing_75_4": 1
+  }
+ },
+ "unargued_flags_vs_b1": {
+  "nc_full_s1": {
+   "system": 30,
+   "baseline": 88,
+   "diff": -58,
+   "ci95": [
+    -82,
+    -35
+   ],
+   "cases_with_any_system": 28,
+   "cases_with_any_baseline": 60
+  },
+  "nc_full_s2": {
+   "system": 29,
+   "baseline": 88,
+   "diff": -59,
+   "ci95": [
+    -83,
+    -37
+   ],
+   "cases_with_any_system": 24,
+   "cases_with_any_baseline": 60
+  },
+  "nc_full_s3": {
+   "system": 33,
+   "baseline": 88,
+   "diff": -55,
+   "ci95": [
+    -78,
+    -34
+   ],
+   "cases_with_any_system": 30,
+   "cases_with_any_baseline": 60
+  },
+  "nc_gemini_s1": {
+   "system": 14,
+   "baseline": 88,
+   "diff": -74,
+   "ci95": [
+    -96,
+    -53
+   ],
+   "cases_with_any_system": 13,
+   "cases_with_any_baseline": 60
+  },
+  "e2e_nc_tuned": {
+   "system": 31,
+   "baseline": 88,
+   "diff": -57,
+   "ci95": [
+    -82,
+    -33
+   ],
+   "cases_with_any_system": 24,
+   "cases_with_any_baseline": 60
+  },
+  "b2_v2": {
+   "system": 14,
+   "baseline": 88,
+   "diff": -74,
+   "ci95": [
+    -96,
+    -53
+   ],
+   "cases_with_any_system": 13,
+   "cases_with_any_baseline": 60
+  }
+ }
+}
