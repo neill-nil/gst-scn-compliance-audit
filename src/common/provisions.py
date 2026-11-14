@@ -22,10 +22,15 @@ def provision_for(defect: str, record: dict) -> str | None:
 
 
 def provisions_match(predicted: str | None, gold: str | None) -> bool:
-    """Same section (or rule); if both name a sub-section, the sub-sections must agree. No gold provision: any."""
+    """Same section (or rule); if both name a sub-section, the sub-sections must agree. No gold provision: any.
+    A citation listing several sections ("s.73(9) / s.75(6)") matches if any one of them does."""
     from src.tools.statute import parse_ref
     if gold is None:
         return True
+    parts = [x for x in re.split(r"\s*(?:/|,|;|&|\band\b|\bor\b)\s*", predicted or "") if x.strip()]
+    if len(parts) > 1:
+        prefix = "CGST Rules " if re.search(r"\brules?\b", predicted, re.I) and not re.search(r"\bact\b", predicted, re.I) else ""
+        return any(provisions_match(prefix + x if prefix and not re.search(r"rule", x, re.I) else x, gold) for x in parts)
     a, b = parse_ref(predicted or ""), parse_ref(gold)
     if a is None or b is None:
         return False

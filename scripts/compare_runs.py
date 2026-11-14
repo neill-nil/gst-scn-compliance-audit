@@ -14,16 +14,16 @@ from pathlib import Path
 from eval.score import DEFECT_TYPES, classify, gold_defects_by_type, load_gold, load_outputs, load_split, pred_findings_by_type
 
 
-def case_counts(gold, outputs, view):
+def case_counts(gold, outputs, view, strict=False):
     out = {}
     for cnr, record in gold.items():
         output = outputs.get((cnr, view))
         if output is None:
             continue
         g, p = gold_defects_by_type(record), pred_findings_by_type(output)
-        c = {"tp": 0, "false_alarm": 0, "miss": 0}
+        c = {"tp": 0, "false_alarm": 0, "miss": 0, "wrong_provision": 0}
         for t in DEFECT_TYPES:
-            cat = classify(g.get(t), p.get(t), strict=False, unargued_as_rejected=False)
+            cat = classify(g.get(t), p.get(t), strict=strict, unargued_as_rejected=False)
             if cat in c:
                 c[cat] += 1
         out[cnr] = c
@@ -34,8 +34,9 @@ def pooled(counts, cnrs):
     tp = sum(counts[c]["tp"] for c in cnrs)
     fa = sum(counts[c]["false_alarm"] for c in cnrs)
     miss = sum(counts[c]["miss"] for c in cnrs)
-    p = tp / (tp + fa) if tp + fa else 0.0
-    r = tp / (tp + miss) if tp + miss else 0.0
+    wp = sum(counts[c]["wrong_provision"] for c in cnrs)  # strict only: a defect call citing the wrong section
+    p = tp / (tp + fa + wp) if tp + fa + wp else 0.0
+    r = tp / (tp + miss + wp) if tp + miss + wp else 0.0
     return {"precision": p, "recall": r, "f1": 2 * p * r / (p + r) if p + r else 0.0, "false_alarms": fa}
 
 
@@ -47,14 +48,15 @@ def main():
     ap.add_argument("--gold", type=Path, default=Path("data/gold/records.jsonl"))
     ap.add_argument("--split", type=Path, default=Path("data/splits/test.txt"))
     ap.add_argument("--n-boot", type=int, default=5000)
+    ap.add_argument("--strict", action="store_true", help="a defect call must also cite the right section")
     args = ap.parse_args()
 
     gold = load_gold(args.gold, load_split(args.split))
-    a = case_counts(gold, load_outputs(args.system, args.view), args.view)
-    b = case_counts(gold, load_outputs(args.baseline, args.view), args.view)
+    a = case_counts(gold, load_outputs(args.system, args.view), args.view, args.strict)
+    b = case_counts(gold, load_outputs(args.baseline, args.view), args.view, args.strict)
     cnrs = sorted(set(a) & set(b))
     rng = random.Random(0)
-    print(f"{args.system.name} minus {args.baseline.name}, view {args.view}, {len(cnrs)} cases, {args.n_boot} resamples")
+    print(f"{args.system.name} minus {args.baseline.name}, view {args.view}{', strict' if args.strict else ''}, {len(cnrs)} cases, {args.n_boot} resamples")
     for metric in ("f1", "recall", "precision", "false_alarms"):
         point = pooled(a, cnrs)[metric] - pooled(b, cnrs)[metric]
         diffs = []

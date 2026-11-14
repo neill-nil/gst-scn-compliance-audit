@@ -262,15 +262,15 @@
         "strict": true,
         "n_cases_scored": 125,
         "overall": {
-          "tp": 26,
+          "tp": 29,
           "false_alarm": 9,
-          "wrong_provision": 12,
+          "wrong_provision": 9,
           "miss": 66,
           "true_negative": 28,
           "flags_on_unargued": 14,
-          "precision": 0.5531914893617021,
-          "recall": 0.25,
-          "f1": 0.3443708609271523,
+          "precision": 0.6170212765957447,
+          "recall": 0.27884615384615385,
+          "f1": 0.3841059602649007,
           "false_alarm_rate": 0.24324324324324326
         },
         "rule_detectable": {
@@ -286,15 +286,15 @@
           "false_alarm_rate": 0.4166666666666667
         },
         "reasoning_dependent": {
-          "tp": 9,
+          "tp": 12,
           "false_alarm": 4,
-          "wrong_provision": 11,
+          "wrong_provision": 8,
           "miss": 30,
           "true_negative": 21,
           "flags_on_unargued": 13,
-          "precision": 0.375,
-          "recall": 0.18,
-          "f1": 0.24324324324324328,
+          "precision": 0.5,
+          "recall": 0.24,
+          "f1": 0.32432432432432434,
           "false_alarm_rate": 0.16
         },
         "by_type": {
@@ -323,15 +323,15 @@
             "false_alarm_rate": null
           },
           "reply_not_considered": {
-            "tp": 3,
+            "tp": 6,
             "false_alarm": 2,
-            "wrong_provision": 10,
+            "wrong_provision": 7,
             "miss": 3,
             "true_negative": 6,
             "flags_on_unargued": 4,
-            "precision": 0.2,
-            "recall": 0.1875,
-            "f1": 0.19354838709677422,
+            "precision": 0.4,
+            "recall": 0.375,
+            "f1": 0.38709677419354843,
             "false_alarm_rate": 0.25
           },
           "non_speaking_order": {
