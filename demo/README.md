@@ -1,6 +1,6 @@
 # NoticeCheck demo
 
-This local page replays **saved outputs from the project's real Qwen runs**. It does not run the 8B model on your laptop or generate a new verdict. The three included judgments have bundled source text, so the saved-run API works without an API key or GPU.
+This local page has two distinct modes: **saved Qwen replay** and an optional **live Gemini preview**. The saved mode replays actual project outputs without running the 8B model. The three included judgments have bundled source text, so replay works without an API key, GPU, or internet.
 
 ## Run
 
@@ -19,7 +19,23 @@ Case C also has the research controls:
 
 The replay shows the recorded plan calls, tool arguments and output summaries, checks, verification, hand-off, and final checklist. It cannot show private model reasoning because that was not saved. Quote matching only locates text; it does not validate legal conclusions.
 
-The prepared judgments are the working demo. The paste box is explicitly disabled until a separate live Gemini API integration is configured. The demo bundles its styling, fonts, source text, and saved outputs. Internet is only needed if you click the public source PDF link.
+## Enable live paste
+
+Live mode needs Python's `jsonschema` package, a Gemini API key, an available Gemini model, and internet:
+
+```sh
+python3 -m venv .venv
+.venv/bin/pip install jsonschema
+cp .env.example .env
+```
+
+Put `GEMINI_API_KEY` and `GEMINI_MODEL` in `.env`, then start or restart with `.venv/bin/python -m demo.server --port 8765`. Use `python -m src.common.llm models gemini` after configuring the key if you need to see available model names. Open the paste section, paste 80–30,000 characters from a High Court GST judgment, and press **Run live with Gemini**.
+
+The server sends the text to Gemini for fact extraction, checks literal quote matches, normalizes the facts, then runs `configs/nc_full_gemini.json` through the real NoticeCheck pipeline. The page receives each recorded step over a streaming response, shows provisional checks beside the text, and replaces them with the verified final checklist. The API key stays on the server. The live path does not save the pasted text or model replies in the project cache; the normal LLM usage log still records call metadata.
+
+**Live is a preview, not a Qwen evaluation:** Gemini replaces Qwen in both stages. The RQ1/RQ2 research comparisons remain in saved Case C only. Unless the full local precedent index has been built, live case-law search uses nine bundled excerpts from the project's saved precedent evidence; the UI labels this limit. Live runtime depends on the configured model and API quota. A matching quote confirms literal presence in the pasted text, not the legal correctness of a finding.
+
+The demo bundles its styling, fonts, source text, and saved outputs. Internet is needed for live Gemini calls and the optional public source PDF link.
 
 ## Data wiring
 
@@ -28,5 +44,6 @@ The prepared judgments are the working demo. The paste box is explicitly disable
 - `runs/rq2_*/outputs_*.jsonl`: extractor comparison.
 - `runs/b1_full_record/outputs.jsonl` and `runs/nc_full_s2/outputs.jsonl`: RQ1 comparison on the shared human-checked record in `data/gold/records.jsonl`.
 - `demo/sources/*.json`: judgment text extracted from the public PDFs and bundled for local replay. `data/text/` takes precedence if it is present.
+- `demo/precedents.jsonl.gz`: nine real precedent excerpts used for limited live retrieval when the full local case-law index is absent.
 
-`GET /api/cases` lists the prepared cases, `GET /api/cases/{cnr}` returns a complete case, and `GET /api/health` checks the server.
+`GET /api/cases` lists the prepared cases, `GET /api/cases/{cnr}` returns a complete saved case, `GET /api/health` reports live availability, and `POST /api/live` streams newline-delimited JSON events for a pasted judgment.

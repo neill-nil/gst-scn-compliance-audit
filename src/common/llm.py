@@ -212,7 +212,7 @@ def complete(backend: str, messages: list, json_schema: dict | None = None, temp
         out["error"] = error
     _log({"time": time.strftime("%Y-%m-%dT%H:%M:%S"), "backend": backend, "model": model, "tag": tag,
           "tokens_in": tokens_in, "tokens_out": tokens_out, "seconds": out["seconds"], "ok": not error})
-    if not error:
+    if use_cache and not error:
         CACHE_DIR.mkdir(parents=True, exist_ok=True)
         cache_file.write_text(json.dumps(out), encoding="utf-8")
     return out

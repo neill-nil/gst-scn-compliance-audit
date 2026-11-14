@@ -5,6 +5,9 @@ let replaySteps = [];
 let replayIndex = 0;
 let replayTimer = null;
 let caseRequest = 0;
+let liveController = null;
+let liveAvailable = false;
+let livePrecedents = 'bundled_excerpts';
 
 const byId = id => document.getElementById(id);
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, ch =>
@@ -34,6 +37,10 @@ function showParagraph(n) {
   }
 }
 window.demoShowParagraph = showParagraph;
+
+function renderParagraphs(paragraphs) {
+  byId('judgment-viewport').innerHTML = paragraphs.map(p => `<div id="demo-para-${p.n}" class="para-block rounded-lg p-3 mb-2 bg-surface-container/50"><div class="flex gap-3"><span class="text-outline font-code-citation">¶${p.n}</span><p class="text-on-surface leading-relaxed">${escapeHtml(p.text)}</p></div></div>`).join('');
+}
 
 function quoteBlock(finding) {
   const quotes = (finding.evidence || []).filter(e => e.source === 'record' && e.quote);
@@ -85,10 +92,14 @@ function renderFacts() {
       ? escapeHtml(t.quote.slice(0, 130))
       : `<button type="button" class="text-left text-primary hover:underline" onclick="demoShowParagraph(${para})">${escapeHtml(t.quote.slice(0, 130))} · ¶${para}</button>`)
       : 'No quote supplied';
-    return `<tr class="border-b border-surface-container-high"><td class="p-2">${escapeHtml(label)}</td><td class="p-2">${base ? escapeHtml(value(b)) : 'Not run for this fresh case'}</td><td class="p-2">${escapeHtml(value(t))}</td><td class="p-2 text-xs text-outline">${quote}</td></tr>`;
+    return `<tr class="border-b border-surface-container-high"><td class="p-2">${escapeHtml(label)}</td><td class="p-2">${base ? escapeHtml(value(b)) : 'Not run'}</td><td class="p-2">${escapeHtml(value(t))}</td><td class="p-2 text-xs text-outline">${quote}</td></tr>`;
   }).join('');
   const table = body?.closest('table');
-  if (table) table.querySelectorAll('th').forEach(th => {if (th.textContent.includes('Base Qwen')) th.textContent = base ? 'Base Qwen' : 'Base Qwen (not run)';});
+  if (table) {
+    const heads = table.querySelectorAll('th');
+    if (heads[1]) heads[1].textContent = base ? 'Base Qwen' : 'Base Qwen (not run)';
+    if (heads[2]) heads[2].textContent = demoCase.mode === 'live_gemini' ? 'Gemini (live)' : 'Fine-tuned Qwen (ours)';
+  }
   const note = byId('stage-1-card')?.lastElementChild;
   if (note && note !== body) note.textContent = 'This table uses saved extractor outputs. Unknown means the model did not supply a value. An absent date alone does not prove that no hearing occurred.';
 }
@@ -106,10 +117,12 @@ function renderRQ2Panel() {
   panel.replaceChildren();
   const summary = document.createElement('summary');
   summary.className = 'cursor-pointer font-semibold';
-  summary.textContent = demoCase.rq2.base ? 'RQ2 · Compare extracted facts from the same judgment' : 'RQ2 · Inspect saved fine-tuned extraction';
+  summary.textContent = demoCase.mode === 'live_gemini' ? 'Live · Inspect Gemini-extracted facts' : demoCase.rq2.base ? 'RQ2 · Compare extracted facts from the same judgment' : 'RQ2 · Inspect saved fine-tuned extraction';
   const note = document.createElement('p');
   note.className = 'text-xs text-outline my-2';
-  note.textContent = demoCase.rq2.base
+  note.textContent = demoCase.mode === 'live_gemini'
+    ? 'Gemini replaces the fine-tuned Qwen extractor in this live preview. Literal quotes were checked against the pasted text; a matching quote alone does not establish the legal conclusion.'
+    : demoCase.rq2.base
     ? 'Base and fine-tuned Qwen received the same raw judgment. Unknown means a date was not stated or not supplied; it does not prove an event never happened. This comparison is independent of RQ1.'
     : 'This fresh case has a saved fine-tuned extractor output. A base extractor run is not available for this case.';
   panel.append(summary, note);
@@ -170,8 +183,13 @@ function renderResearchComparison() {
 
 function showCase(detail) {
   demoCase = detail;
-  const viewport = byId('judgment-viewport');
-  viewport.innerHTML = detail.paragraphs.map(p => `<div id="demo-para-${p.n}" class="para-block rounded-lg p-3 mb-2 bg-surface-container/50"><div class="flex gap-3"><span class="text-outline font-code-citation">¶${p.n}</span><p class="text-on-surface leading-relaxed">${escapeHtml(p.text)}</p></div></div>`).join('');
+  renderParagraphs(detail.paragraphs);
+  const headerBadge = document.querySelector('header .uppercase span:last-child');
+  if (headerBadge) headerBadge.textContent = 'Real saved Qwen runs';
+  const replayControl = byId('demo-replay-control');
+  replayControl.querySelector('strong').textContent = 'Recorded Qwen run · step by step';
+  replayControl.querySelectorAll('button').forEach(button => button.classList.remove('hidden'));
+  byId('demo-rq2-panel')?.classList.remove('hidden');
   const sourceHeader = byId('judgment-panel-title')?.parentElement?.parentElement;
   if (sourceHeader) {
     const linkHost = sourceHeader.lastElementChild;
@@ -212,10 +230,15 @@ function showCase(detail) {
   const tracePanel = byId('model-trace-panel');
   if (tracePanel) tracePanel.innerHTML = '<strong>Saved execution trace</strong><p>Use Play in the review pane to follow every recorded step.</p>';
   const accordion = document.querySelector('#case-checks-container + details');
-  if (accordion) accordion.innerHTML = `<summary class="cursor-pointer font-semibold">Full saved execution trace (${detail.trace.length} steps)</summary><div class="mt-3 max-h-72 overflow-y-auto text-xs">${detail.trace.map(step => `<p class="border-b border-surface-container-high py-1">${escapeHtml(step.step)}. ${escapeHtml(stepLabel(step))}</p>`).join('')}</div>`;
+  if (accordion) {
+    accordion.classList.remove('hidden');
+    accordion.innerHTML = `<summary class="cursor-pointer font-semibold">Full saved execution trace (${detail.trace.length} steps)</summary><div class="mt-3 max-h-72 overflow-y-auto text-xs">${detail.trace.map(step => `<p class="border-b border-surface-container-high py-1">${escapeHtml(step.step)}. ${escapeHtml(stepLabel(step))}</p>`).join('')}</div>`;
+  }
 }
 
 async function selectDemoCase(letter) {
+  liveController?.abort();
+  liveController = null;
   stopReplay();
   const request = ++caseRequest;
   const selected = demoCases[['A','B','C'].indexOf(letter)];
@@ -287,10 +310,155 @@ window.demoStart = () => {
   demoPlay();
 };
 
+function appendLiveLog(label, detail) {
+  const item = document.createElement('details');
+  item.className = 'p-2 rounded bg-surface-container mb-1 text-xs text-on-surface-variant';
+  const summary = document.createElement('summary');
+  summary.className = 'cursor-pointer';
+  summary.textContent = label;
+  item.append(summary);
+  if (detail && Object.keys(detail).length) {
+    const pre = document.createElement('pre');
+    pre.className = 'mt-2 whitespace-pre-wrap break-words text-on-surface';
+    pre.textContent = JSON.stringify(detail, null, 2);
+    item.append(pre);
+  }
+  byId('demo-replay-log').append(item);
+  item.scrollIntoView({block:'nearest'});
+}
+
+function showLiveEvent(event) {
+  if (event.type === 'input') {
+    demoCase.paragraphs = event.paragraphs;
+    renderParagraphs(event.paragraphs);
+    setText('demo-replay-status', `${event.paragraphs.length} source paragraph(s) loaded`);
+  } else if (event.type === 'stage') {
+    setText('demo-replay-status', event.message);
+    appendLiveLog(event.message);
+  } else if (event.type === 'extraction') {
+    demoCase.rq2.fine_tuned = {facts: event.facts};
+    renderFacts();
+    renderRQ2Panel();
+    byId('demo-rq2-panel').classList.remove('hidden');
+    appendLiveLog(`Gemini extraction complete · ${event.grounding.quotes_located} quotes located`,
+                  {grounding: event.grounding, model: event.model});
+  } else if (event.type === 'step') {
+    const step = event.step;
+    const detail = {};
+    for (const key of ['by','args','output','response','finding','error']) {
+      if (step[key] !== undefined && step[key] !== null) detail[key] = step[key];
+    }
+    appendLiveLog(`${step.step}. ${stepLabel(step)}`, detail);
+    setText('demo-replay-status', `Live NoticeCheck · ${step.stage} · step ${step.step}`);
+    if (step.stage === 'precondition_check' && step.finding) {
+      byId('case-checks-container').insertAdjacentHTML('beforeend', findingCard(step.finding, true));
+      const quote = (step.finding.evidence || []).find(e => e.source === 'record' && e.quote)?.quote;
+      const para = findQuoteParagraph(quote);
+      if (para !== null) showParagraph(para);
+    }
+  } else if (event.type === 'result') {
+    demoCase.main = event.result;
+    renderFindings(event.result.findings);
+    const counts = {defect: 0, contested: 0};
+    for (const finding of event.result.findings) if (finding.verdict in counts) counts[finding.verdict]++;
+    setText('summary-defect-badge', `${counts.defect} potential defects · ${counts.contested} contested`);
+    setText('recommendation-text', event.result.handoff?.escalate
+      ? `Human review recommended: ${(event.result.handoff.reasons || []).map(nice).join(', ')}.`
+      : 'No automatic hand-off was triggered. Review the findings and source before drawing conclusions.');
+    setText('demo-replay-status', 'Live Gemini run complete · final NoticeCheck checklist shown');
+    appendLiveLog('Final checklist and hand-off received');
+  } else if (event.type === 'error') {
+    setText('demo-replay-status', `Live run stopped: ${event.message}`);
+    appendLiveLog(`Live run stopped: ${event.message}`);
+  }
+}
+
+window.demoRunLive = async () => {
+  const text = byId('custom-case-input')?.value.trim() || '';
+  if (text.length < 80 || text.length > 30000) {
+    alert('Paste 80 to 30,000 characters from a High Court GST judgment.');
+    return;
+  }
+  if (!liveAvailable) {
+    alert('Set GEMINI_API_KEY and GEMINI_MODEL in the repository .env, then restart this server.');
+    return;
+  }
+  liveController?.abort();
+  stopReplay();
+  const controller = new AbortController();
+  liveController = controller;
+  demoCase = {mode: 'live_gemini', paragraphs: [], rq2: {base: null, fine_tuned: null}, main: {findings: []}, rq1: null};
+  renderParagraphs([]);
+  byId('judgment-panel-title').parentElement.nextElementSibling.textContent = 'Pasted judgment text';
+  byId('demo-rq2-panel')?.classList.add('hidden');
+  byId('rq1-btn-nc')?.closest('.bg-surface-container-low')?.classList.add('hidden');
+  byId('case-checks-container').replaceChildren();
+  byId('demo-replay-log').replaceChildren();
+  const replayControl = byId('demo-replay-control');
+  replayControl.querySelector('strong').textContent = 'Live Gemini pipeline · events as they occur';
+  replayControl.querySelectorAll('button').forEach(button => button.classList.add('hidden'));
+  const accordion = document.querySelector('#case-checks-container + details');
+  accordion?.classList.add('hidden');
+  const headerBadge = document.querySelector('header .uppercase span:last-child');
+  if (headerBadge) headerBadge.textContent = 'Live preview · Gemini replaces Qwen';
+  setText('analysis-case-title', 'Pasted judgment · live Gemini preview');
+  setText('summary-defect-badge', 'Analysis in progress');
+  setText('summary-court', 'Pasted High Court judgment');
+  setText('summary-period', 'Gemini extraction → NoticeCheck with Gemini');
+  setText('summary-text', `A new analysis is running. Findings appear provisionally as checks finish; the final checklist follows verification.${livePrecedents === 'bundled_excerpts' ? ' Case-law search uses a small bundled excerpt index in this preview.' : ''}`);
+  setText('recommendation-text', 'Human review recommendation appears when the run finishes.');
+  setText('confidence-text', 'Live Gemini output · verify against the judgment');
+  setText('demo-replay-status', 'Connecting to the live pipeline…');
+  const tracePanel = byId('model-trace-panel');
+  if (tracePanel) tracePanel.innerHTML = '<strong>Live execution events</strong><p>The panel below shows structured model decisions and tool results, not private model thoughts.</p>';
+  switchView('state-results');
+  let completed = false;
+  let failed = false;
+  try {
+    const response = await fetch('/api/live', {method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({text}), signal: controller.signal});
+    if (!response.ok) {
+      const problem = await response.json();
+      throw new Error(problem.error || `HTTP ${response.status}`);
+    }
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+    while (true) {
+      const {done, value} = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, {stream: true});
+      const lines = buffer.split('\n');
+      buffer = lines.pop();
+      for (const line of lines) if (line.trim()) {
+        const event = JSON.parse(line);
+        if (controller !== liveController) return;
+        showLiveEvent(event);
+        if (event.type === 'result') completed = true;
+        if (event.type === 'error') failed = true;
+      }
+    }
+    if (buffer.trim()) {
+      const event = JSON.parse(buffer);
+      if (controller === liveController) showLiveEvent(event);
+      if (event.type === 'result') completed = true;
+      if (event.type === 'error') failed = true;
+    }
+    if (!completed && !failed && controller === liveController) throw new Error('The stream ended without a final checklist.');
+  } catch (err) {
+    if (err.name !== 'AbortError' && controller === liveController) showLiveEvent({type: 'error', message: err.message});
+  } finally {
+    if (controller === liveController) liveController = null;
+  }
+};
+
 async function initDemo() {
   const response = await fetch('/api/cases');
   if (!response.ok) throw new Error('Saved cases could not be loaded');
   demoCases = await response.json();
+  const health = await (await fetch('/api/health')).json();
+  liveAvailable = Boolean(health.live_available);
+  livePrecedents = health.live_precedents;
   const startHeading = document.querySelector('#state-start h2');
   if (startHeading) startHeading.textContent = 'Explore a real saved NoticeCheck analysis';
   const headerBadge = document.querySelector('header .uppercase span:last-child');
@@ -330,10 +498,20 @@ async function initDemo() {
   byId('btn-start-analysis').setAttribute('onclick','demoStart()');
   ['A','B','C'].forEach(key => byId(`case-pill-${key}`)?.setAttribute('onclick', `demoSelect('${key}')`));
   document.querySelectorAll('[onclick="switchView(\'state-analysis\')"], [onclick="switchView(\'state-results\')"]').forEach(el => el.setAttribute('onclick','demoStart()'));
-  document.querySelectorAll('[onclick="loadCustomCase()"]').forEach(el => el.setAttribute('onclick', "alert('Live paste mode needs a Gemini API key. This preview plays actual saved Qwen runs.')"));
   const paste = document.querySelector('#state-start details');
-  if (paste) paste.innerHTML = '<summary class="cursor-pointer text-on-surface-variant">Live paste preview needs a Gemini API key; saved Qwen replay is ready now.</summary>';
+  if (paste) {
+    paste.querySelector('summary').textContent = 'Paste a High Court judgment · live Gemini preview';
+    paste.querySelector('p').textContent = 'Paste judgment text with the relevant numbered paragraphs. Gemini replaces Qwen for both fact extraction and NoticeCheck in this live preview.';
+    const button = paste.querySelector('button[onclick="loadCustomCase()"]');
+    button?.setAttribute('onclick', 'demoRunLive()');
+    if (button) button.textContent = 'Run live with Gemini';
+    const status = document.createElement('p');
+    status.className = 'text-xs text-outline';
+    status.textContent = liveAvailable ? 'Gemini is configured on this server.' : 'To enable live mode, set GEMINI_API_KEY and GEMINI_MODEL in .env, then restart the server. Saved Qwen replay works now.';
+    paste.querySelector('textarea')?.after(status);
+  }
   const control = document.createElement('div');
+  control.id = 'demo-replay-control';
   control.className = 'bg-surface-container-low rounded-xl p-3 mb-3 border border-surface-container-high';
   control.innerHTML = `<div class="flex flex-wrap items-center gap-2"><strong class="mr-auto">Recorded Qwen run · step by step</strong><button onclick="demoPlay()" class="px-3 py-1 rounded bg-primary-container">Play</button><button onclick="demoPause()" class="px-3 py-1 rounded bg-surface-container-high">Pause</button><button onclick="demoNext()" class="px-3 py-1 rounded bg-surface-container-high">Next step</button></div><p id="demo-replay-status" class="text-xs text-outline my-2">Press Analyse Case to replay the saved trace</p><div id="demo-replay-log" class="max-h-40 overflow-y-auto font-code-trace"></div>`;
   byId('case-checks-container').before(control);

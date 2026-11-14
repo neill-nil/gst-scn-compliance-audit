@@ -1,13 +1,14 @@
-"""Read-only NoticeCheck demo over the project's saved, real model runs.
+"""NoticeCheck demo: saved Qwen replay and an optional streamed Gemini live run.
 
 Run: python -m demo.server --port 8765
-The optional live Gemini route is deliberately separate from the saved Qwen runs.
 """
 import argparse
 import csv
 import gzip
 import json
+import os
 import sys
+import threading
 from functools import lru_cache
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -17,6 +18,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from scripts.clean_segment import clean, segment  # noqa: E402
 from src.baselines.inputs import build_view  # noqa: E402
+from src.common import llm  # noqa: E402  # loads the project .env, if present
+
+LIVE_LOCK = threading.Lock()
 
 CASES = (
     ("HCMA011063142025", "fresh_nc", "Findings with contested points"),
@@ -137,7 +141,10 @@ class Handler(BaseHTTPRequestHandler):
             elif path == "/material-symbols.ttf":
                 self.send(200, (ROOT / "demo/material-symbols.ttf").read_bytes(), "font/ttf")
             elif path == "/api/health":
-                self.send(200, {"ok": True, "mode": "saved_qwen_run", "cases": len(CASES)})
+                self.send(200, {"ok": True, "mode": "saved_qwen_run", "cases": len(CASES),
+                                "live_available": bool(os.getenv("GEMINI_API_KEY") and os.getenv("GEMINI_MODEL")),
+                                "live_precedents": "full_index" if (ROOT / "data/interim/caselaw_paragraphs.jsonl.gz").exists()
+                                                   else "bundled_excerpts"})
             elif path == "/api/cases":
                 self.send(200, [case_summary(*item) for item in CASES])
             elif path.startswith("/api/cases/"):
@@ -148,6 +155,48 @@ class Handler(BaseHTTPRequestHandler):
             self.send(404, {"error": str(exc)})
         except Exception as exc:
             self.send(500, {"error": f"{type(exc).__name__}: {exc}"})
+
+    def do_POST(self):
+        if urlparse(self.path).path != "/api/live":
+            self.send(404, {"error": "Not found"})
+            return
+        if not (os.getenv("GEMINI_API_KEY") and os.getenv("GEMINI_MODEL")):
+            self.send(503, {"error": "Set GEMINI_API_KEY and GEMINI_MODEL in the repository .env, then restart the server."})
+            return
+        try:
+            length = int(self.headers.get("Content-Length", "0"))
+            if not 0 < length <= 120_000:
+                raise ValueError("Request is empty or too large (120 KB maximum).")
+            payload = json.loads(self.rfile.read(length))
+            text = payload.get("text") if isinstance(payload, dict) else None
+            if not isinstance(text, str) or not 80 <= len(text.strip()) <= 30_000:
+                raise ValueError("Paste 80 to 30,000 characters from a High Court GST judgment.")
+        except (ValueError, json.JSONDecodeError) as exc:
+            self.send(400, {"error": str(exc)})
+            return
+        if not LIVE_LOCK.acquire(blocking=False):
+            self.send(409, {"error": "A live run is already in progress on this server."})
+            return
+        self.send_response(200)
+        self.send_header("Content-Type", "application/x-ndjson; charset=utf-8")
+        self.send_header("Cache-Control", "no-store")
+        self.send_header("X-Accel-Buffering", "no")
+        self.end_headers()
+
+        def emit(event):
+            try:
+                self.wfile.write(json.dumps(event, ensure_ascii=False).encode("utf-8") + b"\n")
+                self.wfile.flush()
+            except (BrokenPipeError, ConnectionResetError):
+                pass  # The model call cannot be cancelled, but the browser is no longer waiting.
+
+        try:
+            from demo.live import run_live
+            run_live(text, emit)
+        except Exception as exc:
+            emit({"type": "error", "message": f"{type(exc).__name__}: {str(exc)[:350]}"})
+        finally:
+            LIVE_LOCK.release()
 
     def log_message(self, format, *args):
         pass

@@ -53,14 +53,18 @@ def quote_in_record(quote: str, record_quotes: list[str]) -> bool:
 class Run:
     """Holds one case's state and its trace."""
 
-    def __init__(self, inp: dict, cfg: dict):
+    def __init__(self, inp: dict, cfg: dict, on_step=None):
         self.inp, self.cfg, self.record = inp, {**DEFAULT, **cfg}, inp["record"]
         self.trace, self.tools, self.step = [], [], 0
+        self.on_step = on_step
         self.usage = {"calls": 0, "tokens_in": 0, "tokens_out": 0, "seconds": 0.0}
 
     def log(self, stage, **kw):
         self.step += 1
-        self.trace.append({"step": self.step, "stage": stage, **kw})
+        entry = {"step": self.step, "stage": stage, **kw}
+        self.trace.append(entry)
+        if self.on_step:
+            self.on_step(entry)
 
     def llm(self, prompt: str, schema: dict, stage: str):
         cfg = self.cfg
@@ -68,12 +72,13 @@ class Run:
         text = prompt + ("\n\n/no_think" if model and "qwen3" in model.lower() else "")
         out = complete(cfg["backend"], [{"role": "user", "content": text}], json_schema=schema,
                        temperature=cfg["temperature"], seed=cfg["seed"], max_tokens=cfg["max_tokens"],
-                       model=model, tag=f"noticecheck:{stage}")
+                       model=model, use_cache=cfg.get("use_cache", True), tag=f"noticecheck:{stage}")
         for k in ("tokens_in", "tokens_out", "seconds"):
             self.usage[k] += out[k]
         self.usage["calls"] += 1
+        detail = {"response": out["json"]} if cfg.get("trace_responses") else {}
         self.log(stage, tool=None, model=out["model"], ok=out["json"] is not None, tokens_in=out["tokens_in"],
-                 tokens_out=out["tokens_out"], seconds=out["seconds"], error=out.get("error"))
+                 tokens_out=out["tokens_out"], seconds=out["seconds"], error=out.get("error"), **detail)
         return out["json"]
 
     def tool(self, name: str, args: dict, by: str, stage: str):
@@ -81,8 +86,9 @@ class Run:
         res = call_tool(name, args, record=self.record)
         self.tools.append({"tool": name, "args": args, "out": res, "by": by})
         summary = (res.get("error") if not res["ok"] else str(res["result"])[:200])
+        detail = {"output": res.get("result")} if self.cfg.get("trace_responses") and res["ok"] else {}
         self.log(stage, tool=name, args=args, by=by, ok=res["ok"], output_summary=summary,
-                 seconds=round(time.time() - t0, 3))
+                 seconds=round(time.time() - t0, 3), **detail)
         return res
 
 
@@ -146,6 +152,7 @@ def verify(run: Run, findings: list[dict]) -> list[dict]:
     flagged = [f["type"] for f in findings if f["verdict"] in ("defect", "contested")]
     texts = statute_texts(run, flagged) if run.cfg["retrieval"] else {}  # statute evidence for flagged findings only
     out = []
+    dropped = 0
     for f in findings:
         f = dict(f)
         if f["verdict"] == "defect":
@@ -154,6 +161,7 @@ def verify(run: Run, findings: list[dict]) -> list[dict]:
             if not good:
                 f.update(verdict="cant_tell", evidence=[], missing_facts=f["missing_facts"] + ["a record quote showing the defect"])
                 run.log("verify", defect=f["type"], ok=True, output_summary="defect dropped: no verified record quote")
+                dropped += 1
             else:
                 f["evidence"] = good
         if f["type"] in cards.CONTESTED and f["verdict"] == "defect":
@@ -166,6 +174,7 @@ def verify(run: Run, findings: list[dict]) -> list[dict]:
                 f["evidence"] += [{"source": "caselaw", "ref": f"{h['cnr']} para {h['para']}", "quote": h["text"][:300]}
                                   for h in res["result"]]
         out.append(f)
+    run.log("verify", ok=True, output_summary=f"record quote verification complete; {dropped} defect(s) dropped")
     return out
 
 
@@ -195,14 +204,15 @@ def handoff(run: Run, findings: list[dict]) -> dict:
     return {"escalate": bool(reasons), "reasons": reasons}
 
 
-def run_case(inp: dict, cfg: dict) -> tuple[dict, list[dict]]:
-    run = Run(inp, cfg)
+def run_case(inp: dict, cfg: dict, on_step=None) -> tuple[dict, list[dict]]:
+    run = Run(inp, cfg, on_step=on_step)
     missing = plan(run) if run.cfg["tools"] else []
     findings, model_types, extra = {}, [], {}
     for d in cards.TYPES:
         if d in cards.RULE_CARDS and (run.cfg["tools"] or d not in NO_TOOL_CARDS):
             findings[d] = cards.RULE_CARDS[d](run.record, run.tools)
-            run.log("precondition_check", defect=d, tool=None, by="rule", ok=True, output_summary=findings[d]["verdict"])
+            run.log("precondition_check", defect=d, tool=None, by="rule", ok=True,
+                    output_summary=findings[d]["verdict"], finding=findings[d])
         elif d in NO_TOOL_CARDS:
             model_types.append(d)
             extra[d] = NO_TOOL_CARDS[d]
@@ -215,8 +225,13 @@ def run_case(inp: dict, cfg: dict) -> tuple[dict, list[dict]]:
                                             note="does not apply: " + need[0].strip("_").replace("_", " "))
             else:
                 findings[d] = cards.finding(d, "cant_tell", run.record, missing=need)
+            if d in findings:
+                run.log("precondition_check", defect=d, tool=None, by="code", ok=True,
+                        output_summary=findings[d]["verdict"], finding=findings[d])
     for f in model_checks(run, model_types, extra):
         findings[f["type"]] = f
+        run.log("precondition_check", defect=f["type"], tool=None, by="model", ok=True,
+                output_summary=f["verdict"], finding=f)
     ordered = [findings[d] for d in cards.TYPES]
     if run.cfg["verifier"]:
         ordered = verify(run, ordered)

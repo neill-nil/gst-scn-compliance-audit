@@ -9,6 +9,7 @@ import csv
 import gzip
 import importlib.util
 import json
+from contextlib import contextmanager
 from functools import lru_cache
 from pathlib import Path
 
@@ -17,6 +18,7 @@ from src.tools.bm25 import BM25
 ROOT = Path(__file__).resolve().parents[2]
 SPLITS = ROOT / "data" / "splits"
 CACHE = ROOT / "data" / "interim" / "caselaw_paragraphs.jsonl.gz"
+_MIN_SCORE = 0.0
 BLOCKED_SPLITS = ("dev.txt", "test.txt", "heldout.txt", "reserved.txt", "fresh.txt")
 
 
@@ -72,6 +74,20 @@ def _index():
     return paras, BM25([p["text"] for p in paras])
 
 
+@contextmanager
+def use_cache(path: Path, min_score: float = 0.0):
+    """Temporarily use a local preview index without changing the normal research corpus."""
+    global CACHE, _MIN_SCORE
+    previous = CACHE, _MIN_SCORE
+    CACHE, _MIN_SCORE = path, min_score
+    _index.cache_clear()
+    try:
+        yield
+    finally:
+        CACHE, _MIN_SCORE = previous
+        _index.cache_clear()
+
+
 def caselaw_search(query: str, k: int = 5) -> dict:
     if not query or not query.strip():
         return {"ok": False, "error": "empty query"}
@@ -80,6 +96,8 @@ def caselaw_search(query: str, k: int = 5) -> dict:
     paras, index = _index()
     hits = []
     for i, score in index.search(query, k * 3):
+        if score < _MIN_SCORE:
+            continue  # the demo's small excerpt index should not return weak lexical matches
         p = paras[i]
         if p["cnr"] in blocked():  # belt and braces: never return a protected case
             continue
