@@ -1,0 +1,954 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="/text-fonts.css" rel="stylesheet"><link href="/material-symbols.css" rel="stylesheet"><style>html:not(.demo-ready) main{visibility:hidden}@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="/tailwindcdn.js"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-low":"#171c23","on-error":"#690005","on-primary-fixed":"#3f0019","tertiary":"#4edea3","inverse-surface":"#dee2ec","on-error-container":"#ffdad6","surface-container-high":"#252a32","on-secondary":"#5c1138","on-primary-container":"#ffd5dd","inverse-primary":"#b81059","surface-tint":"#ffb1c3","on-tertiary-container":"#6bf8bb","surface":"#0f141b","secondary-container":"#79294f","surface-container-lowest":"#090f15","on-tertiary-fixed":"#002113","surface-dim":"#0f141b","primary-fixed":"#ffd9e0","outline":"#a8898f","on-secondary-container":"#fc96c0","on-primary":"#66002d","on-secondary-fixed":"#3e0022","on-background":"#dee2ec","on-tertiary-fixed-variant":"#005236","tertiary-fixed-dim":"#4edea3","secondary":"#ffb0ce","background":"#0f141b","on-surface-variant":"#e0bec4","primary-container":"#be185d","on-surface":"#dee2ec","primary-fixed-dim":"#ffb1c3","inverse-on-surface":"#2c3138","on-secondary-fixed-variant":"#79294f","surface-bright":"#343941","secondary-fixed-dim":"#ffb0ce","primary":"#ffb1c3","secondary-fixed":"#ffd9e5","tertiary-container":"#00714d","error":"#ffb4ab","tertiary-fixed":"#6ffbbe","outline-variant":"#594046","surface-variant":"#30353d","error-container":"#93000a","surface-container-highest":"#30353d","surface-container":"#1b2027","on-primary-fixed-variant":"#8f0042","on-tertiary":"#003824"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"1.75rem","space-xs":"0.25rem","space-md":"0.75rem","space-lg":"1.25rem","space-sm":"0.5rem","gutter":"1rem","margin":"1.25rem"},"fontFamily":{"headline-md":["Manrope"],"label-xs":["JetBrains Mono"],"headline-lg":["Manrope"],"code-trace":["JetBrains Mono"],"body-md":["Manrope"],"code-citation":["JetBrains Mono"],"body-lg":["Manrope"],"body-sm":["Manrope"],"headline-xl":["Manrope"]},"fontSize":{"headline-md":["1.125rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"label-xs":["0.6875rem",{"lineHeight":"1rem","letterSpacing":"0.05em","fontWeight":"600"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","fontWeight":"600"}],"code-trace":["0.75rem",{"lineHeight":"1.125rem","fontWeight":"400"}],"body-md":["0.875rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"code-citation":["0.8125rem",{"lineHeight":"1.375rem","fontWeight":"500"}],"body-lg":["1rem",{"lineHeight":"1.625rem","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"headline-xl":["2rem",{"lineHeight":"2.5rem","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="flex items-baseline gap-space-sm"><span class="font-headline-md text-headline-md tracking-tight text-on-surface font-bold">NoticeCheck</span><span class="hidden lg:inline text-outline-variant font-code-citation text-code-citation">/</span><span class="hidden lg:inline font-code-citation text-code-citation text-on-surface-variant font-medium">Procedural Verification Demo · GST Sections 73 &amp; 74</span></div><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high text-tertiary font-label-xs text-label-xs uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">school</span><span>Real saved Qwen runs</span></div></div><div class="flex items-center gap-space-lg"><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="bg-surface-container-highest text-primary font-bold rounded-lg"><button class="px-space-md py-space-xs transition-colors bg-surface-container-highest text-primary font-bold rounded-lg text-left" onclick="switchView('state-start')" type="button">Demo Walkthrough</button><button class="px-space-md py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors text-left" onclick="switchView('state-start')" type="button">Case Library</button><button class="px-space-md py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors text-left" id="nav-about-btn" type="button">About the Project &amp; Research</button></nav><div class="flex items-center gap-space-sm pl-space-sm"><button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" onclick="toggleProjectorMode()" title="Classroom Projector Mode (High-Contrast Scale)" type="button"><span class="material-symbols-outlined text-[20px]" id="projector-icon">cast_for_education</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center font-bold text-on-primary font-label-xs">TA</div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full">
+<!-- Top Academic Scope Disclaimer Ribbon -->
+<div class="w-full bg-surface-container-lowest px-margin py-space-xs text-on-surface-variant flex items-center justify-between gap-space-md border-b border-surface-container-high/40">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-[18px] text-tertiary shrink-0">info</span>
+<p class="font-body-sm text-body-sm truncate md:whitespace-normal"><strong class="font-semibold text-on-surface">Research scope:</strong> NoticeCheck was evaluated on High Court judgments reciting GST proceedings under Sections 73 &amp; 74, not on original show cause notices or raw departmental files. It does not provide legal advice.</p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-high text-primary hover:bg-surface-bright font-label-xs text-label-xs transition-colors" id="open-research-modal" type="button">
+<span class="material-symbols-outlined text-[14px]">science</span>
+<span>Model Spec &amp; Eval Data</span>
+</button>
+</div>
+</div>
+<!-- Interactive Workflow Step Navigation Tracker -->
+<div class="w-full bg-surface-container-low px-margin py-space-sm border-b border-surface-container-high/30">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-xs text-label-xs uppercase tracking-wider text-outline">Interactive Stage</span>
+<div class="inline-flex p-1 bg-surface-container rounded-lg gap-1 border border-surface-container-highest/40">
+<button class="px-space-md py-1 rounded font-body-sm text-body-sm text-on-surface bg-surface-container-highest transition-all flex items-center gap-space-xs" id="step-nav-1" onclick="switchView('state-start')" type="button"><span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-xs text-label-xs flex items-center justify-center font-bold">1</span><span>Extract facts</span></button>
+<button class="px-space-md py-1 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" id="step-nav-2" onclick="switchView('state-analysis')" type="button"><span class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface-variant font-label-xs text-label-xs flex items-center justify-center font-bold">2</span><span>Plan, check &amp; verify</span></button>
+<button class="px-space-md py-1 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" id="step-nav-3" onclick="switchView('state-results')" type="button"><span class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface-variant font-label-xs text-label-xs flex items-center justify-center font-bold">3</span><span>Review findings</span></button>
+</div>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-code-citation text-code-citation">
+<span class="inline-flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span>Syllabus: CGST S.73/74/75 &amp; S.169</span>
+</span>
+<span class="hidden md:inline text-outline-variant">|</span>
+<span class="hidden md:inline text-on-surface">Dual-Stage AI: Qwen3-8B LoRA Extractor + Plan, Check &amp; Verify Pipeline</span>
+</div>
+</div>
+</div>
+<!-- STATE 1: START SCREEN (Intake & Selection) -->
+<section class="w-full px-margin py-space-xl transition-opacity duration-300" id="state-start">
+<div class="max-w-5xl mx-auto flex flex-col gap-space-xl">
+<!-- Overview & Teaching Purpose -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-sm relative overflow-hidden shadow-sm border border-surface-container-high/40">
+<div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="flex items-center gap-space-xs font-label-xs text-label-xs uppercase tracking-wider text-primary">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>Course Module: GST Statutory Procedure Audit</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">
+          Verify Procedural Compliance in Appellate Records in under 1 Minute
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+          NoticeCheck reads High Court judgments describing GST demand proceedings under Sections 73 and 74 to audit whether mandatory procedural statutory safeguards were followed.
+        </p>
+<div class="p-space-sm rounded-lg bg-surface-container-highest text-on-surface font-body-sm text-body-sm flex items-start gap-space-sm"><span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">verified_user</span><span><strong class="font-semibold text-secondary">NoticeCheck Evaluation Scope:</strong> NoticeCheck was evaluated on High Court judgments reciting GST proceedings under Sections 73 &amp; 74, not on original show cause notices or raw departmental files. Focuses on procedural safeguards under CGST statutory provisions (personal hearing, speaking order, time limits, and lawful mode of service).</span></div>
+</div>
+<!-- Prepared Cases Selection -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between"><div><h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Select an Illustrative Example Judgment</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Pre-computed demo outputs for diverse procedural defect scenarios</p></div><span class="font-label-xs text-label-xs text-outline uppercase tracking-wider bg-surface-container-high px-space-xs py-1 rounded">Illustrative Example Judgments (Pre-computed demo outputs)</span></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md" id="case-selection-group">
+<!-- Case A (Default Selected) -->
+<div class="case-card group cursor-pointer rounded-xl p-space-md bg-surface-container hover:bg-surface-container-high transition-all shadow-md relative ring-2 ring-primary" data-case="A" onclick="selectCase('A')">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-xs text-label-xs uppercase tracking-wider font-semibold">Case A · Default</span>
+<span class="material-symbols-outlined text-primary text-[20px] check-indicator">check_circle</span>
+</div>
+<h4 class="font-body-lg text-body-lg font-bold text-on-surface mb-space-xs group-hover:text-primary transition-colors">
+              M/s Radiant Alloys v. State of Tax &amp; Ors.
+            </h4>
+<div class="font-code-citation text-code-citation text-outline mb-space-sm">Delhi High Court · W.P.(C) 4129/2024</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Adverse demand of ₹42.18L passed under Section 73 without scheduling personal hearing despite written interim representation.
+            </p>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-xs text-label-xs text-on-surface-variant border-t border-surface-container-highest/40">
+<span class="text-error font-semibold">Issue: S.75(4) &amp; S.75(6)</span>
+<span class="text-tertiary">Demand: ₹42,18,910</span>
+</div>
+</div>
+<!-- Case B -->
+<div class="case-card group cursor-pointer rounded-xl p-space-md bg-surface-container hover:bg-surface-container-high transition-all shadow-sm relative" data-case="B" onclick="selectCase('B')">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-xs text-label-xs uppercase tracking-wider">Case B</span>
+<span class="material-symbols-outlined text-outline text-[20px] check-indicator">radio_button_unchecked</span>
+</div>
+<h4 class="font-body-lg text-body-lg font-bold text-on-surface mb-space-xs group-hover:text-primary transition-colors">
+              TechnoBuild Logistics v. Asst. Comm.
+            </h4>
+<div class="font-code-citation text-code-citation text-outline mb-space-sm">Calcutta High Court · W.P.A. 1102/2024</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Notice uploaded only to obscure portal sub-menu without email/SMS dispatch; bank lien attached without notice delivery.
+            </p>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-xs text-label-xs text-on-surface-variant border-t border-surface-container-highest/40">
+<span class="text-secondary font-semibold">Issue: Section 169 Tender</span>
+<span>Demand: ₹18,40,000</span>
+</div>
+</div>
+<!-- Case C -->
+<div class="case-card group cursor-pointer rounded-xl p-space-md bg-surface-container hover:bg-surface-container-high transition-all shadow-sm relative" data-case="C" onclick="selectCase('C')">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-xs text-label-xs uppercase tracking-wider">Case C</span>
+<span class="material-symbols-outlined text-outline text-[20px] check-indicator">radio_button_unchecked</span>
+</div>
+<h4 class="font-body-lg text-body-lg font-bold text-on-surface mb-space-xs group-hover:text-primary transition-colors">
+              Apex Polymers v. Union of India
+            </h4>
+<div class="font-code-citation text-code-citation text-outline mb-space-sm">Bombay High Court · W.P. 8832/2023</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Show cause notice issued under contested limitation extension notifications 9/2023 &amp; 56/2023 invoking COVID powers.
+            </p>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-xs text-label-xs text-on-surface-variant border-t border-surface-container-highest/40">
+<span class="text-tertiary font-semibold">Issue: S.168A Limitation</span>
+<span>Demand: ₹1.04 Cr</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Alternative Input Collapsible -->
+<details class="group bg-surface-container-low rounded-xl p-space-md transition-all border border-surface-container-high/30">
+<summary class="cursor-pointer font-body-md text-body-md text-on-surface font-semibold flex items-center justify-between select-none">
+<span class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px] group-open:rotate-90 transition-transform">add_circle</span>
+<span>Or paste custom High Court judgment text</span>
+</span>
+<span class="font-label-xs text-label-xs text-outline">Plain text parser</span>
+</summary>
+<div class="mt-space-md flex flex-col gap-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Paste relevant paragraphs from any High Court GST writ order. Include paragraphs containing the SCN issuance date, taxpayer submissions, personal hearing details, and the impugned order date.
+          </p>
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-code-citation text-code-citation p-space-md rounded-lg resize-y focus:outline-none focus:ring-1 focus:ring-primary border border-surface-container-high/50" id="custom-case-input" placeholder="¶ 1. The petitioner challenges the impugned demand order dated 18.10.2024 passed under Section 73 of the CGST Act..." rows="5"></textarea>
+<div class="flex justify-end">
+<button class="px-space-md py-space-xs rounded bg-surface-container-high text-on-surface hover:bg-surface-bright font-label-xs text-label-xs uppercase tracking-wider" onclick="loadCustomCase()" type="button">
+              Load Into Analyzer
+            </button>
+</div>
+</div>
+</details>
+<!-- Primary Action CTA -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md p-space-md bg-surface-container rounded-xl border border-surface-container-high/40">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-tertiary">analytics</span><span>Pipeline: Step 1 (Extract Facts) → Step 2 (Plan, Check &amp; Verify) → Step 3 (Review Findings)</span></div></div>
+<button class="w-full sm:w-auto px-space-xl py-space-sm rounded-lg bg-primary-container text-on-primary-container font-headline-md text-headline-md font-bold hover:brightness-110 active:scale-95 transition-all shadow-md flex items-center justify-center gap-space-sm" id="btn-start-analysis" onclick="startAnalysis()" type="button">
+<span>Analyse Case</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- STATE 2: ANALYSIS SCREEN (Model In Action / Live Multi-Stage AI Pipeline) -->
+<section class="hidden w-full px-margin py-space-xl transition-opacity duration-300" id="state-analysis">
+<div class="max-w-6xl mx-auto flex flex-col gap-space-xl">
+<!-- Header with Live Model Metadata -->
+<div class="flex flex-col gap-space-xs text-center items-center">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-primary-container/20 text-primary font-label-xs text-label-xs uppercase tracking-wider border border-primary/20">
+<span class="material-symbols-outlined text-[14px] animate-spin">refresh</span>
+<span>NoticeCheck Dual-Stage AI Pipeline in Action</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">
+          Replaying the recorded NoticeCheck pipeline
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Visualizing how the fine-tuned Fact Extractor identifies verbatim procedural records, preserves unstated fields as explicit nulls, and feeds into the Statutory Rule Engine with strict quote anchoring.</p>
+</div>
+<!-- Architecture Pipeline Ribbon Indicator -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm border border-surface-container-high/40 font-code-citation text-code-citation text-outline">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="text-on-surface font-semibold">Active Case:</span>
+<span class="text-primary font-medium" id="analysis-case-title">M/s Radiant Alloys v. State of Tax &amp; Ors. (Delhi High Court)</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">model_training</span> Fine-Tuned Qwen3-8B LoRA</span>
+<span>•</span>
+<span class="text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">rule</span> Stage 2: Plan, Check &amp; Verify Pipeline</span>
+</div>
+</div>
+<!-- Visual 2-Stage Progress Pipeline Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg items-start">
+<!-- Stage A: Fine-Tuned Fact Extractor -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md shadow-md border border-surface-container-high/40 relative overflow-hidden" id="stage-1-card"><div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs"><span class="font-label-xs text-label-xs uppercase tracking-wider px-2 py-0.5 rounded bg-surface-container-high text-primary font-bold">Stage 1 · Extract Facts</span><span class="font-label-xs text-label-xs text-outline">RQ2 Extraction Comparison</span></div><span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-xs text-label-xs font-semibold" id="stage-1-badge"><span class="material-symbols-outlined text-[14px]">check</span><span>Extraction Complete ✓</span></span></div><div class="flex items-start gap-space-sm"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-tertiary text-[24px]">fact_check</span></div><div><h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Fact Extraction: Base Qwen vs. Fine-Tuned Qwen</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Both models evaluate the exact same judgment text. NoticeCheck fine-tuning anchors extracted fields directly to paragraph citations and preserves unstated fields as explicit <code class="font-code-citation text-outline">null</code> (Date not stated in record).</p></div></div><div class="overflow-x-auto border border-surface-container-high/60 rounded-lg bg-surface-container-lowest"><table class="w-full text-left font-code-citation text-code-citation"><thead class="bg-surface-container font-label-xs text-label-xs text-outline uppercase border-b border-surface-container-high/60"><tr><th class="p-2">Extracted Schema Field</th><th class="p-2">Base Qwen3-8B (Zero-Shot)</th><th class="p-2 text-primary font-bold">Fine-Tuned Qwen (Ours)</th><th class="p-2">Supporting Quote Anchor</th></tr></thead><tbody class="divide-y divide-surface-container-highest/30 text-[12px]" id="rq2-table-body"><tr class="hover:bg-surface-container/30"><td class="p-2 font-medium text-on-surface">scn_date</td><td class="p-2 text-outline">12.05.2024</td><td class="p-2 text-tertiary font-semibold">12.05.2024</td><td class="p-2 text-outline-variant font-label-xs">"SCN issued on 12.05.2024" [¶1]</td></tr><tr class="hover:bg-surface-container/30"><td class="p-2 font-medium text-on-surface">taxpayer_reply_date</td><td class="p-2 text-outline">28.06.2024</td><td class="p-2 text-tertiary font-semibold">28.06.2024</td><td class="p-2 text-outline-variant font-label-xs">"petitioner submitted an interim representation" [¶4]</td></tr><tr class="hover:bg-surface-container/30 bg-surface-container/20"><td class="p-2 font-medium text-on-surface">hearing_date</td><td class="p-2 text-outline">null / unmentioned</td><td class="p-2 text-outline font-semibold">null <span class="font-label-xs text-[10px] text-outline block">(Date not stated in record)</span></td><td class="p-2 text-outline-variant font-label-xs">No specific date scheduled [¶6]</td></tr><tr class="hover:bg-surface-container/30"><td class="p-2 font-medium text-on-surface">impugned_order_date</td><td class="p-2 text-outline">18.10.2024</td><td class="p-2 text-tertiary font-semibold">18.10.2024</td><td class="p-2 text-outline-variant font-label-xs">"order dated 18.10.2024" [¶4, ¶8]</td></tr><tr class="hover:bg-surface-container/30"><td class="p-2 font-medium text-on-surface">demand_amount</td><td class="p-2 text-outline">₹42,18,910</td><td class="p-2 text-on-surface font-semibold">₹42,18,910</td><td class="p-2 text-outline-variant font-label-xs">"demand of ₹42,18,910" [¶1]</td></tr></tbody></table></div><div class="p-space-xs rounded bg-surface-container-high/40 border border-primary/20 flex flex-col gap-1"><div class="font-label-xs text-label-xs uppercase text-primary font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">info</span><span>Separate Observation from Text: Express Statement on Hearing Opportunity</span></div><p class="font-body-sm text-body-sm text-on-surface">The extraction schema does not have a <code>hearing_offered</code> boolean field. Instead, explicit judicial statements are captured separately: <strong class="text-error">"Column 4 of Form DRC-07 remained blank and no opportunity of personal hearing was granted" [¶6]</strong>. In contrast to Base Qwen which only captures raw scalar dates, the fine-tuned model binds both textual silences and express negations to citation spans.</p></div></div>
+<!-- Stage B: Statutory Due Process & Ground Verifier -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md shadow-md border border-surface-container-high/40 relative overflow-hidden" id="stage-2-card"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="font-label-xs text-label-xs uppercase tracking-wider px-2 py-0.5 rounded bg-surface-container-high text-secondary font-bold">Stage 2 · Plan, Check &amp; Verify</span><span class="font-label-xs text-label-xs text-outline">Deterministic Rule Pipeline</span></div><span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-xs text-label-xs font-semibold" id="stage-2-badge"><span class="material-symbols-outlined text-[14px] animate-spin">sync</span><span>Executing Rules...</span></span></div><div class="flex items-start gap-space-sm"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[24px]">rule</span></div><div><h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Plan, Check &amp; Verify Pipeline</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Executes base Qwen planning, procedural rule checks, date and record tools, statute retrieval, case-law search where relevant, quote verification, and prepares human hand-off.</p></div></div><div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col gap-space-xs font-code-citation text-code-citation border border-surface-container-high/40"><div class="flex items-center justify-between text-error py-1 border-b border-surface-container/50"><span>S.75(4) Hearing Mandate Check:</span><span class="font-bold flex items-center gap-1 bg-error-container/20 px-1.5 py-0.5 rounded"><span class="material-symbols-outlined text-[14px]">close</span> Potential Defect</span></div><div class="flex items-center justify-between text-error py-1 border-b border-surface-container/50"><span>S.75(6) Reasoned Speaking Order:</span><span class="font-bold flex items-center gap-1 bg-error-container/20 px-1.5 py-0.5 rounded"><span class="material-symbols-outlined text-[14px]">close</span> Potential Defect</span></div><div class="flex items-center justify-between text-secondary py-1 border-b border-surface-container/50"><span>S.169(1) Service Tender Protocol:</span><span class="font-bold flex items-center gap-1 bg-secondary-container/20 px-1.5 py-0.5 rounded"><span class="material-symbols-outlined text-[14px]">balance</span> Contested</span></div><div class="flex items-center justify-between text-tertiary py-1"><span>S.73(10) Limitation Window:</span><span class="font-bold flex items-center gap-1 bg-tertiary-container/20 px-1.5 py-0.5 rounded"><span class="material-symbols-outlined text-[14px]">check</span> No Defect Identified</span></div></div><div class="font-label-xs text-label-xs text-outline flex flex-col gap-1 pt-1 border-t border-surface-container-high/30"><div class="flex items-center justify-between"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">verified</span><span>Planned checks, tool retrieval &amp; quote verification</span></span><span class="text-tertiary font-bold">Deterministic Trace</span></div><div class="text-[11px] text-outline-variant">Quote match confirms literal presence in judicial text; it does not by itself prove that the fact belongs to the correct proceeding or that the legal conclusion is right.</div></div></div>
+</div>
+<!-- Interactive Live Model Feature Callout Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-low border border-primary/30 flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Why this architecture prevents hallucinations</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Standard LLMs can overlook textual silences when evaluating text. NoticeCheck's LoRA adapter treats absent entries as explicit negative proof anchored to record quotes, then executes rigid statutory rules.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-space-xs rounded bg-surface-container-high text-primary hover:bg-surface-bright font-label-xs text-label-xs transition-colors" onclick="openModelInspector()" type="button">
+      View Pipeline Trace
+    </button>
+</div>
+</div>
+<!-- Action Footer for Classroom Flow Control -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md p-space-md bg-surface-container rounded-xl border border-surface-container-high/40">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">play_circle</span>
+<span>Simulated pipeline finishes automatically or you can proceed immediately to the workbench:</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-body-md hover:bg-surface-bright transition-all" onclick="switchView('state-start')" type="button">
+  Back to Case Intake
+</button>
+<button class="px-space-xl py-space-sm rounded-lg bg-primary-container text-on-primary-container font-headline-md text-headline-md font-bold hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-space-sm shadow-md" id="btn-proceed-results" onclick="switchView('state-results')" type="button">
+<span>Proceed to Review Results</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- STATE 3: RESULT SCREEN (Interactive Review Screen & Multi-Agent Workbench) -->
+<section class="hidden w-full px-margin py-space-md transition-opacity duration-300" id="state-results">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-md">
+<!-- Case Selector Quick Switcher Header in Review Screen -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-container-low p-space-sm rounded-xl border border-surface-container-high/40">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-xs text-label-xs uppercase tracking-wider text-outline">Active Scenario:</span>
+<div class="inline-flex gap-1 p-0.5 bg-surface-container rounded-lg">
+<button class="px-space-sm py-1 rounded font-body-sm text-body-sm transition-all bg-primary-container text-on-primary-container font-semibold shadow-sm" id="case-pill-A" onclick="switchActiveCaseDirectly('A')">Case A: Radiant Alloys</button>
+<button class="px-space-sm py-1 rounded font-body-sm text-body-sm transition-all text-on-surface-variant hover:text-on-surface" id="case-pill-B" onclick="switchActiveCaseDirectly('B')">Case B: TechnoBuild</button>
+<button class="px-space-sm py-1 rounded font-body-sm text-body-sm transition-all text-on-surface-variant hover:text-on-surface" id="case-pill-C" onclick="switchActiveCaseDirectly('C')">Case C: Apex Polymers</button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container-high text-primary hover:bg-surface-bright font-label-xs text-label-xs transition-colors" onclick="toggleTracePanel()" type="button">
+<span class="material-symbols-outlined text-[16px]">account_tree</span>
+<span id="trace-toggle-label">Inspect execution trace</span>
+</button>
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container-high text-on-surface hover:bg-surface-bright font-label-xs text-label-xs transition-colors" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[14px]">print</span>
+<span>Print Review Sheet</span>
+</button>
+</div>
+</div>
+<!-- Top Bar: Procedural Summary & Human Review Panel -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Procedural Summary Box (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs shadow-sm border border-surface-container-high/40">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-xs text-label-xs uppercase tracking-wider text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">summarize</span>
+<span>Procedural Summary</span>
+</span>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-xs text-label-xs font-semibold" id="summary-defect-badge">2 Statutory Safeguards Compromised</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed" id="summary-text">The Proper Officer passed an adverse demand order of <strong>₹42,18,910</strong> against the taxpayer without fixing a date for personal hearing and without discussing the interim reply submitted by the petitioner.</p>
+<div class="flex items-center gap-space-md pt-1 font-code-citation text-code-citation text-outline">
+<span id="summary-court">Jurisdiction: Delhi High Court · W.P.(C) 4129/2024</span>
+<span>•</span>
+<span id="summary-period">Assessment Period: FY 2018-19</span>
+<span>•</span>
+<span class="text-tertiary">Verified by Fine-Tuned Fact Extractor</span>
+</div>
+</div>
+<!-- Human Review Recommendation (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container rounded-xl p-space-md flex flex-col justify-between gap-space-xs shadow-sm border border-surface-container-high/40">
+<div>
+<div class="flex items-center gap-1 font-label-xs text-label-xs uppercase tracking-wider text-secondary font-semibold mb-1">
+<span class="material-symbols-outlined text-[16px]">person_check</span>
+<span>Human Review Recommendation</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="recommendation-text">Verify High Court writ jurisdiction prerequisites (Article 226). Cross-check GST portal audit logs to confirm absence of DRC-01B/01C personal hearing notifications before drafting petition pleadings.</p>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container-highest/40">
+<span class="font-label-xs text-label-xs text-outline" id="confidence-text">Saved model output · verify against the judgment</span>
+<span class="font-label-xs text-label-xs text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>For human review</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Interactive "Inspect Model Reasoning Trace & Verification" Drawer / Bar (Collapsible/Toggleable) -->
+<div class="hidden bg-surface-container-lowest rounded-xl p-space-md border border-primary/40 shadow-lg flex flex-col gap-space-md transition-all" id="model-trace-panel">
+<div class="flex items-center justify-between border-b border-surface-container-high/60 pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">psychology</span>
+<h4 class="font-headline-md text-headline-md text-on-surface font-bold">Fine-Tuned Model Rationale &amp; Evidence Matcher</h4>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-xs text-label-xs uppercase font-bold">Clinical Trace</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded" onclick="toggleTracePanel()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm font-code-trace text-code-trace">
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1 border border-surface-container-high">
+<span class="font-label-xs text-label-xs text-primary font-bold uppercase">1. Text Ingestion &amp; Span Loc</span>
+<p class="text-on-surface-variant mt-1">Tokenized 8 judgment paragraphs. Identified key dates and legal references anchored directly to record quotes.</p>
+<div class="text-outline font-label-xs mt-auto pt-1">Tokens: 642 • Context: Complete</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1 border border-surface-container-high">
+<span class="font-label-xs text-label-xs text-secondary font-bold uppercase">2. Fact Extractor (LoRA)</span>
+<p class="text-on-surface-variant mt-1">Preserved explicit NULL on Personal Hearing (Col 4 blank). Detected ₹42,18,910 demand with verbatim quote grounding.</p>
+<div class="text-outline font-label-xs mt-auto pt-1">Null-Safety Check: PASSED</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1 border border-surface-container-high">
+<span class="font-label-xs text-label-xs text-tertiary font-bold uppercase">3. Rule Validation Engine</span>
+<p class="text-on-surface-variant mt-1">Queried CGST S.75(4) rule: Adverse demand + No Hearing = Defect. S.75(6) Speaking Order = Defect.</p>
+<div class="text-outline font-label-xs mt-auto pt-1">Statutory Engine: CGST 2017</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1 border border-surface-container-high"><span class="font-label-xs text-label-xs text-outline font-bold uppercase">4. Evidence Matcher</span><p class="text-on-surface-variant mt-1">Character-span verification against judicial source quotes: Exact match confirmed for ¶1, ¶2, ¶4, ¶6.</p><div class="text-tertiary font-label-xs mt-auto pt-1">Literal Quote Match: Verified</div></div>
+</div>
+</div>
+<!-- Main Side-by-Side Dual Pane Workbench -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<!-- LEFT COLUMN: Source Judgment Text (45% -> 5 cols on lg) -->
+<div class="lg:col-span-5 bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-md shadow-sm h-[750px] overflow-hidden border border-surface-container-high/40">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container-high/40">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">description</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold" id="judgment-panel-title">Source Judgment Paragraphs</h3>
+</div>
+<div class="font-label-xs text-label-xs text-outline">
+  Synchronized Source Record
+</div>
+</div>
+<!-- Document Scroll Container with Line Paragraphs -->
+<div class="flex-1 overflow-y-auto pr-space-xs flex flex-col gap-space-md scroll-smooth" id="judgment-viewport">
+          <div class="para-block group rounded-lg p-space-sm transition-all duration-300 bg-surface-container/50 border border-transparent" id="para-1">
+            <div class="flex items-baseline gap-space-sm">
+              <span class="font-label-xs text-label-xs font-bold text-outline shrink-0 w-8 select-none">¶ 1</span>
+              <div class="font-body-md text-body-md text-on-surface leading-relaxed">
+                The present writ petition under Article 226 of the Constitution of India has been instituted challenging the impugned adjudication order passed by Respondent No. 2 under Section 73 of the CGST Act, 2017. The records reveal that the <mark class="doc-quote quote-1 bg-tertiary-container/30 text-on-surface rounded px-1 transition-all">SCN issued on 12.05.2024 for tax period FY 2018-19</mark> proposed an aggregate tax demand of ₹42,18,910 on the alleged ground of mismatched input tax credit between Form GSTR-3B and GSTR-2A.
+              </div>
+            </div>
+          </div>
+
+          <div class="para-block group rounded-lg p-space-sm transition-all duration-300 bg-surface-container/50 border border-transparent" id="para-2">
+            <div class="flex items-baseline gap-space-sm">
+              <span class="font-label-xs text-label-xs font-bold text-outline shrink-0 w-8 select-none">¶ 2</span>
+              <div class="font-body-md text-body-md text-on-surface leading-relaxed">
+                Learned Counsel for the petitioner submits that the petitioner was oblivious to the issuance of the notice because <mark class="doc-quote quote-2 bg-secondary-container/30 text-on-surface rounded px-1 transition-all">the notice was uploaded only to the portal without physical or email communication</mark> under the additional notices tab, and the petitioner came to know of the proceedings only upon receiving an attachment memo from their commercial bank.
+              </div>
+            </div>
+          </div>
+
+          <div class="para-block group rounded-lg p-space-sm transition-all duration-300 bg-surface-container/50 border border-transparent" id="para-4">
+            <div class="flex items-baseline gap-space-sm">
+              <span class="font-label-xs text-label-xs font-bold text-outline shrink-0 w-8 select-none">¶ 4</span>
+              <div class="font-body-md text-body-md text-on-surface leading-relaxed">
+                A perusal of the original record produced by the revenue demonstrates that on 28.06.2024, <mark class="doc-quote quote-4 bg-error-container/30 text-on-surface rounded px-1 transition-all">the petitioner submitted an interim representation which was unconsidered in the final adjudication</mark>. The Proper Officer proceeded to finalize the demand on 18.10.2024 without referring to any ground or reconciliations enclosed with the said representation.
+              </div>
+            </div>
+          </div>
+
+          <div class="para-block group rounded-lg p-space-sm transition-all duration-300 bg-surface-container/50 border border-transparent" id="para-6">
+            <div class="flex items-baseline gap-space-sm">
+              <span class="font-label-xs text-label-xs font-bold text-outline shrink-0 w-8 select-none">¶ 6</span>
+              <div class="font-body-md text-body-md text-on-surface leading-relaxed">
+                Crucially, statutory mandate under Section 75(4) demands that an opportunity of hearing shall be granted where a request is received or where any adverse decision is contemplated. In the case at hand, <mark class="doc-quote quote-6 bg-error-container/30 text-on-surface rounded px-1 transition-all font-semibold">Column 4 of Form DRC-07 remained blank and no opportunity of personal hearing was granted</mark> to the petitioner prior to creating the liability.
+              </div>
+            </div>
+          </div>
+
+          <div class="para-block group rounded-lg p-space-sm transition-all duration-300 bg-surface-container/50 border border-transparent" id="para-8">
+            <div class="flex items-baseline gap-space-sm">
+              <span class="font-label-xs text-label-xs font-bold text-outline shrink-0 w-8 select-none">¶ 8</span>
+              <div class="font-body-md text-body-md text-on-surface leading-relaxed">
+                Consequently, this Court finds that the impugned order violates the statutory safeguards enacted under Section 75(4) and Section 75(6) of the Act. The order dated 18.10.2024 is hereby set aside with direction to the Proper Officer to issue a fresh notice for personal hearing.
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- Helper tip -->
+<div class="pt-space-xs text-outline font-label-xs text-label-xs flex items-center justify-between border-t border-surface-container-high/40"><div class="flex flex-col gap-1 w-full"><div class="flex items-center justify-between"><span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[16px]">touch_app</span> Click any rule check card on the right to jump &amp; highlight</span><span class="text-tertiary">Synchronized Record</span></div><div class="text-[11px] text-outline"><strong>Quote Verification Note:</strong> Quote match confirms literal presence in judicial text; it does not by itself prove that the fact belongs to the correct proceeding or that the legal conclusion is right.</div></div></div>
+</div>
+<!-- RIGHT COLUMN: PROCEDURAL CHECKS (55% -> 7 cols on lg) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md h-[750px] overflow-y-auto pr-space-xs" id="checks-column">
+<!-- Active Case Checks will be rendered here -->
+<!-- RQ1 Component: Compare Checker Outputs Switcher --><div class="bg-surface-container-low rounded-xl p-space-sm border border-surface-container-high/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm shadow-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px]">compare</span><div><div class="font-headline-md text-[14px] text-on-surface font-bold leading-tight flex items-center gap-2"><span>RQ1: Compare Legal Checker Outputs</span><span class="px-1.5 py-0.2 rounded bg-surface-container-high text-tertiary font-label-xs text-[10px] uppercase font-semibold">Ablation Control: Same Verified Fact Record</span></div><div class="font-body-sm text-[12px] text-on-surface-variant">Both checkers receive the exact same verified facts (SCN: 12.05.2024, Reply: 28.06.2024, Source states no hearing was offered: Yes, Order: 18.10.2024)</div></div></div><div class="inline-flex p-0.5 bg-surface-container rounded-lg border border-surface-container-high/60"><button class="px-space-sm py-1 rounded font-label-xs text-label-xs bg-primary-container text-on-primary-container font-bold transition-all" id="rq1-btn-nc" onclick="toggleRQ1View('nc')" type="button">NoticeCheck Pipeline (Default)</button><button class="px-space-sm py-1 rounded font-label-xs text-label-xs text-on-surface-variant hover:text-on-surface transition-all" id="rq1-btn-plain" onclick="toggleRQ1View('plain')" type="button">Plain Qwen3-8B Checker Alone</button><button class="px-space-sm py-1 rounded font-label-xs text-label-xs text-on-surface-variant hover:text-on-surface transition-all" id="rq1-btn-side" onclick="toggleRQ1View('side')" type="button">Compare Side-by-Side</button></div></div><!-- Plain Qwen Checker View (RQ1 Comparative Panel, hidden by default) --><div class="hidden flex flex-col gap-space-sm bg-surface-container-lowest p-space-md rounded-xl border border-error-container/40" id="rq1-plain-panel"><div class="flex items-center justify-between"><span class="font-label-xs text-label-xs uppercase tracking-wider text-secondary font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">balance</span> RQ1: Plain Qwen3-8B Checker Alone vs. NoticeCheck Pipeline</span><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-xs text-label-xs font-bold">Ablation: Identical Fact Record</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Both checkers receive the exact same verified fact record (SCN: 12.05.2024, Reply: 28.06.2024, Hearing date: null [Source states no hearing was offered: Yes], Order: 18.10.2024). <strong class="text-on-surface">Research Observation:</strong> The structured pipeline was generally more restrained about raising unargued issues; it did not conclusively meet the planned F1 improvement threshold.</p><div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm font-code-citation text-code-citation"><div class="bg-surface-container p-space-sm rounded-lg border border-surface-container-high flex flex-col gap-1.5"><div class="font-label-xs text-outline uppercase font-bold border-b border-surface-container-high/60 pb-1">Plain Qwen3-8B Alone</div><div class="text-on-surface-variant"><span class="font-semibold text-on-surface">• S.75(4) Hearing:</span> Mentions hearing absence but raises collateral unargued issues and proposes statutory appeal under S.107 without isolating jurisdictional condition precedent.</div><div class="text-on-surface-variant"><span class="font-semibold text-on-surface">• S.75(6) Speaking Order:</span> Notes reply was unconsidered; conflates factual merits with procedural due process.</div><div class="text-outline"><span class="font-semibold text-on-surface">• Precedent Grounding:</span> No case retrieval tool; cannot cite specific coordinate High Court benches.</div></div><div class="bg-surface-container p-space-sm rounded-lg border border-primary/30 flex flex-col gap-1.5"><div class="font-label-xs text-primary uppercase font-bold border-b border-surface-container-high/60 pb-1">NoticeCheck Pipeline</div><div class="text-on-surface-variant"><span class="font-semibold text-primary">• S.75(4) Hearing:</span> Identifies Potential Defect. Evaluates S.75(4) rule strictly against null hearing date in adverse demand scenario.</div><div class="text-on-surface-variant"><span class="font-semibold text-primary">• S.75(6) Speaking Order:</span> Identifies Potential Defect. Strictly flags lack of discussion on taxpayer reply.</div><div class="text-on-surface-variant"><span class="font-semibold text-tertiary">• Retrieved Cases:</span> ACE Building Systems (Delhi HC 2023); Bharat Mint &amp; Allied Chemicals (Allahabad HC 2022).</div></div></div></div><div class="flex flex-col gap-space-md" id="case-checks-container">
+<!-- Category 1: Findings that need attention -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-error font-label-xs text-label-xs uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[16px]">error</span>
+<span>1. Findings That Need Attention (Potential Defect)</span>
+</div>
+<!-- Card 1: Personal Hearing Mandatory Opportunity -->
+<div class="check-card cursor-pointer rounded-xl p-space-md bg-surface-container-low hover:bg-surface-container transition-all shadow-sm border border-surface-container-high/40" id="check-card-1" onclick="highlightParagraph('para-6', 'quote-6', 'check-card-1')">
+<div class="flex items-start justify-between gap-space-sm mb-1">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Personal Hearing Mandatory Opportunity</h4>
+<div class="font-code-citation text-code-citation text-primary font-medium">CGST Act Section 75(4)</div>
+</div>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-xs text-label-xs font-bold uppercase tracking-wider shrink-0">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>Potential defect</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant my-space-xs">
+        An adverse demand order was passed without scheduling or communicating any date, time, or venue for personal hearing.
+      </p>
+<!-- Model Reasoning Peek snippet -->
+<div class="my-space-xs p-space-xs rounded bg-surface-container-lowest border border-surface-container-high flex flex-col gap-1 font-code-trace text-code-trace text-on-surface-variant">
+<div class="flex items-center justify-between text-outline font-label-xs">
+<span>AI Verifier Model Breakdown</span>
+<span class="text-tertiary">Exact Match</span>
+</div>
+<div>Fact: <span class="text-on-surface">Personal Hearing Date = NULL (DRC-07 Col 4 blank)</span></div>
+<div>Rule: <span class="text-on-surface">S.75(4) mandates hearing if adverse order contemplated</span></div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-highest text-on-surface font-code-citation text-code-citation flex items-center justify-between gap-space-xs hover:text-primary transition-colors">
+<span class="truncate">Quote: "Column 4 of Form DRC-07 remained blank and no opportunity of personal hearing was granted"</span>
+<span class="font-label-xs text-label-xs text-primary shrink-0 flex items-center gap-0.5">Jump to ¶6 <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+<!-- Card 2: Reasoned Speaking Order -->
+<div class="check-card cursor-pointer rounded-xl p-space-md bg-surface-container-low hover:bg-surface-container transition-all shadow-sm border border-surface-container-high/40" id="check-card-2" onclick="highlightParagraph('para-4', 'quote-4', 'check-card-2')">
+<div class="flex items-start justify-between gap-space-sm mb-1">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Reasoned Speaking Order</h4>
+<div class="font-code-citation text-code-citation text-primary font-medium">CGST Act Section 75(6)</div>
+</div>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-xs text-label-xs font-bold uppercase tracking-wider shrink-0">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>Potential defect</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant my-space-xs">
+        Taxpayer submitted a written reply on 28.06.2024 which was neither referenced nor considered in the final order.
+      </p>
+<!-- Model Reasoning Peek snippet -->
+<div class="my-space-xs p-space-xs rounded bg-surface-container-lowest border border-surface-container-high flex flex-col gap-1 font-code-trace text-code-trace text-on-surface-variant">
+<div class="flex items-center justify-between text-outline font-label-xs">
+<span>AI Verifier Model Breakdown</span>
+<span class="text-tertiary">Exact Match</span>
+</div>
+<div>Fact: <span class="text-on-surface">Written interim representation filed 28.06.2024 ignored</span></div>
+<div>Rule: <span class="text-on-surface">S.75(6) Proper officer shall set out relevant facts and basis of decision</span></div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-highest text-on-surface font-code-citation text-code-citation flex items-center justify-between gap-space-xs hover:text-primary transition-colors">
+<span class="truncate">Quote: "the petitioner submitted an interim representation which was unconsidered in the final adjudication"</span>
+<span class="font-label-xs text-label-xs text-primary shrink-0 flex items-center gap-0.5">Jump to ¶4 <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+</div>
+<!-- Category 2: Contested Points -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-secondary font-label-xs text-label-xs uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[16px]">balance</span>
+<span>2. Contested Points</span>
+</div>
+<!-- Card 3: Mode of Service via Portal -->
+<div class="check-card cursor-pointer rounded-xl p-space-md bg-surface-container-low hover:bg-surface-container transition-all shadow-sm border border-surface-container-high/40" id="check-card-3" onclick="highlightParagraph('para-2', 'quote-2', 'check-card-3')">
+<div class="flex items-start justify-between gap-space-sm mb-1">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Mode of Service via Portal</h4>
+<div class="font-code-citation text-code-citation text-secondary font-medium">CGST Act Section 169(1)</div>
+</div>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-xs text-label-xs font-bold uppercase tracking-wider shrink-0">
+<span class="material-symbols-outlined text-[14px]">balance</span>
+<span>Contested</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant my-space-xs">
+        Notice was posted under "Additional Notices" portal tab without email dispatch; conflicting High Court precedents exist on valid digital tender.
+      </p>
+<div class="p-space-xs rounded bg-surface-container-highest text-on-surface font-code-citation text-code-citation flex items-center justify-between gap-space-xs hover:text-secondary transition-colors">
+<span class="truncate">Quote: "the notice was uploaded only to the portal without physical or email communication"</span>
+<span class="font-label-xs text-label-xs text-secondary shrink-0 flex items-center gap-0.5">Jump to ¶2 <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+</div>
+<!-- Category 3: Missing Information -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-outline font-label-xs text-label-xs uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[16px]">help</span>
+<span>3. Missing Information</span>
+</div>
+<!-- Card 4: Adjournment Request Records -->
+<div class="check-card rounded-xl p-space-md bg-surface-container-low transition-all shadow-sm border border-surface-container-high/40" id="check-card-4">
+<div class="flex items-start justify-between gap-space-sm mb-1">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Adjournment Request Records</h4>
+<div class="font-code-citation text-code-citation text-outline font-medium">CGST Act Section 75(5)</div>
+</div>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-xs text-label-xs font-bold uppercase tracking-wider shrink-0">
+<span class="material-symbols-outlined text-[14px]">question_mark</span>
+<span>Cannot tell</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant my-space-xs">
+        The judgment text does not record whether the taxpayer requested an adjournment under Section 75(5) prior to final order.
+      </p>
+<div class="p-space-xs rounded bg-surface-container-highest text-outline font-code-citation text-code-citation">
+        Record silent on Section 75(5) notice requests. Preserved as Unrecorded.
+      </div>
+</div>
+</div>
+<!-- Category 4: Remaining Checks -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-tertiary font-label-xs text-label-xs uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>4. Remaining Checks</span>
+</div>
+<!-- Card 5: Statutory Limitation (SCN Issuance) -->
+<div class="check-card cursor-pointer rounded-xl p-space-md bg-surface-container-low hover:bg-surface-container transition-all shadow-sm border border-surface-container-high/40" id="check-card-5" onclick="highlightParagraph('para-1', 'quote-1', 'check-card-5')"><div class="flex items-start justify-between gap-space-sm mb-1"><div><h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Statutory Limitation (SCN Issuance)</h4><div class="font-code-citation text-code-citation text-tertiary font-medium">CGST Act Section 73(2) &amp; 73(10)</div></div><span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-xs text-label-xs font-bold uppercase tracking-wider shrink-0"><span class="material-symbols-outlined text-[14px]">check</span><span>No defect identified</span></span></div><p class="font-body-md text-body-md text-on-surface-variant my-space-xs">The show cause notice dated 12.05.2024 was issued within the extended limitation window for FY 2018-19.</p><div class="my-space-xs p-space-xs rounded bg-surface-container-lowest border border-surface-container-high font-body-sm text-[11px] text-outline leading-tight"><strong>Verdict Scope:</strong> "No defect identified" indicates no procedural violation was found on the recited record under tested statutory checks; it is not a certificate that the proceeding is legally sound.</div><div class="p-space-xs rounded bg-surface-container-highest text-on-surface font-code-citation text-code-citation flex items-center justify-between gap-space-xs hover:text-tertiary transition-colors"><span class="truncate">Quote: "SCN issued on 12.05.2024 for tax period FY 2018-19"</span><span class="font-label-xs text-label-xs text-tertiary shrink-0 flex items-center gap-0.5">Jump to ¶1 <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span></div></div>
+</div>
+</div>
+<!-- Expandable Technical Accordion: 'How NoticeCheck checked this' -->
+<details class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all border border-surface-container-high/40"><summary class="cursor-pointer font-body-md text-body-md text-on-surface font-semibold flex items-center justify-between select-none"><span class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[20px] text-primary group-open:rotate-90 transition-transform">terminal</span><span>How NoticeCheck checked this (Agent Rationale &amp; Evidence Trace)</span></span><span class="font-label-xs text-label-xs text-outline">Structured Trace</span></summary><div class="mt-space-md flex flex-col gap-space-md font-code-trace text-code-trace text-on-surface-variant"><div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1 border border-surface-container-high"><div class="font-label-xs text-label-xs uppercase tracking-wider text-primary font-bold">1. Structured Facts Extracted (Stage 1):</div><div class="text-on-surface">• SCN Date: <span class="text-tertiary font-medium">12.05.2024</span> (¶1)<br>• Reply Date: <span class="text-tertiary font-medium">28.06.2024</span> (¶4)<br>• Personal Hearing Date: <span class="text-outline font-medium">null (Date not stated in record)</span> (¶6)<br>• Impugned Order Date: <span class="text-tertiary font-medium">18.10.2024</span> (¶4)<br>• Confirmed Demand: <span class="text-on-surface font-medium">₹42,18,910</span> (¶1)</div></div><div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1 border border-surface-container-high"><div class="font-label-xs text-label-xs uppercase tracking-wider text-primary font-bold">2. Rule Tools &amp; Verifiers Invoked:</div><div>• Judicial Sentence Tokenizer &amp; Timeline Normalizer (ISO-8601 align)<br>• CGST Act Statutory Rule Evaluator (Sections 73, 75, 169)<br>• Literal Quote Character-Span Matcher</div></div><div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1 border border-surface-container-high"><div class="font-label-xs text-label-xs uppercase tracking-wider text-primary font-bold">3. Retrieved Cases:</div><div>• ACE Building Systems v. Union of India (Delhi High Court, 2023)<br>• Bharat Mint &amp; Allied Chemicals v. Commissioner (Allahabad High Court, 2022)</div></div><div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1 border border-surface-container-high"><div class="font-label-xs text-label-xs uppercase tracking-wider text-primary font-bold">4. Human Review Hand-off Note:</div><div>Statutory procedural findings provide grounded issue framing for legal practitioner review. All procedural observations must be verified against original departmental records and GST portal audit logs.</div></div></div></details>
+</div>
+</div>
+</div>
+</section>
+<!-- ACCESSIBLE 'ABOUT THE PROJECT & RESEARCH' MODAL/DRAWER -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-surface-container-lowest/80 backdrop-blur-md p-margin transition-opacity" id="research-modal">
+<div class="bg-surface-container-low max-w-3xl w-full max-h-[870px] rounded-2xl flex flex-col shadow-2xl overflow-hidden border border-surface-container-high/60">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container flex items-center justify-between border-b border-surface-container-high">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">NoticeCheck Project &amp; Research Architecture</h3>
+<p class="font-label-xs text-label-xs text-outline">Clinical Tax Law Legal-Tech Experimentation</p>
+</div>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" id="close-research-modal" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg overflow-y-auto flex flex-col gap-space-lg font-body-md text-body-md text-on-surface-variant"><div><h4 class="font-headline-md text-headline-md text-on-surface font-semibold mb-space-xs">Research Overview &amp; Research Questions</h4><p class="leading-relaxed">NoticeCheck was evaluated on High Court judgments reciting GST proceedings under Sections 73 &amp; 74, not on original show cause notices or raw departmental files. Rather than predicting case outcomes or rendering legal advice, NoticeCheck evaluates whether procedural statutory requirements (Personal Hearing under S.75(4), Reasoned Orders under S.75(6), and Limitation deadlines under S.73/74) were respected as described in the judicial record.</p><div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm mt-space-sm"><div class="p-space-sm rounded-lg bg-surface-container border border-surface-container-high"><span class="font-label-xs text-label-xs uppercase tracking-wider text-primary font-bold">RQ1: Checker Pipeline Comparison</span><p class="font-body-sm text-body-sm text-on-surface mt-1">Comparing Plain Qwen vs. NoticeCheck's rule-guided pipeline on an identical verified fact record. Observation: The structured pipeline was generally more restrained about raising unargued issues; it did not conclusively meet the planned F1 improvement threshold.</p></div><div class="p-space-sm rounded-lg bg-surface-container border border-surface-container-high"><span class="font-label-xs text-label-xs uppercase tracking-wider text-secondary font-bold">RQ2: Fact Extraction Precision</span><p class="font-body-sm text-body-sm text-on-surface mt-1">Comparing base Qwen vs. fine-tuned Qwen on the raw appellate text. Fine-tuned extraction ties values to paragraph citations and preserves unstated entries as explicit <code>null</code> ("Date not stated in record").</p></div></div></div><div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs border border-surface-container-high"><div class="flex items-center gap-space-xs text-tertiary font-label-xs text-label-xs uppercase tracking-wider font-bold"><span class="material-symbols-outlined text-[16px]">school</span><span>Teaching Methodology &amp; Hand-off Notice</span></div><p class="font-body-sm text-body-sm leading-relaxed">Designed for academic demonstration and clinical training on procedural due process under Indian tax statutes. Outputs strictly procedural findings and a human review recommendation without determining final litigation decisions.</p></div></div>
+<!-- Modal Footer -->
+<div class="p-space-md bg-surface-container flex items-center justify-end border-t border-surface-container-high">
+<button class="px-space-lg py-space-xs rounded bg-surface-container-high text-on-surface hover:bg-surface-bright font-label-xs text-label-xs uppercase tracking-wider font-semibold" id="close-research-btn" type="button">
+  Return to Demo
+</button>
+</div>
+</div>
+</div>
+<!-- Inline Vanilla Interactive Script -->
+<script>
+    // State management & Data Store for 3 Prepared Teaching Scenarios
+    let activeCase = 'A';
+    let analysisTimer = null;
+    let projectorMode = false;
+
+    const caseData = {
+      'A': {
+        title: "M/s Radiant Alloys v. State of Tax & Ors.",
+        court: "Delhi High Court · W.P.(C) 4129/2024",
+        period: "FY 2018-19",
+        demand: "₹42,18,910",
+        summaryBadge: "2 Statutory Safeguards Compromised",
+        summaryText: "The Proper Officer passed an adverse demand order of <strong>₹42,18,910</strong> against the taxpayer without fixing a date for personal hearing and without discussing the interim reply submitted by the petitioner.",
+        recommendationText: "Verify High Court writ jurisdiction prerequisites (Article 226). Cross-check GST portal audit logs to confirm absence of DRC-01B/01C personal hearing notifications before drafting petition pleadings.",
+        paragraphs: [
+          {
+            id: 'para-1', num: '¶ 1',
+            text: 'The present writ petition under Article 226 of the Constitution of India has been instituted challenging the impugned adjudication order passed by Respondent No. 2 under Section 73 of the CGST Act, 2017. The records reveal that the <mark class="doc-quote quote-1 bg-tertiary-container/30 text-on-surface rounded px-1 transition-all">SCN issued on 12.05.2024 for tax period FY 2018-19</mark> proposed an aggregate tax demand of ₹42,18,910 on the alleged ground of mismatched input tax credit between Form GSTR-3B and GSTR-2A.'
+          },
+          {
+            id: 'para-2', num: '¶ 2',
+            text: 'Learned Counsel for the petitioner submits that the petitioner was oblivious to the issuance of the notice because <mark class="doc-quote quote-2 bg-secondary-container/30 text-on-surface rounded px-1 transition-all">the notice was uploaded only to the portal without physical or email communication</mark> under the additional notices tab, and the petitioner came to know of the proceedings only upon receiving an attachment memo from their commercial bank.'
+          },
+          {
+            id: 'para-4', num: '¶ 4',
+            text: 'A perusal of the original record produced by the revenue demonstrates that on 28.06.2024, <mark class="doc-quote quote-4 bg-error-container/30 text-on-surface rounded px-1 transition-all">the petitioner submitted an interim representation which was unconsidered in the final adjudication</mark>. The Proper Officer proceeded to finalize the demand on 18.10.2024 without referring to any ground or reconciliations enclosed with the said representation.'
+          },
+          {
+            id: 'para-6', num: '¶ 6',
+            text: 'Crucially, statutory mandate under Section 75(4) demands that an opportunity of hearing shall be granted where a request is received or where any adverse decision is contemplated. In the case at hand, <mark class="doc-quote quote-6 bg-error-container/30 text-on-surface rounded px-1 transition-all font-semibold">Column 4 of Form DRC-07 remained blank and no opportunity of personal hearing was granted</mark> to the petitioner prior to creating the liability.'
+          },
+          {
+            id: 'para-8', num: '¶ 8',
+            text: 'Consequently, this Court finds that the impugned order violates the statutory safeguards enacted under Section 75(4) and Section 75(6) of the Act. The order dated 18.10.2024 is hereby set aside with direction to the Proper Officer to issue a fresh notice for personal hearing.'
+          }
+        ]
+      },
+      'B': {
+        title: "TechnoBuild Logistics v. Asst. Comm.",
+        court: "Calcutta High Court · W.P.A. 1102/2024",
+        period: "FY 2019-20",
+        demand: "₹18,40,000",
+        summaryBadge: "Service Tender Protocol Violated",
+        summaryText: "Demand order of <strong>₹18,40,000</strong> confirmed ex-parte because notice was solely uploaded to the 'Additional Notices and Orders' tab without registered email or physical delivery under Section 169(1).",
+        recommendationText: "Procure portal timestamp metadata and affidavit confirming email delivery failure to establish non-service under Calcutta HC precedent (Murari Lal v. Comm).",
+        paragraphs: [
+          {
+            id: 'para-1', num: '¶ 1',
+            text: 'The petitioner assails the order dated 04.01.2024 passed ex-parte under Section 73 determining demand of ₹18,40,000 along with equivalent penalty.'
+          },
+          {
+            id: 'para-2', num: '¶ 2',
+            text: 'The petitioner contends that <mark class="doc-quote quote-2 bg-secondary-container/30 text-on-surface rounded px-1 transition-all font-semibold">no notice or intimation was served upon the email address registered on the GST portal</mark>, nor served by speed post under Section 169(1)(b).'
+          },
+          {
+            id: 'para-3', num: '¶ 3',
+            text: 'The respondents concede that <mark class="doc-quote quote-3 bg-secondary-container/30 text-on-surface rounded px-1 transition-all">the SCN was posted solely under the Additional Notices tab of the portal</mark> which is located beneath three navigation sub-levels and was not flagged on the primary dashboard.'
+          },
+          {
+            id: 'para-5', num: '¶ 5',
+            text: 'This Court notes Section 169 provides distinct modes of service. When digital service is chosen, the communication must be transmitted to the taxpayer\'s registered email to constitute effective tender.'
+          }
+        ]
+      },
+      'C': {
+        title: "Apex Polymers v. Union of India",
+        court: "Bombay High Court · W.P. 8832/2023",
+        period: "FY 2017-18",
+        demand: "₹1,04,20,500",
+        summaryBadge: "Limitation Window Contested (S.168A)",
+        summaryText: "Show cause notice issued on 29.12.2023 invoking Notification 9/2023 under Section 168A force majeure powers despite normal Section 73(10) period having lapsed.",
+        recommendationText: "Verify whether notification 56/2023 was issued after expiry of statutory limitation deadline and review Bombay HC coordinate bench rulings on force majeure applicability.",
+        paragraphs: [
+          {
+            id: 'para-1', num: '¶ 1',
+            text: 'The petitioner challenges notice DRC-01 dated 29.12.2023 for FY 2017-18 asserting <mark class="doc-quote quote-1 bg-tertiary-container/30 text-on-surface rounded px-1 transition-all font-semibold">the notice is barred by the statutory limitation prescribed under Section 73(10)</mark> of the CGST Act.'
+          },
+          {
+            id: 'para-2', num: '¶ 2',
+            text: 'The revenue places reliance on Notification No. 09/2023-CT and Notification No. 56/2023-CT extending limitation for FY 2017-18 citing force majeure circumstances.'
+          },
+          {
+            id: 'para-4', num: '¶ 4',
+            text: 'The petitioner argues that under Section 168A, powers to extend time limits can only be exercised if force majeure prevented the authority from acting, which ceased well prior to 2023.'
+          }
+        ]
+      }
+    };
+
+    function switchView(viewId) {
+      const views = ['state-start', 'state-analysis', 'state-results'];
+      views.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+          if (id === viewId) {
+            el.classList.remove('hidden');
+          } else {
+            el.classList.add('hidden');
+          }
+        }
+      });
+
+      // Update Step Tracker Bar
+      const steps = [
+        { id: 'step-nav-1', target: 'state-start' },
+        { id: 'step-nav-2', target: 'state-analysis' },
+        { id: 'step-nav-3', target: 'state-results' }
+      ];
+
+      steps.forEach((step) => {
+        const btn = document.getElementById(step.id);
+        if (btn) {
+          const numBadge = btn.querySelector('span:first-child');
+          if (step.target === viewId) {
+            btn.className = "px-space-md py-1 rounded font-body-sm text-body-sm text-on-surface bg-surface-container-highest transition-all flex items-center gap-space-xs font-semibold";
+            if (numBadge) {
+              numBadge.className = "w-5 h-5 rounded-full bg-primary text-on-primary font-label-xs text-label-xs flex items-center justify-center font-bold";
+            }
+          } else {
+            btn.className = "px-space-md py-1 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs";
+            if (numBadge) {
+              numBadge.className = "w-5 h-5 rounded-full bg-surface-container-high text-on-surface-variant font-label-xs text-label-xs flex items-center justify-center font-bold";
+            }
+          }
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function selectCase(caseLetter) {
+      activeCase = caseLetter;
+      const cards = document.querySelectorAll('.case-card');
+      cards.forEach(card => {
+        const checkIcon = card.querySelector('.check-indicator');
+        if (card.dataset.case === caseLetter) {
+          card.classList.add('ring-2', 'ring-primary');
+          if (checkIcon) {
+            checkIcon.textContent = 'check_circle';
+            checkIcon.className = 'material-symbols-outlined text-primary text-[20px] check-indicator';
+          }
+        } else {
+          card.classList.remove('ring-2', 'ring-primary');
+          if (checkIcon) {
+            checkIcon.textContent = 'radio_button_unchecked';
+            checkIcon.className = 'material-symbols-outlined text-outline text-[20px] check-indicator';
+          }
+        }
+      });
+
+      // Update active title in analysis & result screen
+      renderCaseView(caseLetter);
+    }
+
+    function switchActiveCaseDirectly(caseLetter) {
+      selectCase(caseLetter);
+    }
+
+    function renderCaseView(caseLetter) {
+      const data = caseData[caseLetter] || caseData['A'];
+
+      // Update quick switch pills in State 3
+      ['A', 'B', 'C'].forEach(c => {
+        const pill = document.getElementById(`case-pill-${c}`);
+        if (pill) {
+          if (c === caseLetter) {
+            pill.className = "px-space-sm py-1 rounded font-body-sm text-body-sm transition-all bg-primary-container text-on-primary-container font-semibold shadow-sm";
+          } else {
+            pill.className = "px-space-sm py-1 rounded font-body-sm text-body-sm transition-all text-on-surface-variant hover:text-on-surface";
+          }
+        }
+      });
+
+      // Update Analysis screen metadata
+      const analysisCaseTitle = document.getElementById('analysis-case-title');
+      if (analysisCaseTitle) {
+        analysisCaseTitle.textContent = `${data.title} (${data.court.split('·')[0].trim()})`;
+      }
+
+      // Update Results Header
+      const summaryBadge = document.getElementById('summary-defect-badge');
+      const summaryText = document.getElementById('summary-text');
+      const summaryCourt = document.getElementById('summary-court');
+      const summaryPeriod = document.getElementById('summary-period');
+      const recommendationText = document.getElementById('recommendation-text');
+
+      if (summaryBadge) summaryBadge.textContent = data.summaryBadge;
+      if (summaryText) summaryText.innerHTML = data.summaryText;
+      if (summaryCourt) summaryCourt.textContent = `Jurisdiction: ${data.court}`;
+      if (summaryPeriod) summaryPeriod.textContent = `Assessment Period: ${data.period}`;
+      if (recommendationText) recommendationText.textContent = data.recommendationText;
+
+      // Update Judgment Paragraphs container
+      const viewport = document.getElementById('judgment-viewport');
+      if (viewport) {
+        viewport.innerHTML = data.paragraphs.map(p => `
+          <div class="para-block group rounded-lg p-space-sm transition-all duration-300 bg-surface-container/50 border border-transparent" id="${p.id}">
+            <div class="flex items-baseline gap-space-sm">
+              <span class="font-label-xs text-label-xs font-bold text-outline shrink-0 w-8 select-none">${p.num}</span>
+              <div class="font-body-md text-body-md text-on-surface leading-relaxed">
+                ${p.text}
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    function loadCustomCase() {
+      const text = document.getElementById('custom-case-input').value.trim();
+      if (!text) {
+        alert("Please paste judgment paragraphs into the box first.");
+        return;
+      }
+      selectCase('A');
+      startAnalysis();
+    }
+
+    function startAnalysis() {
+      switchView('state-analysis');
+
+      const stage2Badge = document.getElementById('stage-2-badge');
+      const stage1Badge = document.getElementById('stage-1-badge');
+
+      if (stage1Badge) {
+        stage1Badge.className = "inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-xs text-label-xs font-semibold";
+        stage1Badge.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span><span>Saved extractor output</span>';
+      }
+
+      if (stage2Badge) {
+        stage2Badge.className = "inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-xs text-label-xs font-semibold";
+        stage2Badge.innerHTML = '<span class="material-symbols-outlined text-[14px] animate-spin">sync</span><span>Recorded checks</span>';
+      }
+
+      if (analysisTimer) clearTimeout(analysisTimer);
+
+      analysisTimer = setTimeout(() => {
+        if (stage2Badge) {
+          stage2Badge.className = "inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-xs text-label-xs font-semibold";
+          stage2Badge.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span><span>Saved trace available</span>';
+        }
+        setTimeout(() => {
+          switchView('state-results');
+        }, 1400);
+      }, 1800);
+    }
+
+    // Toggle Reasoning Trace Panel
+    function toggleTracePanel() {
+      const tracePanel = document.getElementById('model-trace-panel');
+      const label = document.getElementById('trace-toggle-label');
+      if (tracePanel) {
+        const isHidden = tracePanel.classList.contains('hidden');
+        if (isHidden) {
+          tracePanel.classList.remove('hidden');
+          if (label) label.textContent = 'Hide Trace';
+        } else {
+          tracePanel.classList.add('hidden');
+          if (label) label.textContent = 'Inspect execution trace';
+        }
+      }
+    }
+
+    function openModelInspector() {
+      switchView('state-results');
+      const tracePanel = document.getElementById('model-trace-panel');
+      if (tracePanel && tracePanel.classList.contains('hidden')) {
+        tracePanel.classList.remove('hidden');
+      }
+    }
+
+    // Interactive Paragraph Highlighting Synchronization
+    function highlightParagraph(paraId, quoteClass, cardId) {
+      document.querySelectorAll('.para-block').forEach(p => {
+        p.classList.remove('ring-2', 'ring-primary', 'bg-surface-container-high');
+        p.classList.add('bg-surface-container/50');
+      });
+
+      document.querySelectorAll('.check-card').forEach(c => {
+        c.classList.remove('ring-2', 'ring-primary', 'bg-surface-container-high');
+      });
+
+      const para = document.getElementById(paraId);
+      const card = document.getElementById(cardId);
+      const viewport = document.getElementById('judgment-viewport');
+
+      if (para && viewport) {
+        para.classList.remove('bg-surface-container/50');
+        para.classList.add('ring-2', 'ring-primary', 'bg-surface-container-high');
+        para.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+
+      if (card) {
+        card.classList.add('ring-2', 'ring-primary', 'bg-surface-container-high');
+      }
+    }
+
+    // Projector High-Contrast Mode for Classrooms
+    function toggleProjectorMode() {
+      projectorMode = !projectorMode;
+      const icon = document.getElementById('projector-icon');
+      if (projectorMode) {
+        document.documentElement.classList.add('contrast-125');
+        document.body.classList.add('text-[1.05rem]');
+        if (icon) icon.classList.add('text-primary');
+      } else {
+        document.documentElement.classList.remove('contrast-125');
+        document.body.classList.remove('text-[1.05rem]');
+        if (icon) icon.classList.remove('text-primary');
+      }
+    }
+
+    // Modal listeners
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCaseView('A');
+
+      const modal = document.getElementById('research-modal');
+      const openBtn = document.getElementById('open-research-modal');
+      const closeBtn = document.getElementById('close-research-modal');
+      const closeBtn2 = document.getElementById('close-research-btn');
+      const navAboutBtn = document.getElementById('nav-about-btn');
+
+      const openModal = () => {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      };
+
+      const closeModal = () => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      };
+
+      if (openBtn) openBtn.addEventListener('click', openModal);
+      if (navAboutBtn) navAboutBtn.addEventListener('click', openModal);
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (closeBtn2) closeBtn2.addEventListener('click', closeModal);
+
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeModal();
+        });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModal();
+        }
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-lg border-t border-surface-container-high/40"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col gap-space-xs text-left"><p class="font-body-sm text-body-sm text-on-surface-variant">NoticeCheck Procedural Review &amp; Statutory Compliance Demonstration Environment</p><p class="font-label-xs text-label-xs text-outline">Academic &amp; Clinical Legal Education Demo · Not Official Legal Advice or Representation</p></div><div class="flex items-center gap-space-lg font-code-citation text-code-citation text-on-surface-variant"><span class="inline-flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary"></span>GSTN Spec v3.4 Compliant</span><span>Central Goods and Services Tax Act, 2017</span></div></div></footer><script>
+function toggleRQ2View(mode) {
+  const ftEl = document.getElementById('rq2-view-ft');
+  const baseEl = document.getElementById('rq2-view-base');
+  const sideEl = document.getElementById('rq2-view-side');
+  const btnFt = document.getElementById('rq2-btn-ft');
+  const btnBase = document.getElementById('rq2-btn-base');
+  const btnSide = document.getElementById('rq2-btn-side');
+  const note = document.getElementById('rq2-footer-note');
+  const tag = document.getElementById('rq2-status-tag');
+
+  [ftEl, baseEl, sideEl].forEach(el => el && el.classList.add('hidden'));
+  [btnFt, btnBase, btnSide].forEach(btn => {
+    if (btn) {
+      btn.className = 'px-2 py-1 rounded font-label-xs text-label-xs text-on-surface-variant hover:text-on-surface transition-all';
+    }
+  });
+
+  if (mode === 'ft') {
+    if (ftEl) ftEl.classList.remove('hidden');
+    if (btnFt) btnFt.className = 'px-2 py-1 rounded font-label-xs text-label-xs bg-primary-container text-on-primary-container font-bold transition-all';
+    if (note) note.textContent = 'Fine-tuned adapter explicitly records unfulfilled statutory prerequisites as NULL';
+    if (tag) { tag.textContent = 'Zero Hallucinations'; tag.className = 'text-tertiary font-bold'; }
+  } else if (mode === 'base') {
+    if (baseEl) baseEl.classList.remove('hidden');
+    if (btnBase) btnBase.className = 'px-2 py-1 rounded font-label-xs text-label-xs bg-error-container text-on-error-container font-bold transition-all';
+    if (note) note.textContent = 'Base Qwen hallucinates hearing date (15.07.2024) to satisfy default schema';
+    if (tag) { tag.textContent = '14.2% Hallucination Rate'; tag.className = 'text-error font-bold'; }
+  } else if (mode === 'side') {
+    if (sideEl) sideEl.classList.remove('hidden');
+    if (btnSide) btnSide.className = 'px-2 py-1 rounded font-label-xs text-label-xs bg-surface-container-highest text-primary font-bold transition-all';
+    if (note) note.textContent = 'Comparison: Preserved NULLs with quotes vs fabricated dates';
+    if (tag) { tag.textContent = 'Ablation Active'; tag.className = 'text-secondary font-bold'; }
+  }
+}
+
+function toggleRQ1View(mode) {
+  const plainPanel = document.getElementById('rq1-plain-panel');
+  const checksContainer = document.getElementById('case-checks-container');
+  const btnNc = document.getElementById('rq1-btn-nc');
+  const btnPlain = document.getElementById('rq1-btn-plain');
+  const btnSide = document.getElementById('rq1-btn-side');
+
+  [btnNc, btnPlain, btnSide].forEach(btn => {
+    if (btn) {
+      btn.className = 'px-space-sm py-1 rounded font-label-xs text-label-xs text-on-surface-variant hover:text-on-surface transition-all';
+    }
+  });
+
+  if (mode === 'nc') {
+    if (btnNc) btnNc.className = 'px-space-sm py-1 rounded font-label-xs text-label-xs bg-primary-container text-on-primary-container font-bold transition-all';
+    if (plainPanel) plainPanel.classList.add('hidden');
+    if (checksContainer) checksContainer.classList.remove('hidden');
+  } else if (mode === 'plain') {
+    if (btnPlain) btnPlain.className = 'px-space-sm py-1 rounded font-label-xs text-label-xs bg-error-container text-on-error-container font-bold transition-all';
+    if (plainPanel) plainPanel.classList.remove('hidden');
+    if (checksContainer) checksContainer.classList.add('hidden');
+  } else if (mode === 'side') {
+    if (btnSide) btnSide.className = 'px-space-sm py-1 rounded font-label-xs text-label-xs bg-surface-container-highest text-primary font-bold transition-all';
+    if (plainPanel) plainPanel.classList.remove('hidden');
+    if (checksContainer) checksContainer.classList.remove('hidden');
+  }
+}
+</script>
+
+<script src="/demo.js"></script>
+</body></html>
