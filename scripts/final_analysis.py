@@ -164,6 +164,43 @@ def fresh_check():
     return res
 
 
+SYN = [("syn_b0", "B0 rules"), ("syn_b1", "B1 Qwen3-8B, record only"), ("syn_b2", "B2 Gemini + statute"),
+       ("syn_nc", "NoticeCheck (Qwen3-8B)"), ("syn_nc_gemini", "NoticeCheck with Gemini")]
+SYN_PAIRS = [("syn_nc", "syn_b1"), ("syn_nc", "syn_b2"), ("syn_nc", "syn_b0"), ("syn_nc_gemini", "syn_b2"), ("syn_nc_gemini", "syn_nc")]
+
+
+def synthetic():
+    """Synthetic stress set (data/synthetic): scores and paired comparisons, for the runs that exist."""
+    res = {"systems": {}, "comparisons": {}, "comparisons_strict": {}}
+    gold, split = "data/synthetic/records.jsonl", "data/splits/synthetic.txt"
+    for run, label in SYN:
+        if not (ROOT / "runs" / run / "outputs.jsonl").exists():
+            continue
+        out = ROOT / "runs" / run / "score_synthetic.json"
+        subprocess.run([sys.executable, "-m", "eval.score", "--gold", gold, "--run", f"runs/{run}", "--split", split,
+                        "--view", "full_record", "--strict", "--no-unargued-as-rejected", "--out", str(out)],
+                       cwd=ROOT, check=True, capture_output=True)
+        v = json.load(open(out))["views"]["full_record"]
+        o = v["defects"]["overall"]
+        res["systems"][run] = {"label": label, "overall": o, "overall_strict": v["defects_strict"]["overall"],
+                               "false_alarm_rate_clean": o["false_alarm"] / (o["false_alarm"] + o["true_negative"]),
+                               "rule_detectable": v["defects"]["rule_detectable"], "reasoning_dependent": v["defects"]["reasoning_dependent"],
+                               "by_type": {t: x for t, x in v["defects"]["by_type"].items() if x["tp"] + x["miss"] + x["false_alarm"]}}
+    for a, b in SYN_PAIRS:
+        if a in res["systems"] and b in res["systems"]:
+            for strict, key in ((False, "comparisons"), (True, "comparisons_strict")):
+                out = subprocess.run([sys.executable, "-m", "scripts.compare_runs", "--system", f"runs/{a}", "--baseline", f"runs/{b}",
+                                      "--gold", gold, "--split", split] + (["--strict"] if strict else []),
+                                     cwd=ROOT, capture_output=True, text=True).stdout
+                r = {}
+                for line in out.splitlines():
+                    parts = line.split()
+                    if parts and parts[0] in ("f1", "recall", "precision", "false_alarms"):
+                        r[parts[0]] = {"diff": float(parts[1]), "ci95": [float(parts[4].strip("[,")), float(parts[5].strip("]"))]}
+                res[key][f"{a} - {b}"] = r
+    return res
+
+
 def fmt(x, nd=2):
     return "–" if x is None else (f"{x:.{nd}f}" if isinstance(x, float) else str(x))
 
@@ -204,6 +241,7 @@ def main():
     summary["rq2_extraction_repaired"] = {sp: json.load(open(ROOT / f"runs/rq2_scores_{sp}_repaired.json")) for sp in ("test", "heldout")}
     summary["rq2_training"] = {k: v for k, v in json.load(open(ROOT / "runs/rq2_lora/train_log.json")).items() if k != "log_history"}
     summary["fresh_check"] = fresh_check()
+    summary["synthetic"] = synthetic()
     gold = jl(ROOT / "data/gold/records.jsonl")
     u = lambda n: n.get("value") if isinstance(n, dict) else n
     summary["dataset"] = {
@@ -357,10 +395,30 @@ def write_md(S):
           f"- Agreement: Cohen's κ {ds['agreement']['kappa_overall']} on {ds['agreement']['n_complaints']} complaints in {ds['agreement']['n_double_reviewed_cases']} double-reviewed cases "
           f"({ds['agreement']['kappa_without_ai_assisted_reviewer']} without the reviewer who used AI).",
           "- Courts: " + ", ".join(f"{k} {v}" for k, v in sorted(ds["courts"].items(), key=lambda x: -x[1])) + ".", ""]
+    sy2 = S.get("synthetic", {})
+    if sy2.get("systems"):
+        L += ["## 13. Synthetic stress set (100 records: 56 planted defects, 644 clean labelled checks)", "",
+              "| System | F1 | Precision | Recall | Strict F1 | Wrong-section hits | False alarms on clean checks | Unargued flags | Rule-type F1 | Model-judged F1 |",
+              "|---|---|---|---|---|---|---|---|---|---|"]
+        for run, v in sy2["systems"].items():
+            o, os_ = v["overall"], v["overall_strict"]
+            L.append(f"| {v['label']} | {fmt(o['f1'])} | {fmt(o['precision'])} | {fmt(o['recall'])} | "
+                     f"{'n/a' if run == 'syn_b0' else fmt(os_['f1'])} | {'–' if run == 'syn_b0' else os_['wrong_provision']} | "
+                     f"{o['false_alarm']} ({v['false_alarm_rate_clean']:.1%}) | {o['flags_on_unargued']} | "
+                     f"{fmt(v['rule_detectable']['f1'])} | {fmt(v['reasoning_dependent']['f1'])} |")
+        L += ["", "| Comparison | ΔF1 [95% CI] | Δ strict F1 [95% CI] | Δ false alarms [95% CI] |", "|---|---|---|---|"]
+        for k, c in sy2["comparisons"].items():
+            cs_ = sy2["comparisons_strict"][k]
+            L.append(f"| {k} | {c['f1']['diff']:+.3f} [{c['f1']['ci95'][0]:+.3f}, {c['f1']['ci95'][1]:+.3f}] | "
+                     f"{cs_['f1']['diff']:+.3f} [{cs_['f1']['ci95'][0]:+.3f}, {cs_['f1']['ci95'][1]:+.3f}] | "
+                     f"{c['false_alarms']['diff']:+.0f} [{c['false_alarms']['ci95'][0]:+.0f}, {c['false_alarms']['ci95'][1]:+.0f}] |")
+        L += ["", "By type (hits / planted, false alarms): " + "; ".join(
+            f"{v['label']}: " + ", ".join(f"{t} {x['tp']}/{x['tp'] + x['miss']} fa{x['false_alarm']}" for t, x in v["by_type"].items())
+            for v in sy2["systems"].values()), ""]
     comp_path = ROOT / "runs/final/components.json"
     if comp_path.exists():
         C = json.load(open(comp_path, encoding="utf-8"))
-        L += ["## 12. Component metrics (from traces; `scripts/component_metrics.py`)", "", "**Tool calling** (calls the model chose to make):", "",
+        L += ["## 14. Component metrics (from traces; `scripts/component_metrics.py`)", "", "**Tool calling** (calls the model chose to make):", "",
               "| Run | Tool calls | Valid arguments | Argument errors | Correct refusals (FY 2024-25+, s.74A) | Limitation calculator used when applicable |",
               "|---|---|---|---|---|---|"]
         for r, t in C["tools"].items():

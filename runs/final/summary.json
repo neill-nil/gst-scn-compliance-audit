@@ -8647,6 +8647,1004 @@
    "r4"
   ]
  },
+ "synthetic": {
+  "systems": {
+   "syn_b0": {
+    "label": "B0 rules",
+    "overall": {
+     "tp": 14,
+     "false_alarm": 0,
+     "wrong_provision": 0,
+     "miss": 42,
+     "true_negative": 644,
+     "flags_on_unargued": 0,
+     "precision": 1.0,
+     "recall": 0.25,
+     "f1": 0.4,
+     "false_alarm_rate": 0.0
+    },
+    "overall_strict": {
+     "tp": 0,
+     "false_alarm": 0,
+     "wrong_provision": 14,
+     "miss": 42,
+     "true_negative": 644,
+     "flags_on_unargued": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": null,
+     "false_alarm_rate": 0.0
+    },
+    "false_alarm_rate_clean": 0.0,
+    "rule_detectable": {
+     "tp": 14,
+     "false_alarm": 0,
+     "wrong_provision": 0,
+     "miss": 18,
+     "true_negative": 368,
+     "flags_on_unargued": 0,
+     "precision": 1.0,
+     "recall": 0.4375,
+     "f1": 0.6086956521739131,
+     "false_alarm_rate": 0.0
+    },
+    "reasoning_dependent": {
+     "tp": 0,
+     "false_alarm": 0,
+     "wrong_provision": 0,
+     "miss": 24,
+     "true_negative": 276,
+     "flags_on_unargued": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null,
+     "false_alarm_rate": 0.0
+    },
+    "by_type": {
+     "hearing_75_4": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "reply_not_considered": {
+      "tp": 0,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 8,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "false_alarm_rate": 0.0
+     },
+     "non_speaking_order": {
+      "tp": 0,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 8,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "false_alarm_rate": 0.0
+     },
+     "service_169": {
+      "tp": 4,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 4,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "false_alarm_rate": 0.0
+     },
+     "signature": {
+      "tp": 2,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 6,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4,
+      "false_alarm_rate": 0.0
+     },
+     "summary_only": {
+      "tp": 0,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 8,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "false_alarm_rate": 0.0
+     },
+     "limitation": {
+      "tp": 0,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 8,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "false_alarm_rate": 0.0
+     }
+    }
+   },
+   "syn_b1": {
+    "label": "B1 Qwen3-8B, record only",
+    "overall": {
+     "tp": 42,
+     "false_alarm": 15,
+     "wrong_provision": 0,
+     "miss": 14,
+     "true_negative": 629,
+     "flags_on_unargued": 1,
+     "precision": 0.7368421052631579,
+     "recall": 0.75,
+     "f1": 0.743362831858407,
+     "false_alarm_rate": 0.023291925465838508
+    },
+    "overall_strict": {
+     "tp": 14,
+     "false_alarm": 15,
+     "wrong_provision": 28,
+     "miss": 14,
+     "true_negative": 629,
+     "flags_on_unargued": 1,
+     "precision": 0.24561403508771928,
+     "recall": 0.25,
+     "f1": 0.24778761061946902,
+     "false_alarm_rate": 0.023291925465838508
+    },
+    "false_alarm_rate_clean": 0.023291925465838508,
+    "rule_detectable": {
+     "tp": 22,
+     "false_alarm": 11,
+     "wrong_provision": 0,
+     "miss": 10,
+     "true_negative": 357,
+     "flags_on_unargued": 0,
+     "precision": 0.6666666666666666,
+     "recall": 0.6875,
+     "f1": 0.676923076923077,
+     "false_alarm_rate": 0.029891304347826088
+    },
+    "reasoning_dependent": {
+     "tp": 20,
+     "false_alarm": 4,
+     "wrong_provision": 0,
+     "miss": 4,
+     "true_negative": 272,
+     "flags_on_unargued": 1,
+     "precision": 0.8333333333333334,
+     "recall": 0.8333333333333334,
+     "f1": 0.8333333333333334,
+     "false_alarm_rate": 0.014492753623188406
+    },
+    "by_type": {
+     "hearing_75_4": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "reply_not_considered": {
+      "tp": 8,
+      "false_alarm": 1,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 91,
+      "flags_on_unargued": 0,
+      "precision": 0.8888888888888888,
+      "recall": 1.0,
+      "f1": 0.9411764705882353,
+      "false_alarm_rate": 0.010869565217391304
+     },
+     "non_speaking_order": {
+      "tp": 4,
+      "false_alarm": 3,
+      "wrong_provision": 0,
+      "miss": 4,
+      "true_negative": 89,
+      "flags_on_unargued": 0,
+      "precision": 0.5714285714285714,
+      "recall": 0.5,
+      "f1": 0.5333333333333333,
+      "false_alarm_rate": 0.03260869565217391
+     },
+     "service_169": {
+      "tp": 5,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 3,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1": 0.7692307692307693,
+      "false_alarm_rate": 0.0
+     },
+     "signature": {
+      "tp": 7,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 1,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1": 0.9333333333333333,
+      "false_alarm_rate": 0.0
+     },
+     "summary_only": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "limitation": {
+      "tp": 2,
+      "false_alarm": 11,
+      "wrong_provision": 0,
+      "miss": 6,
+      "true_negative": 81,
+      "flags_on_unargued": 0,
+      "precision": 0.15384615384615385,
+      "recall": 0.25,
+      "f1": 0.1904761904761905,
+      "false_alarm_rate": 0.11956521739130435
+     }
+    }
+   },
+   "syn_b2": {
+    "label": "B2 Gemini + statute",
+    "overall": {
+     "tp": 47,
+     "false_alarm": 0,
+     "wrong_provision": 0,
+     "miss": 9,
+     "true_negative": 644,
+     "flags_on_unargued": 0,
+     "precision": 1.0,
+     "recall": 0.8392857142857143,
+     "f1": 0.9126213592233009,
+     "false_alarm_rate": 0.0
+    },
+    "overall_strict": {
+     "tp": 30,
+     "false_alarm": 0,
+     "wrong_provision": 17,
+     "miss": 9,
+     "true_negative": 644,
+     "flags_on_unargued": 0,
+     "precision": 0.6382978723404256,
+     "recall": 0.5357142857142857,
+     "f1": 0.5825242718446602,
+     "false_alarm_rate": 0.0
+    },
+    "false_alarm_rate_clean": 0.0,
+    "rule_detectable": {
+     "tp": 23,
+     "false_alarm": 0,
+     "wrong_provision": 0,
+     "miss": 9,
+     "true_negative": 368,
+     "flags_on_unargued": 0,
+     "precision": 1.0,
+     "recall": 0.71875,
+     "f1": 0.8363636363636363,
+     "false_alarm_rate": 0.0
+    },
+    "reasoning_dependent": {
+     "tp": 24,
+     "false_alarm": 0,
+     "wrong_provision": 0,
+     "miss": 0,
+     "true_negative": 276,
+     "flags_on_unargued": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "false_alarm_rate": 0.0
+    },
+    "by_type": {
+     "hearing_75_4": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "reply_not_considered": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "non_speaking_order": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "service_169": {
+      "tp": 7,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 1,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1": 0.9333333333333333,
+      "false_alarm_rate": 0.0
+     },
+     "signature": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "summary_only": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "limitation": {
+      "tp": 0,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 8,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "false_alarm_rate": 0.0
+     }
+    }
+   },
+   "syn_nc": {
+    "label": "NoticeCheck (Qwen3-8B)",
+    "overall": {
+     "tp": 53,
+     "false_alarm": 7,
+     "wrong_provision": 0,
+     "miss": 3,
+     "true_negative": 637,
+     "flags_on_unargued": 3,
+     "precision": 0.8833333333333333,
+     "recall": 0.9464285714285714,
+     "f1": 0.9137931034482758,
+     "false_alarm_rate": 0.010869565217391304
+    },
+    "overall_strict": {
+     "tp": 53,
+     "false_alarm": 7,
+     "wrong_provision": 0,
+     "miss": 3,
+     "true_negative": 637,
+     "flags_on_unargued": 3,
+     "precision": 0.8833333333333333,
+     "recall": 0.9464285714285714,
+     "f1": 0.9137931034482758,
+     "false_alarm_rate": 0.010869565217391304
+    },
+    "false_alarm_rate_clean": 0.010869565217391304,
+    "rule_detectable": {
+     "tp": 32,
+     "false_alarm": 0,
+     "wrong_provision": 0,
+     "miss": 0,
+     "true_negative": 368,
+     "flags_on_unargued": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "false_alarm_rate": 0.0
+    },
+    "reasoning_dependent": {
+     "tp": 21,
+     "false_alarm": 7,
+     "wrong_provision": 0,
+     "miss": 3,
+     "true_negative": 269,
+     "flags_on_unargued": 3,
+     "precision": 0.75,
+     "recall": 0.875,
+     "f1": 0.8076923076923077,
+     "false_alarm_rate": 0.025362318840579712
+    },
+    "by_type": {
+     "hearing_75_4": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "reply_not_considered": {
+      "tp": 7,
+      "false_alarm": 1,
+      "wrong_provision": 0,
+      "miss": 1,
+      "true_negative": 91,
+      "flags_on_unargued": 0,
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1": 0.875,
+      "false_alarm_rate": 0.010869565217391304
+     },
+     "non_speaking_order": {
+      "tp": 6,
+      "false_alarm": 6,
+      "wrong_provision": 0,
+      "miss": 2,
+      "true_negative": 86,
+      "flags_on_unargued": 0,
+      "precision": 0.5,
+      "recall": 0.75,
+      "f1": 0.6,
+      "false_alarm_rate": 0.06521739130434782
+     },
+     "service_169": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "signature": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "summary_only": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "limitation": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     }
+    }
+   },
+   "syn_nc_gemini": {
+    "label": "NoticeCheck with Gemini",
+    "overall": {
+     "tp": 56,
+     "false_alarm": 1,
+     "wrong_provision": 0,
+     "miss": 0,
+     "true_negative": 643,
+     "flags_on_unargued": 6,
+     "precision": 0.9824561403508771,
+     "recall": 1.0,
+     "f1": 0.9911504424778761,
+     "false_alarm_rate": 0.0015527950310559005
+    },
+    "overall_strict": {
+     "tp": 56,
+     "false_alarm": 1,
+     "wrong_provision": 0,
+     "miss": 0,
+     "true_negative": 643,
+     "flags_on_unargued": 6,
+     "precision": 0.9824561403508771,
+     "recall": 1.0,
+     "f1": 0.9911504424778761,
+     "false_alarm_rate": 0.0015527950310559005
+    },
+    "false_alarm_rate_clean": 0.0015527950310559005,
+    "rule_detectable": {
+     "tp": 32,
+     "false_alarm": 0,
+     "wrong_provision": 0,
+     "miss": 0,
+     "true_negative": 368,
+     "flags_on_unargued": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "false_alarm_rate": 0.0
+    },
+    "reasoning_dependent": {
+     "tp": 24,
+     "false_alarm": 1,
+     "wrong_provision": 0,
+     "miss": 0,
+     "true_negative": 275,
+     "flags_on_unargued": 6,
+     "precision": 0.96,
+     "recall": 1.0,
+     "f1": 0.9795918367346939,
+     "false_alarm_rate": 0.0036231884057971015
+    },
+    "by_type": {
+     "hearing_75_4": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "reply_not_considered": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "non_speaking_order": {
+      "tp": 8,
+      "false_alarm": 1,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 91,
+      "flags_on_unargued": 0,
+      "precision": 0.8888888888888888,
+      "recall": 1.0,
+      "f1": 0.9411764705882353,
+      "false_alarm_rate": 0.010869565217391304
+     },
+     "service_169": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "signature": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "summary_only": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     },
+     "limitation": {
+      "tp": 8,
+      "false_alarm": 0,
+      "wrong_provision": 0,
+      "miss": 0,
+      "true_negative": 92,
+      "flags_on_unargued": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_alarm_rate": 0.0
+     }
+    }
+   }
+  },
+  "comparisons": {
+   "syn_nc - syn_b1": {
+    "f1": {
+     "diff": 0.17,
+     "ci95": [
+      0.075,
+      0.272
+     ]
+    },
+    "recall": {
+     "diff": 0.196,
+     "ci95": [
+      0.087,
+      0.312
+     ]
+    },
+    "precision": {
+     "diff": 0.146,
+     "ci95": [
+      0.017,
+      0.271
+     ]
+    },
+    "false_alarms": {
+     "diff": -8.0,
+     "ci95": [
+      -18.0,
+      1.0
+     ]
+    }
+   },
+   "syn_nc - syn_b2": {
+    "f1": {
+     "diff": 0.001,
+     "ci95": [
+      -0.078,
+      0.087
+     ]
+    },
+    "recall": {
+     "diff": 0.107,
+     "ci95": [
+      -0.017,
+      0.226
+     ]
+    },
+    "precision": {
+     "diff": -0.117,
+     "ci95": [
+      -0.186,
+      -0.043
+     ]
+    },
+    "false_alarms": {
+     "diff": 7.0,
+     "ci95": [
+      2.0,
+      13.0
+     ]
+    }
+   },
+   "syn_nc - syn_b0": {
+    "f1": {
+     "diff": 0.514,
+     "ci95": [
+      0.386,
+      0.66
+     ]
+    },
+    "recall": {
+     "diff": 0.696,
+     "ci95": [
+      0.571,
+      0.818
+     ]
+    },
+    "precision": {
+     "diff": -0.117,
+     "ci95": [
+      -0.186,
+      -0.043
+     ]
+    },
+    "false_alarms": {
+     "diff": 7.0,
+     "ci95": [
+      2.0,
+      13.0
+     ]
+    }
+   },
+   "syn_nc_gemini - syn_b2": {
+    "f1": {
+     "diff": 0.079,
+     "ci95": [
+      0.023,
+      0.143
+     ]
+    },
+    "recall": {
+     "diff": 0.161,
+     "ci95": [
+      0.07,
+      0.262
+     ]
+    },
+    "precision": {
+     "diff": -0.018,
+     "ci95": [
+      -0.056,
+      0.0
+     ]
+    },
+    "false_alarms": {
+     "diff": 1.0,
+     "ci95": [
+      0.0,
+      3.0
+     ]
+    }
+   },
+   "syn_nc_gemini - syn_nc": {
+    "f1": {
+     "diff": 0.077,
+     "ci95": [
+      0.027,
+      0.128
+     ]
+    },
+    "recall": {
+     "diff": 0.054,
+     "ci95": [
+      0.0,
+      0.12
+     ]
+    },
+    "precision": {
+     "diff": 0.099,
+     "ci95": [
+      0.018,
+      0.175
+     ]
+    },
+    "false_alarms": {
+     "diff": -6.0,
+     "ci95": [
+      -12.0,
+      -1.0
+     ]
+    }
+   }
+  },
+  "comparisons_strict": {
+   "syn_nc - syn_b1": {
+    "f1": {
+     "diff": 0.666,
+     "ci95": [
+      0.554,
+      0.772
+     ]
+    },
+    "recall": {
+     "diff": 0.696,
+     "ci95": [
+      0.574,
+      0.815
+     ]
+    },
+    "precision": {
+     "diff": 0.638,
+     "ci95": [
+      0.522,
+      0.751
+     ]
+    },
+    "false_alarms": {
+     "diff": -8.0,
+     "ci95": [
+      -18.0,
+      1.0
+     ]
+    }
+   },
+   "syn_nc - syn_b2": {
+    "f1": {
+     "diff": 0.331,
+     "ci95": [
+      0.196,
+      0.473
+     ]
+    },
+    "recall": {
+     "diff": 0.411,
+     "ci95": [
+      0.26,
+      0.556
+     ]
+    },
+    "precision": {
+     "diff": 0.245,
+     "ci95": [
+      0.092,
+      0.397
+     ]
+    },
+    "false_alarms": {
+     "diff": 7.0,
+     "ci95": [
+      2.0,
+      13.0
+     ]
+    }
+   },
+   "syn_nc - syn_b0": {
+    "f1": {
+     "diff": 0.914,
+     "ci95": [
+      0.865,
+      0.959
+     ]
+    },
+    "recall": {
+     "diff": 0.946,
+     "ci95": [
+      0.88,
+      1.0
+     ]
+    },
+    "precision": {
+     "diff": 0.883,
+     "ci95": [
+      0.814,
+      0.957
+     ]
+    },
+    "false_alarms": {
+     "diff": 7.0,
+     "ci95": [
+      2.0,
+      13.0
+     ]
+    }
+   },
+   "syn_nc_gemini - syn_b2": {
+    "f1": {
+     "diff": 0.409,
+     "ci95": [
+      0.283,
+      0.542
+     ]
+    },
+    "recall": {
+     "diff": 0.464,
+     "ci95": [
+      0.333,
+      0.593
+     ]
+    },
+    "precision": {
+     "diff": 0.344,
+     "ci95": [
+      0.202,
+      0.49
+     ]
+    },
+    "false_alarms": {
+     "diff": 1.0,
+     "ci95": [
+      0.0,
+      3.0
+     ]
+    }
+   },
+   "syn_nc_gemini - syn_nc": {
+    "f1": {
+     "diff": 0.077,
+     "ci95": [
+      0.027,
+      0.128
+     ]
+    },
+    "recall": {
+     "diff": 0.054,
+     "ci95": [
+      0.0,
+      0.12
+     ]
+    },
+    "precision": {
+     "diff": 0.099,
+     "ci95": [
+      0.018,
+      0.175
+     ]
+    },
+    "false_alarms": {
+     "diff": -6.0,
+     "ci95": [
+      -12.0,
+      -1.0
+     ]
+    }
+   }
+  }
+ },
  "dataset": {
   "test_cases": 125,
   "heldout_cases": 12,

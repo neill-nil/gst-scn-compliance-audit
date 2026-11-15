@@ -1,0 +1,26 @@
+25 cases to run (0 already done) -> /kaggle/working/repo/runs/syn_nc_0
+[1/25] SYN0001 {'no_defect': 10, 'cant_tell': 2, 'defect': 1} calls=2 272s
+[2/25] SYN0005 {'no_defect': 11, 'cant_tell': 1, 'defect': 1} calls=2 165s
+[3/25] SYN0009 {'no_defect': 11, 'cant_tell': 1, 'defect': 1} calls=2 100s
+[4/25] SYN0013 {'no_defect': 12, 'cant_tell': 1} calls=2 102s
+[5/25] SYN0017 {'no_defect': 10, 'cant_tell': 2, 'defect': 1} calls=2 152s
+[6/25] SYN0021 {'no_defect': 10, 'cant_tell': 2, 'defect': 1} calls=2 178s
+[7/25] SYN0025 {'no_defect': 12, 'cant_tell': 1} calls=2 114s
+[8/25] SYN0029 {'no_defect': 11, 'cant_tell': 1, 'defect': 1} calls=2 107s
+[9/25] SYN0033 {'no_defect': 10, 'cant_tell': 1, 'defect': 2} calls=2 237s
+[10/25] SYN0037 {'no_defect': 9, 'cant_tell': 4} calls=2 243s
+[11/25] SYN0041 {'no_defect': 12, 'cant_tell': 1} calls=2 153s
+[12/25] SYN0045 {'no_defect': 11, 'cant_tell': 2} calls=2 170s
+[13/25] SYN0049 {'no_defect': 10, 'cant_tell': 2, 'defect': 1} calls=2 194s
+[14/25] SYN0053 {'no_defect': 11, 'cant_tell': 2} calls=2 173s
+[15/25] SYN0057 {'no_defect': 11, 'cant_tell': 2} calls=2 161s
+[16/25] SYN0061 {'no_defect': 11, 'cant_tell': 2} calls=2 235s
+[17/25] SYN0065 {'no_defect': 8, 'cant_tell': 5} calls=2 152s
+[18/25] SYN0069 {'no_defect': 8, 'cant_tell': 5} calls=2 220s
+[19/25] SYN0073 {'no_defect': 11, 'cant_tell': 1, 'defect': 1} calls=2 165s
+[20/25] SYN0077 {'no_defect': 12, 'cant_tell': 1} calls=2 162s
+[21/25] SYN0081 {'no_defect': 10, 'cant_tell': 2, 'defect': 1} calls=2 159s
+[22/25] SYN0085 {'no_defect': 10, 'cant_tell': 1, 'defect': 2} calls=2 180s
+[23/25] SYN0089 {'no_defect': 12, 'cant_tell': 1} calls=2 137s
+[24/25] SYN0093 {'defect': 1, 'cant_tell': 4, 'no_defect': 8} calls=2 148s
+[25/25] SYN0097 {'no_defect': 12, 'cant_tell': 1} calls=2 207s

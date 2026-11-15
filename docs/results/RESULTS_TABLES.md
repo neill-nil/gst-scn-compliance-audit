@@ -214,7 +214,27 @@ Defect calls on test: checked facts 84, fine-tuned extractor 70, untrained extra
 - Agreement: Cohen's κ 0.725 on 58 complaints in 35 double-reviewed cases (0.75 without the reviewer who used AI).
 - Courts: Madras 52, Delhi 27, Allahabad 18, Karnataka 12, Bombay 10, Orissa 6, Calcutta 6, Patna 2, Jharkhand 2, Uttarakhand 1, Gauhati 1.
 
-## 12. Component metrics (from traces; `scripts/component_metrics.py`)
+## 13. Synthetic stress set (100 records: 56 planted defects, 644 clean labelled checks)
+
+| System | F1 | Precision | Recall | Strict F1 | Wrong-section hits | False alarms on clean checks | Unargued flags | Rule-type F1 | Model-judged F1 |
+|---|---|---|---|---|---|---|---|---|---|
+| B0 rules | 0.40 | 1.00 | 0.25 | n/a | – | 0 (0.0%) | 0 | 0.61 | – |
+| B1 Qwen3-8B, record only | 0.74 | 0.74 | 0.75 | 0.25 | 28 | 15 (2.3%) | 1 | 0.68 | 0.83 |
+| B2 Gemini + statute | 0.91 | 1.00 | 0.84 | 0.58 | 17 | 0 (0.0%) | 0 | 0.84 | 1.00 |
+| NoticeCheck (Qwen3-8B) | 0.91 | 0.88 | 0.95 | 0.91 | 0 | 7 (1.1%) | 3 | 1.00 | 0.81 |
+| NoticeCheck with Gemini | 0.99 | 0.98 | 1.00 | 0.99 | 0 | 1 (0.2%) | 6 | 1.00 | 0.98 |
+
+| Comparison | ΔF1 [95% CI] | Δ strict F1 [95% CI] | Δ false alarms [95% CI] |
+|---|---|---|---|
+| syn_nc - syn_b1 | +0.170 [+0.075, +0.272] | +0.666 [+0.554, +0.772] | -8 [-18, +1] |
+| syn_nc - syn_b2 | +0.001 [-0.078, +0.087] | +0.331 [+0.196, +0.473] | +7 [+2, +13] |
+| syn_nc - syn_b0 | +0.514 [+0.386, +0.660] | +0.914 [+0.865, +0.959] | +7 [+2, +13] |
+| syn_nc_gemini - syn_b2 | +0.079 [+0.023, +0.143] | +0.409 [+0.283, +0.542] | +1 [+0, +3] |
+| syn_nc_gemini - syn_nc | +0.077 [+0.027, +0.128] | +0.077 [+0.027, +0.128] | -6 [-12, -1] |
+
+By type (hits / planted, false alarms): B0 rules: hearing_75_4 8/8 fa0, reply_not_considered 0/8 fa0, non_speaking_order 0/8 fa0, service_169 4/8 fa0, signature 2/8 fa0, summary_only 0/8 fa0, limitation 0/8 fa0; B1 Qwen3-8B, record only: hearing_75_4 8/8 fa0, reply_not_considered 8/8 fa1, non_speaking_order 4/8 fa3, service_169 5/8 fa0, signature 7/8 fa0, summary_only 8/8 fa0, limitation 2/8 fa11; B2 Gemini + statute: hearing_75_4 8/8 fa0, reply_not_considered 8/8 fa0, non_speaking_order 8/8 fa0, service_169 7/8 fa0, signature 8/8 fa0, summary_only 8/8 fa0, limitation 0/8 fa0; NoticeCheck (Qwen3-8B): hearing_75_4 8/8 fa0, reply_not_considered 7/8 fa1, non_speaking_order 6/8 fa6, service_169 8/8 fa0, signature 8/8 fa0, summary_only 8/8 fa0, limitation 8/8 fa0; NoticeCheck with Gemini: hearing_75_4 8/8 fa0, reply_not_considered 8/8 fa0, non_speaking_order 8/8 fa1, service_169 8/8 fa0, signature 8/8 fa0, summary_only 8/8 fa0, limitation 8/8 fa0
+
+## 14. Component metrics (from traces; `scripts/component_metrics.py`)
 
 **Tool calling** (calls the model chose to make):
 
