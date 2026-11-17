@@ -14,6 +14,7 @@ const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, ch =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const nice = value => String(value || '').replaceAll('_', ' ').replace(/\b\w/g, x => x.toUpperCase());
 const norm = value => String(value || '').toLowerCase().replace(/\s+/g, ' ').trim();
+const defectSummary = (defects, contested) => `${defects} potential defect${defects === 1 ? '' : 's'} · ${contested} contested`;
 
 function setText(id, value) { const el = byId(id); if (el) el.textContent = value; }
 function findQuoteParagraph(quote) {
@@ -71,8 +72,15 @@ function renderFindings(findings, preliminary=false) {
   byId('case-checks-container').innerHTML = sorted.map(f => findingCard(f, preliminary)).join('');
 }
 
-function renderFacts() {
-  const rq2 = demoCase.rq2;
+function renderLiveFactsPanel(facts) {
+  let panel = byId('demo-facts-panel');
+  if (!panel) {
+    panel = document.createElement('details');
+    panel.id = 'demo-facts-panel';
+    panel.className = 'rounded-xl border border-surface-container-high bg-surface-container-low p-3 mb-3';
+    byId('case-checks-container').before(panel);
+  }
+  panel.classList.remove('hidden');
   const rows = [
     ['Provision', f => f?.provision],
     ['Financial years', f => f?.financial_years],
@@ -82,103 +90,58 @@ function renderFacts() {
     ['Order date', f => f?.order?.date],
   ];
   const value = node => node?.value === null || node?.value === undefined ? 'Unknown' : Array.isArray(node.value) ? node.value.join(', ') : String(node.value);
-  const tuned = rq2.fine_tuned?.facts;
-  const base = rq2.base?.facts;
-  const body = byId('rq2-table-body');
-  if (body) body.innerHTML = rows.map(([label, get]) => {
-    const t = get(tuned), b = get(base);
-    const para = t?.quote ? findQuoteParagraph(t.quote) : null;
-    const quote = t?.quote ? (para === null
-      ? escapeHtml(t.quote.slice(0, 130))
-      : `<button type="button" class="text-left text-primary hover:underline" onclick="demoShowParagraph(${para})">${escapeHtml(t.quote.slice(0, 130))} · ¶${para}</button>`)
+  const body = rows.map(([label, get]) => {
+    const node = get(facts);
+    const para = node?.quote ? findQuoteParagraph(node.quote) : null;
+    const quote = node?.quote ? (para === null
+      ? escapeHtml(node.quote.slice(0, 130))
+      : `<button type="button" class="text-left text-primary hover:underline" onclick="demoShowParagraph(${para})">${escapeHtml(node.quote.slice(0, 130))} · ¶${para}</button>`)
       : 'No quote supplied';
-    return `<tr class="border-b border-surface-container-high"><td class="p-2">${escapeHtml(label)}</td><td class="p-2">${base ? escapeHtml(value(b)) : 'Not run'}</td><td class="p-2">${escapeHtml(value(t))}</td><td class="p-2 text-xs text-outline">${quote}</td></tr>`;
+    return `<tr class="border-b border-surface-container-high"><td class="p-2">${escapeHtml(label)}</td><td class="p-2">${escapeHtml(value(node))}</td><td class="p-2 text-xs text-outline">${quote}</td></tr>`;
   }).join('');
-  const table = body?.closest('table');
-  if (table) {
-    const heads = table.querySelectorAll('th');
-    if (heads[1]) heads[1].textContent = base ? 'Base Qwen' : 'Base Qwen (not run)';
-    if (heads[2]) heads[2].textContent = demoCase.mode === 'live_gemini' ? 'Gemini (live)' : 'Fine-tuned Qwen (ours)';
-  }
-  const note = byId('stage-1-card')?.lastElementChild;
-  if (note && note !== body) note.textContent = 'This table uses saved extractor outputs. Unknown means the model did not supply a value. An absent date alone does not prove that no hearing occurred.';
+  panel.innerHTML = `<summary class="cursor-pointer font-semibold">Inspect Gemini-extracted facts</summary>
+    <p class="text-xs text-outline my-2">Live preview only. Quotes were checked for literal presence in the pasted judgment; a match does not establish the legal conclusion.</p>
+    <div class="overflow-x-auto"><table class="min-w-[480px] w-full text-left text-xs"><thead><tr class="border-b border-surface-container-high"><th class="p-2">Fact</th><th class="p-2">Gemini value</th><th class="p-2">Source quote</th></tr></thead><tbody>${body}</tbody></table></div>`;
 }
 
-function renderRQ2Panel() {
-  let panel = byId('demo-rq2-panel');
-  if (!panel) {
-    panel = document.createElement('details');
-    panel.id = 'demo-rq2-panel';
-    panel.className = 'rounded-xl border border-surface-container-high bg-surface-container-low p-3 mb-3';
-    byId('case-checks-container').before(panel);
-  }
-  const table = byId('rq2-table-body')?.closest('table')?.cloneNode(true);
-  table?.querySelector('#rq2-table-body')?.removeAttribute('id');
-  panel.replaceChildren();
-  const summary = document.createElement('summary');
-  summary.className = 'cursor-pointer font-semibold';
-  summary.textContent = demoCase.mode === 'live_gemini' ? 'Live · Inspect Gemini-extracted facts' : demoCase.rq2.base ? 'RQ2 · Compare extracted facts from the same judgment' : 'RQ2 · Inspect saved fine-tuned extraction';
-  const note = document.createElement('p');
-  note.className = 'text-xs text-outline my-2';
-  note.textContent = demoCase.mode === 'live_gemini'
-    ? 'Gemini replaces the fine-tuned Qwen extractor in this live preview. Literal quotes were checked against the pasted text; a matching quote alone does not establish the legal conclusion.'
-    : demoCase.rq2.base
-    ? 'Base and fine-tuned Qwen received the same raw judgment. Unknown means a date was not stated or not supplied; it does not prove an event never happened. This comparison is independent of RQ1.'
-    : 'This fresh case has a saved fine-tuned extractor output. A base extractor run is not available for this case.';
-  panel.append(summary, note);
-  if (table) {
-    const scroll = document.createElement('div');
-    scroll.className = 'overflow-x-auto';
-    table.classList.add('min-w-[540px]');
-    scroll.append(table);
-    panel.append(scroll);
-  }
-}
-
-function renderResearchComparison() {
+function renderCheckerComparison() {
   const control = byId('rq1-btn-nc')?.closest('.bg-surface-container-low');
   if (!control) return;
-  control.classList.toggle('hidden', !demoCase.rq1);
-  byId('rq1-plain-panel').classList.add('hidden');
-  if (!demoCase.rq1) return;
-  const shared = demoCase.rq1.input.record;
-  const plain = demoCase.rq1.plain.findings || [];
-  byId('rq1-plain-panel').innerHTML = `<p class="text-sm text-on-surface-variant mb-2">Plain Qwen was given the same human-checked fact record as NoticeCheck for this controlled comparison.</p>${plain.map(f => findingCard(f)).join('')}`;
-  const buttons = byId('rq1-btn-nc').parentElement;
-  if (!byId('rq1-btn-main')) {
-    const mainButton = document.createElement('button');
-    mainButton.id = 'rq1-btn-main';
-    mainButton.type = 'button';
-    mainButton.className = 'px-space-sm py-1 rounded font-label-xs text-label-xs text-on-surface-variant hover:text-on-surface';
-    mainButton.textContent = 'Full pipeline output';
-    mainButton.onclick = () => toggleRQ1View('main');
-    buttons.prepend(mainButton);
+  control.classList.toggle('hidden', !demoCase.comparison);
+  const plainPanel = byId('rq1-plain-panel');
+  plainPanel.classList.add('hidden');
+  if (!demoCase.comparison) {
+    byId('case-checks-container').classList.remove('hidden');
+    return;
   }
-  setText('rq1-btn-nc', 'NoticeCheck on checked facts');
-  setText('rq1-btn-plain', 'Plain Qwen on checked facts');
-  setText('rq1-btn-side', 'Compare both');
-  const description = control.querySelector('.font-body-sm');
-  if (description) description.textContent = `RQ1 compares both checkers on the same human-checked fact record: provision ${shared.provision?.value || 'unknown'}; ${shared.financial_years?.value?.join(', ') || 'tax period unknown'}. Full pipeline output uses the fine-tuned extractor.`;
+  const shared = demoCase.comparison.input.record;
+  const plain = demoCase.comparison.plain.findings || [];
+  control.innerHTML = `<div><strong class="text-sm">Compare the checker approaches</strong><p class="text-xs text-on-surface-variant mt-1">Both receive the same human-checked facts. The difference shown here comes from planning, tools, statutory checks and verification.</p><p class="text-xs text-outline mt-1">Provision: ${escapeHtml(shared.provision?.value || 'unknown')} · Financial years: ${escapeHtml((shared.financial_years?.value || []).join(', ') || 'unknown')}</p></div><div class="inline-flex flex-wrap p-0.5 bg-surface-container rounded-lg border border-surface-container-high/60"><button id="rq1-btn-nc" onclick="toggleRQ1View('nc')" type="button" class="px-2 py-1 rounded text-xs">NoticeCheck pipeline</button><button id="rq1-btn-plain" onclick="toggleRQ1View('plain')" type="button" class="px-2 py-1 rounded text-xs">Plain Qwen3-8B</button><button id="rq1-btn-side" onclick="toggleRQ1View('side')" type="button" class="px-2 py-1 rounded text-xs">Compare both</button></div>`;
+  plainPanel.innerHTML = `<h4 class="font-semibold text-secondary">Plain Qwen3-8B · same fact record, no NoticeCheck tools</h4>${plain.map(f => findingCard(f)).join('')}`;
   toggleRQ1View = mode => {
     const panel = byId('rq1-plain-panel');
     const checks = byId('case-checks-container');
-    panel.classList.toggle('hidden', mode === 'nc' || mode === 'main');
+    panel.classList.toggle('hidden', mode === 'nc');
     checks.classList.toggle('hidden', mode === 'plain');
-    if (mode === 'main') renderFindings(demoCase.main.findings);
-    if (mode === 'nc' || mode === 'side') renderFindings(demoCase.rq1.noticecheck.findings);
-    const selected = mode === 'main' ? demoCase.main : mode === 'plain' ? demoCase.rq1.plain : demoCase.rq1.noticecheck;
-    const counts = {defect: 0, contested: 0};
-    for (const finding of selected.findings || []) if (finding.verdict in counts) counts[finding.verdict]++;
-    setText('summary-defect-badge', `${counts.defect} potential defects · ${counts.contested} contested`);
-    setText('summary-period', mode === 'main' ? `Saved ${demoCase.run} run · ${demoCase.id}` : `Controlled RQ1 comparison · ${demoCase.id}`);
-    setText('summary-text', mode === 'main' ? 'Full pipeline output: fine-tuned extraction followed by NoticeCheck. Play the recorded run below.' : 'Controlled RQ1: both checkers received the same human-checked facts. Their outputs are independent of the extractor comparison.');
-    for (const key of ['main','nc','plain','side']) {
+    if (mode !== 'plain') renderFindings(demoCase.main.findings);
+    const tally = findings => ({defects: findings.filter(f => f.verdict === 'defect').length,
+                                contested: findings.filter(f => f.verdict === 'contested').length});
+    const nc = tally(demoCase.main.findings);
+    const baseline = tally(plain);
+    setText('summary-defect-badge', mode === 'side'
+      ? `NoticeCheck: ${defectSummary(nc.defects, nc.contested)} · Plain Qwen: ${defectSummary(baseline.defects, baseline.contested)}`
+      : defectSummary(mode === 'plain' ? baseline.defects : nc.defects, mode === 'plain' ? baseline.contested : nc.contested));
+    setText('summary-text', mode === 'plain'
+      ? 'Plain Qwen3-8B assessed the same human-checked facts without NoticeCheck tools. Compare its saved findings with the pipeline output.'
+      : 'The same human-checked facts were given to both checkers. The replay below follows NoticeCheck’s saved planning, tools, checks and verification.');
+    for (const key of ['nc','plain','side']) {
       const button = byId(`rq1-btn-${key}`);
       button?.classList.toggle('bg-primary-container', key === mode);
       button?.classList.toggle('text-on-primary-container', key === mode);
+      button?.classList.toggle('text-on-surface-variant', key !== mode);
     }
   };
-  toggleRQ1View('main');
+  toggleRQ1View('nc');
 }
 
 function showCase(detail) {
@@ -189,7 +152,7 @@ function showCase(detail) {
   const replayControl = byId('demo-replay-control');
   replayControl.querySelector('strong').textContent = 'Recorded Qwen run · step by step';
   replayControl.querySelectorAll('button').forEach(button => button.classList.remove('hidden'));
-  byId('demo-rq2-panel')?.classList.remove('hidden');
+  byId('demo-facts-panel')?.classList.add('hidden');
   const sourceHeader = byId('judgment-panel-title')?.parentElement?.parentElement;
   if (sourceHeader) {
     const linkHost = sourceHeader.lastElementChild;
@@ -210,18 +173,17 @@ function showCase(detail) {
     sourceHeader?.after(note);
   }
   setText('analysis-case-title', detail.title);
-  setText('summary-defect-badge', `${detail.counts.defect} potential defects · ${detail.counts.contested} contested`);
+  setText('summary-defect-badge', defectSummary(detail.counts.defect, detail.counts.contested));
   setText('summary-court', `${detail.court} · ${detail.decision_date}`);
-  setText('summary-period', `Saved ${detail.run} run · ${detail.id}`);
+  setText('summary-period', `${detail.input_label} · ${detail.id}`);
+  setText('summary-input-label', detail.comparison ? 'Same facts as Plain Qwen' : 'Fine-tuned extractor output');
   setText('confidence-text', 'Saved model output · verify against the judgment');
   const ready = byId('confidence-text')?.nextElementSibling;
   if (ready) ready.querySelector('span:last-child').textContent = 'For human review';
   const summary = byId('summary-text');
   if (summary) summary.textContent = 'This is the exact saved NoticeCheck output for this judgment. Select a finding to inspect its source.';
   setText('recommendation-text', detail.main.handoff?.escalate ? `Human review recommended: ${(detail.main.handoff.reasons || []).map(nice).join(', ') || 'see case details'}.` : 'The saved run did not trigger a hand-off. Review findings and source before drawing conclusions.');
-  renderFacts();
-  renderRQ2Panel();
-  renderResearchComparison();
+  renderCheckerComparison();
   renderFindings(detail.main.findings);
   replaySteps = detail.trace || [];
   replayIndex = 0;
@@ -301,7 +263,7 @@ window.demoPause = stopReplay;
 window.demoNext = () => {stopReplay(); replayNext();};
 window.demoStart = () => {
   if (!demoCase) return;
-  if (demoCase.rq1) toggleRQ1View('main');
+  if (demoCase.comparison) toggleRQ1View('nc');
   replaySteps = demoCase.trace || [];
   replayIndex = 0;
   byId('demo-replay-log').replaceChildren();
@@ -336,10 +298,7 @@ function showLiveEvent(event) {
     setText('demo-replay-status', event.message);
     appendLiveLog(event.message);
   } else if (event.type === 'extraction') {
-    demoCase.rq2.fine_tuned = {facts: event.facts};
-    renderFacts();
-    renderRQ2Panel();
-    byId('demo-rq2-panel').classList.remove('hidden');
+    renderLiveFactsPanel(event.facts);
     appendLiveLog(`Gemini extraction complete · ${event.grounding.quotes_located} quotes located`,
                   {grounding: event.grounding, model: event.model});
   } else if (event.type === 'step') {
@@ -361,7 +320,7 @@ function showLiveEvent(event) {
     renderFindings(event.result.findings);
     const counts = {defect: 0, contested: 0};
     for (const finding of event.result.findings) if (finding.verdict in counts) counts[finding.verdict]++;
-    setText('summary-defect-badge', `${counts.defect} potential defects · ${counts.contested} contested`);
+    setText('summary-defect-badge', defectSummary(counts.defect, counts.contested));
     setText('recommendation-text', event.result.handoff?.escalate
       ? `Human review recommended: ${(event.result.handoff.reasons || []).map(nice).join(', ')}.`
       : 'No automatic hand-off was triggered. Review the findings and source before drawing conclusions.');
@@ -387,11 +346,12 @@ window.demoRunLive = async () => {
   stopReplay();
   const controller = new AbortController();
   liveController = controller;
-  demoCase = {mode: 'live_gemini', paragraphs: [], rq2: {base: null, fine_tuned: null}, main: {findings: []}, rq1: null};
+  demoCase = {mode: 'live_gemini', paragraphs: [], main: {findings: []}, comparison: null};
   renderParagraphs([]);
   byId('judgment-panel-title').parentElement.nextElementSibling.textContent = 'Pasted judgment text';
-  byId('demo-rq2-panel')?.classList.add('hidden');
+  byId('demo-facts-panel')?.classList.add('hidden');
   byId('rq1-btn-nc')?.closest('.bg-surface-container-low')?.classList.add('hidden');
+  byId('case-checks-container').classList.remove('hidden');
   byId('case-checks-container').replaceChildren();
   byId('demo-replay-log').replaceChildren();
   const replayControl = byId('demo-replay-control');
@@ -405,6 +365,7 @@ window.demoRunLive = async () => {
   setText('summary-defect-badge', 'Analysis in progress');
   setText('summary-court', 'Pasted High Court judgment');
   setText('summary-period', 'Gemini extraction → NoticeCheck with Gemini');
+  setText('summary-input-label', 'Gemini-extracted facts (live)');
   setText('summary-text', `A new analysis is running. Findings appear provisionally as checks finish; the final checklist follows verification.${livePrecedents === 'bundled_excerpts' ? ' Case-law search uses a small bundled excerpt index in this preview.' : ''}`);
   setText('recommendation-text', 'Human review recommendation appears when the run finishes.');
   setText('confidence-text', 'Live Gemini output · verify against the judgment');
@@ -461,26 +422,41 @@ async function initDemo() {
   livePrecedents = health.live_precedents;
   const startHeading = document.querySelector('#state-start h2');
   if (startHeading) startHeading.textContent = 'Explore a real saved NoticeCheck analysis';
+  const firstStep = byId('step-nav-1');
+  if (firstStep) firstStep.querySelector('span:last-child').textContent = 'Choose judgment';
+  byId('step-nav-2')?.remove();
+  const reviewStep = byId('step-nav-3');
+  if (reviewStep) {
+    reviewStep.querySelector('span:first-child').textContent = '2';
+    reviewStep.querySelector('span:last-child').textContent = 'Replay & review';
+  }
+  byId('state-analysis')?.remove();
   const headerBadge = document.querySelector('header .uppercase span:last-child');
   if (headerBadge) headerBadge.textContent = 'Real saved Qwen runs';
-  const analysisHeading = document.querySelector('#state-analysis h2');
-  if (analysisHeading) analysisHeading.textContent = 'Replaying the recorded NoticeCheck pipeline';
-  const analysisKicker = document.querySelector('#state-analysis h2')?.previousElementSibling;
-  if (analysisKicker) analysisKicker.textContent = 'Saved Qwen pipeline in action';
-  setText('stage-1-badge', 'Saved extractor output');
-  setText('stage-2-badge', 'Recorded tool and check trace');
   setText('trace-toggle-label', 'Inspect execution trace');
   const caseHeading = byId('case-selection-group')?.previousElementSibling;
   if (caseHeading) caseHeading.querySelectorAll('h3,p,span').forEach(el => {
     if (el.tagName === 'H3') el.textContent = 'Select a judgment from the saved runs';
-    else if (el.tagName === 'P') el.textContent = 'These cases show actual Qwen outputs produced by the project';
+    else if (el.tagName === 'P') el.textContent = 'Actual saved Qwen outputs. Choose Case C to compare the checker with Plain Qwen on identical facts.';
     else if (el.textContent.includes('Illustrative Example')) el.textContent = 'Real saved Qwen outputs';
   });
-  byId('stage-2-card').innerHTML = `<div class="flex items-center gap-2"><span class="font-label-xs uppercase text-primary font-bold">Stage 2 · Plan, check and verify</span><span class="text-xs text-outline">Saved Qwen execution trace</span></div><p class="text-sm text-on-surface-variant">The real run records model calls, tool arguments and results, rule checks, verification, and hand-off. The review screen plays them back beside the judgment. It does not contain private model thoughts.</p>`;
-  document.querySelectorAll('p').forEach(p => {
-    if (p.textContent.includes('absent entries as explicit negative proof')) p.textContent = 'An unstated value remains unknown. A finding that no hearing occurred needs its own supporting evidence.';
-    if (p.textContent.includes('feeds into the Statutory Rule Engine')) p.textContent = 'The saved extractor output is followed by NoticeCheck’s recorded planning, tools, checks, verification and hand-off.';
-  });
+  const research = byId('research-modal');
+  if (research) {
+    const heading = [...research.querySelectorAll('h4')].find(el => el.textContent.includes('Research Overview'));
+    if (heading) heading.textContent = 'Project overview & checker comparison';
+    for (const label of research.querySelectorAll('span')) {
+      if (label.textContent.includes('RQ2: Fact Extraction Precision')) label.parentElement.remove();
+      else if (label.textContent.includes('RQ1: Checker Pipeline Comparison')) {
+        label.textContent = 'Plain Qwen vs. NoticeCheck';
+        const note = label.parentElement.querySelector('p');
+        if (note) note.textContent = 'The two saved checkers receive the same human-checked fact record. The comparison shows what NoticeCheck’s planning, tools, statutory checks and verification add. Its measured F1 gain did not conclusively meet the planned threshold.';
+        label.parentElement.parentElement.classList.remove('md:grid-cols-2');
+      }
+    }
+  }
+  setText('nav-about-btn', 'About NoticeCheck');
+  const aboutButton = byId('open-research-modal');
+  if (aboutButton) aboutButton.querySelector('span:last-child').textContent = 'About the pipeline';
   const footer = document.querySelector('footer');
   if (footer) footer.querySelectorAll('span').forEach(span => {if (span.textContent.includes('GSTN Spec v3.4')) span.textContent = 'Saved Qwen run';});
   document.querySelectorAll('.case-card').forEach((card,i) => {
@@ -491,7 +467,7 @@ async function initDemo() {
     const smaller = card.querySelector('.font-code-citation');
     if (smaller) smaller.textContent = `${item.court} · ${item.decision_date}`;
     const blurb = card.querySelector('p');
-    if (blurb) blurb.textContent = `${item.description} · ${item.counts.defect} potential defects, ${item.counts.contested} contested`;
+    if (blurb) blurb.textContent = `${item.description} · ${defectSummary(item.counts.defect, item.counts.contested)}`;
     const foot = card.querySelector('.border-t');
     if (foot) foot.innerHTML = `<span>${escapeHtml(item.id)}</span><span>${escapeHtml(item.run)}</span>`;
   });

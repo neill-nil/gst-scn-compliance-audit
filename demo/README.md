@@ -19,7 +19,7 @@ If you already have the repository, switch to the `noticecheck-demo` branch and 
 python3 -m demo.server --port 8765
 ```
 
-Open **http://127.0.0.1:8765/** in your browser. Pick a case, press **Analyse Case**, then use **Play**, **Pause**, or **Next step**. Click a quoted finding to jump to the matching judgment paragraph. Case C also has the separate RQ1 and RQ2 comparison controls.
+Open **http://127.0.0.1:8765/** in your browser. Pick a case, press **Analyse Case**, then use **Play**, **Pause**, or **Next step**. Click a quoted finding to jump to the matching judgment paragraph. In Case C, switch between **NoticeCheck pipeline**, **Plain Qwen3-8B**, and **Compare both**.
 
 This is a replay of the project's real saved Qwen outputs. It works without an API key or internet. It shows recorded decisions, tool calls, checks, verification and hand-off; it cannot show private model thoughts that were never saved.
 
@@ -50,7 +50,8 @@ Open **http://127.0.0.1:8765/**, expand **Paste a High Court judgment · live Ge
 ## What to know before presenting
 
 - The system was evaluated on **High Court judgments describing GST proceedings**, not on original show cause notices. Paste a judgment, not a notice.
-- Saved Case C's RQ1 checkers use the **same human-checked facts**; its RQ2 extractors use the **same judgment text**. These are separate comparisons. Live Gemini is a preview, not an RQ1 or RQ2 evaluation result.
+- In Case C, NoticeCheck and Plain Qwen use the **same human-checked facts**. The replay is NoticeCheck's run on those facts. The difference shown is in the checker architecture, not fact extraction. The other prepared cases replay the full system with fine-tuned extraction.
+- Live Gemini is a preview for a new pasted judgment. It is separate from the saved checker comparison.
 - A quote match only confirms that words appear in the text. It does not establish that the fact concerns the correct proceeding or that the legal conclusion is right.
 - Live case-law search uses nine bundled precedent excerpts unless the full local precedent index is installed. The page labels this limit. The saved Qwen results do not change.
 - The Gemini key stays on the local server, not in the web page. Pasted text and model replies are not saved in the demo cache; the project's normal LLM usage log records call metadata.

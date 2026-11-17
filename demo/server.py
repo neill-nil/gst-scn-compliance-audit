@@ -7,6 +7,7 @@ import csv
 import gzip
 import json
 import os
+import re
 import sys
 import threading
 from functools import lru_cache
@@ -25,7 +26,7 @@ LIVE_LOCK = threading.Lock()
 CASES = (
     ("HCMA011063142025", "fresh_nc", "Findings with contested points"),
     ("WBCHCA0084902025", "fresh_nc", "A contested, incomplete record"),
-    ("HCMD010677412024", "e2e_nc_tuned", "Compare both research questions"),
+    ("HCMD010677412024", "nc_full_s2", "Compare NoticeCheck with plain Qwen on the same facts"),
 )
 
 
@@ -59,7 +60,19 @@ def source(cnr: str) -> list[dict]:
         return json.loads(bundled.read_text(encoding="utf-8")) if bundled.exists() else []
     pages = gzip.open(path, "rt", encoding="utf-8", errors="replace").read().split("\f")
     kept, _ = clean(pages)
-    return [{"n": p["n"], "text": p["text"]} for p in segment(kept) if p["text"]]
+    paragraphs = [{"n": p["n"], "text": p["text"]} for p in segment(kept) if p["text"]]
+    # Some PDF extractions collapse every numbered paragraph onto one line.
+    # Recover only a clear, increasing run of inline paragraph markers.
+    if len(paragraphs) == 1:
+        text = paragraphs[0]["text"]
+        markers = list(re.finditer(r"(?<!\w)(\d{1,2})\.(?=[A-Z])", text))
+        numbers = [int(m.group(1)) for m in markers]
+        if len(markers) >= 2 and numbers == list(range(numbers[0], numbers[0] + len(numbers))):
+            paragraphs = ([{"n": 0, "text": text[:markers[0].start()].strip()}]
+                          if text[:markers[0].start()].strip() else [])
+            paragraphs += [{"n": numbers[i], "text": text[m.end():markers[i + 1].start() if i + 1 < len(markers) else len(text)].strip()}
+                           for i, m in enumerate(markers)]
+    return paragraphs
 
 
 def trace(row: dict) -> list[dict]:
@@ -88,6 +101,8 @@ def case_summary(cnr: str, run: str, description: str) -> dict:
               for v in ("defect", "contested", "cant_tell", "no_defect")}
     return {"id": cnr, "run": run, "title": meta["title"], "court": meta["court_name"],
             "decision_date": meta["decision_date"], "description": description,
+            "input_label": "Human-checked facts shared with Plain Qwen" if run == "nc_full_s2"
+                           else "Fine-tuned extraction from this judgment",
             "counts": counts, "source_available": bool(source(cnr)),
             "source_pdf_url": "https://indian-high-court-judgments.s3.ap-south-1.amazonaws.com/"
                               + quote(meta["s3_key"], safe="/")}
@@ -99,21 +114,15 @@ def case_detail(cnr: str) -> dict:
         raise KeyError("Unknown demo case")
     _, run, description = item
     main = jsonl(f"runs/{run}/outputs.jsonl")[cnr]
-    extraction_run = "rq2_fresh" if run == "fresh_nc" else "rq2_tuned"
-    tuned = sharded(extraction_run).get(cnr)
-    base = sharded("rq2_base").get(cnr) if run != "fresh_nc" else None
-    rq1 = None
-    if run != "fresh_nc":
+    comparison = None
+    if run == "nc_full_s2":
         gold = jsonl("data/gold/records.jsonl").get(cnr)
         plain = jsonl("runs/b1_full_record/outputs.jsonl").get(cnr)
-        structured = jsonl("runs/nc_full_s2/outputs.jsonl").get(cnr)
-        if gold and plain and structured:
-            rq1 = {"input": build_view(gold, "full_record"), "plain": plain,
-                   "noticecheck": structured, "trace": trace(structured)}
+        if gold and plain:
+            comparison = {"input": build_view(gold, "full_record"), "plain": plain}
     return {**case_summary(cnr, run, description), "mode": "saved_qwen_run",
             "paragraphs": source(cnr), "main": main, "trace": trace(main),
-            "rq2": {"input": "same judgment text", "base": base, "fine_tuned": tuned},
-            "rq1": rq1}
+            "comparison": comparison}
 
 
 class Handler(BaseHTTPRequestHandler):

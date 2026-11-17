@@ -9,17 +9,18 @@ from demo import live, server
 class LiveDemoTest(unittest.TestCase):
     def setUp(self):
         self.case = server.case_detail("HCMA011063142025")
+        self.facts = server.sharded("rq2_fresh")["HCMA011063142025"]["facts"]
         self.text = "\n\n".join(f"{p['n']}. {p['text']}" for p in self.case["paragraphs"])
 
     def test_unquoted_model_date_is_removed_before_checker(self):
-        facts = copy.deepcopy(self.case["rq2"]["fine_tuned"]["facts"])
+        facts = copy.deepcopy(self.facts)
         facts["order"]["date"] = {"value": "2099-01-01", "quote": "order dated 2099-01-01", "para": 1}
         grounded, counts = live.ground_facts(facts, self.case["paragraphs"])
         self.assertIsNone(grounded["order"]["date"]["value"])
         self.assertGreaterEqual(counts["ungrounded_items_removed"], 1)
 
     def test_real_pipeline_streams_tools_checks_and_final_result(self):
-        facts = self.case["rq2"]["fine_tuned"]["facts"]
+        facts = self.facts
 
         def fake_complete(backend, messages, **kwargs):
             tag = kwargs["tag"]
@@ -51,6 +52,17 @@ class LiveDemoTest(unittest.TestCase):
         self.assertTrue(any(s["stage"] == "verify" for s in steps))
         self.assertEqual(len(result["findings"]), 13)
         self.assertEqual(result["mode"], "live_gemini")
+
+    def test_checker_comparison_replays_the_same_noticecheck_run(self):
+        case = server.case_detail("HCMD010677412024")
+        self.assertEqual(case["run"], "nc_full_s2")
+        self.assertEqual(case["comparison"]["input"]["view"], "full_record")
+        self.assertEqual(case["comparison"]["plain"]["cnr"], case["main"]["cnr"])
+        self.assertEqual(case["trace"], server.trace(case["main"]))
+        self.assertNotIn("rq2", case)
+        self.assertEqual([p["n"] for p in case["paragraphs"]], [0, 2, 3, 4, 5, 6, 7])
+        hearing_quote = next(f for f in case["main"]["findings"] if f["type"] == "hearing_75_4")["evidence"][0]["quote"]
+        self.assertIn(hearing_quote, case["paragraphs"][2]["text"])
 
 
 if __name__ == "__main__":
