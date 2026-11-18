@@ -118,7 +118,7 @@ function renderCheckerComparison() {
   }
   const shared = demoCase.comparison.input.record;
   const plain = demoCase.comparison.plain.findings || [];
-  control.innerHTML = `<div><strong class="text-sm">Compare the checker approaches</strong><p class="text-xs text-on-surface-variant mt-1">Both receive the same human-checked facts. The difference shown here comes from planning, tools, statutory checks and verification.</p><p class="text-xs text-outline mt-1">Provision: ${escapeHtml(shared.provision?.value || 'unknown')} · Financial years: ${escapeHtml((shared.financial_years?.value || []).join(', ') || 'unknown')}</p></div><div class="inline-flex flex-wrap p-0.5 bg-surface-container rounded-lg border border-surface-container-high/60"><button id="rq1-btn-nc" onclick="toggleRQ1View('nc')" type="button" class="px-2 py-1 rounded text-xs">NoticeCheck pipeline</button><button id="rq1-btn-plain" onclick="toggleRQ1View('plain')" type="button" class="px-2 py-1 rounded text-xs">Plain Qwen3-8B</button><button id="rq1-btn-side" onclick="toggleRQ1View('side')" type="button" class="px-2 py-1 rounded text-xs">Compare both</button></div>`;
+  control.innerHTML = `<div><strong class="text-sm">Compare the checker approaches</strong><p class="text-xs text-on-surface-variant mt-1">Both receive the same human-checked facts. The buttons compare their saved final findings. The NoticeCheck-only trace below shows planning, tool calls, rule checks, precedent search and hand-off.</p><p class="text-xs text-outline mt-1">The saved trace does not expose free-text model reasoning or every internal quote-verification decision.</p><p class="text-xs text-outline mt-1">Provision: ${escapeHtml(shared.provision?.value || 'unknown')} · Financial years: ${escapeHtml((shared.financial_years?.value || []).join(', ') || 'unknown')}</p></div><div class="inline-flex flex-wrap p-0.5 bg-surface-container rounded-lg border border-surface-container-high/60"><button id="rq1-btn-nc" onclick="toggleRQ1View('nc')" type="button" class="px-2 py-1 rounded text-xs">NoticeCheck pipeline</button><button id="rq1-btn-plain" onclick="toggleRQ1View('plain')" type="button" class="px-2 py-1 rounded text-xs">Plain Qwen3-8B</button><button id="rq1-btn-side" onclick="toggleRQ1View('side')" type="button" class="px-2 py-1 rounded text-xs">Compare both</button></div>`;
   plainPanel.innerHTML = `<h4 class="font-semibold text-secondary">Plain Qwen3-8B · same fact record, no NoticeCheck tools</h4>${plain.map(f => findingCard(f)).join('')}`;
   toggleRQ1View = mode => {
     const panel = byId('rq1-plain-panel');
@@ -134,8 +134,8 @@ function renderCheckerComparison() {
       ? `NoticeCheck: ${defectSummary(nc.defects, nc.contested)} · Plain Qwen: ${defectSummary(baseline.defects, baseline.contested)}`
       : defectSummary(mode === 'plain' ? baseline.defects : nc.defects, mode === 'plain' ? baseline.contested : nc.contested));
     setText('summary-text', mode === 'plain'
-      ? 'Plain Qwen3-8B assessed the same human-checked facts without NoticeCheck tools. Compare its saved findings with the pipeline output.'
-      : 'The same human-checked facts were given to both checkers. The replay below follows NoticeCheck’s saved planning, tools, checks and verification.');
+      ? 'Plain Qwen3-8B assessed the same human-checked facts without NoticeCheck tools. The trace below belongs to NoticeCheck.'
+      : 'The buttons compare saved findings. The trace below replays NoticeCheck’s recorded steps only.');
     for (const key of ['nc','plain','side']) {
       const button = byId(`rq1-btn-${key}`);
       button?.classList.toggle('bg-primary-container', key === mode);
@@ -152,7 +152,7 @@ function showCase(detail) {
   const headerBadge = document.querySelector('header .uppercase span:last-child');
   if (headerBadge) headerBadge.textContent = 'Real saved Qwen runs';
   const replayControl = byId('demo-replay-control');
-  replayControl.querySelector('strong').textContent = 'Recorded Qwen run · step by step';
+  replayControl.querySelector('strong').textContent = detail.comparison ? 'NoticeCheck execution trace · recorded steps' : 'Recorded Qwen run · step by step';
   replayControl.querySelectorAll('button').forEach(button => button.classList.remove('hidden'));
   byId('demo-facts-panel')?.classList.add('hidden');
   const sourceHeader = byId('judgment-panel-title')?.parentElement?.parentElement;
@@ -196,7 +196,7 @@ function showCase(detail) {
   const accordion = document.querySelector('#case-checks-container + details');
   if (accordion) {
     accordion.classList.remove('hidden');
-    accordion.innerHTML = `<summary class="cursor-pointer font-semibold">Full saved execution trace (${detail.trace.length} steps)</summary><div class="mt-3 max-h-72 overflow-y-auto text-xs">${detail.trace.map(step => `<p class="border-b border-surface-container-high py-1">${escapeHtml(step.step)}. ${escapeHtml(stepLabel(step))}</p>`).join('')}</div>`;
+    accordion.innerHTML = `<summary class="cursor-pointer font-semibold">Full saved NoticeCheck trace (${detail.trace.length} steps)</summary><div class="mt-3 max-h-72 overflow-y-auto text-xs">${detail.trace.map(step => `<p class="border-b border-surface-container-high py-1">${escapeHtml(step.step)}. ${escapeHtml(stepLabel(step))}</p>`).join('')}</div>`;
   }
 }
 
@@ -273,6 +273,7 @@ window.demoPlay = () => {
 };
 window.demoPause = stopReplay;
 window.demoNext = () => {stopReplay(); replayNext();};
+window.demoFocusTrace = () => byId('demo-replay-control')?.scrollIntoView({behavior:'smooth', block:'center'});
 window.demoStart = async () => {
   if (selectedCasePromise) await selectedCasePromise;
   const selected = demoCases[['A','B','C'].indexOf(selectedCaseLetter)];
@@ -447,7 +448,8 @@ async function initDemo() {
   byId('state-analysis')?.remove();
   const headerBadge = document.querySelector('header .uppercase span:last-child');
   if (headerBadge) headerBadge.textContent = 'Real saved Qwen runs';
-  setText('trace-toggle-label', 'Inspect execution trace');
+  setText('trace-toggle-label', 'Jump to execution trace');
+  byId('trace-toggle-label')?.closest('button')?.setAttribute('onclick', 'demoFocusTrace()');
   const caseHeading = byId('case-selection-group')?.previousElementSibling;
   if (caseHeading) caseHeading.querySelectorAll('h3,p,span').forEach(el => {
     if (el.tagName === 'H3') el.textContent = 'Select a judgment from the saved runs';
