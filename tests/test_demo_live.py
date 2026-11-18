@@ -1,6 +1,8 @@
 """Integration checks for the live adapter without making external model calls."""
 import copy
+import tempfile
 import unittest
+from pathlib import Path
 from unittest.mock import patch
 
 from demo import live, server
@@ -63,6 +65,39 @@ class LiveDemoTest(unittest.TestCase):
         self.assertEqual([p["n"] for p in case["paragraphs"]], [0, 2, 3, 4, 5, 6, 7])
         hearing_quote = next(f for f in case["main"]["findings"] if f["type"] == "hearing_75_4")["evidence"][0]["quote"]
         self.assertIn(hearing_quote, case["paragraphs"][2]["text"])
+
+    def test_prepared_cases_have_separate_recorded_gemini_runs(self):
+        for cnr, _, _ in server.CASES:
+            with self.subTest(cnr=cnr):
+                case = server.case_detail(cnr)
+                gemini = case["gemini"]
+                self.assertEqual(gemini["cnr"], cnr)
+                self.assertEqual(gemini["input"], "prepared judgment text")
+                self.assertIn(gemini["precedent_index"], ("bundled_excerpts", "full_index"))
+                self.assertEqual(gemini["events"][-1]["type"], "result")
+                self.assertTrue(any(e["type"] == "extraction" for e in gemini["events"]))
+                self.assertTrue(any(e["type"] == "step" and e["step"].get("tool") for e in gemini["events"]))
+                self.assertEqual(len(gemini["result"]["findings"]), 13)
+
+    def test_live_example_is_not_a_prepared_or_evaluated_case(self):
+        example = server.live_example()
+        cnr = example["id"]
+        self.assertNotIn(cnr, {c for c, _, _ in server.CASES})
+        for split in ("test", "heldout", "dev", "fresh", "precedent"):
+            self.assertNotIn(cnr, (server.ROOT / f"data/splits/{split}.txt").read_text().split())
+        self.assertIn(cnr, (server.ROOT / "data/splits/reserved.txt").read_text().split())
+        self.assertGreaterEqual(len(live.paragraphs_from_text(example["text"])), 5)
+
+    def test_bundled_case_c_still_has_paragraph_anchors_without_local_corpus(self):
+        cnr = "HCMD010677412024"
+        bundled = (server.ROOT / f"demo/sources/{cnr}.json").read_text()
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            target = root / f"demo/sources/{cnr}.json"
+            target.parent.mkdir(parents=True)
+            target.write_text(bundled)
+            with patch.object(server, "ROOT", root):
+                self.assertEqual([p["n"] for p in server.source(cnr)], [0, 2, 3, 4, 5, 6, 7])
 
 
 if __name__ == "__main__":

@@ -28,6 +28,7 @@ CASES = (
     ("WBCHCA0084902025", "fresh_nc", "A contested, incomplete record"),
     ("HCMD010677412024", "nc_full_s2", "Compare NoticeCheck with plain Qwen on the same facts"),
 )
+LIVE_EXAMPLE = "HCMA010421202024"
 
 
 @lru_cache(maxsize=None)
@@ -57,10 +58,11 @@ def source(cnr: str) -> list[dict]:
     path = ROOT / "data/text" / meta["court"] / f"{cnr}.txt.gz"
     if not path.exists():
         bundled = ROOT / "demo/sources" / f"{cnr}.json"
-        return json.loads(bundled.read_text(encoding="utf-8")) if bundled.exists() else []
-    pages = gzip.open(path, "rt", encoding="utf-8", errors="replace").read().split("\f")
-    kept, _ = clean(pages)
-    paragraphs = [{"n": p["n"], "text": p["text"]} for p in segment(kept) if p["text"]]
+        paragraphs = json.loads(bundled.read_text(encoding="utf-8")) if bundled.exists() else []
+    else:
+        pages = gzip.open(path, "rt", encoding="utf-8", errors="replace").read().split("\f")
+        kept, _ = clean(pages)
+        paragraphs = [{"n": p["n"], "text": p["text"]} for p in segment(kept) if p["text"]]
     # Some PDF extractions collapse every numbered paragraph onto one line.
     # Recover only a clear, increasing run of inline paragraph markers.
     if len(paragraphs) == 1:
@@ -120,9 +122,19 @@ def case_detail(cnr: str) -> dict:
         plain = jsonl("runs/b1_full_record/outputs.jsonl").get(cnr)
         if gold and plain:
             comparison = {"input": build_view(gold, "full_record"), "plain": plain}
+    gemini_path = ROOT / "demo/gemini_runs" / f"{cnr}.json"
+    gemini = json.loads(gemini_path.read_text(encoding="utf-8")) if gemini_path.exists() else None
     return {**case_summary(cnr, run, description), "mode": "saved_qwen_run",
             "paragraphs": source(cnr), "main": main, "trace": trace(main),
-            "comparison": comparison}
+            "comparison": comparison, "gemini": gemini}
+
+
+def live_example() -> dict:
+    meta = manifest()[LIVE_EXAMPLE]
+    text = (ROOT / "demo/examples/sri_lakshmi_silvers_live_only.txt").read_text(encoding="utf-8")
+    return {"id": LIVE_EXAMPLE, "title": meta["title"], "text": text,
+            "source_pdf_url": "https://indian-high-court-judgments.s3.ap-south-1.amazonaws.com/"
+                              + quote(meta["s3_key"], safe="/")}
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -156,6 +168,8 @@ class Handler(BaseHTTPRequestHandler):
                                                    else "bundled_excerpts"})
             elif path == "/api/cases":
                 self.send(200, [case_summary(*item) for item in CASES])
+            elif path == "/api/live-example":
+                self.send(200, live_example())
             elif path.startswith("/api/cases/"):
                 self.send(200, case_detail(path.removeprefix("/api/cases/")))
             else:

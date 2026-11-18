@@ -13,15 +13,15 @@ cd gst-scn-compliance-audit
 
 If you already have the repository, switch to the `noticecheck-demo` branch and pull its latest changes instead.
 
-## 2. Show the saved Qwen run (no key needed)
+## 2. Show the saved runs (no key needed)
 
 ```sh
 python3 -m demo.server --port 8765
 ```
 
-Open **http://127.0.0.1:8765/** in your browser. Pick a case, press **Analyse Case**, then use **Play**, **Pause**, or **Next step**. Click a quoted finding to jump to the matching judgment paragraph. In Case C, switch between **NoticeCheck pipeline**, **Plain Qwen3-8B**, and **Compare both**.
+Open **http://127.0.0.1:8765/** in your browser. Pick a case, press **Analyse Case**, then use **Play**, **Pause**, or **Next step**. Click a quoted finding to jump to the matching judgment paragraph. On any case, switch between the saved **NoticeCheck · Qwen** and **NoticeCheck · Gemini** runs, or choose **Compare Qwen and Gemini**. Each has its own saved findings and step-by-step trace. Case C also has a separate **Plain Qwen3-8B** checker comparison on the same human-checked facts.
 
-This is a replay of the project's real saved Qwen outputs. It works without an API key or internet. It shows recorded decisions, tool calls, checks, verification and hand-off; it cannot show private model thoughts that were never saved.
+These are genuine recorded outputs, so replay needs no API key or internet. The Qwen runs came from the project experiments; the Gemini runs were made on the same three judgment texts for this demo with the bundled precedent excerpts. The Gemini and Qwen runs extract facts independently, so this model comparison is not the same controlled checker comparison as Case C's Plain Qwen view. The traces show recorded decisions, tool calls, checks and hand-off; they do not expose private model thoughts.
 
 ## 3. Optional: run a pasted judgment live
 
@@ -43,7 +43,7 @@ Start the server again:
 .venv/bin/python -m demo.server --port 8765
 ```
 
-Open **http://127.0.0.1:8765/**, expand **Paste a High Court judgment · live Gemini preview**, paste judgment text, and press **Run live with Gemini**. The page shows extracted facts, tool calls and provisional findings as they arrive, highlights cited paragraphs, then shows the verified final checklist. A real live run needs internet and may take longer if the model or API is busy.
+Open **http://127.0.0.1:8765/**, expand **Paste a High Court judgment · live Gemini preview**, paste judgment text, and press **Run live with Gemini**. Use **Load a separate example judgment** if you want an example used nowhere else in the demo or evaluation splits. The page shows extracted facts, tool calls and provisional findings as they arrive, highlights cited paragraphs, then shows the final checklist. **Return to last live run (this tab)** brings its trace back after you visit another case. It is kept only in the open browser tab; reloading the page clears it. A real live run needs internet and may take longer if the model or API is busy.
 
 **Windows PowerShell:** use `py` instead of `python3`, `.venv\Scripts\python` instead of `.venv/bin/python`, and `Copy-Item .env.example .env` instead of `cp .env.example .env`.
 
@@ -51,9 +51,9 @@ Open **http://127.0.0.1:8765/**, expand **Paste a High Court judgment · live Ge
 
 - The system was evaluated on **High Court judgments describing GST proceedings**, not on original show cause notices. Paste a judgment, not a notice.
 - In Case C, NoticeCheck and Plain Qwen use the **same human-checked facts**. The replay is NoticeCheck's run on those facts. The difference shown is in the checker architecture, not fact extraction. The other prepared cases replay the full system with fine-tuned extraction.
-- Live Gemini is a preview for a new pasted judgment. It is separate from the saved checker comparison.
+- Prepared Gemini outputs are saved with the demo and need no key to replay. New paste-in runs use your own key. The live-only example is M/s Sri Lakshmi Silvers v. State Tax Officer (reserved case `HCMA010421202024`); it has no prepared result on this page.
 - A quote match only confirms that words appear in the text. It does not establish that the fact concerns the correct proceeding or that the legal conclusion is right.
 - Live case-law search uses nine bundled precedent excerpts unless the full local precedent index is installed. The page labels this limit. The saved Qwen results do not change.
 - The Gemini key stays on the local server, not in the web page. Pasted text and model replies are not saved in the demo cache; the project's normal LLM usage log records call metadata.
 
-The saved demo bundles the three judgments, model outputs, traces, styling, and fonts. Internet is needed only for the live Gemini call or for opening a linked source PDF.
+The saved demo bundles the three judgments, Qwen and Gemini outputs, traces, styling, fonts, and a separate live-only judgment text. Internet is needed only for a new live Gemini call or for opening a linked source PDF.

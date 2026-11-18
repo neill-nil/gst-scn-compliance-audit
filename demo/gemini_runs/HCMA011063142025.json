@@ -1,0 +1,1251 @@
+{
+  "cnr": "HCMA011063142025",
+  "generated_at": "2026-11-18T00:53:40.346883+00:00",
+  "input": "prepared judgment text",
+  "extractor": "gemini-3.5-flash-lite",
+  "checker": "gemini-3.5-flash-lite",
+  "grounding": {
+    "quotes_located": 10,
+    "ungrounded_items_removed": 0
+  },
+  "events": [
+    {
+      "type": "stage",
+      "stage": "extract",
+      "message": "Gemini is extracting procedural facts from the pasted judgment."
+    },
+    {
+      "type": "extraction",
+      "facts": {
+        "provision": {
+          "value": null,
+          "quote": null,
+          "para": null
+        },
+        "financial_years": {
+          "value": [
+            "2017-18"
+          ],
+          "quote": "relating to the assessment year 2017-18",
+          "para": 0
+        },
+        "notices": [
+          {
+            "date": {
+              "value": "2023-09-15",
+              "quote": "a show cause notice in Form DRC-01 dated 15.09.2023 were issued to the petitioner through GST common portal.",
+              "para": 3
+            },
+            "reply_due": {
+              "value": null,
+              "quote": null,
+              "para": null
+            },
+            "hearing_date_given": {
+              "value": null,
+              "quote": null,
+              "para": null
+            },
+            "hearing_date": {
+              "value": null,
+              "quote": null,
+              "para": null
+            },
+            "service_mode": {
+              "value": "portal_additional_notices_tab",
+              "quote": "instead it was uploaded in the common portal under the head “Additional Notices and Orders” tab",
+              "para": 4
+            },
+            "signed": {
+              "value": null,
+              "quote": null,
+              "para": null
+            },
+            "summary_only": {
+              "value": null,
+              "quote": null,
+              "para": null
+            }
+          }
+        ],
+        "order": {
+          "date": {
+            "value": "2023-12-27",
+            "quote": "quash the order dated 27.12.2023.",
+            "para": 0
+          },
+          "signed": {
+            "value": null,
+            "quote": null,
+            "para": null
+          },
+          "service_mode": {
+            "value": "portal_additional_notices_tab",
+            "quote": "instead it was uploaded in the common portal under the head “Additional Notices and Orders” tab",
+            "para": 4
+          }
+        },
+        "events": [
+          {
+            "date": "2023-08-28",
+            "type": "pre_scn_intimation",
+            "quote": "an intimation notice in Form DRC-01A dated 28.08.2023, followed by which, a show cause notice in Form DRC-01 dated 15.09.2023 were issued to the petitioner through GST common portal.",
+            "para": 3
+          },
+          {
+            "date": "2023-09-15",
+            "type": "scn_issued",
+            "quote": "an intimation notice in Form DRC-01A dated 28.08.2023, followed by which, a show cause notice in Form DRC-01 dated 15.09.2023 were issued to the petitioner through GST common portal.",
+            "para": 3
+          },
+          {
+            "date": null,
+            "type": "reply_not_filed",
+            "quote": "However, the petitioner had neither filed its reply nor availed the opportunity of personal hearing.",
+            "para": 3
+          },
+          {
+            "date": null,
+            "type": "hearing_missed",
+            "quote": "However, the petitioner had neither filed its reply nor availed the opportunity of personal hearing.",
+            "para": 3
+          },
+          {
+            "date": "2023-12-27",
+            "type": "order_passed",
+            "quote": "Hence, the impugned order came to be passed by the respondent, confirming the proposals contained in the show cause notice.",
+            "para": 3
+          }
+        ],
+        "document_contents": []
+      },
+      "grounding": {
+        "quotes_located": 10,
+        "ungrounded_items_removed": 0
+      },
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "type": "stage",
+      "stage": "check",
+      "message": "NoticeCheck is planning, calling tools, checking statutory conditions and verifying evidence with Gemini."
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 1,
+        "stage": "plan",
+        "tool": null,
+        "model": "gemini-3.5-flash-lite",
+        "ok": true,
+        "tokens_in": 1419,
+        "tokens_out": 343,
+        "seconds": 3.97,
+        "error": null,
+        "response": {
+          "tool_calls": [
+            {
+              "tool": "limitation_check",
+              "args": {
+                "provision": "73",
+                "financial_year": "2017-18",
+                "scn_date": "2023-09-15",
+                "order_date": "2023-12-27",
+                "apply_extensions": true
+              },
+              "purpose": "Check limitation periods for show cause notice and order for FY 2017-18 under section 73."
+            },
+            {
+              "tool": "statute_lookup",
+              "args": {
+                "ref": "CGST Act s.75(4)"
+              },
+              "purpose": "Check statutory requirement for granting an opportunity of personal hearing."
+            },
+            {
+              "tool": "statute_lookup",
+              "args": {
+                "ref": "CGST Act s.169"
+              },
+              "purpose": "Check valid modes of service of notice and order under the CGST Act."
+            }
+          ],
+          "missing_facts": [
+            "Whether the show cause notice and order were made available in the 'View Notices and Orders' tab or sent through other permissible modes of service under Section 169.",
+            "Whether the petitioner explicitly requested a personal hearing or if circumstances warranted a mandatory personal hearing under Section 75(4)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 2,
+        "stage": "plan",
+        "tool": "limitation_check",
+        "args": {
+          "provision": "73",
+          "financial_year": "2017-18",
+          "scn_date": "2023-09-15",
+          "order_date": "2023-12-27",
+          "apply_extensions": true
+        },
+        "by": "model",
+        "ok": true,
+        "output_summary": "{'annual_return_due': '2020-02-05', 'scn_last_date': '2023-09-30', 'order_last_date': '2023-12-31', 'scn_in_time': True, 'order_in_time': True, 'extension_notifications_used': ['13/2022-Central Tax da",
+        "seconds": 0.003,
+        "output": {
+          "annual_return_due": "2020-02-05",
+          "scn_last_date": "2023-09-30",
+          "order_last_date": "2023-12-31",
+          "scn_in_time": true,
+          "order_in_time": true,
+          "extension_notifications_used": [
+            "13/2022-Central Tax dated 05.07.2022, para (i)",
+            "09/2023-Central Tax dated 31.03.2023, para (i)"
+          ],
+          "contested": true,
+          "verified": true,
+          "notes": "annual return due 2020-02-05 (CBIC Instruction 02/2021-22 (GST-Investigation), para 3: 05th & 07th February, 2020 (Notification no. 06/2020-Central Tax dated 03.02.2020); 07.02.2020 applies to some States, 05.02.2020 used here); CGST Act s.73(10) and s.73(2): order within 3 years, notice at least 3 months before that; s.168A extensions applied: 13/2022-Central Tax dated 05.07.2022, para (i); 09/2023-Central Tax dated 31.03.2023, para (i); without them the order limit is 2023-02-05"
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 3,
+        "stage": "plan",
+        "tool": "statute_lookup",
+        "args": {
+          "ref": "CGST Act s.75(4)"
+        },
+        "by": "model",
+        "ok": true,
+        "output_summary": "{'ref': 'CGST Act s.75(4)', 'text': '(4) An opportunity of hearing shall be granted where a request is received in writing from the person chargeable with tax or penalty, or where any adverse decision",
+        "seconds": 0.016,
+        "output": {
+          "ref": "CGST Act s.75(4)",
+          "text": "(4) An opportunity of hearing shall be granted where a request is received in writing from the person chargeable with tax or penalty, or where any adverse decision is contemplated against such person.",
+          "heading": "General provisions relating to determination of tax",
+          "parent_ref": "CGST Act s.75",
+          "version_date": "2026-06-11",
+          "parent_heading": "General provisions relating to determination of tax"
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 4,
+        "stage": "plan",
+        "tool": "statute_lookup",
+        "args": {
+          "ref": "CGST Act s.169"
+        },
+        "by": "model",
+        "ok": true,
+        "output_summary": "{'ref': 'CGST Act s.169', 'text': '169. Service of notice in certain circumstances.—(1) Any decision, order, summons, notice or other communication under this Act or the rules made thereunder shall be",
+        "seconds": 0.001,
+        "output": {
+          "ref": "CGST Act s.169",
+          "text": "169. Service of notice in certain circumstances.—(1) Any decision, order, summons, notice or other communication under this Act or the rules made thereunder shall be served by any one of the following methods, namely:— (a) by giving or tendering it directly or by a messenger including a courier to the addressee or the taxable person or to his manager or authorised representative or an advocate or a tax practitioner holding authority to appear in the proceedings on behalf of the taxable person or to a person regularly employed by him in connection with the business, or to any adult member of family residing with the taxable person; or (b) by registered post or speed post or courier with acknowledgment due, to the person for whom it is intended or his authorised representative, if any, at his last known place of business or residence; or (c) by sending a communication to his e-mail address provided at the time of registration or as amended from time to time; or (d) by making it available on the common portal; or (e) by publication in a newspaper circulating in the locality in which the taxable person or the person to whom it is issued is last known to have resided, carried on business or personally worked for gain; or (f) if none of the modes aforesaid is practicable, by affixing it in some conspicuous place at his last known place of business or residence and if such mode is not practicable for any reason, then by affixing a copy thereof on the notice board of the office of the concerned officer or authority who or which passed such decision or order or issued such summons or notice. (2) Every decision, order, summons, notice or any communication shall be deemed to have been served on the date on which it is tendered or published or a copy thereof is affixed in the manner provided in sub-section (1). (3) When such decision, order, summons, notice or any communication is sent by registered post or speed post, it shall be deemed to have been received by the addressee at the expiry of the period normally taken by such post in transit unless the contrary is proved.",
+          "heading": "Service of notice in certain circumstances",
+          "parent_ref": null,
+          "version_date": "2026-06-11",
+          "parent_heading": null
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 5,
+        "stage": "precondition_check",
+        "defect": "hearing_75_4",
+        "tool": null,
+        "by": "rule",
+        "ok": true,
+        "output_summary": "cant_tell",
+        "finding": {
+          "type": "hearing_75_4",
+          "verdict": "cant_tell",
+          "provision": "CGST Act s.75(4)",
+          "evidence": [],
+          "missing_facts": [
+            "notices.0.hearing_date_given",
+            "notices.0.hearing_date",
+            "hearing events"
+          ],
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 6,
+        "stage": "precondition_check",
+        "defect": "adjournment_75_5",
+        "tool": null,
+        "by": "rule",
+        "ok": true,
+        "output_summary": "cant_tell",
+        "finding": {
+          "type": "adjournment_75_5",
+          "verdict": "cant_tell",
+          "provision": "CGST Act s.75(5)",
+          "evidence": [],
+          "missing_facts": [
+            "adjournment requests"
+          ],
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 7,
+        "stage": "precondition_check",
+        "defect": "reply_not_considered",
+        "tool": null,
+        "by": "code",
+        "ok": true,
+        "output_summary": "no_defect",
+        "finding": {
+          "type": "reply_not_considered",
+          "verdict": "no_defect",
+          "provision": "CGST Act s.75(6)",
+          "evidence": [],
+          "missing_facts": [],
+          "confidence": 0.8,
+          "note": "does not apply: no reply"
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 8,
+        "stage": "precondition_check",
+        "defect": "non_speaking_order",
+        "tool": null,
+        "by": "code",
+        "ok": true,
+        "output_summary": "cant_tell",
+        "finding": {
+          "type": "non_speaking_order",
+          "verdict": "cant_tell",
+          "provision": "CGST Act s.75(6)",
+          "evidence": [],
+          "missing_facts": [
+            "order contents"
+          ],
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 9,
+        "stage": "precondition_check",
+        "defect": "demand_beyond_scn",
+        "tool": null,
+        "by": "code",
+        "ok": true,
+        "output_summary": "cant_tell",
+        "finding": {
+          "type": "demand_beyond_scn",
+          "verdict": "cant_tell",
+          "provision": "CGST Act s.75(7)",
+          "evidence": [],
+          "missing_facts": [
+            "notice grounds",
+            "order contents"
+          ],
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 10,
+        "stage": "precondition_check",
+        "defect": "service_169",
+        "tool": null,
+        "by": "rule",
+        "ok": true,
+        "output_summary": "defect",
+        "finding": {
+          "type": "service_169",
+          "verdict": "defect",
+          "provision": "CGST Act s.169(1)",
+          "evidence": [
+            {
+              "source": "record",
+              "ref": "notices.0.service_mode",
+              "quote": "instead it was uploaded in the common portal under the head “Additional Notices and Orders” tab"
+            },
+            {
+              "source": "record",
+              "ref": "order.service_mode",
+              "quote": "instead it was uploaded in the common portal under the head “Additional Notices and Orders” tab"
+            }
+          ],
+          "missing_facts": [],
+          "confidence": 0.8
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 11,
+        "stage": "precondition_check",
+        "defect": "signature",
+        "tool": null,
+        "by": "rule",
+        "ok": true,
+        "output_summary": "cant_tell",
+        "finding": {
+          "type": "signature",
+          "verdict": "cant_tell",
+          "provision": "CGST Rules r.26(3)",
+          "evidence": [],
+          "missing_facts": [
+            "notices.0.signed",
+            "order.signed"
+          ],
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 12,
+        "stage": "precondition_check",
+        "defect": "summary_only",
+        "tool": null,
+        "by": "rule",
+        "ok": true,
+        "output_summary": "cant_tell",
+        "finding": {
+          "type": "summary_only",
+          "verdict": "cant_tell",
+          "provision": "CGST Rules r.142(1)",
+          "evidence": [],
+          "missing_facts": [
+            "notices.0.summary_only"
+          ],
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 13,
+        "stage": "precondition_check",
+        "defect": "limitation",
+        "tool": null,
+        "by": "rule",
+        "ok": true,
+        "output_summary": "contested",
+        "finding": {
+          "type": "limitation",
+          "verdict": "contested",
+          "provision": null,
+          "evidence": [
+            {
+              "source": "record",
+              "ref": "financial_years",
+              "quote": "relating to the assessment year 2017-18"
+            },
+            {
+              "source": "record",
+              "ref": "notices.0.date",
+              "quote": "a show cause notice in Form DRC-01 dated 15.09.2023 were issued to the petitioner through GST common portal."
+            },
+            {
+              "source": "record",
+              "ref": "order.date",
+              "quote": "quash the order dated 27.12.2023."
+            },
+            {
+              "source": "caselaw",
+              "ref": "HCMA013145892025 para 5",
+              "quote": "5. The learned counsel for the petitioner submits that the extension of limitation in exercise of power conferred under Section 168A of the CGST Act, 2017, vide Notification No.09/2023-CT dated 31.03.2023 and 56/2023-CT dated 28.12.2023, does not extend the period prescribed under Section 73(10) of "
+            },
+            {
+              "source": "caselaw",
+              "ref": "DLHC010397042024 para 2",
+              "quote": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter-alia, for the year 2017-18 was extended"
+            },
+            {
+              "source": "caselaw",
+              "ref": "DLHC010397352024 para 2",
+              "quote": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter alia, for the year 2017-18 was extended"
+            }
+          ],
+          "missing_facts": [],
+          "confidence": 0.6,
+          "note": "in time only because of the s.168A extension notifications, whose validity is challenged"
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 14,
+        "stage": "precondition_check",
+        "defect": "extension_notification_validity",
+        "tool": null,
+        "by": "rule",
+        "ok": true,
+        "output_summary": "contested",
+        "finding": {
+          "type": "extension_notification_validity",
+          "verdict": "contested",
+          "provision": "CGST Act s.168A",
+          "evidence": [
+            {
+              "source": "record",
+              "ref": "financial_years",
+              "quote": "relating to the assessment year 2017-18"
+            },
+            {
+              "source": "record",
+              "ref": "order.date",
+              "quote": "quash the order dated 27.12.2023."
+            }
+          ],
+          "missing_facts": [],
+          "confidence": 0.7,
+          "note": "the order is in time only under the s.168A extension notifications"
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 15,
+        "stage": "precondition_check",
+        "defect": "consolidated_scn",
+        "tool": null,
+        "by": "rule",
+        "ok": true,
+        "output_summary": "no_defect",
+        "finding": {
+          "type": "consolidated_scn",
+          "verdict": "no_defect",
+          "provision": null,
+          "evidence": [
+            {
+              "source": "record",
+              "ref": "financial_years",
+              "quote": "relating to the assessment year 2017-18"
+            }
+          ],
+          "missing_facts": [],
+          "confidence": 0.8
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 16,
+        "stage": "precondition_check",
+        "defect": "section_74_ingredients",
+        "tool": null,
+        "by": "code",
+        "ok": true,
+        "output_summary": "cant_tell",
+        "finding": {
+          "type": "section_74_ingredients",
+          "verdict": "cant_tell",
+          "provision": "CGST Act s.74(1)",
+          "evidence": [],
+          "missing_facts": [
+            "notice grounds"
+          ],
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 17,
+        "stage": "precondition_check",
+        "tool": null,
+        "model": "gemini-3.5-flash-lite",
+        "ok": true,
+        "tokens_in": 1280,
+        "tokens_out": 89,
+        "seconds": 4.4,
+        "error": null,
+        "response": {
+          "findings": [
+            {
+              "type": "other_procedural",
+              "verdict": "cant_tell",
+              "evidence": [],
+              "missing_facts": [
+                "Does the record show any other clear breach of GST procedure by the department apart from hearing, adjournment, reply, reasons, demand beyond the notice, service, signature, summary-only notice, limitation and consolidated notices?"
+              ],
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 18,
+        "stage": "precondition_check",
+        "defect": "other_procedural",
+        "tool": null,
+        "by": "model",
+        "ok": true,
+        "output_summary": "cant_tell",
+        "finding": {
+          "type": "other_procedural",
+          "verdict": "cant_tell",
+          "provision": null,
+          "evidence": [],
+          "missing_facts": [
+            "Does the record show any other clear breach of GST procedure by the department apart from hearing, adjournment, reply, reasons, demand beyond the notice, service, signature, summary-only notice, limitation and consolidated notices?"
+          ],
+          "confidence": 1.0
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 19,
+        "stage": "precondition_check",
+        "tool": "statute_lookup",
+        "args": {
+          "ref": "CGST Act s.169(1)"
+        },
+        "by": "code",
+        "ok": true,
+        "output_summary": "{'ref': 'CGST Act s.169(1)', 'text': '(1) Any decision, order, summons, notice or other communication under this Act or the rules made thereunder shall be served by any one of the following methods, n",
+        "seconds": 0.001,
+        "output": {
+          "ref": "CGST Act s.169(1)",
+          "text": "(1) Any decision, order, summons, notice or other communication under this Act or the rules made thereunder shall be served by any one of the following methods, namely:— (a) by giving or tendering it directly or by a messenger including a courier to the addressee or the taxable person or to his manager or authorised representative or an advocate or a tax practitioner holding authority to appear in the proceedings on behalf of the taxable person or to a person regularly employed by him in connection with the business, or to any adult member of family residing with the taxable person; or (b) by registered post or speed post or courier with acknowledgment due, to the person for whom it is intended or his authorised representative, if any, at his last known place of business or residence; or (c) by sending a communication to his e-mail address provided at the time of registration or as amended from time to time; or (d) by making it available on the common portal; or (e) by publication in a newspaper circulating in the locality in which the taxable person or the person to whom it is issued is last known to have resided, carried on business or personally worked for gain; or (f) if none of the modes aforesaid is practicable, by affixing it in some conspicuous place at his last known place of business or residence and if such mode is not practicable for any reason, then by affixing a copy thereof on the notice board of the office of the concerned officer or authority who or which passed such decision or order or issued such summons or notice.",
+          "heading": "Service of notice in certain circumstances",
+          "parent_ref": "CGST Act s.169",
+          "version_date": "2026-06-11",
+          "parent_heading": "Service of notice in certain circumstances"
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 20,
+        "stage": "precondition_check",
+        "tool": "statute_lookup",
+        "args": {
+          "ref": "CGST Act s.168A"
+        },
+        "by": "code",
+        "ok": true,
+        "output_summary": "{'ref': 'CGST Act s.168A', 'text': '168A. Power of Government to extend time limit in special circumstances.— (1) Notwithstanding anything contained in this Act, the Government may, on the recommendat",
+        "seconds": 0.001,
+        "output": {
+          "ref": "CGST Act s.168A",
+          "text": "168A. Power of Government to extend time limit in special circumstances.— (1) Notwithstanding anything contained in this Act, the Government may, on the recommendations of the Council, by notification, extend the time limit specified in, or prescribed or notified under, this Act in respect of actions which cannot be completed of complied with due to force majeure. (2) The power to issue notification under sub-section (1) shall include the power to give retrospective effect to such notification from a date not earlier than the date of commencement of this Act. Explanation.—For the purposes of this section, the expression “force majeure” means a case of war, epidemic, flood, drought, fire, cyclone, earthquake or any other calamity caused by nature or otherwise affecting the implementation of any of the provisions of this Act.]",
+          "heading": "Power of Government to extend time limit in special circumstances",
+          "parent_ref": null,
+          "version_date": "2026-06-11",
+          "parent_heading": null
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 21,
+        "stage": "verify",
+        "tool": "caselaw_search",
+        "args": {
+          "query": "time limit section 73(10) extension notification 168A validity",
+          "k": 3
+        },
+        "by": "code",
+        "ok": true,
+        "output_summary": "[{'cnr': 'HCMA013145892025', 'court': 'Madras', 'decision_date': '2026-01-08', 'para': 5, 'text': '5. The learned counsel for the petitioner submits that the extension of limitation in exercise of pow",
+        "seconds": 0.006,
+        "output": [
+          {
+            "cnr": "HCMA013145892025",
+            "court": "Madras",
+            "decision_date": "2026-01-08",
+            "para": 5,
+            "text": "5. The learned counsel for the petitioner submits that the extension of limitation in exercise of power conferred under Section 168A of the CGST Act, 2017, vide Notification No.09/2023-CT dated 31.03.2023 and 56/2023-CT dated 28.12.2023, does not extend the period prescribed under Section 73(10) of ",
+            "score": 7.086
+          },
+          {
+            "cnr": "DLHC010397042024",
+            "court": "Delhi",
+            "decision_date": "2024-07-11",
+            "para": 2,
+            "text": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter-alia, for the year 2017-18 was extended",
+            "score": 6.881
+          },
+          {
+            "cnr": "DLHC010397352024",
+            "court": "Delhi",
+            "decision_date": "2024-07-11",
+            "para": 2,
+            "text": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter alia, for the year 2017-18 was extended",
+            "score": 6.881
+          }
+        ]
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 22,
+        "stage": "verify",
+        "tool": "caselaw_search",
+        "args": {
+          "query": "validity of Notification 9/2023 56/2023 extension section 168A",
+          "k": 3
+        },
+        "by": "code",
+        "ok": true,
+        "output_summary": "[{'cnr': 'HCMA013145892025', 'court': 'Madras', 'decision_date': '2026-01-08', 'para': 5, 'text': '5. The learned counsel for the petitioner submits that the extension of limitation in exercise of pow",
+        "seconds": 0.001,
+        "output": [
+          {
+            "cnr": "HCMA013145892025",
+            "court": "Madras",
+            "decision_date": "2026-01-08",
+            "para": 5,
+            "text": "5. The learned counsel for the petitioner submits that the extension of limitation in exercise of power conferred under Section 168A of the CGST Act, 2017, vide Notification No.09/2023-CT dated 31.03.2023 and 56/2023-CT dated 28.12.2023, does not extend the period prescribed under Section 73(10) of ",
+            "score": 7.646
+          },
+          {
+            "cnr": "DLHC010397042024",
+            "court": "Delhi",
+            "decision_date": "2024-07-11",
+            "para": 2,
+            "text": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter-alia, for the year 2017-18 was extended",
+            "score": 4.514
+          },
+          {
+            "cnr": "DLHC010397352024",
+            "court": "Delhi",
+            "decision_date": "2024-07-11",
+            "para": 2,
+            "text": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter alia, for the year 2017-18 was extended",
+            "score": 4.514
+          }
+        ]
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 23,
+        "stage": "verify",
+        "ok": true,
+        "output_summary": "record quote verification complete; 0 defect(s) dropped"
+      }
+    },
+    {
+      "type": "step",
+      "step": {
+        "step": 24,
+        "stage": "handoff",
+        "ok": true,
+        "output_summary": ""
+      }
+    },
+    {
+      "type": "result",
+      "result": {
+        "cnr": "LIVEDD84C08F01",
+        "view": "full_record",
+        "findings": [
+          {
+            "type": "hearing_75_4",
+            "verdict": "cant_tell",
+            "provision": "CGST Act s.75(4)",
+            "evidence": [],
+            "missing_facts": [
+              "notices.0.hearing_date_given",
+              "notices.0.hearing_date",
+              "hearing events"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "type": "adjournment_75_5",
+            "verdict": "cant_tell",
+            "provision": "CGST Act s.75(5)",
+            "evidence": [],
+            "missing_facts": [
+              "adjournment requests"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "type": "reply_not_considered",
+            "verdict": "no_defect",
+            "provision": "CGST Act s.75(6)",
+            "evidence": [],
+            "missing_facts": [],
+            "confidence": 0.8,
+            "note": "does not apply: no reply"
+          },
+          {
+            "type": "non_speaking_order",
+            "verdict": "cant_tell",
+            "provision": "CGST Act s.75(6)",
+            "evidence": [],
+            "missing_facts": [
+              "order contents"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "type": "demand_beyond_scn",
+            "verdict": "cant_tell",
+            "provision": "CGST Act s.75(7)",
+            "evidence": [],
+            "missing_facts": [
+              "notice grounds",
+              "order contents"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "type": "service_169",
+            "verdict": "defect",
+            "provision": "CGST Act s.169(1)",
+            "evidence": [
+              {
+                "source": "record",
+                "ref": "notices.0.service_mode",
+                "quote": "instead it was uploaded in the common portal under the head “Additional Notices and Orders” tab"
+              },
+              {
+                "source": "record",
+                "ref": "order.service_mode",
+                "quote": "instead it was uploaded in the common portal under the head “Additional Notices and Orders” tab"
+              },
+              {
+                "source": "statute",
+                "ref": "CGST Act s.169(1)",
+                "quote": "(1) Any decision, order, summons, notice or other communication under this Act or the rules made thereunder shall be served by any one of the following methods, namely:— (a) by giving or tendering it directly or by a messenger including a courier to the addressee or the taxable person or to his manager or authorised representative or an advocate or a tax practitioner holding authority to appear in"
+              }
+            ],
+            "missing_facts": [],
+            "confidence": 0.8
+          },
+          {
+            "type": "signature",
+            "verdict": "cant_tell",
+            "provision": "CGST Rules r.26(3)",
+            "evidence": [],
+            "missing_facts": [
+              "notices.0.signed",
+              "order.signed"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "type": "summary_only",
+            "verdict": "cant_tell",
+            "provision": "CGST Rules r.142(1)",
+            "evidence": [],
+            "missing_facts": [
+              "notices.0.summary_only"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "type": "limitation",
+            "verdict": "contested",
+            "provision": null,
+            "evidence": [
+              {
+                "source": "record",
+                "ref": "financial_years",
+                "quote": "relating to the assessment year 2017-18"
+              },
+              {
+                "source": "record",
+                "ref": "notices.0.date",
+                "quote": "a show cause notice in Form DRC-01 dated 15.09.2023 were issued to the petitioner through GST common portal."
+              },
+              {
+                "source": "record",
+                "ref": "order.date",
+                "quote": "quash the order dated 27.12.2023."
+              },
+              {
+                "source": "caselaw",
+                "ref": "HCMA013145892025 para 5",
+                "quote": "5. The learned counsel for the petitioner submits that the extension of limitation in exercise of power conferred under Section 168A of the CGST Act, 2017, vide Notification No.09/2023-CT dated 31.03.2023 and 56/2023-CT dated 28.12.2023, does not extend the period prescribed under Section 73(10) of "
+              },
+              {
+                "source": "caselaw",
+                "ref": "DLHC010397042024 para 2",
+                "quote": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter-alia, for the year 2017-18 was extended"
+              },
+              {
+                "source": "caselaw",
+                "ref": "DLHC010397352024 para 2",
+                "quote": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter alia, for the year 2017-18 was extended"
+              }
+            ],
+            "missing_facts": [],
+            "confidence": 0.6,
+            "note": "in time only because of the s.168A extension notifications, whose validity is challenged"
+          },
+          {
+            "type": "extension_notification_validity",
+            "verdict": "contested",
+            "provision": "CGST Act s.168A",
+            "evidence": [
+              {
+                "source": "record",
+                "ref": "financial_years",
+                "quote": "relating to the assessment year 2017-18"
+              },
+              {
+                "source": "record",
+                "ref": "order.date",
+                "quote": "quash the order dated 27.12.2023."
+              },
+              {
+                "source": "statute",
+                "ref": "CGST Act s.168A",
+                "quote": "168A. Power of Government to extend time limit in special circumstances.— (1) Notwithstanding anything contained in this Act, the Government may, on the recommendations of the Council, by notification, extend the time limit specified in, or prescribed or notified under, this Act in respect of actions which cannot be completed of complied with due to force majeure. (2) The power to issue notificati"
+              },
+              {
+                "source": "caselaw",
+                "ref": "HCMA013145892025 para 5",
+                "quote": "5. The learned counsel for the petitioner submits that the extension of limitation in exercise of power conferred under Section 168A of the CGST Act, 2017, vide Notification No.09/2023-CT dated 31.03.2023 and 56/2023-CT dated 28.12.2023, does not extend the period prescribed under Section 73(10) of "
+              },
+              {
+                "source": "caselaw",
+                "ref": "DLHC010397042024 para 2",
+                "quote": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter-alia, for the year 2017-18 was extended"
+              },
+              {
+                "source": "caselaw",
+                "ref": "DLHC010397352024 para 2",
+                "quote": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter alia, for the year 2017-18 was extended"
+              }
+            ],
+            "missing_facts": [],
+            "confidence": 0.7,
+            "note": "the order is in time only under the s.168A extension notifications"
+          },
+          {
+            "type": "consolidated_scn",
+            "verdict": "no_defect",
+            "provision": null,
+            "evidence": [
+              {
+                "source": "record",
+                "ref": "financial_years",
+                "quote": "relating to the assessment year 2017-18"
+              }
+            ],
+            "missing_facts": [],
+            "confidence": 0.8
+          },
+          {
+            "type": "section_74_ingredients",
+            "verdict": "cant_tell",
+            "provision": "CGST Act s.74(1)",
+            "evidence": [],
+            "missing_facts": [
+              "notice grounds"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "type": "other_procedural",
+            "verdict": "cant_tell",
+            "provision": null,
+            "evidence": [],
+            "missing_facts": [
+              "Does the record show any other clear breach of GST procedure by the department apart from hearing, adjournment, reply, reasons, demand beyond the notice, service, signature, summary-only notice, limitation and consolidated notices?"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "handoff": {
+          "escalate": false,
+          "reasons": []
+        },
+        "actions": [],
+        "missing_facts_asked": [
+          "Whether the show cause notice and order were made available in the 'View Notices and Orders' tab or sent through other permissible modes of service under Section 169.",
+          "Whether the petitioner explicitly requested a personal hearing or if circumstances warranted a mandatory personal hearing under Section 75(4)."
+        ],
+        "usage": {
+          "calls": 2,
+          "tokens_in": 2699,
+          "tokens_out": 432,
+          "seconds": 8.37
+        },
+        "system": "noticecheck_live_gemini",
+        "mode": "live_gemini",
+        "extractor": "gemini"
+      }
+    }
+  ],
+  "result": {
+    "cnr": "LIVEDD84C08F01",
+    "view": "full_record",
+    "findings": [
+      {
+        "type": "hearing_75_4",
+        "verdict": "cant_tell",
+        "provision": "CGST Act s.75(4)",
+        "evidence": [],
+        "missing_facts": [
+          "notices.0.hearing_date_given",
+          "notices.0.hearing_date",
+          "hearing events"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "type": "adjournment_75_5",
+        "verdict": "cant_tell",
+        "provision": "CGST Act s.75(5)",
+        "evidence": [],
+        "missing_facts": [
+          "adjournment requests"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "type": "reply_not_considered",
+        "verdict": "no_defect",
+        "provision": "CGST Act s.75(6)",
+        "evidence": [],
+        "missing_facts": [],
+        "confidence": 0.8,
+        "note": "does not apply: no reply"
+      },
+      {
+        "type": "non_speaking_order",
+        "verdict": "cant_tell",
+        "provision": "CGST Act s.75(6)",
+        "evidence": [],
+        "missing_facts": [
+          "order contents"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "type": "demand_beyond_scn",
+        "verdict": "cant_tell",
+        "provision": "CGST Act s.75(7)",
+        "evidence": [],
+        "missing_facts": [
+          "notice grounds",
+          "order contents"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "type": "service_169",
+        "verdict": "defect",
+        "provision": "CGST Act s.169(1)",
+        "evidence": [
+          {
+            "source": "record",
+            "ref": "notices.0.service_mode",
+            "quote": "instead it was uploaded in the common portal under the head “Additional Notices and Orders” tab"
+          },
+          {
+            "source": "record",
+            "ref": "order.service_mode",
+            "quote": "instead it was uploaded in the common portal under the head “Additional Notices and Orders” tab"
+          },
+          {
+            "source": "statute",
+            "ref": "CGST Act s.169(1)",
+            "quote": "(1) Any decision, order, summons, notice or other communication under this Act or the rules made thereunder shall be served by any one of the following methods, namely:— (a) by giving or tendering it directly or by a messenger including a courier to the addressee or the taxable person or to his manager or authorised representative or an advocate or a tax practitioner holding authority to appear in"
+          }
+        ],
+        "missing_facts": [],
+        "confidence": 0.8
+      },
+      {
+        "type": "signature",
+        "verdict": "cant_tell",
+        "provision": "CGST Rules r.26(3)",
+        "evidence": [],
+        "missing_facts": [
+          "notices.0.signed",
+          "order.signed"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "type": "summary_only",
+        "verdict": "cant_tell",
+        "provision": "CGST Rules r.142(1)",
+        "evidence": [],
+        "missing_facts": [
+          "notices.0.summary_only"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "type": "limitation",
+        "verdict": "contested",
+        "provision": null,
+        "evidence": [
+          {
+            "source": "record",
+            "ref": "financial_years",
+            "quote": "relating to the assessment year 2017-18"
+          },
+          {
+            "source": "record",
+            "ref": "notices.0.date",
+            "quote": "a show cause notice in Form DRC-01 dated 15.09.2023 were issued to the petitioner through GST common portal."
+          },
+          {
+            "source": "record",
+            "ref": "order.date",
+            "quote": "quash the order dated 27.12.2023."
+          },
+          {
+            "source": "caselaw",
+            "ref": "HCMA013145892025 para 5",
+            "quote": "5. The learned counsel for the petitioner submits that the extension of limitation in exercise of power conferred under Section 168A of the CGST Act, 2017, vide Notification No.09/2023-CT dated 31.03.2023 and 56/2023-CT dated 28.12.2023, does not extend the period prescribed under Section 73(10) of "
+          },
+          {
+            "source": "caselaw",
+            "ref": "DLHC010397042024 para 2",
+            "quote": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter-alia, for the year 2017-18 was extended"
+          },
+          {
+            "source": "caselaw",
+            "ref": "DLHC010397352024 para 2",
+            "quote": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter alia, for the year 2017-18 was extended"
+          }
+        ],
+        "missing_facts": [],
+        "confidence": 0.6,
+        "note": "in time only because of the s.168A extension notifications, whose validity is challenged"
+      },
+      {
+        "type": "extension_notification_validity",
+        "verdict": "contested",
+        "provision": "CGST Act s.168A",
+        "evidence": [
+          {
+            "source": "record",
+            "ref": "financial_years",
+            "quote": "relating to the assessment year 2017-18"
+          },
+          {
+            "source": "record",
+            "ref": "order.date",
+            "quote": "quash the order dated 27.12.2023."
+          },
+          {
+            "source": "statute",
+            "ref": "CGST Act s.168A",
+            "quote": "168A. Power of Government to extend time limit in special circumstances.— (1) Notwithstanding anything contained in this Act, the Government may, on the recommendations of the Council, by notification, extend the time limit specified in, or prescribed or notified under, this Act in respect of actions which cannot be completed of complied with due to force majeure. (2) The power to issue notificati"
+          },
+          {
+            "source": "caselaw",
+            "ref": "HCMA013145892025 para 5",
+            "quote": "5. The learned counsel for the petitioner submits that the extension of limitation in exercise of power conferred under Section 168A of the CGST Act, 2017, vide Notification No.09/2023-CT dated 31.03.2023 and 56/2023-CT dated 28.12.2023, does not extend the period prescribed under Section 73(10) of "
+          },
+          {
+            "source": "caselaw",
+            "ref": "DLHC010397042024 para 2",
+            "quote": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter-alia, for the year 2017-18 was extended"
+          },
+          {
+            "source": "caselaw",
+            "ref": "DLHC010397352024 para 2",
+            "quote": "2. The petitioner also impugns the Notification No. 9/2023-Central Tax dated 31.03.2023 (hereafter the impugned notification), whereby the time limit specified under Section 73(10) of the CGST Act for passing an order under Section 73(9) of the CGST Act, inter alia, for the year 2017-18 was extended"
+          }
+        ],
+        "missing_facts": [],
+        "confidence": 0.7,
+        "note": "the order is in time only under the s.168A extension notifications"
+      },
+      {
+        "type": "consolidated_scn",
+        "verdict": "no_defect",
+        "provision": null,
+        "evidence": [
+          {
+            "source": "record",
+            "ref": "financial_years",
+            "quote": "relating to the assessment year 2017-18"
+          }
+        ],
+        "missing_facts": [],
+        "confidence": 0.8
+      },
+      {
+        "type": "section_74_ingredients",
+        "verdict": "cant_tell",
+        "provision": "CGST Act s.74(1)",
+        "evidence": [],
+        "missing_facts": [
+          "notice grounds"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "type": "other_procedural",
+        "verdict": "cant_tell",
+        "provision": null,
+        "evidence": [],
+        "missing_facts": [
+          "Does the record show any other clear breach of GST procedure by the department apart from hearing, adjournment, reply, reasons, demand beyond the notice, service, signature, summary-only notice, limitation and consolidated notices?"
+        ],
+        "confidence": 1.0
+      }
+    ],
+    "handoff": {
+      "escalate": false,
+      "reasons": []
+    },
+    "actions": [],
+    "missing_facts_asked": [
+      "Whether the show cause notice and order were made available in the 'View Notices and Orders' tab or sent through other permissible modes of service under Section 169.",
+      "Whether the petitioner explicitly requested a personal hearing or if circumstances warranted a mandatory personal hearing under Section 75(4)."
+    ],
+    "usage": {
+      "calls": 2,
+      "tokens_in": 2699,
+      "tokens_out": 432,
+      "seconds": 8.37
+    },
+    "system": "noticecheck_live_gemini",
+    "mode": "live_gemini",
+    "extractor": "gemini"
+  },
+  "precedent_index": "bundled_excerpts"
+}

@@ -4,12 +4,16 @@ let demoCase = null;
 let replaySteps = [];
 let replayIndex = 0;
 let replayTimer = null;
+let geminiReplayTimer = null;
+let geminiReplayIndex = 0;
 let caseRequest = 0;
 let selectedCaseLetter = 'A';
 let selectedCasePromise = null;
 let liveController = null;
 let liveAvailable = false;
 let livePrecedents = 'bundled_excerpts';
+let lastLiveRun = null;
+let modelView = 'qwen';
 
 const byId = id => document.getElementById(id);
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, ch =>
@@ -118,7 +122,7 @@ function renderCheckerComparison() {
   }
   const shared = demoCase.comparison.input.record;
   const plain = demoCase.comparison.plain.findings || [];
-  control.innerHTML = `<div><strong class="text-sm">Compare the checker approaches</strong><p class="text-xs text-on-surface-variant mt-1">Both receive the same human-checked facts. The buttons compare their saved final findings. The NoticeCheck-only trace below shows planning, tool calls, rule checks, precedent search and hand-off.</p><p class="text-xs text-outline mt-1">The saved trace does not expose free-text model reasoning or every internal quote-verification decision.</p><p class="text-xs text-outline mt-1">Provision: ${escapeHtml(shared.provision?.value || 'unknown')} · Financial years: ${escapeHtml((shared.financial_years?.value || []).join(', ') || 'unknown')}</p></div><div class="inline-flex flex-wrap p-0.5 bg-surface-container rounded-lg border border-surface-container-high/60"><button id="rq1-btn-nc" onclick="toggleRQ1View('nc')" type="button" class="px-2 py-1 rounded text-xs">NoticeCheck pipeline</button><button id="rq1-btn-plain" onclick="toggleRQ1View('plain')" type="button" class="px-2 py-1 rounded text-xs">Plain Qwen3-8B</button><button id="rq1-btn-side" onclick="toggleRQ1View('side')" type="button" class="px-2 py-1 rounded text-xs">Compare both</button></div>`;
+  control.innerHTML = `<div><strong class="text-sm">Compare the checker approaches</strong><p class="text-xs text-on-surface-variant mt-1">Both receive the same human-checked facts. The buttons compare their saved final findings. The NoticeCheck-only trace below shows planning, tool calls, rule checks, precedent search and hand-off.</p><p class="text-xs text-outline mt-1">The saved trace does not expose free-text model reasoning or every internal quote-verification decision.</p><p class="text-xs text-outline mt-1">Provision: ${escapeHtml(shared.provision?.value || 'unknown')} · Financial years: ${escapeHtml((shared.financial_years?.value || []).join(', ') || 'unknown')}</p></div><div class="inline-flex flex-wrap p-0.5 bg-surface-container rounded-lg border border-surface-container-high/60"><button id="rq1-btn-nc" onclick="toggleRQ1View('nc')" type="button" class="px-2 py-1 rounded text-xs">NoticeCheck pipeline</button><button id="rq1-btn-plain" onclick="toggleRQ1View('plain')" type="button" class="px-2 py-1 rounded text-xs">Plain Qwen3-8B</button><button id="rq1-btn-side" onclick="toggleRQ1View('side')" type="button" class="px-2 py-1 rounded text-xs">Compare Qwen checkers</button></div>`;
   plainPanel.innerHTML = `<h4 class="font-semibold text-secondary">Plain Qwen3-8B · same fact record, no NoticeCheck tools</h4>${plain.map(f => findingCard(f)).join('')}`;
   toggleRQ1View = mode => {
     const panel = byId('rq1-plain-panel');
@@ -146,11 +150,157 @@ function renderCheckerComparison() {
   toggleRQ1View('nc');
 }
 
+function stopGeminiReplay() {
+  if (geminiReplayTimer) clearInterval(geminiReplayTimer);
+  geminiReplayTimer = null;
+}
+
+function geminiEvents() { return demoCase?.gemini?.events || []; }
+
+function renderGeminiFindings(findings, preliminary=false) {
+  const order = {defect:0, contested:1, cant_tell:2, no_defect:3};
+  byId('demo-gemini-findings').innerHTML = [...findings]
+    .sort((a,b) => (order[a.verdict] ?? 4) - (order[b.verdict] ?? 4))
+    .map(f => findingCard(f, preliminary)).join('');
+}
+
+function geminiEventLabel(event) {
+  if (event.type === 'step') return `${event.step.step}. ${stepLabel(event.step)}`;
+  if (event.type === 'extraction') return `Gemini extracted facts · ${event.grounding.quotes_located} quotes located`;
+  if (event.type === 'result') return 'Final Gemini checklist and hand-off';
+  return event.message || nice(event.stage || event.type);
+}
+
+function geminiReplayNext() {
+  const events = geminiEvents();
+  if (geminiReplayIndex >= events.length) {
+    stopGeminiReplay();
+    renderGeminiFindings(demoCase.gemini.result.findings);
+    setText('demo-gemini-status', 'Replay complete · final saved Gemini checklist shown');
+    return;
+  }
+  const event = events[geminiReplayIndex++];
+  const item = document.createElement('details');
+  item.className = 'p-2 rounded bg-surface-container mb-1 text-xs text-on-surface-variant';
+  const summary = document.createElement('summary');
+  summary.className = 'cursor-pointer';
+  summary.textContent = geminiEventLabel(event);
+  item.append(summary);
+  const detail = event.type === 'step' ? event.step : event.type === 'extraction'
+    ? {model:event.model, grounding:event.grounding, facts:event.facts} : null;
+  if (detail) {
+    const pre = document.createElement('pre');
+    pre.className = 'mt-2 whitespace-pre-wrap break-words text-on-surface';
+    pre.textContent = JSON.stringify(detail, null, 2);
+    item.append(pre);
+  }
+  byId('demo-gemini-log').append(item);
+  item.scrollIntoView({block:'nearest'});
+  setText('demo-gemini-status', `Gemini step ${geminiReplayIndex} of ${events.length}`);
+  if (event.type === 'step' && event.step.stage === 'precondition_check' && event.step.finding) {
+    byId('demo-gemini-findings').insertAdjacentHTML('beforeend', findingCard(event.step.finding, true));
+    const quote = (event.step.finding.evidence || []).find(e => e.source === 'record' && e.quote)?.quote;
+    const para = findQuoteParagraph(quote);
+    if (para !== null) showParagraph(para);
+  }
+  if (event.type === 'result') renderGeminiFindings(demoCase.gemini.result.findings);
+}
+
+window.demoGeminiPlay = () => {
+  if (!demoCase?.gemini) return;
+  if (geminiReplayIndex >= geminiEvents().length) geminiReplayIndex = 0;
+  if (geminiReplayIndex === 0) {
+    byId('demo-gemini-log').replaceChildren();
+    byId('demo-gemini-findings').replaceChildren();
+  }
+  stopGeminiReplay();
+  geminiReplayTimer = setInterval(geminiReplayNext, 650);
+};
+window.demoGeminiPause = stopGeminiReplay;
+window.demoGeminiNext = () => { stopGeminiReplay(); geminiReplayNext(); };
+
+function renderGeminiComparison() {
+  let switcher = byId('demo-model-switch');
+  let panel = byId('demo-gemini-panel');
+  if (!switcher) {
+    switcher = document.createElement('div');
+    switcher.id = 'demo-model-switch';
+    switcher.className = 'rounded-xl border border-surface-container-high bg-surface-container-low p-3 mb-3';
+    byId('demo-replay-control').before(switcher);
+  }
+  if (!panel) {
+    panel = document.createElement('section');
+    panel.id = 'demo-gemini-panel';
+    panel.className = 'rounded-xl border border-surface-container-high bg-surface-container-lowest p-3 mb-3';
+    const qwenTrace = document.querySelector('#case-checks-container + details');
+    (qwenTrace || byId('case-checks-container')).after(panel);
+  }
+  switcher.classList.toggle('hidden', !demoCase.gemini);
+  panel.classList.toggle('hidden', !demoCase.gemini);
+  if (!demoCase.gemini) return;
+  const model = demoCase.gemini.extractor;
+  const precedentNote = demoCase.gemini.precedent_index === 'bundled_excerpts'
+    ? 'Gemini used the demo’s bundled precedent excerpts.' : 'Gemini used the full local precedent index.';
+  const verdictName = {defect:'Potential defect', contested:'Contested', cant_tell:'Cannot tell', no_defect:'No defect identified'};
+  const geminiVerdicts = new Map(demoCase.gemini.result.findings.map(f => [f.type, f.verdict]));
+  const changed = demoCase.main.findings.filter(f => geminiVerdicts.has(f.type) && geminiVerdicts.get(f.type) !== f.verdict);
+  const difference = changed.length
+    ? changed.map(f => `<li>${escapeHtml(nice(f.type))}: Qwen ${escapeHtml(verdictName[f.verdict] || f.verdict)} → Gemini ${escapeHtml(verdictName[geminiVerdicts.get(f.type)] || geminiVerdicts.get(f.type))}</li>`).join('')
+    : '<li>Both runs returned the same verdicts for all 13 checks. Their extracted facts and recorded steps can still differ.</li>';
+  switcher.innerHTML = `<strong class="text-sm">Compare saved model-backed runs</strong><p class="text-xs text-on-surface-variant mt-1">Both runs use this judgment. Gemini extracted its own facts and ran NoticeCheck with Gemini; Qwen uses the original saved input. ${escapeHtml(precedentNote)} This is an output comparison, not a controlled checker ablation.</p><div class="flex flex-wrap gap-1 mt-2"><button id="demo-model-qwen" type="button" onclick="demoModelView('qwen')" class="px-3 py-1 rounded text-xs">NoticeCheck · Qwen</button><button id="demo-model-gemini" type="button" onclick="demoModelView('gemini')" class="px-3 py-1 rounded text-xs">NoticeCheck · Gemini</button><button id="demo-model-both" type="button" onclick="demoModelView('both')" class="px-3 py-1 rounded text-xs">Compare Qwen and Gemini</button></div><div id="demo-model-delta" class="hidden mt-2 p-2 rounded bg-surface-container text-xs"><strong>Verdict differences</strong><ul class="list-disc pl-5 mt-1">${difference}</ul></div>`;
+  panel.innerHTML = `<strong>NoticeCheck with Gemini · ${escapeHtml(model)}</strong><p class="text-xs text-outline mt-1">Recorded Gemini run on this judgment. Extracted facts and checker trace are available below.</p><details class="my-2 text-xs"><summary class="cursor-pointer font-semibold">Inspect Gemini-extracted facts</summary><pre class="mt-2 whitespace-pre-wrap break-words">${escapeHtml(JSON.stringify(demoCase.gemini.events.find(e => e.type === 'extraction')?.facts || {}, null, 2))}</pre></details><div id="demo-gemini-findings"></div><div class="border-t border-surface-container-high pt-3 mt-3"><strong class="text-sm">Gemini execution trace · recorded steps</strong><div class="flex flex-wrap gap-1 mt-2"><button onclick="demoGeminiPlay()" class="px-3 py-1 rounded bg-primary-container text-xs">Play</button><button onclick="demoGeminiPause()" class="px-3 py-1 rounded bg-surface-container-high text-xs">Pause</button><button onclick="demoGeminiNext()" class="px-3 py-1 rounded bg-surface-container-high text-xs">Next step</button></div><p id="demo-gemini-status" class="text-xs text-outline my-2">Press Play to replay the saved Gemini run</p><div id="demo-gemini-log" class="max-h-40 overflow-y-auto font-code-trace"></div><details class="mt-2 text-xs"><summary class="cursor-pointer font-semibold">Full saved Gemini trace (${geminiEvents().length} events)</summary><div class="mt-2 max-h-72 overflow-y-auto">${geminiEvents().map(e => `<p class="border-b border-surface-container-high py-1">${escapeHtml(geminiEventLabel(e))}</p>`).join('')}</div></details></div>`;
+  geminiReplayIndex = 0;
+  renderGeminiFindings(demoCase.gemini.result.findings);
+  demoModelView('qwen');
+}
+
+window.demoModelView = mode => {
+  if (!demoCase?.gemini) return;
+  modelView = mode;
+  stopReplay();
+  stopGeminiReplay();
+  const qwen = mode !== 'gemini';
+  const gemini = mode !== 'qwen';
+  const rq1Control = byId('rq1-btn-nc')?.closest('.bg-surface-container-low');
+  rq1Control?.classList.toggle('hidden', !qwen || mode === 'both' || !demoCase.comparison);
+  byId('rq1-plain-panel')?.classList.add('hidden');
+  byId('demo-replay-control').classList.toggle('hidden', !qwen);
+  byId('case-checks-container').classList.toggle('hidden', !qwen);
+  const qwenTrace = document.querySelector('#case-checks-container + details');
+  qwenTrace?.classList.toggle('hidden', !qwen);
+  byId('demo-gemini-panel').classList.toggle('hidden', !gemini);
+  byId('demo-model-delta')?.classList.toggle('hidden', mode !== 'both');
+  if (qwen && (replayIndex === 0 || replayIndex >= replaySteps.length)) renderFindings(demoCase.main.findings);
+  const count = findings => ({d:findings.filter(f => f.verdict === 'defect').length,
+                              c:findings.filter(f => f.verdict === 'contested').length});
+  const qc = count(demoCase.main.findings), gc = count(demoCase.gemini.result.findings);
+  setText('summary-defect-badge', mode === 'both'
+    ? `Qwen: ${defectSummary(qc.d, qc.c)} · Gemini: ${defectSummary(gc.d, gc.c)}`
+    : defectSummary(mode === 'qwen' ? qc.d : gc.d, mode === 'qwen' ? qc.c : gc.c));
+  setText('summary-text', mode === 'qwen'
+    ? 'This is the saved Qwen run. Switch to Gemini to see its separate extraction, findings and trace.'
+    : mode === 'gemini' ? 'This is the recorded Gemini run on the same judgment. Its fact extraction and full trace are below.'
+    : 'Both saved runs use the same judgment, but may extract different facts. Each trace appears with its own findings.');
+  setText('summary-input-label', mode === 'gemini' ? 'Gemini-extracted facts' : mode === 'both'
+    ? 'Qwen and Gemini · independent fact extraction' : demoCase.comparison ? 'Same facts as Plain Qwen' : 'Fine-tuned extractor output');
+  setText('summary-period', mode === 'gemini' ? `Gemini-extracted facts · ${demoCase.id}` : mode === 'both'
+    ? `Same judgment · separate fact records · ${demoCase.id}` : `${demoCase.input_label} · ${demoCase.id}`);
+  const handoff = mode === 'gemini' ? demoCase.gemini.result.handoff : demoCase.main.handoff;
+  setText('recommendation-text', mode === 'both' ? 'Review each saved run’s findings and source before drawing conclusions.'
+    : handoff?.escalate ? `Human review recommended: ${(handoff.reasons || []).map(nice).join(', ') || 'see case details'}.`
+    : 'The saved run did not trigger a hand-off. Review findings and source before drawing conclusions.');
+  for (const key of ['qwen','gemini','both']) {
+    const button = byId(`demo-model-${key}`);
+    button?.classList.toggle('bg-primary-container', key === mode);
+    button?.classList.toggle('text-on-primary-container', key === mode);
+  }
+};
+
 function showCase(detail) {
   demoCase = detail;
   renderParagraphs(detail.paragraphs);
   const headerBadge = document.querySelector('header .uppercase span:last-child');
-  if (headerBadge) headerBadge.textContent = 'Real saved Qwen runs';
+  if (headerBadge) headerBadge.textContent = 'Real saved Qwen and Gemini runs';
   const replayControl = byId('demo-replay-control');
   replayControl.querySelector('strong').textContent = detail.comparison ? 'NoticeCheck execution trace · recorded steps' : 'Recorded Qwen run · step by step';
   replayControl.querySelectorAll('button').forEach(button => button.classList.remove('hidden'));
@@ -198,6 +348,7 @@ function showCase(detail) {
     accordion.classList.remove('hidden');
     accordion.innerHTML = `<summary class="cursor-pointer font-semibold">Full saved NoticeCheck trace (${detail.trace.length} steps)</summary><div class="mt-3 max-h-72 overflow-y-auto text-xs">${detail.trace.map(step => `<p class="border-b border-surface-container-high py-1">${escapeHtml(step.step)}. ${escapeHtml(stepLabel(step))}</p>`).join('')}</div>`;
   }
+  renderGeminiComparison();
 }
 
 async function selectDemoCase(letter) {
@@ -214,6 +365,7 @@ async function selectDemoCase(letter) {
   liveController?.abort();
   liveController = null;
   stopReplay();
+  stopGeminiReplay();
   const request = ++caseRequest;
   const response = await fetch(`/api/cases/${selected.id}`);
   if (!response.ok) throw new Error((await response.json()).error);
@@ -267,17 +419,18 @@ function replayNext() {
 }
 window.demoPlay = () => {
   if (!demoCase) return;
-  if (replayIndex >= replaySteps.length) { replayIndex = 0; byId('demo-replay-log').replaceChildren(); byId('case-checks-container').replaceChildren(); }
+  if (replayIndex === 0 || replayIndex >= replaySteps.length) { replayIndex = 0; byId('demo-replay-log').replaceChildren(); byId('case-checks-container').replaceChildren(); }
   stopReplay();
   replayTimer = setInterval(replayNext, 650);
 };
 window.demoPause = stopReplay;
 window.demoNext = () => {stopReplay(); replayNext();};
-window.demoFocusTrace = () => byId('demo-replay-control')?.scrollIntoView({behavior:'smooth', block:'center'});
+window.demoFocusTrace = () => (modelView === 'gemini' ? byId('demo-gemini-status') : byId('demo-replay-control'))?.scrollIntoView({behavior:'smooth', block:'center'});
 window.demoStart = async () => {
   if (selectedCasePromise) await selectedCasePromise;
   const selected = demoCases[['A','B','C'].indexOf(selectedCaseLetter)];
   if (!demoCase || demoCase.id !== selected?.id) return;
+  if (demoCase.gemini) demoModelView('qwen');
   if (demoCase.comparison) toggleRQ1View('nc');
   replaySteps = demoCase.trace || [];
   replayIndex = 0;
@@ -347,25 +500,19 @@ function showLiveEvent(event) {
   }
 }
 
-window.demoRunLive = async () => {
-  const text = byId('custom-case-input')?.value.trim() || '';
-  if (text.length < 80 || text.length > 30000) {
-    alert('Paste 80 to 30,000 characters from a High Court GST judgment.');
-    return;
-  }
-  if (!liveAvailable) {
-    alert('Set GEMINI_API_KEY and GEMINI_MODEL in the repository .env, then restart this server.');
-    return;
-  }
-  liveController?.abort();
+function prepareLiveReview() {
+  modelView = 'live';
   stopReplay();
-  const controller = new AbortController();
-  liveController = controller;
-  demoCase = {mode: 'live_gemini', paragraphs: [], main: {findings: []}, comparison: null};
+  stopGeminiReplay();
+  demoCase = {mode: 'live_gemini', paragraphs: [], main: {findings: []}, comparison: null, gemini: null};
   renderParagraphs([]);
-  byId('judgment-panel-title').parentElement.nextElementSibling.textContent = 'Pasted judgment text';
+  const sourceHeader = byId('judgment-panel-title')?.parentElement?.parentElement;
+  sourceHeader?.lastElementChild?.replaceChildren();
   byId('demo-facts-panel')?.classList.add('hidden');
   byId('rq1-btn-nc')?.closest('.bg-surface-container-low')?.classList.add('hidden');
+  byId('rq1-plain-panel')?.classList.add('hidden');
+  byId('demo-model-switch')?.classList.add('hidden');
+  byId('demo-gemini-panel')?.classList.add('hidden');
   byId('case-checks-container').classList.remove('hidden');
   byId('case-checks-container').replaceChildren();
   byId('demo-replay-log').replaceChildren();
@@ -388,6 +535,37 @@ window.demoRunLive = async () => {
   const tracePanel = byId('model-trace-panel');
   if (tracePanel) tracePanel.innerHTML = '<strong>Live execution events</strong><p>The panel below shows structured model decisions and tool results, not private model thoughts.</p>';
   switchView('state-results');
+}
+
+window.demoRestoreLive = () => {
+  if (!lastLiveRun?.events.length) return;
+  liveController?.abort();
+  liveController = null;
+  prepareLiveReview();
+  for (const event of lastLiveRun.events) showLiveEvent(event);
+};
+
+function recordLiveEvent(event) {
+  lastLiveRun.events.push(event);
+  byId('demo-return-live')?.classList.remove('hidden');
+  showLiveEvent(event);
+}
+
+window.demoRunLive = async () => {
+  const text = byId('custom-case-input')?.value.trim() || '';
+  if (text.length < 80 || text.length > 30000) {
+    alert('Paste 80 to 30,000 characters from a High Court GST judgment.');
+    return;
+  }
+  if (!liveAvailable) {
+    alert('Set GEMINI_API_KEY and GEMINI_MODEL in the repository .env, then restart this server.');
+    return;
+  }
+  liveController?.abort();
+  const controller = new AbortController();
+  liveController = controller;
+  lastLiveRun = {events: []};
+  prepareLiveReview();
   let completed = false;
   let failed = false;
   try {
@@ -409,23 +587,47 @@ window.demoRunLive = async () => {
       for (const line of lines) if (line.trim()) {
         const event = JSON.parse(line);
         if (controller !== liveController) return;
-        showLiveEvent(event);
+        recordLiveEvent(event);
         if (event.type === 'result') completed = true;
         if (event.type === 'error') failed = true;
       }
     }
     if (buffer.trim()) {
       const event = JSON.parse(buffer);
-      if (controller === liveController) showLiveEvent(event);
+      if (controller === liveController) recordLiveEvent(event);
       if (event.type === 'result') completed = true;
       if (event.type === 'error') failed = true;
     }
     if (!completed && !failed && controller === liveController) throw new Error('The stream ended without a final checklist.');
   } catch (err) {
-    if (err.name !== 'AbortError' && controller === liveController) showLiveEvent({type: 'error', message: err.message});
+    if (err.name !== 'AbortError' && controller === liveController) {
+      const event = {type: 'error', message: err.message};
+      recordLiveEvent(event);
+    }
   } finally {
     if (controller === liveController) liveController = null;
   }
+};
+
+window.demoLoadLiveExample = async () => {
+  const response = await fetch('/api/live-example');
+  if (!response.ok) throw new Error('The separate live example could not be loaded.');
+  const example = await response.json();
+  const textarea = byId('custom-case-input');
+  textarea.value = example.text;
+  const note = byId('demo-live-example-note');
+  if (note) {
+    note.replaceChildren();
+    note.append(document.createTextNode(`${example.title} · reserved case ${example.id}. Used only for live paste-in; no prepared result. `));
+    const link = document.createElement('a');
+    link.href = example.source_pdf_url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.className = 'text-primary underline';
+    link.textContent = 'Source PDF ↗';
+    note.append(link);
+  }
+  textarea.focus();
 };
 
 async function initDemo() {
@@ -447,14 +649,14 @@ async function initDemo() {
   }
   byId('state-analysis')?.remove();
   const headerBadge = document.querySelector('header .uppercase span:last-child');
-  if (headerBadge) headerBadge.textContent = 'Real saved Qwen runs';
+  if (headerBadge) headerBadge.textContent = 'Real saved Qwen and Gemini runs';
   setText('trace-toggle-label', 'Jump to execution trace');
   byId('trace-toggle-label')?.closest('button')?.setAttribute('onclick', 'demoFocusTrace()');
   const caseHeading = byId('case-selection-group')?.previousElementSibling;
   if (caseHeading) caseHeading.querySelectorAll('h3,p,span').forEach(el => {
     if (el.tagName === 'H3') el.textContent = 'Select a judgment from the saved runs';
-    else if (el.tagName === 'P') el.textContent = 'Actual saved Qwen outputs. Choose Case C to compare the checker with Plain Qwen on identical facts.';
-    else if (el.textContent.includes('Illustrative Example')) el.textContent = 'Real saved Qwen outputs';
+    else if (el.tagName === 'P') el.textContent = 'Each case has saved Qwen and Gemini runs. Case C also compares the checker with Plain Qwen on identical facts.';
+    else if (el.textContent.includes('Illustrative Example')) el.textContent = 'Real saved model outputs';
   });
   const research = byId('research-modal');
   if (research) {
@@ -474,7 +676,7 @@ async function initDemo() {
   const aboutButton = byId('open-research-modal');
   if (aboutButton) aboutButton.querySelector('span:last-child').textContent = 'About the pipeline';
   const footer = document.querySelector('footer');
-  if (footer) footer.querySelectorAll('span').forEach(span => {if (span.textContent.includes('GSTN Spec v3.4')) span.textContent = 'Saved Qwen run';});
+  if (footer) footer.querySelectorAll('span').forEach(span => {if (span.textContent.includes('GSTN Spec v3.4')) span.textContent = 'Saved model runs';});
   document.querySelectorAll('.case-card').forEach((card,i) => {
     const item = demoCases[i];
     if (!item) {card.classList.add('hidden'); return;}
@@ -497,10 +699,28 @@ async function initDemo() {
     const button = paste.querySelector('button[onclick="loadCustomCase()"]');
     button?.setAttribute('onclick', 'demoRunLive()');
     if (button) button.textContent = 'Run live with Gemini';
+    const exampleButton = document.createElement('button');
+    exampleButton.type = 'button';
+    exampleButton.className = 'px-3 py-1 mb-2 rounded bg-surface-container-high text-primary text-sm';
+    exampleButton.textContent = 'Load a separate example judgment';
+    exampleButton.onclick = () => demoLoadLiveExample().catch(err => alert(err.message));
+    const exampleNote = document.createElement('p');
+    exampleNote.id = 'demo-live-example-note';
+    exampleNote.className = 'text-xs text-outline mb-2';
+    exampleNote.textContent = 'Reserved judgment used only for the live preview; it has no saved checklist.';
+    const textarea = paste.querySelector('textarea');
+    textarea?.before(exampleButton, exampleNote);
     const status = document.createElement('p');
     status.className = 'text-xs text-outline';
     status.textContent = liveAvailable ? 'Gemini is configured on this server.' : 'To enable live mode, set GEMINI_API_KEY and GEMINI_MODEL in .env, then restart the server. Saved Qwen replay works now.';
-    paste.querySelector('textarea')?.after(status);
+    textarea?.after(status);
+    const returnButton = document.createElement('button');
+    returnButton.id = 'demo-return-live';
+    returnButton.type = 'button';
+    returnButton.className = 'hidden mt-3 px-3 py-2 rounded bg-surface-container-high text-primary text-sm';
+    returnButton.textContent = 'Return to last live run (this tab)';
+    returnButton.onclick = () => demoRestoreLive();
+    paste.after(returnButton);
   }
   const control = document.createElement('div');
   control.id = 'demo-replay-control';
