@@ -5,6 +5,8 @@ let replaySteps = [];
 let replayIndex = 0;
 let replayTimer = null;
 let caseRequest = 0;
+let selectedCaseLetter = 'A';
+let selectedCasePromise = null;
 let liveController = null;
 let liveAvailable = false;
 let livePrecedents = 'bundled_excerpts';
@@ -199,21 +201,31 @@ function showCase(detail) {
 }
 
 async function selectDemoCase(letter) {
+  const selected = demoCases[['A','B','C'].indexOf(letter)];
+  if (!selected) return;
+  selectedCaseLetter = letter;
+  document.querySelectorAll('.case-card').forEach(card => {
+    const active = card.dataset.case === letter;
+    card.classList.toggle('ring-2', active);
+    card.classList.toggle('ring-primary', active);
+    const icon = card.querySelector('.check-indicator');
+    if (icon) icon.textContent = active ? 'check_circle' : 'radio_button_unchecked';
+  });
   liveController?.abort();
   liveController = null;
   stopReplay();
   const request = ++caseRequest;
-  const selected = demoCases[['A','B','C'].indexOf(letter)];
-  if (!selected) return;
   const response = await fetch(`/api/cases/${selected.id}`);
   if (!response.ok) throw new Error((await response.json()).error);
   const detail = await response.json();
   if (request !== caseRequest) return;
   showCase(detail);
-  document.querySelectorAll('.case-card').forEach(el => el.classList.toggle('ring-2', el.dataset.case === letter));
   ['A','B','C'].forEach((key,i) => setText(`case-pill-${key}`, `${key}: ${demoCases[i]?.court || ''}`));
 }
-window.demoSelect = letter => selectDemoCase(letter).catch(err => alert(err.message));
+window.demoSelect = letter => {
+  selectedCasePromise = selectDemoCase(letter).catch(err => alert(err.message));
+  return selectedCasePromise;
+};
 
 function stepLabel(step) {
   if (step.tool) return `${step.stage}: ${step.tool}(${JSON.stringify(step.args || {})}) → ${step.ok ? 'ok' : 'error'}${step.output_summary ? ` · ${step.output_summary}` : ''}`;
@@ -261,8 +273,10 @@ window.demoPlay = () => {
 };
 window.demoPause = stopReplay;
 window.demoNext = () => {stopReplay(); replayNext();};
-window.demoStart = () => {
-  if (!demoCase) return;
+window.demoStart = async () => {
+  if (selectedCasePromise) await selectedCasePromise;
+  const selected = demoCases[['A','B','C'].indexOf(selectedCaseLetter)];
+  if (!demoCase || demoCase.id !== selected?.id) return;
   if (demoCase.comparison) toggleRQ1View('nc');
   replaySteps = demoCase.trace || [];
   replayIndex = 0;
@@ -491,7 +505,7 @@ async function initDemo() {
   control.className = 'bg-surface-container-low rounded-xl p-3 mb-3 border border-surface-container-high';
   control.innerHTML = `<div class="flex flex-wrap items-center gap-2"><strong class="mr-auto">Recorded Qwen run · step by step</strong><button onclick="demoPlay()" class="px-3 py-1 rounded bg-primary-container">Play</button><button onclick="demoPause()" class="px-3 py-1 rounded bg-surface-container-high">Pause</button><button onclick="demoNext()" class="px-3 py-1 rounded bg-surface-container-high">Next step</button></div><p id="demo-replay-status" class="text-xs text-outline my-2">Press Analyse Case to replay the saved trace</p><div id="demo-replay-log" class="max-h-40 overflow-y-auto font-code-trace"></div>`;
   byId('case-checks-container').before(control);
-  await selectDemoCase('A');
+  await demoSelect('A');
   document.documentElement.classList.add('demo-ready');
 }
 document.addEventListener('DOMContentLoaded', () => initDemo().catch(err => {
