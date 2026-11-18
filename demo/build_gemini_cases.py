@@ -1,7 +1,9 @@
-"""Record the three prepared judgments through the optional Gemini pipeline.
+"""Record raw-judgment Gemini demo runs for the three prepared judgments.
 
 Run with a configured .env: python -m demo.build_gemini_cases
 The generated artifacts contain public judgment text and model output, never keys.
+Case C's five-system UI uses the separate saved research Gemini run on shared
+human-checked facts, so that comparison keeps identical checker inputs.
 """
 import argparse
 import json

@@ -26,7 +26,7 @@ LIVE_LOCK = threading.Lock()
 CASES = (
     ("HCMA011063142025", "fresh_nc", "Findings with contested points"),
     ("WBCHCA0084902025", "fresh_nc", "A contested, incomplete record"),
-    ("HCMD010677412024", "nc_full_s2", "Compare NoticeCheck with plain Qwen on the same facts"),
+    ("HCMD010677412024", "nc_full_s2", "Five research systems on the same human-checked facts"),
 )
 LIVE_EXAMPLE = "HCMA010421202024"
 
@@ -38,6 +38,13 @@ def jsonl(path: str) -> dict:
         return {}
     return {row["cnr"]: row for line in file.read_text(encoding="utf-8").splitlines()
             if line.strip() for row in [json.loads(line)]}
+
+
+@lru_cache(maxsize=None)
+def jsonl_view(path: str, view: str) -> dict:
+    file = ROOT / path
+    return {row["cnr"]: row for line in file.read_text(encoding="utf-8").splitlines()
+            if line.strip() for row in [json.loads(line)] if row.get("view") == view}
 
 
 @lru_cache(maxsize=1)
@@ -117,16 +124,35 @@ def case_detail(cnr: str) -> dict:
     _, run, description = item
     main = jsonl(f"runs/{run}/outputs.jsonl")[cnr]
     comparison = None
+    systems = {"nc_qwen": main}
     if run == "nc_full_s2":
         gold = jsonl("data/gold/records.jsonl").get(cnr)
-        plain = jsonl("runs/b1_full_record/outputs.jsonl").get(cnr)
-        if gold and plain:
-            comparison = {"input": build_view(gold, "full_record"), "plain": plain}
+        baselines = {key: jsonl_view(f"runs/{folder}/outputs.jsonl", "full_record").get(cnr)
+                     for key, folder in (("b0", "b0_v2"), ("b1", "b1_v2"), ("b2", "b2_v2"))}
+        research_gemini = jsonl_view("runs/nc_gemini_s1/outputs.jsonl", "full_record").get(cnr)
+        if gold and research_gemini and all(baselines.values()):
+            shared = build_view(gold, "full_record")
+            comparison = {"input": shared, "plain": baselines["b1"],
+                          "reference_defects": [d["type"] for d in gold.get("defects_argued", [])
+                                                if d.get("finding") == "defect_found"]}
+            systems.update(baselines, nc_gemini=research_gemini)
     gemini_path = ROOT / "demo/gemini_runs" / f"{cnr}.json"
     gemini = json.loads(gemini_path.read_text(encoding="utf-8")) if gemini_path.exists() else None
+    if run == "nc_full_s2" and comparison:
+        research_gemini = systems["nc_gemini"]
+        model = next((s.get("model") for s in trace(research_gemini) if s.get("model")), "Gemini")
+        gemini = {"cnr": cnr, "input": "human-checked full_record facts", "extractor": "human-checked facts",
+                  "checker": model, "precedent_index": "research_corpus",
+                  "facts": comparison["input"]["record"],
+                  "events": ([{"type": "stage", "stage": "check", "message": "NoticeCheck with Gemini on the shared human-checked facts."}]
+                             + [{"type": "step", "step": step} for step in trace(research_gemini)]
+                             + [{"type": "result", "result": research_gemini}]),
+                  "result": research_gemini}
+    elif gemini:
+        systems["nc_gemini"] = gemini["result"]
     return {**case_summary(cnr, run, description), "mode": "saved_qwen_run",
             "paragraphs": source(cnr), "main": main, "trace": trace(main),
-            "comparison": comparison, "gemini": gemini}
+            "comparison": comparison, "gemini": gemini, "systems": systems}
 
 
 def live_example() -> dict:

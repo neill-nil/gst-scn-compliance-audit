@@ -121,26 +121,29 @@ function renderCheckerComparison() {
     return;
   }
   const shared = demoCase.comparison.input.record;
-  const plain = demoCase.comparison.plain.findings || [];
-  control.innerHTML = `<div><strong class="text-sm">Compare the checker approaches</strong><p class="text-xs text-on-surface-variant mt-1">Both receive the same human-checked facts. The buttons compare their saved final findings. The NoticeCheck-only trace below shows planning, tool calls, rule checks, precedent search and hand-off.</p><p class="text-xs text-outline mt-1">The saved trace does not expose free-text model reasoning or every internal quote-verification decision.</p><p class="text-xs text-outline mt-1">Provision: ${escapeHtml(shared.provision?.value || 'unknown')} · Financial years: ${escapeHtml((shared.financial_years?.value || []).join(', ') || 'unknown')}</p></div><div class="inline-flex flex-wrap p-0.5 bg-surface-container rounded-lg border border-surface-container-high/60"><button id="rq1-btn-nc" onclick="toggleRQ1View('nc')" type="button" class="px-2 py-1 rounded text-xs">NoticeCheck pipeline</button><button id="rq1-btn-plain" onclick="toggleRQ1View('plain')" type="button" class="px-2 py-1 rounded text-xs">Plain Qwen3-8B</button><button id="rq1-btn-side" onclick="toggleRQ1View('side')" type="button" class="px-2 py-1 rounded text-xs">Compare Qwen checkers</button></div>`;
-  plainPanel.innerHTML = `<h4 class="font-semibold text-secondary">Plain Qwen3-8B · same fact record, no NoticeCheck tools</h4>${plain.map(f => findingCard(f)).join('')}`;
+  const labels = {b0:'B0 · Hand-written rules', b1:'B1 · Plain Qwen3-8B', b2:'B2 · Gemini + statute text'};
+  control.innerHTML = `<div><strong class="text-sm">Saved checker baselines · one fact record</strong><p class="text-xs text-on-surface-variant mt-1">B0 uses hand-written rules; B1 asks Qwen to check the record; B2 asks Gemini with statute text supplied. NoticeCheck adds planning, tools, retrieval and verification. All five research runs use the same human-checked facts.</p><p class="text-xs text-outline mt-1">Baseline outputs are saved checklists without a NoticeCheck step trace. The trace below belongs to NoticeCheck with Qwen.</p><p class="text-xs text-outline mt-1">Provision: ${escapeHtml(shared.provision?.value || 'unknown')} · Financial years: ${escapeHtml((shared.financial_years?.value || []).join(', ') || 'unknown')}</p></div><div class="inline-flex flex-wrap gap-1 p-0.5 bg-surface-container rounded-lg border border-surface-container-high/60"><button id="rq1-btn-nc" onclick="toggleRQ1View('nc')" type="button" class="px-2 py-1 rounded text-xs">NC Qwen findings</button><button id="rq1-btn-b0" onclick="toggleRQ1View('b0')" type="button" class="px-2 py-1 rounded text-xs">B0 · Rules</button><button id="rq1-btn-b1" onclick="toggleRQ1View('b1')" type="button" class="px-2 py-1 rounded text-xs">B1 · Plain Qwen</button><button id="rq1-btn-b2" onclick="toggleRQ1View('b2')" type="button" class="px-2 py-1 rounded text-xs">B2 · Gemini + law</button><button id="rq1-btn-side" onclick="toggleRQ1View('side')" type="button" class="px-2 py-1 rounded text-xs">Compare Qwen checkers</button></div>`;
   toggleRQ1View = mode => {
     const panel = byId('rq1-plain-panel');
     const checks = byId('case-checks-container');
+    const selected = mode === 'side' ? 'b1' : mode;
+    const baseline = demoCase.systems[selected]?.findings || [];
     panel.classList.toggle('hidden', mode === 'nc');
-    checks.classList.toggle('hidden', mode === 'plain');
-    if (mode !== 'plain') renderFindings(demoCase.main.findings);
+    checks.classList.toggle('hidden', mode !== 'nc' && mode !== 'side');
+    if (mode !== 'nc') panel.innerHTML = `<h4 class="font-semibold text-secondary">${escapeHtml(labels[selected])} · same human-checked facts</h4>${baseline.map(f => findingCard(f)).join('')}`;
+    if (mode === 'nc' || mode === 'side') renderFindings(demoCase.main.findings);
     const tally = findings => ({defects: findings.filter(f => f.verdict === 'defect').length,
                                 contested: findings.filter(f => f.verdict === 'contested').length});
     const nc = tally(demoCase.main.findings);
-    const baseline = tally(plain);
+    const baselineCounts = tally(baseline);
     setText('summary-defect-badge', mode === 'side'
-      ? `NoticeCheck: ${defectSummary(nc.defects, nc.contested)} · Plain Qwen: ${defectSummary(baseline.defects, baseline.contested)}`
-      : defectSummary(mode === 'plain' ? baseline.defects : nc.defects, mode === 'plain' ? baseline.contested : nc.contested));
-    setText('summary-text', mode === 'plain'
-      ? 'Plain Qwen3-8B assessed the same human-checked facts without NoticeCheck tools. The trace below belongs to NoticeCheck.'
-      : 'The buttons compare saved findings. The trace below replays NoticeCheck’s recorded steps only.');
-    for (const key of ['nc','plain','side']) {
+      ? `NoticeCheck: ${defectSummary(nc.defects, nc.contested)} · B1: ${defectSummary(baselineCounts.defects, baselineCounts.contested)}`
+      : defectSummary(mode === 'nc' ? nc.defects : baselineCounts.defects, mode === 'nc' ? nc.contested : baselineCounts.contested));
+    setText('summary-text', mode === 'nc'
+      ? 'NoticeCheck with Qwen on the shared fact record. The trace below records its pipeline steps.'
+      : mode === 'side' ? 'NoticeCheck and plain Qwen evaluated the same facts. Compare their saved checklists below.'
+      : `${labels[mode]} evaluated the same human-checked facts. Its saved checklist is below; the execution trace belongs to NoticeCheck.`);
+    for (const key of ['nc','b0','b1','b2','side']) {
       const button = byId(`rq1-btn-${key}`);
       button?.classList.toggle('bg-primary-container', key === mode);
       button?.classList.toggle('text-on-primary-container', key === mode);
@@ -197,11 +200,16 @@ function geminiReplayNext() {
   byId('demo-gemini-log').append(item);
   item.scrollIntoView({block:'nearest'});
   setText('demo-gemini-status', `Gemini step ${geminiReplayIndex} of ${events.length}`);
-  if (event.type === 'step' && event.step.stage === 'precondition_check' && event.step.finding) {
-    byId('demo-gemini-findings').insertAdjacentHTML('beforeend', findingCard(event.step.finding, true));
-    const quote = (event.step.finding.evidence || []).find(e => e.source === 'record' && e.quote)?.quote;
-    const para = findQuoteParagraph(quote);
-    if (para !== null) showParagraph(para);
+  if (event.type === 'step' && event.step.stage === 'precondition_check') {
+    const found = event.step.finding || demoCase.gemini.result.findings.find(f => f.type === event.step.defect);
+    if (found) {
+      const verdict = ['defect','contested','cant_tell','no_defect'].includes(event.step.output_summary)
+        ? event.step.output_summary : found.verdict;
+      byId('demo-gemini-findings').insertAdjacentHTML('beforeend', findingCard({...found, verdict}, true));
+      const quote = (found.evidence || []).find(e => e.source === 'record' && e.quote)?.quote;
+      const para = findQuoteParagraph(quote);
+      if (para !== null) showParagraph(para);
+    }
   }
   if (event.type === 'result') renderGeminiFindings(demoCase.gemini.result.findings);
 }
@@ -238,17 +246,23 @@ function renderGeminiComparison() {
   switcher.classList.toggle('hidden', !demoCase.gemini);
   panel.classList.toggle('hidden', !demoCase.gemini);
   if (!demoCase.gemini) return;
-  const model = demoCase.gemini.extractor;
+  const model = demoCase.gemini.checker || demoCase.gemini.extractor;
+  const sharedFacts = demoCase.gemini.input === 'human-checked full_record facts';
   const precedentNote = demoCase.gemini.precedent_index === 'bundled_excerpts'
-    ? 'Gemini used the demo’s bundled precedent excerpts.' : 'Gemini used the full local precedent index.';
+    ? 'Gemini used the demo’s bundled precedent excerpts.' : demoCase.gemini.precedent_index === 'research_corpus'
+      ? 'The saved research run used its recorded retrieval corpus.' : 'Gemini used the full local precedent index.';
+  const inputNote = sharedFacts
+    ? 'Both NoticeCheck checkers use the same human-checked facts. B0, B1 and B2 use that full record too.'
+    : 'Both runs use this judgment, but Qwen and Gemini extracted facts independently.';
   const verdictName = {defect:'Potential defect', contested:'Contested', cant_tell:'Cannot tell', no_defect:'No defect identified'};
   const geminiVerdicts = new Map(demoCase.gemini.result.findings.map(f => [f.type, f.verdict]));
   const changed = demoCase.main.findings.filter(f => geminiVerdicts.has(f.type) && geminiVerdicts.get(f.type) !== f.verdict);
   const difference = changed.length
     ? changed.map(f => `<li>${escapeHtml(nice(f.type))}: Qwen ${escapeHtml(verdictName[f.verdict] || f.verdict)} → Gemini ${escapeHtml(verdictName[geminiVerdicts.get(f.type)] || geminiVerdicts.get(f.type))}</li>`).join('')
     : '<li>Both runs returned the same verdicts for all 13 checks. Their extracted facts and recorded steps can still differ.</li>';
-  switcher.innerHTML = `<strong class="text-sm">Compare saved model-backed runs</strong><p class="text-xs text-on-surface-variant mt-1">Both runs use this judgment. Gemini extracted its own facts and ran NoticeCheck with Gemini; Qwen uses the original saved input. ${escapeHtml(precedentNote)} This is an output comparison, not a controlled checker ablation.</p><div class="flex flex-wrap gap-1 mt-2"><button id="demo-model-qwen" type="button" onclick="demoModelView('qwen')" class="px-3 py-1 rounded text-xs">NoticeCheck · Qwen</button><button id="demo-model-gemini" type="button" onclick="demoModelView('gemini')" class="px-3 py-1 rounded text-xs">NoticeCheck · Gemini</button><button id="demo-model-both" type="button" onclick="demoModelView('both')" class="px-3 py-1 rounded text-xs">Compare Qwen and Gemini</button></div><div id="demo-model-delta" class="hidden mt-2 p-2 rounded bg-surface-container text-xs"><strong>Verdict differences</strong><ul class="list-disc pl-5 mt-1">${difference}</ul></div>`;
-  panel.innerHTML = `<strong>NoticeCheck with Gemini · ${escapeHtml(model)}</strong><p class="text-xs text-outline mt-1">Recorded Gemini run on this judgment. Extracted facts and checker trace are available below.</p><details class="my-2 text-xs"><summary class="cursor-pointer font-semibold">Inspect Gemini-extracted facts</summary><pre class="mt-2 whitespace-pre-wrap break-words">${escapeHtml(JSON.stringify(demoCase.gemini.events.find(e => e.type === 'extraction')?.facts || {}, null, 2))}</pre></details><div id="demo-gemini-findings"></div><div class="border-t border-surface-container-high pt-3 mt-3"><strong class="text-sm">Gemini execution trace · recorded steps</strong><div class="flex flex-wrap gap-1 mt-2"><button onclick="demoGeminiPlay()" class="px-3 py-1 rounded bg-primary-container text-xs">Play</button><button onclick="demoGeminiPause()" class="px-3 py-1 rounded bg-surface-container-high text-xs">Pause</button><button onclick="demoGeminiNext()" class="px-3 py-1 rounded bg-surface-container-high text-xs">Next step</button></div><p id="demo-gemini-status" class="text-xs text-outline my-2">Press Play to replay the saved Gemini run</p><div id="demo-gemini-log" class="max-h-40 overflow-y-auto font-code-trace"></div><details class="mt-2 text-xs"><summary class="cursor-pointer font-semibold">Full saved Gemini trace (${geminiEvents().length} events)</summary><div class="mt-2 max-h-72 overflow-y-auto">${geminiEvents().map(e => `<p class="border-b border-surface-container-high py-1">${escapeHtml(geminiEventLabel(e))}</p>`).join('')}</div></details></div>`;
+  switcher.innerHTML = `<strong class="text-sm">Compare saved model-backed runs</strong><p class="text-xs text-on-surface-variant mt-1">${escapeHtml(inputNote)} ${escapeHtml(precedentNote)} ${sharedFacts ? 'See the five-system check table above.' : 'This is an output comparison, not a controlled checker ablation.'}</p><div class="flex flex-wrap gap-1 mt-2"><button id="demo-model-qwen" type="button" onclick="demoModelView('qwen')" class="px-3 py-1 rounded text-xs">NoticeCheck · Qwen</button><button id="demo-model-gemini" type="button" onclick="demoModelView('gemini')" class="px-3 py-1 rounded text-xs">NoticeCheck · Gemini</button><button id="demo-model-both" type="button" onclick="demoModelView('both')" class="px-3 py-1 rounded text-xs">Compare Qwen and Gemini</button></div><div id="demo-model-delta" class="hidden mt-2 p-2 rounded bg-surface-container text-xs"><strong>Verdict differences</strong><ul class="list-disc pl-5 mt-1">${difference}</ul></div>`;
+  const facts = sharedFacts ? demoCase.gemini.facts : demoCase.gemini.events.find(e => e.type === 'extraction')?.facts;
+  panel.innerHTML = `<strong>NoticeCheck with Gemini · ${escapeHtml(model)}</strong><p class="text-xs text-outline mt-1">${sharedFacts ? 'Saved research run on the shared human-checked facts.' : 'Recorded Gemini run on this judgment with its own extracted facts.'} Checker trace below.</p><details class="my-2 text-xs"><summary class="cursor-pointer font-semibold">${sharedFacts ? 'Inspect shared human-checked facts' : 'Inspect Gemini-extracted facts'}</summary><pre class="mt-2 whitespace-pre-wrap break-words">${escapeHtml(JSON.stringify(facts || {}, null, 2))}</pre></details><div id="demo-gemini-findings"></div><div class="border-t border-surface-container-high pt-3 mt-3"><strong class="text-sm">Gemini execution trace · recorded steps</strong><div class="flex flex-wrap gap-1 mt-2"><button onclick="demoGeminiPlay()" class="px-3 py-1 rounded bg-primary-container text-xs">Play</button><button onclick="demoGeminiPause()" class="px-3 py-1 rounded bg-surface-container-high text-xs">Pause</button><button onclick="demoGeminiNext()" class="px-3 py-1 rounded bg-surface-container-high text-xs">Next step</button></div><p id="demo-gemini-status" class="text-xs text-outline my-2">Press Play to replay the saved Gemini run</p><div id="demo-gemini-log" class="max-h-40 overflow-y-auto font-code-trace"></div><details class="mt-2 text-xs"><summary class="cursor-pointer font-semibold">Full saved Gemini trace (${geminiEvents().length} events)</summary><div class="mt-2 max-h-72 overflow-y-auto">${geminiEvents().map(e => `<p class="border-b border-surface-container-high py-1">${escapeHtml(geminiEventLabel(e))}</p>`).join('')}</div></details></div>`;
   geminiReplayIndex = 0;
   renderGeminiFindings(demoCase.gemini.result.findings);
   demoModelView('qwen');
@@ -264,6 +278,7 @@ window.demoModelView = mode => {
   const rq1Control = byId('rq1-btn-nc')?.closest('.bg-surface-container-low');
   rq1Control?.classList.toggle('hidden', !qwen || mode === 'both' || !demoCase.comparison);
   byId('rq1-plain-panel')?.classList.add('hidden');
+  if (mode === 'qwen' && demoCase.comparison) toggleRQ1View('nc');
   byId('demo-replay-control').classList.toggle('hidden', !qwen);
   byId('case-checks-container').classList.toggle('hidden', !qwen);
   const qwenTrace = document.querySelector('#case-checks-container + details');
@@ -278,13 +293,14 @@ window.demoModelView = mode => {
     ? `Qwen: ${defectSummary(qc.d, qc.c)} · Gemini: ${defectSummary(gc.d, gc.c)}`
     : defectSummary(mode === 'qwen' ? qc.d : gc.d, mode === 'qwen' ? qc.c : gc.c));
   setText('summary-text', mode === 'qwen'
-    ? 'This is the saved Qwen run. Switch to Gemini to see its separate extraction, findings and trace.'
-    : mode === 'gemini' ? 'This is the recorded Gemini run on the same judgment. Its fact extraction and full trace are below.'
-    : 'Both saved runs use the same judgment, but may extract different facts. Each trace appears with its own findings.');
-  setText('summary-input-label', mode === 'gemini' ? 'Gemini-extracted facts' : mode === 'both'
-    ? 'Qwen and Gemini · independent fact extraction' : demoCase.comparison ? 'Same facts as Plain Qwen' : 'Fine-tuned extractor output');
-  setText('summary-period', mode === 'gemini' ? `Gemini-extracted facts · ${demoCase.id}` : mode === 'both'
-    ? `Same judgment · separate fact records · ${demoCase.id}` : `${demoCase.input_label} · ${demoCase.id}`);
+    ? (demoCase.comparison ? 'This is NoticeCheck with Qwen on the shared human-checked facts. Switch systems to inspect the other saved findings.' : 'This is the saved Qwen run. Switch to Gemini to see its separate extraction, findings and trace.')
+    : mode === 'gemini' ? (demoCase.comparison ? 'This saved Gemini checker used the same human-checked facts as the other four systems.' : 'This recorded Gemini run extracted its own facts from the same judgment.')
+    : demoCase.comparison ? 'All five systems use the same human-checked facts; compare their check decisions above.' : 'Both saved runs use the same judgment, but may extract different facts.');
+  setText('summary-input-label', demoCase.comparison ? 'Shared human-checked facts' : mode === 'gemini'
+    ? 'Gemini-extracted facts' : mode === 'both' ? 'Qwen and Gemini · independent fact extraction' : 'Fine-tuned extractor output');
+  setText('summary-period', demoCase.comparison ? `Shared human-checked facts · ${demoCase.id}` : mode === 'gemini'
+    ? `Gemini-extracted facts · ${demoCase.id}` : mode === 'both'
+      ? `Same judgment · separate fact records · ${demoCase.id}` : `${demoCase.input_label} · ${demoCase.id}`);
   const handoff = mode === 'gemini' ? demoCase.gemini.result.handoff : demoCase.main.handoff;
   setText('recommendation-text', mode === 'both' ? 'Review each saved run’s findings and source before drawing conclusions.'
     : handoff?.escalate ? `Human review recommended: ${(handoff.reasons || []).map(nice).join(', ') || 'see case details'}.`
@@ -295,6 +311,50 @@ window.demoModelView = mode => {
     button?.classList.toggle('text-on-primary-container', key === mode);
   }
 };
+
+function renderCheckMatrix() {
+  let panel = byId('demo-check-matrix');
+  if (!panel) {
+    panel = document.createElement('section');
+    panel.id = 'demo-check-matrix';
+    panel.className = 'rounded-xl border border-surface-container-high bg-surface-container-lowest p-3 mb-3';
+    byId('rq1-btn-nc')?.closest('.bg-surface-container-low')?.before(panel);
+  }
+  panel.classList.remove('hidden');
+  const labels = {b0:'B0 rules', b1:'B1 plain Qwen', b2:'B2 Gemini + law',
+                  nc_qwen:'NoticeCheck Qwen', nc_gemini:'NoticeCheck Gemini'};
+  const keys = ['b0','b1','b2','nc_qwen','nc_gemini'].filter(key => demoCase.systems?.[key]);
+  const findings = Object.fromEntries(keys.map(key => [key, new Map(demoCase.systems[key].findings.map(f => [f.type, f]))]));
+  const reference = new Set(demoCase.comparison?.reference_defects || []);
+  const verdicts = {defect:'Potential defect', contested:'Contested', cant_tell:'Cannot tell', no_defect:'No defect identified'};
+  const types = [...findings[keys[0]].keys()];
+  const rows = types.map(type => {
+    const statuses = keys.map(key => findings[key].get(type)?.verdict || 'missing');
+    return {type, statuses, different:new Set(statuses).size > 1, reference:reference.has(type),
+            raised:statuses.some(v => v === 'defect' || v === 'contested')};
+  });
+  const highlights = rows.filter(row => row.reference || row.different)
+    .sort((a,b) => Number(b.reference) - Number(a.reference) || Number(b.raised) - Number(a.raised));
+  const summary = row => {
+    const namesFor = verdict => keys.filter((_,i) => row.statuses[i] === verdict).map(key => labels[key]);
+    let sentence;
+    if (row.reference) {
+      const caught = namesFor('defect');
+      const others = keys.filter(key => !caught.includes(labels[key])).map(key => labels[key]);
+      sentence = others.length
+        ? `Human-annotated defect. Caught by ${caught.join(', ') || 'none'}; not flagged as a defect by ${others.join(', ')}.`
+        : `Human-annotated defect. All ${keys.length} systems caught it.`;
+    } else {
+      sentence = ['defect','contested','cant_tell','no_defect']
+        .filter(verdict => namesFor(verdict).length)
+        .map(verdict => `${verdicts[verdict]}: ${namesFor(verdict).join(', ')}`).join(' · ');
+    }
+    return `<li class="py-1"><strong>${escapeHtml(nice(row.type))}</strong><span class="block text-on-surface-variant">${escapeHtml(sentence)}</span></li>`;
+  };
+  const visible = highlights.slice(0, 5);
+  const table = rows.map(row => `<tr class="border-t border-surface-container-high ${row.different ? 'bg-surface-container/40' : ''}"><th class="p-2 text-left font-medium">${escapeHtml(nice(row.type))}${row.reference ? '<span class="block text-xs text-primary">Human-annotated defect</span>' : ''}</th>${row.statuses.map(v => `<td class="p-2 text-xs">${escapeHtml(verdicts[v] || v)}</td>`).join('')}</tr>`).join('');
+  panel.innerHTML = `<strong class="text-sm">What each system flagged</strong><p class="text-xs text-on-surface-variant mt-1">${demoCase.comparison ? 'All five research systems evaluated the same human-checked fact record.' : 'These two saved NoticeCheck runs read the same judgment, but extracted facts independently. B0, B1 and B2 have no saved run for this fresh case.'} A potential defect is a system flag; “cannot tell” is not proof of a missed defect.</p><ul class="list-disc pl-5 mt-2 text-xs">${visible.map(summary).join('') || '<li>The saved systems gave the same verdicts on all checks.</li>'}</ul><details class="mt-2 text-xs"><summary class="cursor-pointer font-semibold">See all ${rows.length} checks across ${keys.length} systems</summary><div class="overflow-x-auto mt-2"><table class="min-w-[640px] w-full text-left"><thead><tr><th class="p-2">Check</th>${keys.map(key => `<th class="p-2">${escapeHtml(labels[key])}</th>`).join('')}</tr></thead><tbody>${table}</tbody></table></div></details>`;
+}
 
 function showCase(detail) {
   demoCase = detail;
@@ -349,6 +409,7 @@ function showCase(detail) {
     accordion.innerHTML = `<summary class="cursor-pointer font-semibold">Full saved NoticeCheck trace (${detail.trace.length} steps)</summary><div class="mt-3 max-h-72 overflow-y-auto text-xs">${detail.trace.map(step => `<p class="border-b border-surface-container-high py-1">${escapeHtml(step.step)}. ${escapeHtml(stepLabel(step))}</p>`).join('')}</div>`;
   }
   renderGeminiComparison();
+  renderCheckMatrix();
 }
 
 async function selectDemoCase(letter) {
@@ -511,6 +572,7 @@ function prepareLiveReview() {
   byId('demo-facts-panel')?.classList.add('hidden');
   byId('rq1-btn-nc')?.closest('.bg-surface-container-low')?.classList.add('hidden');
   byId('rq1-plain-panel')?.classList.add('hidden');
+  byId('demo-check-matrix')?.classList.add('hidden');
   byId('demo-model-switch')?.classList.add('hidden');
   byId('demo-gemini-panel')?.classList.add('hidden');
   byId('case-checks-container').classList.remove('hidden');
@@ -655,7 +717,7 @@ async function initDemo() {
   const caseHeading = byId('case-selection-group')?.previousElementSibling;
   if (caseHeading) caseHeading.querySelectorAll('h3,p,span').forEach(el => {
     if (el.tagName === 'H3') el.textContent = 'Select a judgment from the saved runs';
-    else if (el.tagName === 'P') el.textContent = 'Each case has saved Qwen and Gemini runs. Case C also compares the checker with Plain Qwen on identical facts.';
+    else if (el.tagName === 'P') el.textContent = 'Each case has saved Qwen and Gemini runs. Case C compares all five research systems on identical human-checked facts.';
     else if (el.textContent.includes('Illustrative Example')) el.textContent = 'Real saved model outputs';
   });
   const research = byId('research-modal');

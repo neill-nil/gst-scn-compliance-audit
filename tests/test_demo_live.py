@@ -60,6 +60,7 @@ class LiveDemoTest(unittest.TestCase):
         self.assertEqual(case["run"], "nc_full_s2")
         self.assertEqual(case["comparison"]["input"]["view"], "full_record")
         self.assertEqual(case["comparison"]["plain"]["cnr"], case["main"]["cnr"])
+        self.assertEqual(case["comparison"]["reference_defects"], ["hearing_75_4"])
         self.assertEqual(case["trace"], server.trace(case["main"]))
         self.assertNotIn("rq2", case)
         self.assertEqual([p["n"] for p in case["paragraphs"]], [0, 2, 3, 4, 5, 6, 7])
@@ -72,10 +73,17 @@ class LiveDemoTest(unittest.TestCase):
                 case = server.case_detail(cnr)
                 gemini = case["gemini"]
                 self.assertEqual(gemini["cnr"], cnr)
-                self.assertEqual(gemini["input"], "prepared judgment text")
-                self.assertIn(gemini["precedent_index"], ("bundled_excerpts", "full_index"))
+                self.assertIn(gemini["precedent_index"], ("bundled_excerpts", "full_index", "research_corpus"))
                 self.assertEqual(gemini["events"][-1]["type"], "result")
-                self.assertTrue(any(e["type"] == "extraction" for e in gemini["events"]))
+                if cnr == "HCMD010677412024":
+                    self.assertEqual(gemini["input"], "human-checked full_record facts")
+                    self.assertEqual(set(case["systems"]), {"b0", "b1", "b2", "nc_qwen", "nc_gemini"})
+                    self.assertTrue(all(row["view"] == "full_record" for row in case["systems"].values()))
+                    self.assertFalse(any(e["type"] == "extraction" for e in gemini["events"]))
+                else:
+                    self.assertEqual(gemini["input"], "prepared judgment text")
+                    self.assertEqual(set(case["systems"]), {"nc_qwen", "nc_gemini"})
+                    self.assertTrue(any(e["type"] == "extraction" for e in gemini["events"]))
                 self.assertTrue(any(e["type"] == "step" and e["step"].get("tool") for e in gemini["events"]))
                 self.assertEqual(len(gemini["result"]["findings"]), 13)
 

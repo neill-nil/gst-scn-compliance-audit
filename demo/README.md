@@ -19,9 +19,9 @@ If you already have the repository, switch to the `noticecheck-demo` branch and 
 python3 -m demo.server --port 8765
 ```
 
-Open **http://127.0.0.1:8765/** in your browser. Pick a case, press **Analyse Case**, then use **Play**, **Pause**, or **Next step**. Click a quoted finding to jump to the matching judgment paragraph. On any case, switch between the saved **NoticeCheck · Qwen** and **NoticeCheck · Gemini** runs, or choose **Compare Qwen and Gemini**. Each has its own saved findings and step-by-step trace. Case C also has a separate **Plain Qwen3-8B** checker comparison on the same human-checked facts.
+Open **http://127.0.0.1:8765/** in your browser. Pick a case, press **Analyse Case**, then use **Play**, **Pause**, or **Next step**. Click a quoted finding to jump to the matching judgment paragraph. **What each system flagged** shows the checks side by side; expand the table to see all 13. On any case, switch between the saved **NoticeCheck · Qwen** and **NoticeCheck · Gemini** runs. Case C additionally has **B0 rules**, **B1 plain Qwen**, and **B2 Gemini with statute text** on the same human-checked fact record.
 
-These are genuine recorded outputs, so replay needs no API key or internet. The Qwen runs came from the project experiments; the Gemini runs were made on the same three judgment texts for this demo with the bundled precedent excerpts. The Gemini and Qwen runs extract facts independently, so this model comparison is not the same controlled checker comparison as Case C's Plain Qwen view. The traces show recorded decisions, tool calls, checks and hand-off; they do not expose private model thoughts.
+These are genuine recorded outputs, so replay needs no API key or internet. Cases A and B are fresh judgments: their Qwen and Gemini runs independently extracted facts, and B0/B1/B2 were not run on them. Case C uses the saved research outputs for all five systems on **one shared human-checked fact record**. Baselines provide saved checklists; the NoticeCheck runs also have step traces. The traces show recorded decisions, tool calls, checks and hand-off; they do not expose private model thoughts. A system flag is not automatically a correct defect, and “cannot tell” is not automatically a miss.
 
 ## 3. Optional: run a pasted judgment live
 
@@ -50,10 +50,10 @@ Open **http://127.0.0.1:8765/**, expand **Paste a High Court judgment · live Ge
 ## What to know before presenting
 
 - The system was evaluated on **High Court judgments describing GST proceedings**, not on original show cause notices. Paste a judgment, not a notice.
-- In Case C, NoticeCheck and Plain Qwen use the **same human-checked facts**. The replay is NoticeCheck's run on those facts. The difference shown is in the checker architecture, not fact extraction. The other prepared cases replay the full system with fine-tuned extraction.
-- Prepared Gemini outputs are saved with the demo and need no key to replay. New paste-in runs use your own key. The live-only example is M/s Sri Lakshmi Silvers v. State Tax Officer (reserved case `HCMA010421202024`); it has no prepared result on this page.
+- In Case C, B0, B1, B2 and both NoticeCheck variants use the **same human-checked facts**. The human annotation identifies the hearing issue; other check differences are displayed as system decisions, not declared correct or incorrect without a reference label.
+- Prepared Gemini outputs are saved with the demo and need no key to replay. For A/B, these are demo runs with Gemini extraction and the bundled precedent excerpts. For C, the Gemini pipeline output is the saved research run on the shared facts. New paste-in runs use your own key. The live-only example is M/s Sri Lakshmi Silvers v. State Tax Officer (reserved case `HCMA010421202024`); it has no prepared result on this page.
 - A quote match only confirms that words appear in the text. It does not establish that the fact concerns the correct proceeding or that the legal conclusion is right.
 - Live case-law search uses nine bundled precedent excerpts unless the full local precedent index is installed. The page labels this limit. The saved Qwen results do not change.
 - The Gemini key stays on the local server, not in the web page. Pasted text and model replies are not saved in the demo cache; the project's normal LLM usage log records call metadata.
 
-The saved demo bundles the three judgments, Qwen and Gemini outputs, traces, styling, fonts, and a separate live-only judgment text. Internet is needed only for a new live Gemini call or for opening a linked source PDF.
+The saved demo bundles the three judgments, all available system outputs, NoticeCheck traces, styling, fonts, and a separate live-only judgment text. Internet is needed only for a new live Gemini call or for opening a linked source PDF.
